@@ -1,0 +1,33 @@
+<Solution>
+  <PropertyGroup Name="RedGame" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="loading">
+          <Image Name="loadingNew_bk.png" />
+          <Image Name="loadingNew_bk1.png" />
+          <Image Name="loadingNew_dot.png" />
+          <Image Name="loadingNew_text.png" />
+          <Image Name="loadingNew0.png" />
+          <Image Name="loadingNew1.png" />
+          <Image Name="loadingNew2.png" />
+          <Image Name="loadingNew3.png" />
+          <Image Name="loadingNew4.png" />
+          <Image Name="loadingNew5.png" />
+        </Folder>
+        <Folder Name="res">
+          <Image Name="Btn.png" />
+          <Image Name="Top.png" />
+        </Folder>
+        <Project Name="action.csd" Type="Layer" />
+        <Project Name="game.csd" Type="Layer" />
+        <Project Name="loading.csd" Type="Layer" />
+        <Project Name="main.csd" Type="Layer" />
+        <Project Name="market.csd" Type="Layer" />
+        <Project Name="message.csd" Type="Layer" />
+        <Project Name="setting.csd" Type="Layer" />
+        <Project Name="sys.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

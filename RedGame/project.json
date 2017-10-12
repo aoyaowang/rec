@@ -1,0 +1,29 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "noCache" : false,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d", "cocostudio"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/app.js",
+
+        "src/Common/common.js",
+
+        "src/ui/loading.js",
+        "src/ui/mainui.js",
+
+        "src/protocol/protocol.js",
+        "src/protocol/client.js",
+        "src/protocol/server.js",
+
+        "src/game/player.js"
+    ]
+}
