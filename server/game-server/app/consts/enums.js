@@ -5,12 +5,11 @@ module.exports = {
     PROTOCOL:{
         PLAYER_ENTER: "playerenterroom",
         PLAYER_LEAVE: "playerleaveroom",
-        HALL_LIST: "halllist",
-        ROOM_LIST: "roomlist",
-        ROOM_INFO: "roominfo",
         
         MONEY_SYNC: "moneysync",
+        RELOGIN:"relogin",
 
+        GAME_SHAOLEI_CREATE: "shaoleicreate",
         GAME_SHAOLEI_QIANG: "shaoleiqiang",
         GAME_SHAOLEI_OVER: "shaoleiover"
     },

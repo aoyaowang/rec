@@ -111,10 +111,6 @@ module.exports = {
     },
     reLogin:function() {
         this.sync = [];
-
-        if (this.HallType != null) {
-            this.addMsg(enums.PROTOCOL.HALL_LIST, Core.GData.m_hall);
-            this.addMsg(enums.PROTOCOL.ROOM_LIST, this.inGame);
-        }
+        this.addMsg(enums.PROTOCOL.RELOGIN, {});
     }
 };

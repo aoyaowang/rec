@@ -11,5 +11,8 @@ module.exports = {
     MONEY: {
         MONEY_NOTENOUGH: 9000,
         FANGKA_NOTENOUGH: 9001
+    },
+    GAME: {
+        RED_OVER: 10000
     }
 };

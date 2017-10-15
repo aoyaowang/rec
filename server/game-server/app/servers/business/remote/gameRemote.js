@@ -49,8 +49,11 @@ pro.Sync = function() {
     for (var key in this.m_db) {
         if (this.m_db[key].synctime + 30 < timestamp) {
             this.m_db[key].logined = false;
-            if (this.m_db[key].inGame.length == 0) {
-                delete this.m_db[key];
+            var user = this.m_db[key];
+            if (user.HallType) {
+                var hall = this.m_hall[user.HallType];
+                user.HallType = null;
+                hall.playerLeave(user);            
             }
         }
     }
@@ -100,6 +103,9 @@ pro.checkToken = function(token, next) {
         }.bind(this));
     } else {
         var user = this.m_db[uid];
+        if (!user.logined) {
+            user.reLogin();
+        }
         user.logined = true;
         user.synctime = timestamp;
         next(null, user);
@@ -116,8 +122,12 @@ pro.userSync = function(token, next) {
     }.bind(this))
 }
 
-pro.getRooms = function(token, id, next) {
-    if (id == null) {
+pro.getRooms = function(token, id, type, next) {
+    if (id == null || type == null) {
+        next(null, {code: consts.NOR_CODE.ERR_PARAM});
+        return;
+    }
+    if (type != 1 && type != 2 && type != 3) {
         next(null, {code: consts.NOR_CODE.ERR_PARAM});
         return;
     }
@@ -128,7 +138,8 @@ pro.getRooms = function(token, id, next) {
         }
         var hall = this.m_hall[id];
         user.HallType = id;
-        next(null, {code: consts.NOR_CODE.SUC_OK, data: hall});
+        hall.playerEnter(user, type);
+        next(null, {code: consts.NOR_CODE.SUC_OK});
     }.bind(this))
 }
 
@@ -138,8 +149,9 @@ pro.leaveHall = function(token, next) {
             next(null, {code: consts.NOR_CODE.FAILED});
             return;
         }
-        var hall = this.m_hall[id];
+        var hall = this.m_hall[user.HallType];
         user.HallType = null;
+        hall.playerLeave(user);
         next(null, {code: consts.NOR_CODE.SUC_OK, data: hall});
     }.bind(this))
 }
@@ -217,49 +229,8 @@ pro.createRoom = function(token, room, next) {
 
             var room = new GSLRoom(type, user, coin, num, bomb);
             this.m_hall[0].createRoom(room);
+            room.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room});
         }
-    }.bind(this));
-}
-
-pro.enterRoom = function(token, hallid, roomid, next) {
-    this.checkToken(token, function(err, user){
-        if (!user) {
-            next(null, {code: consts.NOR_CODE.FAILED});
-            return;
-        }
-        var hall = this.m_hall[hallid];
-        if (!hall) {
-            next(null, {code: consts.NOR_CODE.ERR_PARAM});
-            return;
-        }
-        user.HallType = hallid;
-        var room = hall.Value[roomid];
-        if (!room) {
-            next(null, {code: consts.NOR_CODE.ERR_PARAM});
-            return;
-        }
-        room.playerEnter(user);
-    }.bind(this));
-}
-
-pro.leaveRoom = function(token, hallid, roomid, next) {
-    this.checkToken(token, function(err, user){
-        if (!user) {
-            next(null, {code: consts.NOR_CODE.FAILED});
-            return;
-        }
-        var hall = this.m_hall[hallid];
-        if (!hall) {
-            next(null, {code: consts.NOR_CODE.ERR_PARAM});
-            return;
-        }
-        user.HallType = hallid;
-        var room = hall.Value[roomid];
-        if (!room) {
-            next(null, {code: consts.NOR_CODE.ERR_PARAM});
-            return;
-        }
-        room.playerEnter(user);
     }.bind(this));
 }
 
@@ -284,7 +255,10 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
         if (room.PlayerQiang) 
         {
             var ret = room.PlayerQiang(user);
-            next(null, {code: consts.NOR_CODE.SUC_OK});
+            if (ret)
+                next(null, {code: consts.NOR_CODE.SUC_OK});
+            else
+                next(null, {code: consts.GAME.RED_OVER});
         } else {
             next(null, {code: consts.NOR_CODE.ERR_PARAM});
         }

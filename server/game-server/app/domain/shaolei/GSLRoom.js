@@ -49,10 +49,24 @@ var GSLRoom = GBaseRoom.extend({
     },
     toJSON:function()
     {
-        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, Playes: this.m_Players};
+        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
+    },
+    detail:function(uid)
+    {
+        var data = {coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
+        if (!!uid) {
+            if (this.m_bOver) data.Players = this.m_Players;
+            if (!!this.m_Players[uid]) data.qiang = this.m_Players[uid].m_Qiang;
+        } else {
+            if (this.m_bOver) data.Players = this.m_Players;
+        }
+
+        return data;
     },
     playerEnter:function(user) {
         if (this.m_PlayerCount >= this.m_Num) return consts.ROOM.ROOM_FULL;
+
+        if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
 
         if (user.uid != this.m_Owner.uid) {
             var lm = parseInt(1 * this.m_Coin / 100);
@@ -60,10 +74,6 @@ var GSLRoom = GBaseRoom.extend({
             if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
         }
 
-
-        for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_ENTER, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, data: user.ShowData()})
-        }        
         var player = new GSLPlayer(user);
         this.m_Players[player.uid] = player;
         this.m_PlayerCount = utils.size(this.m_Players);
@@ -78,29 +88,13 @@ var GSLRoom = GBaseRoom.extend({
 
         return consts.NOR_CODE.SUC_OK;
     },
-    playerleave:function(user) {
-        for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_LEAVE, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,data: user.ShowData()});
-        }
-        var player = this.m_Players[user.uid];
-        delete this.m_Players[user.uid];
-        if (player) {
-            player.m_Room = null;
-            player.m_Position = null;
-            for (var key in player.Info.inGame) {
-                if (player.Info.inGame[key] == this) {
-                    player.Info.inGame.splice(key, 1);
-                    break;
-                }
-            }
-        }
-        this.m_PlayerCount = utils.size(this.m_Players);
-
-        this.updatePos();
-    },
     PlayerQiang:function(user) {
+        this.playerEnter(user);
+
         var player = this.m_Players[user.uid];
-        if (!player || this.m_RedList.length == 0) return false;
+        if (!player || this.m_RedList.length == 0) {
+            return false;
+        }
         var p = this.m_RedList[0];
         var ret = player.Qiang(p);
         if (ret) {

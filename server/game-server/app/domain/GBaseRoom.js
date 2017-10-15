@@ -74,6 +74,9 @@ var GBaseRoom = Core.obserData.extend({
             var p = this.m_Players[key];
             this.m_Pos[p.m_Position] = p;
         }
+    },
+    pushMsg:function(protocol, msg) {
+        if (this.m_Hall) this.m_Hall.pushMsg(protocol, msg, this.Type);
     }
 });
 module.exports = GBaseRoom;

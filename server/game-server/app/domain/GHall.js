@@ -7,6 +7,7 @@ var enums = require("../consts/enums");
 var utils = require("../util/utils");
 
 var GHall = Core.obserData.extend({
+    m_Players:null,
     m_RoomID:null,
     ctor:function(Type)
     {
@@ -18,6 +19,7 @@ var GHall = Core.obserData.extend({
 
         this.Value = {};
         this.m_RoomID = 0;
+        this.m_Players = {};
     },
     factoryData:function() {
         return {};
@@ -43,6 +45,22 @@ var GHall = Core.obserData.extend({
         var value = this.Value;
         if (!room) return;
         delete value[room.m_RoomID];
+    },
+    playerEnter:function(user, type) {
+        if (this.m_Players[user.uid]) return;
+        this.m_Players[user.uid] = {user: user, type: type};
+    },
+    playerLeave:function(user) {
+        if (!this.m_Players[user.uid]) return;
+        delete this.m_Players[user.uid];
+    },
+    pushMsg:function(protocol, msg, type) {
+        for (var k in this.m_Players) {
+            var p = this.m_Players[k].user;
+            var t = this.m_Players[k].type;
+            if (!!type && t != type) continue;
+            p.addMsg(protocol, msg);
+        }
     }
 });
 module.exports = GHall;
