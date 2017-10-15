@@ -1,5 +1,21 @@
-var g_server = "http://127.0.0.1:5000/"
+var g_server = "http://landking.tech:5000/"
 
 var g_protocol = {
-    "login": "login"
+    "login": "login",
+    "wxlogin": "wechat_auth",
+    "tokenlogin":"tokenlogin",
+
+
+
+
+    "playerenterroom": "playerenterroom",
+    "playerleaveroom": "playerleaveroom",
+    "halllist": "halllist",
+    "roomlist": "roomlist",
+    "roominfo": "roominfo",
+
+    "moneysync": "moneysync",
+
+    "shaoleiqiang": "shaoleiqiang",
+    "shaoleiover": "shaoleiover"
 };

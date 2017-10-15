@@ -27,6 +27,8 @@
         <Project Name="message.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
+        <Project Name="rooms.csd" Type="Layer" />
+        <Project Name="roomitem.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

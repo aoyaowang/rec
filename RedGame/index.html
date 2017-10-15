@@ -24,6 +24,7 @@
 <script src="res/loading.js"></script>
 <canvas id="gameCanvas" width="640" height="1038"></canvas>
 <script>
+//    https://open.weixin.qq.com/connect/oauth2/authorize?appid=APPID&redirect_uri=REDIRECT_URI&response_type=code&scope=SCOPE&state=STATE#wechat_redirect
     (function () {
         var nav = window.navigator;
         var ua = nav.userAgent.toLowerCase();
@@ -41,6 +42,53 @@
     })();
 </script>
 <script src="frameworks/cocos2d-html5/CCBoot.js"></script>
+<script>
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+
+    function isWeiXin(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    Login_Type = 0;
+    Login_Param = {};
+    (function () {
+        var code = getQueryString("code");
+        var state = getQueryString("state");
+        var token = getQueryString("token");
+        if (!!code && !!state) {
+            if (state == 1) {
+                Login_Type = 3;
+                return;
+            }
+            Login_Type = 1;
+            Login_Param = {
+                code: code,
+                state: state
+            };
+        }
+        else if (!!token) {
+            Login_Type = 2;
+            Login_Param = token;
+        } else {
+            if (isWeiXin() && !cc.sys.isNative) {
+                var appid = "wx521ac03928cf7966";
+                var url = encodeURI("http://test.obyjd.com/");
+                window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid="+appid+"&redirect_uri="+url+"&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect";
+            } else {
+                Login_Type = 3;
+            }
+        }
+    })();
+
+</script>
 <script cocos src="main.js"></script>
 </body>
 </html>

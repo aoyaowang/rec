@@ -1,15 +1,15 @@
 <GameFile>
-  <PropertyGroup Name="Main" Type="Layer" ID="d85d7259-2803-46cd-8620-3bf15e384ffb" Version="3.10.0.0" />
+  <PropertyGroup Name="main" Type="Layer" ID="d85d7259-2803-46cd-8620-3bf15e384ffb" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Layer" Tag="8" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="1038.0000" />
         <Children>
-          <AbstractNodeData Name="Base" CanEdit="False" ActionTag="-1191579742" Tag="9" IconVisible="False" LeftMargin="0.0001" RightMargin="-0.0001" TopMargin="-3.6078" BottomMargin="3.6078" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Base" CanEdit="False" ActionTag="-1191579742" Tag="9" IconVisible="False" LeftMargin="0.0001" RightMargin="-0.0001" TopMargin="-3.6078" BottomMargin="3.6078" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="Panel_1" CanEdit="False" ActionTag="-660237615" Tag="35" IconVisible="False" TopMargin="80.0000" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_1" ActionTag="-660237615" Tag="35" IconVisible="False" TopMargin="80.0000" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="838.0000" />
                 <AnchorPoint />
                 <Position Y="120.0000" />
@@ -25,15 +25,16 @@
               <AbstractNodeData Name="Panel_Top" CanEdit="False" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-0.7228" BottomMargin="958.7228" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="80.0000" />
                 <Children>
-                  <AbstractNodeData Name="img_head" CanEdit="False" ActionTag="-2111733984" Tag="14" IconVisible="False" LeftMargin="14.0131" RightMargin="561.9869" TopMargin="7.1243" BottomMargin="8.8757" Scale9Width="46" Scale9Height="46" ctype="ImageViewObjectData">
-                    <Size X="64.0000" Y="64.0000" />
+                  <AbstractNodeData Name="img_head" CanEdit="False" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="19.5143" RightMargin="574.4857" TopMargin="17.6107" BottomMargin="16.3893" ctype="SpriteObjectData">
+                    <Size X="46.0000" Y="46.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="46.0131" Y="40.8757" />
+                    <Position X="42.5143" Y="39.3893" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0719" Y="0.5109" />
-                    <PreSize X="0.1000" Y="0.8000" />
-                    <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
+                    <PrePosition X="0.0664" Y="0.4924" />
+                    <PreSize X="0.0719" Y="0.5750" />
+                    <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
+                    <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="ft_name" CanEdit="False" ActionTag="-956184723" Tag="17" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="80.1103" RightMargin="459.8897" TopMargin="28.6723" BottomMargin="31.3277" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="100.0000" Y="20.0000" />
@@ -56,10 +57,10 @@
                     <PreSize X="0.0313" Y="0.5625" />
                     <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_fangka" CanEdit="False" ActionTag="-1429989516" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="533.2266" RightMargin="46.7734" TopMargin="26.6357" BottomMargin="33.3643" FontSize="20" LabelText="999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_fangka" CanEdit="False" ActionTag="-1429989516" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="533.2266" RightMargin="46.7734" TopMargin="26.6360" BottomMargin="33.3640" FontSize="20" LabelText="999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="60.0000" Y="20.0000" />
                     <AnchorPoint ScaleX="0.7511" ScaleY="0.4450" />
-                    <Position X="578.2936" Y="42.2640" />
+                    <Position X="578.2926" Y="42.2640" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="0" G="0" B="0" />
                     <PrePosition X="0.9036" Y="0.5283" />
@@ -76,7 +77,7 @@
                 <PreSize X="1.0000" Y="0.0771" />
                 <FileData Type="Normal" Path="res/Top.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="base" CanEdit="False" ActionTag="1147806183" Tag="53" IconVisible="False" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="base" ActionTag="1147806183" Tag="53" IconVisible="False" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="918.0000" />
                 <AnchorPoint />
                 <Position Y="120.0000" />

@@ -30,6 +30,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -73,6 +75,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -142,18 +146,20 @@
                   {
                     "FileData": {
                       "Type": "Default",
-                      "Path": "Default/ImageFile.png",
+                      "Path": "Default/Sprite.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 46,
-                    "Scale9Height": 46,
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 46.0131,
-                      "Y": 40.8757
+                      "X": 42.5143,
+                      "Y": 39.3893
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -162,25 +168,25 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0719,
-                      "Y": 0.5109
+                      "X": 0.0664,
+                      "Y": 0.4924
                     },
                     "PreSize": {
-                      "X": 0.1,
-                      "Y": 0.8
+                      "X": 0.0719,
+                      "Y": 0.575
                     },
-                    "LeftMargin": 14.0131,
-                    "RightMargin": 561.9869,
-                    "TopMargin": 7.1243,
-                    "BottomMargin": 8.8757,
-                    "Tag": 14,
-                    "ActionTag": -2111733984,
+                    "LeftMargin": 19.5143,
+                    "RightMargin": 574.4857,
+                    "TopMargin": 17.6107,
+                    "BottomMargin": 16.3893,
+                    "Tag": 26,
+                    "ActionTag": -643626798,
                     "Size": {
-                      "X": 64.0,
-                      "Y": 64.0
+                      "X": 46.0,
+                      "Y": 46.0
                     },
                     "Name": "img_head",
-                    "ctype": "ImageViewObjectData"
+                    "ctype": "SpriteObjectData"
                   },
                   {
                     "FontSize": 20,
@@ -219,7 +225,7 @@
                       "Y": 0.6416
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 0.25
                     },
                     "HorizontalEdge": "LeftEdge",
@@ -263,7 +269,7 @@
                       "Y": 0.545
                     },
                     "PreSize": {
-                      "X": 0.0313,
+                      "X": 0.0312,
                       "Y": 0.5625
                     },
                     "LeftMargin": 507.5338,
@@ -298,7 +304,7 @@
                       "ScaleY": 0.445
                     },
                     "Position": {
-                      "X": 578.2936,
+                      "X": 578.2926,
                       "Y": 42.264
                     },
                     "Scale": {
@@ -322,8 +328,8 @@
                     "HorizontalEdge": "LeftEdge",
                     "LeftMargin": 533.2266,
                     "RightMargin": 46.7734,
-                    "TopMargin": 26.6357,
-                    "BottomMargin": 33.3643,
+                    "TopMargin": 26.636,
+                    "BottomMargin": 33.364,
                     "Tag": 20,
                     "ActionTag": -1429989516,
                     "Size": {
@@ -358,6 +364,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -842,6 +850,7 @@
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/ImageFile.png",
+        "Default/Sprite.png",
         "res/Btn.png",
         "res/Top.png"
       ],

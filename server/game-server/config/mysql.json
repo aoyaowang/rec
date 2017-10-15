@@ -1,0 +1,23 @@
+{
+  "development": {
+    "1":
+    {
+      "host" : "127.0.0.1",
+      "port" : "3306",
+      "database" : "red",
+      "user" : "root",
+      "password" : "rootroot"
+    }
+  },
+
+  "production": {
+    "1":
+    {
+      "host" : "127.0.0.1",
+      "port" : "3306",
+      "database" : "red",
+      "user" : "root",
+      "password" : "rootroot"
+    }
+  }
+}

@@ -90,7 +90,7 @@
       </Animation>
       <AnimationList>
         <AnimationInfo Name="run" StartIndex="0" EndIndex="25">
-          <RenderColor A="150" R="34" G="139" B="34" />
+          <RenderColor A="255" R="34" G="139" B="34" />
         </AnimationInfo>
       </AnimationList>
       <ObjectData Name="Layer" Tag="88" ctype="GameLayerObjectData">
@@ -107,37 +107,92 @@
             <FileData Type="Normal" Path="loading/loadingNew_bk.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="loadbar" ActionTag="1787473963" Tag="89" IconVisible="False" LeftMargin="-90.8942" RightMargin="-86.1058" TopMargin="465.4387" BottomMargin="500.5613" ProgressInfo="100" ctype="LoadingBarObjectData">
-            <Size X="817.0000" Y="72.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="317.6058" Y="536.5613" />
-            <Scale ScaleX="0.6752" ScaleY="1.0000" />
-            <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4963" Y="0.5169" />
-            <PreSize X="1.2766" Y="0.0694" />
-            <ImageFileData Type="Normal" Path="loading/loadingNew_bk1.png" Plist="" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="loadingNew_text_2" ActionTag="1831199714" Tag="10" IconVisible="False" LeftMargin="217.4519" RightMargin="316.5481" TopMargin="572.4512" BottomMargin="430.5489" ctype="SpriteObjectData">
-            <Size X="106.0000" Y="35.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="270.4519" Y="448.0489" />
+          <AbstractNodeData Name="Node_1" ActionTag="-1477532306" Tag="21" IconVisible="True" RightMargin="640.0000" TopMargin="1038.0000" ctype="SingleNodeObjectData">
+            <Size X="0.0000" Y="0.0000" />
+            <Children>
+              <AbstractNodeData Name="loadbar" ActionTag="1787473963" Tag="89" IconVisible="False" LeftMargin="-90.8943" RightMargin="-726.1057" TopMargin="-574.5490" BottomMargin="502.5490" ProgressInfo="100" ctype="LoadingBarObjectData">
+                <Size X="817.0000" Y="72.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="317.6057" Y="538.5490" />
+                <Scale ScaleX="0.6752" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <ImageFileData Type="Normal" Path="loading/loadingNew_bk1.png" Plist="" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="loadingNew_text_2" ActionTag="1831199714" Tag="10" IconVisible="False" LeftMargin="217.4519" RightMargin="-323.4519" TopMargin="-465.5489" BottomMargin="430.5489" ctype="SpriteObjectData">
+                <Size X="106.0000" Y="35.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="270.4519" Y="448.0489" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="loading/loadingNew_text.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Sprite_3" ActionTag="-2013989809" Tag="11" IconVisible="False" LeftMargin="260.7979" RightMargin="-574.7979" TopMargin="-536.4732" BottomMargin="366.4732" ctype="SpriteObjectData">
+                <Size X="314.0000" Y="170.0000" />
+                <AnchorPoint ScaleX="0.4835" ScaleY="0.5204" />
+                <Position X="412.6169" Y="454.9412" />
+                <Scale ScaleX="0.5000" ScaleY="0.5000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <FileData Type="Normal" Path="loading/loadingNew1.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.4226" Y="0.4316" />
-            <PreSize X="0.1656" Y="0.0337" />
-            <FileData Type="Normal" Path="loading/loadingNew_text.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Sprite_3" ActionTag="-2013989809" Tag="11" IconVisible="False" LeftMargin="260.7938" RightMargin="65.2062" TopMargin="501.5275" BottomMargin="366.4725" ctype="SpriteObjectData">
-            <Size X="314.0000" Y="170.0000" />
-            <AnchorPoint ScaleX="0.4835" ScaleY="0.5204" />
-            <Position X="412.6169" Y="454.9412" />
-            <Scale ScaleX="0.5000" ScaleY="0.5000" />
+          <AbstractNodeData Name="Node_2" ActionTag="52351838" VisibleForFrame="False" Tag="22" IconVisible="True" RightMargin="640.0000" TopMargin="1038.0000" ctype="SingleNodeObjectData">
+            <Size X="0.0000" Y="0.0000" />
+            <Children>
+              <AbstractNodeData Name="ft_account" ActionTag="-509743730" Tag="23" IconVisible="False" LeftMargin="146.0680" RightMargin="-506.0680" TopMargin="-583.5779" BottomMargin="533.5779" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="手机号" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="360.0000" Y="50.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="326.0680" Y="558.5779" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="ft_code" ActionTag="-748531763" Tag="24" IconVisible="False" LeftMargin="146.0674" RightMargin="-326.0674" TopMargin="-506.0621" BottomMargin="456.0621" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="验证码" MaxLengthText="10" ctype="TextFieldObjectData">
+                <Size X="180.0000" Y="50.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="236.0674" Y="481.0621" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Button_1" ActionTag="1815619949" Tag="25" IconVisible="False" LeftMargin="373.3535" RightMargin="-493.3535" TopMargin="-509.5081" BottomMargin="459.5081" TouchEnable="True" FontSize="24" ButtonText="获取验证码" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                <Size X="120.0000" Y="50.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="433.3535" Y="484.5081" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="0.0000" Y="0.0000" />
+                <TextColor A="255" R="65" G="65" B="70" />
+                <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
+                <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
+            <AnchorPoint />
+            <Position />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.6447" Y="0.4383" />
-            <PreSize X="0.4906" Y="0.1638" />
-            <FileData Type="Normal" Path="loading/loadingNew1.png" Plist="" />
-            <BlendFunc Src="1" Dst="771" />
+            <PrePosition />
+            <PreSize X="0.0000" Y="0.0000" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

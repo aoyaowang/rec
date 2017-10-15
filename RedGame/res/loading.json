@@ -351,136 +351,362 @@
             "ctype": "SpriteObjectData"
           },
           {
-            "ProgressInfo": 100,
-            "ImageFileData": {
-              "Type": "Normal",
-              "Path": "loading/loadingNew_bk1.png",
-              "Plist": ""
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
+            "AnchorPoint": {},
             "Position": {
-              "X": 317.6058,
-              "Y": 536.5613
-            },
-            "Scale": {
-              "ScaleX": 0.6752,
-              "ScaleY": 1.0
-            },
-            "CColor": {},
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.4963,
-              "Y": 0.5169
-            },
-            "PreSize": {
-              "X": 1.2766,
-              "Y": 0.0694
-            },
-            "LeftMargin": -90.8942,
-            "RightMargin": -86.1058,
-            "TopMargin": 465.4387,
-            "BottomMargin": 500.5613,
-            "Tag": 89,
-            "ActionTag": 1787473963,
-            "Size": {
-              "X": 817.0,
-              "Y": 72.0
-            },
-            "Name": "loadbar",
-            "ctype": "LoadingBarObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "loading/loadingNew_text.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 270.4519,
-              "Y": 448.0489
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
             "CColor": {},
-            "IconVisible": false,
+            "IconVisible": true,
             "PrePosition": {
-              "X": 0.4226,
-              "Y": 0.4316
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.1656,
-              "Y": 0.0337
+              "X": 0.0,
+              "Y": 0.0
             },
-            "LeftMargin": 217.4519,
-            "RightMargin": 316.5481,
-            "TopMargin": 572.4512,
-            "BottomMargin": 430.5489,
-            "Tag": 10,
-            "ActionTag": 1831199714,
+            "RightMargin": 640.0,
+            "TopMargin": 1038.0,
+            "Tag": 21,
+            "Children": [
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "loading/loadingNew_bk1.png",
+                  "Plist": ""
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 317.6057,
+                  "Y": 538.549
+                },
+                "Scale": {
+                  "ScaleX": 0.6752,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -90.8943,
+                "RightMargin": -726.1057,
+                "TopMargin": -574.549,
+                "BottomMargin": 502.549,
+                "Tag": 89,
+                "ActionTag": 1787473963,
+                "Size": {
+                  "X": 817.0,
+                  "Y": 72.0
+                },
+                "Name": "loadbar",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loading/loadingNew_text.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 270.4519,
+                  "Y": 448.0489
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 217.4519,
+                "RightMargin": -323.4519,
+                "TopMargin": -465.5489,
+                "BottomMargin": 430.5489,
+                "Tag": 10,
+                "ActionTag": 1831199714,
+                "Size": {
+                  "X": 106.0,
+                  "Y": 35.0
+                },
+                "Name": "loadingNew_text_2",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "loading/loadingNew1.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.4835,
+                  "ScaleY": 0.5204
+                },
+                "Position": {
+                  "X": 412.6169,
+                  "Y": 454.9412
+                },
+                "Scale": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 260.7979,
+                "RightMargin": -574.7979,
+                "TopMargin": -536.4732,
+                "BottomMargin": 366.4732,
+                "Tag": 11,
+                "ActionTag": -2013989809,
+                "Size": {
+                  "X": 314.0,
+                  "Y": 170.0
+                },
+                "Name": "Sprite_3",
+                "ctype": "SpriteObjectData"
+              }
+            ],
+            "ActionTag": -1477532306,
             "Size": {
-              "X": 106.0,
-              "Y": 35.0
+              "X": 0.0,
+              "Y": 0.0
             },
-            "Name": "loadingNew_text_2",
-            "ctype": "SpriteObjectData"
+            "Name": "Node_1",
+            "ctype": "SingleNodeObjectData"
           },
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "loading/loadingNew1.png",
-              "Plist": ""
-            },
-            "BlendFunc": {
-              "Src": 1,
-              "Dst": 771
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.4835,
-              "ScaleY": 0.5204
-            },
+            "AnchorPoint": {},
             "Position": {
-              "X": 412.6169,
-              "Y": 454.9412
+              "X": 0.0,
+              "Y": 0.0
             },
             "Scale": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
             },
             "CColor": {},
-            "IconVisible": false,
+            "IconVisible": true,
             "PrePosition": {
-              "X": 0.6447,
-              "Y": 0.4383
+              "X": 0.0,
+              "Y": 0.0
             },
             "PreSize": {
-              "X": 0.4906,
-              "Y": 0.1638
+              "X": 0.0,
+              "Y": 0.0
             },
-            "LeftMargin": 260.7938,
-            "RightMargin": 65.2062,
-            "TopMargin": 501.5275,
-            "BottomMargin": 366.4725,
-            "Tag": 11,
-            "ActionTag": -2013989809,
+            "RightMargin": 640.0,
+            "TopMargin": 1038.0,
+            "Tag": 22,
+            "Children": [
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "手机号",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 326.068,
+                  "Y": 558.5779
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 146.068,
+                "RightMargin": -506.068,
+                "TopMargin": -583.5779,
+                "BottomMargin": 533.5779,
+                "Tag": 23,
+                "ActionTag": -509743730,
+                "Size": {
+                  "X": 360.0,
+                  "Y": 50.0
+                },
+                "Name": "ft_account",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 36,
+                "IsCustomSize": true,
+                "LabelText": "",
+                "PlaceHolderText": "验证码",
+                "MaxLengthText": 10,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 236.0674,
+                  "Y": 481.0621
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 146.0674,
+                "RightMargin": -326.0674,
+                "TopMargin": -506.0621,
+                "BottomMargin": 456.0621,
+                "Tag": 24,
+                "ActionTag": -748531763,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 50.0
+                },
+                "Name": "ft_code",
+                "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "获取验证码",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Press.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Normal.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 16,
+                "Scale9Height": 14,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 433.3535,
+                  "Y": 484.5081
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 373.3535,
+                "RightMargin": -493.3535,
+                "TopMargin": -509.5081,
+                "BottomMargin": 459.5081,
+                "Tag": 25,
+                "ActionTag": 1815619949,
+                "Size": {
+                  "X": 120.0,
+                  "Y": 50.0
+                },
+                "Name": "Button_1",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 52351838,
             "Size": {
-              "X": 314.0,
-              "Y": 170.0
+              "X": 0.0,
+              "Y": 0.0
             },
-            "Name": "Sprite_3",
-            "ctype": "SpriteObjectData"
+            "VisibleForFrame": false,
+            "Name": "Node_2",
+            "ctype": "SingleNodeObjectData"
           }
         ],
         "Size": {
@@ -491,6 +717,9 @@
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
+        "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
+        "Default/Button_Press.png",
         "loading/loadingNew_bk.png",
         "loading/loadingNew_bk1.png",
         "loading/loadingNew_text.png",

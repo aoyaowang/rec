@@ -30,6 +30,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -47,7 +49,7 @@
               "Y": 0.3148
             },
             "PreSize": {
-              "X": 0.7812,
+              "X": 0.7813,
               "Y": 0.289
             },
             "HorizontalEdge": "LeftEdge",
@@ -59,7 +61,7 @@
             "Children": [
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "确定",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -129,7 +131,7 @@
                   "X": 150.0,
                   "Y": 50.0
                 },
-                "Name": "Button_2",
+                "Name": "btn_ok",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -144,7 +146,7 @@
           {
             "IsCustomSize": true,
             "FontSize": 20,
-            "LabelText": "Text Label",
+            "LabelText": "",
             "HorizontalAlignmentType": "HT_Center",
             "VerticalAlignmentType": "VT_Center",
             "OutlineColor": {

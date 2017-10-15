@@ -23,7 +23,7 @@ var Server = {
         url=encodeURI("{0}{1}".Format(url,params));
 
         Nlog("Server:" + url);
-        xhr.open("POST", url, true);
+        xhr.open("GET", url, true);
         var _this = this;
         xhr.onreadystatechange = function()
         {

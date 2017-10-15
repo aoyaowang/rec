@@ -3,9 +3,37 @@
  */
 var Player = cc.Class.extend({
     nickname: "",
+    gamename: "",
     sex: 1, //1ÄÐ  2Å®
     head: "",
-    userid: "",
+    uid: "",
+    img:null,
+
+    _list:null,
+    addOb:function(cb, target) {
+        if (!this._list) this._list = [];
+        this._list.push({cb: cb, target: target});
+        var func = cb.bind(target);
+        func(this);
+    },
+    removeOb:function(cb, target) {
+        if (!this._list) return;
+        for (var key in this._list) {
+            if (this._list[key].cb == cb && this._list[key].target == target) {
+                this._list.splice(key, 1);
+                break;
+            }
+        }
+    },
+    notify:function() {
+        for (var key in this._list) {
+            var cb = this._list[key].cb;
+            var target = this._list[key].target;
+
+            cb = cb.bind(target);
+            cb(this);
+        }
+    }
 });
 
 var __selfinfo = Player.extend({
@@ -13,10 +41,8 @@ var __selfinfo = Player.extend({
     money: 0,
 
     token: "",
-    roomlist: null,
-    ctor:function(){
-        this.roomlist = [];
-    }
+    logined: false,
+    sync:0
 });
 
 var RoleInfo = new __selfinfo();

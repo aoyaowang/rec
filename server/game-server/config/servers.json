@@ -1,0 +1,12 @@
+{
+  "development":{
+    "business": [
+      {"id": "business-server-1", "host": "127.0.0.1", "port": 14051}
+    ]
+  },
+  "production":{
+    "business": [
+      {"id": "business-server-1", "host": "127.0.0.1", "port": 14051}
+    ]
+  }
+}

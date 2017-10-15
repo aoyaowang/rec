@@ -2,11 +2,11 @@
     "project_type": "javascript",
 
     "debugMode" : 1,
-    "showFPS" : true,
+    "showFPS" : false,
     "frameRate" : 60,
     "noCache" : false,
     "id" : "gameCanvas",
-    "renderMode" : 0,
+    "renderMode" : 1,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d", "cocostudio"],
@@ -19,10 +19,18 @@
 
         "src/ui/loading.js",
         "src/ui/mainui.js",
+        "src/ui/message.js",
+
+        "src/ui/main/actionui.js",
+        "src/ui/main/hallui.js",
+        "src/ui/main/marketui.js",
+        "src/ui/main/settingui.js",
+        "src/ui/main/sysui.js",
 
         "src/protocol/protocol.js",
         "src/protocol/client.js",
         "src/protocol/server.js",
+        "src/protocol/error.js",
 
         "src/game/player.js"
     ]

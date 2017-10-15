@@ -60,12 +60,13 @@ exports.get2 = function (url,data,callback,safe) {
 	if(safe){
 		proto = https;
 	}
+	//console.log("HTTP:" + url);
 	var req = proto.get(url, function (res) {  
 		//console.log('STATUS: ' + res.statusCode);  
 		//console.log('HEADERS: ' + JSON.stringify(res.headers));  
 		res.setEncoding('utf8');  
 		res.on('data', function (chunk) {  
-			//console.log('BODY: ' + chunk);
+			//console.log('Back: ' + chunk);
 			var json = JSON.parse(chunk);
 			callback(true,json);
 		});  
