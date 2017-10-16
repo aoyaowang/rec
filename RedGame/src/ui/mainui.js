@@ -21,6 +21,8 @@ var mainUI = cc.Layer.extend({
 
     m_sysui:null,
     m_sysBtn:null,
+
+    m_game:null,
     ctor:function() {
         this._super();
 
@@ -60,6 +62,8 @@ var mainUI = cc.Layer.extend({
         this.m_sysBtn = ccui.helper.seekWidgetByName(this.Widget, "btn_gonggao");
         this.m_sysBtn.addClickEventListener(this.onSwitchClick.bind(this));
         this.changeUI(0);
+
+        this.m_game = ccui.helper.seekWidgetByName(this.Widget, "game");
         return true;
     },
     onEnter:function() {

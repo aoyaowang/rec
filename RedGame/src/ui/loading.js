@@ -90,10 +90,12 @@ var loadingUI = cc.Layer.extend({
             RoleInfo.fangka = msg.fangka;
             RoleInfo.money = msg.money;
             RoleInfo.logined = true;
+            g_gate = msg.gate;
         }
 
         this.removeFromParent();
         var ui = new mainUI();
+        uiMgr.mainUI = ui;
         cc.director.getRunningScene().addChild(ui);
     }
 });

@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Base" CanEdit="False" ActionTag="-1191579742" Tag="9" IconVisible="False" LeftMargin="0.0001" RightMargin="-0.0001" TopMargin="-3.6078" BottomMargin="3.6078" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="Panel_1" ActionTag="-660237615" Tag="35" IconVisible="False" TopMargin="80.0000" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_1" ActionTag="-660237615" Tag="35" IconVisible="False" TopMargin="80.0000" BottomMargin="120.0000" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="838.0000" />
                 <AnchorPoint />
                 <Position Y="120.0000" />
@@ -22,7 +22,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Top" CanEdit="False" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-0.7228" BottomMargin="958.7228" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="28" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-0.7228" BottomMargin="958.7228" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="28" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="80.0000" />
                 <Children>
                   <AbstractNodeData Name="img_head" CanEdit="False" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="19.5143" RightMargin="574.4857" TopMargin="17.6107" BottomMargin="16.3893" ctype="SpriteObjectData">
@@ -77,7 +77,7 @@
                 <PreSize X="1.0000" Y="0.0771" />
                 <FileData Type="Normal" Path="res/Top.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="base" ActionTag="1147806183" Tag="53" IconVisible="False" BottomMargin="120.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="base" ActionTag="1147806183" Tag="53" IconVisible="False" BottomMargin="120.0000" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="918.0000" />
                 <AnchorPoint />
                 <Position Y="120.0000" />
@@ -177,6 +177,19 @@
                 <PreSize X="1.0000" Y="0.1156" />
                 <FileData Type="Normal" Path="res/Top.png" Plist="" />
                 <SingleColor A="255" R="230" G="230" B="250" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="game" ActionTag="-1093552615" Tag="50" IconVisible="False" TopMargin="80.0000" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="640.0000" Y="958.0000" />
+                <AnchorPoint />
+                <Position />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition />
+                <PreSize X="1.0000" Y="0.9229" />
+                <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />

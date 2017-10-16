@@ -1,0 +1,222 @@
+{
+  "ID": "bc834482-ef40-44ac-a6b2-4502de2f86a4",
+  "Version": "3.10.0.0",
+  "Name": "chatred",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 61,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 46.0904,
+              "Y": 110.1033
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.072,
+              "Y": 0.734
+            },
+            "PreSize": {
+              "X": 0.0719,
+              "Y": 0.3067
+            },
+            "LeftMargin": 23.0904,
+            "RightMargin": 570.9097,
+            "TopMargin": 16.8967,
+            "BottomMargin": 87.1033,
+            "Tag": 63,
+            "ActionTag": -1230035229,
+            "Size": {
+              "X": 46.0,
+              "Y": 46.0
+            },
+            "Name": "img_head",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 20,
+            "LabelText": "Text Label",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 135.0673,
+              "Y": 121.6243
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.211,
+              "Y": 0.8108
+            },
+            "PreSize": {
+              "X": 0.1562,
+              "Y": 0.1333
+            },
+            "LeftMargin": 85.0673,
+            "RightMargin": 454.9327,
+            "TopMargin": 18.3757,
+            "BottomMargin": 111.6243,
+            "Tag": 64,
+            "ActionTag": 2048579584,
+            "Size": {
+              "X": 100.0,
+              "Y": 20.0
+            },
+            "Name": "ft_nickname",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Default",
+              "Path": "Default/ImageFile.png",
+              "Plist": ""
+            },
+            "Scale9Width": 46,
+            "Scale9Height": 46,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 265.0674,
+              "Y": 56.9734
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4142,
+              "Y": 0.3798
+            },
+            "PreSize": {
+              "X": 0.5625,
+              "Y": 0.6667
+            },
+            "LeftMargin": 85.0674,
+            "RightMargin": 194.9326,
+            "TopMargin": 43.0266,
+            "BottomMargin": 6.9734,
+            "Tag": 65,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "Text Label",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 202.2902,
+                  "Y": 75.5411
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5619,
+                  "Y": 0.7554
+                },
+                "PreSize": {
+                  "X": 0.7222,
+                  "Y": 0.24
+                },
+                "LeftMargin": 72.2902,
+                "RightMargin": 27.7098,
+                "TopMargin": 12.4589,
+                "BottomMargin": 63.5411,
+                "Tag": 66,
+                "ActionTag": 527777642,
+                "Size": {
+                  "X": 260.0,
+                  "Y": 24.0
+                },
+                "Name": "ft_text",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1614200211,
+            "Size": {
+              "X": 360.0,
+              "Y": 100.0
+            },
+            "Name": "Image_1",
+            "ctype": "ImageViewObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 150.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "Default/ImageFile.png",
+        "Default/Sprite.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

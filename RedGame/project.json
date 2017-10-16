@@ -26,12 +26,16 @@
         "src/ui/main/marketui.js",
         "src/ui/main/settingui.js",
         "src/ui/main/sysui.js",
+        "src/ui/main/roomsui.js",
+        "src/ui/main/roomitemui.js",
 
         "src/protocol/protocol.js",
         "src/protocol/client.js",
         "src/protocol/server.js",
         "src/protocol/error.js",
 
-        "src/game/player.js"
+        "src/game/player.js",
+        "src/game/gameinfo.js",
+        "src/ui/uiMgr.js"
     ]
 }

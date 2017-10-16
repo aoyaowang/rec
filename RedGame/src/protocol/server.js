@@ -4,6 +4,15 @@
 var Server = {
     Name:"Server",
     TIMEOUT: 10,
+    gate:function(id, msg) {
+        if (!g_protocol[id])  {
+            Xlog("protocol not exit:" + ID);
+            return;
+        }
+
+        var url = g_gate + g_protocol[id];
+        this.basesend(url, msg, id);
+    },
     send:function(id, msg) {
         if (!g_protocol[id])  {
             Xlog("protocol not exit:" + ID);

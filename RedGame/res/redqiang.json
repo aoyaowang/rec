@@ -1,0 +1,28 @@
+{
+  "ID": "01a546ac-7669-42be-abac-81d7824594d9",
+  "Version": "3.10.0.0",
+  "Name": "redqiang",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 70,
+        "Size": {
+          "X": 640.0,
+          "Y": 1038.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,28 @@
+{
+  "ID": "c7d28549-3cfb-40ab-96af-96a9d3b606e1",
+  "Version": "3.10.0.0",
+  "Name": "reddetail",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 71,
+        "Size": {
+          "X": 640.0,
+          "Y": 1038.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

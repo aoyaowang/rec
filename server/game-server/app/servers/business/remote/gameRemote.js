@@ -237,8 +237,8 @@ pro.createRoom = function(token, room, next) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
             }
-
-            var room2 = new GSLRoom(type, user, coin, num, bomb);
+            var realtype = JSON.stringify([coin, num]);
+            var room2 = new GSLRoom(realtype, user, coin, num, bomb);
             this.m_hall[0].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
         }
