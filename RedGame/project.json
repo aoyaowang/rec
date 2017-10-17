@@ -21,7 +21,7 @@
         "src/ui/loading.js",
         "src/ui/mainui.js",
         "src/ui/message.js",
-        "src/ui/uiMgr.js"
+        "src/ui/uiMgr.js",
 
         "src/ui/main/actionui.js",
         "src/ui/main/hallui.js",
@@ -37,7 +37,7 @@
         "src/protocol/error.js",
 
         "src/game/player.js",
-        "src/game/gameinfo.js"
+        "src/game/gameinfo.js",
         "src/game/saolei/saoleired.js",
         "src/game/saolei/saoleisub.js",
         "src/game/saolei/saoleiui.js",
