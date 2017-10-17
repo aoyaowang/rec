@@ -15,7 +15,7 @@ exports.mysql = function(){
     }
 };
 
-//ÕËºÅ·þÅäÖÃ
+//ï¿½ËºÅ·ï¿½ï¿½ï¿½ï¿½ï¿½
 exports.login_server = function(){
     return {
         CLIENT_PORT:5000,
@@ -23,16 +23,17 @@ exports.login_server = function(){
         TOKEN_SECRET:TOKEN_SECRET,
 
         VERSION:'20171013',
-        APP_WEB:'http://fir.im/2f17'
+        APP_WEB:'http://fir.im/2f17',
+        SERVERS: [
+            {IP:SERVER_IP,port: 20000},
+            {IP:SERVER_IP,port: 20001},
+            {IP:SERVER_IP,port: 20002}
+        ]
     };
 };
 
 exports.game_server = function(){
     return{
-        SERVERS: [
-            {IP:SERVER_IP,port: 5001},
-            {IP:SERVER_IP,port: 5002},
-            {IP:SERVER_IP,port: 5003},
-        ]
+
     };
 };

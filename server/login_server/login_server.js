@@ -50,7 +50,13 @@ exports.start = function(cfg){
     console.log("login server is listening on " + config.CLIENT_PORT);
 }
 
-//ÉèÖÃ¿çÓò·ÃÎÊ
+function getGate(uid){
+    var srvs = config.SERVERS;
+    var a = srvs[parseInt(uid)%srvs.length];
+    return "http://" + a.IP + ":" + a.port + "/";
+}
+
+//ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 app.all('*', function(req, res, next) {
     req.ip = getClientIp(req);
     res.header("Access-Control-Allow-Origin", "*");
@@ -152,7 +158,8 @@ app.get("/tokenlogin", function(req,res){
 
                     fangka: money.fangka,
                     money: money.money,
-                    token: token
+                    token: token,
+                    gate: getGate(uid)
                 }
             }
             send(res, ret);
@@ -198,7 +205,8 @@ app.get('/wechat_auth',function(req,res){
 
                                             fangka: 0,
                                             money: 0,
-                                            token: token
+                                            token: token,
+                                            gate: getGate(uid)
                                         }
                                     }
                                     send(res, ret);
@@ -220,7 +228,8 @@ app.get('/wechat_auth',function(req,res){
 
                                             fangka: money.fangka,
                                             money: money.money,
-                                            token: token
+                                            token: token,
+                                            gate: getGate(data.uid)
                                         }
                                     }
                                     send(res, ret);

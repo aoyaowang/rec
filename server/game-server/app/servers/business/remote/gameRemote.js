@@ -129,7 +129,7 @@ pro.getHallInfo = function(token, id, next) {
             return;
         }
         var hall = this.m_hall[id];
-        next(null, {code: consts.NOR_CODE.SUC_OK, data: hall});
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: hall, sync: user.sync});
     }.bind(this))
 }
 
@@ -150,7 +150,7 @@ pro.getRooms = function(token, id, type, next) {
         var hall = this.m_hall[id];
         user.HallType = id;
         hall.playerEnter(user, type);
-        next(null, {code: consts.NOR_CODE.SUC_OK});
+        next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.sync});
     }.bind(this))
 }
 
@@ -163,7 +163,7 @@ pro.leaveHall = function(token, next) {
         var hall = this.m_hall[user.HallType];
         user.HallType = null;
         hall.playerLeave(user);
-        next(null, {code: consts.NOR_CODE.SUC_OK, data: hall});
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: hall, sync: user.sync});
     }.bind(this))
 }
 
@@ -237,10 +237,10 @@ pro.createRoom = function(token, room, next) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
             }
-            var realtype = JSON.stringify([coin, num]);
-            var room2 = new GSLRoom(realtype, user, coin, num, bomb);
+            var room2 = new GSLRoom(type, user, coin, num, bomb);
             this.m_hall[0].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
+            next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.sync});
         }
     }.bind(this));
 }
@@ -266,7 +266,7 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
         {
             var ret = room.PlayerQiang(user);
             if (ret)
-                next(null, {code: consts.NOR_CODE.SUC_OK});
+                next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.sync});
             else
                 next(null, {code: consts.GAME.RED_OVER});
         } else {
@@ -293,7 +293,7 @@ pro.getDetail = function(token, hallid, roomid, next) {
             next(null, {code: consts.NOR_CODE.ERR_PARAM});
             return;
         }
-        next(null, {code: consts.NOR_CODE.SUC_OK, data: room.detail(user.uid)});
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: room.detail(user.uid), sync: user.sync});
 
     }.bind(this));
 }
