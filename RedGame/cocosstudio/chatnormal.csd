@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="67" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="36.0000" />
         <Children>
-          <AbstractNodeData Name="Text_1" ActionTag="-1860521227" Tag="68" IconVisible="False" LeftMargin="260.0000" RightMargin="260.0000" TopMargin="5.0000" BottomMargin="7.0000" FontSize="24" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="ft_text" ActionTag="-1860521227" Tag="68" IconVisible="False" LeftMargin="260.0000" RightMargin="260.0000" TopMargin="5.0000" BottomMargin="7.0000" FontSize="24" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="120.0000" Y="24.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="320.0000" Y="19.0000" />

@@ -50,9 +50,9 @@ var GHall = Core.obserData.extend({
     },
     playerEnter:function(user, type) {
         if (this.m_Players[user.uid]) return;
+        this.pushMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user.ShowData()}, type);
         this.m_Players[user.uid] = {user: user, type: type};
         this.m_PlayerCount = utils.size(this.m_Players);
-        this.pushMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user.ShowData()}, type);
     },
     playerLeave:function(user) {
         if (!this.m_Players[user.uid]) return;

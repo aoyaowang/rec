@@ -8,6 +8,9 @@ var Player = cc.Class.extend({
     head: "",
     uid: "",
     img:null,
+    username:function() {
+        return this.gamename == "" ? this.nickname : this.gamename;
+    },
 
     _list:null,
     addOb:function(cb, target) {

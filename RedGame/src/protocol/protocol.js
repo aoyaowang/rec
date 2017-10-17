@@ -13,7 +13,7 @@ var g_protocol = {
     "joinroom":"joinroom",
     "leaveroom":"leaveroom",
     "createsaolei":"createsaolei",
-    "saoleiQiang":"saoleiQiang",
+    "saoleiQiangrq":"saoleiQiang",
     "getdetail":"getdetail",
 
     ///////////SERVER_PUSH/////////////////////

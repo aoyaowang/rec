@@ -6,10 +6,10 @@
       <ObjectData Name="Layer" Tag="45" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="958.0000" />
         <Children>
-          <AbstractNodeData Name="Base" ActionTag="-2054280598" Tag="46" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Base" ActionTag="-2054280598" Tag="46" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="958.0000" />
             <Children>
-              <AbstractNodeData Name="Top" ActionTag="1270870636" Tag="47" IconVisible="False" BottomMargin="908.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="Top" ActionTag="1270870636" Tag="47" IconVisible="False" BottomMargin="908.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_back" ActionTag="1021980510" Tag="48" IconVisible="False" LeftMargin="8.4277" RightMargin="585.5723" TopMargin="7.0196" BottomMargin="6.9804" TouchEnable="True" FontSize="14" ButtonText="返回" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -50,7 +50,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="858.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="858.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_red" ActionTag="1558474796" Tag="52" IconVisible="False" LeftMargin="164.8626" RightMargin="175.1374" TouchEnable="True" FontSize="14" ButtonText="发送红包" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -83,7 +83,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_lab" ActionTag="1857540001" Tag="54" IconVisible="False" LeftMargin="40.4101" RightMargin="527.5898" TopMargin="16.8592" BottomMargin="59.1408" FontSize="24" LabelText="王者币" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_lab" ActionTag="1857540001" Tag="54" IconVisible="False" LeftMargin="40.4101" RightMargin="527.5899" TopMargin="16.8592" BottomMargin="59.1408" FontSize="24" LabelText="王者币" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="72.0000" Y="24.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="76.4101" Y="71.1408" />
@@ -117,7 +117,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="50.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="50.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="808.0000" />
                 <AnchorPoint />
                 <Position Y="100.0000" />

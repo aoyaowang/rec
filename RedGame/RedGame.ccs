@@ -20,23 +20,25 @@
           <Image Name="Top.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
+        <Project Name="chat.csd" Type="Layer" />
+        <Project Name="chatnormal.csd" Type="Layer" />
+        <Project Name="chatred.csd" Type="Layer" />
+        <Project Name="chatsys.csd" Type="Layer" />
         <Project Name="game.csd" Type="Layer" />
         <Project Name="loading.csd" Type="Layer" />
         <Project Name="main.csd" Type="Layer" />
         <Project Name="market.csd" Type="Layer" />
         <Project Name="message.csd" Type="Layer" />
+        <Project Name="reddetail.csd" Type="Layer" />
+        <Project Name="redopen.csd" Type="Layer" />
+        <Project Name="redover.csd" Type="Layer" />
+        <Project Name="redqiang.csd" Type="Layer" />
         <Project Name="roomitem.csd" Type="Layer" />
         <Project Name="rooms.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
-        <Project Name="chat.csd" Type="Layer" />
-        <Project Name="chatsys.csd" Type="Layer" />
-        <Project Name="chatred.csd" Type="Layer" />
-        <Project Name="chatnormal.csd" Type="Layer" />
-        <Project Name="redopen.csd" Type="Layer" />
-        <Project Name="redqiang.csd" Type="Layer" />
-        <Project Name="reddetail.csd" Type="Layer" />
-        <Project Name="redover.csd" Type="Layer" />
+        <Project Name="saolei.csd" Type="Layer" />
+        <Project Name="saoleisub.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

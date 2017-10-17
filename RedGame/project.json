@@ -16,10 +16,12 @@
         "src/app.js",
 
         "src/Common/common.js",
+        "src/Common/headMgr.js",
 
         "src/ui/loading.js",
         "src/ui/mainui.js",
         "src/ui/message.js",
+        "src/ui/uiMgr.js"
 
         "src/ui/main/actionui.js",
         "src/ui/main/hallui.js",
@@ -35,7 +37,15 @@
         "src/protocol/error.js",
 
         "src/game/player.js",
-        "src/game/gameinfo.js",
-        "src/ui/uiMgr.js"
+        "src/game/gameinfo.js"
+        "src/game/saolei/saoleired.js",
+        "src/game/saolei/saoleisub.js",
+        "src/game/saolei/saoleiui.js",
+        "src/game/shared/chatnormalui.js",
+        "src/game/shared/chatredui.js",
+        "src/game/shared/reddetail.js",
+        "src/game/shared/redopen.js",
+        "src/game/shared/redover.js",
+        "src/game/shared/redqiang.js"
     ]
 }

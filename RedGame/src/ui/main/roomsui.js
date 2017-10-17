@@ -78,7 +78,7 @@ var roomsUI = cc.Layer.extend({
                         c ? {name: name + c[0] + "ิช" + c[1] + "ฐü", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(c)} : null];
                     var ui = new roomitemUI(map);
                     this.m_lv1.push(ui);
-                    this.m_listview.insertBefore(ui, this.m_panel2);
+                    this.m_listview.insertCustomItem(ui, this.m_listview.getIndex(this.m_panel2));
                 }
             } else {
                 for (var key in this.m_lv1) {
@@ -123,7 +123,7 @@ var roomsUI = cc.Layer.extend({
                         } : null];
                     var ui = new roomitemUI(map);
                     this.m_lv2.push(ui);
-                    this.m_listview.insertBefore(ui, this.m_panel3);
+                    this.m_listview.insertCustomItem(ui, this.m_listview.getIndex(this.m_panel3));
                 }
             } else {
                 for (var key in this.m_lv2) {
@@ -167,7 +167,7 @@ var roomsUI = cc.Layer.extend({
                         } : null];
                     var ui = new roomitemUI(map);
                     this.m_lv3.push(ui);
-                    this.m_listview.addChild(ui);
+                    this.m_listview.pushBackCustomItem(ui);
                 }
             } else {
                 for (var key in this.m_lv3) {
