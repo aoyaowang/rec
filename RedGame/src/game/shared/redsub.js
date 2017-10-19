@@ -10,8 +10,9 @@ var redsubUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
-        this.setAnchorPoint(0, 0);
+
         this.setContentSize(this.Widget.getContentSize());
+        this.setAnchorPoint(0, 0);
 
         this.m_img_head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
         headMgr.loadHead(uid, img, function(data){

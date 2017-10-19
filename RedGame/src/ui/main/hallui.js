@@ -14,8 +14,9 @@ var hallUI = cc.Layer.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
-        this.setAnchorPoint(0, 0);
+
         this.setContentSize(this.Widget.getContentSize());
+        this.setAnchorPoint(0, 0);
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game1");
         btn.addClickEventListener(this.gameClick.bind(this));
