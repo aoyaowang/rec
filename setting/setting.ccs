@@ -1,0 +1,11 @@
+<Solution>
+  <PropertyGroup Name="setting" Version="2.3.3.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="bill.csd" Type="Layer" />
+        <Project Name="tocash.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
