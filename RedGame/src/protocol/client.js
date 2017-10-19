@@ -19,8 +19,8 @@ var Client = {
     },
     onMsg:function(id, msg, req) {
         Nlog("Msg:" + id + JSON.stringify(msg));
-        if (msg.code == -99 || msg.code == 500) {
-            this.onError(msg.code);
+        if (msg.sync) {
+            this.onSync(msg.sync);
         }
         if (msg.errormsg) {
             this.ShowMessage(msg.errormsg || "");
@@ -28,6 +28,17 @@ var Client = {
         if (!!this._list[id]) {
             for (var i in this._list[id]) {
                 this._list[id][i][id](msg, req);
+            }
+        }
+    },
+    onSync:function(sync) {
+        if (!sync) return;
+        for (var key in sync) {
+            var a = sync[key];
+            if (!!this._list[a.p]) {
+                for (var i in this._list[a.p]) {
+                    this._list[a.p][i][a.p](a.msg, null);
+                }   
             }
         }
     },

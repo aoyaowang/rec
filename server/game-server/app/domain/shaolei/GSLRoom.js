@@ -35,7 +35,7 @@ var GSLRoom = GBaseRoom.extend({
         owner.unlockMoney(coin, -1 * coin);
         owner.unlockFangka(1, -1);
 
-        this.PlayerEnter(owner);
+        //this.PlayerEnter(owner);
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1000,1);
@@ -49,7 +49,7 @@ var GSLRoom = GBaseRoom.extend({
     },
     toJSON:function()
     {
-        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
+        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner, over: this.m_RedList.length == 0};
     },
     detail:function(uid)
     {
@@ -100,7 +100,14 @@ var GSLRoom = GBaseRoom.extend({
         if (ret) {
             this.m_List[user.uid] = p;
             this.m_RedList.splice(0, 1);
-            player.Info.addMsg(enums.PROTOCOL.GAME_SHAOLEI_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, data: p});
+            var ot = {};
+            for (var key in this.m_List) {
+                var p = this.m_Players[key];
+                var m = this.m_List[key];
+                if (this.m_RedList.length == 0) ot[key] = {user: p.Info.ShowData(), m: m};
+                else ot[key] = {user: p.Info.ShowData(), m: "xxx"};
+            }
+            player.Info.addMsg(enums.PROTOCOL.GAME_SHAOLEI_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, data: p, other: ot});
             if (this.m_RedList.length == 0) {
                 this.GameOver();
             }
@@ -157,13 +164,17 @@ var GSLRoom = GBaseRoom.extend({
             }
             e = parseInt(e);
             player.Info.unlockMoney(lm, e / 100);
+            player.m_Result = e / 100;
             ownall = e / 100;
             if (player.Info.uid != this.m_Owner.uid)
                 userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, e, timestamp);
         }
 
         userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, ownall + oex + left - this.m_Coin, timestamp);
+        if (this.m_Players[this.m_Owner.uid] )
         this.m_Owner.unlockMoney(0, oex);
+
+        this.m_Hall.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0, bomb: this.m_Bomb});
 
     }
 });

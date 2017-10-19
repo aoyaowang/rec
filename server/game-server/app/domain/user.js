@@ -94,7 +94,7 @@ module.exports = {
             }
         }
         if (!bFind) {
-            this.sync.push({p: enums.PROTOCOL.MONEY_SYNC, {money: this.data.money, fangka: this.data.fangka});
+            this.sync.push({p: enums.PROTOCOL.MONEY_SYNC, money: this.data.money, fangka: this.data.fangka});
         }
     },
     addMsg:function(protocol, msg) {
@@ -112,5 +112,10 @@ module.exports = {
     reLogin:function() {
         this.sync = [];
         this.addMsg(enums.PROTOCOL.RELOGIN, {});
+    },
+    getSync:function() {
+        var r = this.sync;
+        this.sync = [];
+        return r;
     }
 };

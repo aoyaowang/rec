@@ -94,9 +94,9 @@ exports.start = function(port){
              {
                  var t = reqInfo.t;
                  var type = reqInfo.type;
-                 var coin = reqInfo.coin;
-                 var num = reqInfo.num;
-                 var bomb = reqInfo.bomb;
+                 var coin = parseInt(reqInfo.coin);
+                 var num = parseInt(reqInfo.num);
+                 var bomb = parseInt(reqInfo.bomb);
                  createsaolei(t, type, coin, num, bomb, resback);
                  return;
              }

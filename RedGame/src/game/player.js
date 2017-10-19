@@ -4,7 +4,7 @@
 var Player = cc.Class.extend({
     nickname: "",
     gamename: "",
-    sex: 1, //1ÄÐ  2Å®
+    sex: 1, //1ï¿½ï¿½  2Å®
     head: "",
     uid: "",
     img:null,
@@ -45,7 +45,20 @@ var __selfinfo = Player.extend({
 
     token: "",
     logined: false,
-    sync:0
+    sync:0,
+
+    beginSync:function() {
+        Client.addMap("sync", this);
+        Server.gate("sync", {t: this.token});
+    },
+    endSync:function() {
+        this.logined = false;
+        Client.removeMap("sync", this);
+    },
+    sync:function() {
+        if (!this.logined) return;
+        Server.gate("sync", {t: this.token});
+    }
 });
 
 var RoleInfo = new __selfinfo();

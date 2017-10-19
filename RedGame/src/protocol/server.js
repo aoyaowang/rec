@@ -1,27 +1,9 @@
 /**
  * Created by hasee on 2017-10-12.
  */
-var Server = {
-    Name:"Server",
+var __httpreq = cc.Class.extend({
+    _timeOut:null,
     TIMEOUT: 10,
-    gate:function(id, msg) {
-        if (!g_protocol[id])  {
-            Xlog("protocol not exit:" + ID);
-            return;
-        }
-
-        var url = g_gate + g_protocol[id];
-        this.basesend(url, msg, id);
-    },
-    send:function(id, msg) {
-        if (!g_protocol[id])  {
-            Xlog("protocol not exit:" + ID);
-            return;
-        }
-
-        var url = g_server + g_protocol[id];
-        this.basesend(url, msg, id);
-    },
     basesend:function(url, vMap, id) {
         var xhr = cc.loader.getXMLHttpRequest();
         var params = "?";
@@ -48,9 +30,9 @@ var Server = {
                     cc.log("xhr.responseText:{0}".Format(xhr.responseText));
                     Client.onMsg(id, JSON.parse(xhr.responseText), vMap);
                 }
-                else{
-                    Client.onMsg(id, {code: -99}, vMap);
-                }
+                // else{
+                //     Client.onMsg(id, {code: -99}, vMap);
+                // }
             }
         }
         xhr.send();
@@ -59,5 +41,30 @@ var Server = {
             xhr.abort();
             Client.onMsg(id, {code: 500}, vMap);
         },this.TIMEOUT * 1000,this);
+    }
+});
+
+var Server = {
+    Name:"Server",
+    
+    gate:function(id, msg) {
+        if (!g_protocol[id])  {
+            Xlog("protocol not exit:" + ID);
+            return;
+        }
+
+        var url = g_gate + g_protocol[id];
+        var req = new __httpreq();
+        req.basesend(url, msg, id);
+    },
+    send:function(id, msg) {
+        if (!g_protocol[id])  {
+            Xlog("protocol not exit:" + ID);
+            return;
+        }
+
+        var url = g_server + g_protocol[id];
+        var req = new __httpreq();
+        req.basesend(url, msg, id);
     }
 };

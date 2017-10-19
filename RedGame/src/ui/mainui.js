@@ -64,15 +64,19 @@ var mainUI = cc.Layer.extend({
         this.changeUI(0);
 
         this.m_game = ccui.helper.seekWidgetByName(this.Widget, "game");
+
+        Server.gate("entergame", {t:RoleInfo.token});
         return true;
     },
     onEnter:function() {
         this._super();
         RoleInfo.addOb(this.RoleInfoChange, this);
+        Client.addMap("entergame", this);
     },
     onExit:function() {
         this._super();
         RoleInfo.removeOb(this.RoleInfoChange, this);
+        Client.removeMap("entergame", this);
     },
     RoleInfoChange:function(role) {
         if (RoleInfo.img) {
@@ -109,5 +113,11 @@ var mainUI = cc.Layer.extend({
         this.m_sysui.setVisible(index == 2);
         this.m_marketui.setVisible(index == 3);
         this.m_actionui.setVisible(index == 4);
+    },
+    entergame:function(msg) {
+        if (msg.code == 0) {
+            RoleInfo.logined = true;
+            RoleInfo.beginSync();
+        }
     }
 });

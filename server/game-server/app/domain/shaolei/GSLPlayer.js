@@ -7,10 +7,15 @@ var Core = require("../base/Core");
 var GSLPlayer = GBasePlayer.extend({
     m_Qiang:null,
     m_LastNum:null,
+    m_Result:null,
     m_EnterTime:null,
     ctor:function(user)
     {
         GBasePlayer.prototype.ctor.apply(this,arguments);
+
+        Object.defineProperty(this, "Info", {
+            get: function () { return user}
+        });
 
         this.reset();
     },
@@ -23,7 +28,8 @@ var GSLPlayer = GBasePlayer.extend({
     },
     toJSON:function()
     {
-        return {uid: this.uid, nickname: Info.nickname, gamename: Info.gamename, headimg: Info.heaimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang};
+        return {uid: this.uid, nickname: this.Info.nickname, gamename: this.Info.gamename, 
+                headimg: this.Info.heaimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang, last: this.m_LastNum, result: this.m_Result};
     },
     Qiang:function(q) {
         if (this.m_Qiang != 0) return false;
@@ -34,6 +40,7 @@ var GSLPlayer = GBasePlayer.extend({
     reset:function() {
         this.m_Qiang = 0;
         this.m_LastNum = -1;
+        this.m_Result = 0;
     }
 });
 module.exports = GSLPlayer;

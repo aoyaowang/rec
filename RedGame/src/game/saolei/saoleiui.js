@@ -44,7 +44,7 @@ var saoleiUI = cc.Layer.extend({
         Client.addMap("saoleiqiang", this);
         Client.addMap("shaoleiover", this);
         Client.addMap("getdetail", this);
-        var msg = new chatsysUI(RoleInfo.username() + " ½øÈë·¿¼ä");
+        var msg = new chatsysUI(RoleInfo.username() + " è¿›å…¥æˆ¿é—´");
         this.m_list.pushBackCustomItem(msg);
     },
     onExit:function() {
@@ -65,13 +65,13 @@ var saoleiUI = cc.Layer.extend({
     playerenter:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
-        var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " ½øÈë·¿¼ä");
+        var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " è¿›å…¥æˆ¿é—´");
         this.m_list.pushBackCustomItem(msg);
     },
     playerleave:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
-        var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " Àë¿ª·¿¼ä");
+        var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " ç¦»å¼€æˆ¿é—´");
         this.m_list.pushBackCustomItem(c);
     },
     shaoleicreate:function(msg){
@@ -81,7 +81,7 @@ var saoleiUI = cc.Layer.extend({
         var num = msg.num;
         var bomb = msg.bomb;
         var owner = msg.owner;
-        var red = coin + "½ğ/À×" + bomb + "/" + (num == 7 ? "1.5" : "1.0") +"±¶";
+        var red = coin + "é‡‘é¢/é›·" + bomb + "/" + (num == 7 ? "1.5" : "1.0") +"å€";
 
         this.m_redlist[msg.RoomID] = {
             coin: coin,
@@ -114,24 +114,55 @@ var saoleiUI = cc.Layer.extend({
             this.Widget.addChild(ui, 99);
             //Server.gate("saoleiQiangrq", {t: RoleInfo.token, h: data.halltype, r: data.roomid});
         }
-        else if (r.state == 1) { //×Ô¼ºÃ»ÇÀµ½£¬ÇÀÍêÁË
+        else if (r.state == 1) { //æ²¡æœ‰æŠ¢åˆ°ï¼Œå·²ç»æ²¡äº†
             var ui = new redoverUI(this.m_type,r);
             this.Widget.addChild(ui, 99);
         }
-        else if (r.state == 2) { //×Ô¼ºÇÀµ½ÁË£¬Ö±½Ó¿´ÏêÇé
+        else if (r.state == 2) { //æŠ¢åˆ°äº†
             Server.gate("getdetail", {t: RoleInfo.token, h: data.halltype, r: data.roomid});
+        }
+        else if (r.state == 3 && r.detail) {
+            var ui = new reddetailUI(r.detail);
+            this.Widget.addChild(ui, 99);
         }
     },
     saoleiQiangrq:function(msg) {
-
+        //NOTUSED
     },
     saoleiqiang:function(msg) {
+        var id = msg.RoomID;
+        var money = msg.data;
+        var data = msg.other;
+        var coin = msg.coin;
+        var num = msg.num;
 
+        this.m_redlist[id].state = 2;
+
+        var ui = new redopenUI(id, money, coin, num, data);
+        this.Widget.addChild(ui, 99);
     },
     shaoleiover:function(msg) {
+        var id = msg.roomid;
+        this.m_redlist[id].state = this.m_redlist[id].state == 0 ? 1 : this.m_redlist[id].state;
+        var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
+        var ui = new chatnormalUI(text + msg.over ? "çº¢åŒ…å·²ç»è¢«æŠ¢å®Œ" : "çº¢åŒ…å·²ç»ç»“æŸ");
+        for (var key in msg.data) {
+            var p = msg.data[key];
+            var n = p.gamename == "" ? p.nickname : p.gamename;
+            var m = p.qiang;
+            var l = p.last;
+            if (msg.bomb == l) {
 
+            }
+        }
     },
     getdetail:function(msg) {
-
+        var id = msg.roomid;
+        if (msg.over) {
+            this.m_redlist[id].state = 3;
+            this.m_redlist[id].detail = msg;
+        }
+        var ui = new reddetailUI(msg);
+        this.Widget.addChild(ui, 99);
     }
 });

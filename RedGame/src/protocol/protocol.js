@@ -23,6 +23,6 @@ var g_protocol = {
     "shaoleicreate": "shaoleicreate",
     "shaoleiqiang": "shaoleiqiang",
     "shaoleiover": "shaoleiover",
-    "playerenter": "playerenterroom",
-    "playerleave": "playerleaveroom"
+    "playerenterroom": "playerenterroom",
+    "playerleaveroom": "playerleaveroom"
 };
