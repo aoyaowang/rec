@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var saoleired = cc.Layer.extend({
+var saoleired = ccui.Widget.extend({
     m_l1: null,
     m_l2: null,
     m_l3: null,

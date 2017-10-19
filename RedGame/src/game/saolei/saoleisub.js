@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var saoleisub = cc.Layer.extend({
+var saoleisub = ccui.Widget.extend({
     m_cb: null,
     ctor:function(text, cb) {
         this._super();

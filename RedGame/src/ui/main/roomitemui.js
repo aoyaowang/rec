@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-16.
  */
-var roomitemUI = cc.Layer.extend({
+var roomitemUI = ccui.Widget.extend({
     m_name_1:null,
     m_num_1:null,
     m_name_2:null,

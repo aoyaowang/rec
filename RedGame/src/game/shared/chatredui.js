@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var chatredUI = cc.Layer.extend({
+var chatredUI = ccui.Widget.extend({
     m_cb:null,
     ctor:function(img, nickname, text, cb) {
         this._super();

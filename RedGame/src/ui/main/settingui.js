@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-15.
  */
-var settingUI = cc.Layer.extend({
+var settingUI = ccui.Widget.extend({
     m_ft_name:null,
     m_img_head:null,
     m_ft_fangka:null,

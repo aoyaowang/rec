@@ -7,7 +7,7 @@ var userDao = require('../dao/userDao');
 var enums = require('../consts/enums');
 var Core = require('../base/Core');
 
-module.exports = {
+module.exports = Core.obserData.extend({
     sync:null,
     synctime:null,
     inGame:null,
@@ -118,4 +118,4 @@ module.exports = {
         this.sync = [];
         return r;
     }
-};
+});

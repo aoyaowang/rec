@@ -57,7 +57,9 @@ var __selfinfo = Player.extend({
     },
     sync:function() {
         if (!this.logined) return;
-        Server.gate("sync", {t: this.token});
+        setTimeout(function(){
+            Server.gate("sync", {t: this.token});
+        }.bind(this), 1000);
     }
 });
 

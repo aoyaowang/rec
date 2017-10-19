@@ -16,6 +16,7 @@ var g_resources = [
     "res/redopen.json",
     "res/redover.json",
     "res/redqiang.json",
+    "res/redsub.json",
     "res/rooms.json",
     "res/roomitem.json",
     "res/saolei.json",

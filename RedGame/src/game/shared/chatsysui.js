@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var chatsysUI = cc.Layer.extend({
+var chatsysUI = ccui.Widget.extend({
     ctor:function(text) {
         this._super();
 

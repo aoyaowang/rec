@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var saoleiUI = cc.Layer.extend({
+var saoleiUI = ccui.Widget.extend({
     m_title:null,
     m_list:null,
     m_ft_money:null,
@@ -14,7 +14,7 @@ var saoleiUI = cc.Layer.extend({
         this._super();
 
         this.m_type = type;
-        this.m_subtype = subsype;
+        this.m_subtype = subtype;
 
         var l = ccs.load("res/chat.json");
         this.Widget = l.node;
@@ -89,6 +89,7 @@ var saoleiUI = cc.Layer.extend({
             bomb: bomb,
             owner: owner,
             msg: msg,
+            roomid: msg.RoomID,
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
@@ -131,6 +132,7 @@ var saoleiUI = cc.Layer.extend({
     },
     saoleiqiang:function(msg) {
         var id = msg.RoomID;
+        if (!this.m_redlist[id]) return;
         var money = msg.data;
         var data = msg.other;
         var coin = msg.coin;
@@ -138,26 +140,37 @@ var saoleiUI = cc.Layer.extend({
 
         this.m_redlist[id].state = 2;
 
-        var ui = new redopenUI(id, money, coin, num, data);
+        var ui = new redopenUI(this.m_type,id, money, coin, num, data, this.m_redlist[id]);
         this.Widget.addChild(ui, 99);
     },
     shaoleiover:function(msg) {
         var id = msg.roomid;
+        if (!this.m_redlist[id]) return;
         this.m_redlist[id].state = this.m_redlist[id].state == 0 ? 1 : this.m_redlist[id].state;
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
-        var ui = new chatnormalUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
+        var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
+        this.m_list.pushBackCustomItem(ui);
         for (var key in msg.data) {
             var p = msg.data[key];
             var n = p.gamename == "" ? p.nickname : p.gamename;
             var m = p.qiang;
             var l = p.last;
-            if (msg.bomb == l) {
-
+            if (p.uid == this.m_redlist[id].owner.uid) {
+                var ui2 = new chatnormalUI("【发】 " + n + "免死", cc.Color(0,0,200));
+                this.m_list.pushBackCustomItem(ui2);
+            }
+            else if (msg.bomb == l)                {
+                var ui2 = new chatnormalUI("【抢】 " + n + "中雷", cc.Color(255,0,0));
+                this.m_list.pushBackCustomItem(ui2);
+            } else {
+                var ui2 = new chatnormalUI("【抢】 " + n + "无雷", cc.Color(255,255,255));
+                this.m_list.pushBackCustomItem(ui2);
             }
         }
     },
     getdetail:function(msg) {
         var id = msg.roomid;
+        if (!this.m_redlist[id]) return;
         if (msg.over) {
             this.m_redlist[id].state = 3;
             this.m_redlist[id].detail = msg;

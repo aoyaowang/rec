@@ -43,9 +43,11 @@
         "src/game/saolei/saoleiui.js",
         "src/game/shared/chatnormalui.js",
         "src/game/shared/chatredui.js",
+        "src/game/shared/chatsysui.js",
         "src/game/shared/reddetail.js",
         "src/game/shared/redopen.js",
         "src/game/shared/redover.js",
-        "src/game/shared/redqiang.js"
+        "src/game/shared/redqiang.js",
+        "src/game/shared/redsub.js"
     ]
 }

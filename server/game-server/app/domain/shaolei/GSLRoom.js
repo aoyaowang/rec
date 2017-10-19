@@ -2,11 +2,13 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var consts = require("../consts/consts");
-var utils = require("../util/utils");
-var userDao = require("../dao/userDao");
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var consts = require("../../consts/consts");
+var utils = require("../../util/utils");
+var userDao = require("../../dao/userDao");
+
+var GBaseRoom = require('../GBaseRoom');
 
 var GSLRoom = GBaseRoom.extend({
     m_Coin: null,
@@ -49,16 +51,26 @@ var GSLRoom = GBaseRoom.extend({
     },
     toJSON:function()
     {
-        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner, over: this.m_RedList.length == 0};
+        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin / 100, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner, over: this.m_RedList.length == 0};
     },
     detail:function(uid)
     {
-        var data = {coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
+        var data = {roomid: this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
         if (!!uid) {
-            if (this.m_bOver) data.Players = this.m_Players;
-            if (!!this.m_Players[uid]) data.qiang = this.m_Players[uid].m_Qiang;
+            data.data = this.m_Players;
+            if (!this.m_bOver) {
+                for (var key in data.data) {
+                    data.data[key] = {data: this.m_Players[key].Info.ShowData(), m: "xxx", time: this.m_Players[key].m_Time};
+                    if (key == uid) data.data[key].m = this.m_Players[key].m_Qiang;
+                }
+            }
         } else {
             if (this.m_bOver) data.Players = this.m_Players;
+            else {
+                for (var key in data.data) {
+                    data.data[key] = {data: this.m_Players[key].Info.ShowData(), m: "xxx", time: this.m_Players[key].m_Time};
+                }    
+            }
         }
 
         return data;
@@ -104,8 +116,8 @@ var GSLRoom = GBaseRoom.extend({
             for (var key in this.m_List) {
                 var p = this.m_Players[key];
                 var m = this.m_List[key];
-                if (this.m_RedList.length == 0) ot[key] = {user: p.Info.ShowData(), m: m};
-                else ot[key] = {user: p.Info.ShowData(), m: "xxx"};
+                if (this.m_RedList.length == 0) ot[key] = {data: p};
+                else ot[key] = {data: p.Info.ShowData(), m: "xxx", time: p.m_Time};
             }
             player.Info.addMsg(enums.PROTOCOL.GAME_SHAOLEI_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, data: p, other: ot});
             if (this.m_RedList.length == 0) {
@@ -157,6 +169,7 @@ var GSLRoom = GBaseRoom.extend({
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
             var l = Math.floor(player.m_Qiang * fl);
+            if (l < 1) l = 0;
             var e = player.m_Qiang - l;
             if (player.m_LastNum == this.m_Bomb && player.Info.uid != this.m_Owner.uid) {
                 e -= lm * 100;
@@ -180,5 +193,4 @@ var GSLRoom = GBaseRoom.extend({
 });
 module.exports = GSLRoom;
 
-var GBaseRoom = require('../GBaseRoom');
 var GSLPlayer = require('./GSLPlayer');

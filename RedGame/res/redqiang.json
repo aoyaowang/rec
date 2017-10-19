@@ -13,6 +13,293 @@
       "AnimationList": [],
       "ObjectData": {
         "Tag": 70,
+        "Children": [
+          {
+            "ClipAble": false,
+            "BackColorAlpha": 0,
+            "ComboBoxIndex": 1,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Tag": 24,
+            "ActionTag": -1729379453,
+            "Size": {
+              "X": 640.0,
+              "Y": 1038.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/ai9.9.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 328.0853,
+              "Y": 449.079
+            },
+            "Scale": {
+              "ScaleX": 2.2768,
+              "ScaleY": 2.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5126,
+              "Y": 0.4326
+            },
+            "PreSize": {
+              "X": 0.3125,
+              "Y": 0.1927
+            },
+            "LeftMargin": 228.0853,
+            "RightMargin": 211.9147,
+            "TopMargin": 488.921,
+            "BottomMargin": 349.079,
+            "Tag": 21,
+            "ActionTag": -1656578580,
+            "Size": {
+              "X": 200.0,
+              "Y": 200.0
+            },
+            "Name": "Sprite_3",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "res/ai_.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 328.4404,
+              "Y": 628.4846
+            },
+            "Scale": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5132,
+              "Y": 0.6055
+            },
+            "PreSize": {
+              "X": 1.4063,
+              "Y": 0.8179
+            },
+            "LeftMargin": -121.5596,
+            "RightMargin": -138.4404,
+            "TopMargin": -14.9846,
+            "BottomMargin": 203.9846,
+            "Tag": 20,
+            "ActionTag": -1235012673,
+            "Size": {
+              "X": 900.0,
+              "Y": 849.0
+            },
+            "Name": "ai__2",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 100,
+            "ButtonText": "開",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "res/aju.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "res/ajv.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 200,
+            "Scale9Height": 208,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 320.2322,
+              "Y": 427.9715
+            },
+            "Scale": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5004,
+              "Y": 0.4123
+            },
+            "PreSize": {
+              "X": 0.3594,
+              "Y": 0.2216
+            },
+            "LeftMargin": 205.2322,
+            "RightMargin": 204.7678,
+            "TopMargin": 495.0285,
+            "BottomMargin": 312.9715,
+            "Tag": 25,
+            "ActionTag": -1641567604,
+            "Size": {
+              "X": 230.0,
+              "Y": 230.0
+            },
+            "Name": "btn_qiang",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "res/a5p.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "res/a5p.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 30,
+            "Scale9Height": 54,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 120.7909,
+              "Y": 819.911
+            },
+            "Scale": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.1887,
+              "Y": 0.7899
+            },
+            "PreSize": {
+              "X": 0.0938,
+              "Y": 0.0732
+            },
+            "LeftMargin": 90.7909,
+            "RightMargin": 489.2091,
+            "TopMargin": 180.089,
+            "BottomMargin": 781.911,
+            "Tag": 23,
+            "ActionTag": -358325046,
+            "Size": {
+              "X": 60.0,
+              "Y": 76.0
+            },
+            "Name": "btn_close",
+            "ctype": "ButtonObjectData"
+          }
+        ],
         "Size": {
           "X": 640.0,
           "Y": 1038.0
@@ -20,7 +307,14 @@
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
-      "UsedResources": [],
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "res/a5p.png",
+        "res/ai_.png",
+        "res/ai9.9.png",
+        "res/aju.png",
+        "res/ajv.png"
+      ],
       "ctype": "GameFileData"
     }
   },

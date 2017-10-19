@@ -27,7 +27,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_1" ActionTag="213506443" Tag="49" IconVisible="False" LeftMargin="162.2403" RightMargin="157.7597" TopMargin="8.2883" BottomMargin="11.7117" IsCustomSize="True" FontSize="24" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_title" ActionTag="213506443" Tag="49" IconVisible="False" LeftMargin="162.2403" RightMargin="157.7597" TopMargin="8.2883" BottomMargin="11.7117" IsCustomSize="True" FontSize="24" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="320.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="322.2403" Y="26.7117" />
@@ -50,7 +50,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="858.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="856.9127" BottomMargin="1.0873" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_red" ActionTag="1558474796" Tag="52" IconVisible="False" LeftMargin="164.8626" RightMargin="175.1374" TouchEnable="True" FontSize="14" ButtonText="发送红包" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -94,7 +94,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_,money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="31.0454" RightMargin="512.9546" TopMargin="54.6992" BottomMargin="15.3008" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="31.0454" RightMargin="512.9546" TopMargin="54.6992" BottomMargin="15.3008" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="96.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="79.0454" Y="30.3008" />
@@ -107,10 +107,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position />
+                <Position Y="1.0873" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition />
+                <PrePosition Y="0.0011" />
                 <PreSize X="1.0000" Y="0.1044" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

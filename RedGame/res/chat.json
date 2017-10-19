@@ -26,6 +26,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -64,6 +66,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -215,7 +219,7 @@
                       "X": 320.0,
                       "Y": 30.0
                     },
-                    "Name": "Text_1",
+                    "Name": "ft_title",
                     "ctype": "TextObjectData"
                   }
                 ],
@@ -242,11 +246,13 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": 1.0873
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -256,13 +262,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": 0.0011
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.1044
                 },
-                "TopMargin": 858.0,
+                "TopMargin": 856.9127,
+                "BottomMargin": 1.0873,
                 "Tag": 51,
                 "Children": [
                   {
@@ -447,7 +454,7 @@
                       "Y": 0.24
                     },
                     "LeftMargin": 40.4101,
-                    "RightMargin": 527.5898,
+                    "RightMargin": 527.5899,
                     "TopMargin": 16.8592,
                     "BottomMargin": 59.1408,
                     "Tag": 54,
@@ -512,7 +519,7 @@
                       "X": 96.0,
                       "Y": 30.0
                     },
-                    "Name": "ft_,money",
+                    "Name": "ft_money",
                     "ctype": "TextObjectData"
                   }
                 ],
@@ -542,6 +549,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {

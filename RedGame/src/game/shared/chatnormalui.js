@@ -1,8 +1,8 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var chatnormalUI = cc.Layer.extend({
-    ctor:function(text) {
+var chatnormalUI = ccui.Widget.extend({
+    ctor:function(text,cl) {
         this._super();
 
         var l = ccs.load("res/chatnormal.json");
@@ -11,6 +11,7 @@ var chatnormalUI = cc.Layer.extend({
 
         var t = ccui.helper.seekWidgetByName(this.Widget, "ft_text");
         t.setString(text);
+        t.setColor(cl);
         return true;
     },
     onEnter:function() {

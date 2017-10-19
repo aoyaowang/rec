@@ -31,11 +31,9 @@ var hallUI = cc.Layer.extend({
     },
     onEnter:function() {
         this._super();
-        Client.addMap("joinroom", this);
     },
     onExit:function() {
         this._super();
-        Client.removeMap("joinroom", this);
     },
     gameClick:function(sender) {
         var type = 1;

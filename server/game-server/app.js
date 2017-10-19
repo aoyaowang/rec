@@ -28,6 +28,11 @@ app.configure('production|development', 'business', function() {
   }
 });
 
+app.configure('production|development', 'http', function() {
+  var gate = require("./app/gate/gate");
+  gate.start();
+});
+
 app.start();
 
 app.event.on('start_all',function()

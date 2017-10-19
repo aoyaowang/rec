@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-17.
  */
-var redqiangUI = cc.Layer.extend({
+var redqiangUI = ccui.Widget.extend({
     m_type: null,
     m_red:null,
     ctor:function(type, r) {
@@ -16,6 +16,9 @@ var redqiangUI = cc.Layer.extend({
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_qiang");
         btn.addClickEventListener(this.qiangClick.bind(this));
+
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_close");
+        btn.addClickEventListener(this.closeClick.bind(this));
         return true;
     },
     onEnter:function() {
@@ -32,6 +35,9 @@ var redqiangUI = cc.Layer.extend({
         }
     },
     shaoleiQiangrq:function() {
+        this.removeFromParent();
+    },
+    closeClick:function() {
         this.removeFromParent();
     }
 });

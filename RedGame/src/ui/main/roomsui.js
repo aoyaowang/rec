@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-16.
  */
-var roomsUI = cc.Layer.extend({
+var roomsUI = ccui.Widget.extend({
     m_btn_lv1:null,
     m_btn_lv1_add:null,
     m_btn_lv2:null,
@@ -73,9 +73,9 @@ var roomsUI = cc.Layer.extend({
                     var a = l[i];
                     var b = l[i+1];
                     var c = l[i+2];
-                    var map = [a ? {name: name + a[0] + "Ôª" + a[1] + "°ü", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(a)} : null,
-                        b ? {name: name + b[0] + "Ôª" + b[1] + "°ü", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(b)} : null,
-                        c ? {name: name + c[0] + "Ôª" + c[1] + "°ü", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(c)} : null];
+                    var map = [a ? {name: name + a[0] + "Ôª" + a[1] + "ï¿½ï¿½", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(a)} : null,
+                        b ? {name: name + b[0] + "Ôª" + b[1] + "ï¿½ï¿½", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(b)} : null,
+                        c ? {name: name + c[0] + "Ôª" + c[1] + "ï¿½ï¿½", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(c)} : null];
                     var ui = new roomitemUI(map);
                     this.m_lv1.push(ui);
                     this.m_listview.insertCustomItem(ui, this.m_listview.getIndex(this.m_panel2));
@@ -101,21 +101,21 @@ var roomsUI = cc.Layer.extend({
                     var b = l[i + 1];
                     var c = l[i + 2];
                     var map = [a ? {
-                        name: name + a[0] + "Ôª" + a[1] + "°ü",
+                        name: name + a[0] + "Ôª" + a[1] + "ï¿½ï¿½",
                         num: 0,
                         cb: this.roomClick,
                         target: this,
                         tag: JSON.stringify(a)
                     } : null,
                         b ? {
-                            name: name + b[0] + "Ôª" + b[1] + "°ü",
+                            name: name + b[0] + "Ôª" + b[1] + "ï¿½ï¿½",
                             num: 0,
                             cb: this.roomClick,
                             target: this,
                             tag: JSON.stringify(b)
                         } : null,
                         c ? {
-                            name: name + c[0] + "Ôª" + c[1] + "°ü",
+                            name: name + c[0] + "Ôª" + c[1] + "ï¿½ï¿½",
                             num: 0,
                             cb: this.roomClick,
                             target: this,
@@ -145,21 +145,21 @@ var roomsUI = cc.Layer.extend({
                     var b = l[i + 1];
                     var c = l[i + 2];
                     var map = [a ? {
-                        name: name + a[0] + "Ôª" + a[1] + "°ü",
+                        name: name + a[0] + "Ôª" + a[1] + "ï¿½ï¿½",
                         num: 0,
                         cb: this.roomClick,
                         target: this,
                         tag: JSON.stringify(a)
                     } : null,
                         b ? {
-                            name: name + b[0] + "Ôª" + b[1] + "°ü",
+                            name: name + b[0] + "Ôª" + b[1] + "ï¿½ï¿½",
                             num: 0,
                             cb: this.roomClick,
                             target: this,
                             tag: JSON.stringify(b)
                         } : null,
                         c ? {
-                            name: name + c[0] + "Ôª" + c[1] + "°ü",
+                            name: name + c[0] + "Ôª" + c[1] + "ï¿½ï¿½",
                             num: 0,
                             cb: this.roomClick,
                             target: this,
@@ -182,9 +182,13 @@ var roomsUI = cc.Layer.extend({
     BackClick:function() {
         this.removeFromParent();
     },
-    joinroom:function(msg) {
+    joinroom:function(msg, req) {
         if (msg.code == 0) {
-
+            if (this.m_type == 1) {
+                var rn = req.type == 1 ? "åˆçº§æˆ¿" : req.type == 2 ? "ä¸­çº§æˆ¿" : "é«˜çº§æˆ¿";
+                var ui = new saoleiUI(this.m_type, req.type, "ç‹è€…æ‰«é›·" + rn);
+                uiMgr.mainUI.m_game.addChild(ui);
+            }
         }
     }
 });

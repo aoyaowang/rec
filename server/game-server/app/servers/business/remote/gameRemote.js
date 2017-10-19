@@ -15,6 +15,7 @@ var GHall = require('../../../domain/GHall');
 var GSLRoom = require('../../../domain/shaolei/GSLRoom');
 
 var Core = require('../../../base/Core');
+var baseRemote = require('../../../base/baseRemote');
 
 module.exports = function(app) {
     return new Remote(app);
@@ -69,8 +70,8 @@ pro.userEnter = function(token, next) {
 
     var uid = t.uid;
 
-    var user = new User;
-    user.Init(uid, function(err, res){
+    var user = new User();
+    user.init(uid, function(err, res){
         if (!!err) {
             next(null, {code: consts.NOR_CODE.FAILED});
             return;

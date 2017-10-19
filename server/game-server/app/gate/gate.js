@@ -1,4 +1,5 @@
 var http = require('http');
+var url = require('url');
 http.globalAgent.maxSockets = 4000;
 var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require("pomelo");
@@ -123,11 +124,11 @@ exports.start = function(port){
     };
  
     server = http.createServer(serverArgs);
-    server.listen(svr.httpport);
+    server.listen(svr.port + 10000);
     server.addListener("connection", function(socket){
         socket.setTimeout(15000);
     });
-    logger.log("gate server is listening on " + port);
+    console.warn("gate server is listening on " + (svr.port + 10000));
 }
 
 function enter(t, cb) {

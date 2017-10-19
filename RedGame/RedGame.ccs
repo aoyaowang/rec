@@ -16,8 +16,19 @@
           <Image Name="loadingNew5.png" />
         </Folder>
         <Folder Name="res">
+          <Image Name="ac_.9.png" />
+          <Image Name="acc.9.png" />
+          <Image Name="ai_.png" />
+          <Image Name="ai9.9.png" />
+          <Image Name="ajt.png" />
           <Image Name="Btn.png" />
           <Image Name="Top.png" />
+          <Image Name="zt.png" />
+          <Image Name="ajv.png" />
+          <Image Name="ajp.png" />
+          <Image Name="aju.png" />
+          <Image Name="a5p.png" />
+          <Image Name="ak0.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="chat.csd" Type="Layer" />
@@ -35,10 +46,11 @@
         <Project Name="redqiang.csd" Type="Layer" />
         <Project Name="roomitem.csd" Type="Layer" />
         <Project Name="rooms.csd" Type="Layer" />
-        <Project Name="setting.csd" Type="Layer" />
-        <Project Name="sys.csd" Type="Layer" />
         <Project Name="saolei.csd" Type="Layer" />
         <Project Name="saoleisub.csd" Type="Layer" />
+        <Project Name="setting.csd" Type="Layer" />
+        <Project Name="sys.csd" Type="Layer" />
+        <Project Name="redsub.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
