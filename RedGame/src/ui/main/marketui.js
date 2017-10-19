@@ -9,6 +9,7 @@ var marketUI = cc.Layer.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setAnchorPoint(0, 0);
         this.setContentSize(this.Widget.getContentSize());
         return true;
     },

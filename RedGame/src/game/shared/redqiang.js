@@ -14,6 +14,7 @@ var redqiangUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setAnchorPoint(0, 0);
         this.setContentSize(this.Widget.getContentSize());
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_qiang");
