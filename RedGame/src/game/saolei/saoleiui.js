@@ -20,6 +20,8 @@ var saoleiUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         this.m_list = ccui.helper.seekWidgetByName(this.Widget, "chatview");
         this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         this.m_ft_money.setString(RoleInfo.money);

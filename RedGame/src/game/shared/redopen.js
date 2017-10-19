@@ -31,6 +31,8 @@ var redopenUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_close");
         btn.addClickEventListener(this.closeClick.bind(this));
 

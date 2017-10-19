@@ -25,6 +25,8 @@ var roomsUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         this.m_lv1 = [];
         this.m_lv2 = [];
         this.m_lv3 = [];

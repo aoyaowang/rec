@@ -15,6 +15,8 @@ var roomitemUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         if (!info) return true;
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_1");
         if (info[0]) {

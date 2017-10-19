@@ -8,6 +8,8 @@ var marketUI = cc.Layer.extend({
         var l = ccs.load("res/market.json");
         this.Widget = l.node;
         this.addChild(this.Widget);
+
+        this.setContentSize(this.Widget.getContentSize());
         return true;
     },
     onEnter:function() {

@@ -32,6 +32,8 @@ var saoleired = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         this.m_list = ccui.helper.seekWidgetByName(this.Widget, "ListView_1");
         var p = ccui.helper.seekWidgetByName(this.Widget, "btn_1");
         p.addClickEventListener(this.btn1Click.bind(this));

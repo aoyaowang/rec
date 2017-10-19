@@ -9,6 +9,8 @@ var sysUI = cc.Layer.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         return true;
     },
     onEnter:function() {

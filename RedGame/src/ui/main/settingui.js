@@ -13,6 +13,8 @@ var settingUI = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         this.m_ft_name = ccui.helper.seekWidgetByName(this.Widget, "ft_name");
         this.m_img_head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
         this.m_ft_fangka = ccui.helper.seekWidgetByName(this.Widget, "ft_fangka");

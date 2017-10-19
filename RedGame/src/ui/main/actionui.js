@@ -8,6 +8,8 @@ var actionUI = cc.Layer.extend({
         var l = ccs.load("res/action.json");
         this.Widget = l.node;
         this.addChild(this.Widget);
+        this.setContentSize(this.Widget.getContentSize());
+
         return true;
     },
     onEnter:function() {

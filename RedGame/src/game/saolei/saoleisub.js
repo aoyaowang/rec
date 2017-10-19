@@ -12,6 +12,8 @@ var saoleisub = ccui.Widget.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
+        this.setContentSize(this.Widget.getContentSize());
+
         var t = ccui.helper.seekWidgetByName(this.Widget, "ft_text");
         t.setString(text);
 
