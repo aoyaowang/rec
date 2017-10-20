@@ -51,7 +51,7 @@ var GSLRoom = GBaseRoom.extend({
     },
     toJSON:function()
     {
-        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin / 100, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner, over: this.m_RedList.length == 0};
+        return {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID,Type: this.Type, coin: this.m_Coin / 100, num: this.m_num, bomb: this.m_Bomb, owner: this.m_Owner, over: this.m_RedList.length == 0};
     },
     detail:function(uid)
     {
@@ -60,15 +60,24 @@ var GSLRoom = GBaseRoom.extend({
             data.data = this.m_Players;
             if (!this.m_bOver) {
                 for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key].Info.ShowData(), m: "xxx", time: this.m_Players[key].m_Time};
+                    data.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
                     if (key == uid) data.data[key].m = this.m_Players[key].m_Qiang;
                 }
+            } else {
+                for (var key in data.data) {
+                    data.data[key] = {data: this.m_Players[key]};
+                }    
             }
         } else {
-            if (this.m_bOver) data.Players = this.m_Players;
-            else {
+            data.data = this.m_Players;
+            if (!this.m_bOver)
+            {
                 for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key].Info.ShowData(), m: "xxx", time: this.m_Players[key].m_Time};
+                    data.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
+                }    
+            } else {
+                for (var key in data.data) {
+                    data.data[key] = {data: this.m_Players[key]};
                 }    
             }
         }
@@ -76,13 +85,13 @@ var GSLRoom = GBaseRoom.extend({
         return data;
     },
     playerEnter:function(user) {
-        if (this.m_PlayerCount >= this.m_Num) return consts.ROOM.ROOM_FULL;
+        if (this.m_PlayerCount >= this.m_num) return consts.ROOM.ROOM_FULL;
 
         if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
 
         if (user.uid != this.m_Owner.uid) {
             var lm = parseInt(1 * this.m_Coin / 100);
-            if (this.m_Num == 7) lm = parseInt(1.5 * this.m_Coin / 100);
+            if (this.m_num == 7) lm = parseInt(1.5 * this.m_Coin / 100);
             if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
         }
 
@@ -101,8 +110,6 @@ var GSLRoom = GBaseRoom.extend({
         return consts.NOR_CODE.SUC_OK;
     },
     PlayerQiang:function(user) {
-        this.playerEnter(user);
-
         var player = this.m_Players[user.uid];
         if (!player || this.m_RedList.length == 0) {
             return false;
@@ -117,7 +124,7 @@ var GSLRoom = GBaseRoom.extend({
                 var p = this.m_Players[key];
                 var m = this.m_List[key];
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
-                else ot[key] = {data: p.Info.ShowData(), m: "xxx", time: p.m_Time};
+                else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
             }
             player.Info.addMsg(enums.PROTOCOL.GAME_SHAOLEI_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, data: p, other: ot});
             if (this.m_RedList.length == 0) {
@@ -158,7 +165,7 @@ var GSLRoom = GBaseRoom.extend({
 
         var lm = parseInt(1 * this.m_Coin / 100);
         var peilv = 1.0;
-        if (this.m_Num == 7) {
+        if (this.m_num == 7) {
             lm = parseInt(1.5 * this.m_Coin / 100);
             peilv = 1.5;
         }
@@ -189,6 +196,9 @@ var GSLRoom = GBaseRoom.extend({
 
         this.m_Hall.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0, bomb: this.m_Bomb});
 
+    },
+    pushMsg:function(protocol, msg) {
+        GBaseRoom.prototype.pushMsg.apply(this,arguments);
     }
 });
 module.exports = GSLRoom;

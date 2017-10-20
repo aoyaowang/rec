@@ -41,7 +41,7 @@ var saoleired = ccui.Widget.extend({
         p.addClickEventListener(this.btn1Click.bind(this));
         p = ccui.helper.seekWidgetByName(this.Widget, "btn_2");
         p.addClickEventListener(this.btn2Click.bind(this));
-        p = ccui.helper.seekWidgetByName(this.Widget, "btn_2");
+        p = ccui.helper.seekWidgetByName(this.Widget, "btn_3");
         p.addClickEventListener(this.btn3Click.bind(this));
 
         this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
@@ -68,6 +68,10 @@ var saoleired = ccui.Widget.extend({
         Client.removeMap("createsaolei", this);
     },
     btn1Click:function() {
+        for (var key in this.m_l1) {
+            this.m_l1[key].removeFromParent();
+        }
+
         var map = {
             1: {min: 10, max: 100, step: 10},
             2: {min: 100, max: 500, step: 50},
@@ -83,9 +87,12 @@ var saoleired = ccui.Widget.extend({
             this.m_list.insertCustomItem(ui, this.m_list.getIndex(this.m_s1));
             this.m_l1.push(ui);
         }
-    }
-    ,
+    },
     btn2Click:function() {
+        for (var key in this.m_l2) {
+            this.m_l2[key].removeFromParent();
+        }
+
         var ary = [7, 10];
         for (var key in ary) {
             var ui = new saoleisub(ary[key], this.nClick.bind(this));
@@ -95,6 +102,10 @@ var saoleired = ccui.Widget.extend({
         }
     },
     btn3Click:function() {
+        for (var key in this.m_l3) {
+            this.m_l3[key].removeFromParent();
+        }
+
         var ary = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
         for (var key in ary) {
             var ui = new saoleisub(ary[key], this.bClick.bind(this));
@@ -134,7 +145,7 @@ var saoleired = ccui.Widget.extend({
 
         var v = true;
         if (m == "0.00" || n == "0") v = false;
-        this.m_sendbtn.setEnable(v);
+        this.m_sendbtn.setTouchEnabled(v);
     },
     btnSend:function() {
         var m = this.m_ft_money.getString();

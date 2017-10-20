@@ -103,7 +103,7 @@ var getRandomMoney = function(packet) {
         packet.money = 0;
         return _lastMoney;
     }
-    var min = 0.01
+    var min = 1
       , 
     max = packet.money / packet.packNumber * 2
       , 

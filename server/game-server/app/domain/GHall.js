@@ -15,7 +15,7 @@ var GHall = Core.obserData.extend({
         this._super();
         var t = Type;
         Object.defineProperty(this, "Type", {
-            get: function () { return u}
+            get: function () { return t}
         });
 
         this.Value = {};
@@ -49,8 +49,10 @@ var GHall = Core.obserData.extend({
         delete value[room.m_RoomID];
     },
     playerEnter:function(user, type) {
-        if (this.m_Players[user.uid]) return;
-        this.pushMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user.ShowData()}, type);
+        if (this.m_Players[user.uid]) {
+            this.playerLeave(user);
+        }
+        this.pushMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user}, type);
         this.m_Players[user.uid] = {user: user, type: type};
         this.m_PlayerCount = utils.size(this.m_Players);
     },
@@ -59,15 +61,20 @@ var GHall = Core.obserData.extend({
         var p = this.m_Players[user.uid];
         delete this.m_Players[user.uid];
         this.m_PlayerCount = utils.size(this.m_Players);
-        this.pushMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user.ShowData()},p.type);
+        this.pushMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user},p.type);
     },
     pushMsg:function(protocol, msg, type) {
+        var all = [];
         for (var k in this.m_Players) {
+            
             var p = this.m_Players[k].user;
             var t = this.m_Players[k].type;
+            console.warn("PLAYER:" + p.nickname + " TYPE:" + t);
             if (!!type && t != type) continue;
+            all.push(p.nickname);
             p.addMsg(protocol, msg);
         }
+        console.warn("PUSHMSG:" + type + " DATA:" + protocol + " ALL:" + JSON.stringify(all));
     }
 });
 module.exports = GHall;

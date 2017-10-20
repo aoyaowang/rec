@@ -17,7 +17,7 @@ var GBaseRoom = Core.obserData.extend({
         this._super();
         var t = Type;
         Object.defineProperty(this, "Type", {
-            get: function () { return u}
+            get: function () { return t}
         });
 
         this.m_Players = {};
@@ -37,7 +37,7 @@ var GBaseRoom = Core.obserData.extend({
     },
     playerEnter:function(user) {
         for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user.ShowData()})
+            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user})
         }        
         var player = new GBasePlayer(user);
         this.m_Players[player.uid] = player;
@@ -50,7 +50,7 @@ var GBaseRoom = Core.obserData.extend({
     },
     playerleave:function(user) {
         for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user.ShowData()});
+            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user});
         }
         var player = this.m_Players[user.uid];
         delete this.m_Players[user.uid];
@@ -76,7 +76,8 @@ var GBaseRoom = Core.obserData.extend({
         }
     },
     pushMsg:function(protocol, msg) {
-        if (this.m_Hall) this.m_Hall.pushMsg(protocol, msg, this.Type);
+        if (this.m_Hall)
+            this.m_Hall.pushMsg(protocol, msg, this.Type);
     }
 });
 module.exports = GBaseRoom;

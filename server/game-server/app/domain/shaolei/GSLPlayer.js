@@ -16,10 +16,6 @@ var GSLPlayer = GBasePlayer.extend({
     {
         GBasePlayer.prototype.ctor.apply(this,arguments);
 
-        Object.defineProperty(this, "Info", {
-            get: function () { return user}
-        });
-
         this.reset();
     },
     factoryData:function() {

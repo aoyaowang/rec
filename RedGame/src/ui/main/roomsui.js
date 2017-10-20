@@ -67,7 +67,7 @@ var roomsUI = ccui.Widget.extend({
     },
     BtnLv1Click:function() {
         if (this.m_type == 1) {
-            Server.gate("joinroom", {t: RoleInfo.token, id: this.m_type, type: 1});
+            Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 1});
         }
         else if (this.m_type == 2) {
             var name = GAME_INFO[this.m_type].name;
@@ -94,7 +94,7 @@ var roomsUI = ccui.Widget.extend({
     },
     BtnLv2Click:function() {
         if (this.m_type == 1) {
-            Server.gate("joinroom", {t: RoleInfo.token, id: this.m_type, type: 2});
+            Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 2});
         }
         else if (this.m_type == 2) {
             var name = GAME_INFO[this.m_type].name;
@@ -138,7 +138,7 @@ var roomsUI = ccui.Widget.extend({
     },
     BtnLv3Click:function() {
         if (this.m_type == 1) {
-            Server.gate("joinroom", {t: RoleInfo.token, id: this.m_type, type: 3});
+            Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 3});
         }
         else if (this.m_type == 2) {
             var name = GAME_INFO[this.m_type].name;

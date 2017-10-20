@@ -93,8 +93,8 @@ pro.checkToken = function(token, next) {
 
     var uid = t.uid;
     if (!this.m_db[uid]) {
-        var user = new User;
-        user.Init(uid, function(err, res){
+        var user = new User();
+        user.init(uid, function(err, res){
             if (!!err) {
                 next(null, null);
                 return;
@@ -178,11 +178,12 @@ pro.saoleiType = function(coin) {
     var t = null;
     var bFind = false;
     for (var key in STYPE) {
-        if (coin > STYPE[key].min || coin < STYPE[key].max) {
-            for (var m = STYPE[key].min; m <= STYPE[key.max];m += STYPE[step]) {
+        if (coin >= STYPE[key].min || coin <= STYPE[key].max) {
+            for (var m = STYPE[key].min; m <= STYPE[key].max;m += STYPE[key].step) {
                 if (m == coin) {
                     bFind = true;
                     t = key;
+                    break;
                 }
             }
         }
@@ -265,6 +266,11 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
         }
         if (room.PlayerQiang) 
         {
+            var eret = room.playerEnter(user);
+            if (eret != consts.NOR_CODE.SUC_OK) {
+                next(null, {code: eret});
+                return;
+            }
             var ret = room.PlayerQiang(user);
             if (ret)
                 next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});

@@ -60,7 +60,7 @@
             "ctype": "SpriteObjectData"
           },
           {
-            "FontSize": 20,
+            "FontSize": 24,
             "LabelText": "Text Label",
             "OutlineColor": {
               "G": 0,
@@ -74,36 +74,39 @@
             "ShadowOffsetX": 2.0,
             "ShadowOffsetY": -2.0,
             "AnchorPoint": {
-              "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 182.2774,
+              "X": 132.2774,
               "Y": 121.6243
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {},
+            "CColor": {
+              "R": 127,
+              "G": 127,
+              "B": 127
+            },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2848,
+              "X": 0.2067,
               "Y": 0.8108
             },
             "PreSize": {
-              "X": 0.1563,
-              "Y": 0.1333
+              "X": 0.1875,
+              "Y": 0.16
             },
             "LeftMargin": 132.2774,
-            "RightMargin": 407.7226,
-            "TopMargin": 18.3757,
-            "BottomMargin": 111.6243,
+            "RightMargin": 387.7226,
+            "TopMargin": 16.3757,
+            "BottomMargin": 109.6243,
             "Tag": 64,
             "ActionTag": 2048579584,
             "Size": {
-              "X": 100.0,
-              "Y": 20.0
+              "X": 120.0,
+              "Y": 24.0
             },
             "Name": "ft_nickname",
             "ctype": "TextObjectData"
@@ -189,8 +192,9 @@
                   "G": 110,
                   "B": 110
                 },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
+                "ShadowOffsetX": 1.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
                 "AnchorPoint": {
                   "ScaleX": 0.5,
                   "ScaleY": 0.5
@@ -203,7 +207,10 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {},
+                "CColor": {
+                  "G": 165,
+                  "B": 0
+                },
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5619,

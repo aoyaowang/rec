@@ -50,11 +50,11 @@ userDao.updateMoney = function(uid, fangka, money, next) {
     var args= [sanitizer.sanitize(fangka), sanitizer.sanitize(money), sanitizer.sanitize(uid)];
 
     pomelo.app.get('db1').query(sql, args, function(err, res){
-        next(nulll, null);
+        next(null, null);
     });
 }
 
-userDao.gameLog = function(uid, roomid, game, coin, money, time) {
+userDao.gamelog = function(uid, roomid, game, coin, money, time) {
     var sql = 'insert into gamelog (uid, roomid, game, coin, money, time) values (?, ?, ?, ?, ?, ?)';
     var args = [sanitizer.sanitize(uid), sanitizer.sanitize(roomid), sanitizer.sanitize(game), sanitizer.sanitize(coin), sanitizer.sanitize(money), sanitizer.sanitize(time)];
 

@@ -45,23 +45,37 @@ var redopenUI = ccui.Widget.extend({
         this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         this.m_listview = ccui.helper.seekWidgetByName(this.Widget, "ListView_1");
 
+        headMgr.loadHead(red.owner.uid, red.owner.headimg, function(data){
+            var size = data.getContentSize();
+            this.m_imghead.setTexture(data);
+            this.m_imghead.setTextureRect(cc.rect(0,0,size.width, size.height));
+            var msize = this.m_imghead.getContentSize();
+            this.m_imghead.setScale(Math.min(150/msize.width,150/msize.height) );
+        }.bind(this));
+
         this.m_ft_name.setString(this.m_red.owner.gamename == "" ? this.m_red.owner.nickname:this.m_red.owner.gamename+
                                     "的红包");
         if (this.m_type == 1)
             this.m_ft_ext.setString(red.coin + "金额/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
         else this.m_ft_ext.setVisible(false);
 
-        this.m_ft_money.setString(parseInt(money) == NaN ? money : money / 100);
+        this.m_ft_money.setString(isNaN(parseInt(money)) ? money : money / 100);
         var ct = 0; for (var k in data) ct++;
         var m = 0; for (var k in data) {
-            if (parseInt(data[k].m) == NaN) {
+            if (!!data[k].data.qiang)
+            {
+                m += parseInt(data[k].data.qiang);
+                continue;
+            }
+            if (isNaN(parseInt(data[k].m))) {
                 m = 'xxx'
                 break;
             } else {
                 m += parseInt(data[k].m);
             }
         }
-        this.m_ft_top.setString("已经领取" + ct + "/" + num + "个,共" + (m / 100) + "/" + (coin / 100) + "王者币");
+        if (!isNaN(parseInt(m))) m = parseInt(m) / 100;
+        this.m_ft_top.setString("已经领取" + ct + "/" + num + "个,共" + m + "/" + (coin / 100) + "王者币");
 
         this.initList();
         return true;
@@ -70,7 +84,7 @@ var redopenUI = ccui.Widget.extend({
         for (var key in this.m_data) {
             var p = this.m_data[key];
             if (p.m)
-                var ui = new redsubUI(p.data.uid, p.data.headimg, p.time, p.m);
+                var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.time, p.m);
             else {
                 var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                             + (p.data.qiang / 100);
@@ -84,7 +98,7 @@ var redopenUI = ccui.Widget.extend({
                 var pl = mp > 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
                 var ttt = "总计" + p.data.result;
                 var tl = p.data.result < 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
-                var ui = new redsubUI(p.data.uid, p.data.headimg, p.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);
+                var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);
             }
 
             this.m_listview.pushBackCustomItem(ui);

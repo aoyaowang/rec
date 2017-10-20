@@ -45,7 +45,7 @@ var saoleiUI = ccui.Widget.extend({
         Client.addMap("playerleave", this);
 
         Client.addMap("saoleiQiangrq", this);
-        Client.addMap("saoleiqiang", this);
+        Client.addMap("shaoleiqiang", this);
         Client.addMap("shaoleiover", this);
         Client.addMap("getdetail", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
@@ -59,7 +59,7 @@ var saoleiUI = ccui.Widget.extend({
         Client.removeMap("playerleave", this);
 
         Client.removeMap("saoleiQiangrq", this);
-        Client.removeMap("saoleiqiang", this);
+        Client.removeMap("shaoleiqiang", this);
         Client.removeMap("shaoleiover", this);
         Client.removeMap("getdetail", this);
     },
@@ -94,6 +94,7 @@ var saoleiUI = ccui.Widget.extend({
             owner: owner,
             msg: msg,
             roomid: msg.RoomID,
+            halltype: msg.HallType,
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
@@ -101,10 +102,10 @@ var saoleiUI = ccui.Widget.extend({
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
-        });
+        }.bind(this));
     },
     redClick:function() {
-        var ui = new saoleired(this.m_subtype);
+        var ui = new saoleired(this.m_type);
         this.Widget.addChild(ui);
     },
     logClick:function() {
@@ -134,10 +135,10 @@ var saoleiUI = ccui.Widget.extend({
     saoleiQiangrq:function(msg) {
         //NOTUSED
     },
-    saoleiqiang:function(msg) {
+    shaoleiqiang:function(msg) {
         var id = msg.RoomID;
         if (!this.m_redlist[id]) return;
-        var money = msg.data;
+        var money = msg.data.qiang;
         var data = msg.other;
         var coin = msg.coin;
         var num = msg.num;

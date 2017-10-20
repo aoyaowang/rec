@@ -246,8 +246,9 @@
                     "Tag": 41,
                     "Children": [
                       {
+                        "IsCustomSize": true,
                         "FontSize": 24,
-                        "LabelText": "Text Label",
+                        "LabelText": "999999999999999999999",
                         "OutlineColor": {
                           "G": 0,
                           "B": 0
@@ -279,16 +280,15 @@
                           "Y": 0.0385
                         },
                         "PreSize": {
-                          "X": 0.1875,
+                          "X": 1.0,
                           "Y": 0.9231
                         },
-                        "RightMargin": 520.0,
                         "TopMargin": 1.0,
                         "BottomMargin": 1.0,
                         "Tag": 42,
                         "ActionTag": 1247832681,
                         "Size": {
-                          "X": 120.0,
+                          "X": 640.0,
                           "Y": 24.0
                         },
                         "Name": "ft_top",

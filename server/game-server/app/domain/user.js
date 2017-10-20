@@ -33,6 +33,32 @@ module.exports = Core.obserData.extend({
         this.logined = true;
         this.HallType = null;
         this.synctime = Date.parse(new Date()) / 1000;
+
+        Object.defineProperty(this, "uid", {
+            get: function () { return this.data.uid}
+        });
+        Object.defineProperty(this, "nickname", {
+            get: function () { return this.data.nickname}
+        });
+        Object.defineProperty(this, "gamename", {
+            get: function () { return this.data.gamename}
+        });
+        Object.defineProperty(this, "sex", {
+            get: function () { return this.data.sex}
+        });
+        Object.defineProperty(this, "headimg", {
+            get: function () { return this.data.headimg}
+        });
+        Object.defineProperty(this, "openid", {
+            get: function () { return this.data.openid}
+        });
+        Object.defineProperty(this, "fangka", {
+            get: function () { return this.data.fangka}
+        });
+        Object.defineProperty(this, "money", {
+            get: function () { return this.data.money}
+        });
+
         userDao.getInfo(uid, function(err, data){
             if (!data) {
                 logger.error("UID NOT EXIST:" + uid);
@@ -56,6 +82,9 @@ module.exports = Core.obserData.extend({
                 next(null, null);
             }.bind(this));
         }.bind(this));
+    },
+    toJSON:function(){
+        return {uid: this.uid, nickname: this.nickname, gamename: this.gamename, sex: this.sex, headimg: this.headimg, fangka: this.fangka, money: this.money};
     },
     lockMoney:function(m) {
         if (this.data.money < m) return false;
@@ -94,11 +123,11 @@ module.exports = Core.obserData.extend({
             }
         }
         if (!bFind) {
-            this.sync.push({p: enums.PROTOCOL.MONEY_SYNC, money: this.data.money, fangka: this.data.fangka});
+            this.sync.push({p: enums.PROTOCOL.MONEY_SYNC, msg: {money: this.data.money, fangka: this.data.fangka}});
         }
     },
     addMsg:function(protocol, msg) {
-        this.sync.push({p: portocol, msg: msg});
+        this.sync.push({p: protocol, msg: msg});
     },
     ShowData:function(){
         return {uid: this.data.uid, nickname: this.data.nickname, gamename: this.data.gamename, sex: this.data.sex, headimg: this.data.headimg};
@@ -114,8 +143,13 @@ module.exports = Core.obserData.extend({
         this.addMsg(enums.PROTOCOL.RELOGIN, {});
     },
     getSync:function() {
-        var r = this.sync;
+        var r = [];
+        for (var key in this.sync) {
+            console.warn(this.sync[key].p);
+            r.push(this.sync[key]);
+        }
         this.sync = [];
+        
         return r;
     }
 });

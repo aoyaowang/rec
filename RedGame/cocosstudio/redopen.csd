@@ -39,14 +39,14 @@
                   <AbstractNodeData Name="t" ActionTag="1910712745" Tag="41" IconVisible="False" BottomMargin="554.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="26.0000" />
                     <Children>
-                      <AbstractNodeData Name="ft_top" ActionTag="1247832681" Tag="42" IconVisible="False" RightMargin="520.0000" TopMargin="1.0000" BottomMargin="1.0000" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="120.0000" Y="24.0000" />
+                      <AbstractNodeData Name="ft_top" ActionTag="1247832681" Tag="42" IconVisible="False" TopMargin="1.0000" BottomMargin="1.0000" IsCustomSize="True" FontSize="24" LabelText="999999999999999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="640.0000" Y="24.0000" />
                         <AnchorPoint />
                         <Position Y="1.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="127" G="127" B="127" />
                         <PrePosition Y="0.0385" />
-                        <PreSize X="0.1875" Y="0.9231" />
+                        <PreSize X="1.0000" Y="0.9231" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>

@@ -30,7 +30,7 @@ var GBasePlayer = Core.obserData.extend({
     },
     toJSON:function()
     {
-        return {uid: this.uid, nickname: Info.nickname, gamename: Info.gamename, sex: Info.sex, headimg: Info.headimg, Room: this.m_Room.m_RoomID, Pos: this.m_position};
+        return {uid: this.uid, nickname: this.Info.nickname, gamename: this.Info.gamename, sex: this.Info.sex, headimg: this.Info.headimg, Room: this.m_Room.m_RoomID, Pos: this.m_position};
     }
 });
 module.exports = GBasePlayer;
