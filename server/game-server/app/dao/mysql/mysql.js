@@ -32,7 +32,7 @@ var sqlclient = function()
 			}
 			client.query(sql, args, function(err, res) {
 				if (!!err) {
-					console.error(JSON.stringify(err));
+					console.error("SQL:" + sql + ":" + JSON.stringify(args) + "\n" + JSON.stringify(err));
 				}
 				self._pool.release(client);
 				cb(err, res);

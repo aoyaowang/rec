@@ -37,7 +37,7 @@ var GBaseRoom = Core.obserData.extend({
     },
     playerEnter:function(user) {
         for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user})
+            this.m_Players[key].Info.addMsg(enums.PROTOCOL.PLAYER_ENTER, {data: user})
         }        
         var player = new GBasePlayer(user);
         this.m_Players[player.uid] = player;
@@ -50,7 +50,7 @@ var GBaseRoom = Core.obserData.extend({
     },
     playerleave:function(user) {
         for (var key in this.m_Players) {
-            this.m_Players[key].addMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user});
+            this.m_Players[key].Info.addMsg(enums.PROTOCOL.PLAYER_LEAVE, {data: user});
         }
         var player = this.m_Players[user.uid];
         delete this.m_Players[user.uid];
