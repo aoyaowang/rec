@@ -13,6 +13,13 @@ var Xlog = function() {
     console.log.apply(console.log, arguments);
 };
 
+ccui.Text.prototype.__setString = ccui.Text.prototype.setString;
+ccui.Text.prototype.setStringAuto = function(str) {
+    var ui = new cc.LabelTTF(str, this.getFontName(), this.getFontSize());
+    this.__setString(str);
+    this.setContentSize(ui.getContentSize());
+}
+
 (function() {
     function a(a, c, e, f) {
         var g;

@@ -98,7 +98,7 @@ var getRandomMoney = function(packet) {
         return;
     }
     if (packet.packNumber == 1) {
-        var _lastMoney = Math.round(packet.money * 100) / 100;
+        var _lastMoney = Math.round(packet.money);
         packet.packNumber--;
         packet.money = 0;
         return _lastMoney;
@@ -109,9 +109,9 @@ var getRandomMoney = function(packet) {
       , 
     money = Math.random() * max;
     money = money < min ? min : money;
-    money = Math.floor(money * 100) / 100;
+    money = Math.floor(money);
     packet.packNumber--;
-    packet.money = Math.round((packet.money - money) * 100) / 100;
+    packet.money = Math.round((packet.money - money));
     return money;
 }
 

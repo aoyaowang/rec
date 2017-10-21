@@ -14,8 +14,8 @@ var chatnormalUI = ccui.Widget.extend({
         this.setAnchorPoint(0, 0);
 
         var t = ccui.helper.seekWidgetByName(this.Widget, "ft_text");
-        t.setString(text);
-        t.setColor(cl);
+        t.setStringAuto(text);
+        t.setTextColor(cl);
         return true;
     },
     onEnter:function() {

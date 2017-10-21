@@ -128,7 +128,7 @@ var saoleiUI = ccui.Widget.extend({
             Server.gate("getdetail", {t: RoleInfo.token, h: data.halltype, r: data.roomid});
         }
         else if (r.state == 3 && r.detail) {
-            var ui = new reddetailUI(r.detail);
+            var ui = new reddetailUI(r.detail, r);
             this.Widget.addChild(ui, 99);
         }
     },
@@ -161,26 +161,28 @@ var saoleiUI = ccui.Widget.extend({
             var m = p.qiang;
             var l = p.last;
             if (p.uid == this.m_redlist[id].owner.uid) {
-                var ui2 = new chatnormalUI("【发】 " + n + "免死", cc.Color(0,0,200));
+                var ui2 = new chatnormalUI("【发】 " + n + "免死", cc.color(0,0,200));
                 this.m_list.pushBackCustomItem(ui2);
             }
             else if (msg.bomb == l)                {
-                var ui2 = new chatnormalUI("【抢】 " + n + "中雷", cc.Color(255,0,0));
+                var ui2 = new chatnormalUI("【抢】 " + n + "中雷", cc.color(255,0,0));
                 this.m_list.pushBackCustomItem(ui2);
             } else {
-                var ui2 = new chatnormalUI("【抢】 " + n + "无雷", cc.Color(255,255,255));
+                var ui2 = new chatnormalUI("【抢】 " + n + "无雷", cc.color(255,255,255));
                 this.m_list.pushBackCustomItem(ui2);
             }
         }
     },
     getdetail:function(msg) {
+        if (msg.code !=0 ) return;
+        msg = msg.data;
         var id = msg.roomid;
         if (!this.m_redlist[id]) return;
         if (msg.over) {
             this.m_redlist[id].state = 3;
             this.m_redlist[id].detail = msg;
         }
-        var ui = new reddetailUI(msg);
+        var ui = new reddetailUI(msg, this.m_redlist[id]);
         this.Widget.addChild(ui, 99);
     }
 });

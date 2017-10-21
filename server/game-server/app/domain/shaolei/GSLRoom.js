@@ -55,34 +55,34 @@ var GSLRoom = GBaseRoom.extend({
     },
     detail:function(uid)
     {
-        var data = {roomid: this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, owner: this.m_Owner};
+        var retdata = {roomid: this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.m_Bomb, owner: this.m_Owner};
         if (!!uid) {
-            data.data = this.m_Players;
+            retdata.data = {};
             if (!this.m_bOver) {
-                for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
-                    if (key == uid) data.data[key].m = this.m_Players[key].m_Qiang;
+                for (var key in this.m_Players) {
+                    retdata.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
+                    if (key == uid) retdata.data[key].m = this.m_Players[key].m_Qiang;
                 }
             } else {
-                for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key]};
+                for (var key in this.m_Players) {
+                    retdata.data[key] = {data: this.m_Players[key]};
                 }    
             }
         } else {
-            data.data = this.m_Players;
+            retdata.data = {};
             if (!this.m_bOver)
             {
-                for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
+                for (var key in this.m_Players) {
+                    retdata.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
                 }    
             } else {
-                for (var key in data.data) {
-                    data.data[key] = {data: this.m_Players[key]};
+                for (var key in this.m_Players) {
+                    retdata.data[key] = {data: this.m_Players[key]};
                 }    
             }
         }
 
-        return data;
+        return retdata;
     },
     playerEnter:function(user) {
         if (this.m_PlayerCount >= this.m_num) return consts.ROOM.ROOM_FULL;

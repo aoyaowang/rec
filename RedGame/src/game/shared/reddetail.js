@@ -16,8 +16,8 @@ var reddetailUI = ccui.Widget.extend({
     m_red: null,
     ctor:function(data, red) {
         this._super();
-
-        this.m_coin = red.coin;
+        data = data.data;
+        this.m_coin = red.coin * 100;
         this.m_num = red.num;
         this.m_data = data;
         this.m_red = red;
@@ -51,7 +51,7 @@ var reddetailUI = ccui.Widget.extend({
         this.m_ft_name.setString(this.m_red.owner.gamename == "" ? this.m_red.owner.nickname:this.m_red.owner.gamename+
         "的红包");
         if (this.m_type == 1)
-            this.m_ft_ext.setString(red.coin + "金额/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
+            this.m_ft_ext.setString(red.coin + "金额/雷" + red.bomb + "/" + (this.m_num == 7 ? "1.5" : "1.0") + "倍");
         else this.m_ft_ext.setVisible(false);
 
         var bfind = false;
@@ -84,7 +84,7 @@ var reddetailUI = ccui.Widget.extend({
             }
         }
         if (!isNaN(parseInt(m))) m = parseInt(m) / 100;
-        this.m_ft_top.setString("已经领取" + ct + "/" + num + "个,共" + (m / 100) + "/" + (coin / 100) + "王者币");
+        this.m_ft_top.setString("已经领取" + ct + "/" + this.m_num + "个,共" + m + "/" + (this.m_coin / 100) + "王者币");
 
         this.initList();
         return true;
@@ -97,16 +97,16 @@ var reddetailUI = ccui.Widget.extend({
             else {
                 var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                     + (p.data.qiang / 100);
-                var ql = cc.Color(0,255,0);
+                var ql = cc.color(0,255,0);
                 var pei = "赔付:" + (this.m_red.bomb == p.data.last ? "-" + (parseInt(this.m_coin) * 1.5) / 100 : 0);
-                var pl = this.m_red.bomb == p.data.last ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var pl = this.m_red.bomb == p.data.last ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var mp = Math.floor(parseInt(p.data.qiang) * 0.03 / 100);
                 if (mp < 0.01) mp = 0;
                 else mp = "-" + mp;
                 var piao = "门票:" + mp;
-                var pl = mp > 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var pl = mp > 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var ttt = "总计" + p.data.result;
-                var tl = p.data.result < 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);
             }
 

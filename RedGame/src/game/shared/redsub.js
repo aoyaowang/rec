@@ -36,28 +36,28 @@ var redsubUI = ccui.Widget.extend({
         if (qiang) {
             btn = ccui.helper.seekWidgetByName(this.Widget, "ft_qiang");
             btn.setString(qiang);
-            btn.setColor(colq);
+            btn.setTextColor(colq);
             btn.setVisible(true);
         }
 
         if (pei) {
             btn = ccui.helper.seekWidgetByName(this.Widget, "ft_pei");
             btn.setString(pei);
-            btn.setColor(colp);
+            btn.setTextColor(colp);
             btn.setVisible(true);
         }
 
         if (piao) {
             btn = ccui.helper.seekWidgetByName(this.Widget, "ft_menpiao");
             btn.setString(piao);
-            btn.setColor(colp2);
+            btn.setTextColor(colp2);
             btn.setVisible(true);
         }
 
         if (total) {
             btn = ccui.helper.seekWidgetByName(this.Widget, "ft_total");
             btn.setString(total);
-            btn.setColor(colt);
+            btn.setTextColor(colt);
             btn.setVisible(true);
         }
         return true;

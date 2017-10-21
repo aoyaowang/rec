@@ -88,16 +88,16 @@ var redopenUI = ccui.Widget.extend({
             else {
                 var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                             + (p.data.qiang / 100);
-                var ql = cc.Color(0,255,0);
+                var ql = cc.color(0,255,0);
                 var pei = "赔付:" + (this.m_red.bomb == p.data.last ? "-" + (parseInt(this.m_coin) * 1.5) / 100 : 0);
-                var pl = this.m_red.bomb == p.data.last ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var pl = this.m_red.bomb == p.data.last ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var mp = Math.floor(parseInt(p.data.qiang) * 0.03 / 100);
                 if (mp < 0.01) mp = 0;
                 else mp = "-" + mp;
                 var piao = "门票:" + mp;
-                var pl = mp > 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var pl = mp > 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var ttt = "总计" + p.data.result;
-                var tl = p.data.result < 0 ? cc.Color(255, 0, 0) : cc.Color(0,255,0);
+                var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                 var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);
             }
 

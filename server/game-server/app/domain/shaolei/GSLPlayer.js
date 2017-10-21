@@ -28,7 +28,7 @@ var GSLPlayer = GBasePlayer.extend({
     toJSON:function()
     {
         return {uid: this.uid, nickname: this.Info.nickname, gamename: this.Info.gamename, 
-                headimg: this.Info.heaimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang, last: this.m_LastNum, result: this.m_Result, time: this.m_Time};
+                headimg: this.Info.headimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang, last: this.m_LastNum, result: this.m_Result, time: this.m_Time};
     },
     Qiang:function(q) {
         if (this.m_Qiang != 0) return false;

@@ -84,7 +84,7 @@
             <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ft_title" ActionTag="-161981354" Tag="57" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="290.8015" BottomMargin="711.1985" FontSize="36" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="ft_title" ActionTag="-161981354" Tag="57" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="290.8015" BottomMargin="711.1985" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="180.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="315.8689" Y="729.1985" />
@@ -110,7 +110,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ft_ext" ActionTag="1324099213" Tag="47" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="340.8039" BottomMargin="661.1961" FontSize="36" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="ft_ext" ActionTag="1324099213" Tag="47" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="340.8039" BottomMargin="661.1961" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="180.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="315.8689" Y="679.1961" />
