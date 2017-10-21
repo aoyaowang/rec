@@ -29,6 +29,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -52,8 +54,9 @@
             "Tag": 33,
             "Children": [
               {
+                "IsCustomSize": true,
                 "FontSize": 24,
-                "LabelText": "0000000000000000000000",
+                "LabelText": "99999",
                 "HorizontalAlignmentType": "HT_Center",
                 "VerticalAlignmentType": "VT_Center",
                 "OutlineColor": {
@@ -90,11 +93,9 @@
                   "Y": 0.5
                 },
                 "PreSize": {
-                  "X": 0.4125,
+                  "X": 1.0,
                   "Y": 0.6667
                 },
-                "LeftMargin": 188.0,
-                "RightMargin": 188.0,
                 "TopMargin": 6.0,
                 "BottomMargin": 6.0,
                 "Tag": 59,
@@ -124,7 +125,7 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 132.0,
+                      "X": 640.0,
                       "Y": 12.0
                     },
                     "Scale": {
@@ -134,22 +135,23 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
+                      "X": 1.0,
                       "Y": 0.5
                     },
                     "PercentWidthEnable": true,
                     "PercentWidthEnabled": true,
                     "PreSize": {
-                      "X": 1.0,
+                      "X": 0.0,
                       "Y": 1.5
                     },
                     "HorizontalEdge": "RightEdge",
+                    "LeftMargin": 640.0,
                     "TopMargin": -6.0,
                     "BottomMargin": -6.0,
                     "Tag": 58,
                     "ActionTag": 1194877111,
                     "Size": {
-                      "X": 264.0,
+                      "X": 0.0,
                       "Y": 36.0
                     },
                     "Name": "Panel_1",
@@ -158,7 +160,7 @@
                 ],
                 "ActionTag": 1720100883,
                 "Size": {
-                  "X": 264.0,
+                  "X": 640.0,
                   "Y": 24.0
                 },
                 "Name": "ft_text",

@@ -80,6 +80,44 @@ exports.get2 = function (url,data,callback,safe) {
 	req.end(); 
 };
 
+exports.post2 = function (host,url,data,callback,safe) {
+	//var content = qs.stringify(data);
+	var url = url;
+	var proto = http;
+	if(safe){
+		proto = https;
+	}
+
+	var options = {  
+		host: host,  
+		port: 443,  
+		path: url,  
+		method:'POST',
+        headers: {
+            'Content-Length': data.length,
+        }
+	};  
+	 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+	//console.log("HTTP:" + url);
+	var req = proto.request(options, function (res) {  
+		//console.log('STATUS: ' + res.statusCode);  
+		//console.log('HEADERS: ' + JSON.stringify(res.headers));  
+		res.setEncoding('utf8');  
+		res.on('data', function (chunk) {
+			callback(true,chunk);
+		});  
+	});
+	  
+	req.on('error', function (e) {  
+		console.log('problem with request: ' + e.message);
+		callback(false,e);
+	});  
+
+	req.write(data);
+	  
+	req.end(); 
+};
+
 exports.get = function (host,port,path,data,callback,safe) {
 	var content = qs.stringify(data);  
 	var options = {  

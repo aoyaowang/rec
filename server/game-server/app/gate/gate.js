@@ -117,6 +117,10 @@ exports.start = function(port){
                  getDetail(t, h, r, resback);
                  return;
              }
+             else if ("/payback" === urlInfo.pathname)
+             {
+                console.warn("payback:" + JSON.stringify(body) + "------" + JSON.stringify(reqInfo));
+             }
              resback(0);
          });
 

@@ -24,6 +24,7 @@
         "src/ui/uiMgr.js",
 
         "src/ui/main/actionui.js",
+        "src/ui/main/billui.js",
         "src/ui/main/hallui.js",
         "src/ui/main/marketui.js",
         "src/ui/main/settingui.js",

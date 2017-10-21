@@ -4,6 +4,7 @@ var res = {
 
 var g_resources = [
     "res/action.json",
+    "res/bill.json",
     "res/chat.json",
     "res/chatnormal.json",
     "res/chatred.json",

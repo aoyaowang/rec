@@ -15,14 +15,14 @@
                   <AbstractNodeData Name="t" ActionTag="-633636341" Tag="64" IconVisible="False" BottomMargin="554.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="26.0000" />
                     <Children>
-                      <AbstractNodeData Name="ft_top" ActionTag="-1305384567" Tag="65" IconVisible="False" RightMargin="520.0000" TopMargin="1.0000" BottomMargin="1.0000" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="120.0000" Y="24.0000" />
+                      <AbstractNodeData Name="ft_top" ActionTag="-1305384567" Tag="65" IconVisible="False" TopMargin="1.0000" BottomMargin="1.0000" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="640.0000" Y="24.0000" />
                         <AnchorPoint />
                         <Position Y="1.0000" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="127" G="127" B="127" />
                         <PrePosition Y="0.0385" />
-                        <PreSize X="0.1875" Y="0.9231" />
+                        <PreSize X="1.0000" Y="0.9231" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
@@ -84,14 +84,14 @@
             <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ft_title" ActionTag="-161981354" Tag="57" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="290.8015" BottomMargin="711.1985" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="180.0000" Y="36.0000" />
+          <AbstractNodeData Name="ft_title" ActionTag="-161981354" Tag="57" IconVisible="False" TopMargin="290.8000" BottomMargin="711.2000" IsCustomSize="True" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="640.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="315.8689" Y="729.1985" />
+            <Position X="320.0000" Y="729.2000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.4935" Y="0.7025" />
-            <PreSize X="0.2813" Y="0.0347" />
+            <PrePosition X="0.5000" Y="0.7025" />
+            <PreSize X="1.0000" Y="0.0347" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -110,14 +110,14 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ft_ext" ActionTag="1324099213" Tag="47" IconVisible="False" LeftMargin="225.8689" RightMargin="234.1311" TopMargin="340.8039" BottomMargin="661.1961" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="180.0000" Y="36.0000" />
+          <AbstractNodeData Name="ft_ext" ActionTag="1324099213" Tag="47" IconVisible="False" LeftMargin="-4.1311" RightMargin="4.1311" TopMargin="340.8039" BottomMargin="661.1961" IsCustomSize="True" FontSize="36" LabelText="Text Label" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="640.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="315.8689" Y="679.1961" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.4935" Y="0.6543" />
-            <PreSize X="0.2813" Y="0.0347" />
+            <PreSize X="1.0000" Y="0.0347" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>

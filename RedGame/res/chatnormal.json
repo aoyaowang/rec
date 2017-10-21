@@ -15,6 +15,7 @@
         "Tag": 67,
         "Children": [
           {
+            "IsCustomSize": true,
             "FontSize": 24,
             "LabelText": "Text Label",
             "HorizontalAlignmentType": "HT_Center",
@@ -35,8 +36,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 320.0,
-              "Y": 19.0
+              "X": 320.4707,
+              "Y": 19.4707
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -49,21 +50,21 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5,
-              "Y": 0.5278
+              "X": 0.5007,
+              "Y": 0.5409
             },
             "PreSize": {
-              "X": 0.1875,
+              "X": 1.0,
               "Y": 0.6667
             },
-            "LeftMargin": 260.0,
-            "RightMargin": 260.0,
-            "TopMargin": 5.0,
-            "BottomMargin": 7.0,
+            "LeftMargin": 0.4707,
+            "RightMargin": -0.4707,
+            "TopMargin": 4.5293,
+            "BottomMargin": 7.4707,
             "Tag": 68,
             "ActionTag": -1860521227,
             "Size": {
-              "X": 120.0,
+              "X": 640.0,
               "Y": 24.0
             },
             "Name": "ft_text",

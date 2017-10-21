@@ -14,7 +14,7 @@ var chatsysUI = ccui.Widget.extend({
         this.setAnchorPoint(0, 0);
 
         var t = ccui.helper.seekWidgetByName(this.Widget, "ft_text");
-        t.setString(text);
+        t.setStringAuto(text);
         return true;
     },
     onEnter:function() {

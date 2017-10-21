@@ -409,8 +409,10 @@
             "ctype": "SpriteObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 36,
             "LabelText": "Text Label",
+            "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -445,17 +447,17 @@
               "Y": 0.7025
             },
             "PreSize": {
-              "X": 0.2812,
+              "X": 1.0,
               "Y": 0.0347
             },
-            "LeftMargin": 225.8689,
-            "RightMargin": 234.1311,
+            "LeftMargin": -4.1311,
+            "RightMargin": 4.1311,
             "TopMargin": 290.8015,
             "BottomMargin": 711.1985,
             "Tag": 36,
             "ActionTag": 279838173,
             "Size": {
-              "X": 180.0,
+              "X": 640.0,
               "Y": 36.0
             },
             "Name": "ft_title",
@@ -537,8 +539,10 @@
             "ctype": "ButtonObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 36,
             "LabelText": "Text Label",
+            "HorizontalAlignmentType": "HT_Center",
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -573,17 +577,17 @@
               "Y": 0.6611
             },
             "PreSize": {
-              "X": 0.2812,
+              "X": 1.0,
               "Y": 0.0347
             },
-            "LeftMargin": 225.8689,
-            "RightMargin": 234.1311,
+            "LeftMargin": -4.1311,
+            "RightMargin": 4.1311,
             "TopMargin": 333.8024,
             "BottomMargin": 668.1976,
             "Tag": 35,
             "ActionTag": -345149132,
             "Size": {
-              "X": 180.0,
+              "X": 640.0,
               "Y": 36.0
             },
             "Name": "ft_ext",

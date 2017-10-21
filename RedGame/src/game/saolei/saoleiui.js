@@ -34,6 +34,9 @@ var saoleiUI = ccui.Widget.extend({
         var btnlog = ccui.helper.seekWidgetByName(this.Widget, "btn_log");
         btnlog.addClickEventListener(this.logClick.bind(this));
 
+        var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_back");
+        btn.addClickEventListener(this.backClick.bind(this));
+
         this.m_redlist = {};
         return true;
     },
@@ -62,6 +65,9 @@ var saoleiUI = ccui.Widget.extend({
         Client.removeMap("shaoleiqiang", this);
         Client.removeMap("shaoleiover", this);
         Client.removeMap("getdetail", this);
+    },
+    backClick:function(){
+        this.removeFromParent();
     },
     infoChange:function() {
         this.m_ft_money.setString(RoleInfo.money);

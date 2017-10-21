@@ -51,6 +51,8 @@
         <Project Name="saoleisub.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
+        <Project Name="bill.csd" Type="Layer" />
+        <Project Name="tocash.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

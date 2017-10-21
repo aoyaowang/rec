@@ -98,9 +98,9 @@ var reddetailUI = ccui.Widget.extend({
                 var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                     + (p.data.qiang / 100);
                 var ql = cc.color(0,255,0);
-                var pei = "赔付:" + (this.m_red.bomb == p.data.last ? "-" + (parseInt(this.m_coin) * 1.5) / 100 : 0);
+                var pei = "赔付:" + (this.m_red.bomb == p.data.last ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
                 var pl = this.m_red.bomb == p.data.last ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                var mp = Math.floor(parseInt(p.data.qiang) * 0.03 / 100);
+                var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                 if (mp < 0.01) mp = 0;
                 else mp = "-" + mp;
                 var piao = "门票:" + mp;

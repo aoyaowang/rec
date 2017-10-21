@@ -22,6 +22,9 @@ var settingUI = ccui.Widget.extend({
         this.m_ft_fangka = ccui.helper.seekWidgetByName(this.Widget, "ft_fangka");
         this.m_ft_id = ccui.helper.seekWidgetByName(this.Widget, "ft_id");
 
+        var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_bill");
+        btn.addClickEventListener(this.billClick.bind(this));
+
         return true;
     },
     onEnter:function() {
@@ -43,5 +46,9 @@ var settingUI = ccui.Widget.extend({
         this.m_ft_name.setString(RoleInfo.gamename == "" ? RoleInfo.nickname : RoleInfo.gamename);
         this.m_ft_fangka.setString(RoleInfo.fangka);
         this.m_ft_id.setString(RoleInfo.uid);
+    },
+    billClick:function() {
+        var ui = new billUI();
+        this.Widget.addChild(ui);
     }
 });
