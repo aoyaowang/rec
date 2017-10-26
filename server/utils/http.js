@@ -87,14 +87,14 @@ exports.post2 = function (host,url,data,callback,safe) {
 	if(safe){
 		proto = https;
 	}
-
+	var b1 = new Buffer(data);
 	var options = {  
 		host: host,  
 		port: 443,  
 		path: url,  
 		method:'POST',
         headers: {
-            'Content-Length': data.length,
+            'Content-Length': b1.length,
         }
 	};  
 	 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";

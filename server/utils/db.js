@@ -216,4 +216,18 @@ db.getLog = function(uid, game, cb) {
     });
 }
 
+db.insertBill = function(uid, billid, bill, cb) {
+    var sql = 'insert into bill(uid, billid, bill, time) values (?, ?, ?, ?)';
+    var args = [sanitizer.sanitize(uid), sanitizer.sanitize(billid), 0, Date.parse(new Date()) / 1000];
+
+    query(sql, args, function(err, res){
+        if (err) {
+            cb(false);
+            throw err;
+        } else {
+            cb(null);
+        }
+    });
+}
+
 db.query = query;

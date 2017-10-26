@@ -50,16 +50,25 @@ var __selfinfo = Player.extend({
     beginSync:function() {
         Client.addMap("sync", this);
         Server.gate("sync", {t: this.token});
+
+        Client.addMap("moneysync", this);
     },
     endSync:function() {
         this.logined = false;
         Client.removeMap("sync", this);
+
+        Client.removeMap("moneysync", this);
     },
     sync:function() {
         if (!this.logined) return;
         setTimeout(function(){
             Server.gate("sync", {t: this.token});
         }.bind(this), 1000);
+    },
+    moneysync:function(msg) {
+        this.money = msg.money;
+        this.fangka = msg.fangka;
+        this.notify();
     }
 });
 

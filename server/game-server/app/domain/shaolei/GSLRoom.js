@@ -35,7 +35,6 @@ var GSLRoom = GBaseRoom.extend({
         
         
         owner.unlockMoney(coin, -1 * coin);
-        owner.unlockFangka(1, -1);
 
         //this.PlayerEnter(owner);
         this.m_BeginTime = Date.parse(new Date()) / 1000;

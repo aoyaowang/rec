@@ -75,3 +75,25 @@ userDao.getLog = function(uid, type, next) {
         next(null, res);
     });
 }
+
+userDao.existBill = function(billid, next) {
+    var sql = 'select * from bill where billid = ? and bill = 0';
+    var args = [sanitizer.sanitize(billid)];
+
+    pomelo.app.get('db1').query(sql, args, function(err, res){
+        if (!res) {
+            next(null, null);
+            return;
+        }
+        next(null, res);
+    });
+}
+
+userDao.updateBill = function(billid, bill, next) {
+    var sql = 'update bill set bill=?,time=? where billid = ?';
+    var args = [parseInt(bill), Date.parse(new Date()) / 1000, sanitizer.sanitize(billid)];
+
+    pomelo.app.get('db1').query(sql, args, function(err, res){
+        next(null, null);
+    });
+}

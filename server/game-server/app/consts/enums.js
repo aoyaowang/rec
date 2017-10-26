@@ -18,5 +18,10 @@ module.exports = {
 
     DEBUG_IP: '127.0.0.1',
 
-    OUTTIME: 30
+    OUTTIME: 30,
+
+    APPID: "wx1002e4f4a3b4b0bd",
+    APPSERCET: "",
+    MCHID: "1484859142",
+    MCHKEY: "fewafu23uNUInw1891nuiNu23895Amie"
 }

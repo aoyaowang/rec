@@ -103,8 +103,8 @@ var appInfo = {
         secret:"7de38489ede63089269e3410d5905038",
     },
     WEB:{
-        appid:"wx521ac03928cf7966",
-        secret:"6c94d4b4509381694b78d4aff723e960",
+        appid:"wx1002e4f4a3b4b0bd",
+        secret:"985e4c7b079f5e9bca11cd77cb0f535c",
     }
 };
 
@@ -349,17 +349,18 @@ app.get("/bill", function(req,res){
 function bill(uid, openid, m, cb) {
     var timestamp = Date.parse(new Date()) / 1000;
     console.warn("DD!!!!!!!!!!!!:");
+    var trade_no = (new Date()).getTime() + randomWord(true, 4, 4);
     var map = {};
-    map['appid'] = "wx521ac03928cf7966";
+    map['appid'] = "wx1002e4f4a3b4b0bd";
     map['attach'] = uid;
     map['body'] = "充值";
     map['mch_id'] = "1484859142";
     map['nonce_str'] = randomWord(true, 20, 20);
     map["notify_url"] = "http://test.obyjd.com:20000/payback";
     map["openid"] = openid;
-    map["out_trade_no"] = (new Date()).getTime() + randomWord(true, 4, 4);
+    map["out_trade_no"] = trade_no;
     map['spbill_create_ip'] = '127.0.0.1';
-    map['total_fee'] = m * 100;
+    map['total_fee'] = 1;
     map['trade_type'] = 'JSAPI';
     console.warn("CC!!!!!!!!!!!!:");
     map = ksort(map);
@@ -380,30 +381,32 @@ function bill(uid, openid, m, cb) {
         console.warn(JSON.stringify(res));
         res = res.toString();
         if (res.indexOf('<prepay_id><![CDATA[') >= 0 && res.indexOf('<return_code><![CDATA[SUCCESS]]></return_code>') >= 0) {
-            var startx = res.indexOf('<prepay_id><![CDATA[') + '<prepay_id><![CDATA['.length;
-            var endx = res.indexOf(']]></prepay_id>', startx);
-            var st = res.substr(startx, endx - startx);
-
-            var allmap = {
-                "appId":"wx521ac03928cf7966",     //公众号名称，由商户传入     
-                "timeStamp":timestamp,         //时间戳，自1970年以来的秒数     
-                "nonceStr":randomWord(true, 20, 20), //随机串     
-                "package":"prepay_id="+st,     
-                "signType":"MD5"
-            };
-
-            allmap = ksort(allmap);
-
-            var signPars2 = '';
-            for (var key in allmap) {
-                if (allmap[key] != "" && key != "sign")
-                    signPars2 += key + '=' + allmap[key] + "&"; 
-            }
-            signPars2 += "key=" + "fewafu23uNUInw1891nuiNu23895Amie";
-            var md5sign2 = md5(signPars2);
-            allmap['paySign'] = md5sign2.toUpperCase();
-
-            send(cb, {code: 0, data: allmap});
+            db.insertBill(uid, trade_no, m, function(){
+                var startx = res.indexOf('<prepay_id><![CDATA[') + '<prepay_id><![CDATA['.length;
+                var endx = res.indexOf(']]></prepay_id>', startx);
+                var st = res.substr(startx, endx - startx);
+    
+                var allmap = {
+                    "appId":"wx1002e4f4a3b4b0bd",     //公众号名称，由商户传入     
+                    "timeStamp":timestamp,         //时间戳，自1970年以来的秒数     
+                    "nonceStr":randomWord(true, 20, 20), //随机串     
+                    "package":"prepay_id="+st,     
+                    "signType":"MD5"
+                };
+    
+                allmap = ksort(allmap);
+    
+                var signPars2 = '';
+                for (var key in allmap) {
+                    if (allmap[key] != "" && key != "sign")
+                        signPars2 += key + '=' + allmap[key] + "&"; 
+                }
+                signPars2 += "key=" + "fewafu23uNUInw1891nuiNu23895Amie";
+                var md5sign2 = md5(signPars2);
+                allmap['paySign'] = md5sign2.toUpperCase();
+    
+                send(cb, {code: 0, data: allmap});
+            });
         } else {
             send(cb, {code: -1, data: res});
         }

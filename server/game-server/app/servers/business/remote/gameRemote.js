@@ -17,6 +17,9 @@ var GSLRoom = require('../../../domain/shaolei/GSLRoom');
 var Core = require('../../../base/Core');
 var baseRemote = require('../../../base/baseRemote');
 
+var userDao = require('../../../dao/userDao');
+var httppost = require('../../../util/httppost');
+
 module.exports = function(app) {
     return new Remote(app);
 };
@@ -85,7 +88,7 @@ pro.checkToken = function(token, next) {
     var t = Token.parse(token, secret);
 
     if (!t) {
-        next(null, {code: consts.NOR_CODE.ERR_PARAM});
+        next(null, null);
         return;
     }
 
@@ -230,11 +233,6 @@ pro.createRoom = function(token, room, next) {
                 return;
             }
 
-            if (!user.lockFangka(1)) {
-                next(null, {code: consts.MONEY.FANGKA_NOTENOUGH});
-                return;
-            }
-
             if (!user.lockMoney(coin)) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
@@ -302,5 +300,100 @@ pro.getDetail = function(token, hallid, roomid, next) {
         }
         next(null, {code: consts.NOR_CODE.SUC_OK, data: room.detail(user.uid), sync: user.getSync()});
 
+    }.bind(this));
+}
+
+pro.checkUid = function(uid, next) {
+    if (!uid) {
+        next(null, null);
+        return;
+    }
+
+    var timestamp = Date.parse(new Date()) / 1000;
+
+    if (!this.m_db[uid]) {
+        var user = new User();
+        user.init(uid, function(err, res){
+            if (!!err) {
+                next(null, null);
+                return;
+            }
+            this.m_db[uid] = user;
+            next(null, user);
+        }.bind(this));
+    } else {
+        var user = this.m_db[uid];
+        if (!user.logined) {
+            user.reLogin();
+        }
+        user.logined = true;
+        user.synctime = timestamp;
+        next(null, user);
+    }
+}
+
+pro.bill = function(uid, bllid, fee, next) {
+    this.checkUid(uid, function(err,user) {
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        userDao.existBill(billid, function(err, res){
+            if (!!res && res.length > 0) {
+                userDao.updateBill(billid, fee, function(err, res){
+                    user.unlockMoney(0, fee);
+                    next(null, {code: consts.NOR_CODE.SUC_OK});
+                });
+            } else {
+                next(null, {code: consts.NOR_CODE.FAILED});
+            }
+        });
+
+    });
+}
+
+pro.turnto = function(token, uid, money, next) {
+    money = parseInt(money);
+    if (!money || money < 0) {
+        next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
+        return;
+    }
+
+    this.checkToken(token, function(err, user){
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        if (!user.lockMoney(money)) {
+            next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
+            return;
+        }
+
+        if (uid != user.uid) {
+            this.checkUid(uid, function(err,touser) {
+                user.unlockMoney(money, -1 * money);
+                if (!touser) {
+                    next(null, {code: consts.NOR_CODE.FAILED});
+                    return;
+                }
+                
+                touser.unlockMoney(0, parseInt(money * 100 * 0.7) / 100);
+            });
+            return;
+        } else {
+            httppost.turn(user.openid, money, function(err, data){
+                data = data || "";
+                if (data.indexOf('<return_code><![CDATA[SUCCESS]]></return_code>') >= 0) {
+                    user.unlockMoney(money, -1 * money);
+                    next(null, {code: consts.NOR_CODE.SUC_OK});
+                } else {
+                    user.unlockMoney(money, 0);
+                    next(null, {code: consts.NOR_CODE.FAILED});
+                }
+            });
+        }
+        next(null, {code: consts.NOR_CODE.SUC_OK});
     }.bind(this));
 }
