@@ -13,6 +13,7 @@ var User = require('../../../domain/user');
 var GHall = require('../../../domain/GHall');
 
 var GSLRoom = require('../../../domain/shaolei/GSLRoom');
+var GJLRoom = require('../../../domain/jielong/GJLRoom');
 
 var Core = require('../../../base/Core');
 var baseRemote = require('../../../base/baseRemote');
@@ -198,6 +199,24 @@ pro.saoleiType = function(coin) {
     return t;
 }
 
+pro.jielongCheck = function(coin) {
+    var STYPE = {
+        3: 5,
+        5: 5,
+        10: 5,
+        20: 5,
+        30: 5,
+        50: 5,
+        100: 5,
+        200: 5,
+        300: 5,
+        500: 5
+    };
+
+    if (!!STYPE[coin]) return true;
+    else return false; 
+}
+
 pro.createRoom = function(token, room, next) {
     if (!room) {
         next(null, {code: consts.NOR_CODE.ERR_PARAM});
@@ -242,10 +261,65 @@ pro.createRoom = function(token, room, next) {
             room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
         }
+        else if (type == 2) //接龙
+        {
+            var coin = room.coin;
+            if (!this.jielongCheck(coin)) {
+                next(null, {code: consts.NOR_CODE.ERR_PARAM});
+                return;
+            }
+
+            if (!!this.m_hall[1].m_CurRoom[coin]) {
+                next(null, {code: consts.NOR_CODE.SUC_OK});
+                return;
+            }
+
+            var room2 = new GJLRoom(type, user, coin, 5, true);
+            this.m_hall[1].createRoom(room2);
+            this.m_hall[1].m_CurRoom[coin] = room2;
+            room2.pushMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: room2});
+            next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+        }
     }.bind(this));
 }
 
 pro.saoleiQiang = function(token, hallid, roomid, next) {
+    this.checkToken(token, function(err, user){
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        var hall = this.m_hall[hallid];
+        if (!hall) {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+            return;
+        }
+        var room = hall.Value[roomid];
+        if (!room) {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+            return;
+        }
+        if (room.PlayerQiang) 
+        {
+            var eret = room.playerEnter(user);
+            if (eret != consts.NOR_CODE.SUC_OK) {
+                next(null, {code: eret});
+                return;
+            }
+            var ret = room.PlayerQiang(user);
+            if (ret)
+                next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+            else
+                next(null, {code: consts.GAME.RED_OVER});
+        } else {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+        }
+
+    }.bind(this));
+}
+
+pro.jielongQiang = function(token, hallid, roomid, next) {
     this.checkToken(token, function(err, user){
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});
@@ -332,7 +406,7 @@ pro.checkUid = function(uid, next) {
     }
 }
 
-pro.bill = function(uid, bllid, fee, next) {
+pro.bill = function(uid, billid, fee, next) {
     this.checkUid(uid, function(err,user) {
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});

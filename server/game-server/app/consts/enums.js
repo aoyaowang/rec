@@ -11,7 +11,15 @@ module.exports = {
 
         GAME_SHAOLEI_CREATE: "shaoleicreate",
         GAME_SHAOLEI_QIANG: "shaoleiqiang",
-        GAME_SHAOLEI_OVER: "shaoleiover"
+        GAME_SHAOLEI_OVER: "shaoleiover",
+
+        GAME_JIELONG_CREATE: "jielongcreate",
+        GAME_JIELONG_QIANG: "jielongqiang",
+        GAME_JIELONG_OVER: "jielongover",
+
+        GAME_NIUNIU_CREATE: "niuniucreate",
+        GAME_NIUNIU_QIANG: "niuniuqiang",
+        GAME_NIUNIU_OVER: "niuniuover"
     },
     HALL_TPYE_NUM: 4,
     SQLNUM: 1,

@@ -89,7 +89,7 @@ var GSLRoom = GBaseRoom.extend({
         if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
 
         if (user.uid != this.m_Owner.uid) {
-            var lm = parseInt(1 * this.m_Coin / 100);
+            var lm = parseInt(1 * this.m_Coin) / 100;
             if (this.m_num == 7) lm = parseInt(1.5 * this.m_Coin / 100);
             if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
         }
@@ -162,10 +162,10 @@ var GSLRoom = GBaseRoom.extend({
 
         this.m_Owner.unlockMoney(0, left / 100);
 
-        var lm = parseInt(1 * this.m_Coin / 100);
+        var lm = parseInt(1 * this.m_Coin) / 100;
         var peilv = 1.0;
         if (this.m_num == 7) {
-            lm = parseInt(1.5 * this.m_Coin / 100);
+            lm = parseInt(1.5 * this.m_Coin) / 100;
             peilv = 1.5;
         }
         var fl = 0.03;
