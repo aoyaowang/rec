@@ -10,12 +10,8 @@ var userDao = require("../../dao/userDao");
 
 var GBaseRoom = require('../GBaseRoom');
 
-//创建房间 1 : 20
-//抢包     1 : 5
-
-var GNiuRoom = GBaseRoom.extend({
+var G28Room = GBaseRoom.extend({
     m_Coin: null,
-    m_Num: null,
     m_Owner: null,
     m_RedList: null,
 
@@ -23,18 +19,17 @@ var GNiuRoom = GBaseRoom.extend({
     m_bOver:null,
 
     m_BeginTime:null,
-    ctor:function(Type, owner, coin, num)
+    ctor:function(Type, owner, coin)
     {
         GBaseRoom.prototype.ctor.apply(this,arguments);
         this.m_Coin = coin * 100;
-        this.m_num = num;
         this.m_Owner = owner;
 
         this.m_bOver = false;
         this.m_List = {};
-        this.m_RedList = utils.getPackets(100, num);
-
-        var c = coin * 20 + 1;
+        this.m_RedList = utils.getPackets(400, 4, null);
+        
+        var c = coin * 3 + 1;
         owner.unlockMoney(c, -1 * c);
 
         this.playerEnter(owner);
@@ -91,18 +86,17 @@ var GNiuRoom = GBaseRoom.extend({
 
         if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
 
-        if (user.uid != this.m_Owner.uid) {
-            var lm = parseInt(5 * this.m_Coin) / 100;
-            if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
-        }
+        if (!player.Info.lockMoney(1)) return consts.MONEY.MONEY_NOTENOUGH;
 
-        var player = new GSLPlayer(user);
+        var player = new GJLPlayer(user);
         this.m_Players[player.uid] = player;
         this.m_PlayerCount = utils.size(this.m_Players);
         player.m_Room = this;
         player.m_Position = this.m_PlayerCount;
         player.m_EnterTime = Date.parse(new Date()) / 1000;
         player.Info.inGame.push(this);
+
+
 
         this.updatePos();
 
@@ -125,7 +119,7 @@ var GNiuRoom = GBaseRoom.extend({
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
                 else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
             }
-            player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: p, other: ot});
+            player.Info.addMsg(enums.PROTOCOL.GAME_28_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: p, other: ot});
             if (this.m_RedList.length == 0) {
                 this.GameOver();
             }
@@ -140,87 +134,18 @@ var GNiuRoom = GBaseRoom.extend({
         tick.addTick(this.CheckTimer,this,1,1);
 
         var timestamp = Date.parse(new Date()) / 1000;
-        // for (var key in this.m_Players) {
-        //     if (this.m_Players[key].m_Qiang == 0 && timestamp - this.m_Players.m_EnterTime >= 30) {
-        //         this.PlayerQiang(this.m_Players[key].Info);
-        //     }
-        // }
 
-        if (timestamp - this.m_BeginTime >= 60) {
+        if (timestamp - this.m_BeginTime > 60) {
             this.GameOver();
         }
     },
     GameOver:function(){
         this.m_bOver = true;
         var timestamp = Date.parse(new Date()) / 1000;
-        var end = {};
 
-        var left = 0;
-        for (var key in this.m_RedList) {
-            left += this.m_RedList[key];
-        }
-
-        if (!this.m_Players[this.m_Owner.uid]) {
-            console.warn("NiuNiu No Owner");
-            return;
-        }
-
-        var ownerniu = (this.m_Players[this.m_Owner.uid].m_LastNum + this.m_Players[this.m_Owner.uid].m_LastNum2) % 10;
-        if (ownerniu == 0) ownerniu = 10;
-
-        var peilv = {1: 1, 2: 1, 3: 1, 4: 1,5: 1, 6: 1, 7: 2, 8: 3,9: 4, 10: 5};
-
-        var lm = parseInt(5 * this.m_Coin) / 100;
-        var fl = 0.03;
-        var oex = 0;
-        var ownall = 0;
-        for (var key in this.m_Players) {
-            var player = this.m_Players[key];
-            if (this.m_Players[key].m_Qiang == 0) continue;
-            if (this.m_Players[key].Info.uid == this.m_Owner.uid) continue;
-            var curniu = (this.m_Players[key].m_LastNum + this.m_Players[key].m_LastNum2) % 10;
-            if (curniu == 0) curniu = 10;
-
-            if (ownerniu > curniu) {
-                var lost = peilv[ownerniu];
-                lost = lost * this.m_Coin;
-                ownall+=lost;
-                var piao =  parseInt(this.m_Players[key].m_Qiang * fl);
-                lost -= piao;
-                lost = parseInt(lost);
-                userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), lost / 100, timestamp);
-                this.m_Players[key].Info.unlockMoney(lm, lost / 100);
-            } else {
-                var win = peilv[curniu];
-                win = win * this.m_Coin;
-                ownall-=win;
-                var piao =  parseInt((win + this.m_Players[key].m_Qiang) * fl);
-                win -= piao;
-                win = parseInt(win);
-                userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), win / 100, timestamp);
-                this.m_Players[key].Info.unlockMoney(lm, win / 100);
-            }
-        }
-        ownall-=1;
-        ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
-        if (ownall > 0) {
-            ownall -= ownall * fl;
-        } else {
-            ownall -= this.m_Players[this.m_Owner.uid].m_Qiang * fl;
-        }
-        ownall = parseInt(ownall);
-
-        userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), ownall / 100, timestamp);
-        var c = this.m_Coin * 20 + 1;
-        this.m_Owner.unlockMoney(c, ownall);
-
-        this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
-
-    },
-    pushMsg:function(protocol, msg) {
-        GBaseRoom.prototype.pushMsg.apply(this,arguments);
+        
     }
 });
-module.exports = GNiuRoom;
+module.exports = G28Room;
 
-var GNiuPlayer = require('./GNiuPlayer');
+var G28Player = require('./G28Player');

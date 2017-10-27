@@ -19,7 +19,11 @@ module.exports = {
 
         GAME_NIUNIU_CREATE: "niuniucreate",
         GAME_NIUNIU_QIANG: "niuniuqiang",
-        GAME_NIUNIU_OVER: "niuniuover"
+        GAME_NIUNIU_OVER: "niuniuover",
+
+        GAME_28_CREATE: "28create",
+        GAME_28_QIANG: "28qiang",
+        GAME_28_OVER: "28over"
     },
     HALL_TPYE_NUM: 4,
     SQLNUM: 1,

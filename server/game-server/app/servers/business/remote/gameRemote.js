@@ -14,6 +14,8 @@ var GHall = require('../../../domain/GHall');
 
 var GSLRoom = require('../../../domain/shaolei/GSLRoom');
 var GJLRoom = require('../../../domain/jielong/GJLRoom');
+var GNiuRoom = require('../../../domain/niuniu/GNiuRoom');
+var G28Room = require('../../../domain/28/G28Room');
 
 var Core = require('../../../base/Core');
 var baseRemote = require('../../../base/baseRemote');
@@ -217,6 +219,42 @@ pro.jielongCheck = function(coin) {
     else return false; 
 }
 
+pro.niuniuCheck = function(coin) {
+    var STYPE = {
+        3: 1,
+        5: 1,
+        10: 1,
+        20: 1,
+        30: 2,
+        50: 2,
+        100: 2,
+        200: 2,
+        300: 3,
+        400: 3,
+        500: 3,
+        600: 3
+    };
+
+    if (!!STYPE[coin]) return STYPE[coin];
+    else return false; 
+}
+
+pro.game28Check = function(coin) {
+    var STYPE = {
+        5: 1,
+        10: 1,
+        20: 1,
+        30: 1,
+        50: 1,
+        100: 1,
+        200: 1,
+        500: 1
+    };
+
+    if (!!STYPE[coin]) return STYPE[coin];
+    else return false;
+}
+
 pro.createRoom = function(token, room, next) {
     if (!room) {
         next(null, {code: consts.NOR_CODE.ERR_PARAM});
@@ -232,9 +270,9 @@ pro.createRoom = function(token, room, next) {
         var type = room.type;
         if (type == 1) //扫雷
         {
-            var coin = room.coin;
-            var num = room.num;
-            var bomb = room.bomb;
+            var coin = parseInt(room.coin);
+            var num = parseInt(room.num);
+            var bomb = parseInt(room.bomb);
 
             if (num != 7 && num != 10) {
                 next(null, {code: consts.NOR_CODE.ERR_PARAM});
@@ -263,8 +301,8 @@ pro.createRoom = function(token, room, next) {
         }
         else if (type == 2) //接龙
         {
-            var coin = room.coin;
-            if (!this.jielongCheck(coin)) {
+            var coin = parseInt(room.coin);
+            if (coin == null || !this.jielongCheck(coin)) {
                 next(null, {code: consts.NOR_CODE.ERR_PARAM});
                 return;
             }
@@ -274,10 +312,50 @@ pro.createRoom = function(token, room, next) {
                 return;
             }
 
-            var room2 = new GJLRoom(type, user, coin, 5, true);
+            var room2 = new GJLRoom(coin, user, coin, 5, true);
             this.m_hall[1].createRoom(room2);
             this.m_hall[1].m_CurRoom[coin] = room2;
             room2.pushMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: room2});
+            next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+        }
+        else if (type == 3) //牛牛
+        {
+            var coin = parseInt(room.coin);
+            var ret = this.niuniuCheck(coin);
+            if (!ret) {
+                next(null, {code: consts.NOR_CODE.ERR_PARAM});
+                return;
+            }
+
+            var c = coin * 20 + 1;
+            if (!user.lockMoney(c)) {
+                next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
+                return;
+            }
+
+            var room2 = new GNiuRoom(ret, user, coin, 5);
+            this.m_hall[2].createRoom(room2);
+            room2.pushMsg(enums.PROTOCOL.GAME_NIUNIU_CREATE, {data: room2});
+            next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+        }
+        else if (type == 4) //28
+        {
+            var coin = parseInt(room.coin);
+            var ret = this.game28Check(coin);
+            if (!ret) {
+                next(null, {code: consts.NOR_CODE.ERR_PARAM});
+                return;
+            }
+
+            var c = coin * 3 + 1;
+            if (!user.lockMoney(c)) {
+                next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
+                return;
+            }
+
+            var room2 = new G28Room(ret, user, coin);
+            this.m_hall[3].createRoom(room2);
+            room2.pushMsg(enums.PROTOCOL.GAME_28_CREATE, {data: room2});
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
         }
     }.bind(this));
@@ -320,6 +398,42 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
 }
 
 pro.jielongQiang = function(token, hallid, roomid, next) {
+    this.checkToken(token, function(err, user){
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        var hall = this.m_hall[hallid];
+        if (!hall) {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+            return;
+        }
+        var room = hall.Value[roomid];
+        if (!room) {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+            return;
+        }
+        if (room.PlayerQiang) 
+        {
+            var eret = room.playerEnter(user);
+            if (eret != consts.NOR_CODE.SUC_OK) {
+                next(null, {code: eret});
+                return;
+            }
+            var ret = room.PlayerQiang(user);
+            if (ret)
+                next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+            else
+                next(null, {code: consts.GAME.RED_OVER});
+        } else {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+        }
+
+    }.bind(this));
+}
+
+pro.niuniuQiang = function(token, hallid, roomid, next) {
     this.checkToken(token, function(err, user){
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});

@@ -6,7 +6,7 @@ var Core = require("../../base/Core");
 
 var GBasePlayer = require('../GBasePlayer');
 
-var GSLPlayer = GBasePlayer.extend({
+var GJLPlayer = GBasePlayer.extend({
     m_Qiang:null,
     m_LastNum:null,
     m_Result:null,
@@ -43,5 +43,5 @@ var GSLPlayer = GBasePlayer.extend({
         this.m_Result = 0;
     }
 });
-module.exports = GSLPlayer;
+module.exports = GJLPlayer;
 

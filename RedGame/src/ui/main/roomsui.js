@@ -55,6 +55,9 @@ var roomsUI = ccui.Widget.extend({
         this.m_btn_lv3.addClickEventListener(this.BtnLv3Click.bind(this));
         this.m_btn_lv3_add.addClickEventListener(this.BtnLv3Click.bind(this));
 
+        if (this.m_type == 2) {
+            this.initType2();
+        }
         return true;
     },
     onEnter:function() {
@@ -65,30 +68,23 @@ var roomsUI = ccui.Widget.extend({
         this._super();
         Client.removeMap("joinroom", this);
     },
+    initType2:function() {
+        this.m_listview.removeAllChildren();
+        var l = GAME_INFO[this.m_type].list;
+        for (var i = 0;i < l.length;i+=3) {
+            var a = l[i];
+            var b = l[i+1];
+            var c = l[i+2];
+            var map = [a ? {name: name + " " + a + "币5包", num: 0, cb: this.roomClick, target: this, tag: a} : null,
+                b ? {name: name + " " + b + "币5包", num: 0, cb: this.roomClick, target: this, tag: b} : null,
+                c ? {name: name + " " + c + "币5包", num: 0, cb: this.roomClick, target: this, tag: c} : null];
+            var ui = new roomitemUI(map);
+            this.m_listview.pushBackCustomItem(ui);
+        }
+    },
     BtnLv1Click:function() {
         if (this.m_type == 1) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 1});
-        }
-        else if (this.m_type == 2) {
-            var name = GAME_INFO[this.m_type].name;
-            if (this.m_lv1.length == 0) {
-                var l = GAME_INFO[this.m_type].list[1];
-                for (var i = 0;i < l.length;i+=3) {
-                    var a = l[i];
-                    var b = l[i+1];
-                    var c = l[i+2];
-                    var map = [a ? {name: name + a[0] + "Ԫ" + a[1] + "��", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(a)} : null,
-                        b ? {name: name + b[0] + "Ԫ" + b[1] + "��", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(b)} : null,
-                        c ? {name: name + c[0] + "Ԫ" + c[1] + "��", num: 0, cb: this.roomClick, target: this, tag: JSON.stringify(c)} : null];
-                    var ui = new roomitemUI(map);
-                    this.m_lv1.push(ui);
-                    this.m_listview.insertCustomItem(ui, this.m_listview.getIndex(this.m_panel2));
-                }
-            } else {
-                for (var key in this.m_lv1) {
-                    this.m_lv1[key].removeFromParent();
-                }
-            }
         }
 
     },
@@ -96,92 +92,16 @@ var roomsUI = ccui.Widget.extend({
         if (this.m_type == 1) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 2});
         }
-        else if (this.m_type == 2) {
-            var name = GAME_INFO[this.m_type].name;
-            if (this.m_lv2.length == 0) {
-                var l = GAME_INFO[this.m_type].list[2];
-                for (var i = 0; i < l.length; i += 3) {
-                    var a = l[i];
-                    var b = l[i + 1];
-                    var c = l[i + 2];
-                    var map = [a ? {
-                        name: name + a[0] + "Ԫ" + a[1] + "��",
-                        num: 0,
-                        cb: this.roomClick,
-                        target: this,
-                        tag: JSON.stringify(a)
-                    } : null,
-                        b ? {
-                            name: name + b[0] + "Ԫ" + b[1] + "��",
-                            num: 0,
-                            cb: this.roomClick,
-                            target: this,
-                            tag: JSON.stringify(b)
-                        } : null,
-                        c ? {
-                            name: name + c[0] + "Ԫ" + c[1] + "��",
-                            num: 0,
-                            cb: this.roomClick,
-                            target: this,
-                            tag: JSON.stringify(c)
-                        } : null];
-                    var ui = new roomitemUI(map);
-                    this.m_lv2.push(ui);
-                    this.m_listview.insertCustomItem(ui, this.m_listview.getIndex(this.m_panel3));
-                }
-            } else {
-                for (var key in this.m_lv2) {
-                    this.m_lv2[key].removeFromParent();
-                }
-            }
-        }
     },
     BtnLv3Click:function() {
         if (this.m_type == 1) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 3});
         }
-        else if (this.m_type == 2) {
-            var name = GAME_INFO[this.m_type].name;
-            if (this.m_lv3.length == 0) {
-                var l = GAME_INFO[this.m_type].list[3];
-                for (var i = 0; i < l.length; i += 3) {
-                    var a = l[i];
-                    var b = l[i + 1];
-                    var c = l[i + 2];
-                    var map = [a ? {
-                        name: name + a[0] + "Ԫ" + a[1] + "��",
-                        num: 0,
-                        cb: this.roomClick,
-                        target: this,
-                        tag: JSON.stringify(a)
-                    } : null,
-                        b ? {
-                            name: name + b[0] + "Ԫ" + b[1] + "��",
-                            num: 0,
-                            cb: this.roomClick,
-                            target: this,
-                            tag: JSON.stringify(b)
-                        } : null,
-                        c ? {
-                            name: name + c[0] + "Ԫ" + c[1] + "��",
-                            num: 0,
-                            cb: this.roomClick,
-                            target: this,
-                            tag: JSON.stringify(c)
-                        } : null];
-                    var ui = new roomitemUI(map);
-                    this.m_lv3.push(ui);
-                    this.m_listview.pushBackCustomItem(ui);
-                }
-            } else {
-                for (var key in this.m_lv3) {
-                    this.m_lv3[key].removeFromParent();
-                }
-            }
-        }
     },
     roomClick:function(sender) {
-
+        if (this.m_type == 2) {
+            Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: sender.getTag()});
+        }
     },
     BackClick:function() {
         this.removeFromParent();
@@ -191,6 +111,11 @@ var roomsUI = ccui.Widget.extend({
             if (this.m_type == 1) {
                 var rn = req.type == 1 ? "初级房" : req.type == 2 ? "中级房" : "高级房";
                 var ui = new saoleiUI(this.m_type, req.type, "王者扫雷" + rn);
+                uiMgr.mainUI.m_game.addChild(ui);
+            }
+            else if (this.m_type == 2) {
+                var rn = req.type + "币5包";
+                var ui = new saoleiUI(this.m_type, req.type, "王者接龙 " + rn);
                 uiMgr.mainUI.m_game.addChild(ui);
             }
         }
