@@ -55,6 +55,7 @@
         <Project Name="tocash.csd" Type="Layer" />
         <Project Name="jielong.csd" Type="Layer" />
         <Project Name="niuniured.csd" Type="Layer" />
+        <Project Name="gamelog.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

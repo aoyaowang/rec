@@ -91,7 +91,7 @@ var GSLRoom = GBaseRoom.extend({
         if (user.uid != this.m_Owner.uid) {
             var lm = parseInt(1 * this.m_Coin) / 100;
             if (this.m_num == 7) lm = parseInt(1.5 * this.m_Coin / 100);
-            if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
+            if (!user.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
         }
 
         var player = new GSLPlayer(user);
@@ -185,14 +185,16 @@ var GSLRoom = GBaseRoom.extend({
             console.warn("GAMEOVER:" + player.Info.uid);
             player.Info.unlockMoney(lm, e / 100);
             player.m_Result = e / 100;
-            ownall = e / 100;
+            ownall += e / 100;
             if (player.Info.uid != this.m_Owner.uid)
-                userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, e, timestamp);
+                userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, e / 100, timestamp);
         }
 
-        userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "saolei", parseInt(this.m_Coin), parseInt((ownall + oex + left) * 100) - this.m_Coin, timestamp);
-        if (this.m_Players[this.m_Owner.uid] )
-        this.m_Owner.unlockMoney(0, oex);
+        userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "saolei", parseInt(this.m_Coin), (parseInt((ownall + oex + (left / 100)) * 100) - this.m_Coin) / 100, timestamp);
+        if (this.m_Players[this.m_Owner.uid] ) {
+            this.m_Players[this.m_Owner.uid].m_Result += oex;
+            this.m_Owner.unlockMoney(0, oex);
+        }
 
         this.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0, bomb: this.m_Bomb});
 

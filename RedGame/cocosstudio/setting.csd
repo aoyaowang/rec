@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="52" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="918.0000" />
         <Children>
-          <AbstractNodeData Name="listview" ActionTag="-277006944" Tag="54" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+          <AbstractNodeData Name="listview" ActionTag="-277006944" Tag="54" IconVisible="False" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
             <Size X="640.0000" Y="918.0000" />
             <Children>
               <AbstractNodeData Name="Panel_1" CanEdit="False" ActionTag="1974379926" Tag="55" IconVisible="False" BottomMargin="718.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
@@ -343,61 +343,61 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_10" CanEdit="False" ActionTag="367972026" ZOrder="8" Tag="82" IconVisible="False" TopMargin="655.0000" BottomMargin="213.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_10" ActionTag="367972026" ZOrder="8" Tag="82" IconVisible="False" TopMargin="655.0000" BottomMargin="213.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="50.0000" />
                 <Children>
-                  <AbstractNodeData Name="Text_7" ActionTag="2095724394" Tag="83" IconVisible="False" LeftMargin="33.4631" RightMargin="534.5369" TopMargin="13.9475" BottomMargin="12.0525" FontSize="24" LabelText="房间号" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="72.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5182" ScaleY="0.4278" />
-                    <Position X="70.7735" Y="22.3197" />
+                  <AbstractNodeData Name="Text_7" ActionTag="2095724394" Tag="83" IconVisible="False" RightMargin="500.0000" TopMargin="-0.9297" BottomMargin="0.9297" IsCustomSize="True" FontSize="24" LabelText="房间号" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="140.0000" Y="50.0000" />
+                    <AnchorPoint ScaleY="0.4300" />
+                    <Position Y="22.4297" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1106" Y="0.4464" />
-                    <PreSize X="0.1125" Y="0.4800" />
+                    <PrePosition Y="0.4486" />
+                    <PreSize X="0.2188" Y="1.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_7_0" ActionTag="-1972064286" Tag="84" IconVisible="False" LeftMargin="151.6046" RightMargin="392.3954" TopMargin="13.1809" BottomMargin="12.8191" FontSize="24" LabelText="游戏类型" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="96.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="199.6046" Y="24.8191" />
+                  <AbstractNodeData Name="Text_7_0" ActionTag="-1972064286" Tag="84" IconVisible="False" LeftMargin="140.0000" RightMargin="400.0000" IsCustomSize="True" FontSize="24" LabelText="游戏类型" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="50.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="140.0000" Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3119" Y="0.4964" />
-                    <PreSize X="0.1500" Y="0.4800" />
+                    <PrePosition X="0.2188" Y="0.5000" />
+                    <PreSize X="0.1563" Y="1.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_7_0_0" ActionTag="-1852032277" Tag="85" IconVisible="False" LeftMargin="297.8414" RightMargin="294.1586" TopMargin="13.9472" BottomMargin="12.0528" FontSize="24" LabelText="时间" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="48.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="321.8414" Y="24.0528" />
+                  <AbstractNodeData Name="Text_7_0_0" ActionTag="-1852032277" Tag="85" IconVisible="False" LeftMargin="240.0000" RightMargin="250.0000" IsCustomSize="True" FontSize="24" LabelText="时间" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="150.0000" Y="50.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="240.0000" Y="25.0000" />
                     <Scale ScaleX="1.0100" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5029" Y="0.4811" />
-                    <PreSize X="0.0750" Y="0.4800" />
+                    <PrePosition X="0.3750" Y="0.5000" />
+                    <PreSize X="0.2344" Y="1.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_7_0_0_0" ActionTag="853041252" Tag="86" IconVisible="False" LeftMargin="418.3299" RightMargin="173.6701" TopMargin="13.9472" BottomMargin="12.0528" FontSize="24" LabelText="金币" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="48.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="442.3299" Y="24.0528" />
+                  <AbstractNodeData Name="Text_7_0_0_0" ActionTag="853041252" Tag="86" IconVisible="False" LeftMargin="390.0000" RightMargin="150.0000" IsCustomSize="True" FontSize="24" LabelText="金币" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="100.0000" Y="50.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="390.0000" Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6911" Y="0.4811" />
-                    <PreSize X="0.0750" Y="0.4800" />
+                    <PrePosition X="0.6094" Y="0.5000" />
+                    <PreSize X="0.1563" Y="1.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_7_0_0_0_0" ActionTag="-1314968378" Tag="87" IconVisible="False" LeftMargin="515.0311" RightMargin="28.9689" TopMargin="13.0670" BottomMargin="12.9330" FontSize="24" LabelText="当局积分" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="96.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="563.0311" Y="24.9330" />
+                  <AbstractNodeData Name="Text_7_0_0_0_0" ActionTag="-1314968378" Tag="87" IconVisible="False" LeftMargin="490.0000" IsCustomSize="True" FontSize="24" LabelText="当局积分" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="150.0000" Y="50.0000" />
+                    <AnchorPoint ScaleY="0.5000" />
+                    <Position X="490.0000" Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8797" Y="0.4987" />
-                    <PreSize X="0.1500" Y="0.4800" />
+                    <PrePosition X="0.7656" Y="0.5000" />
+                    <PreSize X="0.2344" Y="1.0000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>

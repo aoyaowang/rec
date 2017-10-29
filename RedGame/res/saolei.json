@@ -29,6 +29,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -54,7 +56,7 @@
               {
                 "DirectionType": "Vertical",
                 "ScrollDirectionType": 0,
-                "ClipAble": false,
+                "ClipAble": true,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 230,
@@ -69,6 +71,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -108,6 +112,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -153,6 +159,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -189,6 +197,8 @@
                         "ColorVector": {
                           "ScaleY": 1.0
                         },
+                        "Scale9Width": 1,
+                        "Scale9Height": 1,
                         "TouchEnable": true,
                         "AnchorPoint": {},
                         "Position": {
@@ -267,6 +277,7 @@
                             "ctype": "TextObjectData"
                           },
                           {
+                            "IsCustomSize": true,
                             "FontSize": 36,
                             "LabelText": "0.00",
                             "HorizontalAlignmentType": "HT_Right",
@@ -282,11 +293,11 @@
                             "ShadowOffsetX": 2.0,
                             "ShadowOffsetY": -2.0,
                             "AnchorPoint": {
-                              "ScaleX": 0.5,
+                              "ScaleX": 1.0,
                               "ScaleY": 0.5
                             },
                             "Position": {
-                              "X": 445.2922,
+                              "X": 481.2922,
                               "Y": 39.4983
                             },
                             "Scale": {
@@ -300,21 +311,21 @@
                             },
                             "IconVisible": false,
                             "PrePosition": {
-                              "X": 0.7812,
+                              "X": 0.8444,
                               "Y": 0.5266
                             },
                             "PreSize": {
-                              "X": 0.1263,
+                              "X": 0.5263,
                               "Y": 0.48
                             },
-                            "LeftMargin": 409.2922,
+                            "LeftMargin": 181.2922,
                             "RightMargin": 88.7078,
                             "TopMargin": 17.5017,
                             "BottomMargin": 21.4983,
                             "Tag": 34,
                             "ActionTag": 974459663,
                             "Size": {
-                              "X": 72.0,
+                              "X": 300.0,
                               "Y": 36.0
                             },
                             "Name": "ft_money",
@@ -974,6 +985,8 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
@@ -1208,7 +1221,7 @@
                   "Y": 0.0347
                 },
                 "LeftMargin": 21.2597,
-                "RightMargin": 572.7402,
+                "RightMargin": 572.7403,
                 "TopMargin": 6.8889,
                 "BottomMargin": 995.1111,
                 "Tag": 40,

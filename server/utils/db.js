@@ -173,7 +173,7 @@ db.create_user = function(openid, nickname, sex, headimg, cb) {
             throw err;
         } else {
             var uid = res.insertId;
-            var sql = 'insert into money(uid) values (?)';
+            var sql = 'insert into money(uid, money, fangka) values (?, 1000000, 1000000)';
             var args = [sanitizer.sanitize(uid)];
 
             query(sql, args, function(err, res){

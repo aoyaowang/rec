@@ -178,7 +178,7 @@ pro.saoleiType = function(coin) {
     var STYPE = {
         1: {min: 10, max: 100, step: 10},
         2: {min: 100, max: 500, step: 50},
-        3: {min: 500, max: 200, step: 100}
+        3: {min: 500, max: 2000, step: 100}
     }
 
     var t = null;

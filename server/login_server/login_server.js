@@ -302,7 +302,7 @@ app.get("/getlog", function(req, res){
         return;
     }
 
-    var game = parseInt(req.query.game);
+    var game = req.query.game;
     db.getLog(uid, game, function(data){
         if (!data) {
             send(res, {code: consts.CODE.ERR_PARAM});

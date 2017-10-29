@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Panel_1" ActionTag="1284788683" Tag="60" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="ListView_1" ActionTag="1889649557" Tag="63" IconVisible="False" TopMargin="458.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="ListView_1" ActionTag="1889649557" Tag="63" IconVisible="False" TopMargin="458.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="580.0000" />
                 <Children>
                   <AbstractNodeData Name="t" ActionTag="-633636341" Tag="64" IconVisible="False" BottomMargin="554.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">

@@ -13,19 +13,23 @@ module.exports = Core.obserData.extend({
     inGame:null,
     logined: false,
     HallType: null, //当前大厅类型
-    data: {
-        uid: null,
-        nickname: null,
-        gamename: null,
-        sex: null,
-        headimg: null,
-        openid: null,
+    data: null,
+    ctor:function() {
+        this._super();
+        this.data= {
+            uid: null,
+            nickname: null,
+            gamename: null,
+            sex: null,
+            headimg: null,
+            openid: null,
 
-        fangka: null,
-        money: null,
+            fangka: null,
+            money: null,
 
-        _lockmoney: null,
-        _lockfangka: null,
+            _lockmoney: null,
+            _lockfangka: null,
+        }
     },
     init:function(uid, next) {
         this.sync = [];

@@ -6,6 +6,7 @@ var settingUI = ccui.Widget.extend({
     m_img_head:null,
     m_ft_fangka:null,
     m_ft_id:null,
+    m_listview: null,
     ctor:function() {
         this._super();
 
@@ -27,15 +28,27 @@ var settingUI = ccui.Widget.extend({
         btn = ccui.helper.seekWidgetByName(this.Widget, "btn_tocash");
         btn.addClickEventListener(this.toCashClick.bind(this));
 
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game1");
+        btn.addClickEventListener(this.game1Click.bind(this));
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game2");
+        btn.addClickEventListener(this.game2Click.bind(this));
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game3");
+        btn.addClickEventListener(this.game3Click.bind(this));
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game4");
+        btn.addClickEventListener(this.game4Click.bind(this));
+
+        this.m_listview = ccui.helper.seekWidgetByName(this.Widget, "listview");
         return true;
     },
     onEnter:function() {
         this._super();
         RoleInfo.addOb(this.RoleInfoChange, this);
+        Client.addMap("getlog", this);
     },
     onExit:function() {
         this._super();
         RoleInfo.removeOb(this.RoleInfoChange, this);
+        Client.removeMap("getlog", this);
     },
     RoleInfoChange:function(role) {
         if (RoleInfo.img) {
@@ -56,5 +69,23 @@ var settingUI = ccui.Widget.extend({
     toCashClick:function() {
         var ui = new tocashUI();
         this.Widget.addChild(ui);
+    },
+    game1Click:function(msg) {
+
+    },
+    game2Click:function(msg) {
+
+    },
+    game3Click:function(msg) {
+
+    },
+    game4Click:function(msg) {
+
+    },
+    getlog:function(msg) {
+        this.m_listview.removeAllChildren();
+
+        var ui = new logUI();
+        this.m_listview.pushbackCustomItem(ui);
     }
 });

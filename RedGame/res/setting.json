@@ -17,7 +17,7 @@
           {
             "DirectionType": "Vertical",
             "ScrollDirectionType": 0,
-            "ClipAble": false,
+            "ClipAble": true,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 26,
@@ -1500,8 +1500,11 @@
                 "Tag": 82,
                 "Children": [
                   {
+                    "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "房间号",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1514,12 +1517,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5182,
-                      "ScaleY": 0.4278
+                      "ScaleY": 0.43
                     },
                     "Position": {
-                      "X": 70.7735,
-                      "Y": 22.3197
+                      "X": 0.0,
+                      "Y": 22.4297
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1528,29 +1530,31 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1106,
-                      "Y": 0.4464
+                      "X": 0.0,
+                      "Y": 0.4486
                     },
                     "PreSize": {
-                      "X": 0.1125,
-                      "Y": 0.48
+                      "X": 0.2188,
+                      "Y": 1.0
                     },
-                    "LeftMargin": 33.4631,
-                    "RightMargin": 534.5369,
-                    "TopMargin": 13.9475,
-                    "BottomMargin": 12.0525,
+                    "RightMargin": 500.0,
+                    "TopMargin": -0.9297,
+                    "BottomMargin": 0.9297,
                     "Tag": 83,
                     "ActionTag": 2095724394,
                     "Size": {
-                      "X": 72.0,
-                      "Y": 24.0
+                      "X": 140.0,
+                      "Y": 50.0
                     },
                     "Name": "Text_7",
                     "ctype": "TextObjectData"
                   },
                   {
+                    "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "游戏类型",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1563,12 +1567,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 199.6046,
-                      "Y": 24.8191
+                      "X": 140.0,
+                      "Y": 25.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1577,29 +1580,30 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3119,
-                      "Y": 0.4964
+                      "X": 0.2188,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.15,
-                      "Y": 0.48
+                      "X": 0.1562,
+                      "Y": 1.0
                     },
-                    "LeftMargin": 151.6046,
-                    "RightMargin": 392.3954,
-                    "TopMargin": 13.1809,
-                    "BottomMargin": 12.8191,
+                    "LeftMargin": 140.0,
+                    "RightMargin": 400.0,
                     "Tag": 84,
                     "ActionTag": -1972064286,
                     "Size": {
-                      "X": 96.0,
-                      "Y": 24.0
+                      "X": 100.0,
+                      "Y": 50.0
                     },
                     "Name": "Text_7_0",
                     "ctype": "TextObjectData"
                   },
                   {
+                    "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "时间",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1612,12 +1616,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 321.8414,
-                      "Y": 24.0528
+                      "X": 240.0,
+                      "Y": 25.0
                     },
                     "Scale": {
                       "ScaleX": 1.01,
@@ -1626,29 +1629,30 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5029,
-                      "Y": 0.4811
+                      "X": 0.375,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.075,
-                      "Y": 0.48
+                      "X": 0.2344,
+                      "Y": 1.0
                     },
-                    "LeftMargin": 297.8414,
-                    "RightMargin": 294.1586,
-                    "TopMargin": 13.9472,
-                    "BottomMargin": 12.0528,
+                    "LeftMargin": 240.0,
+                    "RightMargin": 250.0,
                     "Tag": 85,
                     "ActionTag": -1852032277,
                     "Size": {
-                      "X": 48.0,
-                      "Y": 24.0
+                      "X": 150.0,
+                      "Y": 50.0
                     },
                     "Name": "Text_7_0_0",
                     "ctype": "TextObjectData"
                   },
                   {
+                    "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "金币",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1661,12 +1665,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 442.3299,
-                      "Y": 24.0528
+                      "X": 390.0,
+                      "Y": 25.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1675,29 +1678,30 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6911,
-                      "Y": 0.4811
+                      "X": 0.6094,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.075,
-                      "Y": 0.48
+                      "X": 0.1562,
+                      "Y": 1.0
                     },
-                    "LeftMargin": 418.3299,
-                    "RightMargin": 173.6701,
-                    "TopMargin": 13.9472,
-                    "BottomMargin": 12.0528,
+                    "LeftMargin": 390.0,
+                    "RightMargin": 150.0,
                     "Tag": 86,
                     "ActionTag": 853041252,
                     "Size": {
-                      "X": 48.0,
-                      "Y": 24.0
+                      "X": 100.0,
+                      "Y": 50.0
                     },
                     "Name": "Text_7_0_0_0",
                     "ctype": "TextObjectData"
                   },
                   {
+                    "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "当局积分",
+                    "HorizontalAlignmentType": "HT_Center",
+                    "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1710,12 +1714,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 563.0311,
-                      "Y": 24.933
+                      "X": 490.0,
+                      "Y": 25.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1724,22 +1727,19 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.8797,
-                      "Y": 0.4987
+                      "X": 0.7656,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.15,
-                      "Y": 0.48
+                      "X": 0.2344,
+                      "Y": 1.0
                     },
-                    "LeftMargin": 515.0311,
-                    "RightMargin": 28.9689,
-                    "TopMargin": 13.067,
-                    "BottomMargin": 12.933,
+                    "LeftMargin": 490.0,
                     "Tag": 87,
                     "ActionTag": -1314968378,
                     "Size": {
-                      "X": 96.0,
-                      "Y": 24.0
+                      "X": 150.0,
+                      "Y": 50.0
                     },
                     "Name": "Text_7_0_0_0_0",
                     "ctype": "TextObjectData"

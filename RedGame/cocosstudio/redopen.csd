@@ -33,7 +33,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ListView_1" ActionTag="-1250568741" Tag="40" IconVisible="False" TopMargin="458.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="ListView_1" ActionTag="-1250568741" Tag="40" IconVisible="False" TopMargin="458.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="580.0000" />
                 <Children>
                   <AbstractNodeData Name="t" ActionTag="1910712745" Tag="41" IconVisible="False" BottomMargin="554.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">

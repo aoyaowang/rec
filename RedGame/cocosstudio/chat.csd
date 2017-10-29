@@ -117,7 +117,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="50.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="50.0000" BottomMargin="100.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="808.0000" />
                 <AnchorPoint />
                 <Position Y="100.0000" />

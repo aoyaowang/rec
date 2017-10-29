@@ -75,7 +75,7 @@ var GHall = Core.obserData.extend({
             
             var p = this.m_Players[k].user;
             var t = this.m_Players[k].type;
-            console.warn("PLAYER:" + p.nickname + " TYPE:" + t);
+            console.warn("UID:" + k + " PLAYER:" + p.nickname + " TYPE:" + t);
             if (!!type && t != type) continue;
             all.push(p.nickname);
             p.addMsg(protocol, msg);

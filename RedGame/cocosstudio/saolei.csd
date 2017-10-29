@@ -6,13 +6,13 @@
       <ObjectData Name="Layer" Tag="26" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="1038.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="1509039992" Tag="27" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="1509039992" Tag="27" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="ListView_1" ActionTag="-493156671" Tag="33" IconVisible="False" TopMargin="50.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="ListView_1" ActionTag="-493156671" Tag="33" IconVisible="False" TopMargin="50.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="988.0000" />
                 <Children>
-                  <AbstractNodeData Name="s" ActionTag="-178506464" Tag="41" IconVisible="False" RightMargin="440.0000" BottomMargin="908.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+                  <AbstractNodeData Name="s" ActionTag="-178506464" Tag="41" IconVisible="False" RightMargin="440.0000" BottomMargin="908.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="200.0000" Y="80.0000" />
                     <AnchorPoint />
                     <Position Y="908.0000" />
@@ -25,10 +25,10 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="p_1" ActionTag="890612356" ZOrder="1" Tag="42" IconVisible="False" TopMargin="80.0000" BottomMargin="833.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" ctype="PanelObjectData">
+                  <AbstractNodeData Name="p_1" ActionTag="890612356" ZOrder="1" Tag="42" IconVisible="False" TopMargin="80.0000" BottomMargin="833.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="75.0000" />
                     <Children>
-                      <AbstractNodeData Name="btn_1" ActionTag="-1486283868" ZOrder="2" Tag="28" IconVisible="False" LeftMargin="36.0000" RightMargin="34.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+                      <AbstractNodeData Name="btn_1" ActionTag="-1486283868" ZOrder="2" Tag="28" IconVisible="False" LeftMargin="36.0000" RightMargin="34.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                         <Size X="570.0000" Y="75.0000" />
                         <Children>
                           <AbstractNodeData Name="Text_1" ActionTag="-1831098276" Tag="31" IconVisible="False" LeftMargin="25.8020" RightMargin="472.1980" TopMargin="20.4816" BottomMargin="18.5184" FontSize="36" LabelText="金额" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -42,14 +42,14 @@
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
-                          <AbstractNodeData Name="ft_money" ActionTag="974459663" Tag="34" IconVisible="False" LeftMargin="409.2922" RightMargin="88.7078" TopMargin="17.5017" BottomMargin="21.4983" FontSize="36" LabelText="0.00" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="72.0000" Y="36.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="445.2922" Y="39.4983" />
+                          <AbstractNodeData Name="ft_money" ActionTag="974459663" Tag="34" IconVisible="False" LeftMargin="181.2922" RightMargin="88.7078" TopMargin="17.5017" BottomMargin="21.4983" IsCustomSize="True" FontSize="36" LabelText="0.00" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                            <Size X="300.0000" Y="36.0000" />
+                            <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+                            <Position X="481.2922" Y="39.4983" />
                             <Scale ScaleX="1.0000" ScaleY="1.0000" />
                             <CColor A="255" R="0" G="0" B="0" />
-                            <PrePosition X="0.7812" Y="0.5266" />
-                            <PreSize X="0.1263" Y="0.4800" />
+                            <PrePosition X="0.8444" Y="0.5266" />
+                            <PreSize X="0.5263" Y="0.4800" />
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
@@ -229,7 +229,7 @@
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="s3" ActionTag="-762054977" ZOrder="6" Tag="57" IconVisible="False" TopMargin="405.0000" BottomMargin="383.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
+                  <AbstractNodeData Name="s3" ActionTag="-762054977" ZOrder="6" Tag="57" IconVisible="False" TopMargin="405.0000" BottomMargin="383.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="200.0000" />
                     <Children>
                       <AbstractNodeData Name="btn_send" ActionTag="-1698342781" Tag="58" IconVisible="False" LeftMargin="126.4427" RightMargin="153.5573" TopMargin="46.8687" BottomMargin="53.1313" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -282,7 +282,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_back" ActionTag="1474993491" Tag="40" IconVisible="False" LeftMargin="21.2597" RightMargin="572.7402" TopMargin="6.8889" BottomMargin="995.1111" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_back" ActionTag="1474993491" Tag="40" IconVisible="False" LeftMargin="21.2597" RightMargin="572.7403" TopMargin="6.8889" BottomMargin="995.1111" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="46.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="44.2597" Y="1013.1111" />

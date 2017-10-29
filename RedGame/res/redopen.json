@@ -165,7 +165,7 @@
               {
                 "DirectionType": "Vertical",
                 "ScrollDirectionType": 0,
-                "ClipAble": false,
+                "ClipAble": true,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 230,
