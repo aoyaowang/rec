@@ -10,9 +10,11 @@ var g_resources = [
     "res/chatred.json",
     "res/chatsys.json",
     "res/game.json",
+    "res/jielong.json",
     "res/main.json",
     "res/market.json",
     "res/message.json",
+    "res/niuniured.json",
     "res/reddetail.json",
     "res/redopen.json",
     "res/redover.json",
@@ -23,7 +25,8 @@ var g_resources = [
     "res/saolei.json",
     "res/saoleisub.json",
     "res/setting.json",
-    "res/sys.json"
+    "res/sys.json",
+    "res/tocash.json"
 ];
 for (var i in res) {
     g_resources.push(res[i]);

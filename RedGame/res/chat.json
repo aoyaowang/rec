@@ -506,17 +506,17 @@
                       "Y": 0.303
                     },
                     "PreSize": {
-                      "X": 0.15,
+                      "X": 0.2344,
                       "Y": 0.3
                     },
-                    "LeftMargin": 31.0454,
-                    "RightMargin": 512.9546,
+                    "LeftMargin": 4.0454,
+                    "RightMargin": 485.9546,
                     "TopMargin": 54.6992,
                     "BottomMargin": 15.3008,
                     "Tag": 55,
                     "ActionTag": 976375219,
                     "Size": {
-                      "X": 96.0,
+                      "X": 150.0,
                       "Y": 30.0
                     },
                     "Name": "ft_money",

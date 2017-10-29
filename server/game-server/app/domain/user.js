@@ -93,6 +93,7 @@ module.exports = Core.obserData.extend({
         return true;
     },
     unlockMoney:function(m, cm) {
+        m = this.data._lockmoney > m ? m : this.data._lockmoney;
         this.data.money += m;
         this.data._lockmoney -= m;
 

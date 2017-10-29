@@ -111,7 +111,7 @@ var saoleiUI = ccui.Widget.extend({
         }.bind(this));
     },
     redClick:function() {
-        var ui = new saoleired(this.m_type);
+        var ui = new saoleired(this.m_type, this.m_subtype);
         this.Widget.addChild(ui);
     },
     logClick:function() {

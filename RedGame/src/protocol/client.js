@@ -11,14 +11,23 @@ var Client = {
     removeMap:function(name, target) {
         if (!this._list[name]) return;
         for (var i in this._list[name]) {
-            if (this._list[i] == target) {
-                this._list.splice(i, 1);
+            if (this._list[name][i] == target) {
+                this._list[name].splice(i, 1);
                 break;
             }
         }
     },
     onMsg:function(id, msg, req) {
-        Nlog("Msg:" + id + JSON.stringify(msg));
+        if (id != 'sync' || (!!msg.sync && msg.sync.length > 0))
+            Nlog("Msg:" + id + JSON.stringify(msg));
+        if (msg.hasOwnProperty('code') && msg.code != 0 && id != 'sync') {
+            if (msg.sync) {
+                this.onSync(msg.sync);
+            }
+            this.onError(msg.code);
+            return;
+        }
+
         if (msg.sync) {
             this.onSync(msg.sync);
         }

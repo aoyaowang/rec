@@ -11,6 +11,8 @@ var GNiuPlayer = GBasePlayer.extend({
     m_LastNum:null,
     m_LastNum2:null,
     m_Result:null,
+    m_Pei:null,
+    m_Piao:null,
     m_EnterTime:null,
     m_Time:null,
     ctor:function(user)
@@ -29,7 +31,7 @@ var GNiuPlayer = GBasePlayer.extend({
     toJSON:function()
     {
         return {uid: this.uid, nickname: this.Info.nickname, gamename: this.Info.gamename, 
-                headimg: this.Info.headimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang, last: this.m_LastNum, last2: this.m_LastNum2, result: this.m_Result, time: this.m_Time};
+                headimg: this.Info.headimg, Room: this.m_Room.m_RoomID, qiang: this.m_Qiang, last: this.m_LastNum, last2: this.m_LastNum2, result: this.m_Result, time: this.m_Time, pei: this.m_Pei, piao: this.m_Piao};
     },
     Qiang:function(q) {
         if (this.m_Qiang != 0) return false;
@@ -44,6 +46,8 @@ var GNiuPlayer = GBasePlayer.extend({
         this.m_LastNum = -1;
         this.m_LastNum2 = -1;
         this.m_Result = 0;
+        this.m_Pei = 0;
+        this.m_Piao = 0;
     }
 });
 module.exports = GNiuPlayer;

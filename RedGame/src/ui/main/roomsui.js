@@ -66,6 +66,7 @@ var roomsUI = ccui.Widget.extend({
     },
     onExit:function() {
         this._super();
+        console.log("OnExit RoomUI");
         Client.removeMap("joinroom", this);
     },
     initType2:function() {
@@ -83,18 +84,20 @@ var roomsUI = ccui.Widget.extend({
         }
     },
     BtnLv1Click:function() {
-        if (this.m_type == 1) {
+        if (this.m_type == 1 || this.m_type == 3 || this.m_type == 4) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 1});
         }
-
     },
     BtnLv2Click:function() {
-        if (this.m_type == 1) {
+        if (this.m_type == 1 || this.m_type == 3 || this.m_type == 4) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 2});
+        }
+        else if (this.m_type == 3) {
+
         }
     },
     BtnLv3Click:function() {
-        if (this.m_type == 1) {
+        if (this.m_type == 1 || this.m_type == 3 || this.m_type == 4) {
             Server.gate("joinroom", {t: RoleInfo.token, id: parseInt(this.m_type) - 1, type: 3});
         }
     },
@@ -115,7 +118,17 @@ var roomsUI = ccui.Widget.extend({
             }
             else if (this.m_type == 2) {
                 var rn = req.type + "币5包";
-                var ui = new saoleiUI(this.m_type, req.type, "王者接龙 " + rn);
+                var ui = new jielongUI(this.m_type, req.type, "王者接龙 " + rn);
+                uiMgr.mainUI.m_game.addChild(ui);
+            }
+            else if (this.m_type == 3) {
+                var rn = req.type == 1 ? "初级房(1-20币)" : req.type == 2 ? "中级房(30-200币)" : "高级房(300-600币)";
+                var ui = new niuniuUI(this.m_type, req.type, "王者牛牛" + rn);
+                uiMgr.mainUI.m_game.addChild(ui);
+            }
+            else if (this.m_type == 4) {
+                var rn = req.type == 1 ? "初级房(1-20币)" : req.type == 2 ? "中级房(30-200币)" : "高级房(300-600币)";
+                var ui = new game28UI(this.m_type, req.type, "王者二八" + rn);
                 uiMgr.mainUI.m_game.addChild(ui);
             }
         }

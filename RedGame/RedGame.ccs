@@ -31,6 +31,7 @@
           <Image Name="zt.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
+        <Project Name="bill.csd" Type="Layer" />
         <Project Name="chat.csd" Type="Layer" />
         <Project Name="chatnormal.csd" Type="Layer" />
         <Project Name="chatred.csd" Type="Layer" />
@@ -51,8 +52,9 @@
         <Project Name="saoleisub.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
-        <Project Name="bill.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
+        <Project Name="jielong.csd" Type="Layer" />
+        <Project Name="niuniured.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

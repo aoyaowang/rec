@@ -24,6 +24,8 @@ var settingUI = ccui.Widget.extend({
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_bill");
         btn.addClickEventListener(this.billClick.bind(this));
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_tocash");
+        btn.addClickEventListener(this.toCashClick.bind(this));
 
         return true;
     },
@@ -49,6 +51,10 @@ var settingUI = ccui.Widget.extend({
     },
     billClick:function() {
         var ui = new billUI();
+        this.Widget.addChild(ui);
+    },
+    toCashClick:function() {
+        var ui = new tocashUI();
         this.Widget.addChild(ui);
     }
 });

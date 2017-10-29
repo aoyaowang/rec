@@ -9,11 +9,17 @@ var g_protocol = {
 
     ///////////SEND_GATE/////////////
     "entergame": "enter",
+    "turnto": "turnto",
     "sync":"sync",
     "gethallinfo":"gethallinfo",
     "joinroom":"joinroom",
     "leaveroom":"leaveroom",
     "createsaolei":"createsaolei",
+    "createjielong":"createjielong",
+    "createniuniu":"createniuniu",
+    "create28":"create28",
+    "saoleiQiangrq":"saoleiQiang",
+    "jielongQiangrq":"saoleiQiang",
     "saoleiQiangrq":"saoleiQiang",
     "getdetail":"getdetail",
 
@@ -25,5 +31,20 @@ var g_protocol = {
     "shaoleiqiang": "shaoleiqiang",
     "shaoleiover": "shaoleiover",
     "playerenterroom": "playerenterroom",
-    "playerleaveroom": "playerleaveroom"
+    "playerleaveroom": "playerleaveroom",
+
+    "jielongcreate": "jielongcreate",
+    "jielongqiang": "jielongqiang",
+    "jielongotherqiang": "jielongotherqiang",
+    "jielongover": "jielongover",
+
+    "niuniucreate": "niuniucreate",
+    "niuniuotherqiang": "niuniuotherqiang",
+    "niuniuqiang": "niuniuqiang",
+    "niuniuover": "niuniuover",
+
+    "28create": "28create",
+    "28otherqiang": "28otherqiang",
+    "28qiang": "28qiang",
+    "28over": "28over"
 };

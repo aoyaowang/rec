@@ -241,18 +241,22 @@ pro.niuniuCheck = function(coin) {
 
 pro.game28Check = function(coin) {
     var STYPE = {
+        3: 1,
         5: 1,
         10: 1,
         20: 1,
-        30: 1,
-        50: 1,
-        100: 1,
-        200: 1,
-        500: 1
+        30: 2,
+        50: 2,
+        100: 2,
+        200: 2,
+        300: 3,
+        400: 3,
+        500: 3,
+        600: 3
     };
 
     if (!!STYPE[coin]) return STYPE[coin];
-    else return false;
+    else return false; 
 }
 
 pro.createRoom = function(token, room, next) {
@@ -336,6 +340,8 @@ pro.createRoom = function(token, room, next) {
             var room2 = new GNiuRoom(ret, user, coin, 5);
             this.m_hall[2].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_NIUNIU_CREATE, {data: room2});
+            room2.playerEnter(user);
+            room2.PlayerQiang(user);
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
         }
         else if (type == 4) //28
@@ -356,6 +362,8 @@ pro.createRoom = function(token, room, next) {
             var room2 = new G28Room(ret, user, coin);
             this.m_hall[3].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_28_CREATE, {data: room2});
+            room2.playerEnter(user);
+            room2.PlayerQiang(user);
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
         }
     }.bind(this));
@@ -567,11 +575,12 @@ pro.turnto = function(token, uid, money, next) {
                     return;
                 }
                 
-                touser.unlockMoney(0, parseInt(money * 100 * 0.7) / 100);
+                touser.unlockMoney(0, parseInt(money * 0.7) / 100);
             });
             return;
         } else {
             httppost.turn(user.openid, money, function(err, data){
+                console.warn(JSON.stringify(data));
                 data = data || "";
                 if (data.indexOf('<return_code><![CDATA[SUCCESS]]></return_code>') >= 0) {
                     user.unlockMoney(money, -1 * money);

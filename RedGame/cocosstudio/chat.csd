@@ -94,14 +94,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="31.0454" RightMargin="512.9546" TopMargin="54.6992" BottomMargin="15.3008" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="96.0000" Y="30.0000" />
+                  <AbstractNodeData Name="ft_money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="4.0454" RightMargin="485.9546" TopMargin="54.6992" BottomMargin="15.3008" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="150.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="79.0454" Y="30.3008" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="0" G="0" B="0" />
                     <PrePosition X="0.1235" Y="0.3030" />
-                    <PreSize X="0.1500" Y="0.3000" />
+                    <PreSize X="0.2344" Y="0.3000" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>

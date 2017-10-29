@@ -360,7 +360,7 @@ function bill(uid, openid, m, cb) {
     map["openid"] = openid;
     map["out_trade_no"] = trade_no;
     map['spbill_create_ip'] = '127.0.0.1';
-    map['total_fee'] = 1;
+    map['total_fee'] = m*100;
     map['trade_type'] = 'JSAPI';
     console.warn("CC!!!!!!!!!!!!:");
     map = ksort(map);

@@ -13,16 +13,18 @@ var saoleired = ccui.Widget.extend({
     m_ft_bomb: null,
 
     m_subtype: null,
+    m_roomtype: null,
 
     m_s1: null,
     m_s2: null,
     m_s3: null,
 
     m_sendbtn:null,
-    ctor:function(subtype) {
+    ctor:function(subtype, roomtype) {
         this._super();
 
         this.m_subtype = subtype;
+        this.m_roomtype = roomtype;
 
         this.m_l1 = [];
         this.m_l2 = [];
@@ -78,7 +80,7 @@ var saoleired = ccui.Widget.extend({
             3: {min: 500, max: 2000, step: 100}
         };
 
-        var x = map[this.m_subtype];
+        var x = map[this.m_roomtype];
         if (!x) return;
 
         for (var i = x.min;i <= x.max;i += x.step) {

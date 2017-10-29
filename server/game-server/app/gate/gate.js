@@ -123,6 +123,30 @@ exports.start = function(port){
                  saoleiQiang(t, h, r, resback);
                  return;
              }
+             else if ("/createjielong" === urlInfo.pathname)
+             {
+                 var t = reqInfo.t;
+                 var type = reqInfo.type;
+                 var coin = parseInt(reqInfo.coin);
+                 createjielong(t, type, coin, resback);
+                 return;
+             }
+             else if ("/createniuniu" === urlInfo.pathname)
+             {
+                 var t = reqInfo.t;
+                 var type = reqInfo.type;
+                 var coin = parseInt(reqInfo.coin);
+                 createniuniu(t, type, coin, resback);
+                 return;
+             }
+            else if ("/create28" === urlInfo.pathname)
+             {
+                 var t = reqInfo.t;
+                 var type = reqInfo.type;
+                 var coin = parseInt(reqInfo.coin);
+                 create28(t, type, coin, resback);
+                 return;
+             }
              else if ("/getdetail" === urlInfo.pathname)
              {
                  var t = reqInfo.t;
@@ -207,13 +231,43 @@ function saoleiQiang(t, h, r, cb) {
     });
 }
 
+function createjielong(t, type, coin, cb) {
+    var room = {
+        type: type,
+        coin: coin
+    };
+    pomelo.app.rpc.business.gameRemote.createRoom(null, t, room, function(err, res){
+        cb(res || {code: consts.NOR_CODE.FAILED});
+    })
+}
+
+function createniuniu(t, type, coin, cb) {
+    var room = {
+        type: type,
+        coin: coin
+    };
+    pomelo.app.rpc.business.gameRemote.createRoom(null, t, room, function(err, res){
+        cb(res || {code: consts.NOR_CODE.FAILED});
+    });
+}
+
+function create28(t, type, coin, cb) {
+    var room = {
+        type: type,
+        coin: coin
+    };
+    pomelo.app.rpc.business.gameRemote.createRoom(null, t, room, function(err, res){
+        cb(res || {code: consts.NOR_CODE.FAILED});
+    });
+}
+
 function getDetail(t, h, r, cb) {
     pomelo.app.rpc.business.gameRemote.getDetail(null, t, h, r, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
 }
 
-function turnto(uid, money, cb) {
+function turnto(t, uid, money, cb) {
     pomelo.app.rpc.business.gameRemote.turnto(null, t, uid, money, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
@@ -269,7 +323,7 @@ function payback(body, cb) {
         return;
     }
 
-    var fee = parseInt(json['cash_fee']);
+    var fee = parseInt(json['cash_fee'])/100;
     var attach = json['attach'];
 
     pomelo.app.rpc.business.gameRemote.bill(null, attach, fee, function(err, res){

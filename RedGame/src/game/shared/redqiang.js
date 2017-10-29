@@ -28,15 +28,26 @@ var redqiangUI = ccui.Widget.extend({
     onEnter:function() {
         this._super();
         Client.addMap("saoleiQiangrq", this);
+        Client.addMap("jielongQiangrq", this);
     },
     onExit:function() {
         this._super();
         Client.removeMap("saoleiQiangrq", this);
+        Client.removeMap("jielongQiangrq", this);
     },
     qiangClick:function() {
         if (this.m_type == 1) {
             Server.gate("saoleiQiangrq", {t: RoleInfo.token, h: this.m_red.halltype, r: this.m_red.roomid});
         }
+        else if (this.m_type == 2) {
+            Server.gate("jielongQiangrq", {t: RoleInfo.token, h: this.m_red.halltype, r: this.m_red.roomid});
+        }
+        else if (this.m_type == 3 || this.m_type == 4) {
+            Server.gate("saoleiQiangrq", {t: RoleInfo.token, h: this.m_red.halltype, r: this.m_red.roomid});
+        }
+    },
+    jielongQiangrq:function() {
+        this.removeFromParent();
     },
     saoleiQiangrq:function() {
         this.removeFromParent();

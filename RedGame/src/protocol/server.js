@@ -12,8 +12,8 @@ var __httpreq = cc.Class.extend({
             params="{0}{1}={2}&".Format(params,key,vMap[key]);
         }
         url=encodeURI("{0}{1}".Format(url,params));
-
-        Nlog("Server:" + url);
+        if (id != 'sync')
+            Nlog("Server:" + url);
         xhr.open("GET", url, true);
         var _this = this;
         xhr.onreadystatechange = function()
@@ -27,7 +27,7 @@ var __httpreq = cc.Class.extend({
                 }
                 if(xhr.status >= 200 && xhr.status <= 207)
                 {
-                    cc.log("xhr.responseText:{0}".Format(xhr.responseText));
+                    //cc.log("xhr.responseText:{0}".Format(xhr.responseText));
                     Client.onMsg(id, JSON.parse(xhr.responseText), vMap);
                 }
                 // else{

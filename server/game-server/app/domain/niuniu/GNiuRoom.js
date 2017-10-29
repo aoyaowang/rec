@@ -37,9 +37,6 @@ var GNiuRoom = GBaseRoom.extend({
         var c = coin * 20 + 1;
         owner.unlockMoney(c, -1 * c);
 
-        this.playerEnter(owner);
-        this.playerQiang(owner);
-
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1,1);
@@ -93,10 +90,10 @@ var GNiuRoom = GBaseRoom.extend({
 
         if (user.uid != this.m_Owner.uid) {
             var lm = parseInt(5 * this.m_Coin) / 100;
-            if (!player.Info.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
+            if (!user.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;
         }
 
-        var player = new GSLPlayer(user);
+        var player = new GNiuPlayer(user);
         this.m_Players[player.uid] = player;
         this.m_PlayerCount = utils.size(this.m_Players);
         player.m_Room = this;
@@ -126,6 +123,8 @@ var GNiuRoom = GBaseRoom.extend({
                 else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
             }
             player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: p, other: ot});
+            if (player.Info.uid != this.m_Owner.uid)
+            this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OTHERQIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, user: user});
             if (this.m_RedList.length == 0) {
                 this.GameOver();
             }
@@ -185,34 +184,50 @@ var GNiuRoom = GBaseRoom.extend({
                 var lost = peilv[ownerniu];
                 lost = lost * this.m_Coin;
                 ownall+=lost;
+                lost = -1 * lost;
+                this.m_Players[key].m_Pei = lost;
                 var piao =  parseInt(this.m_Players[key].m_Qiang * fl);
+                this.m_Players[key].m_Piao = piao;
                 lost -= piao;
                 lost = parseInt(lost);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), lost / 100, timestamp);
                 this.m_Players[key].Info.unlockMoney(lm, lost / 100);
+                this.m_Players[key].m_Result = lost / 100;
             } else {
                 var win = peilv[curniu];
                 win = win * this.m_Coin;
                 ownall-=win;
+                this.m_Players[key].m_Pei = win;
                 var piao =  parseInt((win + this.m_Players[key].m_Qiang) * fl);
+                this.m_Players[key].m_Piao = piao;
                 win -= piao;
                 win = parseInt(win);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), win / 100, timestamp);
                 this.m_Players[key].Info.unlockMoney(lm, win / 100);
+                this.m_Players[key].m_Result = win / 100;
             }
         }
-        ownall-=1;
+        
         ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
+        this.m_Players[this.m_Owner.uid].m_Pei = ownall + 1;
         if (ownall > 0) {
-            ownall -= ownall * fl;
+            var ppp = ownall * fl;
+            ownall -= ppp;
+            this.m_Players[this.m_Owner.uid].m_Piao = ppp;
         } else {
-            ownall -= this.m_Players[this.m_Owner.uid].m_Qiang * fl;
+            var ppp = this.m_Players[this.m_Owner.uid].m_Qiang * fl;
+            ownall -= ppp;
+            this.m_Players[this.m_Owner.uid].m_Piao = ppp;
         }
+        ownall-=1;
         ownall = parseInt(ownall);
 
         userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), ownall / 100, timestamp);
         var c = this.m_Coin * 20 + 1;
-        this.m_Owner.unlockMoney(c, ownall);
+        this.m_Owner.unlockMoney(0, ownall / 100);
+        this.m_Players[this.m_Owner.uid].m_Result = ownall / 100;
+        
+        this.m_Owner.unlockMoney(0, left / 100);
 
         this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 

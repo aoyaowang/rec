@@ -3,12 +3,10 @@
  */
 var httppos = module.exports;
 var enums = require('../consts/enums');
-var http = (enums.CONNECT_TYPE == 1 ? require('https') : require('http'));
+var http = require('https');
 var qs = require('querystring');
 
 var fs = require('fs');
-var _key = fs.readFileSync("../../crt/hiba_nopass.key");
-var _cert = fs.readFileSync("../../crt/hiba.crt");
 
 
 httppos.httpPost = function(host,port,path,obj,cb) {
@@ -24,9 +22,7 @@ httppos.httpPost = function(host,port,path,obj,cb) {
         host: host,
         port: port,
         path: path + "?" + post_data,
-        method: 'GET',
-        key: _key,
-        cert:_cert
+        method: 'GET'
     };
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
@@ -96,10 +92,10 @@ httppos.Post4 = function(host,port,path,obj,cb) {
 };
 
 httppos.turnto = function(data, cb) {
-    httppost.Post4("api.mch.weixin.qq.com",443,'/mmpaymkttransfers/promotion/transfers',data, cb);
+    httppos.Post4("api.mch.weixin.qq.com",443,'/mmpaymkttransfers/promotion/transfers',data, cb);
 };
 
-httppost.turn = function(openid, money, cb) {
+httppos.turn = function(openid, money, cb) {
     var trade_no = (new Date()).getTime() + randomWord(true, 4, 4);
 
     var map = {};
@@ -109,7 +105,7 @@ httppost.turn = function(openid, money, cb) {
     map["partner_trade_no"] = trade_no;
     map["openid"] = openid;
     map["check_name"] = "NO_CHECK";
-    map["amount"] = money;
+    map["amount"] = money*100;
     map['spbill_create_ip'] = '127.0.0.1';
     map['desc'] = "活动奖励";
     map = ksort(map);

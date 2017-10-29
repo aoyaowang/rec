@@ -31,6 +31,7 @@
         "src/ui/main/sysui.js",
         "src/ui/main/roomsui.js",
         "src/ui/main/roomitemui.js",
+        "src/ui/main/tocashui.js",
 
         "src/protocol/protocol.js",
         "src/protocol/client.js",
@@ -39,6 +40,11 @@
 
         "src/game/player.js",
         "src/game/gameinfo.js",
+        "src/game/28/28ui.js",
+        "src/game/28/28red.js",
+        "src/game/jielong/jielongui.js",
+        "src/game/niuniu/niuniuui.js",
+        "src/game/niuniu/niuniured.js",
         "src/game/saolei/saoleired.js",
         "src/game/saolei/saoleisub.js",
         "src/game/saolei/saoleiui.js",

@@ -28,21 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="saolei.csd" />
-          <FilePathData Path="chatred.csd" />
-          <FilePathData Path="chatsys.csd" />
-          <FilePathData Path="chatnormal.csd" />
-          <FilePathData Path="redsub.csd" />
-          <FilePathData Path="reddetail.csd" />
-          <FilePathData Path="redopen.csd" />
-          <FilePathData Path="redover.csd" />
-          <FilePathData Path="redqiang.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="redopen.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

@@ -15,14 +15,17 @@ module.exports = {
 
         GAME_JIELONG_CREATE: "jielongcreate",
         GAME_JIELONG_QIANG: "jielongqiang",
+        GAME_JIELONG_OTHERQIANG: "jielongotherqiang",
         GAME_JIELONG_OVER: "jielongover",
 
         GAME_NIUNIU_CREATE: "niuniucreate",
         GAME_NIUNIU_QIANG: "niuniuqiang",
+        GAME_NIUNIU_OTHERQIANG: "niuniuotherqiang",
         GAME_NIUNIU_OVER: "niuniuover",
 
         GAME_28_CREATE: "28create",
         GAME_28_QIANG: "28qiang",
+        GAME_28_OTHERQIANG: "28otherqiang",
         GAME_28_OVER: "28over"
     },
     HALL_TPYE_NUM: 4,

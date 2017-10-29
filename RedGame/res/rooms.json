@@ -15,6 +15,123 @@
         "Tag": 71,
         "Children": [
           {
+            "ClipAble": false,
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 0.0,
+              "Y": 763.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.9105
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 0.0895
+            },
+            "BottomMargin": 763.0,
+            "Tag": 61,
+            "ActionTag": 862112144,
+            "Size": {
+              "X": 640.0,
+              "Y": 75.0
+            },
+            "Name": "Top",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "返回",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Press.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Normal.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 16,
+            "Scale9Height": 14,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 49.9983,
+              "Y": 800.3805
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0781,
+              "Y": 0.9551
+            },
+            "PreSize": {
+              "X": 0.1562,
+              "Y": 0.0895
+            },
+            "LeftMargin": -0.0017,
+            "RightMargin": 540.0017,
+            "TopMargin": 0.1195,
+            "BottomMargin": 762.8805,
+            "Tag": 28,
+            "ActionTag": -969474759,
+            "Size": {
+              "X": 100.0,
+              "Y": 75.0
+            },
+            "Name": "btn_back",
+            "ctype": "ButtonObjectData"
+          },
+          {
             "DirectionType": "Vertical",
             "ScrollDirectionType": 0,
             "ClipAble": false,
@@ -48,83 +165,11 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 1.0
+              "Y": 0.9105
             },
+            "TopMargin": 75.0,
             "Tag": 72,
             "Children": [
-              {
-                "FontSize": 14,
-                "ButtonText": "返回",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
-                "DisabledFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Disable.png",
-                  "Plist": ""
-                },
-                "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
-                  "Plist": ""
-                },
-                "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
-                  "Plist": ""
-                },
-                "Scale9Enable": true,
-                "Scale9OriginX": 15,
-                "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
-                "OutlineColor": {
-                  "G": 0,
-                  "B": 0
-                },
-                "ShadowColor": {
-                  "R": 110,
-                  "G": 110,
-                  "B": 110
-                },
-                "ShadowOffsetX": 2.0,
-                "ShadowOffsetY": -2.0,
-                "TouchEnable": true,
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 50.0,
-                  "Y": 800.5
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.0781,
-                  "Y": 0.9553
-                },
-                "PreSize": {
-                  "X": 0.1563,
-                  "Y": 0.0895
-                },
-                "RightMargin": 540.0,
-                "BottomMargin": 763.0,
-                "Tag": 28,
-                "ActionTag": -969474759,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 75.0
-                },
-                "Name": "btn_back",
-                "ctype": "ButtonObjectData"
-              },
               {
                 "ClipAble": false,
                 "BackColorAlpha": 102,
@@ -157,13 +202,12 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.6718
+                  "Y": 0.7379
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2387
+                  "Y": 0.2621
                 },
-                "TopMargin": 75.0,
                 "BottomMargin": 563.0,
                 "Tag": 75,
                 "Children": [
@@ -281,7 +325,6 @@
                   }
                 ],
                 "ActionTag": 1757225530,
-                "ZOrder": 1,
                 "Size": {
                   "X": 640.0,
                   "Y": 200.0
@@ -321,13 +364,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.4332
+                  "Y": 0.4758
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2387
+                  "Y": 0.2621
                 },
-                "TopMargin": 275.0,
+                "TopMargin": 200.0,
                 "BottomMargin": 363.0,
                 "Tag": 78,
                 "Children": [
@@ -443,7 +486,7 @@
                   }
                 ],
                 "ActionTag": 683679954,
-                "ZOrder": 2,
+                "ZOrder": 1,
                 "Size": {
                   "X": 640.0,
                   "Y": 200.0
@@ -483,13 +526,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.1945
+                  "Y": 0.2136
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2387
+                  "Y": 0.2621
                 },
-                "TopMargin": 475.0,
+                "TopMargin": 400.0,
                 "BottomMargin": 163.0,
                 "Tag": 81,
                 "Children": [
@@ -607,7 +650,7 @@
                   }
                 ],
                 "ActionTag": -167140836,
-                "ZOrder": 3,
+                "ZOrder": 2,
                 "Size": {
                   "X": 640.0,
                   "Y": 200.0
@@ -619,7 +662,7 @@
             "ActionTag": -2064097753,
             "Size": {
               "X": 640.0,
-              "Y": 838.0
+              "Y": 763.0
             },
             "Name": "ListView_1",
             "ctype": "ListViewObjectData"
