@@ -47,6 +47,7 @@ pro.Init = function(next) {
     }
     Core.GData = {};
     Core.GData.m_hall = this.m_hall;
+    Core.GData.checkUid = checkUid;
 };
 
 pro.Sync = function() {
@@ -593,4 +594,68 @@ pro.turnto = function(token, uid, money, next) {
         }
         next(null, {code: consts.NOR_CODE.SUC_OK});
     }.bind(this));
+}
+
+///////////////////////////////////////////////////////////////////////////////////
+var GRobotMgr = require('../../../domain/GRobotMgr');
+pro.getallrobot = function(next) {
+    userDao.getAllRobot(function(err, res){
+        var robots = res;
+        var rotconfig = GRobotMgr.Instance().getAllRobot();
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: robots, config: rotconfig});
+    }.bind(this));
+}
+
+pro.configrobot = function(uids, game, param, time1, time2, time3, next) {
+
+    var ay = [];
+    for (var k in uids) {
+        ay.push({
+            uid: uids[k],
+            game: game,
+            param: param,
+            time1: time1,
+            time2: time2,
+            time3: time3,
+            changetype: enums.CHANGETYPE.ADD
+        });
+    }
+
+    GRobotMgr.Instance().configChange(ay);
+    next(null, {code: consts.NOR_CODE.SUC_OK});
+}
+
+pro.deleterobot = function(uids, next) {
+    var ay = [];
+    for (var k in uids) {
+        ay.push({
+            uid: uids[k],
+            changetype: enums.CHANGETYPE.DEL
+        });
+    }
+
+    GRobotMgr.Instance().configChange(ay);
+    next(null, {code: consts.NOR_CODE.SUC_OK});
+}
+
+pro.createrobot = function(infos, next) {
+    userDao.createRobot(infos, function(err, res){
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: res});
+    });
+}
+
+pro.upscore = function(uids, m, f, next) {
+    for (var key in uids) {
+        var uid = uids[key];
+        this.checkUid(uid, function(err,touser) {
+            if (!touser) {
+                return;
+            }
+            
+            touser.unlockMoney(0, parseInt(m));
+            touser.unlockFangKa(0, parseInt(f));
+        });
+    }
+
+    next(null, {code: consts.NOR_CODE.SUC_OK});
 }

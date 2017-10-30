@@ -27,6 +27,8 @@ module.exports = Core.obserData.extend({
             fangka: null,
             money: null,
 
+            robot: null,
+
             _lockmoney: null,
             _lockfangka: null,
         }
@@ -62,6 +64,9 @@ module.exports = Core.obserData.extend({
         Object.defineProperty(this, "money", {
             get: function () { return this.data.money}
         });
+        Object.defineProperty(this, "robot", {
+            get: function () { return this.data.robot}
+        });
 
         userDao.getInfo(uid, function(err, data){
             if (!data) {
@@ -81,6 +86,7 @@ module.exports = Core.obserData.extend({
                 this.data.sex = data.sex;
                 this.data.headimg = data.headimg;
                 this.data.openid = data.openid;
+                this.data.robot = data.robot;
                 this.data.fangka = money.fangka;
                 this.data.money = money.money;
                 next(null, null);
@@ -111,6 +117,7 @@ module.exports = Core.obserData.extend({
         return true;
     },
     unlockFangka:function(f, cf) {
+        m = this.data._lockmoney > f ? f : this.data._lockmoney;
         this.data.fangka += f;
         this.data._lockfangka -= f;
         this.data.fangka += cf;

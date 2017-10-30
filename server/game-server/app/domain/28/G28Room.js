@@ -134,7 +134,8 @@ var G28Room = GBaseRoom.extend({
         tick.addTick(this.CheckTimer,this,1,1);
 
         var timestamp = Date.parse(new Date()) / 1000;
-
+        
+        GRobotMgr.Instance().onTimer(this);
         if (timestamp - this.m_BeginTime > 60) {
             this.GameOver();
         }
@@ -223,3 +224,4 @@ var G28Room = GBaseRoom.extend({
 module.exports = G28Room;
 
 var G28Player = require('./G28Player');
+var GRobotMgr = require('./GRobotMgr');

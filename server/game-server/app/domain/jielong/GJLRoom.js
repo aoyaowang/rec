@@ -141,6 +141,7 @@ var GJLRoom = GBaseRoom.extend({
 
         var timestamp = Date.parse(new Date()) / 1000;
 
+        GRobotMgr.Instance().onTimer(this);
         if (timestamp - this.m_BeginTime > 60) {
             this.GameOver();
         }
@@ -210,3 +211,4 @@ var GJLRoom = GBaseRoom.extend({
 module.exports = GJLRoom;
 
 var GJLPlayer = require('./GJLPlayer');
+var GRobotMgr = require('./GRobotMgr');

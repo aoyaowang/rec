@@ -97,3 +97,48 @@ userDao.updateBill = function(billid, bill, next) {
         next(null, null);
     });
 }
+
+userDao.getAllRobot = function(next) {
+    var sql = 'select * from user where robot = 1';
+    var args = [];
+
+    pomelo.app.get('db1').query(sql, args, function(err, res){
+        if (!res) {
+            next(null, []);
+            return;
+        }
+        next(null, res);
+    });
+}
+
+userDao.createRobot = function(infos, next) {
+    var func = [];
+    for (var key in infos) {
+        var a = infos[key];
+        func.push(function(a, callback){
+            var sql = 'insert into user (uid, openid, nickname, sex, headimg) values (?,?,?,?,?)';
+            var args = [a.uid, 'robot', a.nickname, 1, a.headimg];
+    
+            pomelo.app.get('db1').query(sql, args, function(err, res){
+                if (!res) {
+                    callback(null, null);
+                    return;
+                }
+                var sql = 'insert into money(uid, money, fangka) values (?, ?, ?)';
+                var args = [sanitizer.sanitize(res.insertId), a.money || 0, a.fangka || 0];
+    
+                pomelo.app.get('db1').query(sql, args, function(err, data){
+                    if (!data) {
+                        callback(null, null);
+                        return;
+                    }
+                    callback(null, res.insertId);
+                });
+            });
+        }.bind(this, a))
+    }
+
+    async.parallel(func, function(err, results){
+        next(null, results);
+    });
+}

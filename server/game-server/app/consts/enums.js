@@ -28,6 +28,10 @@ module.exports = {
         GAME_28_OTHERQIANG: "28otherqiang",
         GAME_28_OVER: "28over"
     },
+    CHANGETYPE: {
+        ADD: 0,
+        DEL: 1
+    },
     HALL_TPYE_NUM: 4,
     SQLNUM: 1,
 

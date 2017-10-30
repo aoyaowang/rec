@@ -108,16 +108,30 @@ var GSLRoom = GBaseRoom.extend({
 
         return consts.NOR_CODE.SUC_OK;
     },
-    PlayerQiang:function(user) {
+    PlayerQiang:function(user, mustnobomb) {
         var player = this.m_Players[user.uid];
         if (!player || this.m_RedList.length == 0) {
             return false;
         }
-        var p = this.m_RedList[0];
+        var ind = 0;
+
+        if (mustnobomb) {
+            for (var k in this.m_RedList) {
+                var xxx = this.m_RedList[k];
+                var xxxl = xxx % 10;
+                if (xxxl != this.m_Bomb) {
+                    ind = k;
+                    break;
+                }
+            }
+        }
+
+        var p = this.m_RedList[ind];
+
         var ret = player.Qiang(p);
         if (ret) {
             this.m_List[user.uid] = p;
-            this.m_RedList.splice(0, 1);
+            this.m_RedList.splice(ind, 1);
             var ot = {};
             for (var key in this.m_List) {
                 var p = this.m_Players[key];
@@ -145,7 +159,7 @@ var GSLRoom = GBaseRoom.extend({
         //         this.PlayerQiang(this.m_Players[key].Info);
         //     }
         // }
-
+        GRobotMgr.Instance().onTimer(this);
         if (timestamp - this.m_BeginTime >= 60) {
             this.GameOver();
         }
@@ -206,3 +220,4 @@ var GSLRoom = GBaseRoom.extend({
 module.exports = GSLRoom;
 
 var GSLPlayer = require('./GSLPlayer');
+var GRobotMgr = require('./GRobotMgr');
