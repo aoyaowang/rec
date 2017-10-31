@@ -39,8 +39,12 @@ var GSLAI = Core.obserData.extend({
         this._super();
     },
     onTimer:function(room) {
-        for (var key in this.m_robots) {
-            this.dealRobot(room, this.m_robots[key]);
+        var objKeys = Object.keys(this.m_robots);
+        objKeys = objKeys.sort(function(a, b) {
+            return utils.GetRandomNum(0, 100) < 50 ? -1 : 1;
+        });//这里写所需要的规则
+        for(var i=0;i<objKeys.length;i++){
+            this.dealRobot(room, this.m_robots[objKeys[i]]);
         }
     },
     dealRobot:function(room, robot) {
@@ -109,8 +113,12 @@ var GSLAI = Core.obserData.extend({
         }
     },
     TimerFunc:function(delta) {
-        for (var key in this.m_robots) {
-            this.dealFa(this.m_robots[key], delta);
+        var objKeys = Object.keys(this.m_robots);
+        objKeys = objKeys.sort(function(a, b) {
+            return utils.GetRandomNum(0, 100) < 50 ? -1 : 1;
+        });//这里写所需要的规则
+        for(var i=0;i<objKeys.length;i++){
+            this.dealFa(this.m_robots[objKeys[i]], delta);
         }
     },
     dealFa:function(robot, delta) {
@@ -179,6 +187,32 @@ var GSLAI = Core.obserData.extend({
             }
         }
     },
+    saoleiType:function(coin) {
+        var STYPE = {
+            1: {min: 10, max: 100, step: 10},
+            2: {min: 100, max: 500, step: 50},
+            3: {min: 500, max: 2000, step: 100}
+        }
+    
+        var t = null;
+        var bFind = false;
+        for (var key in STYPE) {
+            if (coin >= STYPE[key].min || coin <= STYPE[key].max) {
+                for (var m = STYPE[key].min; m <= STYPE[key].max;m += STYPE[key].step) {
+                    if (m == coin) {
+                        bFind = true;
+                        t = key;
+                        break;
+                    }
+                }
+            }
+        }
+        if (!bFind) {
+            return false;
+        }
+    
+        return t;
+    }
 }).Static({
     Instance:Core.Instance
 });

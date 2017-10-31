@@ -106,16 +106,95 @@ var GJLRoom = GBaseRoom.extend({
 
         return consts.NOR_CODE.SUC_OK;
     },
-    PlayerQiang:function(user) {
+    PlayerQiang:function(user, qiangtype) {
         var player = this.m_Players[user.uid];
         if (!player || this.m_RedList.length == 0) {
             return false;
         }
-        var p = this.m_RedList[0];
+
+        var ind = 0;
+        if (!!qiangtype) {
+            if (qiangtype['mid']) {
+                qiangtype['nomin'] = 1;
+                qiangtype['nomax'] = 1;
+            }
+            if (qiangtype['min']) {
+                var min = 99999999999;
+                for (var key in this.m_List) {
+                    if (min > this.m_List[key]) min = this.m_List[key];
+                }
+
+                var min2 = 9999999999;
+                for (var key in this.m_RedList) {
+                    if (min2 > this.m_RedList[key]){
+                        min2 = this.m_RedList[key];
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['max']) {
+                var max = 0;
+                for (var key in this.m_List) {
+                    if (max < this.m_List[key]) max = this.m_List[key];
+                }
+
+                var max2 = 0;
+                for (var key in this.m_RedList) {
+                    if (max2 < this.m_RedList[key]){
+                        max2 = this.m_RedList[key];
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['nomin']) {
+                var min = 99999999999;
+                for (var key in this.m_List) {
+                    if (min > this.m_List[key]) min = this.m_List[key];
+                }
+
+                var min2 = 9999999999;
+                var mid = 0;
+                for (var key in this.m_RedList) {
+                    if (min2 > this.m_RedList[key]){
+                        min2 = this.m_RedList[key];
+                        mid = key;
+                    }
+                }
+
+                if (mid == ind)  {
+                    var k = ind+1;
+                    if (k >= this.m_RedList.length) k = 0;
+                    ind = k;
+                }
+            }
+            if (qiangtype['nomax']) {
+                var max = 0;
+                for (var key in this.m_List) {
+                    if (max < this.m_List[key]) max = this.m_List[key];
+                }
+
+                var max2 = 0;
+                var mid = 0;
+                for (var key in this.m_RedList) {
+                    if (max2 < this.m_RedList[key]){
+                        max2 = this.m_RedList[key];
+                        mid = key;
+                    }
+                }
+
+                if (mid == ind)  {
+                    var k = ind+1;
+                    if (k >= this.m_RedList.length) k = 0;
+                    ind = k;
+                }
+            }
+        }
+
+        var p = this.m_RedList[ind];
         var ret = player.Qiang(p);
         if (ret) {
             this.m_List[user.uid] = p;
-            this.m_RedList.splice(0, 1);
+            this.m_RedList.splice(ind, 1);
             var ot = {};
             for (var key in this.m_List) {
                 var p = this.m_Players[key];
