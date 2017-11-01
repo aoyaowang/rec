@@ -1,0 +1,68 @@
+<div class="pageContent">
+<form
+	action="{:addons_url('Advertising://Advertising/update',array('navTabId'=>'Advertising'))}"
+	id="j_custom_form" class="pageForm form-validate" method="post"
+	callback="navTabAjaxDone" noEnter><input type="hidden" name="id"
+	value="{$info.id}" readonly />
+<div class="pageFormContent form-horizontal" layouth="60">
+
+<h3><if condition="$_GET['_action'] eq 'add'">新增<else />编辑</if>广告位</h3>
+<div class="form-group"><label class="control-label col-sm-2">
+位置标识: </label>
+<div class="col-sm-5"><input type="text"
+	class="form-control input-large" name="pos" value="{$info.pos}">
+<p class="help-block"><span style="color: red">英文</span>，请输入广告显示的标识，调用的时候参数
+</p>
+</div>
+</div>
+<div class="form-group"><label class="control-label col-sm-2">
+位置名称: </label>
+<div class="col-sm-5"><input type="text"
+	class="form-control input-large" name="title" value="{$info.title}">
+<p class="help-block">请输入广告显示的位置</p>
+</div>
+</div>
+<div class="form-group"><label class="control-label col-sm-2">
+广告类型: </label>
+<div class="col-sm-5">
+<label class="ilabel">
+<input	type="radio" class="j-icheck" value="1"<eq name="info['type']"	value="1">checked</eq> 	<if condition="$_GET['_action'] eq 'add'">checked</if> name="type">单图</label> 
+<label class="ilabel">
+<input type="radio"	class="j-icheck" value="2"<eq name="info['type']" value="2">checked</eq> name="type">多图</label> 
+<label class="ilabel">
+<input type="radio"	class="j-icheck" value="3"<eq name="info['type']" value="3">checked</eq> name="type">文字</label> 
+<label class="ilabel">
+<input type="radio"	class="j-icheck" value="4"<eq name="info['type']" value="4">checked</eq> name="type">代码</label>
+<p class="help-block">请选择广告类型，默认为单图</p>
+</div>
+</div>
+<div class="form-group"><label class="control-label col-sm-2">
+广告位宽度: </label>
+<div class="col-sm-5"><input type="text"
+	class="form-control input-large" name="width" value="{$info.width}">
+<p class="help-block">广告在前端展示的宽度</p>
+</div>
+</div>
+<div class="form-group"><label class="control-label col-sm-2">
+广告位高度: </label>
+<div class="col-sm-5"><input type="text"
+	class="form-control input-large" name="height" value="{$info.height}">
+<p class="help-block">广告在前端展示的高度</p>
+</div>
+</div>
+</div>
+
+<div class="formBar">
+<ul>
+	<li>
+	<button type="submit" class="btn btn-default btn-sm">保存</button>
+	</li>
+	<li><input class="btn btn-default btn-sm" type="reset" value="重置" /></li>
+	<li>
+	<button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button>
+	</li>
+</ul>
+</div>
+</form>
+</div>
+

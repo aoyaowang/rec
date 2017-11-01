@@ -1,0 +1,143 @@
+<div class="pageHeader">
+<form id="pagerForm" action="__URL__" method="post">
+	<input type="hidden" name="group" value="{$_REQUEST.group}"/>
+	<input type="hidden" name="name" value="{$_REQUEST.name}"/>
+	<input type="hidden" name="orderField" value="{$_REQUEST.orderField}">
+        <input type="hidden" name="orderDirection" value="{$_REQUEST.orderDirection}">
+    <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	<input type="hidden" name="numPerPage" value="{$numPerPage}"/>
+	 
+    
+</form>
+ 
+    <form onsubmit="return navTabSearch(this);"  class="form-inline" action="__URL__" method="post">
+       
+        <div class="form-group" size="25">
+        <label>配置名称：</label>
+        <input type="text" value="{$_REQUEST.name}" name="name" class="form-control" />
+        </div>
+       <div class="form-group" size="12"><label>分组：</label>
+                    <select name="group" id="j-group" class="selectpicker show-tick"  data-width="fit" data-style="btn-primary btn-sm" data-container="body">
+                        <option  value="{:$_REQUEST['group']}">{$_REQUEST['group']|get_config_group}</option>
+                        <if condition="$_REQUEST['group'] neq ''"><option  value="">全部</option></if>
+                        <if condition="$_REQUEST['group'] neq 0"><option  value="0">不分组</option></if>
+                        
+                        <volist name="group" id="vo">
+                        <if condition="$_REQUEST['group'] neq $key">
+                        <option  value="{$key}">{$vo}</option>
+                        </if>
+                        </volist>
+                        
+                      
+                    </select>
+        </div>
+                <div class="form-group">
+                <button type="submit" class="btn btn-warning btn-sm"><i class="icon-search"></i> 查询</button>
+                <a class="btn btn-primary btn-sm" href="javascript:navTab.reload('', {clearQuery:true});"><i class="icon-undo"></i> 清空查询</a>
+                <a href="__URL__/add" rel="configadd"  target="navtab" title="新增配置项" class="btn btn-primary btn-sm"><i class="icon-plus"></i> 新增</a>
+                <a zs-url="{:U('sort?group='.$_REQUEST['group'])}" rel="configsort"  title="排序配置项" class="btn btn-primary btn-sm list_sort"><i class="icon-sort-by-attributes-alt"></i> 排序</a>
+                 </div>
+                <div class="pull-right btn-group">
+                                  <button data-toggle="dropdown" class="btn btn-success dropdown-toggle btn-sm" type="button"><i class="icon-list"></i> 批量操作<span class="caret"></span></button>
+                                  <ul role="menu" class="dropdown-menu">
+                                  <div class="log-arrow-up"></div>
+                                      <li><a href="__URL__/selectedDelete"  title="确定要删除选中信息吗？" target="checkedAjaxTodo" idname="ids">删除选中</a></li>
+                                  </ul>
+                </div>
+
+        
+        
+    </form>
+</div>
+<div class="pageContent">
+
+    <table class="j-table" width="100%" layoutH="95">
+        <thead>
+            <tr>
+                <th width="30"></th>
+               <th  class="orderby <eq name="order" value="id">{$sortImg}</eq>" orderField="id">ID</th>
+					<th>名称</th>
+					<th>标题</th>
+					<th>分组</th>
+					<th>类型</th>
+					
+
+                <th width="28"><input type="checkbox" class="checkboxCtrl j-icheck" group="ids"></th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+           <volist id="config" name="list">
+            <tr>
+            <td></td>
+                <td>{$config.id}</td>
+						<td><a href="{:U('edit?id='.$config['id'])}">{$config.name}</a></td>
+						<td>{$config.title}</td>
+						<td>{$config.group|get_config_group}</td>
+						<td>{$config.type|get_config_type}</td>
+               
+                <td><input type="checkbox" name="ids" class="j-icheck" value="{$config.id}"></td>
+                <td>
+                <div class="btn-group  btn-group-xs">
+                    <a href="__URL__/edit/id/{$config['id']}/navTabId/{:CONTROLLER_NAME}" rel="configedit{$config['id']}"  class="btn btn-primary"  target="navtab" title="编辑配置项" ><i class="icon-edit"></i> 编辑</a>
+                    
+                    <a href="__URL__/foreverdelete/id/{$config['id']}/navTabId/{:CONTROLLER_NAME}" class="btn btn-danger" target="ajaxTodo" title="确定要删除该行信息吗？"><i class="icon-trash"></i> 删除</a>
+                </div>
+                </td>
+            </tr>
+            
+          </volist>
+        </tbody>
+    </table>
+<div class="panelBar">
+        <div class="pages">
+            <span>每页&nbsp;</span>
+            <span class="sel">
+                <select class="selectpicker  show-tick dropup" data-style="btn-default btn-sel xs" data-width="auto" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                  <option value="5" <eq name="numPerPage" value="5">selected=selected</eq>>5</option>
+				<option value="10" <eq name="numPerPage" value="10">selected=selected</eq>>10</option>
+				<option value="15" <eq name="numPerPage" value="15">selected=selected</eq>>15</option>
+				<option value="20" <eq name="numPerPage" value="20">selected=selected</eq>>20</option>
+                </select>
+            </span>
+            <span>&nbsp;条，共 {$totalCount} 条</span>
+        </div>
+        <div class="pagination-box" targettype="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}">
+        </div>
+    </div>
+</div>
+
+	
+
+<script type="text/javascript">
+
+	
+	//点击排序
+	$('.list_sort').click(function(){
+		var url = $(this).attr('zs-url');
+		var title = $(this).attr('title');
+    
+    var $check = $(':checkbox[name=ids]:checked');
+
+    
+   
+   
+    var param = '';
+	if($check.length > 0){
+		var str = new Array();
+		$check.each(function(){
+			str.push($(this).val());
+		});
+		param = str.join(',');
+		url=url + '&ids='+ param
+	}
+
+   var  option={title:title};
+   
+   
+	navTab.openTab('configsort',url,option);
+
+	});
+
+</script>

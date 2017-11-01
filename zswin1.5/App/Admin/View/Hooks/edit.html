@@ -1,0 +1,78 @@
+<div class="pageContent">
+    <form action="__URL__/update/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      <input type="hidden" name="id" value="{$vo.id}" />
+        <div class="pageFormContent form-horizontal" layouth="60">
+       <div class="form-group">
+          <label for="j_name" class="control-label col-sm-2 ">钩子名称：</label>
+           <div class="col-sm-6">
+            <input size="20" type="text" class="form-control validate[required,custom[NoXhxOneLetter]] required" name="name" id="j_name" value="{$vo.name}"  >
+            <p class="help-block">需要在程序中先添加钩子，否则无效</p>
+           </div>
+           </div>
+                            <div class="form-group">
+                            <label for="j_description" class="control-label col-sm-2 ">钩子描述：</label>
+            <div class="col-sm-6">
+                             <textarea name="description" id="j_description" class="form-control autosize validate[required] required" rows="4" cols="30">{$vo.description}</textarea>
+                 <p class="help-block">区分钩子的主要用途</p>
+           </div>
+           </div>
+                            <div class="form-group">
+                            <label for="" class="control-label col-sm-2 ">钩子挂载的插件排序：</label>
+                   <div class="col-sm-4">
+                        <div id="zs_dragsort_placeholder" style="display: none;"><li class='draging-place'>&nbsp;</li></div>
+                       
+                             <input type="hidden" name="addons" value="{$vo.addons}" readonly>
+					<empty name="vo.addons">
+						暂无插件，无法排序
+					<else />
+					
+					<ul id="sortUl" class="zs-dragsort"  data-selector="li.getSort" data-dragend="updateVal" data-placeholder="#zs_dragsort_placeholder">
+						<volist name=":explode(',',$vo['addons'])" id="addons_vo">
+							<li class="getSort btn-primary"><b>&times;</b><em>{$addons_vo}</em></li>
+						</volist>
+					</ul>
+					<script type="text/javascript">
+						$(function(){
+							$('#sortUl li b').click(function(){
+                            	$(this).parent().remove();
+                            	updateVal();
+                            });
+						});
+							// 更新排序后的隐藏域的值
+	                        function updateVal() {
+	                        	var sortVal = [];
+	                        	
+                            	$('#sortUl li').each(function(){
+                            		sortVal.push($('em',this).text());
+                            	});
+                                $("input[name='addons']").val(sortVal.join(','));
+	                        }
+						
+					</script>
+					</empty> 
+					</div>
+					</div>
+                   <div class="form-group">
+                            <label for="j_type" class="control-label col-sm-2 ">钩子类型：</label>
+                        <div class="col-sm-6">
+                              <select name="type"  data-container="body"  id="j_type" class="selectpicker show-tick validate[required]" data-style="btn-default btn-sm" data-width="auto">
+                               
+                                <volist name="type" id="zs">
+                               <option <if condition="$vo['type'] eq $key">selected</if> value="{$key}">{$zs}</option>
+                               </volist>
+                               
+                              </select>
+                      <p class="help-block">拖动后保存顺序，影响同一个钩子挂载的插件执行先后顺序</p>
+           </div>
+           </div>
+           </div>
+          
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>

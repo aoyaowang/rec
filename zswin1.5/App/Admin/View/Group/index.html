@@ -1,0 +1,89 @@
+<div class="pageHeader">
+<form id="pagerForm" action="__URL__" method="post">
+	
+	<input type="hidden" name="name" value="{$_REQUEST.name}"/>
+	<input type="hidden" name="orderField" value="{$_REQUEST.orderField}">
+        <input type="hidden" name="orderDirection" value="{$_REQUEST.orderDirection}">
+    <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	<input type="hidden" name="numPerPage" value="{$numPerPage}"/>
+	 
+    
+</form>
+    <form onsubmit="return navTabSearch(this);" class="form-inline" action="__URL__" method="post">
+       
+       <div class="form-group" size="20">
+       <label>组名称：</label><input type="text" value="{$_REQUEST.name}" name="name" class="form-control" size="13" />
+       </div>
+        <div class="form-group">
+        <a href="javascript:;" class="j-showMoreSearch" rel="group_list" title="更多选项"><i class="icon-double-angle-down"></i></a>
+        </div>
+        <div class="form-group">
+        <button type="submit" class="btn btn-default btn-sm">查询</button>
+        <a class="btn btn-orange btn-sm" href="javascript:navTab.reload('', {clearQuery:true});">清空查询</a>
+        <a href="__URL__/add" target="dialog" mask="true"  width="500" height="400" class="btn btn-green btn-sm">新增</a>
+         </div>      
+          <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">批量操作<span class="caret"></span></button>
+                        <ul class="dropdown-menu right" role="menu">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="__URL__/selectedDelete"  title="确定要删除选中信息吗？" target="checkedAjaxTodo" idname="ids">删除选中</a></li>
+                        </ul>
+         </div>
+             
+       
+        <div class="moreSearch form-inline">
+           <div class="form-group" size="20">
+           <label>演示查询：</label><input type="text"  name="test" class="form-control" size="13" />
+           </div>
+          
+       </div>
+    </form>
+    
+</div>
+<div class="pageContent">
+    <table class="j-table" width="100%" layoutH="95">
+        <thead>
+            <tr>
+                <th width="30"></th>
+                <th class="orderby <eq name="order" value="name">{$sortImg}</eq>" orderField="name">分组名</th>
+                <th class="orderby <eq name="order" value="title">{$sortImg}</eq>" orderField="title">说明</th>
+                <th class="orderby <eq name="order" value="sort">{$sortImg}</eq>" orderField="sort">序号</th>
+                <th class="orderby <eq name="order" value="status">{$sortImg}</eq>" orderField="status">状态</th>
+                <th class="orderby <eq name="order" value="show">{$sortImg}</eq>" orderField="show">显示</th>
+
+                <th width="28"><input type="checkbox" class="checkboxCtrl j-icheck" group="ids"></th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+
+           <volist id="vo" name="list">
+            <tr>
+            <td></td>
+                <td>{$vo['name']}</td>
+                <td>{$vo['title']}</td>
+                <td>{$vo['sort']}</td>
+                <td>{$vo['status']|getStatus}</td>
+                <td>{$vo['show_text']}</td>
+               
+                <td><input type="checkbox" name="ids" class="j-icheck" value="{$vo['id']}"></td>
+                <td>
+                    <a href="__URL__/edit/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}"  class="btn btn-green btn-sm" target="dialog"  mask="true"  width="500" height="400" >编辑</a>
+                    {$vo['status']|showStatus=$vo['id'],CONTROLLER_NAME}
+                    {$vo['show']|showShow=$vo['id'],CONTROLLER_NAME}
+                    <a href="__URL__/foreverdelete/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}" class="btn btn-red btn-sm" target="ajaxTodo" title="确定要删除该行信息吗？">删</a>
+                </td>
+            </tr>
+            
+          </volist>
+        </tbody>
+    </table>
+    <div class="panelBar">
+        <div class="pages">
+            
+            <span>共 {$totalCount} 条</span>
+        </div>
+        <div class="pagination-box" targettype="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}">
+        </div>
+    </div>
+</div>

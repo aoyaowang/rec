@@ -1,0 +1,132 @@
+
+<script>
+
+
+	function addnode(obj) {
+
+		//var treeObj = $.fn.zTree.getZTreeObj("main_treeDemo_3");
+		var node = $("a[zs-id*=135]:last");//获取父节点
+
+		
+		var zsname,zstitle,zsurl;
+		zsname=$(obj).attr('zs-name');
+		zstitle=$(obj).attr('zs-title');
+		zsurl=$(obj).attr('zs-url');
+		var html;
+		html='<li><a target="navTab" href="'+zsurl+'" rel="'+zsname+'" zs-id="'+zsname+'"><i class=""></i>'+zstitle+'</a></li>';
+		//var newNode = {"id":zsname, "pId":135, "name": zstitle, "nurl":zsurl, "target":"navTab", "rel":zsname};
+		//<a target="navTab" href="zsurl" rel="zsname" zs-id="zsname">zstitle</a>
+		node.parent().after(html);
+		$("a[rel="+zsname+"]").click(function(event){
+			
+			var $this = $(this);
+			var title = $this.attr("title") || $this.text();
+			var tabid = $this.attr("rel") || "_blank";
+			var fresh = eval($this.attr("fresh") || "true");
+			var external = eval($this.attr("external") || "false");
+			var url = unescape($this.attr("href")).replaceTmById($(event.target).parents(".unitBox:first"));
+			DWZ.debug(url);
+			if (!url.isFinishedTm()) {
+				alertMsg.error($this.attr("warn") || DWZ.msg("alertSelectMsg"));
+				return false;
+			}
+			navTab.openTab(tabid, url,{title:title, fresh:fresh, external:external});
+
+			event.preventDefault();
+		});
+
+		
+	}
+	function removenode(obj) {
+		//var treeObj = $.fn.zTree.getZTreeObj("main_treeDemo_3");
+		var zsname;
+		
+		zsname=$(obj).attr('zs-name');
+
+		var node = $("a[rel="+zsname+"]");//获取父节点
+        
+		node.parent().remove();
+		
+	}
+
+</script>
+<div class="pageHeader">
+<form id="pagerForm" action="__URL__" method="post">
+
+       
+        <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	    <input type="hidden" name="numPerPage" value="{$_REQUEST['numPerPage']}"/>
+
+    </form>
+
+        <div  class="form-inline">
+             <div class="form-group">
+               <a href="{:U('create')}" rel="addoncreate"  target="navtab" title="创建插件"  class="btn btn-green btn-sm">快速创建插件</a>
+                
+            </div>
+        </div>
+
+  
+</div>
+<div class="pageContent">
+
+
+    <table class="j-table" width="100%" layoutH="95">
+        <thead>
+            <tr>
+               
+                 <th>名称</th>
+                <th>标识</th>
+                <th width="400">描述</th>
+					<th width="50">状态</th>
+					<th>作者</th>
+					<th width="50">版本</th>
+					<th width="200">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+           <volist id="vo" name="list">
+            <tr>
+               <td>{$vo.title}</td>
+					<td>{$vo.name}</td>
+					<td>{$vo.description}</td>
+					<td>{$vo.status_text|default="未安装"}</td>
+					<td><a target="_blank" href="{$vo.url|default='http://www.zswin.cn'}">{$vo.author}</a></td>
+					<td>{$vo.version}</td>
+					<td>
+						<eq name="vo.uninstall" value="0">
+							
+							<if condition="$vo['config'] neq 'null'">
+								<a  target="navtab" title="{$vo.title}设置" class="btn btn-warning btn-sm" href="__URL__/config/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}">设置</a>
+							</if>
+						{$vo['status']|showStatus=$vo['id'],CONTROLLER_NAME}
+							
+							 
+								<a class="btn btn-danger btn-sm" target="ajaxTodo"   href="__URL__/uninstall/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}" <eq name="vo['has_adminlist']" value="1"> onclick="removenode(this)"</eq> zs-name="{$vo['name']}"  >卸载</a>
+							
+						<else />
+							<a class="btn btn-primary btn-sm" target="ajaxTodo" <eq name="vo['has_adminlist']" value="1"> onclick="addnode(this)"</eq>  zs-name="{$vo['name']}" zs-title="{$vo['title']}" zs-url="{:U('Admin/Addons/adminList')}&name={$vo['name']}"   href="__URL__/install/addon_name/{$vo['name']}/navTabId/{:CONTROLLER_NAME}">安装</a>
+						</eq>
+					</td>
+            </tr>
+            
+          </volist>
+        </tbody>
+    </table>
+<div class="panelBar">
+        <div class="pages">
+            <span>每页&nbsp;</span>
+            <span class="sel">
+                <select class="selectpicker show-tick dropup" data-style="btn-default btn-sel xs" data-width="auto" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                  <option value="5" <eq name="numPerPage" value="5">selected=selected</eq>>5</option>
+				<option value="10" <eq name="numPerPage" value="10">selected=selected</eq>>10</option>
+				<option value="15" <eq name="numPerPage" value="15">selected=selected</eq>>15</option>
+				<option value="20" <eq name="numPerPage" value="20">selected=selected</eq>>20</option>
+                </select>
+            </span>
+            <span>&nbsp;条，共 {$totalCount} 条</span>
+        </div>
+        <div class="pagination-box" targettype="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}">
+        </div>
+    </div>
+</div>

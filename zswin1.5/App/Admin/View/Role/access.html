@@ -1,0 +1,74 @@
+<script language="javascript">
+$(function(){
+	
+$('#invert').on('click', function(){
+   $('.c').iCheck('toggle');
+});
+$('#all').on('click', function(){
+	
+	$(".c").iCheck('check'); 
+});
+$('#none').on('click', function(){
+	
+	$(".c").iCheck('uncheck'); 
+});
+$('.one').each(function(){
+
+	$(this).on('ifChecked', function(){
+         $(":checkbox[id='"+$(this).attr('cid')+"']").iCheck('check'); 
+	 });
+});
+$('.all').each(function(){
+
+	$(this).on('ifClicked', function(){
+
+
+		if($(this).attr('checked')){
+			
+			$(":checkbox[cid='"+$(this).attr('id')+"']").iCheck('uncheck'); 
+		}else{
+			
+			$(":checkbox[cid='"+$(this).attr('id')+"']").iCheck('check'); 
+		}
+
+	});
+
+});	
+
+
+});
+</script>
+
+<div class="pageContent">
+    <form action="__URL__/setGroupAll/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="dialogAjaxDone" noEnter>
+      <input type="hidden" name="groupId" VALUE="{$groupId}" />
+    <input type="hidden" name="c[]"  value="{$nodeid}"/>
+        <div class="pageFormContent" layouth="60">
+        <volist name="list" id="vo">
+                  <div class="panel panel-default"> 
+                  <div class="panel-heading" style="padding:0;padding-left:10px;"><h4> <label><input type="checkbox" class="all c j-icheck" name="c[]" id="list_{$vo.id}"   value="{$vo.id}"  <?php echo in_array($vo['id'], $currentMenu) ? "checked" : "" ?> />&nbsp;{$vo.title}</label></h4></div>
+                         
+                 <div class="panel-body">
+                    <volist name="vo['sub_node']" id="sub">
+
+                        <label><input type="checkbox"  class="one c j-icheck"  name="c[]" cid="list_{$vo.id}"   value="{$sub.id}" <?php echo in_array($sub['id'], $currentMenu) ? "checked" : "" ?>/>{$sub.title}&nbsp;</label>
+                    </volist>
+                     </div>
+                </div> 
+                  </volist>
+               
+           
+        
+		</div>
+		<div class="formBar">
+            <ul>
+             <li><button type="button" class="btn btn-green btn-sm" id="all">全选</button></li>
+            <li><button type="button" class="btn btn-green btn-sm" id="none">全不选</button></li>
+            <li><button type="button" class="btn btn-green btn-sm" id="invert">反选</button></li>
+
+                <li><button type="submit" class="btn btn-default btn-sm">设置</button></li>
+                <li><button type="button" class="btn btn-close btn-sm">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>

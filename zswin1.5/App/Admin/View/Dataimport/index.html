@@ -1,0 +1,89 @@
+<div class="pageHeader">
+
+    
+</div>
+<div class="pageContent">
+  <table class="j-table" width="100%" layoutH="80">
+        <thead>
+            <tr>
+            <th width="30"></th>
+                <th>备份名称</th>
+                    <th>卷数</th>
+                    <th>压缩</th>
+                    <th>数据大小</th>
+                    <th>备份时间</th>
+                    <th width="100">状态</th>
+                    <th>操作</th>
+                       
+                
+               
+            </tr>
+        </thead>
+        <tbody>
+<volist name="list" id="data">
+                    <tr><td></td>
+                        <td>{$data.time|date='Ymd-His',###}</td>
+                        <td>{$data.part}</td>
+                        <td>{$data.compress}</td>
+                        <td>{$data.size|format_bytes}</td>
+                        <td>{$key}</td>
+                        <td>-</td>
+                        <td class="action">
+                            <a href="javascript:void(0);" onclick="importdata(this);"  class="btn btn-primary btn-sm" url="__URL__/import/time/{$data['time']}">还原</a>&nbsp;
+                            <a target="ajaxTodo" class="btn btn-danger btn-sm" href="__URL__/del/time/{$data['time']}/navTabId/{:CONTROLLER_NAME}"  title="确定要删除该备份吗？">删除</a>
+                        </td>
+                    </tr>
+                </volist>
+       
+        </tbody>
+    </table>
+
+</div>
+ 
+
+    <script type="text/javascript">
+   
+    	
+    	   
+
+
+    	    function importdata(obj){
+    	    	 var status = ".",obj;
+
+    	    	   
+    	    	    $.get($(obj).attr('url'), success, "json");
+    	    	    window.onbeforeunload = function(){ return "正在还原数据库，请不要关闭！" }
+    	    	    return false;
+    	    	    function success(data){
+    	    	        if(data.status){
+    	    	            if(data.gz){
+    	    	                data.info += status;
+    	    	                if(status.length === 5){
+    	    	                    status = ".";
+    	    	                } else {
+    	    	                    status += ".";
+    	    	                }
+    	    	                $(obj).html(data.info);
+    	    	            }
+    	    	            $(obj).parent().prev().text(data.info);
+    	    	            if(data.part){
+    	    	                $.get($(obj).attr('url'), 
+    	    	                    {"part" : data.part, "start" : data.start}, 
+    	    	                    success, 
+    	    	                    "json"
+    	    	                );
+    	    	            }  else {
+    	    	                window.onbeforeunload = function(){ return null; }
+    	    	            }
+    	    	        } else {
+    	    	        	alertMsg.error(data.info);
+    	    	        }
+    	    	    }
+
+    	    }
+
+    	    
+
+ 
+    </script>
+

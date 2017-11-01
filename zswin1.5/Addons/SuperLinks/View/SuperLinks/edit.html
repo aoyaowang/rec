@@ -1,0 +1,135 @@
+
+<div class="pageContent">
+    <form action="{:addons_url('SuperLinks://SuperLinks/update',array('navTabId'=>'SuperLinks'))}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      
+      <input type="hidden" name="id" value="{$info.id}" readonly/>
+        <div class="pageFormContent form-horizontal" layouth="60">
+       
+        <h3><if condition="$_GET['_action'] eq 'add'">新增<else/>编辑</if>友情连接</h3>
+       <div class="form-group">
+       <label class="control-label col-sm-2">站点名称：</label></td>
+		<div class="col-sm-5">
+					<input type="text" class="form-control" name="title" value="{$info.title}">
+		<p class="help-block">请输入友情连接站点名称</p>
+                                      </div>
+        </div>
+			<div class="form-group">
+			<label class="control-label col-sm-2">连接类型：</label></td>
+			<div class="col-sm-5">
+				  <if condition="$_GET['_action'] eq 'add'">
+					<label class="ilabel"><input type="radio" class="j-icheck" name="type" value="1" checked="checked">图片连接</label>
+					<label class="ilabel"><input type="radio" class="j-icheck"  name="type" value="2">普通连接</label>
+				  <else/>
+					<label class="ilabel"><input type="radio" class="j-icheck"  name="type" value="1" <if condition="$info.type eq 1">checked="checked"</if> >图片连接</label>
+					<label class="ilabel"><input type="radio" class="j-icheck"  name="type" value="2" <if condition="$info.type eq 2">checked="checked"</if> >普通连接</label>
+				  	
+				  </if>
+			<p class="help-block"></p>
+                                      </div>
+        </div>
+		<div class="form-group">
+		<label class="control-label col-sm-2">外链地址：</label></td>
+		<div class="col-sm-5">
+					<input type="text" class="form-control" name="link" value="{$info.link}">
+			<p class="help-block">请填写带http://的全路径</p>
+                                      </div>
+        </div>
+			<div class="form-group" id="img_area">
+			<label class="control-label col-sm-2">站点图片：</label></td>
+			<div class="col-sm-5">
+					<input type="file" id="upload_picture">
+					<input type="hidden" id="cover_id" name="cover_id" value="{$info.cover_id}"/>
+					<div class="upload-img-box">
+					<notempty name="info['cover_id']">
+						<div class="upload-pre-item"><img src="{$info.cover_id|get_cover='path'}"/></div>
+					</notempty>
+					</div>
+				<p class="help-block"></p>
+                                      </div>
+        </div>
+         </div>       
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><input class="btn btn-default btn-sm" type="reset" value="重置" /></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
+
+<script type="text/javascript">
+
+(function(){
+	var url = "{$current}";
+	$("#subnav").find("a[href='" + url + "']").parent().addClass("current");
+	
+	//上传文件
+	/* 初始化上传插件 */
+	$("#download-file").uploadify({
+        "height"          : 30,
+        "swf"             : "__PUBLIC__/plugins/uploadify/uploadify.swf",
+        "fileObjName"     : "download",
+        "buttonText"      : "上传文件",
+        "uploader"        : "{:U('File/upload',array('session_id'=>session_id()))}",
+        "width"           : 120,
+        'removeTimeout'   : 1,
+        "onUploadSuccess" : uploadSuccess
+    });
+
+	/* 文件上传成功回调函数 */
+    function uploadSuccess(file, data){
+    	var data = $.parseJSON(data);
+        if(data.status){
+        	$("input[name=file]").val(data.data);
+        	$("input[name=file]").parent().find('.upload-img-box').html(
+        		"<div class=\"uplaod-pre-file\">" + data.info + "</div>"
+        	);
+        } else {
+        	alertmsg.error(data.info);
+        }
+    }
+   
+  	//上传图片
+    /* 初始化上传插件 */
+	$("#upload_picture").uploadify({
+        "height"          : 30,
+        "swf"             : "__PUBLIC__/plugins/uploadify/uploadify.swf",
+        "fileObjName"     : "Picture",
+        "buttonText"      : "上传图片",
+        "uploader"        : "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+        "width"           : 120,
+        'removeTimeout'	  : 1,
+        'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
+        "onUploadSuccess" : uploadPicture
+    });
+	function uploadPicture(file, data){
+    	var data = $.parseJSON(data);
+    	if(data.status){
+        	$("#cover_id").val(data.id);
+        	$("#cover_id").parent().find('.upload-img-box').html(
+        		'<div class="upload-pre-item"><img src="' + data.path + '" width="120" height="120" onclick="imgpop(this)"/></div>'
+        	);
+        } else {
+        	 alertMsg.error(data.info);
+        }
+    }
+
+    var $radio = $('input[name="type"]');
+    $radio.on('ifChanged', function(event) {
+        var $target = $(event.target);
+        var checked = $target.prop('checked');
+        var value   = $target.val();
+        if(value==1){
+        	$("#img_area").show();
+        }else{
+        	$("#img_area").hide();
+        }
+        //alertMsg.info('选择了：' + value);
+        
+    });
+    
+})();
+
+</script>

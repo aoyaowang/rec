@@ -1,0 +1,168 @@
+
+<div class="pageContent">
+    <form action="{:addons_url('Advs://Advs/update',array('navTabId'=>'Advs'))}" id="j_advs_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      
+      <input type="hidden" name="id" value="{$info.id}" readonly/>
+        <div class="pageFormContent  form-horizontal" layouth="60">
+       
+        <h3><if condition="$_GET['_action'] eq 'add'">新增<else/>编辑</if>广告</h3>
+       <div class="form-group">
+			<label class="control-label col-sm-2">广告名称：</label>
+				 <div class="col-sm-5">
+				<input size="20" type="text" class="form-control" name="title" value="{$info.title}">
+				<p class="help-block">请输入广告显示名称</p></div>
+		</div>
+				
+			
+		 <div class="form-group">
+					<label class="control-label col-sm-2">广告位置：</label>
+				 <div class="col-sm-5">
+		            <select name="position" id="mySelect"  data-container="body"  class="selectpicker show-tick" data-style="btn-default btn-sm" data-width="auto">
+		                  <option value="" data="">请选择位置</option>
+		                  <volist name="sing" id="so">
+		                  	<option value="{$so.id}" data="{$so.type}" <if condition="$so['id'] eq $info['position']">selected</if> >{$so.title}</option>
+		                  </volist>
+		            </select>
+				<p class="help-block">
+					请选择广告位置,选择之后展开图片、文字、代码区域</p></div>
+			</div>
+			
+			<div class="form-group" id="type1" <if condition="($info['type'] neq 1) AND ($info['type'] neq 2)">style="display:none;"</if>>
+					
+					<label class="control-label col-sm-2">广告图片：</label>
+				 <div class="col-sm-5">
+					<input type="file" id="upload_picture_advspic">
+					<input type="hidden" name="advspic" id="cover_id_advspic" value="{$info.advspic}"/>
+					<div class="upload-img-box">
+						<notempty name="info['advspic']"><div class="upload-pre-item"><img src="__ROOT__{$info.path}"/></div></notempty>
+					</div>
+				
+				<p class="help-block">
+					请上传广告图片</p>
+					</div>
+			</div>
+				
+			
+			
+				<div class="form-group" id="type3" <if condition="$info['type'] neq 3">style="display:none;"</if>>
+					
+					<label class="control-label col-sm-2">广告文字：</label>
+				 <div class="col-sm-5">
+					<textarea rows="4" cols="54" name="advstext">{$info.advstext}</textarea>
+				<p class="help-block">请填写广告文字</p></div>
+				</div>		
+				
+			
+				<div class="form-group" id="type4" <if condition="$info['type'] neq 4">style="display:none;"</if>>
+					
+					<label class="control-label col-sm-2">广告代码：</label>
+				 <div class="col-sm-5">
+                    <label class="textarea">
+                    <textarea name="advshtml"  rows="4" cols="54">{$info.advshtml}</textarea>
+                    </label>
+				<p class="help-block">请填写广告代码html、js</p></div>
+			</div>					
+							
+			 <div class="form-group">
+					<label class="control-label col-sm-2">外链地址：</label>
+				 <div class="col-sm-5">
+					<input type="text" class="form-control" name="link" value="{$info.link}">
+				<p class="help-block">请填写带http://的全路径</p></div>
+			</div>	
+			 <div class="form-group">
+					<label class="control-label col-sm-2">开始时间：</label>
+				 <div class="col-sm-5">
+				
+					<input type="text" name="create_time" class="form-control  zs-date" data-date-format="yyyy-mm-dd hh:ii"  size="15" value="{$info.create_time}" placeholder="请选择时间" />
+				<p class="help-block"></p>
+			</div>	
+			</div>
+			 <div class="form-group">
+					<label class="control-label col-sm-2">结束时间：</label>
+				 <div class="col-sm-5">
+				
+					<input type="text" name="end_time" class="form-control zs-date" data-date-format="yyyy-mm-dd hh:ii"  size="15" value="{$info.end_time}" placeholder="请选择时间" />
+				<p class="help-block"></p>
+			</div>	
+			</div>
+			 <div class="form-group">
+					<label class="control-label col-sm-2">优先级：</label>
+				 <div class="col-sm-5">
+				
+					<input type="text" size="5" class="form-control" name="level" value="{$info.level}">
+				<p class="help-block"></p>
+			</div>	
+            </div>
+            </div>
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><input class="btn btn-default btn-sm" type="reset" value="重置" /></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	
+	$("#upload_picture_advspic").uploadify({
+        "height"          : 30,
+        "swf"             : "__PUBLIC__/plugins/uploadify/uploadify.swf",
+        "fileObjName"     : "Picture",
+        "buttonText"      : "上传图片",
+        "uploader"        : "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+        "width"           : 120,
+        'removeTimeout'	  : 1,
+        'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
+        "onUploadSuccess" : uploadPicture{$field.name},
+        'onFallback' : function() {
+            alert('未检测到兼容版本的Flash.');
+        }
+    });
+	
+	$('#mySelect').change(function(){
+		
+		$type = $('#mySelect').find("option:selected").attr("data");
+		if($type == 1 || $type == 2){
+			$('#type1').show();
+			$('#type3').hide();
+			$('#type4').hide();
+		}else if($type == 3){
+			$('#type3').show();
+			$('#type1').hide();
+			$('#type4').hide();
+		}else if($type == 4){
+			$('#type4').show();
+			$('#type1').hide();
+			$('#type3').hide();
+		}else{
+			$('#type1').hide();
+			$('#type3').hide();
+			$('#type4').hide();
+		}
+	});
+
+   
+});
+function uploadPicture{$field.name}(file,data){
+	var data = $.parseJSON(data);
+	
+	
+	var src = '';
+    if(data.status){
+    	$("#cover_id_advspic").val(data.id);
+    	src = data.url || data.path
+    	$("#cover_id_advspic").parent().find('.upload-img-box').html(
+    		'<div class="upload-pre-item"><img src="' + src + '" width="120" height="120" onclick="imgpop(this)"/></div>'
+    	);
+    } else {
+    	 alertMsg.error(data.info);
+    	setTimeout(function(){
+            $('#top-alert').find('button').click();
+            $(that).removeClass('disabled').prop('disabled',false);
+        },1500);
+    }
+}
+</script>

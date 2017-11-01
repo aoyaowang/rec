@@ -1,0 +1,50 @@
+<div class="pageHeader">
+<form id="pagerForm" action="{:U('rolelist')}" method="post">
+	
+	<input type="hidden" name="name" value="{$_REQUEST.name}"/>
+	<input type="hidden" name="orderField" value="{$_REQUEST.orderField}">
+        <input type="hidden" name="orderDirection" value="{$_REQUEST.orderDirection}">
+    <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	<input type="hidden" name="numPerPage" value="{$numPerPage}"/>
+	 
+    
+</form>
+    <form onsubmit="return dwzSearch(this, 'dialog');"  class="form-inline"  action="{:U('rolelist')}" method="post">
+       <div class="form-group" style="width:200px;">
+       <label>组名：</label><input type="text" value="{$_REQUEST.name}" name="name" class="form-control" size="10" />
+                                     
+       </div>
+       <div class="form-group">
+             <button type="submit" class="btn btn-warning btn-sm">查询</button>
+
+        </div>
+        
+    </form>
+    
+</div>
+<div class="pageContent">
+<table class="j-table" width="100%" layoutH="100">
+        <thead>
+            <tr><th class="orderby <eq name="order" value="name">{$sortImg}</eq>" orderField="name">组名</th>
+				<th class="orderby <eq name="order" value="pid">{$sortImg}</eq>" orderField="pid">上级组</th>
+                <th width="80">查找带回</th>
+            </tr>
+        </thead>
+        <tbody>
+
+           <volist id="vo" name="list">
+            <tr> 
+					<td>{$vo['name']}</td>
+					<td>{$vo['pid']|getGroupName}</td>
+					<td><a class="btnSelect" href="javascript:$.bringBack({ id:'{$vo['id']}', name:'{$vo['name']}'})" title="查找带回"><i class="icon-reply-all"></i></a></td>
+
+           
+            </tr>
+            
+          </volist>
+        </tbody>
+    </table>
+	
+
+	
+</div>

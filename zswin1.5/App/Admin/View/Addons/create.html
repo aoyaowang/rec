@@ -1,0 +1,145 @@
+
+<div class="pageContent">
+    <form action="{:U('build',array('navTabId'=>'Addons'))}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      
+     
+        <div class="pageFormContent form-horizontal" layoutH="1">
+       
+        <h3>插件快速创建</h3>
+       <div class="form-group">
+       <label class="control-label col-sm-2">标识名:</label>
+		 <div class="col-sm-5">
+				<input type="text" class="form-control" name="info[name]" value="Example">
+			<p class="help-block">请输入插件标识</p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">插件名:</label>
+		 <div class="col-sm-5">
+				<input type="text" class="form-control" name="info[title]" value="示列">
+			<p class="help-block">请输入插件名</p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">版本:</label>
+			 <div class="col-sm-5">
+				<input type="text" class="form-control" name="info[version]" value="0.1">
+			<p class="help-block">请输入插件版本</p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">作者:</label>
+			 <div class="col-sm-5">
+				<input type="text" class="form-control" name="info[author]" value="无名">
+			<p class="help-block">请输入插件作者</p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">描述:</label>
+			 <div class="col-sm-5">
+				
+					<textarea name="info[description]" class="form-control" rows="4" cols="40">这是一个临时描述</textarea>
+				
+			<p class="help-block">请输入描述</p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">安装后是否启用:</label>
+			 <div class="col-sm-5">
+				<label class="ilabel">
+					<input type="checkbox"  class="j-icheck" name="info[status]" value="1" checked />
+				</label>
+			<p class="help-block"></p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">是否需要配置:</label>
+			 <div class="col-sm-5">
+				<label class="ilabel"><input type="checkbox"  class="j-icheck" id="has_config" name="has_config" value="1" /></label>
+				<label class="textarea has_config hidden">
+					<textarea class="form-control" name="config" rows="4" cols="50">
+          &lt;?php
+        return array(
+	    'random'=>array(//配置在表单中的键名 ,这个会是config[random]
+		'title'=>'是否开启随机:',//表单的文字
+		'type'=>'radio',		 //表单的类型：text、textarea、checkbox、radio、select等
+		'options'=>array(		 //select 和radion、checkbox的子选项
+			'1'=>'开启',		 //值=>文字
+			'0'=>'关闭',
+		),
+		'value'=>'1',			 //表单的默认值
+	),
+);
+					</textarea>
+				</label>
+				
+				<input type="text" class="form-control has_config hidden" name="custom_config">
+				<p class="help-block has_config hidden">自定义模板,注意：自定义模板里的表单name必须为config[name]这种，获取保存后配置的值用$data.config.name</p>
+			</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">是否需要外部访问:</label>
+				 <div class="col-sm-5">
+				<input type="checkbox" class="j-icheck" name="has_outurl" value="1" />
+			<p class="help-block"></p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">实现的钩子方法:</label>
+			 <div class="col-sm-5">
+			 <div class="tags-control tagsinput " data-url="{:U('gethooks')}" data-parametername="hook[]" data-clearnotfound="true">
+               <input type="text" class="tag-input form-control" value="" />
+             </div>
+			
+			<p class="help-block"></p>
+		</div>
+		</div>
+		<div class="form-group">
+       <label class="control-label col-sm-2">是否需要后台列表:</label>
+			 <div class="col-sm-5">
+				<label class="ilabel">
+					<input type="checkbox" class="j-icheck" id="has_adminlist" name="has_adminlist" value="1" />勾选，扩展里已装插件后台列表会出现插件名的列表菜单，如系统的附件
+				</label>
+				<label class="textarea input-large has_adminlist hidden">
+					<textarea name="admin_list" class="form-control" cols="50" rows="4">
+            'model'=>'Example',		//要查的表
+			'fields'=>'*',			//要查的字段
+			'map'=>'',				//查询条件, 如果需要可以再插件类的构造方法里动态重置这个属性
+			'order'=>'id desc',		//排序,
+			'listKey'=>array( 		//这里定义的是除了id序号外的表格里字段显示的表头名
+			'字段名'=>'表头显示名'
+			),
+					</textarea>
+				</label>
+				<input type="text" class="form-control has_adminlist hidden" name="custom_adminlist">
+				<p class="help-block has_adminlist hidden">自定义模板,注意：自定义模板里的列表变量为$_list这种,遍历后可以用listkey可以控制表头显示,也可以完全手写，分页变量用$_page</p>
+			
+			</div>
+		</div>
+              
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+               
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
+
+	<script type="text/javascript">
+		function bindShow(radio_bind, selectors){
+			$(radio_bind).on('ifChanged',function(){
+				
+				$(selectors).toggleClass('hidden');
+			})
+		}
+
+		//配置的动态
+		bindShow('#has_config','.has_config');
+		bindShow('#has_adminlist','.has_adminlist');
+
+
+		
+	</script>

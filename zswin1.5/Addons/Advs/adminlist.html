@@ -1,0 +1,35 @@
+
+<table  class="j-table"  width="100%" layoutH="95">
+	<thead>
+		<tr>
+			
+			<th style="text-align: center;">序号</th>
+			<volist name="listKey" id="vo">
+				<th style="text-align: center;">{$vo}</th>
+			</volist>
+			<th style="text-align: center;">操作</th>
+		</tr>
+	</thead>
+	<tbody>
+		<volist name="list" id="lv" >
+		<tr>
+			
+			<td>{$lv.id}</td>
+			<volist name="listKey" id="lk">
+				<td>{$lv.$key}</td>
+			</volist>
+			<td>
+				<a  class="btn btn-green btn-sm" rel="Advsedit{$lv['id']}" title="编辑广告" target="navtab" href="{:addons_url('Advs://Advs/edit',array('id'=>$lv['id']))}">编辑</a>
+				<if condition="$lv.status eq 1">
+				<a class="btn btn-green btn-sm" target="ajaxTodo" href="{:addons_url('Advs://Advs/forbidden',array('id'=>$lv['id']))}">禁用</a>
+				<else/>
+				<a class="btn btn-green btn-sm" target="ajaxTodo" href="{:addons_url('Advs://Advs/off',array('id'=>$lv['id']))}">启用</a>
+				</if>
+				<a class="btn btn-green btn-sm" target="ajaxTodo" href="{:addons_url('Advs://Advs/del',array('id'=>$lv['id']))}">删除</a>
+			</td>
+		</tr>
+		</volist>
+	</tbody>
+</table>
+
+

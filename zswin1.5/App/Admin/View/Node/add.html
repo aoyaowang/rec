@@ -1,0 +1,63 @@
+<div class="pageContent">
+    <form action="__URL__/insert/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="dialogAjaxDone" noEnter>
+     
+		<input type="hidden" name="level" value="{$level}">
+		
+		<input type="hidden" name="pid" value="{$pid}">
+        <div class="pageFormContent form-horizontal" layoutH="60">
+            <div class="form-group">
+                <label for="j_name" class="control-label col-sm-3">控制器名：</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control validate[required,custom[onlyLetterSp]] required" size="10" name="name" id="j_name" value=""  >
+                <p class="help-block">填写的为Controller的名称标识</p>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="j_title" class="control-label col-sm-3">显示名：</label>
+                <input type="text" class="form-control validate[required] required" size="30" name="title" id="j_title" value="" >
+            </div>
+            
+            <div class="form-group">
+                <label for="j_group_id" class="control-label col-sm-3">分组：</label>
+                <select name="group_id"  data-container="body"  id="j_group_id" class="selectpicker show-tick validate[required]" data-style="btn-default btn-sm" data-width="auto">
+                            <option value="">未分组</option>
+					<volist name="list" id="vo">
+						<option value="{$vo.id}">{$vo.title}</option>
+					</volist>
+                 </select>
+                 
+            </div>
+             <div class="form-group">
+                <label for="j_sort" class="control-label col-sm-3">排序：</label>
+                <input type="text" class="form-control validate[required,custom[integer]] required" size="30" name="sort" id="j_sort" value="" >
+            </div>
+            <div class="form-group">
+                <label for="j_status" class="control-label col-sm-3">状态：</label>
+               <select name="status"  data-container="body"  id="j_status" class="selectpicker show-tick validate[required]" data-style="btn-default btn-sm" data-width="auto">
+                               
+                                 <option value="1">启用</option>
+                                <option value="0">禁用</option>
+                 </select>
+            </div>
+            <div class="form-group">
+                <label for="j_remark" class="control-label col-sm-3">操作模块名：</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control validate[custom[onlyLetterSp]]" size="10" name="remark" id="j_remark" value=""  >
+               
+               <p class="help-block">不填默认为index模块</p>
+                </div>
+            </div>
+		</div>
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button" class="btn btn-close btn-sm">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
+
+
+			
+			

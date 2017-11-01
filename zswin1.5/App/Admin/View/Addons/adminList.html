@@ -1,0 +1,70 @@
+<div class="pageHeader">
+<form id="pagerForm" action="{:cookie('_currentUrl_')}" method="post">
+
+
+       
+        <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	    <input type="hidden" name="numPerPage" value="{$_REQUEST['numPerPage']}"/>
+            <present name="custom_hiddeninput">
+				{$custom_hiddeninput}
+			</present> 
+    </form>
+     <form onsubmit="return navTabSearch(this);"  class="form-inline" action="{:cookie('_currentUrl_')}" method="post">
+       
+       
+                <present name="custom_searchbar">
+				{$custom_searchbar}
+			    </present> 
+          
+       
+        
+    </form>
+
+</div>
+<div class="pageContent">
+
+<empty name="custom_adminlist">
+    <table class="j-table" width="100%" layoutH="80">
+     	<thead>
+					<tr>
+						<th>
+						 	序号
+	                    </th>
+						<volist name="listKey" id="vo">
+							<th>{$vo}</th>
+						</volist>
+					</tr>
+				</thead>
+				<tbody>
+					<volist name="list" id="lv" key="vo">
+					<tr>
+						
+						<volist name="listKey" id="lk">
+							<td>{$lv.$key}</td>
+						</volist>
+					</tr>
+					</volist>
+				</tbody>
+    </table>
+    <else />
+			<present name="custom_adminlist">
+				{$custom_adminlist}
+			</present>
+		</empty>
+<div class="panelBar">
+        <div class="pages">
+            <span>每页&nbsp;</span>
+            <span class="sel">
+                <select class="selectpicker show-tick dropup" data-style="btn-default btn-sel xs" data-width="auto" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                  <option value="5" <eq name="numPerPage" value="5">selected=selected</eq>>5</option>
+				<option value="10" <eq name="numPerPage" value="10">selected=selected</eq>>10</option>
+				<option value="15" <eq name="numPerPage" value="15">selected=selected</eq>>15</option>
+				<option value="20" <eq name="numPerPage" value="20">selected=selected</eq>>20</option>
+                </select>
+            </span>
+            <span>&nbsp;条，共 {$totalCount} 条</span>
+        </div>
+        <div class="pagination-box" targettype="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}">
+        </div>
+    </div>
+</div>

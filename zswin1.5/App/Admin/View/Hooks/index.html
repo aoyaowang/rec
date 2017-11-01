@@ -1,0 +1,66 @@
+<div class="pageHeader">
+<form id="pagerForm" action="__URL__" method="post">
+
+
+        <input type="hidden" name="orderField" value="{$_REQUEST.orderField}">
+        <input type="hidden" name="orderDirection" value="{$_REQUEST.orderDirection}">
+        <input type="hidden" name="pageNum" value="{$_REQUEST['pageNum']|default=1}"/>
+	    <input type="hidden" name="numPerPage" value="{$numPerPage}"/>
+
+    </form>
+
+        <div  class="form-inline">
+            <div class="form-group">
+                     <a href="{:U('add')}" rel="hookadd"  target="navtab" title="新增钩子"  class="btn btn-green btn-sm">新增</a>                
+                                  </div>
+              
+        </div>
+
+  
+</div>
+<div class="pageContent">
+    <table class="j-table" width="100%" layoutH="95">
+        <thead>
+            <tr>
+                <th width="40">ID</th>
+                 <th class="orderby <eq name="order" value="name">{$sortImg}</eq>" orderField="name">名称</th>
+                <th>描述</th>
+                <th class="orderby <eq name="order" value="type">{$sortImg}</eq>" orderField="type">类型</th>
+                <th width="120">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+           <volist id="vo" name="list">
+            <tr>
+                <td>{$vo.id}</td>
+				<td>{$vo.name}</td>
+				<td>{$vo.description}</td>
+				<td>{$vo.type_text}</td>
+                <td>
+                    <a href="__URL__/edit/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}" rel="hookedit{$vo['id']}"  class="btn btn-green btn-sm" target="navtab" title="编辑{$vo.name}钩子" >编辑</a>
+                   
+                    <a href="__URL__/foreverdelete/id/{$vo['id']}/navTabId/{:CONTROLLER_NAME}" class="btn btn-red btn-sm" target="ajaxTodo" title="确定要删除该行信息吗？">删</a>
+                </td>
+            </tr>
+            
+          </volist>
+        </tbody>
+    </table>
+<div class="panelBar">
+        <div class="pages">
+            <span>每页&nbsp;</span>
+            <span class="sel">
+                <select class="selectpicker show-tick dropup" data-style="btn-default btn-sel xs" data-width="auto" name="numPerPage" onchange="navTabPageBreak({numPerPage:this.value})">
+                  <option value="5" <eq name="numPerPage" value="5">selected=selected</eq>>5</option>
+				<option value="10" <eq name="numPerPage" value="10">selected=selected</eq>>10</option>
+				<option value="15" <eq name="numPerPage" value="15">selected=selected</eq>>15</option>
+				<option value="20" <eq name="numPerPage" value="20">selected=selected</eq>>20</option>
+                </select>
+            </span>
+            <span>&nbsp;条，共 {$totalCount} 条</span>
+        </div>
+        <div class="pagination-box" targettype="navTab" totalCount="{$totalCount}" numPerPage="{$numPerPage}" pageNumShown="10" currentPage="{$currentPage}">
+        </div>
+    </div>
+</div>
+

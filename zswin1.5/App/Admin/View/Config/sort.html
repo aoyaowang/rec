@@ -1,0 +1,104 @@
+<div class="pageContent">
+    <form action="__URL__/sort/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+     
+        <div class="pageFormContent" layouth="32">
+       
+        <h3 style="text-align:left;">配置排序</h3>
+        <table class="table inputtable table-condensed" width="100%">
+
+                  
+                <tbody>
+
+				<tr>
+					<td align="right" width="60">
+					<div class="sort_btn">
+					<button class="top btn btn-green btn-sm" type="button">第 一</button>
+					<button class="up btn btn-green btn-sm" style="margin-top:10px;" type="button">上 移</button>
+					<button class="down btn btn-green btn-sm" style="margin-top:10px;" type="button">下 移</button>
+					<button class="bottom btn btn-green btn-sm" style="margin-top:10px;" type="button">最 后</button>
+				</div>
+					</td>
+					<td id="sortoption">
+					<input type="hidden" name="ids">
+					<select value="" size="15">
+						<volist name="list" id="vo">
+							<option class="ids" title="{$vo.title}" value="{$vo.id}">{$vo.title}</option>
+						</volist>
+					</select>
+					</td>
+					<td width="100">
+					
+				</td>
+			</tr>
+                </tbody>
+            </table>
+ 
+		<div class="formBar">
+            <ul style="float:left;margin-top:20px;">
+            
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button"  url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>
+
+	<script type="text/javascript">
+		$(function(){
+
+			
+			
+			sort();
+			$(".top").click(function(){
+				rest();
+				$("#sortoption").find("option:selected").prependTo("select");
+				sort();
+			})
+			$(".bottom").click(function(){
+				rest();
+				$("#sortoption").find("option:selected").appendTo("select");
+				sort();
+			})
+			$(".up").click(function(){
+				rest();
+				$("#sortoption").find("option:selected").after($("#sortoption").find("option:selected").prev());
+				sort();
+			})
+			$(".down").click(function(){
+				rest();
+				//alert($(selected).html());
+				//alert(selected.length);
+				$("#sortoption").find('option:selected').before($("#sortoption").find('option:selected').next());
+				sort();
+				
+				
+			})
+			
+			function sort(){
+				
+				$("#sortoption").find('option').text(function(){
+					//alert($(this).text());
+					return ($(this).index()+1)+'.'+$(this).text()
+				});
+				var arr = new Array();
+				$("#sortoption").find('.ids').each(function(){
+					arr.push($(this).val());
+				});
+				$("#sortoption").find('input[name=ids]').val(arr.join(','));
+			}
+
+			//重置所有option文字。
+			function rest(){
+				
+				
+				$("#sortoption").find('option').text(function(){
+					//alert($(this).text());
+					return $(this).text().split('.')[1]
+				});
+			}
+
+		});	
+			
+			
+		
+	</script>

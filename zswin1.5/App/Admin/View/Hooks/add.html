@@ -1,0 +1,44 @@
+<div class="pageContent">
+    <form action="__URL__/insert/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      
+        <div class="pageFormContent form-horizontal" layouth="60">
+
+      <div class="form-group">
+          <label for="j_name" class="control-label col-sm-2 ">钩子名称：</label>
+         <div class="col-sm-6">
+          <input size="20" type="text" class="form-control validate[required,custom[NoXhxOneLetter]] required" name="name" id="j_name" value=""  >
+          <p class="help-block">需要在程序中先添加钩子，否则无效</p>
+           </div>
+           </div>
+          <div class="form-group">
+                            <label for="j_description" class="control-label col-sm-2 ">钩子描述：</label>
+           <div class="col-sm-6"> <textarea name="description" id="j_description" class="form-control autosize validate[required] required" rows="4" cols="30"></textarea>
+           <p class="help-block">区分钩子的主要用途</p>
+           </div>
+           </div>
+                    
+                    
+          <div class="form-group">
+                            <label for="j_type" class="control-label col-sm-2 ">钩子类型：</label>
+          <div class="col-sm-6"><select name="type"  data-container="body"  id="j_type" class="selectpicker show-tick validate[required]" data-style="btn-default btn-sm" data-width="auto">
+                               
+                               <volist name="type" id="vo">
+                               <option value="{$key}">{$vo}</option>
+                               </volist>
+                                 
+                                   
+                              </select>
+          <p class="help-block">拖动后保存顺序，影响同一个钩子挂载的插件执行先后顺序</p>
+           </div>
+           </div>
+       </div>             
+            
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+</div>

@@ -1,0 +1,78 @@
+<div class="pageContent">
+    <form action="__URL__/update/navTabId/{:CONTROLLER_NAME}" id="j_custom_form" class="pageForm form-validate" method="post" callback="navTabAjaxDone" noEnter>
+      <input type="hidden" name="id" value="{$vo.id}" />
+       <div class="pageFormContent form-horizontal">
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置标识：</label>
+	<div class="col-sm-5">
+	<input type="text" size="20" class="form-control validate[required,custom[NoXhxOneLetter]] required" name="name" value="{$vo.name}">
+	<p class="help-block">用于C函数调用，只能使用英文+下划线且不能重复</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置标题：</label>
+	<div class="col-sm-5">
+	<input type="text" class="form-control" name="title" value="{$vo.title}">
+	<p class="help-block">用于后台显示的配置标题</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">排序：</label>
+	<div class="col-sm-5">
+	<input type="text" class="form-control" name="sort" value="{$vo.sort}" size="5">
+	<p class="help-block">用于分组显示的顺序</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置类型：</label>
+	<div class="col-sm-5">
+				<select name="type" class="selectpicker show-tick"  data-style="btn-default btn-sm" data-width="auto" data-container="body">
+					<volist name="Think.config.CONFIG_TYPE_LIST" id="type">
+					
+						<option  <if condition="$vo['type'] eq $key">selected</if> value="{$key}">{$type}</option>
+					</volist>
+				</select>
+	<p class="help-block">系统会根据不同类型解析配置值</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置分组：</label>
+	<div class="col-sm-5">
+				<select name="group" class="selectpicker show-tick"  data-style="btn-default btn-sm" data-width="auto" data-container="body">
+					<option value="0">不分组</option>
+					<volist name="Think.config.CONFIG_GROUP_LIST" id="group">
+						<option  <if condition="$vo['group'] eq $key">selected</if> value="{$key}">{$group}</option>
+					</volist>
+				</select>
+	<p class="help-block">配置分组|用于批量设置|不分组则不会显示在系统设置中</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置值：</label>
+	<div class="col-sm-5">
+				
+	<textarea name="value" class="form-control" rows="4" cols="30">{$vo.value}</textarea>
+	
+	<p class="help-block"></p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">配置项：</label>
+	<div class="col-sm-5">
+				
+					<textarea name="extra" class="form-control"  rows="4" cols="30">{$vo.extra}</textarea>
+	
+	<p class="help-block">如果是枚举型 需要配置该项</p>
+	</div></div>
+	<div class="form-group">
+	<label class="control-label col-sm-2">说明：</label>
+	<div class="col-sm-5">
+				
+					<textarea name="remark" class="form-control"  rows="4" cols="30">{$vo.remark}</textarea>
+	
+	<p class="help-block">配置详细说明</p>
+	</div></div>
+	</div>	
+ 
+		<div class="formBar">
+            <ul>
+                <li><button type="submit" class="btn btn-default btn-sm">保存</button></li>
+                <li><button type="button" url="__URL__" class="btn btn-close btn-sm ">取消</button></li>
+            </ul>
+		</div>
+    </form>
+    </div>
