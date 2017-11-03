@@ -1,4 +1,4 @@
-var g_server = "http://landking.tech:5000/";
+var g_server = "http://test.obyjd.com:5000/";
 var g_gate = "";
 
 var g_protocol = {
