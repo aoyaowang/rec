@@ -209,7 +209,7 @@
                     <PreSize X="0.1000" Y="0.6400" />
                     <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Text_5" ActionTag="-1778137164" Tag="73" IconVisible="False" LeftMargin="126.8319" RightMargin="369.1681" TopMargin="34.6635" BottomMargin="29.3365" FontSize="36" LabelText="发送房卡" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="Text_5" ActionTag="-1778137164" Tag="73" IconVisible="False" LeftMargin="126.8319" RightMargin="369.1681" TopMargin="34.6635" BottomMargin="29.3365" FontSize="36" LabelText="发送紅包" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="144.0000" Y="36.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="198.8319" Y="47.3365" />

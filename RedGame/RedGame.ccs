@@ -29,6 +29,24 @@
           <Image Name="Btn.png" />
           <Image Name="Top.png" />
           <Image Name="zt.png" />
+          <Image Name="background.png" />
+        </Folder>
+        <Folder Name="top">
+          <Image Name="TopBar.png" />
+          <Image Name="playerbar.png" />
+          <Image Name="fangka.png" />
+          <Image Name="money.png" />
+          <Image Name="bottom.png" />
+          <Image Name="gonggao.png" />
+          <Image Name="home.png" />
+          <Image Name="huodong.png" />
+          <Image Name="market.png" />
+          <Image Name="setting.png" />
+          <Image Name="gonggao2.png" />
+          <Image Name="home2.png" />
+          <Image Name="huodong2.png" />
+          <Image Name="market2.png" />
+          <Image Name="setting2.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />
@@ -37,10 +55,13 @@
         <Project Name="chatred.csd" Type="Layer" />
         <Project Name="chatsys.csd" Type="Layer" />
         <Project Name="game.csd" Type="Layer" />
+        <Project Name="gamelog.csd" Type="Layer" />
+        <Project Name="jielong.csd" Type="Layer" />
         <Project Name="loading.csd" Type="Layer" />
         <Project Name="main.csd" Type="Layer" />
         <Project Name="market.csd" Type="Layer" />
         <Project Name="message.csd" Type="Layer" />
+        <Project Name="niuniured.csd" Type="Layer" />
         <Project Name="reddetail.csd" Type="Layer" />
         <Project Name="redopen.csd" Type="Layer" />
         <Project Name="redover.csd" Type="Layer" />
@@ -53,9 +74,12 @@
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
-        <Project Name="jielong.csd" Type="Layer" />
-        <Project Name="niuniured.csd" Type="Layer" />
-        <Project Name="gamelog.csd" Type="Layer" />
+        <Folder Name="game">
+          <Image Name="28.png" />
+          <Image Name="jielong.png" />
+          <Image Name="niuniu.png" />
+          <Image Name="saolei.png" />
+        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

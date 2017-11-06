@@ -35,6 +35,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -59,7 +61,7 @@
             "Children": [
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -71,20 +73,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "game/saolei.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "game/saolei.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 236,
+                "Scale9Height": 255,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -102,8 +104,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 175.1756,
-                  "Y": 560.2599
+                  "X": 181.6467,
+                  "Y": 667.2826
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -112,29 +114,29 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2737,
-                  "Y": 0.6686
+                  "X": 0.2838,
+                  "Y": 0.7963
                 },
                 "PreSize": {
-                  "X": 0.3125,
-                  "Y": 0.2387
+                  "X": 0.4156,
+                  "Y": 0.3305
                 },
-                "LeftMargin": 75.1756,
-                "RightMargin": 364.8244,
-                "TopMargin": 177.7401,
-                "BottomMargin": 460.2599,
+                "LeftMargin": 48.6467,
+                "RightMargin": 325.3533,
+                "TopMargin": 32.2174,
+                "BottomMargin": 528.7826,
                 "Tag": 38,
                 "ActionTag": 1893247062,
                 "Size": {
-                  "X": 200.0,
-                  "Y": 200.0
+                  "X": 266.0,
+                  "Y": 277.0
                 },
                 "Name": "btn_game1",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -146,20 +148,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "game/jielong.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "game/jielong.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 238,
+                "Scale9Height": 254,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -177,8 +179,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 452.4704,
-                  "Y": 558.7498
+                  "X": 458.9377,
+                  "Y": 665.7709
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -187,29 +189,29 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.707,
-                  "Y": 0.6668
+                  "X": 0.7171,
+                  "Y": 0.7945
                 },
                 "PreSize": {
-                  "X": 0.3125,
-                  "Y": 0.2387
+                  "X": 0.4187,
+                  "Y": 0.3294
                 },
-                "LeftMargin": 352.4704,
-                "RightMargin": 87.5296,
-                "TopMargin": 179.2502,
-                "BottomMargin": 458.7498,
+                "LeftMargin": 324.9377,
+                "RightMargin": 47.0623,
+                "TopMargin": 34.2291,
+                "BottomMargin": 527.7709,
                 "Tag": 39,
                 "ActionTag": -1913223863,
                 "Size": {
-                  "X": 200.0,
-                  "Y": 200.0
+                  "X": 268.0,
+                  "Y": 276.0
                 },
                 "Name": "btn_game2",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -221,20 +223,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "game/niuniu.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "game/niuniu.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 236,
+                "Scale9Height": 255,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -252,8 +254,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 175.1756,
-                  "Y": 296.5587
+                  "X": 184.0223,
+                  "Y": 375.0955
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -262,29 +264,29 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2737,
-                  "Y": 0.3539
+                  "X": 0.2875,
+                  "Y": 0.4476
                 },
                 "PreSize": {
-                  "X": 0.3125,
-                  "Y": 0.2387
+                  "X": 0.4156,
+                  "Y": 0.3305
                 },
-                "LeftMargin": 75.1756,
-                "RightMargin": 364.8244,
-                "TopMargin": 441.4413,
-                "BottomMargin": 196.5587,
+                "LeftMargin": 51.0223,
+                "RightMargin": 322.9777,
+                "TopMargin": 324.4045,
+                "BottomMargin": 236.5955,
                 "Tag": 40,
                 "ActionTag": -1250476999,
                 "Size": {
-                  "X": 200.0,
-                  "Y": 200.0
+                  "X": 266.0,
+                  "Y": 277.0
                 },
                 "Name": "btn_game3",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -296,20 +298,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "game/28.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "game/28.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 236,
+                "Scale9Height": 255,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -327,8 +329,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 452.4704,
-                  "Y": 296.5587
+                  "X": 461.3267,
+                  "Y": 375.0955
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -337,22 +339,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.707,
-                  "Y": 0.3539
+                  "X": 0.7208,
+                  "Y": 0.4476
                 },
                 "PreSize": {
-                  "X": 0.3125,
-                  "Y": 0.2387
+                  "X": 0.4156,
+                  "Y": 0.3305
                 },
-                "LeftMargin": 352.4704,
-                "RightMargin": 87.5296,
-                "TopMargin": 441.4413,
-                "BottomMargin": 196.5587,
+                "LeftMargin": 328.3267,
+                "RightMargin": 45.6733,
+                "TopMargin": 324.4045,
+                "BottomMargin": 236.5955,
                 "Tag": 41,
                 "ActionTag": -1540104754,
                 "Size": {
-                  "X": 200.0,
-                  "Y": 200.0
+                  "X": 266.0,
+                  "Y": 277.0
                 },
                 "Name": "btn_game4",
                 "ctype": "ButtonObjectData"
@@ -361,7 +363,7 @@
             "ActionTag": 537245702,
             "Size": {
               "X": 640.0,
-              "Y": 838.0
+              "Y": 700.0
             },
             "Name": "ScrollView_1",
             "ctype": "ScrollViewObjectData"
@@ -369,15 +371,17 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 838.0
+          "Y": 700.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
-        "Default/Button_Press.png"
+        "game/28.png",
+        "game/jielong.png",
+        "game/niuniu.png",
+        "game/saolei.png"
       ],
       "ctype": "GameFileData"
     }
