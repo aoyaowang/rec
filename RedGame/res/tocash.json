@@ -16,12 +16,13 @@
         "Children": [
           {
             "ClipAble": false,
-            "ComboBoxIndex": 1,
-            "SingleColor": {
-              "R": 230,
-              "G": 230,
-              "B": 250
+            "FileData": {
+              "Type": "Normal",
+              "Path": "shop/shop_icon_bg.png",
+              "Plist": ""
             },
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
             "FirstColor": {
               "R": 150,
               "G": 200
@@ -30,8 +31,10 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "Scale9OriginX": 211,
+            "Scale9OriginY": 302,
+            "Scale9Width": 218,
+            "Scale9Height": 314,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -130,11 +133,7 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6195,
@@ -184,11 +183,7 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6195,
@@ -238,11 +233,7 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.6768,
@@ -292,11 +283,7 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.2104,
@@ -322,31 +309,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "转账",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/redBag_disi.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/redBag_disi.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 514,
+                "Scale9Height": 63,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -364,7 +347,7 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 301.8948,
+                  "X": 326.8941,
                   "Y": 141.691
                 },
                 "Scale": {
@@ -374,22 +357,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.4717,
+                  "X": 0.5108,
                   "Y": 0.1543
                 },
                 "PreSize": {
-                  "X": 0.5625,
-                  "Y": 0.0871
+                  "X": 0.85,
+                  "Y": 0.0926
                 },
-                "LeftMargin": 121.8948,
-                "RightMargin": 158.1052,
-                "TopMargin": 736.309,
-                "BottomMargin": 101.691,
+                "LeftMargin": 54.8941,
+                "RightMargin": 41.1058,
+                "TopMargin": 733.809,
+                "BottomMargin": 99.191,
                 "Tag": 112,
                 "ActionTag": 2012869827,
                 "Size": {
-                  "X": 360.0,
-                  "Y": 80.0
+                  "X": 544.0,
+                  "Y": 85.0
                 },
                 "Name": "btn_bill",
                 "ctype": "ButtonObjectData"
@@ -397,31 +380,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "10",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -473,31 +452,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "50",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -549,31 +524,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "100",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -625,31 +596,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "500",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -701,31 +668,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "1000",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -777,31 +740,27 @@
               {
                 "FontSize": 48,
                 "ButtonText": "20",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 120,
+                "Scale9Height": 28,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -852,7 +811,7 @@
               },
               {
                 "FontSize": 14,
-                "ButtonText": "返回",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -864,20 +823,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_back.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_back.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 15,
+                "Scale9OriginX": 5,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 8,
+                "Scale9Height": 9,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -895,8 +854,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 70.4479,
-                  "Y": 872.2051
+                  "X": 30.5358,
+                  "Y": 883.3282
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -905,22 +864,22 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.1101,
-                  "Y": 0.9501
+                  "X": 0.0477,
+                  "Y": 0.9622
                 },
                 "PreSize": {
-                  "X": 0.1172,
-                  "Y": 0.0545
+                  "X": 0.0281,
+                  "Y": 0.0338
                 },
-                "LeftMargin": 32.9479,
-                "RightMargin": 532.0521,
-                "TopMargin": 20.7949,
-                "BottomMargin": 847.2051,
+                "LeftMargin": 21.5358,
+                "RightMargin": 600.4642,
+                "TopMargin": 19.1718,
+                "BottomMargin": 867.8282,
                 "Tag": 119,
                 "ActionTag": 1314899030,
                 "Size": {
-                  "X": 75.0,
-                  "Y": 50.0
+                  "X": 18.0,
+                  "Y": 31.0
                 },
                 "Name": "btn_back",
                 "ctype": "ButtonObjectData"
@@ -945,31 +904,27 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 134.6869,
-                  "Y": 249.9628
+                  "X": 128.6868,
+                  "Y": 249.9629
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2104,
+                  "X": 0.2011,
                   "Y": 0.2723
                 },
                 "PreSize": {
                   "X": 0.225,
                   "Y": 0.0392
                 },
-                "LeftMargin": 62.6869,
-                "RightMargin": 433.3131,
-                "TopMargin": 650.0372,
-                "BottomMargin": 231.9628,
+                "LeftMargin": 56.6868,
+                "RightMargin": 439.3132,
+                "TopMargin": 650.0371,
+                "BottomMargin": 231.9629,
                 "Tag": 120,
                 "ActionTag": -740863371,
                 "Size": {
@@ -991,29 +946,25 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 420.7526,
+                  "X": 422.9104,
                   "Y": 252.8369
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 127,
-                  "G": 127,
-                  "B": 127
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6574,
+                  "X": 0.6608,
                   "Y": 0.2754
                 },
                 "PreSize": {
                   "X": 0.5625,
                   "Y": 0.0392
                 },
-                "LeftMargin": 240.7526,
-                "RightMargin": 39.2474,
+                "LeftMargin": 242.9104,
+                "RightMargin": 37.0896,
                 "TopMargin": 647.1631,
                 "BottomMargin": 234.8369,
                 "Tag": 122,
@@ -1044,9 +995,11 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
-        "Default/Button_Press.png",
-        "Default/Sprite.png"
+        "Default/Sprite.png",
+        "shop/shop_icon_bg.png",
+        "userCenter/Dicon_0d.png",
+        "userCenter/Dicon_back.png",
+        "userCenter/redBag_disi.png"
       ],
       "ctype": "GameFileData"
     }

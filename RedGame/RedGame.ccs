@@ -3,6 +3,28 @@
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
+        <Folder Name="active">
+          <Image Name="action_icon_1.png" />
+          <Image Name="action_icon_di.png" />
+          <Image Name="action_icon_fk.png" />
+          <Image Name="action_icon_hf.png" />
+          <Image Name="action_icon_sj.png" />
+          <Image Name="action_icon_yellow.png" />
+          <Image Name="action_icon_yl.png" />
+          <Image Name="action_icon_ZT.png" />
+        </Folder>
+        <Folder Name="backGround">
+          <Image Name="28.jpg" />
+          <Image Name="niuniu.jpg" />
+          <Image Name="redBag.jpg" />
+          <Image Name="saolei.jpg" />
+        </Folder>
+        <Folder Name="game">
+          <Image Name="28.png" />
+          <Image Name="jielong.png" />
+          <Image Name="niuniu.png" />
+          <Image Name="saolei.png" />
+        </Folder>
         <Folder Name="loading">
           <Image Name="loadingNew_bk.png" />
           <Image Name="loadingNew_bk1.png" />
@@ -15,6 +37,18 @@
           <Image Name="loadingNew4.png" />
           <Image Name="loadingNew5.png" />
         </Folder>
+        <Folder Name="main">
+          <Image Name="mian_icon_fk.png" />
+          <Image Name="mian_icon_gold.png" />
+          <Image Name="mian_icon_mj.png" />
+        </Folder>
+        <Folder Name="playGame">
+          <Image Name="playGame_icon.png" />
+          <Image Name="playGame_icon_RDdi.png" />
+          <Image Name="playGame_icon_redbag.png" />
+          <Image Name="playGame_icon_saolei.png" />
+          <Image Name="playGame_red.png" />
+        </Folder>
         <Folder Name="res">
           <Image Name="a5p.png" />
           <Image Name="ac_.9.png" />
@@ -26,27 +60,76 @@
           <Image Name="aju.png" />
           <Image Name="ajv.png" />
           <Image Name="ak0.png" />
+          <Image Name="background.png" />
           <Image Name="Btn.png" />
           <Image Name="Top.png" />
           <Image Name="zt.png" />
-          <Image Name="background.png" />
+        </Folder>
+        <Folder Name="shop">
+          <Image Name="shop_icon_bg.png" />
+          <Image Name="shop_icon_box.png" />
+          <Image Name="shop_icon_bule.png" />
+          <Image Name="shop_icon_di.png" />
+          <Image Name="shop_icon_gold0.png" />
+          <Image Name="shop_icon_gold1.png" />
+          <Image Name="shop_icon_gold2.png" />
+          <Image Name="shop_icon_gold3.png" />
+          <Image Name="shop_icon_gold4.png" />
+          <Image Name="shop_icon_xx.png" />
+          <Image Name="shopFk_icon_fk1.png" />
+          <Image Name="shopFk_icon_fk2.png" />
+          <Image Name="shopFk_icon_fk3.png" />
+          <Image Name="shopFk_icon_laba.png" />
         </Folder>
         <Folder Name="top">
-          <Image Name="TopBar.png" />
-          <Image Name="playerbar.png" />
-          <Image Name="fangka.png" />
-          <Image Name="money.png" />
           <Image Name="bottom.png" />
+          <Image Name="fangka.png" />
           <Image Name="gonggao.png" />
-          <Image Name="home.png" />
-          <Image Name="huodong.png" />
-          <Image Name="market.png" />
-          <Image Name="setting.png" />
           <Image Name="gonggao2.png" />
+          <Image Name="home.png" />
           <Image Name="home2.png" />
+          <Image Name="huodong.png" />
           <Image Name="huodong2.png" />
+          <Image Name="market.png" />
           <Image Name="market2.png" />
+          <Image Name="money.png" />
+          <Image Name="playerbar.png" />
+          <Image Name="setting.png" />
           <Image Name="setting2.png" />
+          <Image Name="TopBar.png" />
+        </Folder>
+        <Folder Name="userCenter">
+          <Image Name="bg.png" />
+          <Image Name="Dicon.png" />
+          <Image Name="Dicon_0.png" />
+          <Image Name="Dicon_0d.png" />
+          <Image Name="Dicon_1.png" />
+          <Image Name="Dicon_back.png" />
+          <Image Name="Dicon_ditiao1.png" />
+          <Image Name="Dicon_ditiao2.png" />
+          <Image Name="Dicon_ditiao3.png" />
+          <Image Name="Dicon_fk.png" />
+          <Image Name="Dicon_go.png" />
+          <Image Name="Dicon_gold.png" />
+          <Image Name="Dicon_player.png" />
+          <Image Name="Dicon_zhongzhi.png" />
+          <Image Name="icon_fsfk.png" />
+          <Image Name="icon_hongbao.png" />
+          <Image Name="icon_play28.png" />
+          <Image Name="icon_playeHB.png" />
+          <Image Name="icon_playerd.png" />
+          <Image Name="icon_playniuniu.png" />
+          <Image Name="icon_playSaoLei.png" />
+          <Image Name="icon_wait.png" />
+          <Image Name="licon_active.png" />
+          <Image Name="licon_center.png" />
+          <Image Name="licon_gonggao.png" />
+          <Image Name="licon_shop.png" />
+          <Image Name="licon_userCenter.png" />
+          <Image Name="redBag_bg.png" />
+          <Image Name="redBag_disi.png" />
+          <Image Name="redBag_icon_baiD.png" />
+          <Image Name="Top_icon.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />
@@ -60,6 +143,7 @@
         <Project Name="loading.csd" Type="Layer" />
         <Project Name="main.csd" Type="Layer" />
         <Project Name="market.csd" Type="Layer" />
+        <Project Name="marketPage.csd" Type="Layer" />
         <Project Name="message.csd" Type="Layer" />
         <Project Name="niuniured.csd" Type="Layer" />
         <Project Name="reddetail.csd" Type="Layer" />
@@ -74,12 +158,6 @@
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
-        <Folder Name="game">
-          <Image Name="28.png" />
-          <Image Name="jielong.png" />
-          <Image Name="niuniu.png" />
-          <Image Name="saolei.png" />
-        </Folder>
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -6,6 +6,7 @@ var mainUI = cc.Layer.extend({
     m_ftName:null,
     m_Head:null,
     m_FangKa:null,
+    m_Money:null,
 
     m_actionui:null,
     m_actionBtn:null,
@@ -33,6 +34,7 @@ var mainUI = cc.Layer.extend({
         this.m_Head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
         this.m_ftName = ccui.helper.seekWidgetByName(this.Widget, "ft_name");
         this.m_FangKa = ccui.helper.seekWidgetByName(this.Widget, "ft_fangka");
+        this.m_Money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
 
         var panel = ccui.helper.seekWidgetByName(this.Widget, "Panel_1");
         var base = ccui.helper.seekWidgetByName(this.Widget, "base");
@@ -88,6 +90,7 @@ var mainUI = cc.Layer.extend({
         }
         this.m_ftName.setString(RoleInfo.gamename == "" ? RoleInfo.nickname : RoleInfo.gamename);
         this.m_FangKa.setString(RoleInfo.fangka);
+        this.m_Money.setString(RoleInfo.money);
     },
     onSwitchClick:function(sender) {
         var i = 0;

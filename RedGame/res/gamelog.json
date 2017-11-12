@@ -15,7 +15,12 @@
         "Tag": 161,
         "Children": [
           {
-            "ClipAble": false,
+            "ClipAble": true,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "userCenter/Top_icon.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 66,
@@ -30,8 +35,10 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "Scale9OriginX": 179,
+            "Scale9OriginY": 28,
+            "Scale9Width": 282,
+            "Scale9Height": 58,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -317,7 +324,9 @@
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
-      "UsedResources": [],
+      "UsedResources": [
+        "userCenter/Top_icon.png"
+      ],
       "ctype": "GameFileData"
     }
   },

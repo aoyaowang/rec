@@ -16,8 +16,8 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Default",
-              "Path": "Default/Sprite.png",
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -125,20 +125,20 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_RDdi.png",
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_RDdi.png",
               "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 16,
-            "Scale9Height": 14,
+            "Scale9Width": 330,
+            "Scale9Height": 78,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -200,30 +200,27 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 202.2902,
-                  "Y": 75.54
+                  "X": 225.4176,
+                  "Y": 80.9818
                 },
                 "Scale": {
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "G": 165,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.5619,
-                  "Y": 0.7554
+                  "X": 0.6262,
+                  "Y": 0.8098
                 },
                 "PreSize": {
                   "X": 0.7222,
                   "Y": 0.24
                 },
-                "LeftMargin": 72.2902,
-                "RightMargin": 27.7098,
-                "TopMargin": 12.46,
-                "BottomMargin": 63.54,
+                "LeftMargin": 95.4176,
+                "RightMargin": 4.5824,
+                "TopMargin": 7.0182,
+                "BottomMargin": 68.9818,
                 "Tag": 66,
                 "ActionTag": 527777642,
                 "Size": {
@@ -241,6 +238,51 @@
             },
             "Name": "btn_red",
             "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_redbag.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 181.1833,
+              "Y": 75.5298
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2831,
+              "Y": 0.5035
+            },
+            "PreSize": {
+              "X": 0.0828,
+              "Y": 0.44
+            },
+            "LeftMargin": 154.6833,
+            "RightMargin": 432.3167,
+            "TopMargin": 41.4702,
+            "BottomMargin": 42.5298,
+            "Tag": 272,
+            "ActionTag": -1056777286,
+            "Size": {
+              "X": 53.0,
+              "Y": 66.0
+            },
+            "Name": "playGame_icon_redbag_1",
+            "ctype": "SpriteObjectData"
           }
         ],
         "Size": {
@@ -252,9 +294,9 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
-        "Default/Button_Press.png",
-        "Default/Sprite.png"
+        "playGame/playGame_icon.png",
+        "playGame/playGame_icon_RDdi.png",
+        "playGame/playGame_icon_redbag.png"
       ],
       "ctype": "GameFileData"
     }

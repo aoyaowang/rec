@@ -14,7 +14,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.1219" Y="0.6112" />
             <PreSize X="0.0719" Y="0.3067" />
-            <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
+            <FileData Type="Normal" Path="playGame/playGame_icon.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="ft_nickname" ActionTag="2048579584" Tag="64" IconVisible="False" LeftMargin="132.2774" RightMargin="387.7226" TopMargin="16.3757" BottomMargin="109.6243" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -28,16 +28,16 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btn_red" ActionTag="-2125043610" Tag="19" IconVisible="False" LeftMargin="132.0000" RightMargin="148.0000" TopMargin="44.0000" BottomMargin="6.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="btn_red" ActionTag="-2125043610" Tag="19" IconVisible="False" LeftMargin="132.0000" RightMargin="148.0000" TopMargin="44.0000" BottomMargin="6.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="330" Scale9Height="78" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="360.0000" Y="100.0000" />
             <Children>
-              <AbstractNodeData Name="ft_text" ActionTag="527777642" Tag="66" IconVisible="False" LeftMargin="72.2902" RightMargin="27.7098" TopMargin="12.4600" BottomMargin="63.5400" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="1.0000" ShadowOffsetY="-1.0000" ShadowEnabled="True" ctype="TextObjectData">
+              <AbstractNodeData Name="ft_text" ActionTag="527777642" Tag="66" IconVisible="False" LeftMargin="95.4176" RightMargin="4.5824" TopMargin="7.0182" BottomMargin="68.9818" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="1.0000" ShadowOffsetY="-1.0000" ShadowEnabled="True" ctype="TextObjectData">
                 <Size X="260.0000" Y="24.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="202.2902" Y="75.5400" />
+                <Position X="225.4176" Y="80.9818" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="255" G="165" B="0" />
-                <PrePosition X="0.5619" Y="0.7554" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.6262" Y="0.8098" />
                 <PreSize X="0.7222" Y="0.2400" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
@@ -51,10 +51,21 @@
             <PreSize X="0.5625" Y="0.6667" />
             <TextColor A="255" R="65" G="65" B="70" />
             <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-            <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-            <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+            <PressedFileData Type="Normal" Path="playGame/playGame_icon_RDdi.png" Plist="" />
+            <NormalFileData Type="Normal" Path="playGame/playGame_icon_RDdi.png" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="playGame_icon_redbag_1" ActionTag="-1056777286" Tag="272" IconVisible="False" LeftMargin="154.6833" RightMargin="432.3167" TopMargin="41.4702" BottomMargin="42.5298" ctype="SpriteObjectData">
+            <Size X="53.0000" Y="66.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="181.1833" Y="75.5298" />
+            <Scale ScaleX="0.8000" ScaleY="0.8000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <PrePosition X="0.2831" Y="0.5035" />
+            <PreSize X="0.0828" Y="0.4400" />
+            <FileData Type="Normal" Path="playGame/playGame_icon_redbag.png" Plist="" />
+            <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

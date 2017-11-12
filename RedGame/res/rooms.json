@@ -26,11 +26,13 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 763.0
+              "X": 1.0004,
+              "Y": 625.9015
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -39,14 +41,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
-              "Y": 0.9105
+              "X": 0.0016,
+              "Y": 0.8941
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.0895
+              "Y": 0.1071
             },
-            "BottomMargin": 763.0,
+            "LeftMargin": 1.0004,
+            "RightMargin": -1.0004,
+            "TopMargin": -0.9015,
+            "BottomMargin": 625.9015,
             "Tag": 61,
             "ActionTag": 862112144,
             "Size": {
@@ -80,9 +85,9 @@
               "Plist": ""
             },
             "Scale9Enable": true,
-            "Scale9OriginX": 15,
+            "Scale9OriginX": 5,
             "Scale9OriginY": 11,
-            "Scale9Width": 16,
+            "Scale9Width": 36,
             "Scale9Height": 14,
             "OutlineColor": {
               "G": 0,
@@ -101,8 +106,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 49.9983,
-              "Y": 800.3805
+              "X": 50.9983,
+              "Y": 663.2797
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -111,22 +116,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0781,
-              "Y": 0.9551
+              "X": 0.0797,
+              "Y": 0.9475
             },
             "PreSize": {
-              "X": 0.1563,
-              "Y": 0.0895
+              "X": 0.0719,
+              "Y": 0.0514
             },
-            "LeftMargin": -0.0017,
-            "RightMargin": 540.0017,
-            "TopMargin": 0.1195,
-            "BottomMargin": 762.8805,
+            "LeftMargin": 27.9983,
+            "RightMargin": 566.0017,
+            "TopMargin": 18.7203,
+            "BottomMargin": 645.2797,
             "Tag": 28,
             "ActionTag": -969474759,
             "Size": {
-              "X": 100.0,
-              "Y": 75.0
+              "X": 46.0,
+              "Y": 36.0
             },
             "Name": "btn_back",
             "ctype": "ButtonObjectData"
@@ -165,7 +170,7 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.9105
+              "Y": 0.8929
             },
             "TopMargin": 75.0,
             "Tag": 72,
@@ -192,7 +197,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 563.0
+                  "Y": 425.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -202,13 +207,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.7379
+                  "Y": 0.68
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2621
+                  "Y": 0.32
                 },
-                "BottomMargin": 563.0,
+                "BottomMargin": 425.0,
                 "Tag": 75,
                 "Children": [
                   {
@@ -354,7 +359,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 363.0
+                  "Y": 225.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -364,14 +369,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.4758
+                  "Y": 0.36
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2621
+                  "Y": 0.32
                 },
                 "TopMargin": 200.0,
-                "BottomMargin": 363.0,
+                "BottomMargin": 225.0,
                 "Tag": 78,
                 "Children": [
                   {
@@ -516,7 +521,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 163.0
+                  "Y": 25.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -526,14 +531,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.2136
+                  "Y": 0.04
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.2621
+                  "Y": 0.32
                 },
                 "TopMargin": 400.0,
-                "BottomMargin": 163.0,
+                "BottomMargin": 25.0,
                 "Tag": 81,
                 "Children": [
                   {
@@ -662,7 +667,7 @@
             "ActionTag": -2064097753,
             "Size": {
               "X": 640.0,
-              "Y": 763.0
+              "Y": 625.0
             },
             "Name": "ListView_1",
             "ctype": "ListViewObjectData"
@@ -670,7 +675,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 838.0
+          "Y": 700.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

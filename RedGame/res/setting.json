@@ -18,11 +18,16 @@
             "DirectionType": "Vertical",
             "ScrollDirectionType": 0,
             "ClipAble": true,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "userCenter/bg.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {
-              "R": 26,
-              "G": 26,
-              "B": 26
+              "R": 0,
+              "G": 0,
+              "B": 0
             },
             "FirstColor": {
               "R": 150,
@@ -32,13 +37,15 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "Scale9OriginX": 211,
+            "Scale9OriginY": 324,
+            "Scale9Width": 218,
+            "Scale9Height": 334,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": -1.8109,
+              "Y": 0.0001
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -47,22 +54,26 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0,
+              "X": -0.0028,
               "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
+            "LeftMargin": -1.8109,
+            "RightMargin": 1.8109,
+            "TopMargin": -0.0001,
+            "BottomMargin": 0.0001,
             "Tag": 54,
             "Children": [
               {
                 "ClipAble": false,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
-                  "R": 66,
-                  "G": 0,
-                  "B": 97
+                  "R": 85,
+                  "G": 50,
+                  "B": 158
                 },
                 "FirstColor": {
                   "R": 150,
@@ -99,7 +110,7 @@
                 "Children": [
                   {
                     "ClipAble": false,
-                    "BackColorAlpha": 102,
+                    "BackColorAlpha": 0,
                     "ComboBoxIndex": 1,
                     "SingleColor": {
                       "R": 150,
@@ -195,6 +206,51 @@
                         "ctype": "TextObjectData"
                       },
                       {
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "userCenter/Dicon_fk.png",
+                          "Plist": ""
+                        },
+                        "BlendFunc": {
+                          "Src": 1,
+                          "Dst": 771
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "Position": {
+                          "X": 80.7492,
+                          "Y": 33.6475
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "CColor": {},
+                        "IconVisible": false,
+                        "PrePosition": {
+                          "X": 0.5047,
+                          "Y": 0.2804
+                        },
+                        "PreSize": {
+                          "X": 0.2875,
+                          "Y": 0.3833
+                        },
+                        "LeftMargin": 58.7492,
+                        "RightMargin": 57.2508,
+                        "TopMargin": 70.8525,
+                        "BottomMargin": 18.1475,
+                        "Tag": 276,
+                        "ActionTag": 1245366010,
+                        "Size": {
+                          "X": 44.0,
+                          "Y": 31.0
+                        },
+                        "Name": "Sprite_2",
+                        "ctype": "SpriteObjectData"
+                      },
+                      {
                         "IsCustomSize": true,
                         "FontSize": 24,
                         "LabelText": "999999张",
@@ -258,30 +314,26 @@
                   {
                     "FontSize": 24,
                     "ButtonText": "手机认证",
-                    "TextColor": {
-                      "R": 65,
-                      "G": 65,
-                      "B": 70
-                    },
+                    "TextColor": {},
                     "DisabledFileData": {
                       "Type": "Default",
                       "Path": "Default/Button_Disable.png",
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_0.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Normal.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_0.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 16,
+                    "Scale9Width": 104,
                     "Scale9Height": 14,
                     "OutlineColor": {
                       "G": 0,
@@ -314,18 +366,18 @@
                       "Y": 0.2248
                     },
                     "PreSize": {
-                      "X": 0.25,
+                      "X": 0.2094,
                       "Y": 0.18
                     },
-                    "LeftMargin": 193.3572,
-                    "RightMargin": 286.6428,
+                    "LeftMargin": 206.3572,
+                    "RightMargin": 299.6428,
                     "TopMargin": 137.0326,
                     "BottomMargin": 26.9674,
                     "Tag": 60,
                     "ActionTag": -444542113,
                     "ZOrder": 1,
                     "Size": {
-                      "X": 160.0,
+                      "X": 134.0,
                       "Y": 36.0
                     },
                     "Name": "btn_phone",
@@ -383,8 +435,53 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/Sprite.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/icon_playerd.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 770,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 1060.0,
+                      "Y": 98.0
+                    },
+                    "Scale": {
+                      "ScaleX": 3.26,
+                      "ScaleY": 3.26
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 1.6563,
+                      "Y": 0.49
+                    },
+                    "PreSize": {
+                      "X": 0.1328,
+                      "Y": 0.42
+                    },
+                    "LeftMargin": 1017.5,
+                    "RightMargin": -462.5,
+                    "TopMargin": 60.0,
+                    "BottomMargin": 56.0,
+                    "Tag": 275,
+                    "ActionTag": 751121194,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 84.0
+                    },
+                    "Name": "img_head_di",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_player.png",
                       "Plist": ""
                     },
                     "BlendFunc": {
@@ -586,12 +683,12 @@
               },
               {
                 "ClipAble": false,
-                "ComboBoxIndex": 1,
-                "SingleColor": {
-                  "R": 66,
-                  "G": 0,
-                  "B": 97
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_ditiao2.png",
+                  "Plist": ""
                 },
+                "SingleColor": {},
                 "FirstColor": {
                   "R": 150,
                   "G": 200
@@ -600,8 +697,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 204,
+                "Scale9OriginY": 26,
+                "Scale9Width": 212,
+                "Scale9Height": 28,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -628,12 +727,14 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/ImageFile.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/icon_hongbao.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 46,
-                    "Scale9Height": 46,
+                    "Scale9OriginX": 11,
+                    "Scale9OriginY": 12,
+                    "Scale9Width": 12,
+                    "Scale9Height": 13,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -646,25 +747,29 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 237,
+                      "G": 208,
+                      "B": 93
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.1062,
                       "Y": 0.4832
                     },
                     "PreSize": {
-                      "X": 0.1,
-                      "Y": 0.64
+                      "X": 0.0531,
+                      "Y": 0.37
                     },
-                    "LeftMargin": 35.9557,
-                    "RightMargin": 540.0443,
-                    "TopMargin": 19.6758,
-                    "BottomMargin": 16.3242,
+                    "LeftMargin": 50.9557,
+                    "RightMargin": 555.0443,
+                    "TopMargin": 33.1758,
+                    "BottomMargin": 29.8242,
                     "Tag": 66,
                     "ActionTag": -559105084,
                     "Size": {
-                      "X": 64.0,
-                      "Y": 64.0
+                      "X": 34.0,
+                      "Y": 37.0
                     },
                     "Name": "Image_2",
                     "ctype": "ImageViewObjectData"
@@ -720,19 +825,21 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/ImageFile.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_go.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 46,
-                    "Scale9Height": 46,
+                    "Scale9OriginX": 5,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 8,
+                    "Scale9Height": 11,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
+                      "ScaleX": 0.6137,
+                      "ScaleY": 0.4512
                     },
                     "Position": {
-                      "X": 592.129,
-                      "Y": 50.9309
+                      "X": 597.3607,
+                      "Y": 48.6865
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -741,23 +848,23 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9252,
-                      "Y": 0.5093
+                      "X": 0.9334,
+                      "Y": 0.4869
                     },
                     "PreSize": {
-                      "X": 0.0719,
-                      "Y": 0.46
+                      "X": 0.0281,
+                      "Y": 0.31
                     },
-                    "LeftMargin": 569.129,
-                    "RightMargin": 24.871,
-                    "TopMargin": 26.0691,
-                    "BottomMargin": 27.9309,
+                    "LeftMargin": 586.3135,
+                    "RightMargin": 35.6865,
+                    "TopMargin": 34.3009,
+                    "BottomMargin": 34.699,
                     "Tag": 68,
                     "ActionTag": 399974831,
                     "ZOrder": 3,
                     "Size": {
-                      "X": 46.0,
-                      "Y": 46.0
+                      "X": 18.0,
+                      "Y": 31.0
                     },
                     "Name": "Image_3",
                     "ctype": "ImageViewObjectData"
@@ -824,7 +931,11 @@
               },
               {
                 "ClipAble": false,
-                "ComboBoxIndex": 1,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_ditiao2.png",
+                  "Plist": ""
+                },
                 "SingleColor": {
                   "R": 66,
                   "G": 0,
@@ -838,8 +949,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 204,
+                "Scale9OriginY": 26,
+                "Scale9Width": 212,
+                "Scale9Height": 28,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -866,12 +979,14 @@
                 "Children": [
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/ImageFile.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_1.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 46,
-                    "Scale9Height": 46,
+                    "Scale9OriginX": 11,
+                    "Scale9OriginY": 12,
+                    "Scale9Width": 12,
+                    "Scale9Height": 13,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -884,32 +999,36 @@
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {},
+                    "CColor": {
+                      "R": 237,
+                      "G": 208,
+                      "B": 93
+                    },
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.1062,
                       "Y": 0.4832
                     },
                     "PreSize": {
-                      "X": 0.1,
-                      "Y": 0.64
+                      "X": 0.0531,
+                      "Y": 0.37
                     },
-                    "LeftMargin": 35.9557,
-                    "RightMargin": 540.0443,
-                    "TopMargin": 19.6758,
-                    "BottomMargin": 16.3242,
+                    "LeftMargin": 50.9557,
+                    "RightMargin": 555.0443,
+                    "TopMargin": 33.1758,
+                    "BottomMargin": 29.8242,
                     "Tag": 72,
                     "ActionTag": 929896892,
                     "Size": {
-                      "X": 64.0,
-                      "Y": 64.0
+                      "X": 34.0,
+                      "Y": 37.0
                     },
                     "Name": "Image_2",
                     "ctype": "ImageViewObjectData"
                   },
                   {
                     "FontSize": 36,
-                    "LabelText": "发送房卡",
+                    "LabelText": "发送紅包",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -958,12 +1077,14 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/ImageFile.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/Dicon_go.png",
                       "Plist": ""
                     },
-                    "Scale9Width": 46,
-                    "Scale9Height": 46,
+                    "Scale9OriginX": 5,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 8,
+                    "Scale9Height": 11,
                     "AnchorPoint": {
                       "ScaleX": 0.5,
                       "ScaleY": 0.5
@@ -983,19 +1104,19 @@
                       "Y": 0.5093
                     },
                     "PreSize": {
-                      "X": 0.0719,
-                      "Y": 0.46
+                      "X": 0.0281,
+                      "Y": 0.31
                     },
-                    "LeftMargin": 569.129,
-                    "RightMargin": 24.871,
-                    "TopMargin": 26.0691,
-                    "BottomMargin": 27.9309,
+                    "LeftMargin": 583.129,
+                    "RightMargin": 38.871,
+                    "TopMargin": 33.5691,
+                    "BottomMargin": 35.4309,
                     "Tag": 74,
                     "ActionTag": -353661689,
                     "ZOrder": 3,
                     "Size": {
-                      "X": 46.0,
-                      "Y": 46.0
+                      "X": 18.0,
+                      "Y": 31.0
                     },
                     "Name": "Image_3",
                     "ctype": "ImageViewObjectData"
@@ -1065,9 +1186,9 @@
                 "ClipAble": false,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
-                  "R": 66,
-                  "G": 0,
-                  "B": 97
+                  "R": 85,
+                  "G": 50,
+                  "B": 158
                 },
                 "FirstColor": {
                   "R": 150,
@@ -1459,7 +1580,11 @@
               },
               {
                 "ClipAble": false,
-                "ComboBoxIndex": 1,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_ditiao1.png",
+                  "Plist": ""
+                },
                 "SingleColor": {
                   "R": 66,
                   "G": 0,
@@ -1473,8 +1598,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 204,
+                "Scale9OriginY": 20,
+                "Scale9Width": 212,
+                "Scale9Height": 22,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -1501,7 +1628,7 @@
                 "Children": [
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 26,
                     "LabelText": "房间号",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -1551,7 +1678,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 26,
                     "LabelText": "游戏类型",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -1584,15 +1711,15 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1719,
                       "Y": 1.0
                     },
                     "LeftMargin": 140.0,
-                    "RightMargin": 400.0,
+                    "RightMargin": 390.0,
                     "Tag": 84,
                     "ActionTag": -1972064286,
                     "Size": {
-                      "X": 100.0,
+                      "X": 110.0,
                       "Y": 50.0
                     },
                     "Name": "Text_7_0",
@@ -1600,7 +1727,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 26,
                     "LabelText": "时间",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -1649,7 +1776,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 26,
                     "LabelText": "金币",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -1698,7 +1825,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 26,
                     "LabelText": "当局积分",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
@@ -1775,8 +1902,16 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
-        "Default/ImageFile.png",
-        "Default/Sprite.png"
+        "userCenter/bg.png",
+        "userCenter/Dicon_0.png",
+        "userCenter/Dicon_1.png",
+        "userCenter/Dicon_ditiao1.png",
+        "userCenter/Dicon_ditiao2.png",
+        "userCenter/Dicon_fk.png",
+        "userCenter/Dicon_go.png",
+        "userCenter/Dicon_player.png",
+        "userCenter/icon_hongbao.png",
+        "userCenter/icon_playerd.png"
       ],
       "ctype": "GameFileData"
     }

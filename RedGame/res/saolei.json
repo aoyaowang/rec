@@ -18,8 +18,9 @@
             "ClipAble": false,
             "ComboBoxIndex": 1,
             "SingleColor": {
-              "G": 0,
-              "B": 0
+              "R": 137,
+              "G": 70,
+              "B": 251
             },
             "FirstColor": {
               "R": 150,
@@ -57,6 +58,11 @@
                 "DirectionType": "Vertical",
                 "ScrollDirectionType": 0,
                 "ClipAble": true,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "userCenter/redBag_bg.png",
+                  "Plist": ""
+                },
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 230,
@@ -71,8 +77,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 211,
+                "Scale9OriginY": 342,
+                "Scale9Width": 218,
+                "Scale9Height": 354,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -187,6 +195,11 @@
                     "Children": [
                       {
                         "ClipAble": false,
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "userCenter/redBag_icon_baiD.png",
+                          "Plist": ""
+                        },
                         "ComboBoxIndex": 1,
                         "SingleColor": {},
                         "FirstColor": {
@@ -197,8 +210,10 @@
                         "ColorVector": {
                           "ScaleY": 1.0
                         },
-                        "Scale9Width": 1,
-                        "Scale9Height": 1,
+                        "Scale9OriginX": 187,
+                        "Scale9OriginY": 28,
+                        "Scale9Width": 195,
+                        "Scale9Height": 29,
                         "TouchEnable": true,
                         "AnchorPoint": {},
                         "Position": {
@@ -497,6 +512,11 @@
                     "Children": [
                       {
                         "ClipAble": false,
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "userCenter/redBag_icon_baiD.png",
+                          "Plist": ""
+                        },
                         "ComboBoxIndex": 1,
                         "SingleColor": {},
                         "FirstColor": {
@@ -507,8 +527,10 @@
                         "ColorVector": {
                           "ScaleY": 1.0
                         },
-                        "Scale9Width": 1,
-                        "Scale9Height": 1,
+                        "Scale9OriginX": 187,
+                        "Scale9OriginY": 28,
+                        "Scale9Width": 195,
+                        "Scale9Height": 29,
                         "TouchEnable": true,
                         "AnchorPoint": {},
                         "Position": {
@@ -806,6 +828,11 @@
                     "Children": [
                       {
                         "ClipAble": false,
+                        "FileData": {
+                          "Type": "Normal",
+                          "Path": "userCenter/redBag_icon_baiD.png",
+                          "Plist": ""
+                        },
                         "ComboBoxIndex": 1,
                         "SingleColor": {},
                         "FirstColor": {
@@ -816,8 +843,10 @@
                         "ColorVector": {
                           "ScaleY": 1.0
                         },
-                        "Scale9Width": 1,
-                        "Scale9Height": 1,
+                        "Scale9OriginX": 187,
+                        "Scale9OriginY": 28,
+                        "Scale9Width": 195,
+                        "Scale9Height": 29,
                         "TouchEnable": true,
                         "AnchorPoint": {},
                         "Position": {
@@ -1012,33 +1041,29 @@
                     "Tag": 57,
                     "Children": [
                       {
-                        "FontSize": 14,
-                        "ButtonText": "Button",
-                        "TextColor": {
-                          "R": 65,
-                          "G": 65,
-                          "B": 70
-                        },
+                        "FontSize": 48,
+                        "ButtonText": "确定",
+                        "TextColor": {},
                         "DisabledFileData": {
                           "Type": "Default",
                           "Path": "Default/Button_Disable.png",
                           "Plist": ""
                         },
                         "PressedFileData": {
-                          "Type": "Default",
-                          "Path": "Default/Button_Press.png",
+                          "Type": "Normal",
+                          "Path": "userCenter/redBag_disi.png",
                           "Plist": ""
                         },
                         "NormalFileData": {
-                          "Type": "Default",
-                          "Path": "Default/Button_Normal.png",
+                          "Type": "Normal",
+                          "Path": "userCenter/redBag_disi.png",
                           "Plist": ""
                         },
                         "Scale9Enable": true,
                         "Scale9OriginX": 15,
                         "Scale9OriginY": 11,
-                        "Scale9Width": 16,
-                        "Scale9Height": 14,
+                        "Scale9Width": 514,
+                        "Scale9Height": 63,
                         "OutlineColor": {
                           "G": 0,
                           "B": 0
@@ -1056,7 +1081,7 @@
                           "ScaleY": 0.5
                         },
                         "Position": {
-                          "X": 306.4427,
+                          "X": 322.1035,
                           "Y": 103.1313
                         },
                         "Scale": {
@@ -1066,22 +1091,22 @@
                         "CColor": {},
                         "IconVisible": false,
                         "PrePosition": {
-                          "X": 0.4788,
+                          "X": 0.5033,
                           "Y": 0.5157
                         },
                         "PreSize": {
-                          "X": 0.5625,
-                          "Y": 0.5
+                          "X": 0.85,
+                          "Y": 0.425
                         },
-                        "LeftMargin": 126.4427,
-                        "RightMargin": 153.5573,
-                        "TopMargin": 46.8687,
-                        "BottomMargin": 53.1313,
+                        "LeftMargin": 50.1035,
+                        "RightMargin": 45.8965,
+                        "TopMargin": 54.3687,
+                        "BottomMargin": 60.6313,
                         "Tag": 58,
                         "ActionTag": -1698342781,
                         "Size": {
-                          "X": 360.0,
-                          "Y": 100.0
+                          "X": 544.0,
+                          "Y": 85.0
                         },
                         "Name": "btn_send",
                         "ctype": "ButtonObjectData"
@@ -1131,11 +1156,7 @@
                   "ScaleX": 1.0,
                   "ScaleY": 1.0
                 },
-                "CColor": {
-                  "R": 0,
-                  "G": 0,
-                  "B": 0
-                },
+                "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4973,
@@ -1160,7 +1181,7 @@
               },
               {
                 "FontSize": 14,
-                "ButtonText": "Button",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,
@@ -1172,20 +1193,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_back.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Normal.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_back.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
-                "Scale9OriginX": 15,
+                "Scale9OriginX": 5,
                 "Scale9OriginY": 11,
-                "Scale9Width": 16,
-                "Scale9Height": 14,
+                "Scale9Width": 8,
+                "Scale9Height": 9,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -1217,18 +1238,18 @@
                   "Y": 0.976
                 },
                 "PreSize": {
-                  "X": 0.0719,
-                  "Y": 0.0347
+                  "X": 0.0281,
+                  "Y": 0.0299
                 },
-                "LeftMargin": 21.2597,
-                "RightMargin": 572.7403,
-                "TopMargin": 6.8889,
-                "BottomMargin": 995.1111,
+                "LeftMargin": 35.2597,
+                "RightMargin": 586.7403,
+                "TopMargin": 9.3889,
+                "BottomMargin": 997.6111,
                 "Tag": 40,
                 "ActionTag": 1474993491,
                 "Size": {
-                  "X": 46.0,
-                  "Y": 36.0
+                  "X": 18.0,
+                  "Y": 31.0
                 },
                 "Name": "btn_back",
                 "ctype": "ButtonObjectData"
@@ -1252,8 +1273,10 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
-        "Default/Button_Press.png"
+        "userCenter/Dicon_back.png",
+        "userCenter/redBag_bg.png",
+        "userCenter/redBag_disi.png",
+        "userCenter/redBag_icon_baiD.png"
       ],
       "ctype": "GameFileData"
     }

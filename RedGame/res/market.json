@@ -16,7 +16,6 @@
         "Children": [
           {
             "ClipAble": false,
-            "ComboBoxIndex": 1,
             "SingleColor": {},
             "FirstColor": {
               "R": 150,
@@ -26,11 +25,13 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
               "X": 0.0,
-              "Y": 3.0203
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -40,14 +41,12 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0,
-              "Y": 0.0036
+              "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
               "Y": 1.0
             },
-            "TopMargin": -3.0203,
-            "BottomMargin": 3.0203,
             "Tag": 48,
             "Children": [
               {
@@ -68,6 +67,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -92,16 +93,115 @@
                 "ActionTag": 1214339407,
                 "Size": {
                   "X": 640.0,
-                  "Y": 838.0
+                  "Y": 700.0
                 },
                 "Name": "listview",
                 "ctype": "ListViewObjectData"
+              },
+              {
+                "IsBounceEnabled": true,
+                "InnerNodeSize": {
+                  "Width": 640,
+                  "Height": 700
+                },
+                "ScrollDirectionType": "Vertical",
+                "ClipAble": true,
+                "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_bg.png",
+                  "Plist": ""
+                },
+                "SingleColor": {
+                  "G": 150,
+                  "B": 100
+                },
+                "FirstColor": {
+                  "G": 150,
+                  "B": 100
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9OriginX": 211,
+                "Scale9OriginY": 302,
+                "Scale9Width": 218,
+                "Scale9Height": 314,
+                "TouchEnable": true,
+                "AnchorPoint": {},
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 1.0
+                },
+                "Tag": 343,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "marketPage.json",
+                      "Plist": ""
+                    },
+                    "StretchWidthEnable": false,
+                    "StretchHeightEnable": false,
+                    "InnerActionSpeed": 1.0,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": true,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.8353
+                    },
+                    "TopMargin": 138.0,
+                    "Tag": 344,
+                    "ActionTag": 1072780994,
+                    "Size": {
+                      "X": 640.0,
+                      "Y": 700.0
+                    },
+                    "Name": "FileNode_1",
+                    "ctype": "ProjectNodeObjectData"
+                  }
+                ],
+                "ActionTag": -200075393,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 700.0
+                },
+                "Name": "ScrollView_1",
+                "ctype": "ScrollViewObjectData"
               }
             ],
             "ActionTag": -1763065643,
             "Size": {
               "X": 640.0,
-              "Y": 838.0
+              "Y": 700.0
             },
             "Name": "Panel_1",
             "ctype": "PanelObjectData"
@@ -109,12 +209,15 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 838.0
+          "Y": 700.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
       },
-      "UsedResources": [],
+      "UsedResources": [
+        "marketPage.json",
+        "shop/shop_icon_bg.png"
+      ],
       "ctype": "GameFileData"
     }
   },
