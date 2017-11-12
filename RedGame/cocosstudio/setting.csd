@@ -26,14 +26,14 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Sprite_2" ActionTag="1245366010" Tag="276" IconVisible="False" LeftMargin="58.7492" RightMargin="57.2508" TopMargin="70.8525" BottomMargin="18.1475" ctype="SpriteObjectData">
+                      <AbstractNodeData Name="Sprite_2" ActionTag="1245366010" Tag="276" IconVisible="False" LeftMargin="59.7492" RightMargin="56.2508" TopMargin="70.8525" BottomMargin="18.1475" ctype="SpriteObjectData">
                         <Size X="44.0000" Y="31.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="80.7492" Y="33.6475" />
+                        <Position X="81.7492" Y="33.6475" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5047" Y="0.2804" />
-                        <PreSize X="0.2875" Y="0.3833" />
+                        <PrePosition X="0.5109" Y="0.2804" />
+                        <PreSize X="0.2750" Y="0.2583" />
                         <FileData Type="Normal" Path="userCenter/Dicon_fk.png" Plist="" />
                         <BlendFunc Src="1" Dst="771" />
                       </AbstractNodeData>
@@ -183,7 +183,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_3" ActionTag="399974831" ZOrder="3" Tag="68" IconVisible="False" LeftMargin="586.3135" RightMargin="35.6865" TopMargin="34.3009" BottomMargin="34.6990" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_3" ActionTag="399974831" ZOrder="3" Tag="68" IconVisible="False" LeftMargin="586.3141" RightMargin="35.6859" TopMargin="34.3007" BottomMargin="34.6993" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
                     <Size X="18.0000" Y="31.0000" />
                     <AnchorPoint ScaleX="0.6137" ScaleY="0.4512" />
                     <Position X="597.3607" Y="48.6865" />

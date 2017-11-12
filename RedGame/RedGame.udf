@@ -28,5 +28,39 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="message.csd" />
+          <FilePathData Path="rooms.csd" />
+          <FilePathData Path="saolei.csd" />
+          <FilePathData Path="saoleisub.csd" />
+          <FilePathData Path="setting.csd" />
+          <FilePathData Path="sys.csd" />
+          <FilePathData Path="tocash.csd" />
+          <FilePathData Path="roomitem.csd" />
+          <FilePathData Path="redsub.csd" />
+          <FilePathData Path="redqiang.csd" />
+          <FilePathData Path="redover.csd" />
+          <FilePathData Path="redopen.csd" />
+          <FilePathData Path="reddetail.csd" />
+          <FilePathData Path="niuniured.csd" />
+          <FilePathData Path="marketPage.csd" />
+          <FilePathData Path="market.csd" />
+          <FilePathData Path="main.csd" />
+          <FilePathData Path="loading.csd" />
+          <FilePathData Path="jielong.csd" />
+          <FilePathData Path="game.csd" />
+          <FilePathData Path="chatsys.csd" />
+          <FilePathData Path="chatred.csd" />
+          <FilePathData Path="chatnormal.csd" />
+          <FilePathData Path="chat.csd" />
+          <FilePathData Path="bill.csd" />
+          <FilePathData Path="action.csd" />
+          <FilePathData Path="tips.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="chat.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
