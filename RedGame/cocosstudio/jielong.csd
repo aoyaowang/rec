@@ -38,7 +38,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_start" ActionTag="1240576857" Tag="48" IconVisible="False" LeftMargin="577.2227" RightMargin="30.7773" TopMargin="28.7632" BottomMargin="23.2368" TouchEnable="True" FontSize="22" ButtonText="开始" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="5" BottomEage="5" Scale9OriginX="15" Scale9OriginY="5" Scale9Width="2" Scale9Height="6" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_start" ActionTag="1240576857" Tag="48" IconVisible="False" LeftMargin="577.2227" RightMargin="30.7773" TopMargin="28.7632" BottomMargin="23.2368" TouchEnable="True" FontSize="22" ButtonText="开始" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="5" BottomEage="5" Scale9OriginX="15" Scale9OriginY="5" Scale9Width="14" Scale9Height="12" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="32.0000" Y="16.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="593.2227" Y="31.2368" />
@@ -82,39 +82,28 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_log" ActionTag="1662215814" Tag="53" IconVisible="False" LeftMargin="488.6514" RightMargin="17.3486" TopMargin="17.2265" BottomMargin="28.7735" TouchEnable="True" FontSize="22" ButtonText="记录查询" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="104" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="134.0000" Y="36.0000" />
+                  <AbstractNodeData Name="btn_log" ActionTag="1662215814" Tag="53" IconVisible="False" LeftMargin="485.7719" RightMargin="20.2281" TopMargin="14.5441" BottomMargin="12.4559" TouchEnable="True" FontSize="22" ButtonText="记录查询" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="104" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="134.0000" Y="55.0000" />
                     <AnchorPoint ScaleX="0.5000" />
-                    <Position X="555.6514" Y="28.7735" />
+                    <Position X="552.7719" Y="12.4559" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8682" Y="0.3509" />
-                    <PreSize X="0.2094" Y="0.4390" />
+                    <PrePosition X="0.8637" Y="0.1519" />
+                    <PreSize X="0.2094" Y="0.6707" />
                     <TextColor A="255" R="255" G="255" B="255" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="userCenter/Dicon_0.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="userCenter/Dicon_0.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="userCenter/logBtn.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="userCenter/logBtn.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_lab" ActionTag="1857540001" Tag="54" IconVisible="False" LeftMargin="51.1318" RightMargin="516.8682" TopMargin="6.9010" BottomMargin="51.0990" FontSize="24" LabelText="王者币" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="72.0000" Y="24.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="87.1318" Y="63.0990" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="0" />
-                    <PrePosition X="0.1361" Y="0.7695" />
-                    <PreSize X="0.1125" Y="0.2927" />
-                    <OutlineColor A="255" R="255" G="0" B="0" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
-                  <AbstractNodeData Name="ft_money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="16.1074" RightMargin="473.8926" TopMargin="40.7199" BottomMargin="11.2801" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_money" ActionTag="976375219" Tag="55" IconVisible="False" LeftMargin="39.5501" RightMargin="450.4499" TopMargin="22.6871" BottomMargin="29.3129" IsCustomSize="True" FontSize="24" LabelText="99999999&#xA;" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="150.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="91.1074" Y="26.2801" />
+                    <Position X="114.5501" Y="44.3129" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.1424" Y="0.3205" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.1790" Y="0.5404" />
                     <PreSize X="0.2344" Y="0.3659" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
@@ -158,15 +147,15 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="mian_icon_gold_1" ActionTag="-2028933253" Tag="274" IconVisible="False" LeftMargin="5.0244" RightMargin="606.9756" TopMargin="881.8201" BottomMargin="49.1799" ctype="SpriteObjectData">
-            <Size X="28.0000" Y="27.0000" />
+          <AbstractNodeData Name="mian_icon_gold_1" ActionTag="-2028933253" Tag="274" IconVisible="False" LeftMargin="-75.3772" RightMargin="528.3773" TopMargin="808.5495" BottomMargin="-56.5495" ctype="SpriteObjectData">
+            <Size X="187.0000" Y="206.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="19.0244" Y="62.6799" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Position X="18.1228" Y="46.4505" />
+            <Scale ScaleX="0.1500" ScaleY="0.1500" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0297" Y="0.0654" />
+            <PrePosition X="0.0283" Y="0.0485" />
             <PreSize X="0.0437" Y="0.0282" />
-            <FileData Type="Normal" Path="main/mian_icon_gold.png" Plist="" />
+            <FileData Type="Normal" Path="top/money.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>

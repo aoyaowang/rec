@@ -54,7 +54,7 @@
                 "ClipAble": true,
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Top_icon.png",
+                  "Path": "top/gameTop.png",
                   "Plist": ""
                 },
                 "ComboBoxIndex": 1,
@@ -72,10 +72,12 @@
                 "Scale9Width": 232,
                 "Scale9Height": 74,
                 "TouchEnable": true,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
                   "X": 0.0,
-                  "Y": 891.2664
+                  "Y": 1060.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -85,15 +87,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.9303
+                  "Y": 1.0212
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.071
+                  "Y": 0.0655
                 },
-                "RightMargin": -0.0001,
-                "TopMargin": -1.2664,
-                "BottomMargin": 891.2664,
+                "TopMargin": -22.0,
+                "BottomMargin": 992.0,
                 "Tag": 47,
                 "Children": [
                   {
@@ -111,19 +112,19 @@
                     },
                     "PressedFileData": {
                       "Type": "Normal",
-                      "Path": "userCenter/Dicon_back.png",
+                      "Path": "userCenter/backBtn.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
                       "Type": "Normal",
-                      "Path": "userCenter/Dicon_back.png",
+                      "Path": "userCenter/backBtn.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 5,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 8,
-                    "Scale9Height": 9,
+                    "Scale9Width": 20,
+                    "Scale9Height": 13,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -155,18 +156,18 @@
                       "Y": 0.3674
                     },
                     "PreSize": {
-                      "X": 0.0281,
-                      "Y": 0.4559
+                      "X": 0.0469,
+                      "Y": 0.5147
                     },
-                    "LeftMargin": 22.4277,
-                    "RightMargin": 599.5723,
-                    "TopMargin": 27.5196,
-                    "BottomMargin": 9.4804,
+                    "LeftMargin": 16.4277,
+                    "RightMargin": 593.5723,
+                    "TopMargin": 25.5196,
+                    "BottomMargin": 7.4804,
                     "Tag": 48,
                     "ActionTag": 1021980510,
                     "Size": {
-                      "X": 18.0,
-                      "Y": 31.0
+                      "X": 30.0,
+                      "Y": 35.0
                     },
                     "Name": "btn_back",
                     "ctype": "ButtonObjectData"
@@ -259,7 +260,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 1.0873
+                  "Y": 0.0874
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -269,18 +270,18 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0011
+                  "Y": 0.0001
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.0856
+                  "Y": 0.079
                 },
-                "TopMargin": 874.9127,
-                "BottomMargin": 1.0873,
+                "TopMargin": 955.9127,
+                "BottomMargin": 0.0874,
                 "Tag": 51,
                 "Children": [
                   {
-                    "FontSize": 22,
+                    "FontSize": 36,
                     "ButtonText": "发送红包",
                     "TextColor": {},
                     "DisabledFileData": {
@@ -289,16 +290,15 @@
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/sendBtn.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
                       "Type": "Normal",
-                      "Path": "playGame/playGame_red.png",
+                      "Path": "userCenter/sendBtn.png",
                       "Plist": ""
                     },
-                    "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
                     "Scale9Width": 158,
@@ -348,12 +348,12 @@
                     "ctype": "ButtonObjectData"
                   },
                   {
-                    "FontSize": 14,
+                    "FontSize": 20,
                     "ButtonText": "记录查询",
                     "TextColor": {
-                      "R": 65,
-                      "G": 65,
-                      "B": 70
+                      "R": 230,
+                      "G": 230,
+                      "B": 250
                     },
                     "DisabledFileData": {
                       "Type": "Default",
@@ -362,19 +362,18 @@
                     },
                     "PressedFileData": {
                       "Type": "Normal",
-                      "Path": "userCenter/Dicon_0.png",
+                      "Path": "userCenter/logBtn.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
                       "Type": "Normal",
-                      "Path": "userCenter/Dicon_0.png",
+                      "Path": "userCenter/logBtn.png",
                       "Plist": ""
                     },
-                    "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
                     "Scale9Width": 104,
-                    "Scale9Height": 14,
+                    "Scale9Height": 33,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -391,8 +390,8 @@
                       "ScaleX": 0.5
                     },
                     "Position": {
-                      "X": 537.5931,
-                      "Y": 25.413
+                      "X": 536.2704,
+                      "Y": 12.1918
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -401,84 +400,30 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.84,
-                      "Y": 0.3099
+                      "X": 0.8379,
+                      "Y": 0.1487
                     },
                     "PreSize": {
                       "X": 0.2094,
-                      "Y": 0.439
+                      "Y": 0.6707
                     },
-                    "LeftMargin": 470.5931,
-                    "RightMargin": 35.4069,
-                    "TopMargin": 20.587,
-                    "BottomMargin": 25.413,
+                    "LeftMargin": 469.2704,
+                    "RightMargin": 36.7296,
+                    "TopMargin": 14.8082,
+                    "BottomMargin": 12.1918,
                     "Tag": 53,
                     "ActionTag": 1662215814,
                     "Size": {
                       "X": 134.0,
-                      "Y": 36.0
+                      "Y": 55.0
                     },
                     "Name": "btn_log",
                     "ctype": "ButtonObjectData"
                   },
                   {
-                    "FontSize": 24,
-                    "LabelText": "王者币",
-                    "HorizontalAlignmentType": "HT_Center",
-                    "VerticalAlignmentType": "VT_Center",
-                    "OutlineColor": {
-                      "G": 0,
-                      "B": 0
-                    },
-                    "ShadowColor": {
-                      "R": 110,
-                      "G": 110,
-                      "B": 110
-                    },
-                    "ShadowOffsetX": 2.0,
-                    "ShadowOffsetY": -2.0,
-                    "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
-                    },
-                    "Position": {
-                      "X": 80.2442,
-                      "Y": 66.7591
-                    },
-                    "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
-                    },
-                    "CColor": {
-                      "B": 0
-                    },
-                    "IconVisible": false,
-                    "PrePosition": {
-                      "X": 0.1254,
-                      "Y": 0.8141
-                    },
-                    "PreSize": {
-                      "X": 0.1125,
-                      "Y": 0.2927
-                    },
-                    "LeftMargin": 44.2442,
-                    "RightMargin": 523.7558,
-                    "TopMargin": 3.2409,
-                    "BottomMargin": 54.7591,
-                    "Tag": 54,
-                    "ActionTag": 1857540001,
-                    "Size": {
-                      "X": 72.0,
-                      "Y": 24.0
-                    },
-                    "Name": "ft_lab",
-                    "ctype": "TextObjectData"
-                  },
-                  {
                     "IsCustomSize": true,
                     "FontSize": 24,
                     "LabelText": "99999999\n",
-                    "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
@@ -496,31 +441,31 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 79.0454,
-                      "Y": 30.3008
+                      "X": 122.2592,
+                      "Y": 41.5252
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
                     "CColor": {
-                      "R": 0,
-                      "G": 0,
-                      "B": 0
+                      "R": 230,
+                      "G": 230,
+                      "B": 250
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1235,
-                      "Y": 0.3695
+                      "X": 0.191,
+                      "Y": 0.5064
                     },
                     "PreSize": {
                       "X": 0.2344,
                       "Y": 0.3659
                     },
-                    "LeftMargin": 4.0454,
-                    "RightMargin": 485.9546,
-                    "TopMargin": 36.6992,
-                    "BottomMargin": 15.3008,
+                    "LeftMargin": 47.2592,
+                    "RightMargin": 442.7408,
+                    "TopMargin": 25.4748,
+                    "BottomMargin": 26.5252,
                     "Tag": 55,
                     "ActionTag": 976375219,
                     "Size": {
@@ -562,15 +507,18 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Enable": true,
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 266,
                 "Scale9Width": 218,
                 "Scale9Height": 276,
                 "TouchEnable": true,
-                "AnchorPoint": {},
+                "AnchorPoint": {
+                  "ScaleY": 1.0
+                },
                 "Position": {
                   "X": 0.0,
-                  "Y": 84.6964
+                  "Y": 992.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -580,19 +528,19 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0884
+                  "Y": 0.9557
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.8434
+                  "Y": 0.8786
                 },
-                "TopMargin": 65.3036,
-                "BottomMargin": 84.6964,
+                "TopMargin": 46.0,
+                "BottomMargin": 80.0,
                 "Tag": 56,
                 "ActionTag": -844951333,
                 "Size": {
                   "X": 640.0,
-                  "Y": 808.0
+                  "Y": 912.0
                 },
                 "Name": "chatview",
                 "ctype": "ListViewObjectData"
@@ -601,7 +549,7 @@
             "ActionTag": -2054280598,
             "Size": {
               "X": 640.0,
-              "Y": 958.0
+              "Y": 1038.0
             },
             "Name": "Base",
             "ctype": "PanelObjectData"
@@ -609,7 +557,7 @@
           {
             "FileData": {
               "Type": "Normal",
-              "Path": "main/mian_icon_gold.png",
+              "Path": "top/money.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -621,32 +569,32 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 19.0244,
-              "Y": 67.6799
+              "X": 26.8806,
+              "Y": 44.6697
             },
             "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
+              "ScaleX": 0.15,
+              "ScaleY": 0.15
             },
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0297,
-              "Y": 0.0706
+              "X": 0.042,
+              "Y": 0.043
             },
             "PreSize": {
               "X": 0.0437,
-              "Y": 0.0282
+              "Y": 0.026
             },
-            "LeftMargin": 5.0244,
-            "RightMargin": 606.9756,
-            "TopMargin": 876.8201,
-            "BottomMargin": 54.1799,
+            "LeftMargin": 12.8806,
+            "RightMargin": 599.1194,
+            "TopMargin": 979.8303,
+            "BottomMargin": 31.1697,
             "Tag": 273,
             "ActionTag": 1895394059,
             "Size": {
-              "X": 28.0,
-              "Y": 27.0
+              "X": 187.0,
+              "Y": 206.0
             },
             "Name": "mian_icon_gold_1",
             "ctype": "SpriteObjectData"
@@ -654,7 +602,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 958.0
+          "Y": 1038.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
@@ -662,13 +610,12 @@
       "UsedResources": [
         "backGround/saolei.jpg",
         "Default/Button_Disable.png",
-        "Default/Button_Press.png",
-        "main/mian_icon_gold.png",
-        "playGame/playGame_red.png",
+        "top/gameTop.png",
+        "top/money.png",
+        "userCenter/backBtn.png",
         "userCenter/Dicon.png",
-        "userCenter/Dicon_0.png",
-        "userCenter/Dicon_back.png",
-        "userCenter/Top_icon.png"
+        "userCenter/logBtn.png",
+        "userCenter/sendBtn.png"
       ],
       "ctype": "GameFileData"
     }

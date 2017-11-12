@@ -625,11 +625,11 @@
                             "ShadowOffsetX": 2.0,
                             "ShadowOffsetY": -2.0,
                             "AnchorPoint": {
-                              "ScaleX": 0.5,
+                              "ScaleX": 1.0,
                               "ScaleY": 0.5
                             },
                             "Position": {
-                              "X": 476.332,
+                              "X": 485.332,
                               "Y": 40.1722
                             },
                             "Scale": {
@@ -643,21 +643,21 @@
                             },
                             "IconVisible": false,
                             "PrePosition": {
-                              "X": 0.8357,
+                              "X": 0.8515,
                               "Y": 0.5356
                             },
                             "PreSize": {
-                              "X": 0.0316,
+                              "X": 0.3509,
                               "Y": 0.48
                             },
-                            "LeftMargin": 467.332,
+                            "LeftMargin": 285.332,
                             "RightMargin": 84.668,
                             "TopMargin": 16.8278,
                             "BottomMargin": 22.1722,
                             "Tag": 48,
                             "ActionTag": 1168090166,
                             "Size": {
-                              "X": 18.0,
+                              "X": 200.0,
                               "Y": 36.0
                             },
                             "Name": "ft_num",
@@ -941,11 +941,11 @@
                             "ShadowOffsetX": 2.0,
                             "ShadowOffsetY": -2.0,
                             "AnchorPoint": {
-                              "ScaleX": 0.5,
+                              "ScaleX": 1.0,
                               "ScaleY": 0.5
                             },
                             "Position": {
-                              "X": 481.6216,
+                              "X": 490.6216,
                               "Y": 37.9841
                             },
                             "Scale": {
@@ -959,21 +959,21 @@
                             },
                             "IconVisible": false,
                             "PrePosition": {
-                              "X": 0.845,
+                              "X": 0.8607,
                               "Y": 0.5065
                             },
                             "PreSize": {
-                              "X": 0.0316,
+                              "X": 0.1754,
                               "Y": 0.48
                             },
-                            "LeftMargin": 472.6216,
+                            "LeftMargin": 390.6216,
                             "RightMargin": 79.3784,
                             "TopMargin": 19.0159,
                             "BottomMargin": 19.9841,
                             "Tag": 54,
                             "ActionTag": -393403840,
                             "Size": {
-                              "X": 18.0,
+                              "X": 100.0,
                               "Y": 36.0
                             },
                             "Name": "ft_bomb",

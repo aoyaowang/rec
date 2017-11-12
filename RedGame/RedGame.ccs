@@ -97,6 +97,7 @@
           <Image Name="setting.png" />
           <Image Name="setting2.png" />
           <Image Name="TopBar.png" />
+          <Image Name="gameTop.png" />
         </Folder>
         <Folder Name="userCenter">
           <Image Name="bg.png" />
@@ -130,6 +131,9 @@
           <Image Name="redBag_disi.png" />
           <Image Name="redBag_icon_baiD.png" />
           <Image Name="Top_icon.png" />
+          <Image Name="logBtn.png" />
+          <Image Name="sendBtn.png" />
+          <Image Name="backBtn.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />

@@ -119,14 +119,14 @@
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
-                          <AbstractNodeData Name="ft_num" ActionTag="1168090166" Tag="48" IconVisible="False" LeftMargin="467.3320" RightMargin="84.6680" TopMargin="16.8278" BottomMargin="22.1722" IsCustomSize="True" FontSize="36" LabelText="0" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="18.0000" Y="36.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="476.3320" Y="40.1722" />
+                          <AbstractNodeData Name="ft_num" ActionTag="1168090166" Tag="48" IconVisible="False" LeftMargin="285.3320" RightMargin="84.6680" TopMargin="16.8278" BottomMargin="22.1722" IsCustomSize="True" FontSize="36" LabelText="0" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                            <Size X="200.0000" Y="36.0000" />
+                            <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+                            <Position X="485.3320" Y="40.1722" />
                             <Scale ScaleX="1.0000" ScaleY="1.0000" />
                             <CColor A="255" R="0" G="0" B="0" />
-                            <PrePosition X="0.8357" Y="0.5356" />
-                            <PreSize X="0.0316" Y="0.4800" />
+                            <PrePosition X="0.8515" Y="0.5356" />
+                            <PreSize X="0.3509" Y="0.4800" />
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
@@ -196,14 +196,14 @@
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
-                          <AbstractNodeData Name="ft_bomb" ActionTag="-393403840" Tag="54" IconVisible="False" LeftMargin="472.6216" RightMargin="79.3784" TopMargin="19.0159" BottomMargin="19.9841" IsCustomSize="True" FontSize="36" LabelText="0" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                            <Size X="18.0000" Y="36.0000" />
-                            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                            <Position X="481.6216" Y="37.9841" />
+                          <AbstractNodeData Name="ft_bomb" ActionTag="-393403840" Tag="54" IconVisible="False" LeftMargin="390.6216" RightMargin="79.3784" TopMargin="19.0159" BottomMargin="19.9841" IsCustomSize="True" FontSize="36" LabelText="0" HorizontalAlignmentType="HT_Right" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                            <Size X="100.0000" Y="36.0000" />
+                            <AnchorPoint ScaleX="1.0000" ScaleY="0.5000" />
+                            <Position X="490.6216" Y="37.9841" />
                             <Scale ScaleX="1.0000" ScaleY="1.0000" />
                             <CColor A="255" R="0" G="0" B="0" />
-                            <PrePosition X="0.8450" Y="0.5065" />
-                            <PreSize X="0.0316" Y="0.4800" />
+                            <PrePosition X="0.8607" Y="0.5065" />
+                            <PreSize X="0.1754" Y="0.4800" />
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>

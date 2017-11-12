@@ -233,7 +233,7 @@
                       "Y": -0.8237
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 0.1754
                     },
                     "HorizontalEdge": "LeftEdge",
@@ -332,7 +332,7 @@
                       "Y": -0.2833
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 0.1754
                     },
                     "HorizontalEdge": "LeftEdge",
@@ -476,7 +476,7 @@
                       "Y": -0.8049
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 0.1754
                     },
                     "HorizontalEdge": "LeftEdge",
@@ -1021,15 +1021,15 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.9229
+                  "Y": 1.0
                 },
-                "TopMargin": 77.0,
+                "TopMargin": -3.0,
                 "BottomMargin": 3.0,
                 "Tag": 50,
                 "ActionTag": -1093552615,
                 "Size": {
                   "X": 640.0,
-                  "Y": 958.0
+                  "Y": 1038.0
                 },
                 "Name": "game",
                 "ctype": "PanelObjectData"
