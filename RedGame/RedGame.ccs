@@ -89,6 +89,13 @@
           <Image Name="shopFk_icon_fk3.png" />
           <Image Name="shopFk_icon_laba.png" />
         </Folder>
+        <Folder Name="tips">
+          <Image Name="tips_colse.png" />
+          <Image Name="tips_di.png" />
+          <Image Name="tips_no.png" />
+          <Image Name="tips_top.png" />
+          <Image Name="btn_sure.png" />
+        </Folder>
         <Folder Name="top">
           <Image Name="bottom.png" />
           <Image Name="fangka.png" />
@@ -172,6 +179,7 @@
         <Project Name="saoleisub.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
+        <Project Name="tips.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
       </RootFolder>
     </Group>
