@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Panel_1" ActionTag="1513849568" Tag="278" IconVisible="False" LeftMargin="-3.4879" RightMargin="3.4879" TopMargin="2.3254" BottomMargin="-2.3254" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="302" BottomEage="302" Scale9OriginX="-211" Scale9OriginY="-302" Scale9Width="422" Scale9Height="604" ctype="PanelObjectData">
             <Size X="640.0000" Y="700.0000" />
             <Children>
-              <AbstractNodeData Name="btn_gold1" ActionTag="1544910585" Tag="286" IconVisible="False" LeftMargin="18.2750" RightMargin="441.7250" TopMargin="20.1725" BottomMargin="449.8275" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold1" ActionTag="1544910585" Tag="286" IconVisible="False" LeftMargin="18.2750" RightMargin="441.7250" TopMargin="20.1725" BottomMargin="449.8275" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="1006993461" Tag="280" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -92,7 +92,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold2" ActionTag="-747460142" Tag="287" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="20.1725" BottomMargin="449.8275" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold2" ActionTag="-747460142" Tag="287" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="20.1725" BottomMargin="449.8275" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="1531863876" Tag="288" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -175,7 +175,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold3" ActionTag="-233614538" Tag="294" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="20.1724" BottomMargin="449.8276" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold3" ActionTag="-233614538" Tag="294" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="20.1724" BottomMargin="449.8276" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="1386029499" Tag="295" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -258,7 +258,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold4" ActionTag="-132275421" Tag="301" IconVisible="False" LeftMargin="18.2748" RightMargin="441.7252" TopMargin="292.4696" BottomMargin="177.5304" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold4" ActionTag="-132275421" Tag="301" IconVisible="False" LeftMargin="18.2748" RightMargin="441.7252" TopMargin="292.4696" BottomMargin="177.5304" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="585404309" Tag="302" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -341,7 +341,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold5" ActionTag="1121523445" Tag="308" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="292.4696" BottomMargin="177.5304" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold5" ActionTag="1121523445" Tag="308" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="292.4696" BottomMargin="177.5304" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="-1592565172" Tag="309" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -424,7 +424,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold6" ActionTag="106161896" Tag="315" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="292.0752" BottomMargin="177.9248" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold6" ActionTag="106161896" Tag="315" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="292.0752" BottomMargin="177.9248" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="-947651481" Tag="316" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -507,7 +507,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold7" ActionTag="-1829767684" Tag="322" IconVisible="False" LeftMargin="18.2748" RightMargin="441.7252" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold7" ActionTag="-1829767684" Tag="322" IconVisible="False" LeftMargin="18.2748" RightMargin="441.7252" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="823856819" Tag="323" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -590,7 +590,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold8" ActionTag="-1408685233" Tag="329" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold8" ActionTag="-1408685233" Tag="329" IconVisible="False" LeftMargin="233.2604" RightMargin="226.7396" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="1825795836" Tag="330" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">
@@ -673,7 +673,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_gold9" ActionTag="-424441419" Tag="336" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_gold9" ActionTag="-424441419" Tag="336" IconVisible="False" LeftMargin="448.2505" RightMargin="11.7495" TopMargin="563.9768" BottomMargin="-93.9768" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="207" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="180.0000" Y="230.0000" />
                 <Children>
                   <AbstractNodeData Name="shop_icon_bule_2" ActionTag="1451653638" Tag="337" IconVisible="False" TopMargin="187.5000" BottomMargin="-0.5000" ctype="SpriteObjectData">

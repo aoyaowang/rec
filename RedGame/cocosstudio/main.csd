@@ -22,21 +22,9 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" LeftMargin="-0.0567" RightMargin="0.0567" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="62" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" LeftMargin="-0.0567" RightMargin="0.0567" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="48" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
-                  <AbstractNodeData Name="Text_1" ActionTag="-1488658588" Tag="474" IconVisible="False" LeftMargin="210.0001" RightMargin="209.9999" TopMargin="35.1758" BottomMargin="14.8242" FontSize="36" LabelText="王者娱乐大厅" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="220.0000" Y="50.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="320.0001" Y="39.8242" />
-                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" Y="0.3982" />
-                    <PreSize X="0.3438" Y="0.5000" />
-                    <FontResource Type="Normal" Path="ttf/msyh.ttf" Plist="" />
-                    <OutlineColor A="255" R="255" G="255" B="255" />
-                    <ShadowColor A="255" R="110" G="110" B="110" />
-                  </AbstractNodeData>
                   <AbstractNodeData Name="Panel_Player" ActionTag="-1513563898" Tag="17" IconVisible="False" TopMargin="111.7600" BottomMargin="-132.7600" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="39" BottomEage="39" Scale9OriginX="211" Scale9OriginY="39" Scale9Width="218" Scale9Height="43" ctype="PanelObjectData">
                     <Size X="640.0000" Y="121.0000" />
                     <AnchorPoint />
@@ -83,14 +71,14 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="img_head" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="39.8826" RightMargin="554.1174" TopMargin="146.9681" BottomMargin="-92.9681" ctype="SpriteObjectData">
+                  <AbstractNodeData Name="img_head" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="20.3826" RightMargin="534.6174" TopMargin="127.9681" BottomMargin="-111.9681" ctype="SpriteObjectData">
                     <Size X="85.0000" Y="84.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="62.8826" Y="-69.9681" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0983" Y="-0.6997" />
-                    <PreSize X="0.0719" Y="0.4600" />
+                    <PreSize X="0.1328" Y="0.8400" />
                     <FileData Type="Normal" Path="userCenter/icon_playerd.png" Plist="" />
                     <BlendFunc Src="770" Dst="771" />
                   </AbstractNodeData>
@@ -123,7 +111,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="-0.0001" Y="1.0002" />
                 <PreSize X="1.0000" Y="0.0963" />
-                <FileData Type="Normal" Path="userCenter/Top_icon.png" Plist="" />
+                <FileData Type="Normal" Path="top/TopBar.png" Plist="" />
               </AbstractNodeData>
               <AbstractNodeData Name="base" CanEdit="False" ActionTag="1147806183" Tag="53" IconVisible="False" LeftMargin="-1.6768" RightMargin="1.6768" TopMargin="-1.6768" BottomMargin="121.6768" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="918.0000" />
