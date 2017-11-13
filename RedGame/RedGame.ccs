@@ -65,14 +65,6 @@
           <Image Name="Top.png" />
           <Image Name="zt.png" />
         </Folder>
-        <Folder Name="room">
-          <Image Name="room_chuji.png" />
-          <Image Name="room_gaoji.png" />
-          <Image Name="room_player.png" />
-          <Image Name="room_redBag.png" />
-          <Image Name="room_redBag1.png" />
-          <Image Name="room_zhongji.png" />
-        </Folder>
         <Folder Name="shop">
           <Image Name="shop_icon_bg.png" />
           <Image Name="shop_icon_box.png" />
@@ -89,17 +81,9 @@
           <Image Name="shopFk_icon_fk3.png" />
           <Image Name="shopFk_icon_laba.png" />
         </Folder>
-        <Folder Name="tips">
-          <Image Name="btn_sure.png" />
-          <Image Name="tips_colse.png" />
-          <Image Name="tips_di.png" />
-          <Image Name="tips_no.png" />
-          <Image Name="tips_top.png" />
-        </Folder>
         <Folder Name="top">
           <Image Name="bottom.png" />
           <Image Name="fangka.png" />
-          <Image Name="gameTop.png" />
           <Image Name="gonggao.png" />
           <Image Name="gonggao2.png" />
           <Image Name="home.png" />
@@ -113,9 +97,9 @@
           <Image Name="setting.png" />
           <Image Name="setting2.png" />
           <Image Name="TopBar.png" />
+          <Image Name="gameTop.png" />
         </Folder>
         <Folder Name="userCenter">
-          <Image Name="backBtn.png" />
           <Image Name="bg.png" />
           <Image Name="Dicon.png" />
           <Image Name="Dicon_0.png" />
@@ -143,12 +127,13 @@
           <Image Name="licon_gonggao.png" />
           <Image Name="licon_shop.png" />
           <Image Name="licon_userCenter.png" />
-          <Image Name="logBtn.png" />
           <Image Name="redBag_bg.png" />
           <Image Name="redBag_disi.png" />
           <Image Name="redBag_icon_baiD.png" />
-          <Image Name="sendBtn.png" />
           <Image Name="Top_icon.png" />
+          <Image Name="logBtn.png" />
+          <Image Name="sendBtn.png" />
+          <Image Name="backBtn.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />
@@ -177,7 +162,6 @@
         <Project Name="setting.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
-        <Project Name="tips.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>
