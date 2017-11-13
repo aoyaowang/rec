@@ -37,7 +37,7 @@
                         <FileData Type="Normal" Path="userCenter/Dicon_fk.png" Plist="" />
                         <BlendFunc Src="1" Dst="771" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="22.5601" RightMargin="17.4399" TopMargin="33.3273" BottomMargin="62.6727" IsCustomSize="True" FontSize="24" LabelText="999999张" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="22.5601" RightMargin="17.4399" TopMargin="33.3273" BottomMargin="62.6727" IsCustomSize="True" FontSize="28" LabelText="999999张" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="120.0000" Y="24.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="82.5601" Y="74.6727" />

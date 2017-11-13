@@ -107,6 +107,9 @@
           <Image Name="setting2.png" />
           <Image Name="TopBar.png" />
         </Folder>
+        <Folder Name="ttf">
+          <TTF Name="msyh.ttf" />
+        </Folder>
         <Folder Name="userCenter">
           <Image Name="backBtn.png" />
           <Image Name="bg.png" />

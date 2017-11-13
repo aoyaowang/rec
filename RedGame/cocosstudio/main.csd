@@ -22,97 +22,110 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-22.6600" BottomMargin="946.6600" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="62" ctype="ImageViewObjectData">
-                <Size X="640.0000" Y="114.0000" />
+              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" LeftMargin="-0.0567" RightMargin="0.0567" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="62" ctype="ImageViewObjectData">
+                <Size X="640.0000" Y="100.0000" />
                 <Children>
-                  <AbstractNodeData Name="Panel_Player" ActionTag="-1513563898" Tag="17" IconVisible="False" TopMargin="125.7600" BottomMargin="-132.7600" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="39" BottomEage="39" Scale9OriginX="211" Scale9OriginY="39" Scale9Width="218" Scale9Height="43" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Text_1" ActionTag="-1488658588" Tag="474" IconVisible="False" LeftMargin="210.0001" RightMargin="209.9999" TopMargin="35.1758" BottomMargin="14.8242" FontSize="36" LabelText="王者娱乐大厅" OutlineEnabled="True" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="220.0000" Y="50.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="320.0001" Y="39.8242" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.5000" Y="0.3982" />
+                    <PreSize X="0.3438" Y="0.5000" />
+                    <FontResource Type="Normal" Path="ttf/msyh.ttf" Plist="" />
+                    <OutlineColor A="255" R="255" G="255" B="255" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_Player" ActionTag="-1513563898" Tag="17" IconVisible="False" TopMargin="111.7600" BottomMargin="-132.7600" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="39" BottomEage="39" Scale9OriginX="211" Scale9OriginY="39" Scale9Width="218" Scale9Height="43" ctype="PanelObjectData">
                     <Size X="640.0000" Y="121.0000" />
                     <AnchorPoint />
                     <Position Y="-132.7600" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition Y="-1.1646" />
-                    <PreSize X="1.0000" Y="1.0614" />
+                    <PrePosition Y="-1.3276" />
+                    <PreSize X="1.0000" Y="1.2100" />
                     <FileData Type="Normal" Path="top/playerbar.png" Plist="" />
                     <SingleColor A="255" R="255" G="255" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_fangka" ActionTag="-1429989516" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="465.6913" RightMargin="74.3087" TopMargin="196.7980" BottomMargin="-102.7980" FontSize="20" LabelText="9999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="100.0000" Y="20.0000" />
+                  <AbstractNodeData Name="ft_fangka" ActionTag="-1429989516" Tag="20" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="465.6913" RightMargin="34.3087" TopMargin="178.3580" BottomMargin="-106.3580" FontSize="28" LabelText="9999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="140.0000" Y="28.0000" />
                     <AnchorPoint ScaleX="0.7511" ScaleY="0.4450" />
-                    <Position X="540.8013" Y="-93.8980" />
+                    <Position X="570.8453" Y="-93.8980" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.8450" Y="-0.8237" />
-                    <PreSize X="0.1563" Y="0.1754" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8919" Y="-0.9390" />
+                    <PreSize X="0.2188" Y="0.2800" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="img_fangka" ActionTag="2076900639" Tag="18" IconVisible="False" LeftMargin="406.1713" RightMargin="189.8287" TopMargin="192.8826" BottomMargin="-109.8826" LeftEage="14" RightEage="14" TopEage="10" BottomEage="10" Scale9OriginX="14" Scale9OriginY="10" Scale9Width="16" Scale9Height="11" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="img_fangka" ActionTag="2076900639" Tag="18" IconVisible="False" LeftMargin="406.1713" RightMargin="189.8287" TopMargin="178.8826" BottomMargin="-109.8826" LeftEage="14" RightEage="14" TopEage="10" BottomEage="10" Scale9OriginX="14" Scale9OriginY="10" Scale9Width="16" Scale9Height="11" ctype="ImageViewObjectData">
                     <Size X="44.0000" Y="31.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="428.1713" Y="-94.3826" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6690" Y="-0.8279" />
-                    <PreSize X="0.0688" Y="0.2719" />
+                    <PrePosition X="0.6690" Y="-0.9438" />
+                    <PreSize X="0.0688" Y="0.3100" />
                     <FileData Type="Normal" Path="top/fangka.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_name" ActionTag="-956184723" Tag="17" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="118.7039" RightMargin="421.2961" TopMargin="146.2991" BottomMargin="-52.2991" FontSize="20" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="100.0000" Y="20.0000" />
+                  <AbstractNodeData Name="ft_name" ActionTag="-956184723" Tag="17" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="118.7039" RightMargin="381.2961" TopMargin="132.2991" BottomMargin="-60.2991" FontSize="28" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="140.0000" Y="28.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="1.0000" />
-                    <Position X="168.7039" Y="-32.2991" />
+                    <Position X="188.7039" Y="-32.2991" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.2636" Y="-0.2833" />
-                    <PreSize X="0.1563" Y="0.1754" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.2948" Y="-0.3230" />
+                    <PreSize X="0.2188" Y="0.2800" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="img_head" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="39.8826" RightMargin="554.1174" TopMargin="160.9681" BottomMargin="-92.9681" ctype="SpriteObjectData">
-                    <Size X="46.0000" Y="46.0000" />
+                  <AbstractNodeData Name="img_head" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="39.8826" RightMargin="554.1174" TopMargin="146.9681" BottomMargin="-92.9681" ctype="SpriteObjectData">
+                    <Size X="85.0000" Y="84.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="62.8826" Y="-69.9681" />
-                    <Scale ScaleX="1.3900" ScaleY="1.3900" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.0983" Y="-0.6138" />
-                    <PreSize X="0.0719" Y="0.4035" />
-                    <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
-                    <BlendFunc Src="1" Dst="771" />
+                    <PrePosition X="0.0983" Y="-0.6997" />
+                    <PreSize X="0.0719" Y="0.4600" />
+                    <FileData Type="Normal" Path="userCenter/icon_playerd.png" Plist="" />
+                    <BlendFunc Src="770" Dst="771" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="img_money" ActionTag="-2105604429" Tag="18" IconVisible="False" LeftMargin="34.5057" RightMargin="418.4943" TopMargin="101.9170" BottomMargin="-193.9170" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="img_money" ActionTag="-2105604429" Tag="18" IconVisible="False" LeftMargin="34.5057" RightMargin="418.4943" TopMargin="87.9170" BottomMargin="-193.9170" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
                     <Size X="187.0000" Y="206.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="128.0057" Y="-90.9170" />
                     <Scale ScaleX="0.1720" ScaleY="0.1811" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2000" Y="-0.7975" />
-                    <PreSize X="0.2922" Y="1.8070" />
+                    <PrePosition X="0.2000" Y="-0.9092" />
+                    <PreSize X="0.2922" Y="2.0600" />
                     <FileData Type="Normal" Path="top/money.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="148.6756" RightMargin="391.3244" TopMargin="194.6531" BottomMargin="-100.6531" FontSize="20" LabelText="9999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="100.0000" Y="20.0000" />
+                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="148.6756" RightMargin="351.3244" TopMargin="176.2131" BottomMargin="-104.2131" FontSize="28" LabelText="9999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="140.0000" Y="28.0000" />
                     <AnchorPoint ScaleX="0.7511" ScaleY="0.4450" />
-                    <Position X="223.7856" Y="-91.7531" />
+                    <Position X="253.8296" Y="-91.7531" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                    <CColor A="255" R="0" G="0" B="0" />
-                    <PrePosition X="0.3497" Y="-0.8049" />
-                    <PreSize X="0.1563" Y="0.1754" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3966" Y="-0.9175" />
+                    <PreSize X="0.2188" Y="0.2800" />
+                    <FontResource Type="Default" Path="" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />
-                <Position Y="1060.6600" />
+                <Position X="-0.0567" Y="1038.2485" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="1.0218" />
-                <PreSize X="1.0000" Y="0.1098" />
-                <FileData Type="Normal" Path="top/TopBar.png" Plist="" />
+                <PrePosition X="-0.0001" Y="1.0002" />
+                <PreSize X="1.0000" Y="0.0963" />
+                <FileData Type="Normal" Path="userCenter/Top_icon.png" Plist="" />
               </AbstractNodeData>
-              <AbstractNodeData Name="base" ActionTag="1147806183" Tag="53" IconVisible="False" LeftMargin="-1.6768" RightMargin="1.6768" TopMargin="-1.6768" BottomMargin="121.6768" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="base" CanEdit="False" ActionTag="1147806183" Tag="53" IconVisible="False" LeftMargin="-1.6768" RightMargin="1.6768" TopMargin="-1.6768" BottomMargin="121.6768" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="918.0000" />
                 <AnchorPoint />
                 <Position X="-1.6768" Y="121.6768" />
@@ -216,13 +229,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="game" ActionTag="-1093552615" Tag="50" IconVisible="False" TopMargin="-3.0000" BottomMargin="3.0000" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="game" CanEdit="False" ActionTag="-1093552615" Tag="50" IconVisible="False" LeftMargin="-3.6789" RightMargin="3.6788" TopMargin="-4.8395" BottomMargin="4.8395" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="1038.0000" />
                 <AnchorPoint />
-                <Position Y="3.0000" />
+                <Position X="-3.6789" Y="4.8395" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0029" />
+                <PrePosition X="-0.0057" Y="0.0047" />
                 <PreSize X="1.0000" Y="1.0000" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />

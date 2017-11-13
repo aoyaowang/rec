@@ -51,16 +51,16 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="955.9126" BottomMargin="0.0874" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="27" BottomEage="27" Scale9OriginX="211" Scale9OriginY="27" Scale9Width="218" Scale9Height="28" ctype="PanelObjectData">
+              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" LeftMargin="-0.6568" RightMargin="0.6569" TopMargin="957.9126" BottomMargin="-1.9126" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="27" BottomEage="27" Scale9OriginX="211" Scale9OriginY="27" Scale9Width="218" Scale9Height="28" ctype="PanelObjectData">
                 <Size X="640.0000" Y="82.0000" />
                 <Children>
-                  <AbstractNodeData Name="btn_red" ActionTag="1558474796" Tag="52" IconVisible="False" LeftMargin="201.5826" RightMargin="250.4174" TopMargin="0.3292" BottomMargin="1.6708" TouchEnable="True" FontSize="36" ButtonText="发送红包" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="158" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_red" ActionTag="1558474796" Tag="52" IconVisible="False" LeftMargin="221.5817" RightMargin="230.4183" TopMargin="0.3295" BottomMargin="1.6705" TouchEnable="True" FontSize="36" ButtonText="发送红包" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="158" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="188.0000" Y="80.0000" />
                     <AnchorPoint />
-                    <Position X="201.5826" Y="1.6708" />
+                    <Position X="221.5817" Y="1.6705" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3150" Y="0.0204" />
+                    <PrePosition X="0.3462" Y="0.0204" />
                     <PreSize X="0.2937" Y="0.9756" />
                     <TextColor A="255" R="255" G="255" B="255" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
@@ -69,13 +69,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_log" ActionTag="1662215814" Tag="53" IconVisible="False" LeftMargin="469.2704" RightMargin="36.7296" TopMargin="14.8082" BottomMargin="12.1918" TouchEnable="True" FontSize="20" ButtonText="记录查询" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="104" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_log" ActionTag="1662215814" Tag="53" IconVisible="False" LeftMargin="471.2704" RightMargin="34.7296" TopMargin="10.8083" BottomMargin="16.1917" TouchEnable="True" FontSize="20" ButtonText="记录查询" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="104" Scale9Height="33" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="134.0000" Y="55.0000" />
                     <AnchorPoint ScaleX="0.5000" />
-                    <Position X="536.2704" Y="12.1918" />
+                    <Position X="538.2704" Y="16.1917" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8379" Y="0.1487" />
+                    <PrePosition X="0.8410" Y="0.1975" />
                     <PreSize X="0.2094" Y="0.6707" />
                     <TextColor A="255" R="230" G="230" B="250" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
@@ -97,10 +97,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="0.0874" />
+                <Position X="-0.6568" Y="-1.9126" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0001" />
+                <PrePosition X="-0.0010" Y="-0.0018" />
                 <PreSize X="1.0000" Y="0.0790" />
                 <FileData Type="Normal" Path="userCenter/Dicon.png" Plist="" />
                 <SingleColor A="255" R="150" G="200" B="255" />
@@ -108,13 +108,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" LeftMargin="-0.0001" RightMargin="0.0001" TopMargin="64.9000" BottomMargin="81.1000" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="266" BottomEage="266" Scale9OriginX="211" Scale9OriginY="266" Scale9Width="218" Scale9Height="276" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" LeftMargin="-0.0001" RightMargin="0.0001" TopMargin="65.9001" BottomMargin="80.0999" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="266" BottomEage="266" Scale9OriginX="211" Scale9OriginY="266" Scale9Width="218" Scale9Height="276" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="892.0000" />
                 <AnchorPoint ScaleY="1.0000" />
-                <Position X="-0.0001" Y="973.1000" />
+                <Position X="-0.0001" Y="972.0999" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.0000" Y="0.9375" />
+                <PrePosition X="0.0000" Y="0.9365" />
                 <PreSize X="1.0000" Y="0.8593" />
                 <FileData Type="Normal" Path="backGround/saolei.jpg" Plist="" />
                 <SingleColor A="255" R="150" G="150" B="255" />
