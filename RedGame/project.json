@@ -4,9 +4,9 @@
     "debugMode" : 1,
     "showFPS" : false,
     "frameRate" : 60,
-    "noCache" : false,
+    "noCache" : true,
     "id" : "gameCanvas",
-    "renderMode" : 1,
+    "renderMode" : 0,
     "engineDir":"frameworks/cocos2d-html5",
 
     "modules" : ["cocos2d", "cocostudio"],
