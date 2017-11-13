@@ -136,13 +136,13 @@
                   "Y": 0.7888
                 },
                 "PreSize": {
-                  "X": 0.1453,
-                  "Y": 0.1264
+                  "X": 0.0719,
+                  "Y": 0.0501
                 },
-                "LeftMargin": 102.3446,
-                "RightMargin": 444.6554,
-                "TopMargin": 135.8917,
-                "BottomMargin": 666.1083,
+                "LeftMargin": 125.8446,
+                "RightMargin": 468.1554,
+                "TopMargin": 170.8917,
+                "BottomMargin": 701.1083,
                 "Tag": 92,
                 "ActionTag": -292683809,
                 "Size": {
@@ -355,11 +355,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "充值",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -430,11 +426,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "10",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -506,11 +498,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "50",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -582,11 +570,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "100",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -658,11 +642,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "500",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -734,11 +714,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "1000",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -810,11 +786,7 @@
               {
                 "FontSize": 48,
                 "ButtonText": "20",
-                "TextColor": {
-                  "R": 65,
-                  "G": 65,
-                  "B": 70
-                },
+                "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
                   "Path": "Default/Button_Disable.png",
@@ -885,7 +857,7 @@
               },
               {
                 "FontSize": 14,
-                "ButtonText": "返回",
+                "ButtonText": "",
                 "TextColor": {
                   "R": 65,
                   "G": 65,

@@ -15,7 +15,12 @@
         "Tag": 71,
         "Children": [
           {
-            "ClipAble": false,
+            "ClipAble": true,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "userCenter/Top_icon.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {},
             "FirstColor": {
@@ -26,13 +31,15 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "Scale9OriginX": 211,
+            "Scale9OriginY": 37,
+            "Scale9Width": 218,
+            "Scale9Height": 40,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 1.0004,
-              "Y": 625.9015
+              "X": 0.0004,
+              "Y": 624.9016
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -41,17 +48,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0016,
-              "Y": 0.8941
+              "X": 0.0,
+              "Y": 0.8927
             },
             "PreSize": {
               "X": 1.0,
               "Y": 0.1071
             },
-            "LeftMargin": 1.0004,
-            "RightMargin": -1.0004,
-            "TopMargin": -0.9015,
-            "BottomMargin": 625.9015,
+            "LeftMargin": 0.0004,
+            "RightMargin": -0.0004,
+            "TopMargin": 0.0984,
+            "BottomMargin": 624.9016,
             "Tag": 61,
             "ActionTag": 862112144,
             "Size": {
@@ -63,7 +70,7 @@
           },
           {
             "FontSize": 14,
-            "ButtonText": "返回",
+            "ButtonText": "",
             "TextColor": {
               "R": 65,
               "G": 65,
@@ -75,20 +82,20 @@
               "Plist": ""
             },
             "PressedFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Press.png",
+              "Type": "Normal",
+              "Path": "userCenter/backBtn.png",
               "Plist": ""
             },
             "NormalFileData": {
-              "Type": "Default",
-              "Path": "Default/Button_Normal.png",
+              "Type": "Normal",
+              "Path": "userCenter/backBtn.png",
               "Plist": ""
             },
             "Scale9Enable": true,
             "Scale9OriginX": 5,
             "Scale9OriginY": 11,
-            "Scale9Width": 36,
-            "Scale9Height": 14,
+            "Scale9Width": 20,
+            "Scale9Height": 13,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -106,8 +113,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 50.9983,
-              "Y": 663.2797
+              "X": 48.9983,
+              "Y": 663.2798
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -116,22 +123,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0797,
+              "X": 0.0766,
               "Y": 0.9475
             },
             "PreSize": {
-              "X": 0.0719,
-              "Y": 0.0514
+              "X": 0.0469,
+              "Y": 0.05
             },
-            "LeftMargin": 27.9983,
-            "RightMargin": 566.0017,
-            "TopMargin": 18.7203,
-            "BottomMargin": 645.2797,
+            "LeftMargin": 33.9983,
+            "RightMargin": 576.0017,
+            "TopMargin": 19.2202,
+            "BottomMargin": 645.7798,
             "Tag": 28,
             "ActionTag": -969474759,
             "Size": {
-              "X": 46.0,
-              "Y": 36.0
+              "X": 30.0,
+              "Y": 35.0
             },
             "Name": "btn_back",
             "ctype": "ButtonObjectData"
@@ -139,7 +146,12 @@
           {
             "DirectionType": "Vertical",
             "ScrollDirectionType": 0,
-            "ClipAble": false,
+            "ClipAble": true,
+            "FileData": {
+              "Type": "Normal",
+              "Path": "userCenter/bg.png",
+              "Plist": ""
+            },
             "ComboBoxIndex": 1,
             "SingleColor": {},
             "FirstColor": {
@@ -150,8 +162,10 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
-            "Scale9Width": 1,
-            "Scale9Height": 1,
+            "Scale9OriginX": 211,
+            "Scale9OriginY": 324,
+            "Scale9Width": 218,
+            "Scale9Height": 334,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -178,6 +192,11 @@
               {
                 "ClipAble": false,
                 "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/room_chuji.png",
+                  "Plist": ""
+                },
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
@@ -191,8 +210,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 211,
+                "Scale9OriginY": 66,
+                "Scale9Width": 218,
+                "Scale9Height": 68,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -218,7 +239,7 @@
                 "Children": [
                   {
                     "FontSize": 72,
-                    "ButtonText": "初级房",
+                    "ButtonText": "",
                     "TextColor": {},
                     "DisabledFileData": {
                       "Type": "Default",
@@ -228,8 +249,8 @@
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 4,
-                    "Scale9Width": 186,
-                    "Scale9Height": 64,
+                    "Scale9Width": 16,
+                    "Scale9Height": 28,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -340,6 +361,11 @@
               {
                 "ClipAble": false,
                 "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/room_zhongji.png",
+                  "Plist": ""
+                },
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
@@ -353,8 +379,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 211,
+                "Scale9OriginY": 66,
+                "Scale9Width": 218,
+                "Scale9Height": 68,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -381,7 +409,7 @@
                 "Children": [
                   {
                     "FontSize": 72,
-                    "ButtonText": "中级房",
+                    "ButtonText": "",
                     "TextColor": {},
                     "DisabledFileData": {
                       "Type": "Default",
@@ -502,6 +530,11 @@
               {
                 "ClipAble": false,
                 "BackColorAlpha": 102,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "room/room_gaoji.png",
+                  "Plist": ""
+                },
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
@@ -515,8 +548,10 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "Scale9Width": 1,
-                "Scale9Height": 1,
+                "Scale9OriginX": 211,
+                "Scale9OriginY": 66,
+                "Scale9Width": 218,
+                "Scale9Height": 68,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -543,7 +578,7 @@
                 "Children": [
                   {
                     "FontSize": 72,
-                    "ButtonText": "高级房",
+                    "ButtonText": "",
                     "TextColor": {},
                     "DisabledFileData": {
                       "Type": "Default",
@@ -569,7 +604,7 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 0.0,
+                      "X": 2.1558,
                       "Y": 2.0337
                     },
                     "Scale": {
@@ -579,14 +614,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.0,
+                      "X": 0.0034,
                       "Y": 0.0102
                     },
                     "PreSize": {
                       "X": 0.75,
                       "Y": 1.0
                     },
-                    "RightMargin": 160.0,
+                    "LeftMargin": 2.1558,
+                    "RightMargin": 157.8442,
                     "TopMargin": -2.0337,
                     "BottomMargin": 2.0337,
                     "Tag": 82,
@@ -682,8 +718,12 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
-        "Default/Button_Press.png"
+        "room/room_chuji.png",
+        "room/room_gaoji.png",
+        "room/room_zhongji.png",
+        "userCenter/backBtn.png",
+        "userCenter/bg.png",
+        "userCenter/Top_icon.png"
       ],
       "ctype": "GameFileData"
     }

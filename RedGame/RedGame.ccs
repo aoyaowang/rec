@@ -65,6 +65,14 @@
           <Image Name="Top.png" />
           <Image Name="zt.png" />
         </Folder>
+        <Folder Name="room">
+          <Image Name="room_chuji.png" />
+          <Image Name="room_gaoji.png" />
+          <Image Name="room_player.png" />
+          <Image Name="room_redBag.png" />
+          <Image Name="room_redBag1.png" />
+          <Image Name="room_zhongji.png" />
+        </Folder>
         <Folder Name="shop">
           <Image Name="shop_icon_bg.png" />
           <Image Name="shop_icon_box.png" />

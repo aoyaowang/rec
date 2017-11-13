@@ -77,7 +77,7 @@
                 },
                 "Position": {
                   "X": 0.0,
-                  "Y": 1060.0
+                  "Y": 1038.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -87,14 +87,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 1.0212
+                  "Y": 1.0
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.0655
                 },
-                "TopMargin": -22.0,
-                "BottomMargin": 992.0,
+                "BottomMargin": 970.0,
                 "Tag": 47,
                 "Children": [
                   {
@@ -276,7 +275,7 @@
                   "X": 1.0,
                   "Y": 0.079
                 },
-                "TopMargin": 955.9127,
+                "TopMargin": 955.9126,
                 "BottomMargin": 0.0874,
                 "Tag": 51,
                 "Children": [
@@ -517,8 +516,8 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 0.0,
-                  "Y": 992.0
+                  "X": -0.0001,
+                  "Y": 973.1
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -528,19 +527,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.9557
+                  "Y": 0.9375
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.8786
+                  "Y": 0.8593
                 },
-                "TopMargin": 46.0,
-                "BottomMargin": 80.0,
+                "LeftMargin": -0.0001,
+                "RightMargin": 0.0001,
+                "TopMargin": 64.9,
+                "BottomMargin": 81.1,
                 "Tag": 56,
                 "ActionTag": -844951333,
                 "Size": {
                   "X": 640.0,
-                  "Y": 912.0
+                  "Y": 892.0
                 },
                 "Name": "chatview",
                 "ctype": "ListViewObjectData"
@@ -583,13 +584,13 @@
               "Y": 0.043
             },
             "PreSize": {
-              "X": 0.0437,
-              "Y": 0.026
+              "X": 0.2922,
+              "Y": 0.1985
             },
-            "LeftMargin": 12.8806,
-            "RightMargin": 599.1194,
-            "TopMargin": 979.8303,
-            "BottomMargin": 31.1697,
+            "LeftMargin": -66.6194,
+            "RightMargin": 519.6194,
+            "TopMargin": 890.3303,
+            "BottomMargin": -58.3303,
             "Tag": 273,
             "ActionTag": 1895394059,
             "Size": {
