@@ -49,7 +49,7 @@
               "Y": 0.3148
             },
             "PreSize": {
-              "X": 0.7813,
+              "X": 0.7812,
               "Y": 0.289
             },
             "HorizontalEdge": "LeftEdge",
@@ -161,8 +161,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 332.515,
-              "Y": 503.9237
+              "X": 334.4539,
+              "Y": 474.8394
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -171,17 +171,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5196,
-              "Y": 0.4855
+              "X": 0.5226,
+              "Y": 0.4575
             },
             "PreSize": {
               "X": 0.625,
               "Y": 0.1927
             },
-            "LeftMargin": 132.515,
-            "RightMargin": 107.485,
-            "TopMargin": 434.0763,
-            "BottomMargin": 403.9237,
+            "LeftMargin": 134.4539,
+            "RightMargin": 105.5461,
+            "TopMargin": 463.1606,
+            "BottomMargin": 374.8394,
             "Tag": 6,
             "ActionTag": -2111658399,
             "Size": {
@@ -189,6 +189,100 @@
               "Y": 200.0
             },
             "Name": "Text_1",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "tips/tips_top.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 331.4327,
+              "Y": 607.3087
+            },
+            "Scale": {
+              "ScaleX": 0.8716,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5179,
+              "Y": 0.5851
+            },
+            "PreSize": {
+              "X": 0.9,
+              "Y": 0.0645
+            },
+            "LeftMargin": 43.4327,
+            "RightMargin": 20.5673,
+            "TopMargin": 397.1913,
+            "BottomMargin": 573.8087,
+            "Tag": 788,
+            "ActionTag": -1714754431,
+            "Size": {
+              "X": 576.0,
+              "Y": 67.0
+            },
+            "Name": "tips_top_1",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 40,
+            "LabelText": "提示",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 341.3872,
+              "Y": 602.1507
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5334,
+              "Y": 0.5801
+            },
+            "PreSize": {
+              "X": 0.125,
+              "Y": 0.0385
+            },
+            "LeftMargin": 301.3872,
+            "RightMargin": 258.6128,
+            "TopMargin": 415.8493,
+            "BottomMargin": 582.1507,
+            "Tag": 787,
+            "ActionTag": -1326096635,
+            "Size": {
+              "X": 80.0,
+              "Y": 40.0
+            },
+            "Name": "Text_2",
             "ctype": "TextObjectData"
           }
         ],
@@ -202,6 +296,7 @@
       "UsedResources": [
         "Default/Button_Disable.png",
         "Default/Button_Press.png",
+        "tips/tips_top.png",
         "userCenter/Dicon_0.png"
       ],
       "ctype": "GameFileData"

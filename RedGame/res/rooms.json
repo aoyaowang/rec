@@ -38,8 +38,8 @@
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
-              "X": 0.0004,
-              "Y": 624.9016
+              "X": 0.0009,
+              "Y": 600.4888
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -49,16 +49,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0,
-              "Y": 0.8927
+              "Y": 0.8896
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.1071
+              "Y": 0.1111
             },
-            "LeftMargin": 0.0004,
-            "RightMargin": -0.0004,
-            "TopMargin": 0.0984,
-            "BottomMargin": 624.9016,
+            "LeftMargin": 0.0009,
+            "RightMargin": -0.0009,
+            "TopMargin": -0.4888,
+            "BottomMargin": 600.4888,
             "Tag": 61,
             "ActionTag": 862112144,
             "Size": {
@@ -113,8 +113,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 48.9983,
-              "Y": 663.2798
+              "X": 28.4596,
+              "Y": 643.2537
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -123,17 +123,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0766,
-              "Y": 0.9475
+              "X": 0.0445,
+              "Y": 0.953
             },
             "PreSize": {
               "X": 0.0469,
-              "Y": 0.05
+              "Y": 0.0519
             },
-            "LeftMargin": 33.9983,
-            "RightMargin": 576.0017,
-            "TopMargin": 19.2202,
-            "BottomMargin": 645.7798,
+            "LeftMargin": 13.4596,
+            "RightMargin": 596.5404,
+            "TopMargin": 14.2463,
+            "BottomMargin": 625.7537,
             "Tag": 28,
             "ActionTag": -969474759,
             "Size": {
@@ -184,7 +184,7 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.8929
+              "Y": 0.8889
             },
             "TopMargin": 75.0,
             "Tag": 72,
@@ -218,7 +218,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 425.0
+                  "Y": 400.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -228,13 +228,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.68
+                  "Y": 0.6667
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.32
+                  "Y": 0.3333
                 },
-                "BottomMargin": 425.0,
+                "BottomMargin": 400.0,
                 "Tag": 75,
                 "Children": [
                   {
@@ -247,10 +247,10 @@
                       "Plist": ""
                     },
                     "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 4,
-                    "Scale9Width": 16,
-                    "Scale9Height": 28,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -4,
+                    "Scale9Width": 30,
+                    "Scale9Height": 8,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -387,7 +387,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 225.0
+                  "Y": 200.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -397,14 +397,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.36
+                  "Y": 0.3333
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.32
+                  "Y": 0.3333
                 },
                 "TopMargin": 200.0,
-                "BottomMargin": 225.0,
+                "BottomMargin": 200.0,
                 "Tag": 78,
                 "Children": [
                   {
@@ -417,10 +417,10 @@
                       "Plist": ""
                     },
                     "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 4,
-                    "Scale9Width": 186,
-                    "Scale9Height": 64,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -4,
+                    "Scale9Width": 30,
+                    "Scale9Height": 8,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -556,7 +556,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 25.0
+                  "Y": 0.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -566,14 +566,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.04
+                  "Y": 0.0
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.32
+                  "Y": 0.3333
                 },
                 "TopMargin": 400.0,
-                "BottomMargin": 25.0,
                 "Tag": 81,
                 "Children": [
                   {
@@ -586,10 +585,10 @@
                       "Plist": ""
                     },
                     "Scale9Enable": true,
-                    "Scale9OriginX": 15,
-                    "Scale9OriginY": 4,
-                    "Scale9Width": 186,
-                    "Scale9Height": 64,
+                    "Scale9OriginX": -15,
+                    "Scale9OriginY": -4,
+                    "Scale9Width": 30,
+                    "Scale9Height": 8,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -703,7 +702,7 @@
             "ActionTag": -2064097753,
             "Size": {
               "X": 640.0,
-              "Y": 625.0
+              "Y": 600.0
             },
             "Name": "ListView_1",
             "ctype": "ListViewObjectData"
@@ -711,7 +710,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 700.0
+          "Y": 675.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
