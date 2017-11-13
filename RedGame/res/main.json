@@ -345,12 +345,12 @@
                   },
                   {
                     "FileData": {
-                      "Type": "Normal",
-                      "Path": "userCenter/icon_playerd.png",
+                      "Type": "Default",
+                      "Path": "Default/Sprite.png",
                       "Plist": ""
                     },
                     "BlendFunc": {
-                      "Src": 770,
+                      "Src": 1,
                       "Dst": 771
                     },
                     "AnchorPoint": {
@@ -382,8 +382,8 @@
                     "Tag": 26,
                     "ActionTag": -643626798,
                     "Size": {
-                      "X": 85.0,
-                      "Y": 84.0
+                      "X": 46.0,
+                      "Y": 46.0
                     },
                     "Name": "img_head",
                     "ctype": "SpriteObjectData"
@@ -1050,6 +1050,7 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
+        "Default/Sprite.png",
         "res/background.png",
         "top/bottom.png",
         "top/fangka.png",
@@ -1065,8 +1066,7 @@
         "top/playerbar.png",
         "top/setting.png",
         "top/setting2.png",
-        "top/TopBar.png",
-        "userCenter/icon_playerd.png"
+        "top/TopBar.png"
       ],
       "ctype": "GameFileData"
     }

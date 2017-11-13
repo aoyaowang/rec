@@ -72,15 +72,15 @@
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="img_head" ActionTag="-643626798" Tag="26" IconVisible="False" LeftMargin="20.3826" RightMargin="534.6174" TopMargin="127.9681" BottomMargin="-111.9681" ctype="SpriteObjectData">
-                    <Size X="85.0000" Y="84.0000" />
+                    <Size X="46.0000" Y="46.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="62.8826" Y="-69.9681" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.0983" Y="-0.6997" />
                     <PreSize X="0.1328" Y="0.8400" />
-                    <FileData Type="Normal" Path="userCenter/icon_playerd.png" Plist="" />
-                    <BlendFunc Src="770" Dst="771" />
+                    <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
+                    <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="img_money" ActionTag="-2105604429" Tag="18" IconVisible="False" LeftMargin="34.5057" RightMargin="418.4943" TopMargin="87.9170" BottomMargin="-193.9170" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
                     <Size X="187.0000" Y="206.0000" />

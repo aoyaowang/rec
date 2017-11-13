@@ -15,7 +15,29 @@
                   <AbstractNodeData Name="Panel_3" ActionTag="1746338253" ZOrder="1" Tag="61" IconVisible="False" LeftMargin="450.8883" RightMargin="29.1117" TopMargin="54.4780" BottomMargin="25.5220" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="160.0000" Y="120.0000" />
                     <Children>
-                      <AbstractNodeData Name="Text_3" ActionTag="490889941" Tag="62" IconVisible="False" LeftMargin="58.7217" RightMargin="53.2783" TopMargin="72.6156" BottomMargin="23.3844" FontSize="24" LabelText="房卡" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+                      <AbstractNodeData Name="img_money" ActionTag="1941752019" Tag="651" IconVisible="False" LeftMargin="-93.3726" RightMargin="66.3726" TopMargin="-63.7657" BottomMargin="-22.2343" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
+                        <Size X="187.0000" Y="206.0000" />
+                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                        <Position X="0.1274" Y="80.7657" />
+                        <Scale ScaleX="0.1720" ScaleY="0.1811" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="0.0008" Y="0.6730" />
+                        <PreSize X="1.1688" Y="1.7167" />
+                        <FileData Type="Normal" Path="top/money.png" Plist="" />
+                      </AbstractNodeData>
+                      <AbstractNodeData Name="ft_money" ActionTag="602813184" Tag="650" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="36.5681" RightMargin="39.4319" TopMargin="24.5322" BottomMargin="67.4678" FontSize="28" LabelText="999999" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="84.0000" Y="28.0000" />
+                        <AnchorPoint ScaleX="0.7511" ScaleY="0.4450" />
+                        <Position X="99.6605" Y="79.9278" />
+                        <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                        <CColor A="255" R="255" G="255" B="255" />
+                        <PrePosition X="0.6229" Y="0.6661" />
+                        <PreSize X="0.5250" Y="0.2333" />
+                        <FontResource Type="Default" Path="" Plist="" />
+                        <OutlineColor A="255" R="255" G="0" B="0" />
+                        <ShadowColor A="255" R="110" G="110" B="110" />
+                      </AbstractNodeData>
+                      <AbstractNodeData Name="Text_3" ActionTag="490889941" VisibleForFrame="False" Tag="62" IconVisible="False" LeftMargin="58.7217" RightMargin="53.2783" TopMargin="72.6156" BottomMargin="23.3844" FontSize="24" LabelText="房卡" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
                         <Size X="48.0000" Y="24.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="82.7217" Y="35.3844" />
@@ -26,24 +48,24 @@
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="Sprite_2" ActionTag="1245366010" Tag="276" IconVisible="False" LeftMargin="59.7492" RightMargin="56.2508" TopMargin="70.8525" BottomMargin="18.1475" ctype="SpriteObjectData">
+                      <AbstractNodeData Name="Sprite_2" ActionTag="1245366010" Tag="276" IconVisible="False" LeftMargin="-22.6432" RightMargin="138.6432" TopMargin="66.5139" BottomMargin="22.4861" ctype="SpriteObjectData">
                         <Size X="44.0000" Y="31.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="81.7492" Y="33.6475" />
+                        <Position X="-0.6432" Y="37.9861" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5109" Y="0.2804" />
+                        <PrePosition X="-0.0040" Y="0.3166" />
                         <PreSize X="0.2750" Y="0.2583" />
                         <FileData Type="Normal" Path="userCenter/Dicon_fk.png" Plist="" />
                         <BlendFunc Src="1" Dst="771" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="22.5601" RightMargin="17.4399" TopMargin="33.3273" BottomMargin="62.6727" IsCustomSize="True" FontSize="28" LabelText="999999张" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="36.5679" RightMargin="3.4321" TopMargin="66.9337" BottomMargin="29.0663" IsCustomSize="True" FontSize="28" LabelText="999999张" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="120.0000" Y="24.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="82.5601" Y="74.6727" />
+                        <Position X="96.5679" Y="41.0663" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.5160" Y="0.6223" />
+                        <PrePosition X="0.6035" Y="0.3422" />
                         <PreSize X="0.7500" Y="0.2000" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
@@ -105,7 +127,7 @@
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition X="0.1656" Y="0.4900" />
                     <PreSize X="0.0719" Y="0.2300" />
-                    <FileData Type="Normal" Path="userCenter/Dicon_player.png" Plist="" />
+                    <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
                     <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
                   <AbstractNodeData Name="Panel_2" ActionTag="250970904" Tag="57" IconVisible="False" LeftMargin="31.4655" RightMargin="458.5345" TopMargin="126.4009" BottomMargin="23.5991" TouchEnable="True" ClipAble="False" BackColorAlpha="177" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
