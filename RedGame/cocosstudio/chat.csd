@@ -9,7 +9,7 @@
           <AbstractNodeData Name="Base" ActionTag="-2054280598" Tag="46" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="Top" ActionTag="1270870636" Tag="47" IconVisible="False" TopMargin="-22.0000" BottomMargin="992.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="20" BottomEage="20" Scale9OriginX="204" Scale9OriginY="20" Scale9Width="232" Scale9Height="74" ctype="PanelObjectData">
+              <AbstractNodeData Name="Top" ActionTag="1270870636" Tag="47" IconVisible="False" BottomMargin="970.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="20" BottomEage="20" Scale9OriginX="204" Scale9OriginY="20" Scale9Width="232" Scale9Height="74" ctype="PanelObjectData">
                 <Size X="640.0000" Y="68.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_back" ActionTag="1021980510" Tag="48" IconVisible="False" LeftMargin="16.4277" RightMargin="593.5723" TopMargin="25.5196" BottomMargin="7.4804" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="5" RightEage="5" TopEage="11" BottomEage="11" Scale9OriginX="5" Scale9OriginY="11" Scale9Width="20" Scale9Height="13" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -40,10 +40,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />
-                <Position Y="1060.0000" />
+                <Position Y="1038.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="1.0212" />
+                <PrePosition Y="1.0000" />
                 <PreSize X="1.0000" Y="0.0655" />
                 <FileData Type="Normal" Path="top/gameTop.png" Plist="" />
                 <SingleColor A="255" R="255" G="255" B="255" />
@@ -51,7 +51,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="955.9127" BottomMargin="0.0874" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="27" BottomEage="27" Scale9OriginX="211" Scale9OriginY="27" Scale9Width="218" Scale9Height="28" ctype="PanelObjectData">
+              <AbstractNodeData Name="Bottom" ActionTag="-1505935790" Tag="51" IconVisible="False" TopMargin="955.9126" BottomMargin="0.0874" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="27" BottomEage="27" Scale9OriginX="211" Scale9OriginY="27" Scale9Width="218" Scale9Height="28" ctype="PanelObjectData">
                 <Size X="640.0000" Y="82.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_red" ActionTag="1558474796" Tag="52" IconVisible="False" LeftMargin="201.5826" RightMargin="250.4174" TopMargin="0.3292" BottomMargin="1.6708" TouchEnable="True" FontSize="36" ButtonText="发送红包" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="158" Scale9Height="58" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -108,14 +108,14 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="46.0000" BottomMargin="80.0000" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="266" BottomEage="266" Scale9OriginX="211" Scale9OriginY="266" Scale9Width="218" Scale9Height="276" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
-                <Size X="640.0000" Y="912.0000" />
+              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" LeftMargin="-0.0001" RightMargin="0.0001" TopMargin="64.9000" BottomMargin="81.1000" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="266" BottomEage="266" Scale9OriginX="211" Scale9OriginY="266" Scale9Width="218" Scale9Height="276" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+                <Size X="640.0000" Y="892.0000" />
                 <AnchorPoint ScaleY="1.0000" />
-                <Position Y="992.0000" />
+                <Position X="-0.0001" Y="973.1000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.9557" />
-                <PreSize X="1.0000" Y="0.8786" />
+                <PrePosition X="0.0000" Y="0.9375" />
+                <PreSize X="1.0000" Y="0.8593" />
                 <FileData Type="Normal" Path="backGround/saolei.jpg" Plist="" />
                 <SingleColor A="255" R="150" G="150" B="255" />
                 <FirstColor A="255" R="150" G="150" B="255" />
@@ -134,14 +134,14 @@
             <EndColor A="255" R="255" G="255" B="255" />
             <ColorVector ScaleY="1.0000" />
           </AbstractNodeData>
-          <AbstractNodeData Name="mian_icon_gold_1" ActionTag="1895394059" Tag="273" IconVisible="False" LeftMargin="12.8806" RightMargin="599.1194" TopMargin="979.8303" BottomMargin="31.1697" ctype="SpriteObjectData">
+          <AbstractNodeData Name="mian_icon_gold_1" ActionTag="1895394059" Tag="273" IconVisible="False" LeftMargin="-66.6194" RightMargin="519.6194" TopMargin="890.3303" BottomMargin="-58.3303" ctype="SpriteObjectData">
             <Size X="187.0000" Y="206.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="26.8806" Y="44.6697" />
             <Scale ScaleX="0.1500" ScaleY="0.1500" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0420" Y="0.0430" />
-            <PreSize X="0.0437" Y="0.0260" />
+            <PreSize X="0.2922" Y="0.1985" />
             <FileData Type="Normal" Path="top/money.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>

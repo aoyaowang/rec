@@ -84,6 +84,7 @@
         <Folder Name="top">
           <Image Name="bottom.png" />
           <Image Name="fangka.png" />
+          <Image Name="gameTop.png" />
           <Image Name="gonggao.png" />
           <Image Name="gonggao2.png" />
           <Image Name="home.png" />
@@ -97,9 +98,9 @@
           <Image Name="setting.png" />
           <Image Name="setting2.png" />
           <Image Name="TopBar.png" />
-          <Image Name="gameTop.png" />
         </Folder>
         <Folder Name="userCenter">
+          <Image Name="backBtn.png" />
           <Image Name="bg.png" />
           <Image Name="Dicon.png" />
           <Image Name="Dicon_0.png" />
@@ -127,13 +128,12 @@
           <Image Name="licon_gonggao.png" />
           <Image Name="licon_shop.png" />
           <Image Name="licon_userCenter.png" />
+          <Image Name="logBtn.png" />
           <Image Name="redBag_bg.png" />
           <Image Name="redBag_disi.png" />
           <Image Name="redBag_icon_baiD.png" />
-          <Image Name="Top_icon.png" />
-          <Image Name="logBtn.png" />
           <Image Name="sendBtn.png" />
-          <Image Name="backBtn.png" />
+          <Image Name="Top_icon.png" />
         </Folder>
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />
