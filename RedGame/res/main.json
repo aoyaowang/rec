@@ -119,13 +119,13 @@
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 26,
                 "Scale9Width": 218,
-                "Scale9Height": 62,
+                "Scale9Height": 48,
                 "AnchorPoint": {
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": 0.0,
-                  "Y": 1060.66
+                  "X": -0.0567,
+                  "Y": 1038.2485
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -134,15 +134,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 1.0218
+                  "X": -0.0001,
+                  "Y": 1.0002
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.1098
+                  "Y": 0.0963
                 },
-                "TopMargin": -22.66,
-                "BottomMargin": 946.66,
+                "LeftMargin": -0.0567,
+                "RightMargin": 0.0567,
+                "TopMargin": -0.2485,
+                "BottomMargin": 938.2485,
                 "Tag": 12,
                 "Children": [
                   {
@@ -179,13 +181,13 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.0,
-                      "Y": -1.1646
+                      "Y": -1.3276
                     },
                     "PreSize": {
                       "X": 1.0,
-                      "Y": 1.0614
+                      "Y": 1.21
                     },
-                    "TopMargin": 125.76,
+                    "TopMargin": 111.76,
                     "BottomMargin": -132.76,
                     "Tag": 17,
                     "ActionTag": -1513563898,
@@ -197,7 +199,7 @@
                     "ctype": "PanelObjectData"
                   },
                   {
-                    "FontSize": 20,
+                    "FontSize": 28,
                     "LabelText": "9999999999",
                     "OutlineColor": {
                       "G": 0,
@@ -215,37 +217,33 @@
                       "ScaleY": 0.445
                     },
                     "Position": {
-                      "X": 540.8013,
+                      "X": 570.8453,
                       "Y": -93.898
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {
-                      "R": 0,
-                      "G": 0,
-                      "B": 0
-                    },
+                    "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.845,
-                      "Y": -0.8237
+                      "X": 0.8919,
+                      "Y": -0.939
                     },
                     "PreSize": {
-                      "X": 0.1563,
-                      "Y": 0.1754
+                      "X": 0.2188,
+                      "Y": 0.28
                     },
                     "HorizontalEdge": "LeftEdge",
                     "LeftMargin": 465.6913,
-                    "RightMargin": 74.3087,
-                    "TopMargin": 196.798,
-                    "BottomMargin": -102.798,
+                    "RightMargin": 34.3087,
+                    "TopMargin": 178.358,
+                    "BottomMargin": -106.358,
                     "Tag": 20,
                     "ActionTag": -1429989516,
                     "Size": {
-                      "X": 100.0,
-                      "Y": 20.0
+                      "X": 140.0,
+                      "Y": 28.0
                     },
                     "Name": "ft_fangka",
                     "ctype": "TextObjectData"
@@ -276,15 +274,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.669,
-                      "Y": -0.8279
+                      "Y": -0.9438
                     },
                     "PreSize": {
                       "X": 0.0688,
-                      "Y": 0.2719
+                      "Y": 0.31
                     },
                     "LeftMargin": 406.1713,
                     "RightMargin": 189.8287,
-                    "TopMargin": 192.8826,
+                    "TopMargin": 178.8826,
                     "BottomMargin": -109.8826,
                     "Tag": 18,
                     "ActionTag": 2076900639,
@@ -296,7 +294,7 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 20,
+                    "FontSize": 28,
                     "LabelText": "Text Label",
                     "OutlineColor": {
                       "G": 0,
@@ -314,49 +312,45 @@
                       "ScaleY": 1.0
                     },
                     "Position": {
-                      "X": 168.7039,
+                      "X": 188.7039,
                       "Y": -32.2991
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {
-                      "R": 0,
-                      "G": 0,
-                      "B": 0
-                    },
+                    "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.2636,
-                      "Y": -0.2833
+                      "X": 0.2948,
+                      "Y": -0.323
                     },
                     "PreSize": {
-                      "X": 0.1563,
-                      "Y": 0.1754
+                      "X": 0.2188,
+                      "Y": 0.28
                     },
                     "HorizontalEdge": "LeftEdge",
                     "LeftMargin": 118.7039,
-                    "RightMargin": 421.2961,
-                    "TopMargin": 146.2991,
-                    "BottomMargin": -52.2991,
+                    "RightMargin": 381.2961,
+                    "TopMargin": 132.2991,
+                    "BottomMargin": -60.2991,
                     "Tag": 17,
                     "ActionTag": -956184723,
                     "Size": {
-                      "X": 100.0,
-                      "Y": 20.0
+                      "X": 140.0,
+                      "Y": 28.0
                     },
                     "Name": "ft_name",
                     "ctype": "TextObjectData"
                   },
                   {
                     "FileData": {
-                      "Type": "Default",
-                      "Path": "Default/Sprite.png",
+                      "Type": "Normal",
+                      "Path": "userCenter/icon_playerd.png",
                       "Plist": ""
                     },
                     "BlendFunc": {
-                      "Src": 1,
+                      "Src": 770,
                       "Dst": 771
                     },
                     "AnchorPoint": {
@@ -368,28 +362,28 @@
                       "Y": -69.9681
                     },
                     "Scale": {
-                      "ScaleX": 1.39,
-                      "ScaleY": 1.39
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
                     },
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.0983,
-                      "Y": -0.6138
+                      "Y": -0.6997
                     },
                     "PreSize": {
-                      "X": 0.0719,
-                      "Y": 0.4035
+                      "X": 0.1328,
+                      "Y": 0.84
                     },
-                    "LeftMargin": 39.8826,
-                    "RightMargin": 554.1174,
-                    "TopMargin": 160.9681,
-                    "BottomMargin": -92.9681,
+                    "LeftMargin": 20.3826,
+                    "RightMargin": 534.6174,
+                    "TopMargin": 127.9681,
+                    "BottomMargin": -111.9681,
                     "Tag": 26,
                     "ActionTag": -643626798,
                     "Size": {
-                      "X": 46.0,
-                      "Y": 46.0
+                      "X": 85.0,
+                      "Y": 84.0
                     },
                     "Name": "img_head",
                     "ctype": "SpriteObjectData"
@@ -420,15 +414,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.2,
-                      "Y": -0.7975
+                      "Y": -0.9092
                     },
                     "PreSize": {
                       "X": 0.2922,
-                      "Y": 1.807
+                      "Y": 2.06
                     },
                     "LeftMargin": 34.5057,
                     "RightMargin": 418.4943,
-                    "TopMargin": 101.917,
+                    "TopMargin": 87.917,
                     "BottomMargin": -193.917,
                     "Tag": 18,
                     "ActionTag": -2105604429,
@@ -440,8 +434,13 @@
                     "ctype": "ImageViewObjectData"
                   },
                   {
-                    "FontSize": 20,
+                    "FontSize": 28,
                     "LabelText": "9999999999",
+                    "FontResource": {
+                      "Type": "Default",
+                      "Path": "",
+                      "Plist": ""
+                    },
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -458,37 +457,33 @@
                       "ScaleY": 0.445
                     },
                     "Position": {
-                      "X": 223.7856,
+                      "X": 253.8296,
                       "Y": -91.7531
                     },
                     "Scale": {
                       "ScaleX": 1.0,
                       "ScaleY": 1.0
                     },
-                    "CColor": {
-                      "R": 0,
-                      "G": 0,
-                      "B": 0
-                    },
+                    "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3497,
-                      "Y": -0.8049
+                      "X": 0.3966,
+                      "Y": -0.9175
                     },
                     "PreSize": {
-                      "X": 0.1563,
-                      "Y": 0.1754
+                      "X": 0.2188,
+                      "Y": 0.28
                     },
                     "HorizontalEdge": "LeftEdge",
                     "LeftMargin": 148.6756,
-                    "RightMargin": 391.3244,
-                    "TopMargin": 194.6531,
-                    "BottomMargin": -100.6531,
+                    "RightMargin": 351.3244,
+                    "TopMargin": 176.2131,
+                    "BottomMargin": -104.2131,
                     "Tag": 19,
                     "ActionTag": -957674105,
                     "Size": {
-                      "X": 100.0,
-                      "Y": 20.0
+                      "X": 140.0,
+                      "Y": 28.0
                     },
                     "Name": "ft_money",
                     "ctype": "TextObjectData"
@@ -497,7 +492,7 @@
                 "ActionTag": -2015320450,
                 "Size": {
                   "X": 640.0,
-                  "Y": 114.0
+                  "Y": 100.0
                 },
                 "Name": "Panel_Top",
                 "ctype": "ImageViewObjectData"
@@ -1006,8 +1001,8 @@
                 "Scale9Height": 1,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 0.0,
-                  "Y": 3.0
+                  "X": -3.6789,
+                  "Y": 4.8395
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1016,15 +1011,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.0029
+                  "X": -0.0057,
+                  "Y": 0.0047
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 1.0
                 },
-                "TopMargin": -3.0,
-                "BottomMargin": 3.0,
+                "LeftMargin": -3.6789,
+                "RightMargin": 3.6788,
+                "TopMargin": -4.8395,
+                "BottomMargin": 4.8395,
                 "Tag": 50,
                 "ActionTag": -1093552615,
                 "Size": {
@@ -1053,7 +1050,6 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Sprite.png",
         "res/background.png",
         "top/bottom.png",
         "top/fangka.png",
@@ -1069,7 +1065,8 @@
         "top/playerbar.png",
         "top/setting.png",
         "top/setting2.png",
-        "top/TopBar.png"
+        "top/TopBar.png",
+        "userCenter/icon_playerd.png"
       ],
       "ctype": "GameFileData"
     }

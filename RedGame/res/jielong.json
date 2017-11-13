@@ -46,8 +46,9 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 1.0
+              "Y": 0.9229
             },
+            "TopMargin": 80.0,
             "Tag": 46,
             "Children": [
               {
@@ -79,7 +80,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 889.0006
+                  "Y": 970.0001
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -89,14 +90,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.928
+                  "Y": 1.0125
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.071
                 },
-                "TopMargin": 0.9994,
-                "BottomMargin": 889.0006,
+                "TopMargin": -80.0001,
+                "BottomMargin": 970.0001,
                 "Tag": 47,
                 "Children": [
                   {
@@ -457,7 +458,7 @@
                     },
                     "Position": {
                       "X": 552.7719,
-                      "Y": 12.4559
+                      "Y": 13.4559
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -467,7 +468,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.8637,
-                      "Y": 0.1519
+                      "Y": 0.1641
                     },
                     "PreSize": {
                       "X": 0.2094,
@@ -475,8 +476,8 @@
                     },
                     "LeftMargin": 485.7719,
                     "RightMargin": 20.2281,
-                    "TopMargin": 14.5441,
-                    "BottomMargin": 12.4559,
+                    "TopMargin": 13.5441,
+                    "BottomMargin": 13.4559,
                     "Tag": 53,
                     "ActionTag": 1662215814,
                     "Size": {
@@ -488,7 +489,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 28,
                     "LabelText": "99999999\n",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -591,17 +592,17 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.8434
+                  "Y": 0.9269
                 },
                 "LeftMargin": -1.6982,
                 "RightMargin": 1.6982,
-                "TopMargin": 68.0001,
+                "TopMargin": -11.9999,
                 "BottomMargin": 81.9999,
                 "Tag": 56,
                 "ActionTag": -844951333,
                 "Size": {
                   "X": 640.0,
-                  "Y": 808.0
+                  "Y": 888.0
                 },
                 "Name": "chatview",
                 "ctype": "ListViewObjectData"
@@ -641,15 +642,15 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0283,
-              "Y": 0.0485
+              "Y": 0.0448
             },
             "PreSize": {
-              "X": 0.0437,
-              "Y": 0.0282
+              "X": 0.2922,
+              "Y": 0.1985
             },
             "LeftMargin": -75.3772,
-            "RightMargin": 528.3773,
-            "TopMargin": 808.5495,
+            "RightMargin": 528.3772,
+            "TopMargin": 888.5495,
             "BottomMargin": -56.5495,
             "Tag": 274,
             "ActionTag": -2028933253,
@@ -663,7 +664,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 958.0
+          "Y": 1038.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"
