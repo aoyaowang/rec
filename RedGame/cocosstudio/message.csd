@@ -47,13 +47,13 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="tips_top_1" ActionTag="-1714754431" Tag="788" IconVisible="False" LeftMargin="43.4327" RightMargin="20.5673" TopMargin="397.1913" BottomMargin="573.8087" ctype="SpriteObjectData">
+          <AbstractNodeData Name="tips_top_1" ActionTag="-1714754431" Tag="788" IconVisible="False" LeftMargin="44.4327" RightMargin="19.5673" TopMargin="397.1899" BottomMargin="573.8101" ctype="SpriteObjectData">
             <Size X="576.0000" Y="67.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="331.4327" Y="607.3087" />
-            <Scale ScaleX="0.8716" ScaleY="1.0000" />
+            <Position X="332.4327" Y="607.3101" />
+            <Scale ScaleX="0.8688" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5179" Y="0.5851" />
+            <PrePosition X="0.5194" Y="0.5851" />
             <PreSize X="0.9000" Y="0.0645" />
             <FileData Type="Normal" Path="tips/tips_top.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
