@@ -35,12 +35,12 @@ var __httpreq = cc.Class.extend({
                 // }
             }
         }
-        xhr.send();
         this._timeOut = setTimeout(function()
         {
             xhr.abort();
             Client.onMsg(id, {code: 500}, vMap);
         },this.TIMEOUT * 1000,this);
+        xhr.send();
     }
 });
 
