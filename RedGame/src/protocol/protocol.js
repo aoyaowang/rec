@@ -6,6 +6,7 @@ var g_protocol = {
     "wxlogin": "wechat_auth",
     "tokenlogin":"tokenlogin",
     "bill":"bill",
+    "billfangka":"billfangka",
     "getlog": "getlog",
     ///////////SEND_GATE/////////////
     "entergame": "enter",

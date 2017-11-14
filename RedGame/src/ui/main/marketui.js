@@ -9,7 +9,16 @@ var marketUI = cc.Layer.extend({
         this.Widget = l.node;
         this.addChild(this.Widget);
 
-
+        var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_gold6"); // 1FANGKA
+        btn.addClickEventListener(this.goldClick.bind(this));
+        btn.setTag(1);
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_gold7"); // 1FANGKA
+        btn.addClickEventListener(this.goldClick.bind(this));
+        btn.setTag(50);
+        btn = ccui.helper.seekWidgetByName(this.Widget, "btn_gold8"); // 1FANGKA
+        btn.addClickEventListener(this.goldClick.bind(this));
+        btn.setTag(100);
+        
         this.setContentSize(this.Widget.getContentSize());
         this.setAnchorPoint(0, 0);
         return true;
@@ -19,5 +28,9 @@ var marketUI = cc.Layer.extend({
     },
     onExit:function() {
         this._super();
+    },
+    goldClick:function(sender) {
+        var m = sender.getTag();
+
     }
 });

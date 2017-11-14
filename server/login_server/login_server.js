@@ -324,6 +324,48 @@ app.get("/upweb", function(req, res){
     });
 });
 
+app.get("/billfangka", function(req,res){
+    var token = req.query.t;
+    var m = parseInt(req.query.bill);
+    if (token == null || m === null) {
+        return;
+    }
+    m = parseInt(m);
+    if (m < 0 || m > 99999999) {
+        return;
+    }
+    var map = {
+        1: 1,
+        50: 49,
+        100: 95
+    };
+    if (!map[m]) {
+        return;
+    }
+    m = map[m];
+    var t = Token.parse(token, TOKEN_SECRET);
+    var timestamp = Date.parse(new Date()) / 1000;
+    if (timestamp - t.timestamp > enums.TOKEN.TIME) {
+        send(res, {code: enums.CODE.TOKEN_TIMEOUT});
+        return;
+    }
+
+    var uid = t.uid;
+    db.is_uid_exist(uid, function(data){
+        if (!data) {
+            console.error("UID NOT EXIST:" + uid);
+            send(res, {code: enums.CODE.FAILED});
+            return;
+        }
+        if (data.vaild > t.timestamp) {
+            send(res, {code: enums.CODE.TOKEN_TIMEOUT});
+            return;
+        }
+
+        bill(uid, data.openid, m, 2, res);
+    });
+}); 
+
 app.get("/bill", function(req,res){
     var token = req.query.t;
     var m = parseInt(req.query.bill);
@@ -353,11 +395,11 @@ app.get("/bill", function(req,res){
             return;
         }
 
-        bill(uid, data.openid, m, res);
+        bill(uid, data.openid, m, 1, res);
     });
 }); 
 
-function bill(uid, openid, m, cb) {
+function bill(uid, openid, m, type, cb) {
     var timestamp = Date.parse(new Date()) / 1000;
     console.warn("DD!!!!!!!!!!!!:");
     var trade_no = (new Date()).getTime() + randomWord(true, 4, 4);
@@ -367,7 +409,7 @@ function bill(uid, openid, m, cb) {
     map['body'] = "充值";
     map['mch_id'] = "1484859142";
     map['nonce_str'] = randomWord(true, 20, 20);
-    map["notify_url"] = "http://test.obyjd.com:20000/payback";
+    map["notify_url"] = "http://test.obyjd.com:20000/payback" + (type == 1 ? "" : "fk");
     map["openid"] = openid;
     map["out_trade_no"] = trade_no;
     map['spbill_create_ip'] = '127.0.0.1';

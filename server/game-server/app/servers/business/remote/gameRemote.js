@@ -550,6 +550,33 @@ pro.bill = function(uid, billid, fee, next) {
     });
 }
 
+pro.fkbill = function(uid, billid, fee, next) {
+    this.checkUid(uid, function(err,user) {
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+        var map = {
+            1: 1,
+            49: 50,
+            95: 100
+        };
+        var fee = map[fee] || fee;
+        
+        userDao.existBill(billid, function(err, res){
+            if (!!res && res.length > 0) {
+                userDao.updateBill(billid, fee, function(err, res){
+                    user.unlockFangKa(0, fee);
+                    next(null, {code: consts.NOR_CODE.SUC_OK});
+                });
+            } else {
+                next(null, {code: consts.NOR_CODE.FAILED});
+            }
+        });
+
+    });
+}
+
 pro.turnto = function(token, uid, money, next) {
     money = parseInt(money);
     if (!money || money < 0) {

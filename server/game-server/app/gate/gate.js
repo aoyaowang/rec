@@ -161,6 +161,12 @@ exports.start = function(port){
                 payback(body, resultBackText(res));
                 return;
              }
+             else if ("/paybackfk" === urlInfo.pathname)
+             {
+                //console.warn("payback:" + JSON.stringify(body) + "------" + JSON.stringify(reqInfo));
+                paybackfk(body, resultBackText(res));
+                return;
+             }
              else if ("/turnto" === urlInfo.pathname)
              {
                  var t = reqInfo.t;
@@ -327,6 +333,40 @@ function payback(body, cb) {
     var attach = json['attach'];
 
     pomelo.app.rpc.business.gameRemote.bill(null, attach, fee, function(err, res){
+        cb("<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_mg></xml>");
+        return;
+    });
+}
+
+function paybackfk(body, cb) {
+    var json = findAllKey(body);
+    if (!json) {
+        cb("<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[OK]]></return_mg></xml>");
+        return;
+    }
+    if (json['return_code'] != 'SUCCESS') {
+        cb("<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_mg></xml>");
+        return;
+    }
+
+    var allmap = ksort(json);
+    var signPars = '';
+    for (var key in allmap) {
+        if (allmap[key] != "" && key != "sign")
+            signPars += key + '=' + allmap[key] + "&"; 
+    }
+    signPars += "key=" + "fewafu23uNUInw1891nuiNu23895Amie";
+    var md5sign = md5(signPars);
+
+    if (md5sign.toUpperCase() == allmap['sign'].toUpperCase()) {
+        cb("<xml><return_code><![CDATA[FAIL]]></return_code><return_msg><![CDATA[OK]]></return_mg></xml>");
+        return;
+    }
+
+    var fee = parseInt(json['cash_fee'])/100;
+    var attach = json['attach'];
+
+    pomelo.app.rpc.business.gameRemote.fkbill(null, attach, fee, function(err, res){
         cb("<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[OK]]></return_mg></xml>");
         return;
     });
