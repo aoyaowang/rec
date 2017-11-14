@@ -159,10 +159,10 @@ var GSLRoom = GBaseRoom.extend({
         //         this.PlayerQiang(this.m_Players[key].Info);
         //     }
         // }
-        GRobotMgr.Instance().onTimer(this);
         if (timestamp - this.m_BeginTime >= 60) {
             this.GameOver();
         }
+        GRobotMgr.Instance().onTimer(this);        
     },
     GameOver:function(){
         this.m_bOver = true;

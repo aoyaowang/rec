@@ -245,10 +245,10 @@ var G28Room = GBaseRoom.extend({
 
         var timestamp = Date.parse(new Date()) / 1000;
         
-        GRobotMgr.Instance().onTimer(this);
         if (timestamp - this.m_BeginTime > 60) {
             this.GameOver();
         }
+        GRobotMgr.Instance().onTimer(this);
     },
     GameOver:function(){
         this.m_bOver = true;
