@@ -275,6 +275,17 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
+              <AbstractNodeData Name="gameTop_1" ActionTag="1903235461" Tag="283" IconVisible="False" TopMargin="-47.7395" BottomMargin="971.7395" ctype="SpriteObjectData">
+                <Size X="640.0000" Y="114.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position Y="1028.7395" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition Y="0.9911" />
+                <PreSize X="1.0000" Y="0.1098" />
+                <FileData Type="Normal" Path="top/gameTop.png" Plist="" />
+                <BlendFunc Src="1" Dst="771" />
+              </AbstractNodeData>
               <AbstractNodeData Name="ft_title" ActionTag="-22601065" Tag="39" IconVisible="False" LeftMargin="264.2842" RightMargin="267.7158" TopMargin="8.2062" BottomMargin="993.7938" FontSize="36" LabelText="发红包" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="108.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

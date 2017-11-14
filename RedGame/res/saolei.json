@@ -1131,6 +1131,48 @@
                 "ctype": "ListViewObjectData"
               },
               {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "top/gameTop.png",
+                  "Plist": ""
+                },
+                "BlendFunc": {
+                  "Src": 1,
+                  "Dst": 771
+                },
+                "AnchorPoint": {
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 0.0,
+                  "Y": 1028.7395
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.9911
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.1098
+                },
+                "TopMargin": -47.7395,
+                "BottomMargin": 971.7395,
+                "Tag": 283,
+                "ActionTag": 1903235461,
+                "Size": {
+                  "X": 640.0,
+                  "Y": 114.0
+                },
+                "Name": "gameTop_1",
+                "ctype": "SpriteObjectData"
+              },
+              {
                 "FontSize": 36,
                 "LabelText": "发红包",
                 "OutlineColor": {
@@ -1273,6 +1315,7 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
+        "top/gameTop.png",
         "userCenter/Dicon_back.png",
         "userCenter/redBag_bg.png",
         "userCenter/redBag_disi.png",

@@ -18,7 +18,7 @@
             "ClipAble": true,
             "FileData": {
               "Type": "Normal",
-              "Path": "userCenter/Top_icon.png",
+              "Path": "top/gameTop.png",
               "Plist": ""
             },
             "ComboBoxIndex": 1,
@@ -227,14 +227,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.4745
+                  "Y": 0.7628
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "TopMargin": 243.0,
-                "BottomMargin": 400.0,
+                "BottomMargin": 643.0,
                 "Tag": 75,
                 "Children": [
                   {
@@ -397,14 +396,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.2372
+                  "Y": 0.5255
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "TopMargin": 443.0,
-                "BottomMargin": 200.0,
+                "TopMargin": 200.0,
+                "BottomMargin": 443.0,
                 "Tag": 78,
                 "Children": [
                   {
@@ -566,13 +565,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": 0.2883
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "TopMargin": 643.0,
+                "TopMargin": 400.0,
+                "BottomMargin": 243.0,
                 "Tag": 81,
                 "Children": [
                   {
@@ -720,9 +720,9 @@
         "room/room_chuji.png",
         "room/room_gaoji.png",
         "room/room_zhongji.png",
+        "top/gameTop.png",
         "userCenter/backBtn.png",
-        "userCenter/bg.png",
-        "userCenter/Top_icon.png"
+        "userCenter/bg.png"
       ],
       "ctype": "GameFileData"
     }
