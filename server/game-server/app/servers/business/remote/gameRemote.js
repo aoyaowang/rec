@@ -159,7 +159,7 @@ pro.getRooms = function(token, id, type, next) {
         hall.playerEnter(user, type);
         next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
 
-        if (id == 1&&this.m_hall[1].m_CurRoom[coin])        
+        if (id == 1&&this.m_hall[1].m_CurRoom[type])        
             user.addMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: this.m_hall[1].m_CurRoom[type]});
     }.bind(this))
 }
