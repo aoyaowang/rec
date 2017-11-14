@@ -90,11 +90,11 @@
           <Image Name="shopFk_icon_laba.png" />
         </Folder>
         <Folder Name="tips">
+          <Image Name="btn_sure.png" />
           <Image Name="tips_colse.png" />
           <Image Name="tips_di.png" />
           <Image Name="tips_no.png" />
           <Image Name="tips_top.png" />
-          <Image Name="btn_sure.png" />
         </Folder>
         <Folder Name="top">
           <Image Name="bottom.png" />

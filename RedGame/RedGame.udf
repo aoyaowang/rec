@@ -17,8 +17,8 @@
         <AndroidVersion Value="android-21" />
         <iOS_Target Value="RedGame-mobile" />
         <iOS_BundleID Value="" />
-        <Platform Value="None" />
-        <RunPlatform Value="None" />
+        <Platform Value="Web" />
+        <RunPlatform Value="Windows" />
         <FrameworkVersion Value="cocos2d-x-3.10" />
         <IsDebugKeystore Value="True" />
         <KeystorePassword Value="" />
@@ -26,6 +26,22 @@
         <KeystoreAliasPassword Value="" />
         <EnableSourceMap Value="False" />
         <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="market.csd" />
+          <FilePathData Path="marketPage.csd" />
+          <FilePathData Path="reddetail.csd" />
+          <FilePathData Path="redopen.csd" />
+          <FilePathData Path="redqiang.csd" />
+          <FilePathData Path="main.csd" />
+          <FilePathData Path="rooms.csd" />
+          <FilePathData Path="saolei.csd" />
+          <FilePathData Path="setting.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="setting.csd" />
       </Value>
     </Item>
   </Properties>
