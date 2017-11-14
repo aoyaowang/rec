@@ -1,7 +1,7 @@
 /**
  * Created by hasee on 2017-10-12.
  */
-var DEBUG_MODE = 1;
+var DEBUG_MODE = 0;
 
 var Nlog = function() {
     if (DEBUG_MODE) {
@@ -9,9 +9,7 @@ var Nlog = function() {
     }
 }
 
-var Xlog = function() {
-    console.log.apply(console.log, arguments);
-};
+var Xlog = console.log;
 
 ccui.Text.prototype.setStringAuto = function(str) {
     return function() {
