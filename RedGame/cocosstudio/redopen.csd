@@ -9,17 +9,17 @@
           <AbstractNodeData Name="Panel_1" ActionTag="-1026360053" Tag="33" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
-              <AbstractNodeData Name="ft_money" ActionTag="1148228142" Tag="38" IconVisible="False" LeftMargin="246.7390" RightMargin="249.2610" TopMargin="368.2795" BottomMargin="597.7205" FontSize="72" LabelText="0.00" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="144.0000" Y="72.0000" />
+              <AbstractNodeData Name="ft_money" ActionTag="1148228142" Tag="38" IconVisible="False" LeftMargin="210.7390" RightMargin="213.2610" TopMargin="368.2795" BottomMargin="597.7205" FontSize="72" LabelText="000.00" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="216.0000" Y="72.0000" />
                 <Children>
-                  <AbstractNodeData Name="Text_3" ActionTag="1075203524" Tag="39" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="150.8976" RightMargin="-30.8976" TopMargin="37.0072" BottomMargin="10.9928" FontSize="24" LabelText="元" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="Text_3" ActionTag="1075203524" Tag="39" IconVisible="False" PositionPercentXEnabled="True" LeftMargin="226.3464" RightMargin="-34.3464" TopMargin="37.0072" BottomMargin="10.9928" FontSize="24" LabelText="元" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="24.0000" Y="24.0000" />
                     <AnchorPoint ScaleY="0.5000" />
-                    <Position X="150.8976" Y="22.9928" />
+                    <Position X="226.3464" Y="22.9928" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="0" G="0" B="0" />
                     <PrePosition X="1.0479" Y="0.3193" />
-                    <PreSize X="0.1667" Y="0.3333" />
+                    <PreSize X="0.1111" Y="0.3333" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -29,7 +29,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="0" G="0" B="0" />
                 <PrePosition X="0.4980" Y="0.6105" />
-                <PreSize X="0.2250" Y="0.0694" />
+                <PreSize X="0.3375" Y="0.0694" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

@@ -59,7 +59,7 @@ cc.game.onStart = function(){
     cc.view.adjustViewPort(true);
     //Game.ApplicationInit();
     cc.view.setDesignResolutionSize(640, 1038, cc.ResolutionPolicy.FIXED_HEIGHT);
-
+    console.log("loadjsssss")
     cc.loader.loadJs("src/app.js");
 };
 cc.game.run();

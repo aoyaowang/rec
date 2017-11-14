@@ -52,7 +52,7 @@ var reddetailUI = ccui.Widget.extend({
         this.m_ft_name.setString(this.m_red.owner.gamename == "" ? this.m_red.owner.nickname:this.m_red.owner.gamename+
         "的红包");
         if (this.m_type == 1)
-            this.m_ft_ext.setString(red.coin + "金额/雷" + red.bomb + "/" + (this.m_num == 7 ? "1.5" : "1.0") + "倍");
+            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (this.m_num == 7 ? "1.5" : "1.0") + "倍");
         else this.m_ft_ext.setVisible(false);
 
         var bfind = false;

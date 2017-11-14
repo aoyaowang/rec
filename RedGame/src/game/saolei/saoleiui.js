@@ -91,7 +91,7 @@ var saoleiUI = ccui.Widget.extend({
         var num = msg.num;
         var bomb = msg.bomb;
         var owner = msg.owner;
-        var red = coin + "金额/雷" + bomb + "/" + (num == 7 ? "1.5" : "1.0") +"倍";
+        var red = coin + "币/雷" + bomb + "/" + (num == 7 ? "1.5" : "1.0") +"倍";
 
         this.m_redlist[msg.RoomID] = {
             coin: coin,

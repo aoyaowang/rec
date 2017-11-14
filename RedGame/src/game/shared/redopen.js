@@ -58,7 +58,7 @@ var redopenUI = ccui.Widget.extend({
                                     "的红包");
 
         if (this.m_type == 1)
-            this.m_ft_ext.setString(red.coin + "金额/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
+            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
         else this.m_ft_ext.setVisible(false);
 
         this.m_ft_money.setString(isNaN(parseInt(money)) ? money : money / 100);
