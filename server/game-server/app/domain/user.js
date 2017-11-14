@@ -100,6 +100,11 @@ module.exports = Core.obserData.extend({
         if (this.data.money < m) return false;
         this.data.money -= m;
         this.data._lockmoney += m;
+
+        var l = parseInt(this.data.money * 100) / 100;
+        this.data.money = l;
+        l = parseInt(this.data._lockmoney * 100) / 100;
+        this.data._lockmoney = l;
         return true;
     },
     unlockMoney:function(m, cm) {
@@ -108,12 +113,22 @@ module.exports = Core.obserData.extend({
         this.data._lockmoney -= m;
 
         this.data.money += cm;
+
+        var l = parseInt(this.data.money * 100) / 100;
+        this.data.money = l;
+        l = parseInt(this.data._lockmoney * 100) / 100;
+        this.data._lockmoney = l;
         this.updateMoney();
     },
     lockFangka:function(f) {
         if (this.data.fangka < f) return false;
         this.data.fangka -= f;
         this.data._lockfangka += f;
+
+        var l = parseInt(this.data.fangka * 100) / 100;
+        this.data.fangka = l;
+        l = parseInt(this.data._lockfangka * 100) / 100;
+        this.data._lockfangka = l;
         return true;
     },
     unlockFangka:function(f, cf) {
@@ -121,6 +136,10 @@ module.exports = Core.obserData.extend({
         this.data.fangka += f;
         this.data._lockfangka -= f;
         this.data.fangka += cf;
+        var l = parseInt(this.data.fangka * 100) / 100;
+        this.data.fangka = l;
+        l = parseInt(this.data._lockfangka * 100) / 100;
+        this.data._lockfangka = l;
         this.updateMoney();
     },
     updateMoney:function() {
