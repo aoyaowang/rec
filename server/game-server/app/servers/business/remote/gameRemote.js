@@ -193,6 +193,7 @@ pro.saoleiType = function(coin) {
                     break;
                 }
             }
+            if (bFind) break;
         }
     }
     if (!bFind) {
