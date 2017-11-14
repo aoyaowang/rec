@@ -6,13 +6,13 @@
       <ObjectData Name="Layer" Tag="70" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="1038.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="-1729379453" Tag="24" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="-1729379453" Tag="24" IconVisible="False" LeftMargin="-0.0001" RightMargin="0.0001" TopMargin="-3.5658" BottomMargin="3.5658" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <AnchorPoint />
-            <Position />
+            <Position X="-0.0001" Y="3.5658" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
+            <PrePosition X="0.0000" Y="0.0034" />
             <PreSize X="1.0000" Y="1.0000" />
             <SingleColor A="255" R="150" G="200" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />
@@ -30,13 +30,13 @@
             <FileData Type="Normal" Path="res/ai9.9.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
-          <AbstractNodeData Name="ai__2" ActionTag="-1235012673" Tag="20" IconVisible="False" LeftMargin="-121.5596" RightMargin="-138.4404" TopMargin="-14.9846" BottomMargin="203.9846" ctype="SpriteObjectData">
+          <AbstractNodeData Name="ai__2" ActionTag="-1235012673" Tag="20" IconVisible="False" LeftMargin="-121.5596" RightMargin="-138.4404" TopMargin="-16.9608" BottomMargin="205.9608" ctype="SpriteObjectData">
             <Size X="900.0000" Y="849.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="328.4404" Y="628.4846" />
+            <Position X="328.4404" Y="630.4608" />
             <Scale ScaleX="0.5000" ScaleY="0.5000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.5132" Y="0.6055" />
+            <PrePosition X="0.5132" Y="0.6074" />
             <PreSize X="1.4063" Y="0.8179" />
             <FileData Type="Normal" Path="res/ai_.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
