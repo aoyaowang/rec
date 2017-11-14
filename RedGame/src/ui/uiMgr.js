@@ -3,7 +3,8 @@
  */
 
 var __uiMgr = cc.Class.extend({
-    mainUI:null
+    mainUI:null,
+    roomUI:null
 });
 
 var uiMgr = new __uiMgr();

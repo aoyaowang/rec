@@ -48,5 +48,6 @@ var hallUI = cc.Layer.extend({
 
         var ui = new roomsUI(type);
         uiMgr.mainUI.m_base.addChild(ui);
+        uiMgr.roomsUI = ui;
     }
 });

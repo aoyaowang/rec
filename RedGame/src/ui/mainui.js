@@ -118,6 +118,11 @@ var mainUI = cc.Layer.extend({
         this.m_sysui.setVisible(index == 2);
         this.m_marketui.setVisible(index == 3);
         this.m_actionui.setVisible(index == 4);
+
+        if (!!uiMgr.roomUI) {
+            uiMgr.roomUI.removeFromParent();
+            uiMgr.roomUI = null;
+        }
     },
     entergame:function(msg) {
         if (msg.code == 0) {
