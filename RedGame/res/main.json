@@ -124,7 +124,7 @@
                   "ScaleY": 1.0
                 },
                 "Position": {
-                  "X": -0.0567,
+                  "X": 0.0,
                   "Y": 1038.2485
                 },
                 "Scale": {
@@ -134,15 +134,13 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": -0.0001,
+                  "X": 0.0,
                   "Y": 1.0002
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.0963
                 },
-                "LeftMargin": -0.0567,
-                "RightMargin": 0.0567,
                 "TopMargin": -0.2485,
                 "BottomMargin": 938.2485,
                 "Tag": 12,
@@ -574,7 +572,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": -4.0
+                  "Y": 0.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -584,14 +582,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": -0.0039
+                  "Y": 0.0
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.1156
                 },
-                "TopMargin": 922.0,
-                "BottomMargin": -4.0,
+                "TopMargin": 918.0,
                 "Tag": 21,
                 "Children": [
                   {

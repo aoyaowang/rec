@@ -22,7 +22,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" LeftMargin="-0.0567" RightMargin="0.0567" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="48" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="48" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_Player" ActionTag="-1513563898" Tag="17" IconVisible="False" TopMargin="111.7600" BottomMargin="-132.7600" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="39" BottomEage="39" Scale9OriginX="211" Scale9OriginY="39" Scale9Width="218" Scale9Height="43" ctype="PanelObjectData">
@@ -106,10 +106,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />
-                <Position X="-0.0567" Y="1038.2485" />
+                <Position Y="1038.2485" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="-0.0001" Y="1.0002" />
+                <PrePosition Y="1.0002" />
                 <PreSize X="1.0000" Y="0.0963" />
                 <FileData Type="Normal" Path="top/TopBar.png" Plist="" />
               </AbstractNodeData>
@@ -126,7 +126,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Bottom" ActionTag="-2035783321" Tag="21" IconVisible="False" TopMargin="922.0000" BottomMargin="-4.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="30" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_Bottom" ActionTag="-2035783321" Tag="21" IconVisible="False" TopMargin="918.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Enable="True" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="30" ctype="PanelObjectData">
                 <Size X="640.0000" Y="120.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_gonggao" ActionTag="-407096345" Tag="22" IconVisible="False" LeftMargin="10.8913" RightMargin="509.1087" TopMargin="1.1120" BottomMargin="-1.1120" TouchEnable="True" FontSize="20" Scale9Enable="True" LeftEage="13" RightEage="15" TopEage="11" BottomEage="12" Scale9OriginX="13" Scale9OriginY="11" Scale9Width="92" Scale9Height="97" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -206,10 +206,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="-4.0000" />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="-0.0039" />
+                <PrePosition />
                 <PreSize X="1.0000" Y="0.1156" />
                 <FileData Type="Normal" Path="top/bottom.png" Plist="" />
                 <SingleColor A="255" R="230" G="230" B="250" />
