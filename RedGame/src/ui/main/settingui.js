@@ -5,6 +5,7 @@ var settingUI = ccui.Widget.extend({
     m_ft_name:null,
     m_img_head:null,
     m_ft_fangka:null,
+    m_ft_money:null,
     m_ft_id:null,
     m_listview: null,
     ctor:function() {
@@ -21,6 +22,7 @@ var settingUI = ccui.Widget.extend({
         this.m_ft_name = ccui.helper.seekWidgetByName(this.Widget, "ft_name");
         this.m_img_head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
         this.m_ft_fangka = ccui.helper.seekWidgetByName(this.Widget, "ft_fangka");
+        this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         this.m_ft_id = ccui.helper.seekWidgetByName(this.Widget, "ft_id");
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_bill");
@@ -60,6 +62,7 @@ var settingUI = ccui.Widget.extend({
         }
         this.m_ft_name.setString(RoleInfo.gamename == "" ? RoleInfo.nickname : RoleInfo.gamename);
         this.m_ft_fangka.setString(RoleInfo.fangka);
+        this.m_ft_money.setString(RoleInfo.money);
         this.m_ft_id.setString(RoleInfo.uid);
     },
     billClick:function() {

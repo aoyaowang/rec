@@ -39,7 +39,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 0.0009,
-              "Y": 600.4888
+              "Y": 843.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -49,16 +49,15 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0,
-              "Y": 0.8896
+              "Y": 0.9183
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.1111
+              "Y": 0.0817
             },
             "LeftMargin": 0.0009,
             "RightMargin": -0.0009,
-            "TopMargin": -0.4888,
-            "BottomMargin": 600.4888,
+            "BottomMargin": 843.0,
             "Tag": 61,
             "ActionTag": 862112144,
             "Size": {
@@ -114,7 +113,7 @@
             },
             "Position": {
               "X": 28.4596,
-              "Y": 643.2537
+              "Y": 873.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -124,16 +123,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0445,
-              "Y": 0.953
+              "Y": 0.951
             },
             "PreSize": {
               "X": 0.0469,
-              "Y": 0.0519
+              "Y": 0.0381
             },
             "LeftMargin": 13.4596,
             "RightMargin": 596.5404,
-            "TopMargin": 14.2463,
-            "BottomMargin": 625.7537,
+            "TopMargin": 27.5,
+            "BottomMargin": 855.5,
             "Tag": 28,
             "ActionTag": -969474759,
             "Size": {
@@ -184,7 +183,7 @@
             },
             "PreSize": {
               "X": 1.0,
-              "Y": 0.8889
+              "Y": 0.9183
             },
             "TopMargin": 75.0,
             "Tag": 72,
@@ -218,7 +217,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 400.0
+                  "Y": 643.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -228,12 +227,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.6667
+                  "Y": 0.4745
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.3333
+                  "Y": 0.2372
                 },
+                "TopMargin": 243.0,
                 "BottomMargin": 400.0,
                 "Tag": 75,
                 "Children": [
@@ -387,7 +387,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 200.0
+                  "Y": 443.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -397,13 +397,13 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.3333
+                  "Y": 0.2372
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.3333
+                  "Y": 0.2372
                 },
-                "TopMargin": 200.0,
+                "TopMargin": 443.0,
                 "BottomMargin": 200.0,
                 "Tag": 78,
                 "Children": [
@@ -556,7 +556,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": 243.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -570,9 +570,9 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.3333
+                  "Y": 0.2372
                 },
-                "TopMargin": 400.0,
+                "TopMargin": 643.0,
                 "Tag": 81,
                 "Children": [
                   {
@@ -702,7 +702,7 @@
             "ActionTag": -2064097753,
             "Size": {
               "X": 640.0,
-              "Y": 600.0
+              "Y": 843.0
             },
             "Name": "ListView_1",
             "ctype": "ListViewObjectData"
@@ -710,7 +710,7 @@
         ],
         "Size": {
           "X": 640.0,
-          "Y": 675.0
+          "Y": 918.0
         },
         "Name": "Layer",
         "ctype": "LayerObjectData"

@@ -106,7 +106,7 @@ var niuniuUI = ccui.Widget.extend({
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
-            var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, this.packetClick.bind(this));
+            var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, "王者牛牛", this.packetClick.bind(this));
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);

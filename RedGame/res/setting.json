@@ -198,6 +198,7 @@
                         "ctype": "ImageViewObjectData"
                       },
                       {
+                        "IsCustomSize": true,
                         "FontSize": 28,
                         "LabelText": "999999",
                         "FontResource": {
@@ -205,7 +206,6 @@
                           "Path": "",
                           "Plist": ""
                         },
-                        "HorizontalAlignmentType": "HT_Center",
                         "VerticalAlignmentType": "VT_Center",
                         "OutlineColor": {
                           "G": 0,
@@ -219,11 +219,10 @@
                         "ShadowOffsetX": 2.0,
                         "ShadowOffsetY": -2.0,
                         "AnchorPoint": {
-                          "ScaleX": 0.7511,
                           "ScaleY": 0.445
                         },
                         "Position": {
-                          "X": 99.6605,
+                          "X": 36.5681,
                           "Y": 79.9278
                         },
                         "Scale": {
@@ -233,22 +232,22 @@
                         "CColor": {},
                         "IconVisible": false,
                         "PrePosition": {
-                          "X": 0.6229,
+                          "X": 0.2286,
                           "Y": 0.6661
                         },
                         "PreSize": {
-                          "X": 0.525,
+                          "X": 0.9375,
                           "Y": 0.2333
                         },
                         "HorizontalEdge": "LeftEdge",
                         "LeftMargin": 36.5681,
-                        "RightMargin": 39.4319,
+                        "RightMargin": -26.5681,
                         "TopMargin": 24.5322,
                         "BottomMargin": 67.4678,
                         "Tag": 650,
                         "ActionTag": 602813184,
                         "Size": {
-                          "X": 84.0,
+                          "X": 150.0,
                           "Y": 28.0
                         },
                         "Name": "ft_money",
@@ -356,8 +355,7 @@
                       {
                         "IsCustomSize": true,
                         "FontSize": 28,
-                        "LabelText": "999999张",
-                        "HorizontalAlignmentType": "HT_Center",
+                        "LabelText": "999999",
                         "OutlineColor": {
                           "G": 0,
                           "B": 0
@@ -1346,15 +1344,15 @@
                       "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Normal.png",
+                      "Type": "Normal",
+                      "Path": "game/28.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 16,
-                    "Scale9Height": 14,
+                    "Scale9Width": 236,
+                    "Scale9Height": 255,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1413,20 +1411,20 @@
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "game/jielong.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Normal.png",
+                      "Type": "Normal",
+                      "Path": "game/jielong.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 16,
-                    "Scale9Height": 14,
+                    "Scale9Width": 238,
+                    "Scale9Height": 254,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1487,20 +1485,20 @@
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "game/niuniu.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Normal.png",
+                      "Type": "Normal",
+                      "Path": "game/niuniu.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 16,
-                    "Scale9Height": 14,
+                    "Scale9Width": 236,
+                    "Scale9Height": 255,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1561,20 +1559,20 @@
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "game/saolei.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Normal.png",
+                      "Type": "Normal",
+                      "Path": "game/saolei.png",
                       "Plist": ""
                     },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 11,
-                    "Scale9Width": 16,
-                    "Scale9Height": 14,
+                    "Scale9Width": 236,
+                    "Scale9Height": 255,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -2003,9 +2001,12 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Normal.png",
         "Default/Button_Press.png",
         "Default/Sprite.png",
+        "game/28.png",
+        "game/jielong.png",
+        "game/niuniu.png",
+        "game/saolei.png",
         "top/money.png",
         "userCenter/bg.png",
         "userCenter/Dicon_0.png",

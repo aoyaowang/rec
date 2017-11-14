@@ -3,7 +3,7 @@
  */
 var chatredUI = ccui.Widget.extend({
     m_cb:null,
-    ctor:function(img, nickname, text, cb) {
+    ctor:function(img, nickname, text, game, cb) {
         this._super();
 
         this.m_cb = cb;
@@ -28,6 +28,8 @@ var chatredUI = ccui.Widget.extend({
         btn.setString(nickname);
         btn = ccui.helper.seekWidgetByName(this.Widget, "ft_text");
         btn.setString(text);
+        btn = ccui.helper.seekWidgetByName(this.Widget, "ft_gameName");
+        btn.setString(game);
 
         btn = ccui.helper.seekWidgetByName(this.Widget, "btn_red");
         btn.addClickEventListener(this.btnClick.bind(this));

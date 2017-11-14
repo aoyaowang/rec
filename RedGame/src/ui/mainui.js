@@ -86,7 +86,7 @@ var mainUI = cc.Layer.extend({
             this.m_Head.setTexture(RoleInfo.img);
             this.m_Head.setTextureRect(cc.rect(0,0,size.width, size.height));
             var msize = this.m_Head.getContentSize();
-            this.m_Head.setScale(Math.min(64/msize.width,64/msize.height) );
+            this.m_Head.setScale(Math.min(100/msize.width,100/msize.height) );
         }
         this.m_ftName.setString(RoleInfo.gamename == "" ? RoleInfo.nickname : RoleInfo.gamename);
         this.m_FangKa.setString(RoleInfo.fangka);

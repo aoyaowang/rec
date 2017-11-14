@@ -25,14 +25,14 @@
                         <PreSize X="1.1688" Y="1.7167" />
                         <FileData Type="Normal" Path="top/money.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_money" ActionTag="602813184" Tag="650" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="36.5681" RightMargin="39.4319" TopMargin="24.5322" BottomMargin="67.4678" FontSize="28" LabelText="999999" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="84.0000" Y="28.0000" />
-                        <AnchorPoint ScaleX="0.7511" ScaleY="0.4450" />
-                        <Position X="99.6605" Y="79.9278" />
+                      <AbstractNodeData Name="ft_money" ActionTag="602813184" Tag="650" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="36.5681" RightMargin="-26.5681" TopMargin="24.5322" BottomMargin="67.4678" IsCustomSize="True" FontSize="28" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="150.0000" Y="28.0000" />
+                        <AnchorPoint ScaleY="0.4450" />
+                        <Position X="36.5681" Y="79.9278" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.6229" Y="0.6661" />
-                        <PreSize X="0.5250" Y="0.2333" />
+                        <PrePosition X="0.2286" Y="0.6661" />
+                        <PreSize X="0.9375" Y="0.2333" />
                         <FontResource Type="Default" Path="" Plist="" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
@@ -59,7 +59,7 @@
                         <FileData Type="Normal" Path="userCenter/Dicon_fk.png" Plist="" />
                         <BlendFunc Src="1" Dst="771" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="36.5679" RightMargin="3.4321" TopMargin="66.9337" BottomMargin="29.0663" IsCustomSize="True" FontSize="28" LabelText="999999张" HorizontalAlignmentType="HT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="36.5679" RightMargin="3.4321" TopMargin="66.9337" BottomMargin="29.0663" IsCustomSize="True" FontSize="28" LabelText="999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                         <Size X="120.0000" Y="24.0000" />
                         <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                         <Position X="96.5679" Y="41.0663" />
@@ -304,7 +304,7 @@
               <AbstractNodeData Name="listview2" CanEdit="False" ActionTag="-1088100917" ZOrder="6" Tag="76" IconVisible="False" TopMargin="490.0000" BottomMargin="278.0000" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="150.0000" />
                 <Children>
-                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" Tag="77" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" Tag="77" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="150.0000" Y="150.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="75.0000" Y="75.0000" />
@@ -315,11 +315,11 @@
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-                    <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/28.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="1" Tag="78" IconVisible="False" LeftMargin="150.0000" RightMargin="340.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="1" Tag="78" IconVisible="False" LeftMargin="150.0000" RightMargin="340.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="254" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="150.0000" Y="150.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="225.0000" Y="75.0000" />
@@ -329,12 +329,12 @@
                     <PreSize X="0.2344" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-                    <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="game/jielong.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/jielong.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="2" Tag="79" IconVisible="False" LeftMargin="300.0000" RightMargin="190.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="2" Tag="79" IconVisible="False" LeftMargin="300.0000" RightMargin="190.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="150.0000" Y="150.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="375.0000" Y="75.0000" />
@@ -344,12 +344,12 @@
                     <PreSize X="0.2344" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-                    <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="game/niuniu.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/niuniu.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="3" Tag="80" IconVisible="False" LeftMargin="450.0000" RightMargin="40.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="3" Tag="80" IconVisible="False" LeftMargin="450.0000" RightMargin="40.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="150.0000" Y="150.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="525.0000" Y="75.0000" />
@@ -359,8 +359,8 @@
                     <PreSize X="0.2344" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Default" Path="Default/Button_Press.png" Plist="" />
-                    <NormalFileData Type="Default" Path="Default/Button_Normal.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/saolei.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>

@@ -1,7 +1,7 @@
 /**
  * Created by A on 2017/10/13.
  */
-var SERVER_IP = "landking.tech";
+var SERVER_IP = "test.obyjd.com";
 
 var TOKEN_SECRET = "IQW*(!!ji!";
 
