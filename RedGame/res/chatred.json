@@ -43,13 +43,13 @@
               "Y": 0.6661
             },
             "PreSize": {
-              "X": 0.1531,
-              "Y": 0.5
+              "X": 0.0719,
+              "Y": 0.23
             },
-            "LeftMargin": 5.5412,
-            "RightMargin": 536.4588,
-            "TopMargin": 16.7897,
-            "BottomMargin": 83.2103,
+            "LeftMargin": 31.5412,
+            "RightMargin": 562.4588,
+            "TopMargin": 43.7897,
+            "BottomMargin": 110.2103,
             "Tag": 63,
             "ActionTag": -1230035229,
             "Size": {
@@ -133,8 +133,8 @@
             "Scale9Enable": true,
             "Scale9OriginX": 15,
             "Scale9OriginY": 11,
-            "Scale9Width": 317,
-            "Scale9Height": 141,
+            "Scale9Width": 330,
+            "Scale9Height": 83,
             "OutlineColor": {
               "G": 0,
               "B": 0
@@ -152,8 +152,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 290.5625,
-              "Y": 85.0221
+              "X": 263.3233,
+              "Y": 115.0363
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -162,21 +162,21 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.454,
-              "Y": 0.4251
+              "X": 0.4114,
+              "Y": 0.5752
             },
             "PreSize": {
               "X": 0.5625,
-              "Y": 0.8
+              "Y": 0.525
             },
-            "LeftMargin": 110.5625,
-            "RightMargin": 169.4375,
-            "TopMargin": 34.9779,
-            "BottomMargin": 5.0221,
+            "LeftMargin": 83.3233,
+            "RightMargin": 196.6767,
+            "TopMargin": 32.4637,
+            "BottomMargin": 62.5363,
             "Tag": 19,
             "Children": [
               {
-                "FontSize": 36,
+                "FontSize": 24,
                 "LabelText": "王者扫雷",
                 "OutlineColor": {
                   "G": 0,
@@ -194,8 +194,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 119.5681,
-                  "Y": 28.4685
+                  "X": 102.8707,
+                  "Y": 14.6162
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -208,22 +208,22 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.3321,
-                  "Y": 0.1779
+                  "X": 0.2858,
+                  "Y": 0.1392
                 },
                 "PreSize": {
-                  "X": 0.4,
-                  "Y": 0.225
+                  "X": 0.2667,
+                  "Y": 0.2286
                 },
-                "LeftMargin": 47.5681,
-                "RightMargin": 168.4319,
-                "TopMargin": 113.5315,
-                "BottomMargin": 10.4685,
+                "LeftMargin": 54.8707,
+                "RightMargin": 209.1293,
+                "TopMargin": 78.3838,
+                "BottomMargin": 2.6162,
                 "Tag": 662,
                 "ActionTag": 469129605,
                 "Size": {
-                  "X": 144.0,
-                  "Y": 36.0
+                  "X": 96.0,
+                  "Y": 24.0
                 },
                 "Name": "ft_gameName",
                 "ctype": "TextObjectData"
@@ -248,8 +248,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 213.1151,
-                  "Y": 114.1731
+                  "X": 207.3439,
+                  "Y": 70.3071
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -258,17 +258,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.592,
-                  "Y": 0.7136
+                  "X": 0.576,
+                  "Y": 0.6696
                 },
                 "PreSize": {
                   "X": 0.65,
-                  "Y": 0.325
+                  "Y": 0.4952
                 },
-                "LeftMargin": 96.1151,
-                "RightMargin": 29.8849,
-                "TopMargin": 19.8269,
-                "BottomMargin": 88.1731,
+                "LeftMargin": 90.3439,
+                "RightMargin": 35.6561,
+                "TopMargin": 8.6929,
+                "BottomMargin": 44.3071,
                 "Tag": 66,
                 "ActionTag": 527777642,
                 "Size": {
@@ -282,7 +282,7 @@
             "ActionTag": -2125043610,
             "Size": {
               "X": 360.0,
-              "Y": 160.0
+              "Y": 105.0
             },
             "Name": "btn_red",
             "ctype": "ButtonObjectData"
@@ -302,8 +302,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 165.4017,
-              "Y": 117.7632
+              "X": 136.543,
+              "Y": 131.6165
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -312,17 +312,17 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.2584,
-              "Y": 0.5888
+              "X": 0.2133,
+              "Y": 0.6581
             },
             "PreSize": {
               "X": 0.0828,
               "Y": 0.33
             },
-            "LeftMargin": 138.9017,
-            "RightMargin": 448.0983,
-            "TopMargin": 49.2368,
-            "BottomMargin": 84.7632,
+            "LeftMargin": 110.043,
+            "RightMargin": 476.957,
+            "TopMargin": 35.3835,
+            "BottomMargin": 98.6165,
             "Tag": 272,
             "ActionTag": -1056777286,
             "Size": {
