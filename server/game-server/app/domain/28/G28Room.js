@@ -118,7 +118,7 @@ var G28Room = GBaseRoom.extend({
         }
         return ret;
     },
-    PlayerQiang:function(user) {
+    PlayerQiang:function(user, qiangtype) {
         var player = this.m_Players[user.uid];
         if (!player || this.m_RedList.length == 0) {
             return false;
