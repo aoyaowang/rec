@@ -69,7 +69,7 @@ var roomsUI = ccui.Widget.extend({
         console.log("OnExit RoomUI");
         Client.removeMap("joinroom", this);
 
-        uiMgr.roomsUI = null;
+        uiMgr.roomUI = null;
     },
     initType2:function() {
         this.m_listview.removeAllChildren();
