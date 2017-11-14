@@ -24,6 +24,7 @@ var mainUI = cc.Layer.extend({
     m_sysBtn:null,
 
     m_game:null,
+    m_base:null,
     ctor:function() {
         this._super();
 
@@ -38,6 +39,7 @@ var mainUI = cc.Layer.extend({
 
         var panel = ccui.helper.seekWidgetByName(this.Widget, "Panel_1");
         var base = ccui.helper.seekWidgetByName(this.Widget, "base");
+        this.m_base = base;
 
         this.m_actionui = new actionUI();
         panel.addChild(this.m_actionui);

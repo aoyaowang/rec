@@ -47,6 +47,6 @@ var hallUI = cc.Layer.extend({
         else if (sender == this.m_game_4) type = 4;
 
         var ui = new roomsUI(type);
-        this.Widget.addChild(ui);
+        uiMgr.mainUI.m_base.addChild(ui);
     }
 });
