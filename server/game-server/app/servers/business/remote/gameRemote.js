@@ -158,6 +158,9 @@ pro.getRooms = function(token, id, type, next) {
         user.HallType = id;
         hall.playerEnter(user, type);
         next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+
+        if (id == 1&&this.m_hall[1].m_CurRoom[coin])        
+            user.addMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: this.m_hall[1].m_CurRoom[type]});
     }.bind(this))
 }
 
@@ -322,6 +325,7 @@ pro.createRoom = function(token, room, next) {
             this.m_hall[1].m_CurRoom[coin] = room2;
             room2.pushMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: room2});
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+
         }
         else if (type == 3) //牛牛
         {

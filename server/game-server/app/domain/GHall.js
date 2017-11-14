@@ -58,9 +58,9 @@ var GHall = Core.obserData.extend({
         this.m_Players[user.uid] = {user: user, type: type};
         this.m_PlayerCount = utils.size(this.m_Players);
 
-        if (this.Type == 1 && this.m_CurRoom[type]) {
-            user.addMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: this.m_CurRoom[type]});
-        }
+        // if (this.Type == 1 && this.m_CurRoom[type]) {
+        //     user.addMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: this.m_CurRoom[type]});
+        // }
     },
     playerLeave:function(user) {
         if (!this.m_Players[user.uid]) return;
