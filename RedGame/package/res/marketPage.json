@@ -1,0 +1,3276 @@
+{
+  "ID": "602bffab-8245-442e-accd-3363a9d6a482",
+  "Version": "3.10.0.0",
+  "Name": "marketPage",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 277,
+        "Children": [
+          {
+            "ClipAble": true,
+            "BackColorAlpha": 102,
+            "SingleColor": {
+              "R": 150,
+              "G": 200
+            },
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9OriginX": -211,
+            "Scale9OriginY": -302,
+            "Scale9Width": 422,
+            "Scale9Height": 604,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": -3.4879,
+              "Y": -2.3254
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": -0.0054,
+              "Y": -0.0033
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "LeftMargin": -3.4879,
+            "RightMargin": 3.4879,
+            "TopMargin": 2.3254,
+            "BottomMargin": -2.3254,
+            "Tag": 278,
+            "Children": [
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 108.275,
+                  "Y": 564.8275
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1692,
+                  "Y": 0.8069
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 18.275,
+                "RightMargin": 441.725,
+                "TopMargin": 20.1725,
+                "BottomMargin": 449.8275,
+                "Tag": 286,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 280,
+                    "ActionTag": 1006993461,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 281,
+                    "ActionTag": -474603352,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 282,
+                    "ActionTag": -166938738,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 283,
+                    "ActionTag": -764481520,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_gold1.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.5333,
+                      "Y": 0.2174
+                    },
+                    "LeftMargin": 41.7774,
+                    "RightMargin": 42.2226,
+                    "TopMargin": 86.7815,
+                    "BottomMargin": 93.2185,
+                    "Tag": 285,
+                    "ActionTag": 491078943,
+                    "Size": {
+                      "X": 96.0,
+                      "Y": 50.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 284,
+                    "ActionTag": 1711649483,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1544910585,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold1",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 323.2604,
+                  "Y": 564.8275
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5051,
+                  "Y": 0.8069
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 233.2604,
+                "RightMargin": 226.7396,
+                "TopMargin": 20.1725,
+                "BottomMargin": 449.8275,
+                "Tag": 287,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 288,
+                    "ActionTag": 1531863876,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 289,
+                    "ActionTag": -785244660,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 290,
+                    "ActionTag": 321252022,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 291,
+                    "ActionTag": -1145532649,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_gold2.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.6056,
+                      "Y": 0.2652
+                    },
+                    "LeftMargin": 35.2774,
+                    "RightMargin": 35.7226,
+                    "TopMargin": 81.2815,
+                    "BottomMargin": 87.7185,
+                    "Tag": 292,
+                    "ActionTag": 2137452889,
+                    "Size": {
+                      "X": 109.0,
+                      "Y": 61.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 293,
+                    "ActionTag": -923094311,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -747460142,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold2",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 538.2505,
+                  "Y": 564.8276
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.841,
+                  "Y": 0.8069
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 448.2505,
+                "RightMargin": 11.7495,
+                "TopMargin": 20.1724,
+                "BottomMargin": 449.8276,
+                "Tag": 294,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 295,
+                    "ActionTag": 1386029499,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 296,
+                    "ActionTag": -2034166449,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 297,
+                    "ActionTag": -492172799,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 298,
+                    "ActionTag": -1154701059,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_gold3.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.6,
+                      "Y": 0.3348
+                    },
+                    "LeftMargin": 35.7774,
+                    "RightMargin": 36.2226,
+                    "TopMargin": 73.2815,
+                    "BottomMargin": 79.7185,
+                    "Tag": 299,
+                    "ActionTag": 1128565243,
+                    "Size": {
+                      "X": 108.0,
+                      "Y": 77.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 300,
+                    "ActionTag": -1141067733,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -233614538,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold3",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 108.2748,
+                  "Y": 292.5304
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1692,
+                  "Y": 0.4179
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 18.2748,
+                "RightMargin": 441.7252,
+                "TopMargin": 292.4696,
+                "BottomMargin": 177.5304,
+                "Tag": 301,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 302,
+                    "ActionTag": 585404309,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 303,
+                    "ActionTag": -106400820,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 304,
+                    "ActionTag": 1670595019,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 305,
+                    "ActionTag": -201909231,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_gold4.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.6722,
+                      "Y": 0.3609
+                    },
+                    "LeftMargin": 29.2774,
+                    "RightMargin": 29.7226,
+                    "TopMargin": 70.2815,
+                    "BottomMargin": 76.7185,
+                    "Tag": 306,
+                    "ActionTag": 1035346824,
+                    "Size": {
+                      "X": 121.0,
+                      "Y": 83.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 307,
+                    "ActionTag": -1467206428,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -132275421,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold4",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 323.2604,
+                  "Y": 292.5304
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5051,
+                  "Y": 0.4179
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 233.2604,
+                "RightMargin": 226.7396,
+                "TopMargin": 292.4696,
+                "BottomMargin": 177.5304,
+                "Tag": 308,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 309,
+                    "ActionTag": -1592565172,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 310,
+                    "ActionTag": 1614630307,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 311,
+                    "ActionTag": 1694323904,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 312,
+                    "ActionTag": -1359465497,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_box.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 95.6007,
+                      "Y": 119.6744
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5311,
+                      "Y": 0.5203
+                    },
+                    "PreSize": {
+                      "X": 0.65,
+                      "Y": 0.3913
+                    },
+                    "LeftMargin": 37.1007,
+                    "RightMargin": 25.8993,
+                    "TopMargin": 65.3256,
+                    "BottomMargin": 74.6744,
+                    "Tag": 313,
+                    "ActionTag": -844618854,
+                    "Size": {
+                      "X": 117.0,
+                      "Y": 90.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_gold0.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 47.5541,
+                      "Y": 92.3697
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.2642,
+                      "Y": 0.4016
+                    },
+                    "PreSize": {
+                      "X": 0.4833,
+                      "Y": 0.2957
+                    },
+                    "LeftMargin": 4.0541,
+                    "RightMargin": 88.9459,
+                    "TopMargin": 103.6303,
+                    "BottomMargin": 58.3697,
+                    "Tag": 314,
+                    "ActionTag": -353516690,
+                    "Size": {
+                      "X": 87.0,
+                      "Y": 68.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 1121523445,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold5",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 538.2505,
+                  "Y": 292.9248
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.841,
+                  "Y": 0.4185
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 448.2505,
+                "RightMargin": 11.7495,
+                "TopMargin": 292.0752,
+                "BottomMargin": 177.9248,
+                "Tag": 315,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 316,
+                    "ActionTag": -947651481,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 317,
+                    "ActionTag": -672266755,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 318,
+                    "ActionTag": -1511365098,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 319,
+                    "ActionTag": 252289161,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shopFk_icon_fk1.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.5722,
+                      "Y": 0.3174
+                    },
+                    "LeftMargin": 38.2774,
+                    "RightMargin": 38.7226,
+                    "TopMargin": 75.2815,
+                    "BottomMargin": 81.7185,
+                    "Tag": 320,
+                    "ActionTag": -134309654,
+                    "Size": {
+                      "X": 103.0,
+                      "Y": 73.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5769,
+                      "ScaleY": 0.4598
+                    },
+                    "Position": {
+                      "X": 99.3376,
+                      "Y": 116.8146
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5519,
+                      "Y": 0.5079
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 42.2245,
+                    "RightMargin": 38.7755,
+                    "TopMargin": 69.9694,
+                    "BottomMargin": 80.0306,
+                    "Tag": 321,
+                    "ActionTag": -1759119502,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": 106161896,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold6",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 108.2748,
+                  "Y": 21.0232
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.1692,
+                  "Y": 0.03
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 18.2748,
+                "RightMargin": 441.7252,
+                "TopMargin": 563.9768,
+                "BottomMargin": -93.9768,
+                "Tag": 322,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 323,
+                    "ActionTag": 823856819,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 324,
+                    "ActionTag": -953669801,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 325,
+                    "ActionTag": -729924662,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 326,
+                    "ActionTag": -1486031093,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shopFk_icon_fk2.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.6556,
+                      "Y": 0.4522
+                    },
+                    "LeftMargin": 30.7774,
+                    "RightMargin": 31.2226,
+                    "TopMargin": 59.7815,
+                    "BottomMargin": 66.2185,
+                    "Tag": 327,
+                    "ActionTag": 1914779640,
+                    "Size": {
+                      "X": 118.0,
+                      "Y": 104.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 328,
+                    "ActionTag": -1710625987,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -1829767684,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold7",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 323.2604,
+                  "Y": 21.0232
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5051,
+                  "Y": 0.03
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 233.2604,
+                "RightMargin": 226.7396,
+                "TopMargin": 563.9768,
+                "BottomMargin": -93.9768,
+                "Tag": 329,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 330,
+                    "ActionTag": 1825795836,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 331,
+                    "ActionTag": -1975041154,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 332,
+                    "ActionTag": -203933266,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 333,
+                    "ActionTag": 392505521,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shopFk_icon_fk3.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.6667,
+                      "Y": 0.4565
+                    },
+                    "LeftMargin": 29.7774,
+                    "RightMargin": 30.2226,
+                    "TopMargin": 59.2815,
+                    "BottomMargin": 65.7185,
+                    "Tag": 334,
+                    "ActionTag": -1996759277,
+                    "Size": {
+                      "X": 120.0,
+                      "Y": 105.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 335,
+                    "ActionTag": 1488221573,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -1408685233,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold8",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "Button",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "shop/shop_icon_di.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 150,
+                "Scale9Height": 207,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 538.2505,
+                  "Y": 21.0232
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.841,
+                  "Y": 0.03
+                },
+                "PreSize": {
+                  "X": 0.2813,
+                  "Y": 0.3286
+                },
+                "LeftMargin": 448.2505,
+                "RightMargin": 11.7495,
+                "TopMargin": 563.9768,
+                "BottomMargin": -93.9768,
+                "Tag": 336,
+                "Children": [
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 21.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.0913
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": 187.5,
+                    "BottomMargin": -0.5,
+                    "Tag": 337,
+                    "ActionTag": 1451653638,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_bule.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.0,
+                      "Y": 208.5057
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "RotationSkewX": 180.0,
+                    "RotationSkewY": 180.0,
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5,
+                      "Y": 0.9065
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.187
+                    },
+                    "TopMargin": -0.0057,
+                    "BottomMargin": 187.0057,
+                    "Tag": 338,
+                    "ActionTag": -787686226,
+                    "Size": {
+                      "X": 180.0,
+                      "Y": 43.0
+                    },
+                    "Name": "shop_icon_bule_2_0",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 93.3669,
+                      "Y": 209.0304
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5187,
+                      "Y": 0.9088
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 43.3669,
+                    "RightMargin": 36.6331,
+                    "TopMargin": 10.9696,
+                    "BottomMargin": 199.0304,
+                    "Tag": 339,
+                    "ActionTag": 609909760,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_gold",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "LabelText": "Text Label",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 90.5772,
+                      "Y": 23.4741
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.5032,
+                      "Y": 0.1021
+                    },
+                    "PreSize": {
+                      "X": 0.5556,
+                      "Y": 0.087
+                    },
+                    "LeftMargin": 40.5772,
+                    "RightMargin": 39.4228,
+                    "TopMargin": 196.5259,
+                    "BottomMargin": 13.4741,
+                    "Tag": 340,
+                    "ActionTag": 891453741,
+                    "Size": {
+                      "X": 100.0,
+                      "Y": 20.0
+                    },
+                    "Name": "lb_money",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shopFk_icon_laba.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 118.2185
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.514
+                    },
+                    "PreSize": {
+                      "X": 0.5,
+                      "Y": 0.3783
+                    },
+                    "LeftMargin": 44.7774,
+                    "RightMargin": 45.2226,
+                    "TopMargin": 68.2815,
+                    "BottomMargin": 74.7185,
+                    "Tag": 341,
+                    "ActionTag": 2060128032,
+                    "Size": {
+                      "X": 90.0,
+                      "Y": 87.0
+                    },
+                    "Name": "shop_icon_gold1_5",
+                    "ctype": "SpriteObjectData"
+                  },
+                  {
+                    "FileData": {
+                      "Type": "Normal",
+                      "Path": "shop/shop_icon_xx.png",
+                      "Plist": ""
+                    },
+                    "BlendFunc": {
+                      "Src": 1,
+                      "Dst": 771
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 89.7774,
+                      "Y": 120.0329
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.4988,
+                      "Y": 0.5219
+                    },
+                    "PreSize": {
+                      "X": 0.55,
+                      "Y": 0.3478
+                    },
+                    "LeftMargin": 40.2774,
+                    "RightMargin": 40.7226,
+                    "TopMargin": 69.9671,
+                    "BottomMargin": 80.0329,
+                    "Tag": 342,
+                    "ActionTag": 2140141426,
+                    "Size": {
+                      "X": 99.0,
+                      "Y": 80.0
+                    },
+                    "Name": "shop_icon_xx_4",
+                    "ctype": "SpriteObjectData"
+                  }
+                ],
+                "ActionTag": -424441419,
+                "Size": {
+                  "X": 180.0,
+                  "Y": 230.0
+                },
+                "Name": "btn_gold9",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 1513849568,
+            "Size": {
+              "X": 640.0,
+              "Y": 700.0
+            },
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 700.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "shop/shop_icon_box.png",
+        "shop/shop_icon_bule.png",
+        "shop/shop_icon_di.png",
+        "shop/shop_icon_gold0.png",
+        "shop/shop_icon_gold1.png",
+        "shop/shop_icon_gold2.png",
+        "shop/shop_icon_gold3.png",
+        "shop/shop_icon_gold4.png",
+        "shop/shop_icon_xx.png",
+        "shop/shopFk_icon_fk1.png",
+        "shop/shopFk_icon_fk2.png",
+        "shop/shopFk_icon_fk3.png",
+        "shop/shopFk_icon_laba.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

@@ -1,0 +1,562 @@
+{
+  "ID": "988b97b8-d350-48bc-9605-93def0ad1a69",
+  "Version": "3.10.0.0",
+  "Name": "roomitem",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 84,
+        "Children": [
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag1.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 98,
+            "Scale9Height": 106,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 54.6326,
+              "Y": 10.2995
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0854,
+              "Y": 0.0687
+            },
+            "PreSize": {
+              "X": 0.2,
+              "Y": 0.8533
+            },
+            "LeftMargin": 54.6326,
+            "RightMargin": 457.3674,
+            "TopMargin": 11.7005,
+            "BottomMargin": 10.2995,
+            "Tag": 19,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 62.668,
+                  "Y": 90.19
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4896,
+                  "Y": 0.7046
+                },
+                "PreSize": {
+                  "X": 1.1875,
+                  "Y": 0.375
+                },
+                "LeftMargin": -13.332,
+                "RightMargin": -10.668,
+                "TopMargin": 13.81,
+                "BottomMargin": 66.19,
+                "Tag": 22,
+                "ActionTag": -855808632,
+                "Size": {
+                  "X": 152.0,
+                  "Y": 48.0
+                },
+                "Name": "ft_1",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 22,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 59.4344,
+                  "Y": 39.0521
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4643,
+                  "Y": 0.3051
+                },
+                "PreSize": {
+                  "X": 0.8594,
+                  "Y": 0.1719
+                },
+                "LeftMargin": 4.4344,
+                "RightMargin": 13.5656,
+                "TopMargin": 77.9479,
+                "BottomMargin": 28.0521,
+                "Tag": 23,
+                "ActionTag": 985327491,
+                "Size": {
+                  "X": 110.0,
+                  "Y": 22.0
+                },
+                "Name": "ft_num_1",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1720769348,
+            "Size": {
+              "X": 128.0,
+              "Y": 128.0
+            },
+            "Name": "btn_1",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag1.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 98,
+            "Scale9Height": 106,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 252.6163,
+              "Y": 10.2995
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.3947,
+              "Y": 0.0687
+            },
+            "PreSize": {
+              "X": 0.2,
+              "Y": 0.8533
+            },
+            "LeftMargin": 252.6163,
+            "RightMargin": 259.3837,
+            "TopMargin": 11.7005,
+            "BottomMargin": 10.2995,
+            "Tag": 20,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 70.2448,
+                  "Y": 90.19
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5488,
+                  "Y": 0.7046
+                },
+                "PreSize": {
+                  "X": 1.1875,
+                  "Y": 0.375
+                },
+                "LeftMargin": -5.7552,
+                "RightMargin": -18.2448,
+                "TopMargin": 13.81,
+                "BottomMargin": 66.19,
+                "Tag": 24,
+                "ActionTag": 1424954021,
+                "Size": {
+                  "X": 152.0,
+                  "Y": 48.0
+                },
+                "Name": "ft_2",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 22,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 65.1931,
+                  "Y": 39.0522
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5093,
+                  "Y": 0.3051
+                },
+                "PreSize": {
+                  "X": 0.8594,
+                  "Y": 0.1719
+                },
+                "LeftMargin": 10.1931,
+                "RightMargin": 7.8069,
+                "TopMargin": 77.9478,
+                "BottomMargin": 28.0522,
+                "Tag": 25,
+                "ActionTag": 1546074266,
+                "Size": {
+                  "X": 110.0,
+                  "Y": 22.0
+                },
+                "Name": "ft_num_2",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -1064717443,
+            "Size": {
+              "X": 128.0,
+              "Y": 128.0
+            },
+            "Name": "btn_2",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag1.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "room/room_redBag.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 98,
+            "Scale9Height": 106,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {},
+            "Position": {
+              "X": 450.5999,
+              "Y": 10.2995
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.7041,
+              "Y": 0.0687
+            },
+            "PreSize": {
+              "X": 0.2,
+              "Y": 0.8533
+            },
+            "LeftMargin": 450.5999,
+            "RightMargin": 61.4,
+            "TopMargin": 11.7005,
+            "BottomMargin": 10.2995,
+            "Tag": 21,
+            "Children": [
+              {
+                "IsCustomSize": true,
+                "FontSize": 24,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Center",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 77.8215,
+                  "Y": 90.19
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.608,
+                  "Y": 0.7046
+                },
+                "PreSize": {
+                  "X": 1.1875,
+                  "Y": 0.375
+                },
+                "LeftMargin": 1.8215,
+                "RightMargin": -25.8215,
+                "TopMargin": 13.81,
+                "BottomMargin": 66.19,
+                "Tag": 26,
+                "ActionTag": 29292474,
+                "Size": {
+                  "X": 152.0,
+                  "Y": 48.0
+                },
+                "Name": "ft_3",
+                "ctype": "TextObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 22,
+                "LabelText": "Text Label",
+                "HorizontalAlignmentType": "HT_Right",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 70.9518,
+                  "Y": 39.0522
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.5543,
+                  "Y": 0.3051
+                },
+                "PreSize": {
+                  "X": 0.8594,
+                  "Y": 0.1719
+                },
+                "LeftMargin": 15.9518,
+                "RightMargin": 2.0482,
+                "TopMargin": 77.9478,
+                "BottomMargin": 28.0522,
+                "Tag": 27,
+                "ActionTag": -1632449655,
+                "Size": {
+                  "X": 110.0,
+                  "Y": 22.0
+                },
+                "Name": "ft_num_3",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 991008703,
+            "Size": {
+              "X": 128.0,
+              "Y": 128.0
+            },
+            "Name": "btn_3",
+            "ctype": "ButtonObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 150.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "room/room_redBag.png",
+        "room/room_redBag1.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}

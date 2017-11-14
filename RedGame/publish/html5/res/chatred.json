@@ -1,0 +1,353 @@
+{
+  "ID": "bc834482-ef40-44ac-a6b2-4502de2f86a4",
+  "Version": "3.10.0.0",
+  "Name": "chatred",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 61,
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 54.5412,
+              "Y": 133.2103
+            },
+            "Scale": {
+              "ScaleX": 0.8,
+              "ScaleY": 0.8
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0852,
+              "Y": 0.6661
+            },
+            "PreSize": {
+              "X": 0.1531,
+              "Y": 0.5
+            },
+            "LeftMargin": 5.5412,
+            "RightMargin": 536.4589,
+            "TopMargin": 16.7897,
+            "BottomMargin": 83.2103,
+            "Tag": 63,
+            "ActionTag": -1230035229,
+            "Size": {
+              "X": 98.0,
+              "Y": 100.0
+            },
+            "Name": "img_head",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 24,
+            "LabelText": "Text Label",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 9.6619,
+              "Y": 186.793
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.0151,
+              "Y": 0.934
+            },
+            "PreSize": {
+              "X": 0.1875,
+              "Y": 0.12
+            },
+            "LeftMargin": 9.6619,
+            "RightMargin": 510.3381,
+            "TopMargin": 1.207,
+            "BottomMargin": 174.793,
+            "Tag": 64,
+            "ActionTag": 2048579584,
+            "Size": {
+              "X": 120.0,
+              "Y": 24.0
+            },
+            "Name": "ft_nickname",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Default",
+              "Path": "Default/Button_Disable.png",
+              "Plist": ""
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_RDdi.png",
+              "Plist": ""
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_RDdi.png",
+              "Plist": ""
+            },
+            "Scale9Enable": true,
+            "Scale9OriginX": 15,
+            "Scale9OriginY": 11,
+            "Scale9Width": 317,
+            "Scale9Height": 141,
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "TouchEnable": true,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 290.5625,
+              "Y": 85.0221
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.454,
+              "Y": 0.4251
+            },
+            "PreSize": {
+              "X": 0.5625,
+              "Y": 0.8
+            },
+            "LeftMargin": 110.5625,
+            "RightMargin": 169.4375,
+            "TopMargin": 34.9779,
+            "BottomMargin": 5.0221,
+            "Tag": 19,
+            "Children": [
+              {
+                "FontSize": 36,
+                "LabelText": "王者扫雷",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 119.5681,
+                  "Y": 28.4685
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 56,
+                  "G": 54,
+                  "B": 54
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.3321,
+                  "Y": 0.1779
+                },
+                "PreSize": {
+                  "X": 0.4,
+                  "Y": 0.225
+                },
+                "LeftMargin": 47.5681,
+                "RightMargin": 168.4319,
+                "TopMargin": 113.5315,
+                "BottomMargin": 10.4685,
+                "Tag": 662,
+                "ActionTag": 469129605,
+                "Size": {
+                  "X": 144.0,
+                  "Y": 36.0
+                },
+                "Name": "ft_gameName",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 26,
+                "LabelText": "恭喜发财，大吉大利\n红包游戏",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 1.0,
+                "ShadowOffsetY": -1.0,
+                "ShadowEnabled": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 213.1151,
+                  "Y": 114.1731
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.592,
+                  "Y": 0.7136
+                },
+                "PreSize": {
+                  "X": 0.65,
+                  "Y": 0.325
+                },
+                "LeftMargin": 96.1151,
+                "RightMargin": 29.8849,
+                "TopMargin": 19.8269,
+                "BottomMargin": 88.1731,
+                "Tag": 66,
+                "ActionTag": 527777642,
+                "Size": {
+                  "X": 234.0,
+                  "Y": 52.0
+                },
+                "Name": "ft_text",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -2125043610,
+            "Size": {
+              "X": 360.0,
+              "Y": 160.0
+            },
+            "Name": "btn_red",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "playGame/playGame_icon_redbag.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 165.4017,
+              "Y": 117.7632
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.2584,
+              "Y": 0.5888
+            },
+            "PreSize": {
+              "X": 0.0828,
+              "Y": 0.33
+            },
+            "LeftMargin": 138.9017,
+            "RightMargin": 448.0983,
+            "TopMargin": 49.2368,
+            "BottomMargin": 84.7632,
+            "Tag": 272,
+            "ActionTag": -1056777286,
+            "Size": {
+              "X": 53.0,
+              "Y": 66.0
+            },
+            "Name": "playGame_icon_redbag_1",
+            "ctype": "SpriteObjectData"
+          }
+        ],
+        "Size": {
+          "X": 640.0,
+          "Y": 200.0
+        },
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "UsedResources": [
+        "Default/Button_Disable.png",
+        "playGame/playGame_icon.png",
+        "playGame/playGame_icon_RDdi.png",
+        "playGame/playGame_icon_redbag.png"
+      ],
+      "ctype": "GameFileData"
+    }
+  },
+  "Type": "Layer"
+}
