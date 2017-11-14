@@ -425,7 +425,7 @@
               },
               {
                 "FontSize": 48,
-                "ButtonText": "10",
+                "ButtonText": "10币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -433,20 +433,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -479,25 +479,25 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 61.1907,
                 "RightMargin": 444.8093,
-                "TopMargin": 359.8288,
-                "BottomMargin": 522.1712,
+                "TopMargin": 350.3288,
+                "BottomMargin": 512.6712,
                 "UserData": "10",
                 "Tag": 98,
                 "ActionTag": 218985197,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_10",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 48,
-                "ButtonText": "50",
+                "ButtonText": "50币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -505,20 +505,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -551,25 +551,25 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 420.5342,
                 "RightMargin": 85.4658,
-                "TopMargin": 359.8288,
-                "BottomMargin": 522.1712,
+                "TopMargin": 350.3288,
+                "BottomMargin": 512.6712,
                 "UserData": "50",
                 "Tag": 99,
                 "ActionTag": -1992405738,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_50",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 48,
-                "ButtonText": "100",
+                "ButtonText": "100币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -577,20 +577,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -623,25 +623,25 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 61.1907,
                 "RightMargin": 444.8093,
-                "TopMargin": 462.8253,
-                "BottomMargin": 419.1747,
+                "TopMargin": 453.3253,
+                "BottomMargin": 409.6747,
                 "UserData": "100",
                 "Tag": 100,
                 "ActionTag": 689898047,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_100",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 48,
-                "ButtonText": "500",
+                "ButtonText": "500币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -649,20 +649,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -695,25 +695,25 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 240.8626,
                 "RightMargin": 265.1374,
-                "TopMargin": 462.8253,
-                "BottomMargin": 419.1747,
+                "TopMargin": 453.3253,
+                "BottomMargin": 409.6747,
                 "UserData": "500",
                 "Tag": 101,
                 "ActionTag": -2110063235,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_500",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 48,
-                "ButtonText": "1000",
+                "ButtonText": "1000币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -721,20 +721,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -767,25 +767,25 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 419.9684,
                 "RightMargin": 86.0316,
-                "TopMargin": 461.3534,
-                "BottomMargin": 420.6466,
+                "TopMargin": 453.8541,
+                "BottomMargin": 409.1459,
                 "UserData": "1000",
                 "Tag": 102,
                 "ActionTag": 1332150810,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_1000",
                 "ctype": "ButtonObjectData"
               },
               {
                 "FontSize": 48,
-                "ButtonText": "20",
+                "ButtonText": "20币",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -793,20 +793,20 @@
                   "Plist": ""
                 },
                 "PressedFileData": {
-                  "Type": "Default",
-                  "Path": "Default/Button_Press.png",
+                  "Type": "Normal",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "NormalFileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Dicon_0.png",
+                  "Path": "userCenter/Dicon_0d.png",
                   "Plist": ""
                 },
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
                 "Scale9Width": 104,
-                "Scale9Height": 14,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -839,18 +839,18 @@
                 },
                 "PreSize": {
                   "X": 0.2094,
-                  "Y": 0.0392
+                  "Y": 0.0599
                 },
                 "LeftMargin": 241.4491,
                 "RightMargin": 264.5509,
-                "TopMargin": 358.6508,
-                "BottomMargin": 523.3492,
+                "TopMargin": 350.7525,
+                "BottomMargin": 512.2475,
                 "UserData": "20",
                 "Tag": 103,
                 "ActionTag": -1496010887,
                 "Size": {
                   "X": 134.0,
-                  "Y": 36.0
+                  "Y": 55.0
                 },
                 "Name": "btn_20",
                 "ctype": "ButtonObjectData"
@@ -952,7 +952,7 @@
         "Default/Button_Press.png",
         "Default/Sprite.png",
         "shop/shop_icon_bg.png",
-        "userCenter/Dicon_0.png",
+        "userCenter/Dicon_0d.png",
         "userCenter/Dicon_back.png",
         "userCenter/Dicon_ditiao2.png",
         "userCenter/redBag_disi.png"

@@ -22,7 +22,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-0.2485" BottomMargin="938.2485" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="48" ctype="ImageViewObjectData">
+              <AbstractNodeData Name="Panel_Top" ActionTag="-2015320450" Tag="12" IconVisible="False" TopMargin="-20.2500" BottomMargin="958.2500" LeftEage="211" RightEage="211" TopEage="26" BottomEage="26" Scale9OriginX="211" Scale9OriginY="26" Scale9Width="218" Scale9Height="48" ctype="ImageViewObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Panel_Player" ActionTag="-1513563898" Tag="17" IconVisible="False" TopMargin="111.7600" BottomMargin="-132.7600" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="39" BottomEage="39" Scale9OriginX="211" Scale9OriginY="39" Scale9Width="218" Scale9Height="43" ctype="PanelObjectData">
@@ -106,10 +106,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint ScaleY="1.0000" />
-                <Position Y="1038.2485" />
+                <Position Y="1058.2500" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="1.0002" />
+                <PrePosition Y="1.0195" />
                 <PreSize X="1.0000" Y="0.0963" />
                 <FileData Type="Normal" Path="top/TopBar.png" Plist="" />
               </AbstractNodeData>

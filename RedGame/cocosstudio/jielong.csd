@@ -38,16 +38,18 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_start" ActionTag="1240576857" Tag="48" IconVisible="False" LeftMargin="577.2227" RightMargin="30.7773" TopMargin="28.7632" BottomMargin="23.2368" TouchEnable="True" FontSize="22" ButtonText="开始" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="5" BottomEage="5" Scale9OriginX="15" Scale9OriginY="5" Scale9Width="14" Scale9Height="12" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="32.0000" Y="16.0000" />
+                  <AbstractNodeData Name="btn_start" ActionTag="1240576857" Tag="48" IconVisible="False" LeftMargin="507.1639" RightMargin="32.8361" TopMargin="16.7627" BottomMargin="11.2373" TouchEnable="True" FontSize="22" ButtonText="开始" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="5" BottomEage="5" Scale9OriginX="15" Scale9OriginY="5" Scale9Width="158" Scale9Height="70" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="100.0000" Y="40.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="593.2227" Y="31.2368" />
+                    <Position X="557.1639" Y="31.2373" />
                     <Scale ScaleX="1.3000" ScaleY="1.3000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.9269" Y="0.4594" />
-                    <PreSize X="0.0500" Y="0.2353" />
+                    <PrePosition X="0.8706" Y="0.4594" />
+                    <PreSize X="0.1563" Y="0.5882" />
                     <TextColor A="255" R="255" G="255" B="255" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="playGame/playGame_red.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="playGame/playGame_red.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -58,7 +60,7 @@
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition Y="1.0125" />
                 <PreSize X="1.0000" Y="0.0710" />
-                <FileData Type="Normal" Path="userCenter/Top_icon.png" Plist="" />
+                <FileData Type="Normal" Path="top/gameTop.png" Plist="" />
                 <SingleColor A="255" R="248" G="0" B="0" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
@@ -121,13 +123,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" LeftMargin="-1.6982" RightMargin="1.6982" TopMargin="-11.9999" BottomMargin="81.9999" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="316" BottomEage="316" Scale9OriginX="211" Scale9OriginY="316" Scale9Width="218" Scale9Height="326" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
+              <AbstractNodeData Name="chatview" ActionTag="-844951333" Tag="56" IconVisible="False" TopMargin="-11.9999" BottomMargin="81.9999" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="316" BottomEage="316" Scale9OriginX="211" Scale9OriginY="316" Scale9Width="218" Scale9Height="326" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="888.0000" />
                 <AnchorPoint />
-                <Position X="-1.6982" Y="81.9999" />
+                <Position Y="81.9999" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="-0.0027" Y="0.0856" />
+                <PrePosition Y="0.0856" />
                 <PreSize X="1.0000" Y="0.9269" />
                 <FileData Type="Normal" Path="backGround/redBag.jpg" Plist="" />
                 <SingleColor A="255" R="150" G="150" B="255" />
