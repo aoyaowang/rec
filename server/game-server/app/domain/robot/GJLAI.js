@@ -2,10 +2,10 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var utils = require("../util/utils");
-
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var utils = require("../../util/utils");
+var GBaseAI = require("./GBaseAI");
 //PARAM格式
 /*******************************
 {
@@ -28,7 +28,7 @@ var utils = require("../util/utils");
 }
 */
 
-var GJLAI = Core.obserData.extend({
+var GJLAI = GBaseAI.extend({
     ctor:function()
     {
         GBaseAI.prototype.ctor.apply(this,arguments);
@@ -283,8 +283,15 @@ var GJLAI = Core.obserData.extend({
         if (!!STYPE[coin]) return true;
         else return false; 
     }
-}).Static({
-    Instance:Core.Instance
+}).Static({    
+    __I:null,
+    Instance: function() {
+        if (!this.__I) {
+            this.__I = new GJLAI();
+            this.__I.Init();
+        }
+        return this.__I;
+    }
 });
 module.exports = GJLAI;
 

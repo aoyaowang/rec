@@ -2,9 +2,9 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var utils = require("../util/utils");
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var utils = require("../../util/utils");
 
 var GBaseAI = require("./GBaseAI");
 
@@ -292,8 +292,15 @@ var G28AI = GBaseAI.extend({
         else return false; 
     }
 }).Static({
-    Instance:Core.Instance
+    __I:null,
+    Instance: function() {
+        if (!this.__I) {
+            this.__I = new G28AI();
+            this.__I.Init();
+        }
+        return this.__I;
+    }
 });
-module.exports = GBaseAI;
+module.exports = G28AI;
 
 var G28Room = require('../28/G28Room');

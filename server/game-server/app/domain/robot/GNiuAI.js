@@ -2,11 +2,11 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var utils = require("../util/utils");
-
-var GNiuAI = Core.obserData.extend({
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var utils = require("../../util/utils");
+var GBaseAI = require("./GBaseAI");
+var GNiuAI = GBaseAI.extend({
     ctor:function()
     {
         GBaseAI.prototype.ctor.apply(this,arguments);
@@ -290,7 +290,14 @@ var GNiuAI = Core.obserData.extend({
         else return false; 
     }
 }).Static({
-    Instance:Core.Instance
+    __I:null,
+    Instance: function() {
+        if (!this.__I) {
+            this.__I = new GNiuAI();
+            this.__I.Init();
+        }
+        return this.__I;
+    }
 });
 module.exports = GNiuAI;
 

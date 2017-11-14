@@ -2,10 +2,10 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var utils = require("../util/utils");
-
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var utils = require("../../util/utils");
+var GBaseAI = require("./GBaseAI");
 //PARAM格式
 /*******************************
 {
@@ -26,7 +26,7 @@ var utils = require("../util/utils");
 }
 */
 
-var GSLAI = Core.obserData.extend({
+var GSLAI = GBaseAI.extend({
     ctor:function()
     {
         GBaseAI.prototype.ctor.apply(this,arguments);
@@ -214,7 +214,14 @@ var GSLAI = Core.obserData.extend({
         return t;
     }
 }).Static({
-    Instance:Core.Instance
+    __I:null,
+    Instance: function() {
+        if (!this.__I) {
+            this.__I = new GSLAI();
+            this.__I.Init();
+        }
+        return this.__I;
+    }
 });
 module.exports = GSLAI;
 

@@ -334,4 +334,4 @@ var GNiuRoom = GBaseRoom.extend({
 module.exports = GNiuRoom;
 
 var GNiuPlayer = require('./GNiuPlayer');
-var GRobotMgr = require('./GRobotMgr');
+var GRobotMgr = require('../GRobotMgr');

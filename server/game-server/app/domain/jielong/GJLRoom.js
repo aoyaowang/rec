@@ -290,4 +290,4 @@ var GJLRoom = GBaseRoom.extend({
 module.exports = GJLRoom;
 
 var GJLPlayer = require('./GJLPlayer');
-var GRobotMgr = require('./GRobotMgr');
+var GRobotMgr = require('../GRobotMgr');

@@ -19,6 +19,7 @@ var G28Room = require('../../../domain/28/G28Room');
 
 var Core = require('../../../base/Core');
 var baseRemote = require('../../../base/baseRemote');
+var GRobotMgr = require('../../../domain/GRobotMgr');
 
 var userDao = require('../../../dao/userDao');
 var httppost = require('../../../util/httppost');
@@ -48,6 +49,7 @@ pro.Init = function(next) {
     Core.GData = {};
     Core.GData.m_hall = this.m_hall;
     Core.GData.checkUid = checkUid;
+    GRobotMgr.Instance();
 };
 
 pro.Sync = function() {
@@ -146,10 +148,7 @@ pro.getRooms = function(token, id, type, next) {
         next(null, {code: consts.NOR_CODE.ERR_PARAM});
         return;
     }
-    if (type != 1 && type != 2 && type != 3) {
-        next(null, {code: consts.NOR_CODE.ERR_PARAM});
-        return;
-    }
+
     this.checkToken(token, function(err, user){
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});
@@ -598,7 +597,7 @@ pro.turnto = function(token, uid, money, next) {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////
-var GRobotMgr = require('../../../domain/GRobotMgr');
+
 pro.getallrobot = function(next) {
     userDao.getAllRobot(function(err, res){
         var robots = res;

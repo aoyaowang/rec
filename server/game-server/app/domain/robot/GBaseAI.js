@@ -2,9 +2,9 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var async = require('async');
 
-var Core = require("../base/Core");
-var enums = require("../consts/enums");
-var utils = require("../util/utils");
+var Core = require("../../base/Core");
+var enums = require("../../consts/enums");
+var utils = require("../../util/utils");
 
 var GBaseAI = Core.obserData.extend({
     m_robots: null,
@@ -13,7 +13,8 @@ var GBaseAI = Core.obserData.extend({
         this._super();
         
         this.m_robots = {};
-
+    },
+    Init:function(){
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1,1);
     },

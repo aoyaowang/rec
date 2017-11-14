@@ -6,15 +6,15 @@
       <ObjectData Name="Layer" Tag="61" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="200.0000" />
         <Children>
-          <AbstractNodeData Name="img_head" ActionTag="-1230035229" Tag="63" IconVisible="False" LeftMargin="5.5412" RightMargin="536.4589" TopMargin="16.7897" BottomMargin="83.2103" ctype="SpriteObjectData">
-            <Size X="98.0000" Y="100.0000" />
+          <AbstractNodeData Name="img_head" ActionTag="-1230035229" Tag="63" IconVisible="False" LeftMargin="5.5412" RightMargin="536.4588" TopMargin="16.7897" BottomMargin="83.2103" ctype="SpriteObjectData">
+            <Size X="46.0000" Y="46.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="54.5412" Y="133.2103" />
             <Scale ScaleX="0.8000" ScaleY="0.8000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.0852" Y="0.6661" />
             <PreSize X="0.1531" Y="0.5000" />
-            <FileData Type="Normal" Path="playGame/playGame_icon.png" Plist="" />
+            <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
           <AbstractNodeData Name="ft_nickname" ActionTag="2048579584" Tag="64" IconVisible="False" LeftMargin="9.6619" RightMargin="510.3381" TopMargin="1.2070" BottomMargin="174.7930" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">

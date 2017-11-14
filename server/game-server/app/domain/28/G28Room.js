@@ -334,4 +334,4 @@ var G28Room = GBaseRoom.extend({
 module.exports = G28Room;
 
 var G28Player = require('./G28Player');
-var GRobotMgr = require('./GRobotMgr');
+var GRobotMgr = require('../GRobotMgr');

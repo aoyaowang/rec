@@ -28,21 +28,5 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
-    <Item Key="TabsParamsKey">
-      <Value ctype="TabsInfo">
-        <OpenedDocuments>
-          <FilePathData Path="market.csd" />
-          <FilePathData Path="marketPage.csd" />
-          <FilePathData Path="reddetail.csd" />
-          <FilePathData Path="redopen.csd" />
-          <FilePathData Path="redqiang.csd" />
-          <FilePathData Path="main.csd" />
-          <FilePathData Path="rooms.csd" />
-          <FilePathData Path="saolei.csd" />
-          <FilePathData Path="setting.csd" />
-        </OpenedDocuments>
-        <ActiveDocument Path="setting.csd" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>

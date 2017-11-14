@@ -220,4 +220,4 @@ var GSLRoom = GBaseRoom.extend({
 module.exports = GSLRoom;
 
 var GSLPlayer = require('./GSLPlayer');
-var GRobotMgr = require('./GRobotMgr');
+var GRobotMgr = require('../GRobotMgr');

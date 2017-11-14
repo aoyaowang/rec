@@ -5,9 +5,7 @@ var async = require('async');
 var Core = require("../base/Core");
 var enums = require("../consts/enums");
 var utils = require("../util/utils");
-
 var robotDao = require('../dao/robotDao');
-
 var GRobotMgr = Core.obserData.extend({
     m_robots: null,
     m_bInit: null,
@@ -20,6 +18,8 @@ var GRobotMgr = Core.obserData.extend({
         // });
         this.m_bInit = false;
         this.m_robots = {};
+    },
+    Init:function() {
         robotDao.getAll(function(err, res){
             var ay1 = [], ay2 = [], ay3 = [], ay4 = [];
             for (var i = 0;i < res.length;++i) {
@@ -99,7 +99,14 @@ var GRobotMgr = Core.obserData.extend({
         return this.m_robots;
     }
 }).Static({
-    Instance:Core.Instance
+    __I:null,
+    Instance: function() {
+        if (!this.__I) {
+            this.__I = new GRobotMgr();
+            this.__I.Init();
+        }
+        return this.__I;
+    }
 });
 module.exports = GRobotMgr;
 
