@@ -44,7 +44,7 @@
         }
     })();
 </script>
-<script cocos src="game.min.js"></script>
+
 <script>
     function getQueryString(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
@@ -83,7 +83,7 @@
             Login_Type = 2;
             Login_Param = token;
         } else {
-            if (isWeiXin()) {
+            if (isWeiXin() && !cc.sys.isNative) {
                 var appid = "wx1002e4f4a3b4b0bd";
                 var url = encodeURI("http://test.obyjd.com/");
                 window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid="+appid+"&redirect_uri="+url+"&response_type=code&scope=snsapi_userinfo&state="+(debug?1:0)+"#wechat_redirect";
@@ -94,5 +94,6 @@
     })();
 
 </script>
+<script cocos src="game.min.js"></script>
 </body>
 </html>
