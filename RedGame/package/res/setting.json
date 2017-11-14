@@ -1284,7 +1284,7 @@
               },
               {
                 "ScrollDirectionType": 0,
-                "ClipAble": false,
+                "ClipAble": true,
                 "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 85,
@@ -1339,8 +1339,8 @@
                       "Plist": ""
                     },
                     "PressedFileData": {
-                      "Type": "Default",
-                      "Path": "Default/Button_Press.png",
+                      "Type": "Normal",
+                      "Path": "game/28.png",
                       "Plist": ""
                     },
                     "NormalFileData": {
@@ -1452,15 +1452,14 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3516,
+                      "X": 0.1172,
                       "Y": 0.5
                     },
                     "PreSize": {
                       "X": 0.2344,
                       "Y": 1.0
                     },
-                    "LeftMargin": 150.0,
-                    "RightMargin": 340.0,
+                    "RightMargin": 490.0,
                     "Tag": 78,
                     "ActionTag": 735862537,
                     "ZOrder": 1,
@@ -1526,15 +1525,14 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5859,
+                      "X": 0.1172,
                       "Y": 0.5
                     },
                     "PreSize": {
                       "X": 0.2344,
                       "Y": 1.0
                     },
-                    "LeftMargin": 300.0,
-                    "RightMargin": 190.0,
+                    "RightMargin": 490.0,
                     "Tag": 79,
                     "ActionTag": -1828690396,
                     "ZOrder": 2,
@@ -1600,15 +1598,14 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.8203,
+                      "X": 0.1172,
                       "Y": 0.5
                     },
                     "PreSize": {
                       "X": 0.2344,
                       "Y": 1.0
                     },
-                    "LeftMargin": 450.0,
-                    "RightMargin": 40.0,
+                    "RightMargin": 490.0,
                     "Tag": 80,
                     "ActionTag": 136909463,
                     "ZOrder": 3,
@@ -2001,7 +1998,6 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "Default/Button_Press.png",
         "Default/Sprite.png",
         "game/28.png",
         "game/jielong.png",

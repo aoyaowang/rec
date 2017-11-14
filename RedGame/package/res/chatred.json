@@ -16,8 +16,8 @@
         "Children": [
           {
             "FileData": {
-              "Type": "Normal",
-              "Path": "playGame/playGame_icon.png",
+              "Type": "Default",
+              "Path": "Default/Sprite.png",
               "Plist": ""
             },
             "BlendFunc": {
@@ -47,14 +47,14 @@
               "Y": 0.5
             },
             "LeftMargin": 5.5412,
-            "RightMargin": 536.4589,
+            "RightMargin": 536.4588,
             "TopMargin": 16.7897,
             "BottomMargin": 83.2103,
             "Tag": 63,
             "ActionTag": -1230035229,
             "Size": {
-              "X": 98.0,
-              "Y": 100.0
+              "X": 46.0,
+              "Y": 46.0
             },
             "Name": "img_head",
             "ctype": "SpriteObjectData"
@@ -342,7 +342,7 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "playGame/playGame_icon.png",
+        "Default/Sprite.png",
         "playGame/playGame_icon_RDdi.png",
         "playGame/playGame_icon_redbag.png"
       ],

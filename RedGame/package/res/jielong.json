@@ -55,7 +55,7 @@
                 "ClipAble": true,
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "userCenter/Top_icon.png",
+                  "Path": "top/gameTop.png",
                   "Plist": ""
                 },
                 "ComboBoxIndex": 1,
@@ -236,11 +236,21 @@
                       "Path": "Default/Button_Disable.png",
                       "Plist": ""
                     },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "playGame/playGame_red.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "playGame/playGame_red.png",
+                      "Plist": ""
+                    },
                     "Scale9Enable": true,
                     "Scale9OriginX": 15,
                     "Scale9OriginY": 5,
-                    "Scale9Width": 14,
-                    "Scale9Height": 12,
+                    "Scale9Width": 158,
+                    "Scale9Height": 70,
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -258,8 +268,8 @@
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 593.2227,
-                      "Y": 31.2368
+                      "X": 557.1639,
+                      "Y": 31.2373
                     },
                     "Scale": {
                       "ScaleX": 1.3,
@@ -268,22 +278,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9269,
+                      "X": 0.8706,
                       "Y": 0.4594
                     },
                     "PreSize": {
-                      "X": 0.05,
-                      "Y": 0.2353
+                      "X": 0.1562,
+                      "Y": 0.5882
                     },
-                    "LeftMargin": 577.2227,
-                    "RightMargin": 30.7773,
-                    "TopMargin": 28.7632,
-                    "BottomMargin": 23.2368,
+                    "LeftMargin": 507.1639,
+                    "RightMargin": 32.8361,
+                    "TopMargin": 16.7627,
+                    "BottomMargin": 11.2373,
                     "Tag": 48,
                     "ActionTag": 1240576857,
                     "Size": {
-                      "X": 32.0,
-                      "Y": 16.0
+                      "X": 100.0,
+                      "Y": 40.0
                     },
                     "Name": "btn_start",
                     "ctype": "ButtonObjectData"
@@ -577,7 +587,7 @@
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": -1.6982,
+                  "X": 0.0,
                   "Y": 81.9999
                 },
                 "Scale": {
@@ -587,15 +597,13 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": -0.0027,
+                  "X": 0.0,
                   "Y": 0.0856
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.9269
                 },
-                "LeftMargin": -1.6982,
-                "RightMargin": 1.6982,
                 "TopMargin": -11.9999,
                 "BottomMargin": 81.9999,
                 "Tag": 56,
@@ -674,11 +682,12 @@
         "Default/Button_Disable.png",
         "Default/Button_Normal.png",
         "Default/Button_Press.png",
+        "playGame/playGame_red.png",
+        "top/gameTop.png",
         "top/money.png",
         "userCenter/Dicon.png",
         "userCenter/Dicon_back.png",
-        "userCenter/logBtn.png",
-        "userCenter/Top_icon.png"
+        "userCenter/logBtn.png"
       ],
       "ctype": "GameFileData"
     }

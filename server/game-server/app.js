@@ -31,7 +31,9 @@ app.configure('production|development', 'business', function() {
 app.configure('production|development', 'http', function() {
   var gate = require("./app/gate/gate");
   gate.start();
+});
 
+app.configure('production|development', 'gm', function(){
   var gm = require("./app/gate/gm");
   gm.start(9800);
 });

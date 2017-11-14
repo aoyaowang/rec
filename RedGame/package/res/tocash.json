@@ -122,12 +122,11 @@
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 396.4623,
-                  "Y": 679.1226
+                  "X": 341.2912,
+                  "Y": 675.802
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -136,21 +135,21 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.6195,
-                  "Y": 0.7398
+                  "X": 0.5333,
+                  "Y": 0.7362
                 },
                 "PreSize": {
-                  "X": 0.4688,
+                  "X": 0.3125,
                   "Y": 0.0392
                 },
-                "LeftMargin": 246.4623,
-                "RightMargin": 93.5377,
-                "TopMargin": 220.8774,
-                "BottomMargin": 661.1226,
+                "LeftMargin": 341.2912,
+                "RightMargin": 98.7088,
+                "TopMargin": 224.198,
+                "BottomMargin": 657.802,
                 "Tag": 108,
                 "ActionTag": 2106300262,
                 "Size": {
-                  "X": 300.0,
+                  "X": 200.0,
                   "Y": 36.0
                 },
                 "Name": "ft_uid",
@@ -308,7 +307,7 @@
               },
               {
                 "FontSize": 48,
-                "ButtonText": "转账",
+                "ButtonText": "发送红包",
                 "TextColor": {},
                 "DisabledFileData": {
                   "Type": "Default",
@@ -347,8 +346,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 326.8941,
-                  "Y": 141.691
+                  "X": 326.894,
+                  "Y": 143.5743
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -358,16 +357,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.5108,
-                  "Y": 0.1543
+                  "Y": 0.1564
                 },
                 "PreSize": {
                   "X": 0.85,
                   "Y": 0.0926
                 },
-                "LeftMargin": 54.8941,
-                "RightMargin": 41.1058,
-                "TopMargin": 733.809,
-                "BottomMargin": 99.191,
+                "LeftMargin": 54.894,
+                "RightMargin": 41.106,
+                "TopMargin": 731.9257,
+                "BottomMargin": 101.0743,
                 "Tag": 112,
                 "ActionTag": 2012869827,
                 "Size": {
@@ -399,8 +398,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -471,8 +470,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -543,8 +542,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -615,8 +614,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -687,8 +686,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -759,8 +758,8 @@
                 "Scale9Enable": true,
                 "Scale9OriginX": 15,
                 "Scale9OriginY": 11,
-                "Scale9Width": 120,
-                "Scale9Height": 28,
+                "Scale9Width": 104,
+                "Scale9Height": 33,
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -975,6 +974,59 @@
                 },
                 "Name": "ft_to",
                 "ctype": "TextFieldObjectData"
+              },
+              {
+                "FontSize": 36,
+                "LabelText": "UID:",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 287.2319,
+                  "Y": 676.0039
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 210,
+                  "G": 210,
+                  "B": 252
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.4488,
+                  "Y": 0.7364
+                },
+                "PreSize": {
+                  "X": 0.1125,
+                  "Y": 0.0392
+                },
+                "LeftMargin": 251.2319,
+                "RightMargin": 316.7681,
+                "TopMargin": 223.9961,
+                "BottomMargin": 658.0039,
+                "Tag": 165,
+                "ActionTag": 410469059,
+                "Size": {
+                  "X": 72.0,
+                  "Y": 36.0
+                },
+                "Name": "Text_1",
+                "ctype": "TextObjectData"
               }
             ],
             "ActionTag": -1894066779,
