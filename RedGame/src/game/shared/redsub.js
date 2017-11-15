@@ -12,6 +12,7 @@ var redsubUI = ccui.Widget.extend({
 
 
         this.setContentSize(this.Widget.getContentSize());
+        this.setTouchEnable(false);
         this.setAnchorPoint(0, 0);
 
         this.m_img_head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
