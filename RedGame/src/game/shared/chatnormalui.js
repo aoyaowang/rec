@@ -11,7 +11,7 @@ var chatnormalUI = ccui.Widget.extend({
 
 
         this.setContentSize(this.Widget.getContentSize());
-        this.setTouchEnable(false);
+        this.setTouchEnabled(false);
         this.setAnchorPoint(0, 0);
 
         var t = ccui.helper.seekWidgetByName(this.Widget, "ft_text");

@@ -14,7 +14,7 @@ var chatredUI = ccui.Widget.extend({
 
 
         this.setContentSize(this.Widget.getContentSize());
-        this.setTouchEnable(false);
+        this.setTouchEnabled(false);
         this.setAnchorPoint(0, 0);
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "img_head");

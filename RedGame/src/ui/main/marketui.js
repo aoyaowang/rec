@@ -20,7 +20,7 @@ var marketUI = cc.Layer.extend({
         btn.setTag(100);
         
         this.setContentSize(this.Widget.getContentSize());
-        this.setTouchEnable(false);
+        this.setTouchEnabled(false);
         this.setAnchorPoint(0, 0);
         return true;
     },
