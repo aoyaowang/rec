@@ -190,13 +190,12 @@
             "Children": [
               {
                 "ClipAble": false,
-                "BackColorAlpha": 102,
+                "BackColorAlpha": 124,
                 "FileData": {
                   "Type": "Normal",
                   "Path": "room/room_chuji.png",
                   "Plist": ""
                 },
-                "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
                   "G": 200
@@ -211,13 +210,13 @@
                 },
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 66,
-                "Scale9Width": 218,
-                "Scale9Height": 68,
+                "Scale9Width": 126,
+                "Scale9Height": 115,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 0.0,
-                  "Y": 643.0
+                  "X": 6.855,
+                  "Y": 612.1539
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -226,14 +225,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.7628
+                  "X": 0.0107,
+                  "Y": 0.7262
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "BottomMargin": 643.0,
+                "LeftMargin": 6.855,
+                "RightMargin": -6.855,
+                "TopMargin": 30.8461,
+                "BottomMargin": 612.1539,
                 "Tag": 75,
                 "Children": [
                   {
@@ -365,7 +367,6 @@
                   "Path": "room/room_zhongji.png",
                   "Plist": ""
                 },
-                "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
                   "G": 200
@@ -380,13 +381,13 @@
                 },
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 66,
-                "Scale9Width": 218,
-                "Scale9Height": 68,
+                "Scale9Width": 127,
+                "Scale9Height": 115,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 0.0,
-                  "Y": 443.0
+                  "X": 9.3785,
+                  "Y": 334.2362
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -395,15 +396,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.5255
+                  "X": 0.0147,
+                  "Y": 0.3965
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "TopMargin": 200.0,
-                "BottomMargin": 443.0,
+                "LeftMargin": 9.3785,
+                "RightMargin": -9.3785,
+                "TopMargin": 308.7638,
+                "BottomMargin": 334.2362,
                 "Tag": 78,
                 "Children": [
                   {
@@ -534,7 +537,6 @@
                   "Path": "room/room_gaoji.png",
                   "Plist": ""
                 },
-                "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
                   "G": 200
@@ -549,13 +551,13 @@
                 },
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 66,
-                "Scale9Width": 218,
-                "Scale9Height": 68,
+                "Scale9Width": 127,
+                "Scale9Height": 116,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
-                  "X": 0.0,
-                  "Y": 243.0
+                  "X": 12.2849,
+                  "Y": 52.1874
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -564,15 +566,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0,
-                  "Y": 0.2883
+                  "X": 0.0192,
+                  "Y": 0.0619
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.2372
                 },
-                "TopMargin": 400.0,
-                "BottomMargin": 243.0,
+                "LeftMargin": 12.2849,
+                "RightMargin": -12.2849,
+                "TopMargin": 590.8126,
+                "BottomMargin": 52.1874,
                 "Tag": 81,
                 "Children": [
                   {

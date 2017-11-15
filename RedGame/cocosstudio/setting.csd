@@ -181,7 +181,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_bill" ActionTag="-2065352209" ZOrder="2" Tag="65" IconVisible="False" TopMargin="230.0000" BottomMargin="588.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn_bill" ActionTag="-2065352209" ZOrder="2" Tag="65" IconVisible="False" LeftMargin="2.2304" RightMargin="-2.2303" TopMargin="203.2418" BottomMargin="614.7582" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_2" ActionTag="-559105084" Tag="66" IconVisible="False" LeftMargin="50.9557" RightMargin="555.0443" TopMargin="33.1758" BottomMargin="29.8242" LeftEage="11" RightEage="11" TopEage="12" BottomEage="12" Scale9OriginX="11" Scale9OriginY="12" Scale9Width="12" Scale9Height="13" ctype="ImageViewObjectData">
@@ -217,10 +217,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="588.0000" />
+                <Position X="2.2304" Y="614.7582" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.6405" />
+                <PrePosition X="0.0035" Y="0.6697" />
                 <PreSize X="1.0000" Y="0.1089" />
                 <FileData Type="Normal" Path="userCenter/Dicon_ditiao2.png" Plist="" />
                 <SingleColor A="255" R="255" G="255" B="255" />
@@ -228,20 +228,20 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="st_0" CanEdit="False" ActionTag="-1665737052" ZOrder="3" Tag="70" IconVisible="False" TopMargin="330.0000" BottomMargin="558.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                <Size X="640.0000" Y="30.0000" />
+              <AbstractNodeData Name="st_0" CanEdit="False" ActionTag="-1665737052" ZOrder="3" Tag="70" IconVisible="False" LeftMargin="2.2304" RightMargin="-2.2303" TopMargin="303.2418" BottomMargin="599.7582" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="640.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position Y="558.0000" />
+                <Position X="2.2304" Y="599.7582" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.6078" />
-                <PreSize X="1.0000" Y="0.0327" />
+                <PrePosition X="0.0035" Y="0.6533" />
+                <PreSize X="1.0000" Y="0.0163" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_tocash" ActionTag="-39667030" ZOrder="4" Tag="71" IconVisible="False" TopMargin="360.0000" BottomMargin="458.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn_tocash" ActionTag="-39667030" ZOrder="4" Tag="71" IconVisible="False" TopMargin="298.1740" BottomMargin="519.8260" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
                 <Size X="640.0000" Y="100.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_2" ActionTag="929896892" Tag="72" IconVisible="False" LeftMargin="50.9557" RightMargin="555.0443" TopMargin="33.1758" BottomMargin="29.8242" LeftEage="11" RightEage="11" TopEage="12" BottomEage="12" Scale9OriginX="11" Scale9OriginY="12" Scale9Width="12" Scale9Height="13" ctype="ImageViewObjectData">
@@ -277,10 +277,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="458.0000" />
+                <Position Y="519.8260" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.4989" />
+                <PrePosition Y="0.5663" />
                 <PreSize X="1.0000" Y="0.1089" />
                 <FileData Type="Normal" Path="userCenter/Dicon_ditiao2.png" Plist="" />
                 <SingleColor A="255" R="66" G="0" B="97" />
@@ -288,30 +288,163 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="st_0_0" CanEdit="False" ActionTag="-866608429" ZOrder="5" Tag="75" IconVisible="False" TopMargin="460.0000" BottomMargin="428.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
-                <Size X="640.0000" Y="30.0000" />
+              <AbstractNodeData Name="st_0_0" CanEdit="False" ActionTag="-866608429" ZOrder="5" Tag="75" IconVisible="False" TopMargin="398.1743" BottomMargin="504.8257" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="640.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position Y="428.0000" />
+                <Position Y="504.8257" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.4662" />
-                <PreSize X="1.0000" Y="0.0327" />
+                <PrePosition Y="0.5499" />
+                <PreSize X="1.0000" Y="0.0163" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="listview2" ActionTag="-1088100917" ZOrder="6" Tag="76" IconVisible="False" TopMargin="490.0000" BottomMargin="278.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ScrollDirectionType="0" ctype="ListViewObjectData">
-                <Size X="640.0000" Y="150.0000" />
+              <AbstractNodeData Name="btn_fk" ActionTag="-2028259187" ZOrder="6" Tag="402" IconVisible="False" LeftMargin="2.2322" RightMargin="-2.2322" TopMargin="393.1063" BottomMargin="424.8937" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
+                <Size X="640.0000" Y="100.0000" />
                 <Children>
-                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" Tag="77" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="150.0000" Y="150.0000" />
+                  <AbstractNodeData Name="Image_2" ActionTag="-1010598568" Tag="403" IconVisible="False" LeftMargin="50.9557" RightMargin="555.0443" TopMargin="33.1758" BottomMargin="29.8242" LeftEage="11" RightEage="11" TopEage="12" BottomEage="12" Scale9OriginX="11" Scale9OriginY="12" Scale9Width="12" Scale9Height="13" ctype="ImageViewObjectData">
+                    <Size X="34.0000" Y="37.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="75.0000" Y="75.0000" />
+                    <Position X="67.9557" Y="48.3242" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="237" G="208" B="93" />
+                    <PrePosition X="0.1062" Y="0.4832" />
+                    <PreSize X="0.0531" Y="0.3700" />
+                    <FileData Type="Normal" Path="userCenter/icon_hongbao.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Text_5" ActionTag="906306416" Tag="404" IconVisible="False" LeftMargin="123.6400" RightMargin="372.3600" TopMargin="30.7238" BottomMargin="33.2762" FontSize="36" LabelText="发送房卡" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="144.0000" Y="36.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="195.6400" Y="51.2762" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1172" Y="0.5000" />
-                    <PreSize X="0.2344" Y="1.0000" />
+                    <PrePosition X="0.3057" Y="0.5128" />
+                    <PreSize X="0.2250" Y="0.3600" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Image_3" ActionTag="1041573382" ZOrder="3" Tag="405" IconVisible="False" LeftMargin="586.3141" RightMargin="35.6859" TopMargin="34.3007" BottomMargin="34.6993" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
+                    <Size X="18.0000" Y="31.0000" />
+                    <AnchorPoint ScaleX="0.6137" ScaleY="0.4512" />
+                    <Position X="597.3607" Y="48.6865" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.9334" Y="0.4869" />
+                    <PreSize X="0.0281" Y="0.3100" />
+                    <FileData Type="Normal" Path="userCenter/Dicon_go.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="2.2322" Y="424.8937" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0035" Y="0.4628" />
+                <PreSize X="1.0000" Y="0.1089" />
+                <FileData Type="Normal" Path="userCenter/Dicon_ditiao2.png" Plist="" />
+                <SingleColor A="255" R="255" G="255" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="st_0_0_1" CanEdit="False" ActionTag="-2083695302" ZOrder="7" Tag="410" IconVisible="False" LeftMargin="2.2322" RightMargin="-2.2322" TopMargin="495.3356" BottomMargin="407.6644" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="640.0000" Y="15.0000" />
+                <AnchorPoint />
+                <Position X="2.2322" Y="407.6644" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0035" Y="0.4441" />
+                <PreSize X="1.0000" Y="0.0163" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="btn_center" ActionTag="1896118987" ZOrder="8" Tag="420" IconVisible="False" LeftMargin="2.2301" RightMargin="-2.2301" TopMargin="490.2673" BottomMargin="327.7327" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
+                <Size X="640.0000" Y="100.0000" />
+                <Children>
+                  <AbstractNodeData Name="Image_2" ActionTag="569017201" Tag="421" IconVisible="False" LeftMargin="50.9557" RightMargin="555.0443" TopMargin="33.1758" BottomMargin="29.8242" LeftEage="11" RightEage="11" TopEage="12" BottomEage="12" Scale9OriginX="11" Scale9OriginY="12" Scale9Width="12" Scale9Height="13" ctype="ImageViewObjectData">
+                    <Size X="34.0000" Y="37.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="67.9557" Y="48.3242" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="237" G="208" B="93" />
+                    <PrePosition X="0.1062" Y="0.4832" />
+                    <PreSize X="0.0531" Y="0.3700" />
+                    <FileData Type="Normal" Path="userCenter/icon_hongbao.png" Plist="" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Text_5" ActionTag="1504713311" Tag="422" IconVisible="False" LeftMargin="123.6400" RightMargin="372.3600" TopMargin="30.7238" BottomMargin="33.2762" FontSize="36" LabelText="代理中心" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="144.0000" Y="36.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="195.6400" Y="51.2762" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3057" Y="0.5128" />
+                    <PreSize X="0.2250" Y="0.3600" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Image_3" ActionTag="757730714" ZOrder="3" Tag="423" IconVisible="False" LeftMargin="586.3141" RightMargin="35.6859" TopMargin="34.3007" BottomMargin="34.6993" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
+                    <Size X="18.0000" Y="31.0000" />
+                    <AnchorPoint ScaleX="0.6137" ScaleY="0.4512" />
+                    <Position X="597.3607" Y="48.6865" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.9334" Y="0.4869" />
+                    <PreSize X="0.0281" Y="0.3100" />
+                    <FileData Type="Normal" Path="userCenter/Dicon_go.png" Plist="" />
+                  </AbstractNodeData>
+                </Children>
+                <AnchorPoint />
+                <Position X="2.2301" Y="327.7327" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0035" Y="0.3570" />
+                <PreSize X="1.0000" Y="0.1089" />
+                <FileData Type="Normal" Path="userCenter/Dicon_ditiao2.png" Plist="" />
+                <SingleColor A="255" R="255" G="255" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="st_0_0_1_0" ActionTag="1063530003" ZOrder="9" Tag="424" IconVisible="False" LeftMargin="2.2301" RightMargin="-2.2301" TopMargin="590.2673" BottomMargin="312.7327" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                <Size X="640.0000" Y="15.0000" />
+                <AnchorPoint />
+                <Position X="2.2301" Y="312.7327" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="255" G="255" B="255" />
+                <PrePosition X="0.0035" Y="0.3407" />
+                <PreSize X="1.0000" Y="0.0163" />
+                <SingleColor A="255" R="150" G="200" B="255" />
+                <FirstColor A="255" R="150" G="200" B="255" />
+                <EndColor A="255" R="255" G="255" B="255" />
+                <ColorVector ScaleY="1.0000" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="listview2" ActionTag="-1088100917" ZOrder="10" Tag="76" IconVisible="False" LeftMargin="-0.0021" RightMargin="0.0021" TopMargin="614.4229" BottomMargin="163.5771" TouchEnable="True" ClipAble="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
+                <Size X="640.0000" Y="140.0000" />
+                <Children>
+                  <AbstractNodeData Name="Panel_11" ActionTag="-1253459838" Alpha="0" Tag="406" IconVisible="False" RightMargin="620.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="0.0313" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" ZOrder="1" Tag="77" IconVisible="False" LeftMargin="20.0000" RightMargin="480.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="90.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.1406" Y="0.5000" />
+                    <PreSize X="0.2188" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/28.png" Plist="" />
@@ -319,14 +452,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="1" Tag="78" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="254" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="225.0000" Y="75.0000" />
+                  <AbstractNodeData Name="Panel_11_0" ActionTag="618283737" ZOrder="2" Alpha="0" Tag="407" IconVisible="False" LeftMargin="160.0000" RightMargin="460.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position X="160.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1172" Y="0.5000" />
-                    <PreSize X="0.2344" Y="1.0000" />
+                    <PrePosition X="0.2500" />
+                    <PreSize X="0.0313" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="3" Tag="78" IconVisible="False" LeftMargin="180.0000" RightMargin="320.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="254" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="250.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.3906" Y="0.5000" />
+                    <PreSize X="0.2188" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/jielong.png" Plist="" />
@@ -334,14 +480,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="2" Tag="79" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="375.0000" Y="75.0000" />
+                  <AbstractNodeData Name="Panel_11_1" ActionTag="728452814" ZOrder="4" Alpha="0" Tag="408" IconVisible="False" LeftMargin="320.0000" RightMargin="300.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position X="320.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1172" Y="0.5000" />
-                    <PreSize X="0.2344" Y="1.0000" />
+                    <PrePosition X="0.5000" />
+                    <PreSize X="0.0313" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="5" Tag="79" IconVisible="False" LeftMargin="340.0000" RightMargin="160.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="410.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6406" Y="0.5000" />
+                    <PreSize X="0.2188" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/niuniu.png" Plist="" />
@@ -349,14 +508,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="3" Tag="80" IconVisible="False" RightMargin="490.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
-                    <Size X="150.0000" Y="150.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="525.0000" Y="75.0000" />
+                  <AbstractNodeData Name="Panel_11_2" ActionTag="631126205" ZOrder="6" Alpha="0" Tag="409" IconVisible="False" LeftMargin="480.0000" RightMargin="140.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position X="480.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1172" Y="0.5000" />
-                    <PreSize X="0.2344" Y="1.0000" />
+                    <PrePosition X="0.7500" />
+                    <PreSize X="0.0313" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="7" Tag="80" IconVisible="False" LeftMargin="500.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="570.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8906" Y="0.5000" />
+                    <PreSize X="0.2188" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
@@ -366,30 +538,30 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="278.0000" />
+                <Position X="-0.0021" Y="163.5771" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.3028" />
-                <PreSize X="1.0000" Y="0.1634" />
+                <PrePosition X="0.0000" Y="0.1782" />
+                <PreSize X="1.0000" Y="0.1525" />
                 <SingleColor A="255" R="85" G="50" B="158" />
                 <FirstColor A="255" R="150" G="150" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="st_0_0_0" CanEdit="False" ActionTag="-1262937050" ZOrder="7" Tag="81" IconVisible="False" TopMargin="640.0000" BottomMargin="263.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="st_0_0_0" CanEdit="False" ActionTag="-1262937050" ZOrder="11" Tag="81" IconVisible="False" LeftMargin="-0.0021" RightMargin="0.0021" TopMargin="754.4227" BottomMargin="148.5772" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="15.0000" />
                 <AnchorPoint />
-                <Position Y="263.0000" />
+                <Position X="-0.0021" Y="148.5772" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.2865" />
+                <PrePosition X="0.0000" Y="0.1618" />
                 <PreSize X="1.0000" Y="0.0163" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="Panel_10" ActionTag="367972026" ZOrder="8" Tag="82" IconVisible="False" TopMargin="655.0000" BottomMargin="213.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="20" BottomEage="20" Scale9OriginX="204" Scale9OriginY="20" Scale9Width="212" Scale9Height="22" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_10" ActionTag="367972026" ZOrder="12" Tag="82" IconVisible="False" LeftMargin="-0.0021" RightMargin="0.0021" TopMargin="769.4227" BottomMargin="98.5773" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="20" BottomEage="20" Scale9OriginX="204" Scale9OriginY="20" Scale9Width="212" Scale9Height="22" ctype="PanelObjectData">
                 <Size X="640.0000" Y="50.0000" />
                 <Children>
                   <AbstractNodeData Name="Text_7" ActionTag="2095724394" Tag="83" IconVisible="False" RightMargin="500.0000" TopMargin="-0.9297" BottomMargin="0.9297" IsCustomSize="True" FontSize="26" LabelText="房间号" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -449,10 +621,10 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="213.0000" />
+                <Position X="-0.0021" Y="98.5773" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.2320" />
+                <PrePosition X="0.0000" Y="0.1074" />
                 <PreSize X="1.0000" Y="0.0545" />
                 <FileData Type="Normal" Path="userCenter/Dicon_ditiao1.png" Plist="" />
                 <SingleColor A="255" R="66" G="0" B="97" />

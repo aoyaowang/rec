@@ -276,7 +276,7 @@
                   "Y": 0.079
                 },
                 "LeftMargin": -0.6568,
-                "RightMargin": 0.6569,
+                "RightMargin": 0.6568,
                 "TopMargin": 957.9126,
                 "BottomMargin": -1.9126,
                 "Tag": 51,
@@ -318,8 +318,8 @@
                     "TouchEnable": true,
                     "AnchorPoint": {},
                     "Position": {
-                      "X": 221.5817,
-                      "Y": 1.6705
+                      "X": 220.5829,
+                      "Y": 11.6705
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -328,22 +328,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3462,
-                      "Y": 0.0204
+                      "X": 0.3447,
+                      "Y": 0.1423
                     },
                     "PreSize": {
-                      "X": 0.2937,
-                      "Y": 0.9756
+                      "X": 0.2812,
+                      "Y": 0.7317
                     },
-                    "LeftMargin": 221.5817,
-                    "RightMargin": 230.4183,
-                    "TopMargin": 0.3295,
-                    "BottomMargin": 1.6705,
+                    "LeftMargin": 220.5829,
+                    "RightMargin": 239.4171,
+                    "TopMargin": 10.3295,
+                    "BottomMargin": 11.6705,
                     "Tag": 52,
                     "ActionTag": 1558474796,
                     "Size": {
-                      "X": 188.0,
-                      "Y": 80.0
+                      "X": 180.0,
+                      "Y": 60.0
                     },
                     "Name": "btn_red",
                     "ctype": "ButtonObjectData"
@@ -391,8 +391,8 @@
                       "ScaleX": 0.5
                     },
                     "Position": {
-                      "X": 538.2704,
-                      "Y": 16.1917
+                      "X": 538.2703,
+                      "Y": 16.6705
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -402,28 +402,28 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.841,
-                      "Y": 0.1975
+                      "Y": 0.2033
                     },
                     "PreSize": {
-                      "X": 0.2094,
-                      "Y": 0.6707
+                      "X": 0.2031,
+                      "Y": 0.6098
                     },
-                    "LeftMargin": 471.2704,
-                    "RightMargin": 34.7296,
-                    "TopMargin": 10.8083,
-                    "BottomMargin": 16.1917,
+                    "LeftMargin": 473.2703,
+                    "RightMargin": 36.7297,
+                    "TopMargin": 15.3295,
+                    "BottomMargin": 16.6705,
                     "Tag": 53,
                     "ActionTag": 1662215814,
                     "Size": {
-                      "X": 134.0,
-                      "Y": 55.0
+                      "X": 130.0,
+                      "Y": 50.0
                     },
                     "Name": "btn_log",
                     "ctype": "ButtonObjectData"
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 24,
+                    "FontSize": 30,
                     "LabelText": "99999999\n",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
@@ -438,12 +438,12 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
+                      "ScaleX": 0.4674,
+                      "ScaleY": 0.6078
                     },
                     "Position": {
-                      "X": 122.2592,
-                      "Y": 41.5252
+                      "X": 117.3653,
+                      "Y": 45.9815
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -456,22 +456,22 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.191,
-                      "Y": 0.5064
+                      "X": 0.1834,
+                      "Y": 0.5608
                     },
                     "PreSize": {
                       "X": 0.2344,
-                      "Y": 0.3659
+                      "Y": 0.4878
                     },
                     "LeftMargin": 47.2592,
                     "RightMargin": 442.7408,
-                    "TopMargin": 25.4748,
-                    "BottomMargin": 26.5252,
+                    "TopMargin": 20.3295,
+                    "BottomMargin": 21.6705,
                     "Tag": 55,
                     "ActionTag": 976375219,
                     "Size": {
                       "X": 150.0,
-                      "Y": 30.0
+                      "Y": 40.0
                     },
                     "Name": "ft_money",
                     "ctype": "TextObjectData"
@@ -573,7 +573,7 @@
             },
             "Position": {
               "X": 26.8806,
-              "Y": 44.6697
+              "Y": 39.7579
             },
             "Scale": {
               "ScaleX": 0.15,
@@ -583,7 +583,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.042,
-              "Y": 0.043
+              "Y": 0.0383
             },
             "PreSize": {
               "X": 0.2922,
@@ -591,8 +591,8 @@
             },
             "LeftMargin": -66.6194,
             "RightMargin": 519.6194,
-            "TopMargin": 890.3303,
-            "BottomMargin": -58.3303,
+            "TopMargin": 895.2421,
+            "BottomMargin": -63.2421,
             "Tag": 273,
             "ActionTag": 1895394059,
             "Size": {
