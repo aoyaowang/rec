@@ -53,7 +53,7 @@
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
-                          <AbstractNodeData Name="Text_3" ActionTag="376813329" Tag="35" IconVisible="False" LeftMargin="500.1419" RightMargin="33.8581" TopMargin="16.4146" BottomMargin="22.5854" FontSize="36" LabelText="元" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                          <AbstractNodeData Name="Text_3" ActionTag="376813329" Tag="35" IconVisible="False" LeftMargin="500.1419" RightMargin="33.8581" TopMargin="16.4146" BottomMargin="22.5854" FontSize="36" LabelText="币" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                             <Size X="36.0000" Y="36.0000" />
                             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                             <Position X="518.1419" Y="40.5854" />

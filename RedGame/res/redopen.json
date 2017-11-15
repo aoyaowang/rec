@@ -57,7 +57,7 @@
               {
                 "FontSize": 72,
                 "LabelText": "000.00",
-                "HorizontalAlignmentType": "HT_Center",
+                "HorizontalAlignmentType": "HT_Right",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
@@ -103,7 +103,7 @@
                 "Children": [
                   {
                     "FontSize": 24,
-                    "LabelText": "元",
+                    "LabelText": "币",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0

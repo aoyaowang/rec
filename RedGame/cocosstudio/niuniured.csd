@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="26" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="1038.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="1509039992" Tag="27" IconVisible="False" LeftMargin="0.0000" TopMargin="-1.8109" BottomMargin="1.8109" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="37" BottomEage="37" Scale9OriginX="-211" Scale9OriginY="-37" Scale9Width="422" Scale9Height="74" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="1509039992" Tag="27" IconVisible="False" TopMargin="-1.8109" BottomMargin="1.8109" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="37" BottomEage="37" Scale9OriginX="-211" Scale9OriginY="-37" Scale9Width="422" Scale9Height="74" ctype="PanelObjectData">
             <Size X="640.0000" Y="1038.0000" />
             <Children>
               <AbstractNodeData Name="ListView_1" ActionTag="-493156671" Tag="33" IconVisible="False" TopMargin="50.0000" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="342" BottomEage="342" Scale9OriginX="211" Scale9OriginY="342" Scale9Width="218" Scale9Height="354" ScrollDirectionType="0" DirectionType="Vertical" ctype="ListViewObjectData">
@@ -53,7 +53,7 @@
                             <OutlineColor A="255" R="255" G="0" B="0" />
                             <ShadowColor A="255" R="110" G="110" B="110" />
                           </AbstractNodeData>
-                          <AbstractNodeData Name="Text_3" ActionTag="376813329" Tag="35" IconVisible="False" LeftMargin="500.1419" RightMargin="33.8581" TopMargin="16.4146" BottomMargin="22.5854" FontSize="36" LabelText="元" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                          <AbstractNodeData Name="Text_3" ActionTag="376813329" Tag="35" IconVisible="False" LeftMargin="500.1419" RightMargin="33.8581" TopMargin="16.4146" BottomMargin="22.5854" FontSize="36" LabelText="币" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                             <Size X="36.0000" Y="36.0000" />
                             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                             <Position X="518.1419" Y="40.5854" />
@@ -250,10 +250,10 @@
               </AbstractNodeData>
             </Children>
             <AnchorPoint />
-            <Position X="0.0000" Y="1.8109" />
+            <Position Y="1.8109" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0000" Y="0.0017" />
+            <PrePosition Y="0.0017" />
             <PreSize X="1.0000" Y="1.0000" />
             <SingleColor A="255" R="137" G="70" B="251" />
             <FirstColor A="255" R="150" G="200" B="255" />
