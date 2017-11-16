@@ -137,6 +137,32 @@ function billsend(data,callback){
     http.post2("api.mch.weixin.qq.com","/pay/unifiedorder",data,callback,true);
 }
 
+app.get("/fastreg", function(req, res){
+    openid = randomWord(true, 16, 16);
+    db.create_user(openid, "测试号", 1, "http://img5.imgtn.bdimg.com/it/u=547138142,3998729701&fm=27&gp=0.jpg", function(uid){
+    if (!uid) {
+        console.error("????????:" + "测试号" + " OPENID:" + openid);
+    } else {
+        var token = Token.create(uid, timestamp, req.ip, TOKEN_SECRET);
+        var ret = {
+            code:0,
+            data:{
+                uid: uid,
+                nickname: "测试号",
+                gamename: "",
+                sex: 1,
+                headimg: "http://img5.imgtn.bdimg.com/it/u=547138142,3998729701&fm=27&gp=0.jpg",
+
+                fangka: 0,
+                money: 0,
+                token: token,
+                gate: getGate(uid)
+            }
+        }
+        send(res, ret);
+        updateUser(ret.data);
+    }
+});
 
 app.get("/tokenlogin", function(req,res){
     var token = req.query.t;

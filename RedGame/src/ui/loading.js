@@ -50,6 +50,8 @@ var loadingUI = cc.Layer.extend({
             Server.send("wxlogin", {code: Login_Param.code});
         } else if (Login_Type == 2) {
             Server.send("tokenlogin", {t: Login_Param});
+        } else if (Login_Type == 4) {
+            Server.send("fastreg", {});
         } else {
             this.m_pNode_1.setVisible(true);
             this.m_pNode_2.setVisible(false);

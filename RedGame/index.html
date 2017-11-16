@@ -68,6 +68,10 @@
         var token = getQueryString("token");
 
         var debug = getQueryString("debug");
+        if (debug == 'test') {
+            Login_Type = 4;
+            return;
+        }
         if (!!code && !!state) {
             if (state == 1) {
                 Login_Type = 3;

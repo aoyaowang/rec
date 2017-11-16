@@ -5,6 +5,7 @@ var g_protocol = {
     "login": "login",
     "wxlogin": "wechat_auth",
     "tokenlogin":"tokenlogin",
+    "fastreg":"fastreg",
     "bill":"bill",
     "billfangka":"billfangka",
     "getlog": "getlog",
