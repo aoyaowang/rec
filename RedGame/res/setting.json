@@ -198,6 +198,7 @@
                         "ctype": "ImageViewObjectData"
                       },
                       {
+                        "IsCustomSize": true,
                         "FontSize": 26,
                         "LabelText": "999999",
                         "FontResource": {
@@ -235,18 +236,18 @@
                           "Y": 0.6661
                         },
                         "PreSize": {
-                          "X": 0.4875,
+                          "X": 0.9375,
                           "Y": 0.2167
                         },
                         "HorizontalEdge": "LeftEdge",
                         "LeftMargin": 36.5681,
-                        "RightMargin": 45.4319,
+                        "RightMargin": -26.5681,
                         "TopMargin": 25.6422,
                         "BottomMargin": 68.3578,
                         "Tag": 650,
                         "ActionTag": 602813184,
                         "Size": {
-                          "X": 78.0,
+                          "X": 150.0,
                           "Y": 26.0
                         },
                         "Name": "ft_money",
@@ -352,6 +353,7 @@
                         "ctype": "SpriteObjectData"
                       },
                       {
+                        "IsCustomSize": true,
                         "FontSize": 26,
                         "LabelText": "999999",
                         "OutlineColor": {
@@ -366,11 +368,10 @@
                         "ShadowOffsetX": 2.0,
                         "ShadowOffsetY": -2.0,
                         "AnchorPoint": {
-                          "ScaleX": 0.5,
                           "ScaleY": 0.5
                         },
                         "Position": {
-                          "X": 75.5681,
+                          "X": 36.5681,
                           "Y": 41.0663
                         },
                         "Scale": {
@@ -380,21 +381,21 @@
                         "CColor": {},
                         "IconVisible": false,
                         "PrePosition": {
-                          "X": 0.4723,
+                          "X": 0.2286,
                           "Y": 0.3422
                         },
                         "PreSize": {
-                          "X": 0.4875,
+                          "X": 0.9375,
                           "Y": 0.2167
                         },
                         "LeftMargin": 36.5681,
-                        "RightMargin": 45.4319,
+                        "RightMargin": -26.5681,
                         "TopMargin": 65.9337,
                         "BottomMargin": 28.0663,
                         "Tag": 63,
                         "ActionTag": 1150860893,
                         "Size": {
-                          "X": 78.0,
+                          "X": 150.0,
                           "Y": 26.0
                         },
                         "Name": "ft_fangka",

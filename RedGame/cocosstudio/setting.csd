@@ -25,14 +25,14 @@
                         <PreSize X="1.1688" Y="1.7167" />
                         <FileData Type="Normal" Path="top/money.png" Plist="" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_money" ActionTag="602813184" Tag="650" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="36.5681" RightMargin="45.4319" TopMargin="25.6422" BottomMargin="68.3578" FontSize="26" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="78.0000" Y="26.0000" />
+                      <AbstractNodeData Name="ft_money" ActionTag="602813184" Tag="650" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="36.5681" RightMargin="-26.5681" TopMargin="25.6422" BottomMargin="68.3578" IsCustomSize="True" FontSize="26" LabelText="999999" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="150.0000" Y="26.0000" />
                         <AnchorPoint ScaleY="0.4450" />
                         <Position X="36.5681" Y="79.9278" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
                         <PrePosition X="0.2286" Y="0.6661" />
-                        <PreSize X="0.4875" Y="0.2167" />
+                        <PreSize X="0.9375" Y="0.2167" />
                         <FontResource Type="Default" Path="" Plist="" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
@@ -59,14 +59,14 @@
                         <FileData Type="Normal" Path="userCenter/Dicon_fk.png" Plist="" />
                         <BlendFunc Src="1" Dst="771" />
                       </AbstractNodeData>
-                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="36.5681" RightMargin="45.4319" TopMargin="65.9337" BottomMargin="28.0663" FontSize="26" LabelText="999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                        <Size X="78.0000" Y="26.0000" />
-                        <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                        <Position X="75.5681" Y="41.0663" />
+                      <AbstractNodeData Name="ft_fangka" ActionTag="1150860893" Tag="63" IconVisible="False" LeftMargin="36.5681" RightMargin="-26.5681" TopMargin="65.9337" BottomMargin="28.0663" IsCustomSize="True" FontSize="26" LabelText="999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                        <Size X="150.0000" Y="26.0000" />
+                        <AnchorPoint ScaleY="0.5000" />
+                        <Position X="36.5681" Y="41.0663" />
                         <Scale ScaleX="1.0000" ScaleY="1.0000" />
                         <CColor A="255" R="255" G="255" B="255" />
-                        <PrePosition X="0.4723" Y="0.3422" />
-                        <PreSize X="0.4875" Y="0.2167" />
+                        <PrePosition X="0.2286" Y="0.3422" />
+                        <PreSize X="0.9375" Y="0.2167" />
                         <OutlineColor A="255" R="255" G="0" B="0" />
                         <ShadowColor A="255" R="110" G="110" B="110" />
                       </AbstractNodeData>

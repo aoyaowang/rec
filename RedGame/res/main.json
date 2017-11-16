@@ -583,11 +583,11 @@
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.0963
+                  "Y": 0.1156
                 },
                 "LeftMargin": -0.0002,
                 "RightMargin": 0.0002,
-                "TopMargin": 938.0,
+                "TopMargin": 918.0,
                 "Tag": 21,
                 "Children": [
                   {
@@ -646,15 +646,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.1108,
-                      "Y": 0.5889
+                      "Y": 0.4907
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.2
+                      "Y": 1.0
                     },
                     "LeftMargin": 10.8913,
                     "RightMargin": 509.1087,
-                    "TopMargin": -18.888,
+                    "TopMargin": 1.112,
                     "BottomMargin": -1.112,
                     "Tag": 22,
                     "ActionTag": -407096345,
@@ -721,15 +721,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.5013,
-                      "Y": 0.5889
+                      "Y": 0.4907
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.2
+                      "Y": 1.0
                     },
                     "LeftMargin": 260.8591,
                     "RightMargin": 259.1409,
-                    "TopMargin": -18.8881,
+                    "TopMargin": 1.1119,
                     "BottomMargin": -1.1119,
                     "Tag": 24,
                     "ActionTag": 554200764,
@@ -796,15 +796,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.8919,
-                      "Y": 0.5889
+                      "Y": 0.4907
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.2
+                      "Y": 1.0
                     },
                     "LeftMargin": 510.8264,
                     "RightMargin": 9.1736,
-                    "TopMargin": -18.8881,
+                    "TopMargin": 1.1119,
                     "BottomMargin": -1.1119,
                     "Tag": 25,
                     "ActionTag": -1745004568,
@@ -871,15 +871,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.3061,
-                      "Y": 0.5889
+                      "Y": 0.4907
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.2
+                      "Y": 1.0
                     },
                     "LeftMargin": 135.8754,
                     "RightMargin": 384.1246,
-                    "TopMargin": -18.8881,
+                    "TopMargin": 1.1119,
                     "BottomMargin": -1.1119,
                     "Tag": 27,
                     "ActionTag": 1171528226,
@@ -946,15 +946,15 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6966,
-                      "Y": 0.5889
+                      "Y": 0.4907
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.2
+                      "Y": 1.0
                     },
                     "LeftMargin": 385.8428,
                     "RightMargin": 134.1572,
-                    "TopMargin": -18.8881,
+                    "TopMargin": 1.1119,
                     "BottomMargin": -1.1119,
                     "Tag": 28,
                     "ActionTag": -2142084349,
@@ -969,7 +969,7 @@
                 "ActionTag": -2035783321,
                 "Size": {
                   "X": 640.0,
-                  "Y": 100.0
+                  "Y": 120.0
                 },
                 "Name": "Panel_Bottom",
                 "ctype": "PanelObjectData"
