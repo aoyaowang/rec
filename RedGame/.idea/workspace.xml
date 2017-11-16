@@ -54,8 +54,8 @@
       <file leaf-file-name="loading.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/loading.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.083462134">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.9165379">
+              <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -198,8 +198,8 @@
         <option value="$PROJECT_DIR$/src/game/shared/chatredui.js" />
         <option value="$PROJECT_DIR$/src/ui/main/marketui.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/ui/loading.js" />
         <option value="$PROJECT_DIR$/src/protocol/protocol.js" />
+        <option value="$PROJECT_DIR$/src/ui/loading.js" />
       </list>
     </option>
   </component>
@@ -946,8 +946,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/loading.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.083462134">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.9165379">
+          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
           <folding />
         </state>
       </provider>

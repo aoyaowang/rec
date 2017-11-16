@@ -30,6 +30,7 @@ var loadingUI = cc.Layer.extend({
         Client.addMap("login", this);
         Client.addMap("tokenlogin", this);
         Client.addMap("wxlogin", this);
+        Client.addMap("fastreg", this);
 
         this.CCSAction.play("run");
     },
@@ -37,6 +38,9 @@ var loadingUI = cc.Layer.extend({
     {
         this._super();
         Client.removeMap("login", this);
+        Client.removeMap("tokenlogin", this);
+        Client.removeMap("wxlogin", this);
+        Client.removeMap("fastreg", this);
     },
     setPercent:function(percent)
     {
@@ -68,6 +72,11 @@ var loadingUI = cc.Layer.extend({
         }
     },
     login:function(msg){
+        if (msg.code == 0) {
+            this.loginSuc(msg);
+        }
+    },
+    fastreg:function(msg){
         if (msg.code == 0) {
             this.loginSuc(msg);
         }
