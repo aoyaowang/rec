@@ -38,6 +38,7 @@
           <Image Name="loadingNew5.png" />
         </Folder>
         <Folder Name="main">
+          <Image Name="mian_icon_13.png" />
           <Image Name="mian_icon_fk.png" />
           <Image Name="mian_icon_gold.png" />
           <Image Name="mian_icon_mj.png" />
@@ -156,6 +157,8 @@
         <Project Name="action.csd" Type="Layer" />
         <Project Name="bill.csd" Type="Layer" />
         <Project Name="chat.csd" Type="Layer" />
+        <Project Name="chat_0.csd" Type="Layer" />
+        <Project Name="chat_1.csd" Type="Layer" />
         <Project Name="chatnormal.csd" Type="Layer" />
         <Project Name="chatred.csd" Type="Layer" />
         <Project Name="chatsys.csd" Type="Layer" />
@@ -181,8 +184,6 @@
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tips.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
-        <Project Name="chat_0.csd" Type="Layer" />
-        <Project Name="chat_1.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

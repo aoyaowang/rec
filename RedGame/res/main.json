@@ -39,7 +39,7 @@
             "AnchorPoint": {},
             "Position": {
               "X": 0.0001,
-              "Y": 3.6078
+              "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -49,7 +49,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.0,
-              "Y": 0.0035
+              "Y": 0.0
             },
             "PreSize": {
               "X": 1.0,
@@ -57,8 +57,6 @@
             },
             "LeftMargin": 0.0001,
             "RightMargin": -0.0001,
-            "TopMargin": -3.6078,
-            "BottomMargin": 3.6078,
             "Tag": 9,
             "Children": [
               {
@@ -264,8 +262,8 @@
                       "Y": -94.3826
                     },
                     "Scale": {
-                      "ScaleX": 1.0,
-                      "ScaleY": 1.0
+                      "ScaleX": 1.3,
+                      "ScaleY": 1.3
                     },
                     "CColor": {},
                     "IconVisible": false,
@@ -404,8 +402,8 @@
                       "Y": -90.917
                     },
                     "Scale": {
-                      "ScaleX": 0.172,
-                      "ScaleY": 0.1811
+                      "ScaleX": 0.2209,
+                      "ScaleY": 0.2
                     },
                     "CColor": {},
                     "IconVisible": false,
@@ -571,7 +569,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": -0.0002,
-                  "Y": -2.53
+                  "Y": -4.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -581,16 +579,16 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": -0.0024
+                  "Y": -0.0039
                 },
                 "PreSize": {
                   "X": 1.0,
-                  "Y": 0.1156
+                  "Y": 0.0963
                 },
                 "LeftMargin": -0.0002,
                 "RightMargin": 0.0002,
-                "TopMargin": 920.53,
-                "BottomMargin": -2.53,
+                "TopMargin": 942.0,
+                "BottomMargin": -4.0,
                 "Tag": 21,
                 "Children": [
                   {
@@ -649,7 +647,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.1108,
-                      "Y": 0.4907
+                      "Y": 0.5889
                     },
                     "PreSize": {
                       "X": 0.1875,
@@ -657,13 +655,13 @@
                     },
                     "LeftMargin": 10.8913,
                     "RightMargin": 509.1087,
-                    "TopMargin": 1.112,
-                    "BottomMargin": -1.112,
+                    "TopMargin": -8.888,
+                    "BottomMargin": 8.888,
                     "Tag": 22,
                     "ActionTag": -407096345,
                     "Size": {
                       "X": 120.0,
-                      "Y": 120.0
+                      "Y": 100.0
                     },
                     "Name": "btn_gonggao",
                     "ctype": "ButtonObjectData"
@@ -724,7 +722,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.5013,
-                      "Y": 0.4907
+                      "Y": 0.5889
                     },
                     "PreSize": {
                       "X": 0.1875,
@@ -732,13 +730,13 @@
                     },
                     "LeftMargin": 260.8591,
                     "RightMargin": 259.1409,
-                    "TopMargin": 1.1119,
-                    "BottomMargin": -1.1119,
+                    "TopMargin": -8.8881,
+                    "BottomMargin": 8.8881,
                     "Tag": 24,
                     "ActionTag": 554200764,
                     "Size": {
                       "X": 120.0,
-                      "Y": 120.0
+                      "Y": 100.0
                     },
                     "Name": "btn_main",
                     "ctype": "ButtonObjectData"
@@ -799,7 +797,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.8919,
-                      "Y": 0.4907
+                      "Y": 0.5889
                     },
                     "PreSize": {
                       "X": 0.1875,
@@ -807,13 +805,13 @@
                     },
                     "LeftMargin": 510.8264,
                     "RightMargin": 9.1736,
-                    "TopMargin": 1.1119,
-                    "BottomMargin": -1.1119,
+                    "TopMargin": -8.8881,
+                    "BottomMargin": 8.8881,
                     "Tag": 25,
                     "ActionTag": -1745004568,
                     "Size": {
                       "X": 120.0,
-                      "Y": 120.0
+                      "Y": 100.0
                     },
                     "Name": "btn_setting",
                     "ctype": "ButtonObjectData"
@@ -874,7 +872,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.3061,
-                      "Y": 0.4907
+                      "Y": 0.5889
                     },
                     "PreSize": {
                       "X": 0.1875,
@@ -882,13 +880,13 @@
                     },
                     "LeftMargin": 135.8754,
                     "RightMargin": 384.1246,
-                    "TopMargin": 1.1119,
-                    "BottomMargin": -1.1119,
+                    "TopMargin": -8.8881,
+                    "BottomMargin": 8.8881,
                     "Tag": 27,
                     "ActionTag": 1171528226,
                     "Size": {
                       "X": 120.0,
-                      "Y": 120.0
+                      "Y": 100.0
                     },
                     "Name": "btn_market",
                     "ctype": "ButtonObjectData"
@@ -949,7 +947,7 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.6966,
-                      "Y": 0.4907
+                      "Y": 0.5889
                     },
                     "PreSize": {
                       "X": 0.1875,
@@ -957,13 +955,13 @@
                     },
                     "LeftMargin": 385.8428,
                     "RightMargin": 134.1572,
-                    "TopMargin": 1.1119,
-                    "BottomMargin": -1.1119,
+                    "TopMargin": -8.8881,
+                    "BottomMargin": 8.8881,
                     "Tag": 28,
                     "ActionTag": -2142084349,
                     "Size": {
                       "X": 120.0,
-                      "Y": 120.0
+                      "Y": 100.0
                     },
                     "Name": "btn_action",
                     "ctype": "ButtonObjectData"
@@ -972,7 +970,7 @@
                 "ActionTag": -2035783321,
                 "Size": {
                   "X": 640.0,
-                  "Y": 120.0
+                  "Y": 100.0
                 },
                 "Name": "Panel_Bottom",
                 "ctype": "PanelObjectData"

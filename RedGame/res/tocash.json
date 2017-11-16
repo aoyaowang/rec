@@ -853,25 +853,25 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 30.5358,
+                  "X": 44.0,
                   "Y": 883.3282
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 1.3,
+                  "ScaleY": 1.3
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.0477,
+                  "X": 0.0688,
                   "Y": 0.9622
                 },
                 "PreSize": {
                   "X": 0.0281,
                   "Y": 0.0338
                 },
-                "LeftMargin": 21.5358,
-                "RightMargin": 600.4642,
+                "LeftMargin": 35.0,
+                "RightMargin": 587.0,
                 "TopMargin": 19.1718,
                 "BottomMargin": 867.8282,
                 "Tag": 119,

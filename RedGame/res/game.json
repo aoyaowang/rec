@@ -15,6 +15,7 @@
         "Tag": 36,
         "Children": [
           {
+            "IsBounceEnabled": true,
             "InnerNodeSize": {
               "Width": 640,
               "Height": 700
@@ -119,7 +120,7 @@
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3305
+                  "Y": 0.3957
                 },
                 "LeftMargin": 48.6467,
                 "RightMargin": 325.3533,
@@ -194,7 +195,7 @@
                 },
                 "PreSize": {
                   "X": 0.4187,
-                  "Y": 0.3294
+                  "Y": 0.3943
                 },
                 "LeftMargin": 324.9379,
                 "RightMargin": 47.0621,
@@ -254,8 +255,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 184.0225,
-                  "Y": 199.4927
+                  "X": 181.6467,
+                  "Y": 196.256
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -264,17 +265,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2875,
-                  "Y": 0.285
+                  "X": 0.2838,
+                  "Y": 0.2804
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3305
+                  "Y": 0.3957
                 },
-                "LeftMargin": 51.0225,
-                "RightMargin": 322.9775,
-                "TopMargin": 362.0073,
-                "BottomMargin": 60.9927,
+                "LeftMargin": 48.6467,
+                "RightMargin": 325.3533,
+                "TopMargin": 365.244,
+                "BottomMargin": 57.756,
                 "Tag": 40,
                 "ActionTag": -1250476999,
                 "Size": {
@@ -329,8 +330,8 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 461.3265,
-                  "Y": 199.4927
+                  "X": 457.938,
+                  "Y": 195.8895
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -339,17 +340,17 @@
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.7208,
-                  "Y": 0.285
+                  "X": 0.7155,
+                  "Y": 0.2798
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3305
+                  "Y": 0.3957
                 },
-                "LeftMargin": 328.3265,
-                "RightMargin": 45.6735,
-                "TopMargin": 362.0073,
-                "BottomMargin": 60.9927,
+                "LeftMargin": 324.938,
+                "RightMargin": 49.062,
+                "TopMargin": 365.6105,
+                "BottomMargin": 57.3895,
                 "Tag": 41,
                 "ActionTag": -1540104754,
                 "Size": {
@@ -357,6 +358,156 @@
                   "Y": 277.0
                 },
                 "Name": "btn_game4",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "main/mian_icon_13.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "main/mian_icon_13.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 238,
+                "Scale9Height": 255,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 181.6467,
+                  "Y": -99.1686
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.2838,
+                  "Y": -0.1417
+                },
+                "PreSize": {
+                  "X": 0.4187,
+                  "Y": 0.3957
+                },
+                "LeftMargin": 47.6467,
+                "RightMargin": 324.3533,
+                "TopMargin": 660.6686,
+                "BottomMargin": -237.6686,
+                "Tag": 252,
+                "ActionTag": 1251704438,
+                "Size": {
+                  "X": 268.0,
+                  "Y": 277.0
+                },
+                "Name": "btn_game5",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 14,
+                "ButtonText": "",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Default",
+                  "Path": "Default/Button_Disable.png",
+                  "Plist": ""
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "main/mian_icon_mj.png",
+                  "Plist": ""
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "main/mian_icon_mj.png",
+                  "Plist": ""
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 15,
+                "Scale9OriginY": 11,
+                "Scale9Width": 238,
+                "Scale9Height": 255,
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "TouchEnable": true,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": 457.938,
+                  "Y": -98.8898
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {},
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": 0.7155,
+                  "Y": -0.1413
+                },
+                "PreSize": {
+                  "X": 0.4187,
+                  "Y": 0.3957
+                },
+                "LeftMargin": 323.938,
+                "RightMargin": 48.062,
+                "TopMargin": 660.3898,
+                "BottomMargin": -237.3898,
+                "Tag": 253,
+                "ActionTag": -767705365,
+                "Size": {
+                  "X": 268.0,
+                  "Y": 277.0
+                },
+                "Name": "btn_game6",
                 "ctype": "ButtonObjectData"
               }
             ],
@@ -381,7 +532,9 @@
         "game/28.png",
         "game/jielong.png",
         "game/niuniu.png",
-        "game/saolei.png"
+        "game/saolei.png",
+        "main/mian_icon_13.png",
+        "main/mian_icon_mj.png"
       ],
       "ctype": "GameFileData"
     }

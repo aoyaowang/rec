@@ -15,7 +15,7 @@
         "Tag": 26,
         "Children": [
           {
-            "ClipAble": false,
+            "ClipAble": true,
             "ComboBoxIndex": 1,
             "SingleColor": {
               "R": 137,
@@ -85,7 +85,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": -10.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -95,13 +95,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.0
+                  "Y": -0.0096
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.9518
                 },
-                "TopMargin": 50.0,
+                "TopMargin": 60.0,
+                "BottomMargin": -10.0,
                 "Tag": 33,
                 "Children": [
                   {
@@ -1173,7 +1174,7 @@
                 "ctype": "SpriteObjectData"
               },
               {
-                "FontSize": 36,
+                "FontSize": 30,
                 "LabelText": "发红包",
                 "OutlineColor": {
                   "G": 0,
@@ -1192,7 +1193,7 @@
                 },
                 "Position": {
                   "X": 318.2842,
-                  "Y": 1011.7938
+                  "Y": 1008.1
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -1202,21 +1203,21 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.4973,
-                  "Y": 0.9748
+                  "Y": 0.9712
                 },
                 "PreSize": {
-                  "X": 0.1688,
-                  "Y": 0.0347
+                  "X": 0.1406,
+                  "Y": 0.0289
                 },
-                "LeftMargin": 264.2842,
-                "RightMargin": 267.7158,
-                "TopMargin": 8.2062,
-                "BottomMargin": 993.7938,
+                "LeftMargin": 273.2842,
+                "RightMargin": 276.7158,
+                "TopMargin": 14.9,
+                "BottomMargin": 993.1,
                 "Tag": 39,
                 "ActionTag": -22601065,
                 "Size": {
-                  "X": 108.0,
-                  "Y": 36.0
+                  "X": 90.0,
+                  "Y": 30.0
                 },
                 "Name": "ft_title",
                 "ctype": "TextObjectData"
@@ -1266,27 +1267,27 @@
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 44.2597,
-                  "Y": 1013.1111
+                  "X": 44.2596,
+                  "Y": 1008.1107
                 },
                 "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
+                  "ScaleX": 1.3,
+                  "ScaleY": 1.3
                 },
                 "CColor": {},
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0692,
-                  "Y": 0.976
+                  "Y": 0.9712
                 },
                 "PreSize": {
                   "X": 0.0281,
                   "Y": 0.0299
                 },
-                "LeftMargin": 35.2597,
-                "RightMargin": 586.7403,
-                "TopMargin": 9.3889,
-                "BottomMargin": 997.6111,
+                "LeftMargin": 35.2596,
+                "RightMargin": 586.7404,
+                "TopMargin": 14.3893,
+                "BottomMargin": 992.6107,
                 "Tag": 40,
                 "ActionTag": 1474993491,
                 "Size": {

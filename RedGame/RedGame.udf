@@ -7,26 +7,5 @@
         <LastRunType Value="Windows" />
       </Value>
     </Item>
-    <Item Key="PackageParamsKey">
-      <Value ctype="PackageParams">
-        <LuaIsEncrypt Value="False" />
-        <LuaEncryptKey Value="" />
-        <LuaEncryptSign Value="" />
-        <Android_PackageName Value="org.cocos.RedGame" />
-        <AndroidkeyStore Value="" />
-        <AndroidVersion Value="android-21" />
-        <iOS_Target Value="RedGame-mobile" />
-        <iOS_BundleID Value="" />
-        <Platform Value="Web" />
-        <RunPlatform Value="Windows" />
-        <FrameworkVersion Value="cocos2d-x-3.10" />
-        <IsDebugKeystore Value="True" />
-        <KeystorePassword Value="" />
-        <KeystoreAliasName Value="" />
-        <KeystoreAliasPassword Value="" />
-        <EnableSourceMap Value="True" />
-        <EnableHTML5Advanced Value="False" />
-      </Value>
-    </Item>
   </Properties>
 </UserData>
