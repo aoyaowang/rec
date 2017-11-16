@@ -28,7 +28,7 @@ var game28UI = ccui.Widget.extend({
         this.setAnchorPoint(0, 0);
 
         this.m_list = ccui.helper.seekWidgetByName(this.Widget, "chatview");
-        this.m_list.setBackGroundImage("res/backGround/28.jpg");
+        this.m_list.setBackGroundImage("backGround/28.jpg");
         this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         this.m_ft_money.setString(RoleInfo.money);
         this.m_title = ccui.helper.seekWidgetByName(this.Widget, "ft_title");
