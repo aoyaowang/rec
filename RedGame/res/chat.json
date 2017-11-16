@@ -332,7 +332,7 @@
                       "Y": 0.1423
                     },
                     "PreSize": {
-                      "X": 0.2813,
+                      "X": 0.2812,
                       "Y": 0.7317
                     },
                     "LeftMargin": 220.5829,
@@ -424,7 +424,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 30,
-                    "LabelText": "99999999\n",
+                    "LabelText": "99999999.99",
                     "VerticalAlignmentType": "VT_Center",
                     "OutlineColor": {
                       "G": 0,
@@ -442,7 +442,7 @@
                       "ScaleY": 0.6078
                     },
                     "Position": {
-                      "X": 117.3653,
+                      "X": 125.37,
                       "Y": 45.9815
                     },
                     "Scale": {
@@ -456,21 +456,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1834,
+                      "X": 0.1959,
                       "Y": 0.5608
                     },
                     "PreSize": {
-                      "X": 0.2344,
+                      "X": 0.2812,
                       "Y": 0.4878
                     },
-                    "LeftMargin": 47.2592,
-                    "RightMargin": 442.7408,
-                    "TopMargin": 20.3295,
-                    "BottomMargin": 21.6705,
+                    "LeftMargin": 41.238,
+                    "RightMargin": 418.762,
+                    "TopMargin": 20.3305,
+                    "BottomMargin": 21.6695,
                     "Tag": 55,
                     "ActionTag": 976375219,
                     "Size": {
-                      "X": 150.0,
+                      "X": 180.0,
                       "Y": 40.0
                     },
                     "Name": "ft_money",

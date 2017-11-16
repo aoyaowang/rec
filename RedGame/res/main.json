@@ -432,7 +432,7 @@
                   },
                   {
                     "FontSize": 28,
-                    "LabelText": "9999999999",
+                    "LabelText": "9999999999.99",
                     "FontResource": {
                       "Type": "Default",
                       "Path": "",
@@ -454,7 +454,7 @@
                       "ScaleY": 0.445
                     },
                     "Position": {
-                      "X": 253.8296,
+                      "X": 285.3758,
                       "Y": -91.7531
                     },
                     "Scale": {
@@ -464,22 +464,22 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3966,
+                      "X": 0.4459,
                       "Y": -1.3108
                     },
                     "PreSize": {
-                      "X": 0.2188,
+                      "X": 0.2844,
                       "Y": 0.4
                     },
                     "HorizontalEdge": "LeftEdge",
                     "LeftMargin": 148.6756,
-                    "RightMargin": 351.3244,
+                    "RightMargin": 309.3244,
                     "TopMargin": 146.2131,
                     "BottomMargin": -104.2131,
                     "Tag": 19,
                     "ActionTag": -957674105,
                     "Size": {
-                      "X": 140.0,
+                      "X": 182.0,
                       "Y": 28.0
                     },
                     "Name": "ft_money",
