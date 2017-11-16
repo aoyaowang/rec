@@ -8,9 +8,10 @@ var settingUI = ccui.Widget.extend({
     m_ft_money:null,
     m_ft_id:null,
     m_listview: null,
+    m_ay:null,
     ctor:function() {
         this._super();
-
+        this.m_ay = [];
         var l = ccs.load("res/setting.json");
         this.Widget = l.node;
         this.addChild(this.Widget);
@@ -87,7 +88,11 @@ var settingUI = ccui.Widget.extend({
     },
     getlog:function(msg) {
         if (msg.code !=0) return;
-        this.m_listview.removeAllChildren();
+        for (var xx in this.m_ay) {
+            this.m_listview.removeChild(this.m_ay[xx]);
+        }
+        this.m_ay = [];
+        //this.m_listview.removeAllChildren();
         for (var i in msg.data) {
             var a = msg.data[i];
             var newDate = new Date();
@@ -97,6 +102,7 @@ var settingUI = ccui.Widget.extend({
 
             var ui = new logUI(a.roomid, a.game, ttt, a.coin, a.money);
             this.m_listview.pushBackCustomItem(ui);
+            this.m_ay.push(ui);
         }
     }
 });
