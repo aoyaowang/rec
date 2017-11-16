@@ -42,11 +42,7 @@
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
+            "CColor": {},
             "IconVisible": false,
             "PrePosition": {
               "X": 0.9453,
@@ -80,6 +76,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {

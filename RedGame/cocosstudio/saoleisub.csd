@@ -11,13 +11,13 @@
             <AnchorPoint ScaleX="1.0000" />
             <Position X="605.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
+            <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.9453" />
             <PreSize X="0.9453" Y="1.0000" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="btn_p" ActionTag="-2131780490" Tag="61" IconVisible="False" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" ctype="PanelObjectData">
+          <AbstractNodeData Name="btn_p" ActionTag="-2131780490" Tag="61" IconVisible="False" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="50.0000" />
             <AnchorPoint />
             <Position />
