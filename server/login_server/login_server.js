@@ -331,7 +331,14 @@ app.get("/getlog", function(req, res){
     if (t == null) {
         return;
     }
+    t = Token.parse(t, TOKEN_SECRET);
+    var timestamp = Date.parse(new Date()) / 1000;
+    if (timestamp - t.timestamp > enums.TOKEN.TIME) {
+        send(res, {code: enums.CODE.TOKEN_TIMEOUT});
+        return;
+    }
 
+    var uid = t.uid;
     var game = req.query.game;
     db.getLog(uid, game, function(data){
         if (!data) {
