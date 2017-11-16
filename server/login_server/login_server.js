@@ -138,6 +138,8 @@ function billsend(data,callback){
 }
 
 app.get("/fastreg", function(req, res){
+    var timestamp = Date.parse(new Date()) / 1000;
+
     openid = randomWord(true, 16, 16);
     db.create_user(openid, "测试号", 1, "http://img5.imgtn.bdimg.com/it/u=547138142,3998729701&fm=27&gp=0.jpg", function(uid){
     if (!uid) {
@@ -162,6 +164,7 @@ app.get("/fastreg", function(req, res){
         send(res, ret);
         updateUser(ret.data);
     }
+    });
 });
 
 app.get("/tokenlogin", function(req,res){

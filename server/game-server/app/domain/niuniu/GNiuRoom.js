@@ -204,10 +204,10 @@ var GNiuRoom = GBaseRoom.extend({
             }
         }
 
-        var p = this.m_RedList[ind];
-        var ret = player.Qiang(p);
+        var px = this.m_RedList[ind];
+        var ret = player.Qiang(px);
         if (ret) {
-            this.m_List[user.uid] = p;
+            this.m_List[user.uid] = px;
             this.m_RedList.splice(ind, 1);
             var ot = {};
             for (var key in this.m_List) {
@@ -216,7 +216,7 @@ var GNiuRoom = GBaseRoom.extend({
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
                 else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
             }
-            player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: p, other: ot});
+            player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: px, other: ot});
             if (player.Info.uid != this.m_Owner.uid)
             this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OTHERQIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, user: user});
             if (this.m_RedList.length == 0) {
