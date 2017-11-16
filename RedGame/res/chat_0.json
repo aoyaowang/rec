@@ -173,7 +173,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 30,
+                    "FontSize": 28,
                     "LabelText": "Text Label",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",

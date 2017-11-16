@@ -222,14 +222,14 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ft_title" ActionTag="-22601065" Tag="39" IconVisible="False" LeftMargin="273.2841" RightMargin="276.7159" TopMargin="14.8893" BottomMargin="993.1107" FontSize="30" LabelText="发红包" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="90.0000" Y="30.0000" />
+              <AbstractNodeData Name="ft_title" ActionTag="-22601065" Tag="39" IconVisible="False" LeftMargin="276.2841" RightMargin="279.7159" TopMargin="15.8893" BottomMargin="994.1107" FontSize="28" LabelText="发红包" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="84.0000" Y="28.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="318.2841" Y="1008.1107" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.4973" Y="0.9712" />
-                <PreSize X="0.1406" Y="0.0289" />
+                <PreSize X="0.1312" Y="0.0270" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

@@ -921,7 +921,7 @@
                 "ctype": "ListViewObjectData"
               },
               {
-                "FontSize": 30,
+                "FontSize": 28,
                 "LabelText": "发红包",
                 "OutlineColor": {
                   "G": 0,
@@ -953,18 +953,18 @@
                   "Y": 0.9712
                 },
                 "PreSize": {
-                  "X": 0.1406,
-                  "Y": 0.0289
+                  "X": 0.1312,
+                  "Y": 0.027
                 },
-                "LeftMargin": 273.2841,
-                "RightMargin": 276.7159,
-                "TopMargin": 14.8893,
-                "BottomMargin": 993.1107,
+                "LeftMargin": 276.2841,
+                "RightMargin": 279.7159,
+                "TopMargin": 15.8893,
+                "BottomMargin": 994.1107,
                 "Tag": 39,
                 "ActionTag": -22601065,
                 "Size": {
-                  "X": 90.0,
-                  "Y": 30.0
+                  "X": 84.0,
+                  "Y": 28.0
                 },
                 "Name": "ft_title",
                 "ctype": "TextObjectData"

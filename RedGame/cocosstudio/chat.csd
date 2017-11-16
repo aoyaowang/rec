@@ -27,7 +27,7 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_title" ActionTag="213506443" Tag="49" IconVisible="False" LeftMargin="162.2403" RightMargin="157.7597" TopMargin="19.0000" BottomMargin="19.0000" IsCustomSize="True" FontSize="34" LabelText="王者扫雷" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_title" ActionTag="213506443" Tag="49" IconVisible="False" LeftMargin="162.2403" RightMargin="157.7597" TopMargin="19.0000" BottomMargin="19.0000" IsCustomSize="True" FontSize="28" LabelText="王者扫雷" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="320.0000" Y="30.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="322.2403" Y="34.0000" />

@@ -173,7 +173,7 @@
                   },
                   {
                     "IsCustomSize": true,
-                    "FontSize": 34,
+                    "FontSize": 28,
                     "LabelText": "王者扫雷",
                     "HorizontalAlignmentType": "HT_Center",
                     "VerticalAlignmentType": "VT_Center",

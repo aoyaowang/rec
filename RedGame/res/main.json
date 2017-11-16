@@ -569,7 +569,7 @@
                 "AnchorPoint": {},
                 "Position": {
                   "X": -0.0002,
-                  "Y": -4.0
+                  "Y": 0.0
                 },
                 "Scale": {
                   "ScaleX": 1.0,
@@ -579,7 +579,7 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": -0.0039
+                  "Y": 0.0
                 },
                 "PreSize": {
                   "X": 1.0,
@@ -587,8 +587,7 @@
                 },
                 "LeftMargin": -0.0002,
                 "RightMargin": 0.0002,
-                "TopMargin": 942.0,
-                "BottomMargin": -4.0,
+                "TopMargin": 938.0,
                 "Tag": 21,
                 "Children": [
                   {
@@ -651,17 +650,17 @@
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.0
+                      "Y": 1.2
                     },
                     "LeftMargin": 10.8913,
                     "RightMargin": 509.1087,
-                    "TopMargin": -8.888,
-                    "BottomMargin": 8.888,
+                    "TopMargin": -18.888,
+                    "BottomMargin": -1.112,
                     "Tag": 22,
                     "ActionTag": -407096345,
                     "Size": {
                       "X": 120.0,
-                      "Y": 100.0
+                      "Y": 120.0
                     },
                     "Name": "btn_gonggao",
                     "ctype": "ButtonObjectData"
@@ -726,17 +725,17 @@
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.0
+                      "Y": 1.2
                     },
                     "LeftMargin": 260.8591,
                     "RightMargin": 259.1409,
-                    "TopMargin": -8.8881,
-                    "BottomMargin": 8.8881,
+                    "TopMargin": -18.8881,
+                    "BottomMargin": -1.1119,
                     "Tag": 24,
                     "ActionTag": 554200764,
                     "Size": {
                       "X": 120.0,
-                      "Y": 100.0
+                      "Y": 120.0
                     },
                     "Name": "btn_main",
                     "ctype": "ButtonObjectData"
@@ -801,17 +800,17 @@
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.0
+                      "Y": 1.2
                     },
                     "LeftMargin": 510.8264,
                     "RightMargin": 9.1736,
-                    "TopMargin": -8.8881,
-                    "BottomMargin": 8.8881,
+                    "TopMargin": -18.8881,
+                    "BottomMargin": -1.1119,
                     "Tag": 25,
                     "ActionTag": -1745004568,
                     "Size": {
                       "X": 120.0,
-                      "Y": 100.0
+                      "Y": 120.0
                     },
                     "Name": "btn_setting",
                     "ctype": "ButtonObjectData"
@@ -876,17 +875,17 @@
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.0
+                      "Y": 1.2
                     },
                     "LeftMargin": 135.8754,
                     "RightMargin": 384.1246,
-                    "TopMargin": -8.8881,
-                    "BottomMargin": 8.8881,
+                    "TopMargin": -18.8881,
+                    "BottomMargin": -1.1119,
                     "Tag": 27,
                     "ActionTag": 1171528226,
                     "Size": {
                       "X": 120.0,
-                      "Y": 100.0
+                      "Y": 120.0
                     },
                     "Name": "btn_market",
                     "ctype": "ButtonObjectData"
@@ -951,17 +950,17 @@
                     },
                     "PreSize": {
                       "X": 0.1875,
-                      "Y": 1.0
+                      "Y": 1.2
                     },
                     "LeftMargin": 385.8428,
                     "RightMargin": 134.1572,
-                    "TopMargin": -8.8881,
-                    "BottomMargin": 8.8881,
+                    "TopMargin": -18.8881,
+                    "BottomMargin": -1.1119,
                     "Tag": 28,
                     "ActionTag": -2142084349,
                     "Size": {
                       "X": 120.0,
-                      "Y": 100.0
+                      "Y": 120.0
                     },
                     "Name": "btn_action",
                     "ctype": "ButtonObjectData"
