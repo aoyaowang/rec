@@ -6,10 +6,10 @@
       <ObjectData Name="Layer" Tag="44" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="160.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_1" ActionTag="724220771" Tag="45" IconVisible="False" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_1" ActionTag="724220771" Tag="45" IconVisible="False" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
             <Size X="640.0000" Y="160.0000" />
             <Children>
-              <AbstractNodeData Name="Panel_2" ActionTag="160723822" Tag="46" IconVisible="False" TopMargin="-0.8740" BottomMargin="20.8740" TouchEnable="True" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="Panel_2" ActionTag="160723822" Tag="46" IconVisible="False" TopMargin="-0.8740" BottomMargin="20.8740" ClipAble="False" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="140.0000" />
                 <Children>
                   <AbstractNodeData Name="img_head" ActionTag="-236471412" Tag="47" IconVisible="False" LeftMargin="23.3171" RightMargin="570.6829" TopMargin="43.2465" BottomMargin="50.7535" ctype="SpriteObjectData">

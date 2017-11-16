@@ -202,7 +202,7 @@ var GJLRoom = GBaseRoom.extend({
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
                 else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
             }
-            player.Info.addMsg(enums.PROTOCOL.GAME_JIELONG_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: px, other: ot});
+            player.Info.addMsg(enums.PROTOCOL.GAME_JIELONG_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: player, other: ot});
             
             this.pushMsg(enums.PROTOCOL.GAME_JIELONG_OTHERQIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, user: user});
             if (this.m_RedList.length == 0) {
