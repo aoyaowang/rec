@@ -454,7 +454,7 @@
                       "ScaleY": 0.445
                     },
                     "Position": {
-                      "X": 285.3758,
+                      "X": 290.38,
                       "Y": -91.7531
                     },
                     "Scale": {
@@ -464,7 +464,7 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.4459,
+                      "X": 0.4537,
                       "Y": -1.3108
                     },
                     "PreSize": {
@@ -472,8 +472,8 @@
                       "Y": 0.4
                     },
                     "HorizontalEdge": "LeftEdge",
-                    "LeftMargin": 148.6756,
-                    "RightMargin": 309.3244,
+                    "LeftMargin": 153.6798,
+                    "RightMargin": 304.3202,
                     "TopMargin": 146.2131,
                     "BottomMargin": -104.2131,
                     "Tag": 19,
