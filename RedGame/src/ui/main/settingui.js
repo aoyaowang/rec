@@ -74,21 +74,29 @@ var settingUI = ccui.Widget.extend({
         this.Widget.addChild(ui);
     },
     game1Click:function(msg) {
-
+        Server.send("getlog", {token: RoleInfo.token, game: "saolei"});
     },
     game2Click:function(msg) {
-
+        Server.send("getlog", {token: RoleInfo.token, game: "jielong"});
     },
     game3Click:function(msg) {
-
+        Server.send("getlog", {token: RoleInfo.token, game: "niuniu"});
     },
     game4Click:function(msg) {
-
+        Server.send("getlog", {token: RoleInfo.token, game: "28"});
     },
     getlog:function(msg) {
+        if (msg.code !=0) return;
         this.m_listview.removeAllChildren();
+        for (var i in msg.data) {
+            var a = msg.data[i];
+            var newDate = new Date();
+            newDate.setTime(a.time * 1000);
+            var ttt= newDate.format("M/d h:m:s");
 
-        var ui = new logUI();
-        this.m_listview.pushbackCustomItem(ui);
+
+            var ui = new logUI(a.roomid, a.game, ttt, a.coin, a.money);
+            this.m_listview.pushBackCustomItem(ui);
+        }
     }
 });
