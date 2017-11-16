@@ -181,6 +181,8 @@
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tips.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />
+        <Project Name="chat_0.csd" Type="Layer" />
+        <Project Name="chat_1.csd" Type="Layer" />
       </RootFolder>
     </Group>
   </SolutionFolder>

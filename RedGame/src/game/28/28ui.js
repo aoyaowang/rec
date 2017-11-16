@@ -19,7 +19,7 @@ var game28UI = ccui.Widget.extend({
         this.m_type = type;
         this.m_subtype = subtype;
 
-        var l = ccs.load("res/chat.json");
+        var l = ccs.load("res/chat_1.json");
         this.Widget = l.node;
         this.addChild(this.Widget);
 
