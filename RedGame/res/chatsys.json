@@ -83,9 +83,8 @@
                   "ScaleY": 1.0
                 },
                 "CColor": {
-                  "R": 26,
-                  "G": 26,
-                  "B": 26
+                  "G": 0,
+                  "B": 0
                 },
                 "IconVisible": false,
                 "PrePosition": {

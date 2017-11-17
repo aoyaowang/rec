@@ -29,7 +29,7 @@
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="320.0000" Y="18.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
-                <CColor A="255" R="26" G="26" B="26" />
+                <CColor A="255" R="255" G="0" B="0" />
                 <PrePosition X="0.5000" Y="0.5000" />
                 <PreSize X="1.0000" Y="0.6667" />
                 <OutlineColor A="255" R="255" G="0" B="0" />

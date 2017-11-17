@@ -211,17 +211,17 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.625,
+                      "X": 0.5,
                       "Y": 0.4412
                     },
-                    "LeftMargin": 122.2403,
-                    "RightMargin": 117.7597,
+                    "LeftMargin": 162.2403,
+                    "RightMargin": 157.7597,
                     "TopMargin": 19.0,
                     "BottomMargin": 19.0,
                     "Tag": 49,
                     "ActionTag": 213506443,
                     "Size": {
-                      "X": 400.0,
+                      "X": 320.0,
                       "Y": 30.0
                     },
                     "Name": "ft_title",
