@@ -23,7 +23,7 @@
             <file leaf-file-name="protocol.js" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/protocol/protocol.js">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.094076656">
+                  <state vertical-scroll-proportion="0.0">
                     <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
                     <folding />
                   </state>
@@ -41,16 +41,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="niuniuui.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/game/niuniu/niuniuui.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="resource.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/resource.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -61,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settingui.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settingui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/main/settingui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.94255316">
-              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="95" column="33" selection-start-line="94" selection-start-column="46" selection-end-line="95" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -115,7 +105,17 @@
         <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="177" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redopen.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.56137186">
+              <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -125,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/src/game/shared/redsub.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="0" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="0" />
+              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -183,8 +183,6 @@
         <option value="$PROJECT_DIR$/publish/html5/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/src/game/saolei/saoleiui.js" />
-        <option value="$PROJECT_DIR$/src/game/shared/reddetail.js" />
-        <option value="$PROJECT_DIR$/src/game/shared/redopen.js" />
         <option value="$PROJECT_DIR$/src/game/shared/chatnormalui.js" />
         <option value="$PROJECT_DIR$/src/game/shared/chatsysui.js" />
         <option value="$PROJECT_DIR$/src/game/shared/chatredui.js" />
@@ -196,8 +194,10 @@
         <option value="$PROJECT_DIR$/src/game/28/28ui.js" />
         <option value="$PROJECT_DIR$/src/game/niuniu/niuniuui.js" />
         <option value="$PROJECT_DIR$/src/resource.js" />
-        <option value="$PROJECT_DIR$/src/game/shared/redsub.js" />
         <option value="$PROJECT_DIR$/src/ui/main/settingui.js" />
+        <option value="$PROJECT_DIR$/src/game/shared/redsub.js" />
+        <option value="$PROJECT_DIR$/src/game/shared/reddetail.js" />
+        <option value="$PROJECT_DIR$/src/game/shared/redopen.js" />
       </list>
     </option>
   </component>
@@ -508,14 +508,19 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Game">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/RedGame/index.html">
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -554,6 +559,18 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="Game" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/RedGame/index.html?debug=test">
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Game" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -581,7 +598,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3991727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -668,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -712,9 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="41" selection-start-line="72" selection-start-column="24" selection-end-line="72" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -796,14 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/shared/chatnormalui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -815,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154">
           <caret line="659" column="42" selection-start-line="659" selection-start-column="42" selection-end-line="659" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,7 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="30" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,9 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="166" column="28" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -883,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -891,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -899,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="546" column="24" selection-start-line="546" selection-start-column="24" selection-end-line="546" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,14 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/protocol/protocol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.094076656">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resource.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -945,26 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/gameinfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/shared/redsub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="28" selection-start-column="8" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -993,10 +963,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/protocol/protocol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main/settingui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.94255316">
-          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="33" selection-start-line="94" selection-start-column="46" selection-end-line="95" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/shared/redsub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="177" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56137186">
+          <caret line="162" column="35" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
           <folding />
         </state>
       </provider>

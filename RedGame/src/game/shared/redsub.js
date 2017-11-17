@@ -3,7 +3,7 @@
  */
 var redsubUI = ccui.Widget.extend({
     m_img_head: null,
-    ctor:function(uid, img, name, time, money, qiang,colq, pei, colp, piao, colp2, total, colt) {
+    ctor:function(uid, img, name, time, money, qiang,colq, pei, colp, piao, colp2, total, colt, q0, p0, pi0, ttt0) {
         this._super();
 
         var l = ccs.load("res/redsub.json");
@@ -39,11 +39,21 @@ var redsubUI = ccui.Widget.extend({
             btn.setString(qiang);
             btn.setTextColor(colq);
             btn.setVisible(true);
+
+            btn = ccui.helper.seekWidgetByName(this.Widget, "ft_qiang_0");
+            btn.setString(q0);
+            btn.setTextColor(colq);
+            btn.setVisible(true);
         }
 
         if (pei) {
             btn = ccui.helper.seekWidgetByName(this.Widget, "ft_pei");
             btn.setString(pei);
+            btn.setTextColor(colp);
+            btn.setVisible(true);
+
+            btn = ccui.helper.seekWidgetByName(this.Widget, "ft_pei_0");
+            btn.setString(p0);
             btn.setTextColor(colp);
             btn.setVisible(true);
         }
@@ -53,6 +63,11 @@ var redsubUI = ccui.Widget.extend({
             btn.setString(piao);
             btn.setTextColor(colp2);
             btn.setVisible(true);
+
+            btn = ccui.helper.seekWidgetByName(this.Widget, "ft_menpiao_0");
+            btn.setString(pi0);
+            btn.setTextColor(colp2);
+            btn.setVisible(true);
         }
 
         if (total) {
@@ -60,6 +75,12 @@ var redsubUI = ccui.Widget.extend({
             btn.setString(total);
             btn.setTextColor(colt);
             btn.setVisible(true);
+
+            btn = ccui.helper.seekWidgetByName(this.Widget, "ft_total_0");
+            btn.setString(ttt0);
+            btn.setTextColor(colt);
+            btn.setVisible(true);
+
         }
         return true;
     },
