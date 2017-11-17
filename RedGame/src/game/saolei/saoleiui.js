@@ -53,6 +53,7 @@ var saoleiUI = ccui.Widget.extend({
         Client.addMap("getdetail", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     onExit:function() {
         this._super();
@@ -77,12 +78,14 @@ var saoleiUI = ccui.Widget.extend({
         msg = msg.data;
         var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     playerleave:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
         var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 离开房间");
         this.m_list.pushBackCustomItem(c);
+        this.m_list.jumpToBottom();
     },
     shaoleicreate:function(msg){
         if (!msg || !msg.data) return;
@@ -108,6 +111,7 @@ var saoleiUI = ccui.Widget.extend({
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
+            this.m_list.jumpToBottom();
         }.bind(this));
     },
     redClick:function() {
@@ -161,6 +165,7 @@ var saoleiUI = ccui.Widget.extend({
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
         var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
         this.m_list.pushBackCustomItem(ui);
+        this.m_list.jumpToBottom();
         for (var key in msg.data) {
             var p = msg.data[key];
             var n = p.gamename == "" ? p.nickname : p.gamename;
@@ -169,13 +174,16 @@ var saoleiUI = ccui.Widget.extend({
             if (p.uid == this.m_redlist[id].owner.uid) {
                 var ui2 = new chatnormalUI("【发】 " + n + "免死", cc.color(0,0,200));
                 this.m_list.pushBackCustomItem(ui2);
+                this.m_list.jumpToBottom();
             }
             else if (msg.bomb == l)                {
                 var ui2 = new chatnormalUI("【抢】 " + n + "中雷", cc.color(255,0,0));
                 this.m_list.pushBackCustomItem(ui2);
+                this.m_list.jumpToBottom();
             } else {
                 var ui2 = new chatnormalUI("【抢】 " + n + "无雷", cc.color(255,255,255));
                 this.m_list.pushBackCustomItem(ui2);
+                this.m_list.jumpToBottom();
             }
         }
     },

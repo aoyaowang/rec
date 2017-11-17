@@ -108,19 +108,19 @@ var redopenUI = ccui.Widget.extend({
             else {
                 if (this.m_type == 1) {
                     var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
-                        + ("抢包");
+                        + ("抢包:");
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (this.m_red.bomb == p.data.last ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
-                    var pl = this.m_red.bomb == p.data.last ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var pl = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
                     else mp = "-" + mp;
                     var piao = "门票:";
                     var piao0 = mp;
-                    var pl = mp > 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    var ttt = "总计";
+                    var pl = mp != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var ttt = "总计:";
                     var ttt0 = p.data.result;
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
@@ -128,19 +128,19 @@ var redopenUI = ccui.Widget.extend({
                 }
                 else if (this.m_type == 2) {
                     var qiang = (p == minp ? " 最佳" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
-                        +("抢包");
+                        +("抢包:");
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (p == minp ? "-" + (parseInt((parseInt(this.m_coin) * 1.0)) / 100) : 0);
-                    var pl = p == minp ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var pl = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
                     else mp = "-" + mp;
                     var piao = "门票:";
                     var piao0 = mp;
-                    var pl = mp > 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    var ttt = "总计";
+                    var pl = mp != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var ttt = "总计:";
                     var ttt0 = p.data.result;
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
@@ -148,7 +148,7 @@ var redopenUI = ccui.Widget.extend({
                 }
                 else if (this.m_type == 3 || this.m_type == 4) {
                     var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : "")
-                        + ("抢包");
+                        + ("抢包:");
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
@@ -159,8 +159,8 @@ var redopenUI = ccui.Widget.extend({
                     else mp = "-" + mp;
                     var piao = "门票:";
                     var piao0 = mp;
-                    var pl = mp > 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    var ttt = "总计";
+                    var pl = mp != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var ttt = "总计:";
                     var ttt = p.data.result
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);

@@ -58,6 +58,7 @@ var game28UI = ccui.Widget.extend({
         Client.addMap("28otherqiang", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     onExit:function() {
         this._super();
@@ -83,12 +84,14 @@ var game28UI = ccui.Widget.extend({
         msg = msg.data;
         var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     playerleave:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
         var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 离开房间");
         this.m_list.pushBackCustomItem(c);
+        this.m_list.jumpToBottom();
     },
     '28create':function(msg){
         if (!msg || !msg.data) return;
@@ -114,6 +117,7 @@ var game28UI = ccui.Widget.extend({
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
+            this.m_list.jumpToBottom();
         }.bind(this));
     },
     redClick:function() {
@@ -154,6 +158,7 @@ var game28UI = ccui.Widget.extend({
         var text = (msg.user.gamename == "" ? msg.user.nickname : msg.user.gamename) + " 抢走红包，与庄家兵戎相见！";
         var ui = new chatsysUI(text);
         this.m_list.pushBackCustomItem(ui);
+        this.m_list.jumpToBottom();
     },
     '28qiang':function(msg) {
         var id = msg.RoomID;
@@ -175,6 +180,7 @@ var game28UI = ccui.Widget.extend({
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
         var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
         this.m_list.pushBackCustomItem(ui);
+        this.m_list.jumpToBottom();
 
         var numstr = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 7: "七", 8: "八", 9: "九", 0: "牛"}
         for (var key in msg.data) {
@@ -187,9 +193,11 @@ var game28UI = ccui.Widget.extend({
             if (p.uid == this.m_redlist[id].owner.uid) {
                 var ui2 = new chatnormalUI("【庄】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
                 this.m_list.pushBackCustomItem(ui2);
+                this.m_list.jumpToBottom();
             } else {
                 var ui2 = new chatnormalUI("【抢】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
                 this.m_list.pushBackCustomItem(ui2);
+                this.m_list.jumpToBottom();
             }
         }
     },

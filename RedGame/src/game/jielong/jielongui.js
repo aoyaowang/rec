@@ -59,6 +59,7 @@ var jielongUI = ccui.Widget.extend({
         Client.addMap("getdetail", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     onExit:function() {
         this._super();
@@ -84,12 +85,14 @@ var jielongUI = ccui.Widget.extend({
         msg = msg.data;
         var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
+        this.m_list.jumpToBottom();
     },
     playerleave:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
         var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 离开房间");
         this.m_list.pushBackCustomItem(c);
+        this.m_list.jumpToBottom();
     },
     jielongcreate:function(msg){
         if (!msg || !msg.data) return;
@@ -116,6 +119,7 @@ var jielongUI = ccui.Widget.extend({
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
+            this.m_list.jumpToBottom();
         }.bind(this));
     },
     redClick:function() {
@@ -170,6 +174,7 @@ var jielongUI = ccui.Widget.extend({
         if (!msg.over) {
             var ui = new chatsysUI("游戏包过期，游戏停止");
             this.m_list.pushBackCustomItem(ui);
+            this.m_list.jumpToBottom();
 
             this.m_btn_start.setVisible(true);
         }
@@ -181,6 +186,7 @@ var jielongUI = ccui.Widget.extend({
         var text = (msg.user.gamename == "" ? msg.user.nickname : msg.user.gamename) + " 抢了 " + onick + "的红包！";
         var ui = new chatsysUI(text);
         this.m_list.pushBackCustomItem(ui);
+        this.m_list.jumpToBottom();
     },
     getdetail:function(msg) {
         if (msg.code !=0 ) return;
