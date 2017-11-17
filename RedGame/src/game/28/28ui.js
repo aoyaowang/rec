@@ -178,6 +178,12 @@ var game28UI = ccui.Widget.extend({
         if (!this.m_redlist[id]) return;
         this.m_redlist[id].state = this.m_redlist[id].state == 0 ? 1 : this.m_redlist[id].state;
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
+        if (!msg.over && msg.owner.uid == RoleInfo.uid) {
+            var ui = new chatsysUI("您的红包未被抢完,剩余金额已返还！");
+            this.m_list.pushBackCustomItem(ui);
+            this.m_list.jumpToBottom();
+        }
+
         var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
         this.m_list.pushBackCustomItem(ui);
         this.m_list.jumpToBottom();

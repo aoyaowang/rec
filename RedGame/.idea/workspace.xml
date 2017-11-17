@@ -44,8 +44,8 @@
       <file leaf-file-name="niuniuui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/niuniu/niuniuui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.730769">
-              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state vertical-scroll-proportion="-15.076923">
+              <caret line="181" column="9" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
       <file leaf-file-name="saoleiui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/saolei/saoleiui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6923075">
-              <caret line="77" column="23" selection-start-line="76" selection-start-column="38" selection-end-line="77" selection-end-column="23" />
+            <state vertical-scroll-proportion="-7.269231">
+              <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="168" selection-end-column="9" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -95,21 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redopen.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="redopen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.0722022">
-              <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="28ui.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="28ui.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/28/28ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="215" column="3" selection-start-line="215" selection-start-column="3" selection-end-line="215" selection-end-column="3" />
+            <state vertical-scroll-proportion="1.1949458">
+              <caret line="187" column="43" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
               <folding>
                 <element signature="e#43#85#0" expanded="false" />
               </folding>
@@ -198,12 +198,12 @@
         <option value="$PROJECT_DIR$/src/resource.js" />
         <option value="$PROJECT_DIR$/src/ui/main/settingui.js" />
         <option value="$PROJECT_DIR$/src/game/shared/redsub.js" />
-        <option value="$PROJECT_DIR$/src/game/28/28ui.js" />
-        <option value="$PROJECT_DIR$/src/game/niuniu/niuniuui.js" />
-        <option value="$PROJECT_DIR$/src/game/saolei/saoleiui.js" />
         <option value="$PROJECT_DIR$/src/game/jielong/jielongui.js" />
         <option value="$PROJECT_DIR$/src/game/shared/reddetail.js" />
         <option value="$PROJECT_DIR$/src/game/shared/redopen.js" />
+        <option value="$PROJECT_DIR$/src/game/saolei/saoleiui.js" />
+        <option value="$PROJECT_DIR$/src/game/niuniu/niuniuui.js" />
+        <option value="$PROJECT_DIR$/src/game/28/28ui.js" />
       </list>
     </option>
   </component>
@@ -964,40 +964,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/saolei/saoleiui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6923075">
-          <caret line="77" column="23" selection-start-line="76" selection-start-column="38" selection-end-line="77" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/niuniu/niuniuui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.730769">
-          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/jielong/jielongui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.6538463">
           <caret line="57" column="43" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/28/28ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="215" column="3" selection-start-line="215" selection-start-column="3" selection-end-line="215" selection-end-column="3" />
-          <folding>
-            <element signature="e#43#85#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,9 +984,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0722022">
-          <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/saolei/saoleiui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.269231">
+          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="168" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/niuniu/niuniuui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.076923">
+          <caret line="181" column="9" selection-start-line="181" selection-start-column="9" selection-end-line="181" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/28/28ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1949458">
+          <caret line="187" column="43" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
+          <folding>
+            <element signature="e#43#85#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

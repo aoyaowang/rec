@@ -161,6 +161,13 @@ var saoleiUI = ccui.Widget.extend({
     shaoleiover:function(msg) {
         var id = msg.roomid;
         if (!this.m_redlist[id]) return;
+
+        if (!msg.over && msg.owner.uid == RoleInfo.uid) {
+            var ui = new chatsysUI("您的红包未被抢完,剩余金额已返还！");
+            this.m_list.pushBackCustomItem(ui);
+            this.m_list.jumpToBottom();
+        }
+
         this.m_redlist[id].state = this.m_redlist[id].state == 0 ? 1 : this.m_redlist[id].state;
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
         var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
