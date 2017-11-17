@@ -110,6 +110,7 @@ var niuniuUI = ccui.Widget.extend({
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
+            if (!data) return;
             var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, "王者牛牛", this.packetClick.bind(this));
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
@@ -181,7 +182,7 @@ var niuniuUI = ccui.Widget.extend({
             this.m_list.jumpToBottom();
         }
 
-        var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
+        var ui = new chatsysUI(text + (msg.over ? "红包已经被抢完" : "红包已经结束"));
         this.m_list.pushBackCustomItem(ui);
         this.m_list.jumpToBottom();
 

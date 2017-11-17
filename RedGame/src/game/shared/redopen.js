@@ -20,6 +20,9 @@ var redopenUI = ccui.Widget.extend({
     ctor:function(type,id, money, coin, num, data, red) {
         this._super();
 
+        num = num || 4;
+
+        if (red.halltype + 1 == 4) coin = 400;
         this.m_id = id;
         this.m_money = money;
         this.m_coin = coin;
@@ -27,6 +30,7 @@ var redopenUI = ccui.Widget.extend({
         this.m_data = data;
         this.m_red = red;
         this.m_type = red.halltype + 1;
+
 
         var l = ccs.load("res/redopen.json");
         this.Widget = l.node;
@@ -47,6 +51,7 @@ var redopenUI = ccui.Widget.extend({
         this.m_listview = ccui.helper.seekWidgetByName(this.Widget, "ListView_1");
 
         headMgr.loadHead(red.owner.uid, red.owner.headimg, function(data){
+            if (!data) return;
             var size = data.getContentSize();
             this.m_imghead.setTexture(data);
             this.m_imghead.setTextureRect(cc.rect(0,0,size.width, size.height));
@@ -152,7 +157,7 @@ var redopenUI = ccui.Widget.extend({
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
-                    var pei0 = (p.data.pei < 0 ? "-" + (parseInt((parseInt(p.data.pei) * 1.0)) / 100) : (parseInt((parseInt(p.data.pei) * 1.0)) / 100));
+                    var pei0 = (p.data.pei < 0 ? (parseInt((parseInt(p.data.pei) * 1.0)) / 100) : (parseInt((parseInt(p.data.pei) * 1.0)) / 100));
                     var pel = p.data.pei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(p.data.piao) / 100;
                     if (mp < 0.01) mp = 0;
@@ -161,7 +166,7 @@ var redopenUI = ccui.Widget.extend({
                     var piao0 = mp;
                     var pl = mp != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ttt = "总计:";
-                    var ttt = p.data.result
+                    var ttt0 = p.data.result
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
                         qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);

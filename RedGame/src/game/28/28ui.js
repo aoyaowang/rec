@@ -113,7 +113,8 @@ var game28UI = ccui.Widget.extend({
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
-            var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, "王者二八", this.packetClick.bind(this));
+            if (!data) return;
+            var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, "王者二八杠", this.packetClick.bind(this));
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
@@ -184,28 +185,28 @@ var game28UI = ccui.Widget.extend({
             this.m_list.jumpToBottom();
         }
 
-        var ui = new chatsysUI(text + msg.over ? "红包已经被抢完" : "红包已经结束");
+        var ui = new chatsysUI(text +(msg.over ? "红包已经被抢完" : "红包已经结束"));
         this.m_list.pushBackCustomItem(ui);
         this.m_list.jumpToBottom();
 
-        var numstr = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 7: "七", 8: "八", 9: "九", 0: "牛"}
-        for (var key in msg.data) {
-            var p = msg.data[key];
-            var n = p.gamename == "" ? p.nickname : p.gamename;
-            var m = p.qiang;
-            var l = p.last;
-            var l2 = p.last2;
-            var nx = numstr[( l + l2 ) % 10];
-            if (p.uid == this.m_redlist[id].owner.uid) {
-                var ui2 = new chatnormalUI("【庄】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
-                this.m_list.pushBackCustomItem(ui2);
-                this.m_list.jumpToBottom();
-            } else {
-                var ui2 = new chatnormalUI("【抢】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
-                this.m_list.pushBackCustomItem(ui2);
-                this.m_list.jumpToBottom();
-            }
-        }
+        //var numstr = {1: "一", 2: "二", 3: "三", 4: "四", 5: "五", 6: "六", 7: "七", 8: "八", 9: "九", 0: "牛"}
+        //for (var key in msg.data) {
+        //    var p = msg.data[key];
+        //    var n = p.gamename == "" ? p.nickname : p.gamename;
+        //    var m = p.qiang;
+        //    var l = p.last;
+        //    var l2 = p.last2;
+        //    var nx = numstr[( l + l2 ) % 10];
+        //    if (p.uid == this.m_redlist[id].owner.uid) {
+        //        var ui2 = new chatnormalUI("【庄】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
+        //        this.m_list.pushBackCustomItem(ui2);
+        //        this.m_list.jumpToBottom();
+        //    } else {
+        //        var ui2 = new chatnormalUI("【抢】 " + n + "(" + (parseInt(m) / 100) + ") 牛" + nx, p.result > 0 ? cc.color(255,255,255) : nx, cc.color(255,0,0));
+        //        this.m_list.pushBackCustomItem(ui2);
+        //        this.m_list.jumpToBottom();
+        //    }
+        //}
     },
     getdetail:function(msg) {
         if (msg.code !=0 ) return;

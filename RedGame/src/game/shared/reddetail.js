@@ -17,8 +17,9 @@ var reddetailUI = ccui.Widget.extend({
     ctor:function(data, red) {
         this._super();
         data = data.data;
+        if (red.halltype + 1 == 4) red.coin  = 4;
         this.m_coin = red.coin * 100;
-        this.m_num = red.num;
+        this.m_num = red.num || 4;
         this.m_data = data;
         this.m_red = red;
         this.m_type = red.halltype + 1;
@@ -160,7 +161,7 @@ var reddetailUI = ccui.Widget.extend({
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
-                    var pei0 = (p.data.pei < 0 ? "-" + (parseInt((parseInt(p.data.pei) * 1.0)) / 100) : (parseInt((parseInt(p.data.pei) * 1.0)) / 100));
+                    var pei0 = (p.data.pei < 0 ? (parseInt((parseInt(p.data.pei) * 1.0)) / 100) : (parseInt((parseInt(p.data.pei) * 1.0)) / 100));
                     var pel = p.data.pei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(p.data.piao) / 100;
                     if (mp < 0.01) mp = 0;

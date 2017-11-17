@@ -115,6 +115,7 @@ var jielongUI = ccui.Widget.extend({
             state: 0
         };
         headMgr.loadHead(owner.uid, owner.headimg, function(data){
+            if (!data) return;
             var c = new chatredUI(data, owner.gamename == "" ? owner.nickname : owner.gamename, red, "王者接龙", this.packetClick.bind(this));
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;

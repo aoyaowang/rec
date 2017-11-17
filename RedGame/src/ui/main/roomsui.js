@@ -130,7 +130,7 @@ var roomsUI = ccui.Widget.extend({
             }
             else if (this.m_type == 4) {
                 var rn = req.type == 1 ? "初级房(1-20币)" : req.type == 2 ? "中级房(30-200币)" : "高级房(300-600币)";
-                var ui = new game28UI(this.m_type, req.type, "王者二八" + rn);
+                var ui = new game28UI(this.m_type, req.type, "王者二八杠" + rn);
                 uiMgr.mainUI.m_game.addChild(ui);
             }
         }

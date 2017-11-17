@@ -176,6 +176,7 @@
             "Tag": 19,
             "Children": [
               {
+                "IsCustomSize": true,
                 "FontSize": 24,
                 "LabelText": "王者扫雷",
                 "OutlineColor": {
@@ -190,11 +191,10 @@
                 "ShadowOffsetX": 2.0,
                 "ShadowOffsetY": -2.0,
                 "AnchorPoint": {
-                  "ScaleX": 0.5,
                   "ScaleY": 0.5
                 },
                 "Position": {
-                  "X": 102.8707,
+                  "X": 54.8707,
                   "Y": 14.6162
                 },
                 "Scale": {
@@ -208,21 +208,21 @@
                 },
                 "IconVisible": false,
                 "PrePosition": {
-                  "X": 0.2858,
+                  "X": 0.1524,
                   "Y": 0.1392
                 },
                 "PreSize": {
-                  "X": 0.2667,
+                  "X": 0.5556,
                   "Y": 0.2286
                 },
                 "LeftMargin": 54.8707,
-                "RightMargin": 209.1293,
+                "RightMargin": 105.1293,
                 "TopMargin": 78.3838,
                 "BottomMargin": 2.6162,
                 "Tag": 662,
                 "ActionTag": 469129605,
                 "Size": {
-                  "X": 96.0,
+                  "X": 200.0,
                   "Y": 24.0
                 },
                 "Name": "ft_gameName",

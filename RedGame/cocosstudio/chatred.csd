@@ -31,14 +31,14 @@
           <AbstractNodeData Name="btn_red" ActionTag="-2125043610" Tag="19" IconVisible="False" LeftMargin="83.3233" RightMargin="196.6767" TopMargin="32.4637" BottomMargin="62.5363" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="330" Scale9Height="83" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="360.0000" Y="105.0000" />
             <Children>
-              <AbstractNodeData Name="ft_gameName" ActionTag="469129605" Tag="662" IconVisible="False" LeftMargin="54.8707" RightMargin="209.1293" TopMargin="78.3838" BottomMargin="2.6162" FontSize="24" LabelText="王者扫雷" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                <Size X="96.0000" Y="24.0000" />
-                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                <Position X="102.8707" Y="14.6162" />
+              <AbstractNodeData Name="ft_gameName" ActionTag="469129605" Tag="662" IconVisible="False" LeftMargin="54.8707" RightMargin="105.1293" TopMargin="78.3838" BottomMargin="2.6162" IsCustomSize="True" FontSize="24" LabelText="王者扫雷" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="200.0000" Y="24.0000" />
+                <AnchorPoint ScaleY="0.5000" />
+                <Position X="54.8707" Y="14.6162" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="56" G="54" B="54" />
-                <PrePosition X="0.2858" Y="0.1392" />
-                <PreSize X="0.2667" Y="0.2286" />
+                <PrePosition X="0.1524" Y="0.1392" />
+                <PreSize X="0.5556" Y="0.2286" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>

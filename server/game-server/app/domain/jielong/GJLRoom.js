@@ -269,6 +269,7 @@ var GJLRoom = GBaseRoom.extend({
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
+            if (player == minPlayer) continue;
             var e = player.m_Qiang - l;
             e = player.m_Result;
             player.Info.unlockMoney(lm, e);

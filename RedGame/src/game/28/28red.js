@@ -41,6 +41,9 @@ var game28red = ccui.Widget.extend({
 
         var btn = ccui.helper.seekWidgetByName(this.Widget, "btn_back");
         btn.addClickEventListener(this.backClick.bind(this));
+
+        btn = ccui.helper.seekWidgetByName(this.Widget, "ft_num");
+        btn.setString("4");
         return true;
     },
     onEnter:function() {

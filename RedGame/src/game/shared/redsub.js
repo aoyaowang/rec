@@ -17,6 +17,7 @@ var redsubUI = ccui.Widget.extend({
 
         this.m_img_head = ccui.helper.seekWidgetByName(this.Widget, "img_head");
         headMgr.loadHead(uid, img, function(data){
+            if (!data) return;
             var size = data.getContentSize();
             this.m_img_head.setTexture(data);
             this.m_img_head.setTextureRect(cc.rect(0,0,size.width, size.height));

@@ -57,7 +57,7 @@
               {
                 "FontSize": 72,
                 "LabelText": "000.00",
-                "HorizontalAlignmentType": "HT_Right",
+                "HorizontalAlignmentType": "HT_Center",
                 "OutlineColor": {
                   "G": 0,
                   "B": 0
