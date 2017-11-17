@@ -113,7 +113,7 @@ var redopenUI = ccui.Widget.extend({
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (this.m_red.bomb == p.data.last ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
-                    var pl = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var pel = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
                     else mp = "-" + mp;
@@ -124,7 +124,7 @@ var redopenUI = ccui.Widget.extend({
                     var ttt0 = p.data.result;
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
-                        qiang, ql, pei, pl, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
+                        qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
                 }
                 else if (this.m_type == 2) {
                     var qiang = (p == minp ? " 最佳" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
@@ -133,7 +133,7 @@ var redopenUI = ccui.Widget.extend({
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (p == minp ? "-" + (parseInt((parseInt(this.m_coin) * 1.0)) / 100) : 0);
-                    var pl = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var pel = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
                     else mp = "-" + mp;
@@ -144,7 +144,7 @@ var redopenUI = ccui.Widget.extend({
                     var ttt0 = p.data.result;
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
-                        qiang, ql, pei, pl, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
+                        qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
                 }
                 else if (this.m_type == 3 || this.m_type == 4) {
                     var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : "")
@@ -153,7 +153,7 @@ var redopenUI = ccui.Widget.extend({
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (p.data.pei < 0 ? "-" + (parseInt((parseInt(p.data.pei) * 1.0)) / 100) : (parseInt((parseInt(p.data.pei) * 1.0)) / 100));
-                    var pl = p.data.pei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    var pel = p.data.pei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(p.data.piao) / 100;
                     if (mp < 0.01) mp = 0;
                     else mp = "-" + mp;
@@ -163,7 +163,8 @@ var redopenUI = ccui.Widget.extend({
                     var ttt = "总计:";
                     var ttt = p.data.result
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null, qiang, ql, pei, pl, piao, pl, ttt, tl);
+                    var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
+                        qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
                 }
             }
 
