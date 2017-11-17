@@ -48,7 +48,7 @@ pro.Init = function(next) {
     }
     Core.GData = {};
     Core.GData.m_hall = this.m_hall;
-    Core.GData.checkUid = checkUid;
+    Core.GData.checkUid = this.checkUid;
     GRobotMgr.Instance();
 };
 
