@@ -82,23 +82,23 @@
                     <FileData Type="Default" Path="Default/Sprite.png" Plist="" />
                     <BlendFunc Src="1" Dst="771" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="img_money" ActionTag="-2105604429" Tag="18" IconVisible="False" LeftMargin="34.5057" RightMargin="418.4943" TopMargin="59.4248" BottomMargin="-195.4248" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="img_money" ActionTag="-2105604429" Tag="18" IconVisible="False" LeftMargin="41.5056" RightMargin="411.4944" TopMargin="59.4249" BottomMargin="-195.4249" LeftEage="61" RightEage="61" TopEage="67" BottomEage="67" Scale9OriginX="61" Scale9OriginY="67" Scale9Width="65" Scale9Height="72" ctype="ImageViewObjectData">
                     <Size X="187.0000" Y="206.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="128.0057" Y="-92.4248" />
+                    <Position X="135.0056" Y="-92.4249" />
                     <Scale ScaleX="0.2209" ScaleY="0.2000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2000" Y="-1.3204" />
+                    <PrePosition X="0.2109" Y="-1.3204" />
                     <PreSize X="0.2922" Y="2.9429" />
                     <FileData Type="Normal" Path="top/money.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="154.6797" RightMargin="303.3203" TopMargin="148.4247" BottomMargin="-106.4247" FontSize="28" LabelText="9999999999.99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="162.6796" RightMargin="295.3204" TopMargin="148.4247" BottomMargin="-106.4247" FontSize="28" LabelText="9999999999.99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                     <Size X="182.0000" Y="28.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="245.6797" Y="-92.4247" />
+                    <Position X="253.6796" Y="-92.4247" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3839" Y="-1.3204" />
+                    <PrePosition X="0.3964" Y="-1.3204" />
                     <PreSize X="0.2844" Y="0.4000" />
                     <FontResource Type="Default" Path="" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />

@@ -558,7 +558,7 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 1.6563,
+                      "X": 1.6562,
                       "Y": 0.49
                     },
                     "PreSize": {
@@ -1856,10 +1856,10 @@
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.0313,
+                      "X": 0.0208,
                       "Y": 1.0
                     },
-                    "RightMargin": 620.0,
+                    "RightMargin": 940.0,
                     "Tag": 406,
                     "ActionTag": -1253459838,
                     "Size": {
@@ -1925,15 +1925,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.1406,
+                      "X": 0.0938,
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.2188,
+                      "X": 0.1458,
                       "Y": 1.0
                     },
                     "LeftMargin": 20.0,
-                    "RightMargin": 480.0,
+                    "RightMargin": 800.0,
                     "Tag": 77,
                     "ActionTag": 1671964290,
                     "ZOrder": 1,
@@ -1975,15 +1975,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.25,
+                      "X": 0.1667,
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.0313,
+                      "X": 0.0208,
                       "Y": 1.0
                     },
                     "LeftMargin": 160.0,
-                    "RightMargin": 460.0,
+                    "RightMargin": 780.0,
                     "Tag": 407,
                     "ActionTag": 618283737,
                     "ZOrder": 2,
@@ -2050,15 +2050,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.3906,
+                      "X": 0.2604,
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.2188,
+                      "X": 0.1458,
                       "Y": 1.0
                     },
                     "LeftMargin": 180.0,
-                    "RightMargin": 320.0,
+                    "RightMargin": 640.0,
                     "Tag": 78,
                     "ActionTag": 735862537,
                     "ZOrder": 3,
@@ -2100,15 +2100,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.5,
+                      "X": 0.3333,
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.0313,
+                      "X": 0.0208,
                       "Y": 1.0
                     },
                     "LeftMargin": 320.0,
-                    "RightMargin": 300.0,
+                    "RightMargin": 620.0,
                     "Tag": 408,
                     "ActionTag": 728452814,
                     "ZOrder": 4,
@@ -2175,15 +2175,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.6406,
+                      "X": 0.4271,
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.2188,
+                      "X": 0.1458,
                       "Y": 1.0
                     },
                     "LeftMargin": 340.0,
-                    "RightMargin": 160.0,
+                    "RightMargin": 480.0,
                     "Tag": 79,
                     "ActionTag": -1828690396,
                     "ZOrder": 5,
@@ -2225,15 +2225,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.75,
+                      "X": 0.5,
                       "Y": 0.0
                     },
                     "PreSize": {
-                      "X": 0.0313,
+                      "X": 0.0208,
                       "Y": 1.0
                     },
                     "LeftMargin": 480.0,
-                    "RightMargin": 140.0,
+                    "RightMargin": 460.0,
                     "Tag": 409,
                     "ActionTag": 631126205,
                     "ZOrder": 6,
@@ -2300,14 +2300,15 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.8906,
+                      "X": 0.5938,
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.2188,
+                      "X": 0.1458,
                       "Y": 1.0
                     },
                     "LeftMargin": 500.0,
+                    "RightMargin": 320.0,
                     "Tag": 80,
                     "ActionTag": 136909463,
                     "ZOrder": 7,
@@ -2316,6 +2317,255 @@
                       "Y": 140.0
                     },
                     "Name": "btn_game4",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 640.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.6667,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0208,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 640.0,
+                    "RightMargin": 300.0,
+                    "Tag": 401,
+                    "ActionTag": -1553095741,
+                    "ZOrder": 8,
+                    "Size": {
+                      "X": 20.0,
+                      "Y": 140.0
+                    },
+                    "Alpha": 0,
+                    "Name": "Panel_11_2_0",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "main/mian_icon_13.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "main/mian_icon_13.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 238,
+                    "Scale9Height": 255,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 730.0,
+                      "Y": 70.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7604,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.1458,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 660.0,
+                    "RightMargin": 160.0,
+                    "Tag": 402,
+                    "ActionTag": 667761317,
+                    "ZOrder": 9,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 140.0
+                    },
+                    "Name": "btn_game5",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 800.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8333,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 0.0208,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 800.0,
+                    "RightMargin": 140.0,
+                    "Tag": 403,
+                    "ActionTag": -136456578,
+                    "ZOrder": 10,
+                    "Size": {
+                      "X": 20.0,
+                      "Y": 140.0
+                    },
+                    "Alpha": 0,
+                    "Name": "Panel_11_2_1",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "FontSize": 14,
+                    "ButtonText": "",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "main/mian_icon_mj.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "main/mian_icon_mj.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 238,
+                    "Scale9Height": 255,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 890.0,
+                      "Y": 70.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.9271,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.1458,
+                      "Y": 1.0
+                    },
+                    "LeftMargin": 820.0,
+                    "Tag": 404,
+                    "ActionTag": 2030799350,
+                    "ZOrder": 11,
+                    "Size": {
+                      "X": 140.0,
+                      "Y": 140.0
+                    },
+                    "Name": "btn_game6",
                     "ctype": "ButtonObjectData"
                   }
                 ],
@@ -2609,7 +2859,7 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 1.0
                     },
                     "LeftMargin": 390.0,
@@ -2705,6 +2955,8 @@
         "game/jielong.png",
         "game/niuniu.png",
         "game/saolei.png",
+        "main/mian_icon_13.png",
+        "main/mian_icon_mj.png",
         "top/money.png",
         "userCenter/bg.png",
         "userCenter/Dicon_0.png",

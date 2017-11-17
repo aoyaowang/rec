@@ -424,27 +424,27 @@
               <AbstractNodeData Name="listview2" ActionTag="-1088100917" ZOrder="10" Tag="76" IconVisible="False" TopMargin="570.0000" BottomMargin="208.0000" TouchEnable="True" ClipAble="True" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="0" VerticalType="Align_VerticalCenter" ctype="ListViewObjectData">
                 <Size X="640.0000" Y="140.0000" />
                 <Children>
-                  <AbstractNodeData Name="Panel_11" ActionTag="-1253459838" Alpha="0" Tag="406" IconVisible="False" RightMargin="620.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_11" ActionTag="-1253459838" Alpha="0" Tag="406" IconVisible="False" RightMargin="940.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="20.0000" Y="140.0000" />
                     <AnchorPoint />
                     <Position />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
-                    <PreSize X="0.0313" Y="1.0000" />
+                    <PreSize X="0.0208" Y="1.0000" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" ZOrder="1" Tag="77" IconVisible="False" LeftMargin="20.0000" RightMargin="480.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game1" ActionTag="1671964290" ZOrder="1" Tag="77" IconVisible="False" LeftMargin="20.0000" RightMargin="800.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="140.0000" Y="140.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="90.0000" Y="70.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.1406" Y="0.5000" />
-                    <PreSize X="0.2188" Y="1.0000" />
+                    <PrePosition X="0.0938" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/28.png" Plist="" />
@@ -452,27 +452,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_11_0" ActionTag="618283737" ZOrder="2" Alpha="0" Tag="407" IconVisible="False" LeftMargin="160.0000" RightMargin="460.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_11_0" ActionTag="618283737" ZOrder="2" Alpha="0" Tag="407" IconVisible="False" LeftMargin="160.0000" RightMargin="780.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="20.0000" Y="140.0000" />
                     <AnchorPoint />
                     <Position X="160.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.2500" />
-                    <PreSize X="0.0313" Y="1.0000" />
+                    <PrePosition X="0.1667" />
+                    <PreSize X="0.0208" Y="1.0000" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="3" Tag="78" IconVisible="False" LeftMargin="180.0000" RightMargin="320.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="254" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game2" ActionTag="735862537" ZOrder="3" Tag="78" IconVisible="False" LeftMargin="180.0000" RightMargin="640.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="254" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="140.0000" Y="140.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="250.0000" Y="70.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3906" Y="0.5000" />
-                    <PreSize X="0.2188" Y="1.0000" />
+                    <PrePosition X="0.2604" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/jielong.png" Plist="" />
@@ -480,27 +480,27 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_11_1" ActionTag="728452814" ZOrder="4" Alpha="0" Tag="408" IconVisible="False" LeftMargin="320.0000" RightMargin="300.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_11_1" ActionTag="728452814" ZOrder="4" Alpha="0" Tag="408" IconVisible="False" LeftMargin="320.0000" RightMargin="620.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="20.0000" Y="140.0000" />
                     <AnchorPoint />
                     <Position X="320.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.5000" />
-                    <PreSize X="0.0313" Y="1.0000" />
+                    <PrePosition X="0.3333" />
+                    <PreSize X="0.0208" Y="1.0000" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="5" Tag="79" IconVisible="False" LeftMargin="340.0000" RightMargin="160.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game3" ActionTag="-1828690396" ZOrder="5" Tag="79" IconVisible="False" LeftMargin="340.0000" RightMargin="480.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="140.0000" Y="140.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="410.0000" Y="70.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.6406" Y="0.5000" />
-                    <PreSize X="0.2188" Y="1.0000" />
+                    <PrePosition X="0.4271" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/niuniu.png" Plist="" />
@@ -508,31 +508,87 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Panel_11_2" ActionTag="631126205" ZOrder="6" Alpha="0" Tag="409" IconVisible="False" LeftMargin="480.0000" RightMargin="140.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                  <AbstractNodeData Name="Panel_11_2" ActionTag="631126205" ZOrder="6" Alpha="0" Tag="409" IconVisible="False" LeftMargin="480.0000" RightMargin="460.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="20.0000" Y="140.0000" />
                     <AnchorPoint />
                     <Position X="480.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.7500" />
-                    <PreSize X="0.0313" Y="1.0000" />
+                    <PrePosition X="0.5000" />
+                    <PreSize X="0.0208" Y="1.0000" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
                     <ColorVector ScaleY="1.0000" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="7" Tag="80" IconVisible="False" LeftMargin="500.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                  <AbstractNodeData Name="btn_game4" ActionTag="136909463" ZOrder="7" Tag="80" IconVisible="False" LeftMargin="500.0000" RightMargin="320.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                     <Size X="140.0000" Y="140.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                     <Position X="570.0000" Y="70.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.8906" Y="0.5000" />
-                    <PreSize X="0.2188" Y="1.0000" />
+                    <PrePosition X="0.5938" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                     <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
                     <NormalFileData Type="Normal" Path="game/saolei.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_11_2_0" ActionTag="-1553095741" ZOrder="8" Alpha="0" Tag="401" IconVisible="False" LeftMargin="640.0000" RightMargin="300.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position X="640.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.6667" />
+                    <PreSize X="0.0208" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game5" ActionTag="667761317" ZOrder="9" Tag="402" IconVisible="False" LeftMargin="660.0000" RightMargin="160.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="730.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.7604" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="main/mian_icon_13.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="main/mian_icon_13.png" Plist="" />
+                    <OutlineColor A="255" R="255" G="0" B="0" />
+                    <ShadowColor A="255" R="110" G="110" B="110" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_11_2_1" ActionTag="-136456578" ZOrder="10" Alpha="0" Tag="403" IconVisible="False" LeftMargin="800.0000" RightMargin="140.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="20.0000" Y="140.0000" />
+                    <AnchorPoint />
+                    <Position X="800.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.8333" />
+                    <PreSize X="0.0208" Y="1.0000" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="btn_game6" ActionTag="2030799350" ZOrder="11" Tag="404" IconVisible="False" LeftMargin="820.0000" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="238" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+                    <Size X="140.0000" Y="140.0000" />
+                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                    <Position X="890.0000" Y="70.0000" />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition X="0.9271" Y="0.5000" />
+                    <PreSize X="0.1458" Y="1.0000" />
+                    <TextColor A="255" R="65" G="65" B="70" />
+                    <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="main/mian_icon_mj.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="main/mian_icon_mj.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
