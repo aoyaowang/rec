@@ -270,9 +270,9 @@
                       "ScaleY": 1.0
                     },
                     "CColor": {
-                      "R": 0,
-                      "G": 0,
-                      "B": 0
+                      "R": 26,
+                      "G": 26,
+                      "B": 26
                     },
                     "IconVisible": false,
                     "PrePosition": {
@@ -299,7 +299,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 20,
-                    "LabelText": "抢包:9999",
+                    "LabelText": "抢包:",
                     "HorizontalAlignmentType": "HT_Right",
                     "OutlineColor": {
                       "G": 0,
@@ -313,11 +313,10 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 1.0,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 617.1826,
+                      "X": 417.1826,
                       "Y": 106.4974
                     },
                     "Scale": {
@@ -330,21 +329,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9643,
+                      "X": 0.6518,
                       "Y": 0.7607
                     },
                     "PreSize": {
-                      "X": 0.3125,
+                      "X": 0.1328,
                       "Y": 0.1429
                     },
                     "LeftMargin": 417.1826,
-                    "RightMargin": 22.8174,
+                    "RightMargin": 137.8174,
                     "TopMargin": 23.5026,
                     "BottomMargin": 96.4974,
                     "Tag": 52,
                     "ActionTag": 1075697517,
                     "Size": {
-                      "X": 200.0,
+                      "X": 85.0,
                       "Y": 20.0
                     },
                     "VisibleForFrame": false,
@@ -354,7 +353,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 20,
-                    "LabelText": "赔付:9999",
+                    "LabelText": "赔付:",
                     "HorizontalAlignmentType": "HT_Right",
                     "OutlineColor": {
                       "G": 0,
@@ -368,11 +367,10 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 1.0,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 617.1826,
+                      "X": 417.1826,
                       "Y": 80.6011
                     },
                     "Scale": {
@@ -385,21 +383,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9643,
+                      "X": 0.6518,
                       "Y": 0.5757
                     },
                     "PreSize": {
-                      "X": 0.3125,
+                      "X": 0.1328,
                       "Y": 0.1429
                     },
                     "LeftMargin": 417.1826,
-                    "RightMargin": 22.8174,
+                    "RightMargin": 137.8174,
                     "TopMargin": 49.3989,
                     "BottomMargin": 70.6011,
                     "Tag": 53,
                     "ActionTag": 1338740488,
                     "Size": {
-                      "X": 200.0,
+                      "X": 85.0,
                       "Y": 20.0
                     },
                     "VisibleForFrame": false,
@@ -409,7 +407,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 20,
-                    "LabelText": "门票:9999",
+                    "LabelText": "门票:",
                     "HorizontalAlignmentType": "HT_Right",
                     "OutlineColor": {
                       "G": 0,
@@ -423,11 +421,10 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 1.0,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 617.1826,
+                      "X": 417.18,
                       "Y": 54.7047
                     },
                     "Scale": {
@@ -440,21 +437,21 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9643,
+                      "X": 0.6518,
                       "Y": 0.3907
                     },
                     "PreSize": {
-                      "X": 0.3125,
+                      "X": 0.1328,
                       "Y": 0.1429
                     },
-                    "LeftMargin": 417.1826,
-                    "RightMargin": 22.8174,
+                    "LeftMargin": 417.18,
+                    "RightMargin": 137.82,
                     "TopMargin": 75.2953,
                     "BottomMargin": 44.7047,
                     "Tag": 54,
                     "ActionTag": 1181579183,
                     "Size": {
-                      "X": 200.0,
+                      "X": 85.0,
                       "Y": 20.0
                     },
                     "VisibleForFrame": false,
@@ -464,7 +461,7 @@
                   {
                     "IsCustomSize": true,
                     "FontSize": 20,
-                    "LabelText": "总计:9999",
+                    "LabelText": "总计:",
                     "HorizontalAlignmentType": "HT_Right",
                     "OutlineColor": {
                       "G": 0,
@@ -478,12 +475,11 @@
                     "ShadowOffsetX": 2.0,
                     "ShadowOffsetY": -2.0,
                     "AnchorPoint": {
-                      "ScaleX": 1.0,
                       "ScaleY": 0.5
                     },
                     "Position": {
-                      "X": 617.1826,
-                      "Y": 28.8084
+                      "X": 417.18,
+                      "Y": 28.2159
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -495,25 +491,237 @@
                     },
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9643,
-                      "Y": 0.2058
+                      "X": 0.6518,
+                      "Y": 0.2015
                     },
                     "PreSize": {
-                      "X": 0.3125,
+                      "X": 0.1328,
                       "Y": 0.1429
                     },
-                    "LeftMargin": 417.1826,
-                    "RightMargin": 22.8174,
-                    "TopMargin": 101.1916,
-                    "BottomMargin": 18.8084,
+                    "LeftMargin": 417.18,
+                    "RightMargin": 137.82,
+                    "TopMargin": 101.7841,
+                    "BottomMargin": 18.2159,
                     "Tag": 55,
                     "ActionTag": 343495607,
                     "Size": {
-                      "X": 200.0,
+                      "X": 85.0,
                       "Y": 20.0
                     },
                     "VisibleForFrame": false,
                     "Name": "ft_total",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "0",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 507.7594,
+                      "Y": 106.4974
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7934,
+                      "Y": 0.7607
+                    },
+                    "PreSize": {
+                      "X": 0.1328,
+                      "Y": 0.1429
+                    },
+                    "LeftMargin": 507.7594,
+                    "RightMargin": 47.2406,
+                    "TopMargin": 23.5026,
+                    "BottomMargin": 96.4974,
+                    "Tag": 28,
+                    "ActionTag": 1638109510,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 20.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "ft_qiang_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "0",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 507.7594,
+                      "Y": 80.6011
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7934,
+                      "Y": 0.5757
+                    },
+                    "PreSize": {
+                      "X": 0.1328,
+                      "Y": 0.1429
+                    },
+                    "LeftMargin": 507.7594,
+                    "RightMargin": 47.2406,
+                    "TopMargin": 49.3989,
+                    "BottomMargin": 70.6011,
+                    "Tag": 29,
+                    "ActionTag": 1492508813,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 20.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "ft_pei_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "0",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 507.7594,
+                      "Y": 54.2957
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7934,
+                      "Y": 0.3878
+                    },
+                    "PreSize": {
+                      "X": 0.1328,
+                      "Y": 0.1429
+                    },
+                    "LeftMargin": 507.7594,
+                    "RightMargin": 47.2406,
+                    "TopMargin": 75.7043,
+                    "BottomMargin": 44.2957,
+                    "Tag": 30,
+                    "ActionTag": 1489587256,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 20.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "ft_menpiao_0",
+                    "ctype": "TextObjectData"
+                  },
+                  {
+                    "IsCustomSize": true,
+                    "FontSize": 20,
+                    "LabelText": "0",
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "AnchorPoint": {
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 507.7594,
+                      "Y": 28.2159
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {
+                      "R": 0,
+                      "B": 0
+                    },
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.7934,
+                      "Y": 0.2015
+                    },
+                    "PreSize": {
+                      "X": 0.1328,
+                      "Y": 0.1429
+                    },
+                    "LeftMargin": 507.7594,
+                    "RightMargin": 47.2406,
+                    "TopMargin": 101.7841,
+                    "BottomMargin": 18.2159,
+                    "Tag": 31,
+                    "ActionTag": -776032637,
+                    "Size": {
+                      "X": 85.0,
+                      "Y": 20.0
+                    },
+                    "VisibleForFrame": false,
+                    "Name": "ft_total_0",
                     "ctype": "TextObjectData"
                   }
                 ],
