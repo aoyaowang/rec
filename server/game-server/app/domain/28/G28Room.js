@@ -29,7 +29,7 @@ var G28Room = GBaseRoom.extend({
         this.m_List = {};
         this.m_RedList = utils.getPackets(400, 4, null);
         
-        var c = coin * 3 + 1;
+        var c = coin * 3;
         owner.unlockMoney(c, -1 * c);
         
         this.m_BeginTime = Date.parse(new Date()) / 1000;
@@ -84,7 +84,7 @@ var G28Room = GBaseRoom.extend({
         if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
 
         if (!user.lockMoney(1)) return consts.MONEY.MONEY_NOTENOUGH;
-
+        user.unlockMoney(1, -1);
         var player = new G28Player(user);
         this.m_Players[player.uid] = player;
         this.m_PlayerCount = utils.size(this.m_Players);
@@ -324,7 +324,9 @@ var G28Room = GBaseRoom.extend({
         this.m_Owner.unlockMoney(0, ownall / 100);
         this.m_Players[this.m_Owner.uid].m_Result = ownall / 100 - 1;
 
-        this.m_Owner.unlockMoney(0, left / 100);
+        //this.m_Owner.unlockMoney(0, left / 100);
+        var cc = this.m_Coin * 3 / 100;
+        this.m_Owner.unlockMoney(0, cc);
 
         this.pushMsg(enums.PROTOCOL.GAME_28_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 

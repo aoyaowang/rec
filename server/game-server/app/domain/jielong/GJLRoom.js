@@ -87,7 +87,7 @@ var GJLRoom = GBaseRoom.extend({
     playerEnter:function(user) {
         if (this.m_PlayerCount >= this.m_num) return consts.ROOM.ROOM_FULL;
 
-        if (this.m_Players[user.uid]) return consts.NOR_CODE.FAILED;
+        if (this.m_Players[user.uid]) return consts.ROOM.IN_ROOM;
 
         var lm = parseInt(1 * this.m_Coin) / 100;
         if (!user.lockMoney(lm)) return consts.MONEY.MONEY_NOTENOUGH;

@@ -47,6 +47,7 @@ var GRobotMgr = Core.obserData.extend({
         this._super();
     },
     onTimer:function(room) {
+        return;
         if (!room || !this.m_bInit) return;
         if (room.m_Hall.Type == 0) //SL
         {

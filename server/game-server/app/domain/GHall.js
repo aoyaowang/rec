@@ -75,12 +75,10 @@ var GHall = Core.obserData.extend({
             
             var p = this.m_Players[k].user;
             var t = this.m_Players[k].type;
-            console.warn("UID:" + k + " PLAYER:" + p.nickname + " TYPE:" + t);
             if (!!type && t != type) continue;
             all.push(p.nickname);
             p.addMsg(protocol, msg);
         }
-        console.warn("PUSHMSG:" + type + " DATA:" + protocol + " ALL:" + JSON.stringify(all));
     }
 });
 module.exports = GHall;

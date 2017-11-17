@@ -6,7 +6,8 @@ module.exports = {
         TOKEN_TIMEOUT: -10,
     },
     ROOM: {
-        ROOM_FULL: 1000
+        ROOM_FULL: 1000,
+        IN_ROOM:1001
     },
     MONEY: {
         MONEY_NOTENOUGH: 9000,

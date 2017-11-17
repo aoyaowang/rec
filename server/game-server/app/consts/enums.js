@@ -26,7 +26,9 @@ module.exports = {
         GAME_28_CREATE: "28create",
         GAME_28_QIANG: "28qiang",
         GAME_28_OTHERQIANG: "28otherqiang",
-        GAME_28_OVER: "28over"
+        GAME_28_OVER: "28over",
+
+        GET_DETAIL:"getdetail"
     },
     CHANGETYPE: {
         ADD: 0,

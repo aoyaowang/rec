@@ -395,6 +395,12 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
         {
             var eret = room.playerEnter(user);
             if (eret != consts.NOR_CODE.SUC_OK) {
+                if (eret == consts.ROOM.IN_ROOM) {
+                    user.addMsg(enums.PROTOCOL.GET_DETAIL, {code: 0, data: room.detail(user.uid)});
+                    next(null, {code: consts.NOR_CODE.SUC_OK, sync:user.getSync()});
+                    return;
+                }
+
                 next(null, {code: eret});
                 return;
             }
@@ -431,6 +437,12 @@ pro.jielongQiang = function(token, hallid, roomid, next) {
         {
             var eret = room.playerEnter(user);
             if (eret != consts.NOR_CODE.SUC_OK) {
+                if (eret == consts.ROOM.IN_ROOM) {
+                    user.addMsg(enums.PROTOCOL.GET_DETAIL, {code: 0, data: room.detail(user.uid)});
+                    next(null, {code: consts.NOR_CODE.SUC_OK, sync:user.getSync()});
+                    return;
+                }
+
                 next(null, {code: eret});
                 return;
             }
@@ -467,6 +479,12 @@ pro.niuniuQiang = function(token, hallid, roomid, next) {
         {
             var eret = room.playerEnter(user);
             if (eret != consts.NOR_CODE.SUC_OK) {
+                if (eret == consts.ROOM.IN_ROOM) {
+                    user.addMsg(enums.PROTOCOL.GET_DETAIL, {code: 0, data: room.detail(user.uid)});
+                    next(null, {code: consts.NOR_CODE.SUC_OK, sync:user.getSync()});
+                    return;
+                }
+
                 next(null, {code: eret});
                 return;
             }
