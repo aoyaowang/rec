@@ -62,6 +62,7 @@
             "Children": [
               {
                 "DirectionType": "Vertical",
+                "IsBounceEnabled": true,
                 "ScrollDirectionType": 0,
                 "ClipAble": false,
                 "BackColorAlpha": 102,
