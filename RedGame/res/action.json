@@ -123,7 +123,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 1028.0
+                      "Y": 1053.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -177,7 +177,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 702.0
+                      "Y": 727.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -745,7 +745,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 677.0
+                      "Y": 702.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -801,7 +801,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 351.0
+                      "Y": 376.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1368,7 +1368,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 326.0
+                      "Y": 351.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1424,7 +1424,7 @@
                     "AnchorPoint": {},
                     "Position": {
                       "X": 0.0,
-                      "Y": 0.0
+                      "Y": 25.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1968,6 +1968,54 @@
                       "Y": 326.0
                     },
                     "Name": "p_active3",
+                    "ctype": "PanelObjectData"
+                  },
+                  {
+                    "ClipAble": false,
+                    "BackColorAlpha": 102,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "Scale9Width": 1,
+                    "Scale9Height": 1,
+                    "TouchEnable": true,
+                    "AnchorPoint": {},
+                    "Position": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.0,
+                      "Y": 0.0
+                    },
+                    "PreSize": {
+                      "X": 1.0,
+                      "Y": 0.0232
+                    },
+                    "TopMargin": 1053.0,
+                    "Tag": 164,
+                    "ActionTag": -1909291589,
+                    "ZOrder": 6,
+                    "Size": {
+                      "X": 640.0,
+                      "Y": 25.0
+                    },
+                    "Name": "Panel_3_1_0",
                     "ctype": "PanelObjectData"
                   }
                 ],

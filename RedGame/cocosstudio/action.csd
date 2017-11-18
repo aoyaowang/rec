@@ -15,7 +15,7 @@
                   <AbstractNodeData Name="Panel_3" ActionTag="1440545870" Tag="256" IconVisible="False" BottomMargin="1028.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="25.0000" />
                     <AnchorPoint />
-                    <Position Y="1028.0000" />
+                    <Position Y="1053.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.9763" />
@@ -143,7 +143,7 @@
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
-                    <Position Y="702.0000" />
+                    <Position Y="727.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.6667" />
@@ -157,7 +157,7 @@
                   <AbstractNodeData Name="Panel_3_0" ActionTag="-889544775" ZOrder="2" Tag="259" IconVisible="False" TopMargin="351.0000" BottomMargin="677.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="25.0000" />
                     <AnchorPoint />
-                    <Position Y="677.0000" />
+                    <Position Y="702.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.6429" />
@@ -285,7 +285,7 @@
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
-                    <Position Y="351.0000" />
+                    <Position Y="376.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.3333" />
@@ -299,7 +299,7 @@
                   <AbstractNodeData Name="Panel_3_1" ActionTag="1166433069" ZOrder="4" Tag="280" IconVisible="False" TopMargin="702.0000" BottomMargin="326.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                     <Size X="640.0000" Y="25.0000" />
                     <AnchorPoint />
-                    <Position Y="326.0000" />
+                    <Position Y="351.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition Y="0.3096" />
@@ -427,12 +427,25 @@
                       </AbstractNodeData>
                     </Children>
                     <AnchorPoint />
-                    <Position />
+                    <Position Y="25.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
                     <PrePosition />
                     <PreSize X="1.0000" Y="0.3096" />
                     <FileData Type="Normal" Path="active/action_icon_1.png" Plist="" />
+                    <SingleColor A="255" R="150" G="200" B="255" />
+                    <FirstColor A="255" R="150" G="200" B="255" />
+                    <EndColor A="255" R="255" G="255" B="255" />
+                    <ColorVector ScaleY="1.0000" />
+                  </AbstractNodeData>
+                  <AbstractNodeData Name="Panel_3_1_0" ActionTag="-1909291589" ZOrder="6" Tag="164" IconVisible="False" TopMargin="1053.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="102" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+                    <Size X="640.0000" Y="25.0000" />
+                    <AnchorPoint />
+                    <Position />
+                    <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                    <CColor A="255" R="255" G="255" B="255" />
+                    <PrePosition />
+                    <PreSize X="1.0000" Y="0.0232" />
                     <SingleColor A="255" R="150" G="200" B="255" />
                     <FirstColor A="255" R="150" G="200" B="255" />
                     <EndColor A="255" R="255" G="255" B="255" />
