@@ -109,7 +109,7 @@
                 "BackColorAlpha": 102,
                 "FileData": {
                   "Type": "Normal",
-                  "Path": "shop/shop_icon_bg.png",
+                  "Path": "userCenter/bg.png",
                   "Plist": ""
                 },
                 "SingleColor": {
@@ -127,7 +127,7 @@
                 "Scale9OriginX": 211,
                 "Scale9OriginY": 302,
                 "Scale9Width": 218,
-                "Scale9Height": 314,
+                "Scale9Height": 378,
                 "TouchEnable": true,
                 "AnchorPoint": {},
                 "Position": {
@@ -205,7 +205,7 @@
                       "Y": 0.4193
                     },
                     "PreSize": {
-                      "X": 0.2813,
+                      "X": 0.2812,
                       "Y": 0.3286
                     },
                     "LeftMargin": 17.3881,
@@ -558,7 +558,7 @@
                       "Y": 0.7885
                     },
                     "PreSize": {
-                      "X": 0.2813,
+                      "X": 0.2812,
                       "Y": 0.3286
                     },
                     "LeftMargin": 442.645,
@@ -911,7 +911,7 @@
                       "Y": 0.7885
                     },
                     "PreSize": {
-                      "X": 0.2813,
+                      "X": 0.2812,
                       "Y": 0.3286
                     },
                     "LeftMargin": 230.0165,
@@ -1265,7 +1265,7 @@
                       "Y": 0.7885
                     },
                     "PreSize": {
-                      "X": 0.2813,
+                      "X": 0.2812,
                       "Y": 0.3286
                     },
                     "LeftMargin": 17.3881,
@@ -1588,14 +1588,14 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
-        "shop/shop_icon_bg.png",
         "shop/shop_icon_bule.png",
         "shop/shop_icon_di.png",
         "shop/shop_icon_xx.png",
         "shop/shopFk_icon_fk1.png",
         "shop/shopFk_icon_fk2.png",
         "shop/shopFk_icon_fk3.png",
-        "shop/shopFk_icon_laba.png"
+        "shop/shopFk_icon_laba.png",
+        "userCenter/bg.png"
       ],
       "ctype": "GameFileData"
     }
