@@ -47,23 +47,26 @@ var GRobotMgr = Core.obserData.extend({
         this._super();
     },
     onTimer:function(room) {
-        return;
         if (!room || !this.m_bInit) return;
-        if (room.m_Hall.Type == 0) //SL
-        {
-            GSLAI.Instance().onTimer(room);
-        }
-        else if (room.m_Hall.Type == 1) //JL
-        {
-            GJLAI.Instance().onTimer(room);
-        }
-        else if (room.m_Hall.Type == 2) //NiuNiu
-        {
-            GNiuAI.Instance().onTimer(room);
-        }
-        else if (room.m_Hall.Type == 3) //28
-        {
-            G28AI.Instance.onTimer(room);
+        try {
+            if (room.m_Hall.Type == 0) //SL
+            {
+                GSLAI.Instance().onTimer(room);
+            }
+            else if (room.m_Hall.Type == 1) //JL
+            {
+                GJLAI.Instance().onTimer(room);
+            }
+            else if (room.m_Hall.Type == 2) //NiuNiu
+            {
+                GNiuAI.Instance().onTimer(room);
+            }
+            else if (room.m_Hall.Type == 3) //28
+            {
+                G28AI.Instance.onTimer(room);
+            }
+        } catch(e) {
+            logger.warn("ROBOTERR:" + e);
         }
     },
     configChange:function(ay) {

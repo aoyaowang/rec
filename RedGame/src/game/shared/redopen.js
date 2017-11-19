@@ -132,7 +132,7 @@ var redopenUI = ccui.Widget.extend({
                         qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
                 }
                 else if (this.m_type == 2) {
-                    var qiang = (p == minp ? " 最佳" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
+                    var qiang = (p == minp ? " 最小" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
                         +("抢包:");
                     var qiang0 = (p.data.qiang / 100);
                     var ql = cc.color(0,255,0);

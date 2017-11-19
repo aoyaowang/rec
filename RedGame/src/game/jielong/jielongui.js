@@ -173,7 +173,7 @@ var jielongUI = ccui.Widget.extend({
         this.m_redlist[id].state = this.m_redlist[id].state == 0 ? 1 : this.m_redlist[id].state;
         var text = msg.owner.gamename == "" ? msg.owner.nickname : msg.owner.gamename;
         if (!msg.over) {
-            var ui = new chatsysUI("游戏包过期，游戏停止");
+            var ui = new chatsysUI("接龙过期，此包不结算，游戏停止。");
             this.m_list.pushBackCustomItem(ui);
             this.m_list.jumpToBottom();
 

@@ -262,14 +262,9 @@ var GJLRoom = GBaseRoom.extend({
             }
         }
 
-        if (minPlayer && left == 0) {
-            minPlayer.m_Result -= lm;
-        }
-
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
-            if (player == minPlayer && left == 0) continue;
             var e = player.m_Qiang - l;
             e = player.m_Result;
             player.Info.unlockMoney(lm, e);
@@ -278,9 +273,12 @@ var GJLRoom = GBaseRoom.extend({
 
         this.pushMsg(enums.PROTOCOL.GAME_JIELONG_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 
-        if (left > 0)
+        if (left > 0) {
+            minPlayer.Info.unlockMoney(0, lm * -1);
             delete this.m_Hall.m_CurRoom[this.m_Coin / 100];
+        }
         else {
+            minPlayer.Info.lockMoney(lm);
             var room2 = new GJLRoom(this.Type, minPlayer.Info, this.m_Coin / 100, 5, false);
             this.m_Hall.createRoom(room2);
             this.m_Hall.m_CurRoom[this.m_Coin / 100] = room2;

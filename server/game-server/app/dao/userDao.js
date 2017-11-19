@@ -47,7 +47,7 @@ userDao.getMoney = function(uid, next) {
 
 userDao.updateMoney = function(uid, fangka, money, next) {
     var sql = 'update money set fangka = ?,money = ? where uid = ?';
-    var args= [sanitizer.sanitize(fangka), sanitizer.sanitize(money), sanitizer.sanitize(uid)];
+    var args= [fangka, money, sanitizer.sanitize(uid)];
 
     pomelo.app.get('db1').query(sql, args, function(err, res){
         next(null, null);
