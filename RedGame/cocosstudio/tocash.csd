@@ -195,7 +195,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ft_to" ActionTag="-297943015" Tag="122" IconVisible="False" LeftMargin="242.9104" RightMargin="37.0896" TopMargin="647.1631" BottomMargin="234.8369" TouchEnable="True" FontSize="36" IsCustomSize="True" LabelText="" PlaceHolderText="转账UID" MaxLengthText="10" ctype="TextFieldObjectData">
+              <AbstractNodeData Name="ft_to" ActionTag="-297943015" Tag="122" IconVisible="False" LeftMargin="242.9104" RightMargin="37.0896" TopMargin="647.1631" BottomMargin="234.8369" TouchEnable="True" FontSize="30" IsCustomSize="True" LabelText="" PlaceHolderText="转账UID" MaxLengthText="10" ctype="TextFieldObjectData">
                 <Size X="360.0000" Y="36.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="422.9104" Y="252.8369" />

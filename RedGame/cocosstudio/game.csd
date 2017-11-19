@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="36" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="700.0000" />
         <Children>
-          <AbstractNodeData Name="ScrollView_1" ActionTag="537245702" Tag="37" IconVisible="False" TouchEnable="True" ClipAble="False" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
+          <AbstractNodeData Name="ScrollView_1" ActionTag="537245702" Tag="37" IconVisible="False" TouchEnable="True" ClipAble="True" BackColorAlpha="0" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
             <Size X="640.0000" Y="700.0000" />
             <Children>
               <AbstractNodeData Name="btn_game1" ActionTag="1893247062" Tag="38" IconVisible="False" LeftMargin="55.2046" RightMargin="318.7954" TopMargin="15.2949" BottomMargin="607.7051" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -16,7 +16,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2941" Y="0.8291" />
-                <PreSize X="0.4156" Y="0.3957" />
+                <PreSize X="0.4156" Y="0.3078" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
@@ -31,7 +31,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7273" Y="0.8274" />
-                <PreSize X="0.4187" Y="0.3943" />
+                <PreSize X="0.4187" Y="0.3067" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="game/jielong.png" Plist="" />
@@ -39,14 +39,14 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_game3" ActionTag="-1250476999" Tag="40" IconVisible="False" LeftMargin="55.2046" RightMargin="318.7954" TopMargin="310.7238" BottomMargin="312.2763" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+              <AbstractNodeData Name="btn_game3" ActionTag="-1250476999" Tag="40" IconVisible="False" LeftMargin="55.2046" RightMargin="318.7954" TopMargin="310.7237" BottomMargin="312.2763" TouchEnable="True" FontSize="14" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="236" Scale9Height="255" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
                 <Size X="266.0000" Y="277.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
                 <Position X="188.2046" Y="450.7763" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2941" Y="0.5009" />
-                <PreSize X="0.4156" Y="0.3957" />
+                <PreSize X="0.4156" Y="0.3078" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="game/niuniu.png" Plist="" />
@@ -61,7 +61,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7258" Y="0.5005" />
-                <PreSize X="0.4156" Y="0.3957" />
+                <PreSize X="0.4156" Y="0.3078" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="game/28.png" Plist="" />
@@ -76,7 +76,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.2941" Y="0.1726" />
-                <PreSize X="0.4187" Y="0.3957" />
+                <PreSize X="0.4187" Y="0.3078" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="main/mian_icon_13.png" Plist="" />
@@ -91,7 +91,7 @@
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
                 <PrePosition X="0.7258" Y="0.1729" />
-                <PreSize X="0.4187" Y="0.3957" />
+                <PreSize X="0.4187" Y="0.3078" />
                 <TextColor A="255" R="65" G="65" B="70" />
                 <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
                 <PressedFileData Type="Normal" Path="main/mian_icon_mj.png" Plist="" />

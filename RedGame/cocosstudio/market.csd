@@ -22,7 +22,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ScrollView_1" ActionTag="-200075393" Tag="343" IconVisible="False" TopMargin="-2.6844" BottomMargin="2.6844" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="302" BottomEage="302" Scale9OriginX="211" Scale9OriginY="302" Scale9Width="218" Scale9Height="314" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
+              <AbstractNodeData Name="ScrollView_1" ActionTag="-200075393" Tag="343" IconVisible="False" TouchEnable="True" ClipAble="True" BackColorAlpha="102" ColorAngle="90.0000" LeftEage="211" RightEage="211" TopEage="302" BottomEage="302" Scale9OriginX="211" Scale9OriginY="302" Scale9Width="218" Scale9Height="378" IsBounceEnabled="True" ScrollDirectionType="Vertical" ctype="ScrollViewObjectData">
                 <Size X="640.0000" Y="700.0000" />
                 <Children>
                   <AbstractNodeData Name="btn_gold9" ActionTag="1449129332" Tag="136" IconVisible="False" LeftMargin="17.3881" RightMargin="442.6119" TopMargin="291.5049" BottomMargin="178.4951" TouchEnable="True" FontSize="14" ButtonText="Button" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="150" Scale9Height="208" DisplayState="False" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
@@ -358,12 +358,12 @@
                   </AbstractNodeData>
                 </Children>
                 <AnchorPoint />
-                <Position Y="2.6844" />
+                <Position />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.0038" />
+                <PrePosition />
                 <PreSize X="1.0000" Y="1.0000" />
-                <FileData Type="Normal" Path="shop/shop_icon_bg.png" Plist="" />
+                <FileData Type="Normal" Path="userCenter/bg.png" Plist="" />
                 <SingleColor A="255" R="255" G="150" B="100" />
                 <FirstColor A="255" R="255" G="150" B="100" />
                 <EndColor A="255" R="255" G="255" B="255" />

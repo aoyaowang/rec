@@ -934,7 +934,7 @@
                 "ctype": "TextObjectData"
               },
               {
-                "FontSize": 36,
+                "FontSize": 30,
                 "IsCustomSize": true,
                 "LabelText": "",
                 "PlaceHolderText": "转账UID",

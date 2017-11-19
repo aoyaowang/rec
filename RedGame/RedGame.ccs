@@ -6,6 +6,7 @@
         <Folder Name="active">
           <Image Name="action_icon_1.png" />
           <Image Name="action_icon_di.png" />
+          <Image Name="action_icon_dian.png" />
           <Image Name="action_icon_fk.png" />
           <Image Name="action_icon_hf.png" />
           <Image Name="action_icon_sj.png" />

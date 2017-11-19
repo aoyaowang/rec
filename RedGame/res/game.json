@@ -21,7 +21,7 @@
               "Height": 900
             },
             "ScrollDirectionType": "Vertical",
-            "ClipAble": false,
+            "ClipAble": true,
             "BackColorAlpha": 0,
             "ComboBoxIndex": 1,
             "SingleColor": {
@@ -120,7 +120,7 @@
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3957
+                  "Y": 0.3078
                 },
                 "LeftMargin": 55.2046,
                 "RightMargin": 318.7954,
@@ -195,7 +195,7 @@
                 },
                 "PreSize": {
                   "X": 0.4187,
-                  "Y": 0.3943
+                  "Y": 0.3067
                 },
                 "LeftMargin": 331.4991,
                 "RightMargin": 40.5009,
@@ -270,11 +270,11 @@
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3957
+                  "Y": 0.3078
                 },
                 "LeftMargin": 55.2046,
                 "RightMargin": 318.7954,
-                "TopMargin": 310.7238,
+                "TopMargin": 310.7237,
                 "BottomMargin": 312.2763,
                 "Tag": 40,
                 "ActionTag": -1250476999,
@@ -345,7 +345,7 @@
                 },
                 "PreSize": {
                   "X": 0.4156,
-                  "Y": 0.3957
+                  "Y": 0.3078
                 },
                 "LeftMargin": 331.4985,
                 "RightMargin": 42.5015,
@@ -420,7 +420,7 @@
                 },
                 "PreSize": {
                   "X": 0.4187,
-                  "Y": 0.3957
+                  "Y": 0.3078
                 },
                 "LeftMargin": 54.204,
                 "RightMargin": 317.796,
@@ -495,7 +495,7 @@
                 },
                 "PreSize": {
                   "X": 0.4187,
-                  "Y": 0.3957
+                  "Y": 0.3078
                 },
                 "LeftMargin": 330.4989,
                 "RightMargin": 41.5011,
