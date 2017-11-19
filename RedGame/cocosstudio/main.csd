@@ -92,14 +92,14 @@
                     <PreSize X="0.2922" Y="2.9429" />
                     <FileData Type="Normal" Path="top/money.png" Plist="" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="160.6796" RightMargin="297.3204" TopMargin="148.4247" BottomMargin="-106.4247" FontSize="28" LabelText="9999999999.99" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-                    <Size X="182.0000" Y="28.0000" />
+                  <AbstractNodeData Name="ft_money" ActionTag="-957674105" Tag="19" IconVisible="False" HorizontalEdge="LeftEdge" LeftMargin="157.6797" RightMargin="328.3203" TopMargin="148.4247" BottomMargin="-106.4247" FontSize="28" LabelText="99999999999" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                    <Size X="154.0000" Y="28.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="251.6796" Y="-92.4247" />
+                    <Position X="234.6797" Y="-92.4247" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.3932" Y="-1.3204" />
-                    <PreSize X="0.2844" Y="0.4000" />
+                    <PrePosition X="0.3667" Y="-1.3204" />
+                    <PreSize X="0.2406" Y="0.4000" />
                     <FontResource Type="Default" Path="" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
