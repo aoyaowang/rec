@@ -260,6 +260,19 @@ var G28Room = GBaseRoom.extend({
             left += this.m_RedList[key];
         }
 
+        if (left > 0) {
+            for (var key in this.m_Players) {
+                if (this.m_Owner.uid == this.m_Players[key].Info.uid) continue;
+
+                this.m_Players[key].Info.unlockMoney(0, 1);
+            }
+            var c = parseInt(3 * this.m_Coin) / 100;
+            this.m_Owner.unlockMoney(0, c);
+
+            this.pushMsg(enums.PROTOCOL.GAME_28_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
+            return;
+        }
+
         if (!this.m_Players[this.m_Owner.uid]) {
             console.warn("28 No Owner");
             return;
