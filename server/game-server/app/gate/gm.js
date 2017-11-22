@@ -124,31 +124,31 @@ exports.start = function(port){
 }
 
 function getallrobot(cb) {
-    pomelo.app.business.gameRemote.getallrobot(null, function(err, res){
+    pomelo.app.rpc.business.gameRemote.getallrobot(null, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
 }
 
 function configrobot(uids, game, param, time1, time2, time3, cb) {
-    pomelo.app.business.gameRemote.configrobot(null, uids, game, param, time1, time2, time3, function(err, res){
+    pomelo.app.rpc.business.gameRemote.configrobot(null, uids, game, param, time1, time2, time3, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
 }
 
 function deleterobot(uids, cb) {
-    pomelo.app.business.gameRemote.deleterobot(null, uids, function(err, res){
+    pomelo.app.rpc.business.gameRemote.deleterobot(null, uids, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
 }
 
 function createrobot(info, cb) {
-    pomelo.app.business.gameRemote.createrobot(null, info, function(err, res){
+    pomelo.app.rpc.business.gameRemote.createrobot(null, info, function(err, res){
         cb(res || {coode: consts.NOR_CODE.FAILED});
     });
 }
 
 function upscore(uids, m, f, cb) {
-    pomelo.app.business.gameRemote.upscore(null, uids, m, f, function(err, res){
+    pomelo.app.rpc.business.gameRemote.upscore(null, uids, m, f, function(err, res){
         cb(res || {coode: consts.NOR_CODE.FAILED});
     });
 }

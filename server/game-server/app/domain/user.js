@@ -3,6 +3,7 @@ var pomelo = require('pomelo');
 var async = require('async');
 var fs = require('fs');
 var userDao = require('../dao/userDao');
+var dailiDao = require('../dao/dailiDao');
 
 var enums = require('../consts/enums');
 var Core = require('../base/Core');
@@ -28,9 +29,13 @@ module.exports = Core.obserData.extend({
             money: null,
 
             robot: null,
+            referee: null,
 
             _lockmoney: null,
             _lockfangka: null,
+
+            daili: null,
+            liushui: null,
         }
     },
     init:function(uid, next) {
@@ -67,6 +72,15 @@ module.exports = Core.obserData.extend({
         Object.defineProperty(this, "robot", {
             get: function () { return this.data.robot}
         });
+        Object.defineProperty(this, "referee", {
+            get: function () { return this.data.referee}
+        });
+        Object.defineProperty(this, "daili", {
+            get: function () { return this.data.daili}
+        });
+        Object.defineProperty(this, "liushui", {
+            get: function () { return this.data.liushui}
+        });
 
         userDao.getInfo(uid, function(err, data){
             if (!data) {
@@ -80,16 +94,23 @@ module.exports = Core.obserData.extend({
                     next(true, null);
                     return;
                 }
-                this.data.uid = uid;
-                this.data.nickname = data.nickname;
-                this.data.gamename = data.gamename;
-                this.data.sex = data.sex;
-                this.data.headimg = data.headimg;
-                this.data.openid = data.openid;
-                this.data.robot = data.robot;
-                this.data.fangka = money.fangka;
-                this.data.money = money.money;
-                next(null, null);
+                dailiDao.getDaili(uid, function(err, daili){
+                    this.data.daili = daili;
+                    dailiDao.getLiuShui(uid, function(err, liushui){
+                        this.data.uid = uid;
+                        this.data.nickname = data.nickname;
+                        this.data.gamename = data.gamename;
+                        this.data.sex = data.sex;
+                        this.data.headimg = data.headimg;
+                        this.data.openid = data.openid;
+                        this.data.robot = data.robot;
+                        this.data.referee = data.referee;
+                        this.data.fangka = money.fangka;
+                        this.data.money = money.money;
+                        this.data.liushui = liushui;
+                        next(null, null);
+                    }.bind(this));
+                }.bind(this));
             }.bind(this));
         }.bind(this));
     },

@@ -66,12 +66,14 @@
         var code = getQueryString("code");
         var state = getQueryString("state");
         var token = getQueryString("token");
+        var uid = getQueryString("uid");
 
         var debug = getQueryString("debug");
         if (debug == 'test') {
             Login_Type = 4;
             return;
         }
+        Login_UID = uid;
         if (!!code && !!state) {
             if (state == 1) {
                 Login_Type = 3;

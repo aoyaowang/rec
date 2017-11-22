@@ -161,11 +161,16 @@ db.get_money = function(uid, cb) {
     });
 }
 
-db.create_user = function(openid, nickname, sex, headimg, cb) {
+db.create_user = function(openid, nickname, sex, headimg, referee, cb) {
     cb = cb == null ? nop : cb;
 
-    var sql = 'insert into user(openid, nickname, gamename, sex, headimg) values (?, ?, "", ?, ?)';
-    var args = [sanitizer.sanitize(openid), sanitizer.sanitize(nickname), sanitizer.sanitize(nickname), sanitizer.sanitize(sex), sanitizer.sanitize(headimg || "")];
+    var sql = 'insert into user(openid, nickname, gamename, sex, headimg, referee) values (?, ?, "", ?, ?, ?)';
+    var args = [sanitizer.sanitize(openid), 
+        sanitizer.sanitize(nickname), 
+        sanitizer.sanitize(nickname), 
+        sanitizer.sanitize(sex), 
+        sanitizer.sanitize(headimg || ""),
+        sanitizer.sanitize(referee||"")];
 
     query(sql, args, function(err, res){
         if (err) {

@@ -141,7 +141,7 @@ app.get("/fastreg", function(req, res){
     var timestamp = Date.parse(new Date()) / 1000;
 
     openid = randomWord(true, 16, 16);
-    db.create_user(openid, "测试号", 1, "http://img5.imgtn.bdimg.com/it/u=547138142,3998729701&fm=27&gp=0.jpg", function(uid){
+    db.create_user(openid, "测试号", 1, "http://img5.imgtn.bdimg.com/it/u=547138142,3998729701&fm=27&gp=0.jpg", "", function(uid){
     if (!uid) {
         console.error("????????:" + "测试号" + " OPENID:" + openid);
     } else {
@@ -216,6 +216,7 @@ app.get("/tokenlogin", function(req,res){
 app.get('/wechat_auth',function(req,res){
     var code = req.query.code;
     var os = req.query.os||"WEB";
+    var referee = req.query.uid || "";
     if(code == null || code == "" || os == null || os == ""){
         return;
     }
@@ -234,29 +235,32 @@ app.get('/wechat_auth',function(req,res){
                     var account = "wx_" + openid;
                     db.is_openid_exist(openid, function(data){
                         if (!data) {
-                            db.create_user(openid, nickname, sex, headimgurl, function(uid){
-                                if (!uid) {
-                                    console.error("????????:" + nickname + " OPENID:" + openid);
-                                } else {
-                                    var token = Token.create(uid, timestamp, req.ip, TOKEN_SECRET);
-                                    var ret = {
-                                        code:0,
-                                        data:{
-                                            uid: uid,
-                                            nickname: nickname,
-                                            gamename: "",
-                                            sex: sex,
-                                            headimg: headimgurl,
-
-                                            fangka: 0,
-                                            money: 0,
-                                            token: token,
-                                            gate: getGate(uid)
+                            db.is_uid_exist(referee, function(referdata){
+                                if (!referdata) referee = "";
+                                db.create_user(openid, nickname, sex, headimgurl, referee, function(uid){
+                                    if (!uid) {
+                                        console.error("????????:" + nickname + " OPENID:" + openid);
+                                    } else {
+                                        var token = Token.create(uid, timestamp, req.ip, TOKEN_SECRET);
+                                        var ret = {
+                                            code:0,
+                                            data:{
+                                                uid: uid,
+                                                nickname: nickname,
+                                                gamename: "",
+                                                sex: sex,
+                                                headimg: headimgurl,
+    
+                                                fangka: 0,
+                                                money: 0,
+                                                token: token,
+                                                gate: getGate(uid)
+                                            }
                                         }
+                                        send(res, ret);
+                                        updateUser(ret.data);
                                     }
-                                    send(res, ret);
-                                    updateUser(ret.data);
-                                }
+                                });
                             });
                         } else {
                             db.update_user(openid, nickname, sex, headimgurl, function(){

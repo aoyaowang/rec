@@ -51,7 +51,7 @@ var loadingUI = cc.Layer.extend({
         Nlog("Load Over");
         this.m_pLoadingBar.setPercent(100);
         if (Login_Type == 1) {
-            Server.send("wxlogin", {code: Login_Param.code});
+            Server.send("wxlogin", {code: Login_Param.code, uid: Login_UID});
         } else if (Login_Type == 2) {
             Server.send("tokenlogin", {t: Login_Param});
         } else if (Login_Type == 4) {
