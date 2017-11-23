@@ -60,7 +60,7 @@ var GSLRoom = GBaseRoom.extend({
             if (!this.m_bOver) {
                 for (var key in this.m_Players) {
                     retdata.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
-                    if (key == uid) retdata.data[key] = this.m_Players[key];
+                    if (key == uid) retdata.data[key] = {data: this.m_Players[key]};
                 }
             } else {
                 for (var key in this.m_Players) {
