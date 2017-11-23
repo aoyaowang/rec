@@ -51,6 +51,7 @@ var saoleiUI = ccui.Widget.extend({
         Client.addMap("shaoleiqiang", this);
         Client.addMap("shaoleiover", this);
         Client.addMap("getdetail", this);
+        Client.addMap("relogin", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
         this.m_list.jumpToBottom();
@@ -66,6 +67,10 @@ var saoleiUI = ccui.Widget.extend({
         Client.removeMap("shaoleiqiang", this);
         Client.removeMap("shaoleiover", this);
         Client.removeMap("getdetail", this);
+        Client.removeMap("relogin", this);
+    },
+    relogin:function(){
+        this.removeFromParent();
     },
     backClick:function(){
         this.removeFromParent();

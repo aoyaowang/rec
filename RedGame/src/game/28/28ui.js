@@ -56,6 +56,7 @@ var game28UI = ccui.Widget.extend({
         Client.addMap("28over", this);
         Client.addMap("getdetail", this);
         Client.addMap("28otherqiang", this);
+        Client.addMap("relogin", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
         this.m_list.jumpToBottom();
@@ -72,6 +73,10 @@ var game28UI = ccui.Widget.extend({
         Client.removeMap("28over", this);
         Client.removeMap("getdetail", this);
         Client.removeMap("28otherqiang", this);
+        Client.removeMap("relogin", this);
+    },
+    relogin:function(){
+        this.removeFromParent();
     },
     backClick:function(){
         this.removeFromParent();

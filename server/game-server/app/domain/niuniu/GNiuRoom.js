@@ -275,7 +275,7 @@ var GNiuRoom = GBaseRoom.extend({
             var curniu = (this.m_Players[key].m_LastNum + this.m_Players[key].m_LastNum2) % 10;
             if (curniu == 0) curniu = 10;
 
-            if (ownerniu > curniu) {
+            if (ownerniu > curniu || (ownerniu == curniu && this.m_Players[this.m_Owner.uid].m_Qiang >= this.m_Players[key].m_Qiang)) {
                 var lost = peilv[ownerniu];
                 lost = lost * this.m_Coin;
                 ownall+=lost;
@@ -304,9 +304,9 @@ var GNiuRoom = GBaseRoom.extend({
                 this.m_Players[key].m_Result = win / 100;
             }
         }
-        
+        this.m_Players[this.m_Owner.uid].m_Pei = ownall;
         ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
-        this.m_Players[this.m_Owner.uid].m_Pei = ownall + 1;
+        
         if (ownall > 0) {
             var ppp = ownall * fl;
             ownall -= ppp;
@@ -325,7 +325,7 @@ var GNiuRoom = GBaseRoom.extend({
         this.m_Players[this.m_Owner.uid].m_Result = ownall / 100;
         
         this.m_Owner.unlockMoney(0, c / 100);
-        this.m_Owner.unlockMoney(0, left / 100);
+        //this.m_Owner.unlockMoney(0, left / 100);
 
         this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 

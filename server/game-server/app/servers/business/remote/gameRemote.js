@@ -109,6 +109,7 @@ pro.checkToken = function(token, next) {
                 return;
             }
             this.m_db[uid] = user;
+            user.addMsg(enums.PROTOCOL.RELOGIN, {});
             next(null, user);
         }.bind(this));
     } else {
@@ -538,6 +539,7 @@ pro.checkUid = function(uid, next) {
                 return;
             }
             this.m_db[uid] = user;
+            user.addMsg(enums.PROTOCOL.RELOGIN, {});
             next(null, user);
         }.bind(this));
     } else {

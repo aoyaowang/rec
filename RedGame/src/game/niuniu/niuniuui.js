@@ -53,6 +53,7 @@ var niuniuUI = ccui.Widget.extend({
         Client.addMap("niuniuover", this);
         Client.addMap("getdetail", this);
         Client.addMap("niuniuotherqiang", this);
+        Client.addMap("relogin", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
         this.m_list.jumpToBottom();
@@ -69,6 +70,10 @@ var niuniuUI = ccui.Widget.extend({
         Client.removeMap("niuniuover", this);
         Client.removeMap("getdetail", this);
         Client.removeMap("niuniuotherqiang", this);
+        Client.removeMap("relogin", this);
+    },
+    relogin:function(){
+        this.removeFromParent();
     },
     backClick:function(){
         this.removeFromParent();

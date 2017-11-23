@@ -57,6 +57,7 @@ var jielongUI = ccui.Widget.extend({
         Client.addMap("jielongotherqiang", this);
         Client.addMap("jielongover", this);
         Client.addMap("getdetail", this);
+        Client.addMap("relogin", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
         this.m_list.jumpToBottom();
@@ -73,6 +74,10 @@ var jielongUI = ccui.Widget.extend({
         Client.removeMap("jielongotherqiang", this);
         Client.removeMap("jielongover", this);
         Client.removeMap("getdetail", this);
+        Client.removeMap("relogin", this);
+    },
+    relogin:function(){
+        this.removeFromParent();
     },
     backClick:function(){
         this.removeFromParent();

@@ -60,7 +60,7 @@ var GSLRoom = GBaseRoom.extend({
             if (!this.m_bOver) {
                 for (var key in this.m_Players) {
                     retdata.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
-                    if (key == uid) retdata.data[key].m = this.m_Players[key].m_Qiang;
+                    if (key == uid) retdata.data[key] = this.m_Players[key];
                 }
             } else {
                 for (var key in this.m_Players) {
@@ -137,9 +137,37 @@ var GSLRoom = GBaseRoom.extend({
                 var p = this.m_Players[key];
                 var m = this.m_List[key];
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
-                else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
+                else if (p.Info.uid == user.uid) {
+                    ot[key] = {data: p};
+                }
+                else {
+                    ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
+                }
             }
             player.Info.addMsg(enums.PROTOCOL.GAME_SHAOLEI_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, bomb: this.Bomb, data: player, other: ot});
+           
+            var lm = parseInt(1 * this.m_Coin) / 100;
+            var peilv = 1.0;
+            if (this.m_num == 7) {
+                lm = parseInt(1.5 * this.m_Coin) / 100;
+                peilv = 1.5;
+            }
+            
+            var fl = 0.03;
+            var oex = 0;
+            var ownall = 0;
+            var l = Math.floor(player.m_Qiang * fl);
+            if (l < 1) l = 0;
+            var e = player.m_Qiang - l;
+            if (player.m_LastNum == this.m_Bomb && player.Info.uid != this.m_Owner.uid) {
+                e -= lm * 100;
+                oex += lm;
+            }
+            e = parseInt(e);
+            player.Info.unlockMoney(lm, e / 100);
+            player.m_Result = e / 100;
+            ownall += e / 100;
+
             if (this.m_RedList.length == 0) {
                 this.GameOver();
             }
@@ -197,7 +225,7 @@ var GSLRoom = GBaseRoom.extend({
             }
             e = parseInt(e);
             console.warn("GAMEOVER:" + player.Info.uid);
-            player.Info.unlockMoney(lm, e / 100);
+            //player.Info.unlockMoney(lm, e / 100);
             player.m_Result = e / 100;
             ownall += e / 100;
             if (player.Info.uid != this.m_Owner.uid)
