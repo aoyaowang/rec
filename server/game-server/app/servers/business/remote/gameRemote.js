@@ -185,6 +185,8 @@ pro.saoleiType = function(coin) {
         3: {min: 500, max: 2000, step: 100}
     }
 
+    if (coin == 5) return 1;
+
     var t = null;
     var bFind = false;
     for (var key in STYPE) {

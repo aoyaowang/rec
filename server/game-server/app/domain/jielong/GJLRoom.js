@@ -261,7 +261,7 @@ var GJLRoom = GBaseRoom.extend({
                 player.m_Result = 0;
             }
         }
-
+        minPlayer.m_Result -= lm;
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
@@ -272,7 +272,7 @@ var GJLRoom = GBaseRoom.extend({
         }
 
         this.pushMsg(enums.PROTOCOL.GAME_JIELONG_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
-
+        
         if (left > 0) {
             minPlayer.Info.unlockMoney(0, lm * -1);
             delete this.m_Hall.m_CurRoom[this.m_Coin / 100];

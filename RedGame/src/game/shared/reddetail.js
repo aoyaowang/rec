@@ -18,6 +18,7 @@ var reddetailUI = ccui.Widget.extend({
         this._super();
         data = data.data;
         if (red.halltype + 1 == 4) red.coin  = 4;
+        if (red.halltype + 1 == 3) red.coin  = 1;
         this.m_coin = red.coin * 100;
         this.m_num = red.num || 4;
         this.m_data = data;

@@ -23,6 +23,7 @@ var redopenUI = ccui.Widget.extend({
         num = num || 4;
 
         if (red.halltype + 1 == 4) coin = 400;
+        if (red.halltype + 1 == 3) coin = 100;
         this.m_id = id;
         this.m_money = money;
         this.m_coin = coin;
