@@ -30,7 +30,8 @@ var G28Room = GBaseRoom.extend({
         this.m_RedList = utils.getPackets(400, 4, null);
         
         var c = coin * 3;
-        owner.unlockMoney(c, -1 * c);
+        //owner.unlockMoney(c, -1 * c);
+        owner.unlockMoney(c, 0);
         
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
@@ -338,8 +339,8 @@ var G28Room = GBaseRoom.extend({
         this.m_Players[this.m_Owner.uid].m_Result = ownall / 100 - 1;
 
         //this.m_Owner.unlockMoney(0, left / 100);
-        var cc = this.m_Coin * 3 / 100;
-        this.m_Owner.unlockMoney(0, cc);
+        //var cc = this.m_Coin * 3 / 100;
+        //this.m_Owner.unlockMoney(0, cc);
 
         this.pushMsg(enums.PROTOCOL.GAME_28_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 
