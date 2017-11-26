@@ -95,7 +95,7 @@ var G28Room = GBaseRoom.extend({
         player.m_Position = this.m_PlayerCount;
         player.m_EnterTime = Date.parse(new Date()) / 1000;
         player.Info.inGame.push(this);
-
+        user._in28Game = true;
 
 
         this.updatePos();
@@ -291,6 +291,7 @@ var G28Room = GBaseRoom.extend({
         var ownall = 0;
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
+            player.Info._in28Game = true;
             if (this.m_Players[key].m_Qiang == 0) continue;
             if (this.m_Players[key].Info.uid == this.m_Owner.uid) continue;
             var curniu = this.m_Players[key].CardType();

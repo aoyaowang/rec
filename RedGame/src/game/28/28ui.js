@@ -105,7 +105,7 @@ var game28UI = ccui.Widget.extend({
         var num = msg.num;
         var bomb = msg.bomb;
         var owner = msg.owner;
-        var red = "恭喜发财，大吉大利";
+        var red = (msg.coin / 100) + "币包";
 
         this.m_redlist[msg.RoomID] = {
             coin: coin,
