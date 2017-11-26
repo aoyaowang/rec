@@ -25,5 +25,13 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="message.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="message.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>
