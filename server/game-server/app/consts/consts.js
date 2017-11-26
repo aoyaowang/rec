@@ -14,6 +14,7 @@ module.exports = {
         FANGKA_NOTENOUGH: 9001
     },
     GAME: {
-        RED_OVER: 10000
+        RED_OVER: 10000,
+        IN_28_GAME: 10001
     }
 };

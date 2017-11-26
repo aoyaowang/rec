@@ -278,6 +278,11 @@ pro.createRoom = function(token, room, next) {
             return;
         }
 
+        if (user._in28Game) {
+            next(null, {code: consts.GAME.IN_28_GAME});
+            return;
+        }
+
         var type = room.type;
         if (type == 1) //扫雷
         {
@@ -339,7 +344,7 @@ pro.createRoom = function(token, room, next) {
                 return;
             }
 
-            var c = coin * 20 + 1;
+            var c = coin * 20;
             if (!user.lockMoney(c)) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
@@ -361,7 +366,7 @@ pro.createRoom = function(token, room, next) {
                 return;
             }
 
-            var c = coin * 3 + 1;
+            var c = coin * 3;
             if (!user.lockMoney(c)) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
@@ -381,6 +386,11 @@ pro.saoleiQiang = function(token, hallid, roomid, next) {
     this.checkToken(token, function(err, user){
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+        
+        if (user._in28Game) {
+            next(null, {code: consts.GAME.IN_28_GAME});
             return;
         }
 
@@ -426,6 +436,11 @@ pro.jielongQiang = function(token, hallid, roomid, next) {
             return;
         }
 
+        if (user._in28Game) {
+            next(null, {code: consts.GAME.IN_28_GAME});
+            return;
+        }
+
         var hall = this.m_hall[hallid];
         if (!hall) {
             next(null, {code: consts.NOR_CODE.ERR_PARAM});
@@ -465,6 +480,11 @@ pro.niuniuQiang = function(token, hallid, roomid, next) {
     this.checkToken(token, function(err, user){
         if (!user) {
             next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        if (user._in28Game) {
+            next(null, {code: consts.GAME.IN_28_GAME});
             return;
         }
 

@@ -33,6 +33,8 @@ var G28Room = GBaseRoom.extend({
         //owner.unlockMoney(c, -1 * c);
         owner.unlockMoney(c, 0);
         
+        owner._in28Game = true;
+        
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1,1);
@@ -252,6 +254,8 @@ var G28Room = GBaseRoom.extend({
         GRobotMgr.Instance().onTimer(this);
     },
     GameOver:function(){
+        owner._in28Game = false;
+
         this.m_bOver = true;
         var timestamp = Date.parse(new Date()) / 1000;
         var end = {};
@@ -263,12 +267,12 @@ var G28Room = GBaseRoom.extend({
 
         if (left > 0) {
             for (var key in this.m_Players) {
-                if (this.m_Owner.uid == this.m_Players[key].Info.uid) continue;
+                //if (this.m_Owner.uid == this.m_Players[key].Info.uid) continue;
 
                 this.m_Players[key].Info.unlockMoney(0, 1);
             }
-            var c = parseInt(3 * this.m_Coin) / 100;
-            this.m_Owner.unlockMoney(0, c);
+            //var c = parseInt(3 * this.m_Coin) / 100;
+            //this.m_Owner.unlockMoney(0, c);
 
             this.pushMsg(enums.PROTOCOL.GAME_28_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
             return;
@@ -320,7 +324,7 @@ var G28Room = GBaseRoom.extend({
         }
         
         ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
-        this.m_Players[this.m_Owner.uid].m_Pei = ownall + 1;
+        this.m_Players[this.m_Owner.uid].m_Pei = ownall - 100;
         if (ownall > 0) {
             var ppp = ownall * fl;
             ownall -= ppp;
@@ -330,7 +334,6 @@ var G28Room = GBaseRoom.extend({
             ownall -= ppp;
             this.m_Players[this.m_Owner.uid].m_Piao = ppp;
         }
-        ownall-=1;
         ownall = parseInt(ownall);
 
         userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "28", parseInt(this.m_Coin), ownall / 100, timestamp);
