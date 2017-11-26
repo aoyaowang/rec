@@ -254,7 +254,7 @@ var G28Room = GBaseRoom.extend({
         GRobotMgr.Instance().onTimer(this);
     },
     GameOver:function(){
-        owner._in28Game = false;
+        this.m_Owner._in28Game = false;
 
         this.m_bOver = true;
         var timestamp = Date.parse(new Date()) / 1000;
