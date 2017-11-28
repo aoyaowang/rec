@@ -60,7 +60,7 @@ var jielongUI = ccui.Widget.extend({
         Client.addMap("relogin", this);
         var msg = new chatsysUI(RoleInfo.username() + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
-        this.m_list.jumpToBottom();
+                setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
     },
     onExit:function() {
         this._super();
@@ -90,14 +90,14 @@ var jielongUI = ccui.Widget.extend({
         msg = msg.data;
         var msg = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 进入房间");
         this.m_list.pushBackCustomItem(msg);
-        this.m_list.jumpToBottom();
+                setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
     },
     playerleave:function(msg) {
         if (!msg || !msg.data) return;
         msg = msg.data;
         var c = new chatsysUI((msg.gamename == "" ? msg.nickname : msg.gamename) + " 离开房间");
         this.m_list.pushBackCustomItem(c);
-        this.m_list.jumpToBottom();
+                setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
     },
     jielongcreate:function(msg){
         if (!msg || !msg.data) return;
@@ -125,7 +125,7 @@ var jielongUI = ccui.Widget.extend({
             c.setUserData({halltype: msg.HallType, roomid: msg.RoomID});
             this.m_redlist[msg.RoomID].target = c;
             this.m_list.pushBackCustomItem(c);
-            this.m_list.jumpToBottom();
+                    setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
         }.bind(this));
     },
     redClick:function() {
@@ -180,7 +180,7 @@ var jielongUI = ccui.Widget.extend({
         if (!msg.over) {
             var ui = new chatsysUI("接龙过期，此包不结算，游戏停止。");
             this.m_list.pushBackCustomItem(ui);
-            this.m_list.jumpToBottom();
+                    setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
 
             this.m_btn_start.setVisible(true);
         }
@@ -192,7 +192,7 @@ var jielongUI = ccui.Widget.extend({
         var text = (msg.user.gamename == "" ? msg.user.nickname : msg.user.gamename) + " 抢了 " + onick + "的红包！";
         var ui = new chatsysUI(text);
         this.m_list.pushBackCustomItem(ui);
-        this.m_list.jumpToBottom();
+                setTimeout(function(){             this.m_list.jumpToBottom();         }.bind(this),100)
     },
     getdetail:function(msg) {
         if (msg.code !=0 ) return;
