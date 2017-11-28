@@ -14,9 +14,12 @@ var reddetailUI = ccui.Widget.extend({
     m_num: null,
     m_data: null,
     m_red: null,
-    ctor:function(data, red) {
+    ctor:function(data, red2) {
         this._super();
         data = data.data;
+        var red = {};
+        for (var key in red2) red[key] = red2[key];
+        var oldcoin = red.coin;
         if (red.halltype + 1 == 4) red.coin  = 4;
         if (red.halltype + 1 == 3) red.coin  = 1;
         this.m_coin = red.coin * 100;
@@ -54,8 +57,13 @@ var reddetailUI = ccui.Widget.extend({
         this.m_ft_name.setString(this.m_red.owner.gamename == "" ? this.m_red.owner.nickname:this.m_red.owner.gamename+
         "的红包");
         if (this.m_type == 1)
-            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (this.m_num == 7 ? "1.5" : "1.0") + "倍");
-        else this.m_ft_ext.setVisible(false);
+            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
+        else if (this.m_type == 4) {
+            this.m_ft_ext.setString("王者二八杠" + oldcoin + "币包/赔率一倍")
+        }
+        else {
+            this.m_ft_ext.setVisible(false);
+        }
 
         var bfind = false;
         for (var key in data) {
