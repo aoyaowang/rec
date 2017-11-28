@@ -21,7 +21,7 @@ var redopenUI = ccui.Widget.extend({
         this._super();
 
         num = num || 4;
-
+        var oldcoin = coin;
         if (red.halltype + 1 == 4) coin = 400;
         if (red.halltype + 1 == 3) coin = 100;
         this.m_id = id;
@@ -65,7 +65,12 @@ var redopenUI = ccui.Widget.extend({
 
         if (this.m_type == 1)
             this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
-        else this.m_ft_ext.setVisible(false);
+        else if (this.m_type == 4) {
+            this.m_ft_ext.setString("王者二八杠" + oldcoin + "币包/赔率一倍")
+        }
+        else {
+            this.m_ft_ext.setVisible(false);
+        }
 
         this.m_ft_money.setString(isNaN(parseInt(money)) ? money : money / 100);
         var ct = 0; for (var k in data) ct++;

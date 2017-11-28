@@ -268,7 +268,7 @@ var G28Room = GBaseRoom.extend({
         if (left > 0) {
             for (var key in this.m_Players) {
                 //if (this.m_Owner.uid == this.m_Players[key].Info.uid) continue;
-
+                this.m_Players[key].Info._in28Game = false;
                 this.m_Players[key].Info.unlockMoney(0, 1);
             }
             //var c = parseInt(3 * this.m_Coin) / 100;
@@ -291,7 +291,7 @@ var G28Room = GBaseRoom.extend({
         var ownall = 0;
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
-            player.Info._in28Game = true;
+            player.Info._in28Game = false;
             if (this.m_Players[key].m_Qiang == 0) continue;
             if (this.m_Players[key].Info.uid == this.m_Owner.uid) continue;
             var curniu = this.m_Players[key].CardType();
@@ -305,6 +305,7 @@ var G28Room = GBaseRoom.extend({
                 var piao =  parseInt(this.m_Players[key].m_Qiang * fl);
                 this.m_Players[key].m_Piao = piao;
                 lost -= piao;
+                lost += this.m_Players[key].m_Qiang;
                 lost = parseInt(lost);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "28", parseInt(this.m_Coin), lost / 100, timestamp);
                 this.m_Players[key].Info.unlockMoney(lm, lost / 100);
@@ -317,6 +318,7 @@ var G28Room = GBaseRoom.extend({
                 var piao =  parseInt((win + this.m_Players[key].m_Qiang) * fl);
                 this.m_Players[key].m_Piao = piao;
                 win -= piao;
+                win += this.m_Players[key].m_Qiang;
                 win = parseInt(win);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "28", parseInt(this.m_Coin), win / 100, timestamp);
                 this.m_Players[key].Info.unlockMoney(lm, win / 100);
