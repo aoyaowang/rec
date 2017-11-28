@@ -66,7 +66,7 @@ var redopenUI = ccui.Widget.extend({
         if (this.m_type == 1)
             this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
         else if (this.m_type == 4) {
-            this.m_ft_ext.setString("王者二八杠" + oldcoin + "币包/赔率一倍")
+            this.m_ft_ext.setString("王者二八杠" + (oldcoin / 100) + "币包/赔率一倍")
         }
         else {
             this.m_ft_ext.setVisible(false);

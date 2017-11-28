@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reddetail.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reddetail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5856833">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -83,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redopen.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="redopen.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="72" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.23427331">
+              <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -180,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/game/gameinfo.js" />
         <option value="$PROJECT_DIR$/src/protocol/error.js" />
         <option value="$PROJECT_DIR$/src/game/28/28ui.js" />
-        <option value="$PROJECT_DIR$/src/game/shared/redopen.js" />
         <option value="$PROJECT_DIR$/src/game/shared/reddetail.js" />
+        <option value="$PROJECT_DIR$/src/game/shared/redopen.js" />
       </list>
     </option>
   </component>
@@ -986,18 +986,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
+    <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="72" selection-end-column="9" />
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/shared/reddetail.js">
+    <entry file="file://$PROJECT_DIR$/src/game/shared/redopen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5856833">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.23427331">
+          <caret line="68" column="60" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
           <folding />
         </state>
       </provider>
