@@ -34,8 +34,10 @@ var GNiuRoom = GBaseRoom.extend({
         this.m_List = {};
         this.m_RedList = utils.getPackets(100, num);
 
-        var c = coin * 20 + 1;
-        owner.unlockMoney(c, -1 * c);
+        owner.unlockMoney(c, -1);
+        //var c = coin * 20 + 1;
+        //owner.unlockMoney(c, -1 * c);
+        this.m_Owner._in28Game = true;
 
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
@@ -60,7 +62,7 @@ var GNiuRoom = GBaseRoom.extend({
             if (!this.m_bOver) {
                 for (var key in this.m_Players) {
                     retdata.data[key] = {data: this.m_Players[key], m: "xxx", time: this.m_Players[key].m_Time};
-                    if (key == uid) retdata.data[key].m = this.m_Players[key].m_Qiang;
+                    if (key == uid) retdata.data[key] = {data: this.m_Players[key]};
                 }
             } else {
                 for (var key in this.m_Players) {
@@ -219,6 +221,46 @@ var GNiuRoom = GBaseRoom.extend({
             player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: player, other: ot});
             if (player.Info.uid != this.m_Owner.uid)
             this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OTHERQIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, user: user});
+
+            if (user.uid != this.m_Owner.uid) {
+                var ownerniu = (this.m_Players[this.m_Owner.uid].m_LastNum + this.m_Players[this.m_Owner.uid].m_LastNum2) % 10;
+                if (ownerniu == 0) ownerniu = 10;
+        
+                var peilv = {1: 1, 2: 1, 3: 1, 4: 1,5: 1, 6: 1, 7: 2, 8: 3,9: 4, 10: 5};
+
+                var curniu = (this.m_Players[user.uid].m_LastNum + this.m_Players[user.uid].m_LastNum2) % 10;
+                if (curniu == 0) curniu = 10;
+
+                if (ownerniu > curniu || (ownerniu == curniu && this.m_Players[this.m_Owner.uid].m_Qiang >= this.m_Players[user.uid].m_Qiang)) {
+                    var lost = peilv[ownerniu];
+                    lost = lost * this.m_Coin;
+                    ownall+=lost;
+                    lost = -1 * lost;
+                    this.m_Players[user.uid].m_Pei = lost;
+                    var piao =  parseInt(this.m_Players[user.uid].m_Qiang * fl);
+                    this.m_Players[user.uid].m_Piao = piao;
+                    lost -= piao;
+                    lost += this.m_Players[user.uid].m_Qiang;
+                    lost = parseInt(lost);
+                    //userDao.gamelog(this.m_Players[user.uid].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), lost / 100, timestamp);
+                    this.m_Players[user.uid].Info.unlockMoney(lm, lost / 100);
+                    this.m_Players[user.uid].m_Result = lost / 100;
+                } else {
+                    var win = peilv[curniu];
+                    win = win * this.m_Coin;
+                    ownall-=win;
+                    this.m_Players[user.uid].m_Pei = win;
+                    var piao =  parseInt((win + this.m_Players[user.uid].m_Qiang) * fl);
+                    this.m_Players[user.uid].m_Piao = piao;
+                    win -= piao;
+                    win += this.m_Players[user.uid].m_Qiang;
+                    win = parseInt(win);
+                    //userDao.gamelog(this.m_Players[user.uid].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), win / 100, timestamp);
+                    this.m_Players[user.uid].Info.unlockMoney(lm, win / 100);
+                    this.m_Players[user.uid].m_Result = win / 100;
+                }
+            }
+
             if (this.m_RedList.length == 0) {
                 this.GameOver();
             }
@@ -245,6 +287,8 @@ var GNiuRoom = GBaseRoom.extend({
         GRobotMgr.Instance().onTimer(this);
     },
     GameOver:function(){
+        this.m_Owner._in28Game = false;
+
         this.m_bOver = true;
         var timestamp = Date.parse(new Date()) / 1000;
         var end = {};
@@ -268,10 +312,13 @@ var GNiuRoom = GBaseRoom.extend({
         var fl = 0.03;
         var oex = 0;
         var ownall = 0;
+
+        var nochange = true;
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
             if (this.m_Players[key].Info.uid == this.m_Owner.uid) continue;
+            nochange = false;
             var curniu = (this.m_Players[key].m_LastNum + this.m_Players[key].m_LastNum2) % 10;
             if (curniu == 0) curniu = 10;
 
@@ -287,7 +334,7 @@ var GNiuRoom = GBaseRoom.extend({
                 lost += this.m_Players[key].m_Qiang;
                 lost = parseInt(lost);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), lost / 100, timestamp);
-                this.m_Players[key].Info.unlockMoney(lm, lost / 100);
+                //this.m_Players[key].Info.unlockMoney(lm, lost / 100);
                 this.m_Players[key].m_Result = lost / 100;
             } else {
                 var win = peilv[curniu];
@@ -300,31 +347,37 @@ var GNiuRoom = GBaseRoom.extend({
                 win += this.m_Players[key].m_Qiang;
                 win = parseInt(win);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), win / 100, timestamp);
-                this.m_Players[key].Info.unlockMoney(lm, win / 100);
+                //this.m_Players[key].Info.unlockMoney(lm, win / 100);
                 this.m_Players[key].m_Result = win / 100;
             }
         }
-        this.m_Players[this.m_Owner.uid].m_Pei = ownall;
-        ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
-        
-        if (ownall > 0) {
-            var ppp = ownall * fl;
-            ownall -= ppp;
-            this.m_Players[this.m_Owner.uid].m_Piao = ppp;
+        if (nochange) {
+            this.m_Players[this.m_Owner.uid].m_Pei = ownall;
+            ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
+              
+            if (ownall > 0) {
+                var ppp = ownall * fl;
+                ownall -= ppp;
+                this.m_Players[this.m_Owner.uid].m_Piao = ppp;
+            } else {
+                var ppp = this.m_Players[this.m_Owner.uid].m_Qiang * fl;
+                ownall -= ppp;
+                this.m_Players[this.m_Owner.uid].m_Piao = ppp;
+            }
+            ownall-=1;
+            ownall = parseInt(ownall);
+    
+            userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), ownall / 100, timestamp);
+            var c = this.m_Coin * 20;
+            this.m_Owner.unlockMoney(0, ownall / 100);
+            this.m_Players[this.m_Owner.uid].m_Result = ownall / 100;
         } else {
-            var ppp = this.m_Players[this.m_Owner.uid].m_Qiang * fl;
-            ownall -= ppp;
-            this.m_Players[this.m_Owner.uid].m_Piao = ppp;
+            this.m_Players[this.m_Owner.uid].m_Pei = 0;
+            this.m_Players[this.m_Owner.uid].m_Resul = 0;
         }
-        ownall-=1;
-        ownall = parseInt(ownall);
 
-        userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), ownall / 100, timestamp);
-        var c = this.m_Coin * 20;
-        this.m_Owner.unlockMoney(0, ownall / 100);
-        this.m_Players[this.m_Owner.uid].m_Result = ownall / 100;
         
-        this.m_Owner.unlockMoney(0, c / 100);
+        //this.m_Owner.unlockMoney(0, c / 100);
         //this.m_Owner.unlockMoney(0, left / 100);
 
         this.pushMsg(enums.PROTOCOL.GAME_NIUNIU_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});

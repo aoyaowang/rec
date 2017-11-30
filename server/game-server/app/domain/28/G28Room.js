@@ -329,7 +329,7 @@ var G28Room = GBaseRoom.extend({
         ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
         this.m_Players[this.m_Owner.uid].m_Pei = ownall - 100;
         if (ownall > 0) {
-            var ppp = ownall * fl;
+            var ppp = (ownall - 100) * fl;
             ownall -= ppp;
             this.m_Players[this.m_Owner.uid].m_Piao = ppp;
         } else {
