@@ -34,8 +34,9 @@ var GNiuRoom = GBaseRoom.extend({
         this.m_List = {};
         this.m_RedList = utils.getPackets(100, num);
 
+        var c = coin * 20 + 1;
         owner.unlockMoney(c, -1);
-        //var c = coin * 20 + 1;
+        
         //owner.unlockMoney(c, -1 * c);
         this.m_Owner._in28Game = true;
 
@@ -216,7 +217,12 @@ var GNiuRoom = GBaseRoom.extend({
                 var p = this.m_Players[key];
                 var m = this.m_List[key];
                 if (this.m_RedList.length == 0) ot[key] = {data: p};
-                else ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
+                else if (p.Info.uid == user.uid) {
+                    ot[key] = {data: p};
+                }
+                else {
+                    ot[key] = {data: p.Info, m: "xxx", time: p.m_Time};
+                }
             }
             player.Info.addMsg(enums.PROTOCOL.GAME_NIUNIU_QIANG, {HallType: this.m_Hall ? this.m_Hall.Type : -1, RoomID:this.m_RoomID, coin: this.m_Coin, num: this.m_num, data: player, other: ot});
             if (player.Info.uid != this.m_Owner.uid)
@@ -230,6 +236,11 @@ var GNiuRoom = GBaseRoom.extend({
 
                 var curniu = (this.m_Players[user.uid].m_LastNum + this.m_Players[user.uid].m_LastNum2) % 10;
                 if (curniu == 0) curniu = 10;
+
+                var lm = parseInt(5 * this.m_Coin) / 100;
+                var fl = 0.03;
+                var oex = 0;
+                var ownall = 0;
 
                 if (ownerniu > curniu || (ownerniu == curniu && this.m_Players[this.m_Owner.uid].m_Qiang >= this.m_Players[user.uid].m_Qiang)) {
                     var lost = peilv[ownerniu];
@@ -334,7 +345,7 @@ var GNiuRoom = GBaseRoom.extend({
                 lost += this.m_Players[key].m_Qiang;
                 lost = parseInt(lost);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), lost / 100, timestamp);
-                //this.m_Players[key].Info.unlockMoney(lm, lost / 100);
+                //this.m_Players[user.uid].Info.unlockMoney(lm, lost / 100);
                 this.m_Players[key].m_Result = lost / 100;
             } else {
                 var win = peilv[curniu];
@@ -347,16 +358,16 @@ var GNiuRoom = GBaseRoom.extend({
                 win += this.m_Players[key].m_Qiang;
                 win = parseInt(win);
                 userDao.gamelog(this.m_Players[key].Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), win / 100, timestamp);
-                //this.m_Players[key].Info.unlockMoney(lm, win / 100);
+                //this.m_Players[user.uid].Info.unlockMoney(lm, win / 100);
                 this.m_Players[key].m_Result = win / 100;
             }
         }
-        if (nochange) {
-            this.m_Players[this.m_Owner.uid].m_Pei = ownall;
+        if (!nochange) {
+            this.m_Players[this.m_Owner.uid].m_Pei = (ownall - 100);
             ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
               
             if (ownall > 0) {
-                var ppp = ownall * fl;
+                var ppp = (ownall - 100) * fl;
                 ownall -= ppp;
                 this.m_Players[this.m_Owner.uid].m_Piao = ppp;
             } else {
@@ -364,16 +375,17 @@ var GNiuRoom = GBaseRoom.extend({
                 ownall -= ppp;
                 this.m_Players[this.m_Owner.uid].m_Piao = ppp;
             }
-            ownall-=1;
             ownall = parseInt(ownall);
     
             userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "niuniu", parseInt(this.m_Coin), ownall / 100, timestamp);
             var c = this.m_Coin * 20;
             this.m_Owner.unlockMoney(0, ownall / 100);
-            this.m_Players[this.m_Owner.uid].m_Result = ownall / 100;
+            this.m_Owner.unlockMoney(0, left / 100);
+            this.m_Players[this.m_Owner.uid].m_Result = ownall / 100 - 1;
         } else {
             this.m_Players[this.m_Owner.uid].m_Pei = 0;
             this.m_Players[this.m_Owner.uid].m_Resul = 0;
+            this.m_Owner.unlockMoney(0, 1);
         }
 
         
