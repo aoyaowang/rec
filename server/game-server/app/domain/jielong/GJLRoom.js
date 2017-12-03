@@ -99,7 +99,7 @@ var GJLRoom = GBaseRoom.extend({
         player.m_Position = this.m_PlayerCount;
         player.m_EnterTime = Date.parse(new Date()) / 1000;
         player.Info.inGame.push(this);
-
+        user._in28Game = true;
 
 
         this.updatePos();
@@ -243,6 +243,7 @@ var GJLRoom = GBaseRoom.extend({
                 var player = this.m_Players[key];
                 player.Info.unlockMoney(lm, 0);
                 player.m_Result = 0;
+                player.Info._in28Game = false;
             }
 
             this.pushMsg(enums.PROTOCOL.GAME_JIELONG_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
@@ -255,7 +256,9 @@ var GJLRoom = GBaseRoom.extend({
         var minValue = 999999999;
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
+            player.Info._in28Game = false;
             if (this.m_Players[key].m_Qiang == 0) continue;
+            
             var l = Math.floor(player.m_Qiang * fl);
             if (l < 1) l = 0;
             var e = player.m_Qiang - l;

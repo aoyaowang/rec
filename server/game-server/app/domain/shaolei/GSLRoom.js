@@ -235,8 +235,9 @@ var GSLRoom = GBaseRoom.extend({
         userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "saolei", parseInt(this.m_Coin), (parseInt((ownall + oex + (left / 100)) * 100) - this.m_Coin) / 100, timestamp);
         if (this.m_Players[this.m_Owner.uid] ) {
             this.m_Players[this.m_Owner.uid].m_Result += oex;
-            this.m_Owner.unlockMoney(0, oex);
+            
         }
+        this.m_Owner.unlockMoney(0, oex);
 
         this.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0, bomb: this.m_Bomb});
 

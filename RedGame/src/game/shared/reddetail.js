@@ -57,7 +57,7 @@ var reddetailUI = ccui.Widget.extend({
         this.m_ft_name.setString(this.m_red.owner.gamename == "" ? this.m_red.owner.nickname:this.m_red.owner.gamename+
         "的红包");
         if (this.m_type == 1)
-            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (num == 7 ? "1.5" : "1.0") + "倍");
+            this.m_ft_ext.setString(red.coin + "币/雷" + red.bomb + "/" + (red.num == 7 ? "1.5" : "1.0") + "倍");
         else if (this.m_type == 4) {
             this.m_ft_ext.setString("王者二八杠" + oldcoin + "币包/赔率一倍")
         }
