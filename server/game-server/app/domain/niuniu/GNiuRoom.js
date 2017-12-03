@@ -367,11 +367,11 @@ var GNiuRoom = GBaseRoom.extend({
             ownall+=this.m_Players[this.m_Owner.uid].m_Qiang;
               
             if (ownall > 0) {
-                var ppp = (ownall - 100) * fl;
+                var ppp = parseInt((ownall - 100) * fl);
                 ownall -= ppp;
                 this.m_Players[this.m_Owner.uid].m_Piao = ppp;
             } else {
-                var ppp = this.m_Players[this.m_Owner.uid].m_Qiang * fl;
+                var ppp = parseInt(this.m_Players[this.m_Owner.uid].m_Qiang * fl);
                 ownall -= ppp;
                 this.m_Players[this.m_Owner.uid].m_Piao = ppp;
             }
@@ -381,7 +381,7 @@ var GNiuRoom = GBaseRoom.extend({
             var c = this.m_Coin * 20;
             this.m_Owner.unlockMoney(0, ownall / 100);
             this.m_Owner.unlockMoney(0, left / 100);
-            this.m_Players[this.m_Owner.uid].m_Result = ownall / 100 - 1;
+            this.m_Players[this.m_Owner.uid].m_Result = (ownall / 100) - 1;
         } else {
             this.m_Players[this.m_Owner.uid].m_Pei = 0;
             this.m_Players[this.m_Owner.uid].m_Resul = 0;

@@ -238,6 +238,18 @@ var GJLRoom = GBaseRoom.extend({
 
         var lm = parseInt(1 * this.m_Coin) / 100;
 
+        if (left > 0) {
+            for (var key in this.m_Players) {
+                var player = this.m_Players[key];
+                player.Info.unlockMoney(lm, 0);
+                player.m_Result = 0;
+            }
+
+            this.pushMsg(enums.PROTOCOL.GAME_JIELONG_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
+            delete this.m_Hall.m_CurRoom[this.m_Coin / 100];
+            return;
+        }
+
         var fl = 0.03;
         var minPlayer = null;
         var minValue = 999999999;
@@ -267,7 +279,10 @@ var GJLRoom = GBaseRoom.extend({
             if (this.m_Players[key].m_Qiang == 0) continue;
             var e = player.m_Qiang - l;
             e = player.m_Result;
-            player.Info.unlockMoney(lm, e);
+            if (minPlayer != player)
+                player.Info.unlockMoney(lm, e);
+            else 
+                player.Info.unlockMoney(lm, e + (left != 0 ? 0 : parseInt(this.m_Coin / 100)));
             userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "jielong", this.m_Coin, e, timestamp);
         }
 
