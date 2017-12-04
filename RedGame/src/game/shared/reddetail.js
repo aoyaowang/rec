@@ -82,9 +82,9 @@ var reddetailUI = ccui.Widget.extend({
         for (var key in data) {
             if (data[key].data.uid == RoleInfo.uid) {
                 if (!!data[key].data.qiang)
-                    this.m_ft_money.setString(parseInt(data[key].data.qiang) / 100);
+                    this.m_ft_money.setStringNum(parseInt(data[key].data.qiang) / 100);
                 else {
-                    this.m_ft_money.setString(parseInt(data[key].m) / 100);
+                    this.m_ft_money.setStringNum(parseInt(data[key].m) / 100);
                 }
                 bfind = true;
                 break;
@@ -213,36 +213,36 @@ var reddetailUI = ccui.Widget.extend({
 
             if (this.m_type == 1 && zct >= this.m_num) {
                 if (zset) {
-                    this.m_zqiang.setString(zqiang);
+                    this.m_zqiang.setStringNum(zqiang / 100);
                     this.m_zqiang.setColor(cc.color(0, 255, 0));
                     this.m_zqiang.setVisible(true);
 
-                    this.m_zpei.setString(zpei);
+                    this.m_zpei.setStringNum(zpei);
                     this.m_zpei.setColor(cc.color(0, 255, 0));
                     this.m_zpei.setVisible(true);
 
-                    var all = zpei + zqiang;
+                    var all = zpei * 100 + zqiang;
                     var zzpiao = parseInt(all * 0.03) / 100;
-                    this.m_zpiao.setString(zzpiao);
+                    this.m_zpiao.setStringNum(zzpiao);
                     var zpl = zzpiao != 0 ? cc.color(255, 0, 0) : cc.color(0, 255, 0);
                     this.m_zpiao.setColor(zpl);
                     this.m_zpiao.setVisible(true);
 
-                    var ztt = parseInt((zpei + zqiang) / 100) - zzpiao;
+                    var ztt = parseInt((zpei*100 + zqiang) / 100) - zzpiao;
                     var ztl = ztt < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
 
-                    this.m_ztotal.setString(ztt);
+                    this.m_ztotal.setStringNum(ztt);
                     this.m_ztotal.setColor(ztl);
                     this.m_ztotal.setVisible(true);
                 } else if (this.m_zpiao.isVisible()) {
 
                     var zpel = zpei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    this.m_zpei.setString(zpei);
+                    this.m_zpei.setStringNum(zpei);
                     this.m_zpei.setColor(zpel);
 
                     var all = zpei + zqiang;
                     var zzpiao = parseInt(all * 0.03) / 100;
-                    this.m_zpiao.setString(zzpiao);
+                    this.m_zpiao.setStringNum(zzpiao);
                     var zpl = zzpiao != 0 ? cc.color(255, 0, 0) : cc.color(0, 255, 0);
                     this.m_zpiao.setColor(zpl);
                 }

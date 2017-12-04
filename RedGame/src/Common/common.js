@@ -49,6 +49,18 @@ ccui.Text.prototype.setStringAuto = function(str) {
         }
         return "(error)"
     };
+
+
+    ccui.Text.prototype.setStringNum = function(str) {
+        if (isNaN(parseInt(str))) {
+            this.setString(str);
+            return;
+        }
+        var ay = str.toString().split('.');
+        var p = (ay.length > 1 ? (ay[1].length >= 2 ? ay[1].substr(0,2) : (ay[1] + "0")) : "00")
+        var f = ay[0] + "." + p;
+        this.setString(f);
+    }
     String.prototype.Format = function() {
         var a = arguments;
         if (1 === a.length) {
