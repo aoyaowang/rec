@@ -146,9 +146,9 @@ var redopenUI = ccui.Widget.extend({
                     }
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
-                    var pei0 = (this.m_red.bomb == p.data.last && this.m_red.owner.uid == p.data.uid ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
+                    var pei0 = (this.m_red.bomb == p.data.last && this.m_red.owner.uid != p.data.uid ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
                     var pel = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
-                    if (this.m_red.bomb == p.data.last && this.m_red.owner.uid == p.data.uid) {
+                    if (this.m_red.bomb == p.data.last && this.m_red.owner.uid != p.data.uid) {
                         zpei += (parseInt(this.m_coin * (this.m_num == 7 ? 1.5:1.0)) / 100);
                     }
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
