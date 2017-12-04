@@ -251,6 +251,11 @@ var reddetailUI = ccui.Widget.extend({
                     this.m_ztotal.setColor(ztl);
                     this.m_ztotal.setVisible(true);
                 } else if (this.m_zpiao.isVisible()) {
+
+                    var zpel = zpei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    this.m_zpei.setString(zpei);
+                    this.m_zpei.setColor(zpel);
+
                     var all = zpei + zqiang;
                     var zzpiao = parseInt(all * 0.03) / 100;
                     this.m_zpiao.setString(zzpiao);
