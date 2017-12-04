@@ -447,8 +447,8 @@
                     <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="game/28.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="game/28.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/saolei.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
@@ -531,8 +531,8 @@
                     <PreSize X="0.1458" Y="1.0000" />
                     <TextColor A="255" R="65" G="65" B="70" />
                     <DisabledFileData Type="Default" Path="Default/Button_Disable.png" Plist="" />
-                    <PressedFileData Type="Normal" Path="game/saolei.png" Plist="" />
-                    <NormalFileData Type="Normal" Path="game/saolei.png" Plist="" />
+                    <PressedFileData Type="Normal" Path="game/28.png" Plist="" />
+                    <NormalFileData Type="Normal" Path="game/28.png" Plist="" />
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
