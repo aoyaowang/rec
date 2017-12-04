@@ -21,7 +21,7 @@ var logUI = ccui.Widget.extend({
         t = ccui.helper.seekWidgetByName(this.Widget, "ft_time");
         t.setString(time);
         t = ccui.helper.seekWidgetByName(this.Widget, "ft_coin");
-        t.setString(c);
+        t.setString(c / 100);
         t = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         t.setString(m);
         return true;
