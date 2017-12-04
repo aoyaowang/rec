@@ -162,24 +162,6 @@ var redopenUI = ccui.Widget.extend({
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
                         qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
-                    if (this.m_red.owner.uid == p.data.uid) {
-                        this.m_zqiang.setString(qiang0);
-                        this.m_zqiang.setColor(ql);
-                        this.m_zqiang.setVisible(true);
-
-                        this.m_zpei.setString(pei0);
-                        this.m_zpei.setColor(pel);
-                        this.m_zpei.setVisible(true);
-
-                        this.m_zpiao.setString(piao0);
-                        this.m_zpiao.setColor(pl);
-                        this.m_zpiao.setVisible(true);
-
-                        this.m_ztotal.setString(ttt0);
-                        this.m_ztotal.setColor(tl);
-                        this.m_ztotal.setVisible(true);
-                        zset = false;
-                    }
                 }
                 else if (this.m_type == 2) {
                     var qiang = (p == minp ? " 最小" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
