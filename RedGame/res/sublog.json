@@ -305,7 +305,7 @@
                   "X": 150.0,
                   "Y": 50.0
                 },
-                "Name": "ft_result",
+                "Name": "ft_money",
                 "ctype": "TextObjectData"
               }
             ],

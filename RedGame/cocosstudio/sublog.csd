@@ -1,5 +1,5 @@
 <GameFile>
-  <PropertyGroup Name="gamelog" Type="Layer" ID="5d3bcd65-5415-4b2d-a1d2-69c51fa58663" Version="3.10.0.0" />
+  <PropertyGroup Name="sublog" Type="Layer" ID="5d3bcd65-5415-4b2d-a1d2-69c51fa58663" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
@@ -53,7 +53,7 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ft_result" ActionTag="2069757863" Tag="167" IconVisible="False" LeftMargin="490.0000" TopMargin="-0.7463" BottomMargin="0.7463" IsCustomSize="True" FontSize="24" LabelText="当局积分" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="ft_money" ActionTag="2069757863" Tag="167" IconVisible="False" LeftMargin="490.0000" TopMargin="-0.7463" BottomMargin="0.7463" IsCustomSize="True" FontSize="24" LabelText="当局积分" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="150.0000" Y="50.0000" />
                 <AnchorPoint ScaleY="0.5000" />
                 <Position X="490.0000" Y="25.7463" />
