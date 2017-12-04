@@ -6,7 +6,7 @@
       <ObjectData Name="Layer" Tag="161" ctype="GameLayerObjectData">
         <Size X="640.0000" Y="50.0000" />
         <Children>
-          <AbstractNodeData Name="Panel_10" ActionTag="391178169" ZOrder="8" Tag="162" IconVisible="False" TouchEnable="True" ClipAble="True" ComboBoxIndex="1" ColorAngle="90.0000" LeftEage="179" RightEage="179" TopEage="28" BottomEage="28" Scale9OriginX="179" Scale9OriginY="28" Scale9Width="282" Scale9Height="58" ctype="PanelObjectData">
+          <AbstractNodeData Name="Panel_10" ActionTag="391178169" ZOrder="8" Tag="162" IconVisible="False" TouchEnable="True" ClipAble="True" ColorAngle="90.0000" LeftEage="179" RightEage="179" TopEage="28" BottomEage="28" Scale9OriginX="-179" Scale9OriginY="-28" Scale9Width="358" Scale9Height="56" ctype="PanelObjectData">
             <Size X="640.0000" Y="50.0000" />
             <Children>
               <AbstractNodeData Name="ft_roomid" ActionTag="228856487" Tag="163" IconVisible="False" RightMargin="500.0000" TopMargin="-0.9297" BottomMargin="0.9297" IsCustomSize="True" FontSize="24" LabelText="房间号" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
@@ -71,7 +71,6 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="1.0000" Y="1.0000" />
-            <FileData Type="Normal" Path="userCenter/Top_icon.png" Plist="" />
             <SingleColor A="255" R="66" G="0" B="97" />
             <FirstColor A="255" R="150" G="200" B="255" />
             <EndColor A="255" R="255" G="255" B="255" />
