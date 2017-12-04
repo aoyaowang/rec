@@ -133,6 +133,7 @@ var reddetailUI = ccui.Widget.extend({
         }
 
         var zset = true;
+        var zct = 0;
         var zqiang = 0;
         var zpei = -1 *parseInt(this.m_coin) / 100;
 
@@ -142,6 +143,7 @@ var reddetailUI = ccui.Widget.extend({
                 var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.time, p.m);
             else {
                 if (this.m_type == 1) {
+                    zct++;
                     var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                         + ("抢包:");
                     var qiang0 = (p.data.qiang / 100);
@@ -227,7 +229,7 @@ var reddetailUI = ccui.Widget.extend({
                 }
             }
 
-            if (this.m_type == 1) {
+            if (this.m_type == 1 && zct >= this.m_num) {
                 if (zset) {
                     this.m_zqiang.setString(zqiang);
                     this.m_zqiang.setColor(cc.color(0, 255, 0));
