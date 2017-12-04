@@ -14,7 +14,7 @@
         <LuaEncryptSign Value="" />
         <Android_PackageName Value="org.cocos.RedGame" />
         <AndroidkeyStore Value="" />
-        <AndroidVersion Value="" />
+        <AndroidVersion Value="android-21" />
         <iOS_Target Value="RedGame iOS" />
         <iOS_BundleID Value="" />
         <Platform Value="None" />

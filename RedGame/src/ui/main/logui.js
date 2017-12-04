@@ -5,7 +5,7 @@ var logUI = ccui.Widget.extend({
     ctor:function(r, g, time, c, m) {
         this._super();
 
-        var l = ccs.load("res/gamelog.json");
+        var l = ccs.load("res/sublog.json");
         this.Widget = l.node;
         this.addChild(this.Widget);
 

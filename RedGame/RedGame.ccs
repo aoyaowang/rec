@@ -164,7 +164,7 @@
         <Project Name="chatred.csd" Type="Layer" />
         <Project Name="chatsys.csd" Type="Layer" />
         <Project Name="game.csd" Type="Layer" />
-        <Project Name="gamelog.csd" Type="Layer" />
+        <Project Name="sublog.csd" Type="Layer" />
         <Project Name="jielong.csd" Type="Layer" />
         <Project Name="loading.csd" Type="Layer" />
         <Project Name="main.csd" Type="Layer" />

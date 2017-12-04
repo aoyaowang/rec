@@ -28,7 +28,8 @@ var g_resources = [
     "res/saoleisub.json",
     "res/setting.json",
     "res/sys.json",
-    "res/tocash.json"
+    "res/tocash.json",
+    "res/sublog.json"
 ];
 for (var i in res) {
     g_resources.push(res[i]);
