@@ -341,9 +341,10 @@ app.get("/getlog", function(req, res){
         send(res, {code: enums.CODE.TOKEN_TIMEOUT});
         return;
     }
-
+    
     var uid = t.uid;
     var game = req.query.game;
+    console.log("uid:" + uid + " " + game);
     db.getLog(uid, game, function(data){
         if (!data) {
             send(res, {code: consts.CODE.ERR_PARAM});

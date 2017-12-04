@@ -53,13 +53,13 @@
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
               </AbstractNodeData>
-              <AbstractNodeData Name="ft_result" ActionTag="2069757863" Tag="167" IconVisible="False" LeftMargin="490.0000" IsCustomSize="True" FontSize="24" LabelText="当局积分" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+              <AbstractNodeData Name="ft_result" ActionTag="2069757863" Tag="167" IconVisible="False" LeftMargin="490.0000" TopMargin="-0.7463" BottomMargin="0.7463" IsCustomSize="True" FontSize="24" LabelText="当局积分" HorizontalAlignmentType="HT_Center" VerticalAlignmentType="VT_Center" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
                 <Size X="150.0000" Y="50.0000" />
                 <AnchorPoint ScaleY="0.5000" />
-                <Position X="490.0000" Y="25.0000" />
+                <Position X="490.0000" Y="25.7463" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition X="0.7656" Y="0.5000" />
+                <PrePosition X="0.7656" Y="0.5149" />
                 <PreSize X="0.2344" Y="1.0000" />
                 <OutlineColor A="255" R="255" G="0" B="0" />
                 <ShadowColor A="255" R="110" G="110" B="110" />
