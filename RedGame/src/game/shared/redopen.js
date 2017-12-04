@@ -17,6 +17,11 @@ var redopenUI = ccui.Widget.extend({
     m_data: null,
     m_red: null,
     m_type: null,
+
+    m_zqiang:null,
+    m_zpei:null,
+    m_zpiao:null,
+    m_ztotal:null,
     ctor:function(type,id, money, coin, num, data, red) {
         this._super();
 
@@ -50,6 +55,15 @@ var redopenUI = ccui.Widget.extend({
         this.m_ft_top = ccui.helper.seekWidgetByName(this.Widget, "ft_top");
         this.m_ft_money = ccui.helper.seekWidgetByName(this.Widget, "ft_money");
         this.m_listview = ccui.helper.seekWidgetByName(this.Widget, "ListView_1");
+
+        this.m_zqiang = ccui.helper.seekWidgetByName(this.Widget, "ft_zqiang");
+        this.m_zpei = ccui.helper.seekWidgetByName(this.Widget, "ft_zpei");
+        this.m_zpiao = ccui.helper.seekWidgetByName(this.Widget, "ft_zpiao");
+        this.m_ztotal = ccui.helper.seekWidgetByName(this.Widget, "ft_ztotal");
+        this.m_zqiang.setVisible(false);
+        this.m_zpei.setVisible(false);
+        this.m_zpiao.setVisible(false);
+        this.m_ztotal.setVisible(false);
 
         headMgr.loadHead(red.owner.uid, red.owner.headimg, function(data){
             if (!data) return;
@@ -112,6 +126,10 @@ var redopenUI = ccui.Widget.extend({
             }
         }
 
+        var zset = true;
+        var zqiang = 0;
+        var zpei = 0;
+
         for (var key in this.m_data) {
             var p = this.m_data[key];
             if (p.m)
@@ -121,9 +139,15 @@ var redopenUI = ccui.Widget.extend({
                     var qiang = (this.m_red.owner.uid == p.data.uid ? "⭐庄" : this.m_red.bomb == p.data.last ? "⭐炸弹" : "")
                         + ("抢包:");
                     var qiang0 = (p.data.qiang / 100);
+                    if (this.m_red.owner.uid == p.data.uid) {
+                        zqiang = p.data.qiang;
+                    }
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
                     var pei0 = (this.m_red.bomb == p.data.last ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
+                    if (this.m_red.bomb == p.data.last) {
+                        zpei += (parseInt(this.m_coin * (this.m_num == 7 ? 1.5:1.0)) / 100) - parseInt(this.m_coin) / 100;
+                    }
                     var pel = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
@@ -136,6 +160,24 @@ var redopenUI = ccui.Widget.extend({
                     var tl = p.data.result < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
                     var ui = new redsubUI(p.data.uid, p.data.headimg, p.data.gamename == "" ? p.data.nickname : p.data.gamename, p.data.time, null,
                         qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
+                    if (this.m_red.owner.uid == p.data.uid) {
+                        this.m_zqiang.setString(qiang0);
+                        this.m_zqiang.setColor(ql);
+                        this.m_zqiang.setVisible(true);
+
+                        this.m_zpei.setString(pei0);
+                        this.m_zpei.setColor(pel);
+                        this.m_zpei.setVisible(true);
+
+                        this.m_zpiao.setString(piao0);
+                        this.m_zpiao.setColor(pl);
+                        this.m_zpiao.setVisible(true);
+
+                        this.m_ztotal.setString(ttt0);
+                        this.m_ztotal.setColor(tl);
+                        this.m_ztotal.setVisible(true);
+                        zset = false;
+                    }
                 }
                 else if (this.m_type == 2) {
                     var qiang = (p == minp ? " 最小" : this.m_red.bomb == p.data.last ? "⭐最差" : "")
@@ -178,6 +220,39 @@ var redopenUI = ccui.Widget.extend({
                         qiang, ql, pei, pel, piao, pl, ttt, tl, qiang0, pei0, piao0, ttt0);
                 }
             }
+
+            if (this.m_type == 1) {
+                if (zset) {
+                    this.m_zqiang.setString(zqiang);
+                    this.m_zqiang.setColor(cc.color(0, 255, 0));
+                    this.m_zqiang.setVisible(true);
+
+                    this.m_zpei.setString(zpei);
+                    this.m_zpei.setColor(cc.color(0, 255, 0));
+                    this.m_zpei.setVisible(true);
+
+                    var all = zpei + zqiang;
+                    var zzpiao = parseInt(all * 0.03) / 100;
+                    this.m_zpiao.setString(zzpiao);
+                    var zpl = zzpiao != 0 ? cc.color(255, 0, 0) : cc.color(0, 255, 0);
+                    this.m_zpiao.setColor(zpl);
+                    this.m_zpiao.setVisible(true);
+
+                    var ztt = parseInt((zpei + zqiang) / 100) - zzpiao;
+                    var ztl = ztt < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+
+                    this.m_ztotal.setString(ztt);
+                    this.m_ztotal.setColor(ztl);
+                    this.m_ztotal.setVisible(true);
+                } else if (this.m_zpiao.isVisible()) {
+                    var all = zpei + zqiang;
+                    var zzpiao = parseInt(all * 0.03) / 100;
+                    this.m_zpiao.setString(zzpiao);
+                    var zpl = zzpiao != 0 ? cc.color(255, 0, 0) : cc.color(0, 255, 0);
+                    this.m_zpiao.setColor(zpl);
+                }
+            }
+
 
             this.m_listview.pushBackCustomItem(ui);
         }

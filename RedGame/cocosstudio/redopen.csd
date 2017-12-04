@@ -145,6 +145,94 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
+          <AbstractNodeData Name="Text_12" ActionTag="-1400651900" Tag="51" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="81.5934" BottomMargin="932.4066" FontSize="24" LabelText="抢包:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="68.7845" Y="944.4066" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1075" Y="0.9098" />
+            <PreSize X="0.0938" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_12_0" ActionTag="500337949" Tag="52" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="118.4376" BottomMargin="895.5624" FontSize="24" LabelText="赔付:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="68.7845" Y="907.5624" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1075" Y="0.8743" />
+            <PreSize X="0.0938" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_12_0_0" ActionTag="-1190715594" Tag="53" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="155.2819" BottomMargin="858.7181" FontSize="24" LabelText="门票:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="68.7845" Y="870.7181" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1075" Y="0.8388" />
+            <PreSize X="0.0938" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_12_0_1" ActionTag="-1167382229" Tag="54" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="192.1261" BottomMargin="821.8739" FontSize="24" LabelText="总计:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="60.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="68.7845" Y="833.8739" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.1075" Y="0.8033" />
+            <PreSize X="0.0938" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ft_zqiang" ActionTag="1818499375" Tag="55" IconVisible="False" LeftMargin="107.7456" RightMargin="412.2544" TopMargin="80.5391" BottomMargin="933.4609" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="120.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="167.7456" Y="945.4609" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.2621" Y="0.9108" />
+            <PreSize X="0.1875" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ft_zpei" ActionTag="-1219594140" Tag="56" IconVisible="False" LeftMargin="107.7456" RightMargin="412.2544" TopMargin="117.9096" BottomMargin="896.0904" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="120.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="167.7456" Y="908.0904" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.2621" Y="0.8748" />
+            <PreSize X="0.1875" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ft_zpiao" ActionTag="1584857607" Tag="57" IconVisible="False" LeftMargin="107.7456" RightMargin="412.2544" TopMargin="155.2805" BottomMargin="858.7195" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="120.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="167.7456" Y="870.7195" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.2621" Y="0.8388" />
+            <PreSize X="0.1875" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="ft_ztotal" ActionTag="1144381513" Tag="58" IconVisible="False" LeftMargin="107.7456" RightMargin="412.2544" TopMargin="192.6509" BottomMargin="821.3491" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="120.0000" Y="24.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="167.7456" Y="833.3491" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="0" G="0" B="0" />
+            <PrePosition X="0.2621" Y="0.8028" />
+            <PreSize X="0.1875" Y="0.0231" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
         </Children>
       </ObjectData>
     </Content>
