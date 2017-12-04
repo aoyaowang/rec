@@ -128,7 +128,7 @@ var redopenUI = ccui.Widget.extend({
 
         var zset = true;
         var zqiang = 0;
-        var zpei = 0;
+        var zpei = -1 *parseInt(this.m_coin) / 100;
 
         for (var key in this.m_data) {
             var p = this.m_data[key];
@@ -144,14 +144,14 @@ var redopenUI = ccui.Widget.extend({
                     }
                     var ql = cc.color(0,255,0);
                     var pei = "赔付:";
-                    var pei0 = (this.m_red.bomb == p.data.last ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
-                    if (this.m_red.bomb == p.data.last) {
-                        zpei += (parseInt(this.m_coin * (this.m_num == 7 ? 1.5:1.0)) / 100) - parseInt(this.m_coin) / 100;
-                    }
+                    var pei0 = (this.m_red.bomb == p.data.last && this.m_red.owner.uid == p.data.uid ? "-" + (parseInt((parseInt(this.m_coin) * 1.5)) / 100) : 0);
                     var pel = pei0 != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    if (this.m_red.bomb == p.data.last && this.m_red.owner.uid == p.data.uid) {
+                        zpei += (parseInt(this.m_coin * (this.m_num == 7 ? 1.5:1.0)) / 100);
+                    }
                     var mp = parseInt(parseInt(p.data.qiang) * 0.03) / 100;
                     if (mp < 0.01) mp = 0;
-                    else mp = "-" + mp;
+                    else mp = -1* mp;
                     var piao = "门票:";
                     var piao0 = mp;
                     var pl = mp != 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
@@ -245,6 +245,11 @@ var redopenUI = ccui.Widget.extend({
                     this.m_ztotal.setColor(ztl);
                     this.m_ztotal.setVisible(true);
                 } else if (this.m_zpiao.isVisible()) {
+
+                    var zpel = zpei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+                    this.m_zpei.setString(zpei);
+                    this.m_zpei.setColor(zpel);
+
                     var all = zpei + zqiang;
                     var zzpiao = parseInt(all * 0.03) / 100;
                     this.m_zpiao.setString(zzpiao);
