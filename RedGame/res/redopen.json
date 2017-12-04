@@ -595,218 +595,6 @@
             "ctype": "TextObjectData"
           },
           {
-            "FontSize": 24,
-            "LabelText": "抢包:",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 68.7845,
-              "Y": 944.4066
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1075,
-              "Y": 0.9098
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0231
-            },
-            "LeftMargin": 38.7845,
-            "RightMargin": 541.2155,
-            "TopMargin": 81.5934,
-            "BottomMargin": 932.4066,
-            "Tag": 51,
-            "ActionTag": -1400651900,
-            "Size": {
-              "X": 60.0,
-              "Y": 24.0
-            },
-            "Name": "Text_12",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 24,
-            "LabelText": "赔付:",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 68.7845,
-              "Y": 907.5624
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1075,
-              "Y": 0.8743
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0231
-            },
-            "LeftMargin": 38.7845,
-            "RightMargin": 541.2155,
-            "TopMargin": 118.4376,
-            "BottomMargin": 895.5624,
-            "Tag": 52,
-            "ActionTag": 500337949,
-            "Size": {
-              "X": 60.0,
-              "Y": 24.0
-            },
-            "Name": "Text_12_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 24,
-            "LabelText": "门票:",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 68.7845,
-              "Y": 870.7181
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1075,
-              "Y": 0.8388
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0231
-            },
-            "LeftMargin": 38.7845,
-            "RightMargin": 541.2155,
-            "TopMargin": 155.2819,
-            "BottomMargin": 858.7181,
-            "Tag": 53,
-            "ActionTag": -1190715594,
-            "Size": {
-              "X": 60.0,
-              "Y": 24.0
-            },
-            "Name": "Text_12_0_0",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 24,
-            "LabelText": "总计:",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
-            },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "Position": {
-              "X": 68.7845,
-              "Y": 833.8739
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "CColor": {
-              "R": 0,
-              "G": 0,
-              "B": 0
-            },
-            "IconVisible": false,
-            "PrePosition": {
-              "X": 0.1075,
-              "Y": 0.8033
-            },
-            "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0231
-            },
-            "LeftMargin": 38.7845,
-            "RightMargin": 541.2155,
-            "TopMargin": 192.1261,
-            "BottomMargin": 821.8739,
-            "Tag": 54,
-            "ActionTag": -1167382229,
-            "Size": {
-              "X": 60.0,
-              "Y": 24.0
-            },
-            "Name": "Text_12_0_1",
-            "ctype": "TextObjectData"
-          },
-          {
             "IsCustomSize": true,
             "FontSize": 24,
             "LabelText": "Text Label",
@@ -851,8 +639,222 @@
             "RightMargin": 412.2544,
             "TopMargin": 80.5391,
             "BottomMargin": 933.4609,
-            "Tag": 55,
-            "ActionTag": 1818499375,
+            "Tag": 67,
+            "Children": [
+              {
+                "FontSize": 24,
+                "LabelText": "总计:",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -36.034,
+                  "Y": -101.0157
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": -0.3003,
+                  "Y": -4.209
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": -66.034,
+                "RightMargin": 126.034,
+                "TopMargin": 113.0157,
+                "BottomMargin": -113.0157,
+                "Tag": 68,
+                "ActionTag": 488257299,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_12_0_1",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "门票:",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -36.034,
+                  "Y": -64.1715
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": -0.3003,
+                  "Y": -2.6738
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": -66.034,
+                "RightMargin": 126.034,
+                "TopMargin": 76.1715,
+                "BottomMargin": -76.1715,
+                "Tag": 69,
+                "ActionTag": -425133931,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_12_0_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "赔付:",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -36.034,
+                  "Y": -27.3264
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": -0.3003,
+                  "Y": -1.1386
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": -66.034,
+                "RightMargin": 126.034,
+                "TopMargin": 39.3264,
+                "BottomMargin": -39.3264,
+                "Tag": 70,
+                "ActionTag": -339774519,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_12_0",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 24,
+                "LabelText": "抢包:",
+                "OutlineColor": {
+                  "G": 0,
+                  "B": 0
+                },
+                "ShadowColor": {
+                  "R": 110,
+                  "G": 110,
+                  "B": 110
+                },
+                "ShadowOffsetX": 2.0,
+                "ShadowOffsetY": -2.0,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "Position": {
+                  "X": -36.034,
+                  "Y": 9.5163
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "CColor": {
+                  "R": 0,
+                  "G": 0,
+                  "B": 0
+                },
+                "IconVisible": false,
+                "PrePosition": {
+                  "X": -0.3003,
+                  "Y": 0.3965
+                },
+                "PreSize": {
+                  "X": 0.5,
+                  "Y": 1.0
+                },
+                "LeftMargin": -66.034,
+                "RightMargin": 126.034,
+                "TopMargin": 2.4837,
+                "BottomMargin": -2.4837,
+                "Tag": 71,
+                "ActionTag": 2114912687,
+                "Size": {
+                  "X": 60.0,
+                  "Y": 24.0
+                },
+                "Name": "Text_12",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1472314660,
             "Size": {
               "X": 120.0,
               "Y": 24.0
@@ -905,8 +907,8 @@
             "RightMargin": 412.2544,
             "TopMargin": 117.9096,
             "BottomMargin": 896.0904,
-            "Tag": 56,
-            "ActionTag": -1219594140,
+            "Tag": 72,
+            "ActionTag": -1431345754,
             "Size": {
               "X": 120.0,
               "Y": 24.0
@@ -959,8 +961,8 @@
             "RightMargin": 412.2544,
             "TopMargin": 155.2805,
             "BottomMargin": 858.7195,
-            "Tag": 57,
-            "ActionTag": 1584857607,
+            "Tag": 73,
+            "ActionTag": 589317200,
             "Size": {
               "X": 120.0,
               "Y": 24.0
@@ -1013,8 +1015,8 @@
             "RightMargin": 412.2544,
             "TopMargin": 192.6509,
             "BottomMargin": 821.3491,
-            "Tag": 58,
-            "ActionTag": 1144381513,
+            "Tag": 74,
+            "ActionTag": -1203412421,
             "Size": {
               "X": 120.0,
               "Y": 24.0

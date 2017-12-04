@@ -156,56 +156,58 @@
           </AbstractNodeData>
           <AbstractNodeData Name="ft_zqiang" ActionTag="569330683" Tag="62" IconVisible="False" LeftMargin="107.7456" RightMargin="412.2544" TopMargin="80.5391" BottomMargin="933.4609" IsCustomSize="True" FontSize="24" LabelText="Text Label" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="120.0000" Y="24.0000" />
+            <Children>
+              <AbstractNodeData Name="Text_12_0_1" ActionTag="1763937870" Tag="63" IconVisible="False" LeftMargin="-66.0340" RightMargin="126.0340" TopMargin="113.0157" BottomMargin="-113.0157" FontSize="24" LabelText="总计:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="24.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="-36.0340" Y="-101.0157" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="-0.3003" Y="-4.2090" />
+                <PreSize X="0.5000" Y="1.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_12_0_0" ActionTag="-1169544587" Tag="64" IconVisible="False" LeftMargin="-66.0340" RightMargin="126.0340" TopMargin="76.1715" BottomMargin="-76.1715" FontSize="24" LabelText="门票:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="24.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="-36.0340" Y="-64.1715" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="-0.3003" Y="-2.6738" />
+                <PreSize X="0.5000" Y="1.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_12_0" ActionTag="-1557327168" Tag="65" IconVisible="False" LeftMargin="-66.0340" RightMargin="126.0340" TopMargin="39.3264" BottomMargin="-39.3264" FontSize="24" LabelText="赔付:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="24.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="-36.0340" Y="-27.3264" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="-0.3003" Y="-1.1386" />
+                <PreSize X="0.5000" Y="1.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+              <AbstractNodeData Name="Text_12" ActionTag="1730898293" Tag="66" IconVisible="False" LeftMargin="-66.0340" RightMargin="126.0340" TopMargin="2.4837" BottomMargin="-2.4837" FontSize="24" LabelText="抢包:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+                <Size X="60.0000" Y="24.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <Position X="-36.0340" Y="9.5163" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <CColor A="255" R="0" G="0" B="0" />
+                <PrePosition X="-0.3003" Y="0.3965" />
+                <PreSize X="0.5000" Y="1.0000" />
+                <OutlineColor A="255" R="255" G="0" B="0" />
+                <ShadowColor A="255" R="110" G="110" B="110" />
+              </AbstractNodeData>
+            </Children>
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="167.7456" Y="945.4609" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="0" G="0" B="0" />
             <PrePosition X="0.2621" Y="0.9108" />
             <PreSize X="0.1875" Y="0.0231" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Text_12_0_1" ActionTag="1763937870" Tag="63" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="192.1261" BottomMargin="821.8739" FontSize="24" LabelText="总计:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="60.0000" Y="24.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="68.7845" Y="833.8739" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1075" Y="0.8033" />
-            <PreSize X="0.0938" Y="0.0231" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Text_12_0_0" ActionTag="-1169544587" Tag="64" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="155.2819" BottomMargin="858.7181" FontSize="24" LabelText="门票:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="60.0000" Y="24.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="68.7845" Y="870.7181" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1075" Y="0.8388" />
-            <PreSize X="0.0938" Y="0.0231" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Text_12_0" ActionTag="-1557327168" Tag="65" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="118.4376" BottomMargin="895.5624" FontSize="24" LabelText="赔付:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="60.0000" Y="24.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="68.7845" Y="907.5624" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1075" Y="0.8743" />
-            <PreSize X="0.0938" Y="0.0231" />
-            <OutlineColor A="255" R="255" G="0" B="0" />
-            <ShadowColor A="255" R="110" G="110" B="110" />
-          </AbstractNodeData>
-          <AbstractNodeData Name="Text_12" ActionTag="1730898293" Tag="66" IconVisible="False" LeftMargin="38.7845" RightMargin="541.2155" TopMargin="81.5934" BottomMargin="932.4066" FontSize="24" LabelText="抢包:" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="60.0000" Y="24.0000" />
-            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="68.7845" Y="944.4066" />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
-            <CColor A="255" R="0" G="0" B="0" />
-            <PrePosition X="0.1075" Y="0.9098" />
-            <PreSize X="0.0938" Y="0.0231" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
