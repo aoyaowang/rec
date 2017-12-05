@@ -25,5 +25,14 @@
         <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="redopen.csd" />
+          <FilePathData Path="reddetail.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="redopen.csd" />
+      </Value>
+    </Item>
   </Properties>
 </UserData>

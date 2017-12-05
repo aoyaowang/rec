@@ -164,7 +164,6 @@
         <Project Name="chatred.csd" Type="Layer" />
         <Project Name="chatsys.csd" Type="Layer" />
         <Project Name="game.csd" Type="Layer" />
-        <Project Name="sublog.csd" Type="Layer" />
         <Project Name="jielong.csd" Type="Layer" />
         <Project Name="loading.csd" Type="Layer" />
         <Project Name="main.csd" Type="Layer" />
@@ -182,6 +181,7 @@
         <Project Name="saolei.csd" Type="Layer" />
         <Project Name="saoleisub.csd" Type="Layer" />
         <Project Name="setting.csd" Type="Layer" />
+        <Project Name="sublog.csd" Type="Layer" />
         <Project Name="sys.csd" Type="Layer" />
         <Project Name="tips.csd" Type="Layer" />
         <Project Name="tocash.csd" Type="Layer" />

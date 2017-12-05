@@ -231,8 +231,11 @@ var GSLRoom = GBaseRoom.extend({
             if (player.Info.uid != this.m_Owner.uid)
                 userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, e / 100, timestamp);
         }
-        var piao = parseInt(oex * 100 * fl);
-        oex -= piao / 100;
+        if (oex - (this.m_Coin / 100) > 0) {
+            var piao = parseInt((oex * 100 - this.m_Coin) * fl);
+            oex -= piao / 100;
+        }
+
         userDao.gamelog(this.m_Owner.uid, this.m_Hall ? this.m_Hall.Type : -1, "saolei", parseInt(this.m_Coin), (parseInt((ownall + oex + (left / 100)) * 100) - this.m_Coin) / 100, timestamp);
         if (this.m_Players[this.m_Owner.uid] ) {
             this.m_Players[this.m_Owner.uid].m_Result += oex;
