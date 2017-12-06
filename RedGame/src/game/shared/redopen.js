@@ -226,8 +226,12 @@ var redopenUI = ccui.Widget.extend({
                     this.m_zpiao.setColor(zpl);
                     this.m_zpiao.setVisible(true);
 
-                    var ztt = parseInt((zpei*100 + zqiang) / 100) - zzpiao;
+                    var ztt = parseInt(zpei*100 + zqiang) / 100 - zzpiao;
                     var ztl = ztt < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);
+
+                    this.m_ztotal.setStringNum(ztt);
+                    this.m_ztotal.setColor(ztl);
+                    this.m_ztotal.setVisible(true);
                 } else if (this.m_zpiao.isVisible()) {
 
                     var zpel = zpei < 0 ? cc.color(255, 0, 0) : cc.color(0,255,0);

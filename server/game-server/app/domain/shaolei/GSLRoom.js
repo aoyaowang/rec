@@ -216,7 +216,7 @@ var GSLRoom = GBaseRoom.extend({
         for (var key in this.m_Players) {
             var player = this.m_Players[key];
             if (this.m_Players[key].m_Qiang == 0) continue;
-            var l = Math.floor(player.m_Qiang * fl);
+            var l = parseInt(player.m_Qiang * fl);
             if (l < 1) l = 0;
             var e = player.m_Qiang - l;
             if (player.m_LastNum == this.m_Bomb && player.Info.uid != this.m_Owner.uid) {
