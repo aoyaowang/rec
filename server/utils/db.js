@@ -210,7 +210,7 @@ db.update_user = function(openid, nickname, sex, headimg, cb) {
 db.getLog = function(uid, game, cb) {
     var sql = 'select * from gamelog where uid = ? and game = ?';
     var args = [sanitizer.sanitize(uid), sanitizer.sanitize(game)];
-
+    
     query(sql, args, function(err, res){
         if (err) {
             cb(false);

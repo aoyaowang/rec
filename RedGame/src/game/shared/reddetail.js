@@ -211,7 +211,7 @@ var reddetailUI = ccui.Widget.extend({
                 }
             }
 
-            if (this.m_type == 1 && zct >= this.m_num) {
+            if (this.m_type == 1) {
                 if (zset) {
                     this.m_zqiang.setStringNum(zqiang / 100);
                     this.m_zqiang.setColor(cc.color(0, 255, 0));
