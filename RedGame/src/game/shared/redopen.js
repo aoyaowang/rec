@@ -22,6 +22,7 @@ var redopenUI = ccui.Widget.extend({
     m_zpei:null,
     m_zpiao:null,
     m_ztotal:null,
+    m_ft_extm: null,
     ctor:function(type,id, money, coin, num, data, red) {
         this._super();
 
@@ -60,10 +61,12 @@ var redopenUI = ccui.Widget.extend({
         this.m_zpei = ccui.helper.seekWidgetByName(this.Widget, "ft_zpei");
         this.m_zpiao = ccui.helper.seekWidgetByName(this.Widget, "ft_zpiao");
         this.m_ztotal = ccui.helper.seekWidgetByName(this.Widget, "ft_ztotal");
+        this.m_ft_extm =  ccui.helper.seekWidgetByName(this.Widget, "ft_extm");
         this.m_zqiang.setVisible(false);
         this.m_zpei.setVisible(false);
         this.m_zpiao.setVisible(false);
         this.m_ztotal.setVisible(false);
+        this.m_ft_extm.setVisible(false);
 
         headMgr.loadHead(red.owner.uid, red.owner.headimg, function(data){
             if (!data) return;
@@ -103,6 +106,7 @@ var redopenUI = ccui.Widget.extend({
         }
         if (!isNaN(parseInt(m))) m = parseInt(m) / 100;
         this.m_ft_top.setString("已经领取" + ct + "/" + num + "个,共" + m + "/" + (coin / 100) + "王者币");
+        this.m_ft_extm.setString("游戏结算时，庄家退还金额:" + ((this.m_coin / 100) - m));
 
         this.initList();
         return true;
@@ -207,6 +211,8 @@ var redopenUI = ccui.Widget.extend({
 
             if (this.m_type == 1) {
                 if (zset) {
+                    this.m_ft_extm.setVisible(true);
+
                     this.m_zqiang.setStringNum(zqiang / 100);
                     this.m_zqiang.setColor(cc.color(0, 255, 0));
                     this.m_zqiang.setVisible(true);

@@ -1023,6 +1023,61 @@
             },
             "Name": "ft_ztotal",
             "ctype": "TextObjectData"
+          },
+          {
+            "IsCustomSize": true,
+            "FontSize": 24,
+            "LabelText": "Text Label",
+            "HorizontalAlignmentType": "HT_Center",
+            "OutlineColor": {
+              "G": 0,
+              "B": 0
+            },
+            "ShadowColor": {
+              "R": 110,
+              "G": 110,
+              "B": 110
+            },
+            "ShadowOffsetX": 2.0,
+            "ShadowOffsetY": -2.0,
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 315.2131,
+              "Y": 917.3107
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.4925,
+              "Y": 0.8837
+            },
+            "PreSize": {
+              "X": 0.4375,
+              "Y": 0.0231
+            },
+            "LeftMargin": 175.2131,
+            "RightMargin": 184.7869,
+            "TopMargin": 108.6893,
+            "BottomMargin": 905.3107,
+            "Tag": 39,
+            "ActionTag": 12872448,
+            "Size": {
+              "X": 280.0,
+              "Y": 24.0
+            },
+            "Name": "ft_extm",
+            "ctype": "TextObjectData"
           }
         ],
         "Size": {
