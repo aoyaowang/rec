@@ -297,7 +297,7 @@ var G28Room = GBaseRoom.extend({
             if (this.m_Players[key].Info.uid == this.m_Owner.uid) continue;
             var curniu = this.m_Players[key].CardType();
 
-            if (ownerniu > curniu) {
+            if (ownerniu > curniu || (ownerniu == curniu && this.m_Players[this.m_Owner.uid].m_Qiang >= player.m_Qiang)) {
                 var lost = 1;
                 lost = lost * this.m_Coin;
                 ownall+=lost;
