@@ -1045,8 +1045,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 315.2131,
-              "Y": 917.3107
+              "X": 321.1829,
+              "Y": 921.0408
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -1059,21 +1059,21 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4925,
-              "Y": 0.8837
+              "X": 0.5018,
+              "Y": 0.8873
             },
             "PreSize": {
-              "X": 0.4375,
+              "X": 1.0,
               "Y": 0.0231
             },
-            "LeftMargin": 175.2131,
-            "RightMargin": 184.7869,
-            "TopMargin": 108.6893,
-            "BottomMargin": 905.3107,
+            "LeftMargin": 1.1829,
+            "RightMargin": -1.1829,
+            "TopMargin": 104.9592,
+            "BottomMargin": 909.0408,
             "Tag": 39,
             "ActionTag": 12872448,
             "Size": {
-              "X": 280.0,
+              "X": 640.0,
               "Y": 24.0
             },
             "Name": "ft_extm",
