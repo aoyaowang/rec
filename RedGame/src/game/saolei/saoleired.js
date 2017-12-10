@@ -83,6 +83,13 @@ var saoleired = ccui.Widget.extend({
         var x = map[this.m_roomtype];
         if (!x) return;
 
+        if (this.m_roomtype == 1) {
+            var ui = new saoleisub(5, this.mClick.bind(this));
+            ui.setUserData(5);
+            this.m_list.insertCustomItem(ui, this.m_list.getIndex(this.m_s1));
+            this.m_l1.push(ui);
+        }
+
         for (var i = x.min;i <= x.max;i += x.step) {
             var ui = new saoleisub(i, this.mClick.bind(this));
             ui.setUserData(i);

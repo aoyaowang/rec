@@ -228,6 +228,8 @@ pro.jielongCheck = function(coin) {
 
 pro.niuniuCheck = function(coin) {
     var STYPE = {
+        1: 1,
+        2: 1,
         3: 1,
         5: 1,
         10: 1,
