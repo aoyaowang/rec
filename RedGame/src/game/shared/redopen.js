@@ -106,7 +106,7 @@ var redopenUI = ccui.Widget.extend({
         }
         if (!isNaN(parseInt(m))) m = parseInt(m) / 100;
         this.m_ft_top.setString("已经领取" + ct + "/" + num + "个,共" + m + "/" + (coin / 100) + "王者币");
-        this.m_ft_extm.setString("游戏结算时，庄家退还金额:" + ((this.m_coin / 100) - m));
+        this.m_ft_extm.setString("游戏结算，退还剩余金额:" + (parseInt((parseInt(this.m_coin) / 100) - m) * 100) / 100);
 
         this.initList();
         return true;
