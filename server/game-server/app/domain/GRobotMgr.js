@@ -37,6 +37,10 @@ var GRobotMgr = Core.obserData.extend({
             G28AI.Instance().onRobotChange(ay4);
 
             this.m_bInit = true;
+            GSLAI.Instance().Init();
+            GJLAI.Instance().Init();
+            GNiuAI.Instance().Init();
+            G28AI.Instance().Init();
         }.bind(this));
     },
     factoryData:function() {

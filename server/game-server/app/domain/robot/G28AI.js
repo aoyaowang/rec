@@ -111,7 +111,7 @@ var G28AI = GBaseAI.extend({
 
                             robot.run.qiang[x.coin].q[room.m_RoomID] = 1;
                         }
-                    }.bind(a,this));
+                    }.bind(this,a));
                 }
             }
         }
@@ -268,7 +268,7 @@ var G28AI = GBaseAI.extend({
                         room2.PlayerQiang(user, qiangtype);
 
                         this.onTimer(room2);
-                    }.bind(a,this));
+                    }.bind(this,a));
                 }
             }
         }

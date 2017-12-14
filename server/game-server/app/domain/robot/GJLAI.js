@@ -262,7 +262,7 @@ var GJLAI = GBaseAI.extend({
                         room2.pushMsg(enums.PROTOCOL.GAME_JIELONG_CREATE, {data: room2});
 
                         this.onTimer(room2);
-                    }.bind(a,this));
+                    }.bind(this,a));
                 }
             }
         }

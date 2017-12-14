@@ -97,7 +97,7 @@ var GSLAI = GBaseAI.extend({
 
                             robot.run.qiang[x.coin].q[room.m_RoomID] = 1;
                         }
-                    }.bind(a,this));
+                    }.bind(this,a));
                 }
             }
         }
@@ -114,6 +114,7 @@ var GSLAI = GBaseAI.extend({
         }
     },
     TimerFunc:function(delta) {
+        
         var objKeys = Object.keys(this.m_robots);
         objKeys = objKeys.sort(function(a, b) {
             return utils.GetRandomNum(0, 100) < 50 ? -1 : 1;
@@ -146,6 +147,7 @@ var GSLAI = GBaseAI.extend({
                 if (!robot.run.fa) robot.run.fa = {};
                 if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
                 robot.run.fa[a.coin + ":" + a.num] += delta;
+                logger.warn("SL TimerFunc " + robot.run.fa[a.coin + ":" + a.num] + " " + a.time);
                 if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
                     robot.run.fa[a.coin + ":" + a.num] = 0;
                     for (var key in this.m_robots) {
@@ -159,19 +161,22 @@ var GSLAI = GBaseAI.extend({
                         var bomb = parseInt(parseInt(Math.random()*9, 10));
             
                         if (num != 7 && num != 10) {
-                            return;
+                            num = 7;
                         }
             
                         if (bomb === null) {
+                            logger.warn("bomb Error" + bomb);
                             return;
                         }
             
                         var type = this.saoleiType(coin);
                         if (!type) {
+                            logger.warn("type Error" + coin + " " + type);
                             return;
                         }
             
                         if (!user.lockMoney(coin)) {
+                            logger.warn("money Error" + user.money);
                             return;
                         }
                         var room2 = new GSLRoom(type, user, coin, num, bomb, must);
@@ -183,7 +188,7 @@ var GSLAI = GBaseAI.extend({
                             }
                         }
                         this.onTimer(room2);
-                    }.bind(a,this));
+                    }.bind(this,a));
                 }
             }
         }

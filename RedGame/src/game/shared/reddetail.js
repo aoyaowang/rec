@@ -95,7 +95,7 @@ var reddetailUI = ccui.Widget.extend({
         }
 
         if (!bfind) this.m_ft_money.setVisible(false);
-
+        var show = true;
         var ct = 0; for (var k in data) ct++;
         var m = 0; for (var k in data) {
             if (!!data[k].data.qiang)
@@ -104,6 +104,7 @@ var reddetailUI = ccui.Widget.extend({
                 continue;
             }
             if (isNaN(parseInt(data[k].m))) {
+                show = false;
                 m = 'xxx'
                 break;
             } else {
@@ -112,6 +113,9 @@ var reddetailUI = ccui.Widget.extend({
         }
         if (!isNaN(parseInt(m))) m = parseInt(m) / 100;
         this.m_ft_top.setString("已经领取" + ct + "/" + this.m_num + "个,共" + m + "/" + (this.m_coin / 100) + "王者币");
+        if (!show) {
+            this.m_ft_extm.setVisible(false);
+        }
         this.m_ft_extm.setString("游戏结算，退还剩余金额:" + (parseInt((parseInt(this.m_coin) / 100) - m) * 100) / 100);
         this.initList();
         return true;
