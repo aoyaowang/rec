@@ -242,9 +242,9 @@ var GJLAI = GBaseAI.extend({
                         if (!!this.m_robots[key].run && !!this.m_robots[key].run.fa && !!this.m_robots[key].run.fa[a.coin + ":" + a.num]) 
                             this.m_robots[key].run.fa[a.coin + ":" + a.num] = 0;
                     }
-                    Core.GData.checkUid(robot.uid, function(a,err, user){
+                    Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
-                        var coin = parseInt(a.coin);
+                        var coin = parseInt(x.coin);
         
                         if (coin == null || !this.jielongCheck(coin)) {
                             next(null, {code: consts.NOR_CODE.ERR_PARAM});

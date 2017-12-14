@@ -104,12 +104,12 @@ var G28AI = GBaseAI.extend({
                         }
                     }
 
-                    Core.GData.checkUid(robot.uid, function(a,err, user){
+                    Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, qiangtype);
 
-                            robot.run.qiang[a.coin].q[room.m_RoomID] = 1;
+                            robot.run.qiang[x.coin].q[room.m_RoomID] = 1;
                         }
                     }.bind(a,this));
                 }
@@ -245,9 +245,9 @@ var G28AI = GBaseAI.extend({
                         }
                     }
 
-                    Core.GData.checkUid(robot.uid, function(a,err, user){
+                    Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
-                        var coin = parseInt(a.coin);
+                        var coin = parseInt(x.coin);
 
                         var ret = this.game28Check(coin);
                         if (!ret) {

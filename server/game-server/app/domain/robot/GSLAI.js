@@ -90,12 +90,12 @@ var GSLAI = GBaseAI.extend({
                         continue;
                     }
                     if (!!robot.run.qiang[a.coin].q[room.m_RoomID]) continue;
-                    Core.GData.checkUid(robot.uid, function(a,err, user){
+                    Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, mustqiang);
 
-                            robot.run.qiang[a.coin].q[room.m_RoomID] = 1;
+                            robot.run.qiang[x.coin].q[room.m_RoomID] = 1;
                         }
                     }.bind(a,this));
                 }
@@ -152,10 +152,10 @@ var GSLAI = GBaseAI.extend({
                         if (!!this.m_robots[key].run && !!this.m_robots[key].run.fa && !!this.m_robots[key].run.fa[a.coin + ":" + a.num]) 
                             this.m_robots[key].run.fa[a.coin + ":" + a.num] = 0;
                     }
-                    Core.GData.checkUid(robot.uid, function(a,err, user){
+                    Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
-                        var coin = parseInt(a.coin);
-                        var num = parseInt(a.num);
+                        var coin = parseInt(x.coin);
+                        var num = parseInt(x.num);
                         var bomb = parseInt(parseInt(Math.random()*9, 10));
             
                         if (num != 7 && num != 10) {
@@ -177,7 +177,7 @@ var GSLAI = GBaseAI.extend({
                         var room2 = new GSLRoom(type, user, coin, num, bomb, must);
                         Core.GData.m_hall[0].createRoom(room2);
                         room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
-                        if (a.qiang) {
+                        if (x.qiang) {
                             if (room2.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                                 room2.PlayerQiang(user, mustqiang);
                             }
