@@ -482,7 +482,7 @@ function bill(uid, openid, m, type, cb) {
     
                 var allmap = {
                     "appId":"wx1002e4f4a3b4b0bd",     //公众号名称，由商户传入     
-                    "timeStamp":timestamp,         //时间戳，自1970年以来的秒数     
+                    "timeStamp":timestamp.toString(),         //时间戳，自1970年以来的秒数     
                     "nonceStr":randomWord(true, 20, 20), //随机串     
                     "package":"prepay_id="+st,     
                     "signType":"MD5"

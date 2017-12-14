@@ -3,6 +3,7 @@ var pomelo = require('pomelo');
 var async = require('async');
 
 var Core = require("../../base/Core");
+var consts = require("../../consts/consts");
 var enums = require("../../consts/enums");
 var utils = require("../../util/utils");
 var GBaseAI = require("./GBaseAI");

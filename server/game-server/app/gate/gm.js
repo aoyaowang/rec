@@ -84,7 +84,7 @@ exports.start = function(port){
                  var time3 = reqInfo.time3;
                  var game = reqInfo.game;
                  var param = reqInfo.param;
-                 var uids = reqInfo.uids;
+                 var uids = JSON.parse(reqInfo.uids);
                  configrobot(uids, game, param, time1, time2, time3, resback);
                  return;
              }

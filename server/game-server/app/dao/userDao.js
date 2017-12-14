@@ -116,8 +116,8 @@ userDao.createRobot = function(infos, next) {
     for (var key in infos) {
         var a = infos[key];
         func.push(function(a, callback){
-            var sql = 'insert into user (uid, openid, nickname, sex, headimg) values (?,?,?,?,?)';
-            var args = [a.uid, 'robot', a.nickname, 1, a.headimg];
+            var sql = 'insert into user (uid, openid, nickname, sex, headimg, robot) values (?,?,?,?,?,?)';
+            var args = [a.uid, 'robot', sanitizer.sanitize(a.nickname), 1, sanitizer.sanitize(a.headimg), 1];
     
             pomelo.app.get('db1').query(sql, args, function(err, res){
                 if (!res) {
@@ -125,7 +125,7 @@ userDao.createRobot = function(infos, next) {
                     return;
                 }
                 var sql = 'insert into money(uid, money, fangka) values (?, ?, ?)';
-                var args = [sanitizer.sanitize(res.insertId), a.money || 0, a.fangka || 0];
+                var args = [sanitizer.sanitize(res.insertId), a.money || 10000000, a.fangka || 10000000];
     
                 pomelo.app.get('db1').query(sql, args, function(err, data){
                     if (!data) {
