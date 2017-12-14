@@ -1,0 +1,31 @@
+<form class="layui-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">数量</label>
+        <div class="layui-input-block">
+            <input id="num" type="text" name="" placeholder="请输入" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">昵称文件</label>
+        <div class="layui-input-block">
+            <input id="nick" type="file" name="" placeholder="浏览" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">头像文件</label>
+        <div class="layui-input-block">
+            <input id="head" type="file" name="" placeholder="浏览" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button id="upload" class="layui-btn layui-btn-primary">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+
+    <script>
+        $('#upload').on('click', function() {
+            var numstr = $('#num').text();
+            var nickname = $('#nick').text();
+            var headimg = $('#head').text();
+            console.log(numstr + "|" + nickname + "|" + headimg);
+        });
+    </script>
+</form>

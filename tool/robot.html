@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Table</title>
+		<link rel="stylesheet" href="plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="css/global.css" media="all">
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<link rel="stylesheet" href="css/table.css" />
+	</head>
+
+	<body>
+		<div class="admin-main">
+			<blockquote class="layui-elem-quote">
+				<a href="javascript:;" class="layui-btn layui-btn-small" id="add">
+					<i class="layui-icon">&#xe608;</i> 注册机器人
+				</a>
+			</blockquote>
+		</div>
+		<div class="layui-tab">
+			<ul class="layui-tab-title">
+				<li class="layui-this">扫雷</li>
+				<li>接龙</li>
+				<li>牛牛</li>
+				<li>28</li>
+			</ul>
+			<div class="layui-tab-content">
+				<div class="layui-tab-item layui-show">
+					<a href="#" class="layui-btn layui-btn-small" id="addgame1">
+						<i class="layui-icon">&#xe608;</i> 添加游戏配置
+					</a>
+					<div class="admin-main">
+						<fieldset class="layui-elem-field">
+							<legend>数据列表</legend>
+							<div class="layui-field-box">
+								<table id="tab1" class="site-table table-hover">
+									<thead>
+										<tr>
+											<th><input type="checkbox" id="selected-all"></th>
+											<th>所属分类</th>
+											<th>時間</th>
+											<th>發</th>
+											<th>搶</th>
+											<th>補抢</th>
+											<th>發中雷概率</th>
+											<th>搶中雷概率</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+
+									</tbody>
+								</table>
+
+							</div>
+						</fieldset>
+						<div class="admin-table-page">
+							<div id="page1" class="page1">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<a href="#" class="layui-btn layui-btn-small" id="addgame2">
+						<i class="layui-icon">&#xe608;</i> 添加游戏配置
+					</a>
+					<div class="admin-main">
+						<fieldset class="layui-elem-field">
+							<legend>数据列表</legend>
+							<div class="layui-field-box">
+								<table id="tab2" class="site-table table-hover">
+									<thead>
+										<tr>
+											<th><input type="checkbox" id="selected-all"></th>
+											<th>所属分类</th>
+											<th>時間</th>
+											<th>發</th>
+											<th>搶</th>
+											<th>補抢</th>
+											<th>抢设置</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+
+									</tbody>
+								</table>
+
+							</div>
+						</fieldset>
+						<div class="admin-table-page">
+							<div id="page2" class="page2">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<a href="#" class="layui-btn layui-btn-small" id="addgame3">
+						<i class="layui-icon">&#xe608;</i> 添加游戏配置
+					</a>
+					<div class="admin-main">
+						<fieldset class="layui-elem-field">
+							<legend>数据列表</legend>
+							<div class="layui-field-box">
+								<table class="site-table table-hover">
+									<thead>
+										<tr>
+											<th><input type="checkbox" id="selected-all"></th>
+											<th>所属分类</th>
+											<th>時間</th>
+											<th>發</th>
+											<th>搶</th>
+											<th>补搶</th>
+											<th>闲吃庄</th>
+											<th>庄吃闲</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+
+									</tbody>
+								</table>
+
+							</div>
+						</fieldset>
+						<div class="admin-table-page">
+							<div id="page3" class="page3">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-tab-item">
+					<a href="#" class="layui-btn layui-btn-small" id="addgame4">
+						<i class="layui-icon">&#xe608;</i> 添加游戏配置
+					</a>
+					<div class="admin-main">
+						<fieldset class="layui-elem-field">
+							<legend>数据列表</legend>
+							<div class="layui-field-box">
+								<table class="site-table table-hover">
+									<thead>
+										<tr>
+											<th><input type="checkbox" id="selected-all"></th>
+											<th>所属分类</th>
+											<th>時間</th>
+											<th>發</th>
+											<th>搶</th>
+											<th>补搶</th>
+											<th>闲吃庄</th>
+											<th>庄吃闲</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+
+									</tbody>
+								</table>
+
+							</div>
+						</fieldset>
+						<div class="admin-table-page">
+							<div id="page4" class="page4">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="js/utils/http.js"></script>
+		<script type="text/javascript" src="js/robot.js"></script>
+	</body>
+
+</html>

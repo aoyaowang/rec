@@ -1,0 +1,154 @@
+<div class="layui-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">昵称文件</label>
+        <div class="layui-input-block">
+            <input id="nick" type="file" name="nick" placeholder="浏览" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">头像文件</label>
+        <div class="layui-input-block">
+            <input id="head" type="file" name="head" placeholder="浏览" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button id="upload" class="layui-btn layui-btn-primary">立即提交</button>
+            <button id="reset" type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/utils/http.js"></script>
+    <script>
+var server = "http://test.obyjd.com:9800/"
+
+window.httpget = function ( url, callback ){
+    var time = 15000;
+    var request = new XMLHttpRequest();
+    var timeout = false;
+    var timer = setTimeout( function(){
+        timeout = true;
+        request.abort();
+    }, time );
+    request.open( "GET", server +　url );
+    request.onreadystatechange = function(){
+        if( request.readyState !== 4 ){
+            return;
+        }
+        if( timeout ) {
+            callback(true, "" );
+            return;
+        }
+
+        clearTimeout( timer );
+        if( request.status === 200 ){
+            callback(null, JSON.parse(request.responseText) );
+        }
+    }
+    request.send( null );
+};
+
+window.httpgetdata = function ( url, map, callback ){
+    var time = 15000;
+    var request = new XMLHttpRequest();
+    var timeout = false;
+    var timer = setTimeout( function(){
+        timeout = true;
+        request.abort();
+    }, time );
+    for (var key in map) {
+        url += key + "=" + encodeURI(map[key]) + "&";
+    }
+    request.open( "GET", server +　url );
+    request.onreadystatechange = function(){
+        if( request.readyState !== 4 ){
+            return;
+        }
+        if( timeout ) {
+            callback(true, "" );
+            return;
+        }
+
+        clearTimeout( timer );
+        if( request.status === 200 ){
+            callback(null, JSON.parse(request.responseText) );
+        }
+    }
+    request.send( null );
+};
+
+        layui.use(['layer'], function() {
+            var layer = layui.layer,
+                $ = layui.jquery;
+            $('#upload').on('click', function(data){
+                var nick = $('#nick').val();
+                var head = $('#head').val();
+
+                if (nick == "") {
+                    parent.layer.alert('请选择昵称文件');
+                    return;
+                }
+                if (head == "") {
+                    parent.layer.alert('请选择头像文件');
+                    return;
+                }
+
+                $('#upload').attr('disabled',"true");
+
+                nick = document.getElementById("nick").files[0];
+                head = document.getElementById("head").files[0];
+
+                var nickfile = null, headfile = null;
+
+                function postup() {
+                    //resultStr = testStr.replace(/[\r\n]/g, "");
+                    var nickay = nickfile.split('\n');
+                    for (var key in nickay) {
+                        nickay[key] = nickay[key].replace(/[\r\n]/g, "");
+                        nickay[key] = nickay[key].substr(0, 16);
+                    }
+                    var headay = nickfile.split('\n');
+                    for (var key in headay) {
+                        headay[key] = headay[key].replace(/[\r\n]/g, "");
+                        headay[key] = headay[key].substr(0, 255);
+                    }
+                    var all = [];
+                    for (var key in nickay) {
+                        if (!headay[key]) break;
+                        all.push({nickname: nickay[key], headimg: headay[key]});
+                    }
+                    var url = "createrobot?i=" + encodeURI(JSON.stringify(all));
+                    window.httpget(url, function(err, data){
+                        console.log(JSON.stringify(data));
+                        if (data && data.code == 0) {
+                            layer.closeAll();
+                            parent.layer.alert('提交成功');
+
+                        } else {
+                            parent.layer.alert('请求失败');
+                        }
+                    });
+                }
+
+                var reader = new FileReader();
+                reader.onload = function()
+                {
+                    nickfile = this.result;
+                    console.log("NICK:" + nickfile);
+                    if (nickfile && headfile) {
+                        postup();
+                    }
+                };
+                reader.readAsText(nick);
+
+                reader = new FileReader();
+                reader.onload = function()
+                {
+                    headfile = this.result;
+                    console.log("HEAD:" + headfile);
+                    if (nickfile && headfile) {
+                        postup();
+                    }
+                };
+                reader.readAsText(head);
+            });
+        });
+    </script>
+</div>

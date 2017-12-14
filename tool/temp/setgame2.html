@@ -1,0 +1,325 @@
+<div class="layui-form">
+    <div class="layui-form-item">
+        <datalist id="cars">
+          <option value="不搶最小">
+          <option value="搶最小">
+          <option value="不搶最大">
+          <option value="搶最大">
+          <option value="中間">
+        </datalist>
+        <label class="layui-form-label">时间1</label>
+        <div class="layui-input-block">
+            <div class="layui-input">
+                <input id="btime" type="time" name="btime" value="12:00" class="layui-input-inline" style="width:75px;">
+                <input id="etime" type="time" name="etime" value="12:00" class="layui-input-inline" style="width:75px;">
+            </div>
+        </div>
+        <label class="layui-form-label">时间2</label>
+        <div class="layui-input-block">
+            <div class="layui-input">
+                <input id="btime" type="time" name="btime" value="12:00" class="layui-input-inline" style="width:75px;">
+                <input id="etime" type="time" name="etime" value="12:00" class="layui-input-inline" style="width:75px;">
+            </div>
+        </div>
+        <label class="layui-form-label">时间3</label>
+        <div class="layui-input-block">
+            <div class="layui-input">
+                <input id="btime" type="time" name="btime" value="12:00" class="layui-input-inline" style="width:75px;">
+                <input id="etime" type="time" name="etime" value="12:00" class="layui-input-inline" style="width:75px;">
+            </div>
+        </div>
+        <label class="layui-form-label">模式一</label>
+        <div class="layui-input-block">
+            <input id="xcz" name="xcz" value="" placeholder="不抢最小 1开启0关闭 不填默认本模式关闭" autocomplete="off" class="layui-input">
+            <input id="xpz" name="xpz" value="" placeholder="抢最大 1开启0关闭 不填默认本模式关闭" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">模式二</label>
+        <div class="layui-input-block">
+            <ul id='ul'>
+                <li>
+                    <div class="layui-input">
+                        <input id="zcx" name="xcz" value="" placeholder="几局" autocomplete="off" class="layui-input-inline">
+                        <input id="zcxoption" list="cars" placeholder="点击下拉框进行选择" class="layui-input-inline">
+                    </div>
+                </li>
+            </ul>
+            <button id="addmore"class="layui-btn layui-btn-small">添加</button>
+            <button id="delmoe" class="layui-btn layui-btn-small">刪除</button>
+        </div>
+        <label class="layui-form-label">補槍時間</label>
+        <div class="layui-input-block">
+            <input id="buqiang" name="buqiang" value="45" placeholder="秒" autocomplete="off" class="layui-input">
+        </div>
+        <label class="layui-form-label">發包設置</label>
+        <div class="layui-input-block">
+            <ul id='ul2'>
+                <li>
+                    <div class="layui-input">
+                        <input id="fatime" name="fatime" placeholder="時間" class="layui-input-inline" style="width:75px;">
+                        <input id="facoin" name="facoin" placeholder="發多少幣" class="layui-input-inline" style="width:75px;">
+                    </div>
+                </li>
+            </ul>
+            <button id="addqiang2"class="layui-btn layui-btn-small">添加</button>
+            <button id="delqiang2" class="layui-btn layui-btn-small">刪除</button>
+        </div>
+        <label class="layui-form-label">搶包設置</label>
+        <div class="layui-input-block">
+            <ul id='ul3'>
+                <li>
+                    <div class="layui-input">
+                        <input id="qiangcoin" name="qiangcoin" placeholder="搶多少幣" class="layui-input-inline" style="width:75px;">
+                        <input id="qiangq" name="qiangq" placeholder="搶幾次" class="layui-input-inline" style="width:75px;">
+                        <input id="qiangt" name="qiangt" placeholder="停幾次" class="layui-input-inline" style="width:75px;">
+                    </div>
+                </li>
+            </ul>
+            <button id="addqiang"class="layui-btn layui-btn-small">添加</button>
+            <button id="delqiang" class="layui-btn layui-btn-small">刪除</button>
+        </div>
+        <label class="layui-form-label">機器人數</label>
+        <div class="layui-input-block">
+            <input id="robot" name="robot" value="0" placeholder="" autocomplete="off" class="layui-input">
+        </div>
+
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button id="upload" class="layui-btn layui-btn-primary">立即提交</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/utils/http.js"></script>
+    <script>
+    var server = "http://test.obyjd.com:9800/"
+
+window.httpget = function ( url, callback ){
+    var time = 15000;
+    var request = new XMLHttpRequest();
+    var timeout = false;
+    var timer = setTimeout( function(){
+        timeout = true;
+        request.abort();
+    }, time );
+    request.open( "GET", server +　url );
+    request.onreadystatechange = function(){
+        if( request.readyState !== 4 ){
+            return;
+        }
+        if( timeout ) {
+            callback(true, "" );
+            return;
+        }
+
+        clearTimeout( timer );
+        if( request.status === 200 ){
+            callback(null, JSON.parse(request.responseText) );
+        }
+    }
+    request.send( null );
+};
+
+window.httpgetdata = function ( url, map, callback ){
+    var time = 15000;
+    var request = new XMLHttpRequest();
+    var timeout = false;
+    var timer = setTimeout( function(){
+        timeout = true;
+        request.abort();
+    }, time );
+    for (var key in map) {
+        url += key + "=" + encodeURI(map[key]) + "&";
+    }
+    request.open( "GET", server +　url );
+    request.onreadystatechange = function(){
+        if( request.readyState !== 4 ){
+            return;
+        }
+        if( timeout ) {
+            callback(true, "" );
+            return;
+        }
+
+        clearTimeout( timer );
+        if( request.status === 200 ){
+            callback(null, JSON.parse(request.responseText) );
+        }
+    }
+    request.send( null );
+};
+        layui.use(['layer'], function() {
+            var layer = layui.layer,
+                $ = layui.jquery;
+
+            var ct = 0;
+            for (var ky in robots) {
+                ct++;
+            }
+            $('#robot').attr('value', ct);
+            $('#addmore').on('click', function(data){
+                $('#ul').append('<li><div class="layui-input"><input id="zcx" name="xcz" value="" placeholder="几局" autocomplete="off" class="layui-input-inline"><input id="zcxoption" list="cars" placeholder="点击下拉框进行选择" class="layui-input-inline"></div></li>');
+            });
+            $('#delmoe').on('click', function(data){
+                var c = $('#ul').children().length;
+                if (c == 1) return;
+                $('#ul li:eq('+(c-1)+')').remove();
+            });
+            $('#addqiang2').on('click', function(data){
+                $('#ul2').append('<li><div class="layui-input"><input id="fatime" name="fatime" placeholder="時間" class="layui-input-inline" style="width:75px;"><input id="facoin" name="facoin" placeholder="發多少幣" class="layui-input-inline" style="width:75px;"></div></li>');
+            });
+            $('#delqiang2').on('click', function(data){
+                var c = $('#ul2').children().length;
+                if (c == 1) return;
+                $('#ul2 li:eq('+(c-1)+')').remove();
+            });
+            $('#addqiang').on('click', function(data){
+                $('#ul3').append('<li><div class="layui-input"><input id="qiangcoin" name="qiangcoin" placeholder="搶多少幣" class="layui-input-inline" style="width:75px;"><input id="qiangq" name="qiangq" placeholder="搶幾次" class="layui-input-inline" style="width:75px;"><input id="qiangt" name="qiangt" placeholder="停幾次" class="layui-input-inline" style="width:75px;"></div></li>');
+            });
+            $('#delqiang').on('click', function(data){
+                var c = $('#ul3').children().length;
+                if (c == 1) return;
+                $('#ul3 li:eq('+(c-1)+')').remove();
+            });
+
+            $('#upload').on('click', function(data){
+                var btime = [];
+                var etime = [];
+                $('[id=btime]').each(function(data){
+                    btime.push($(this).val());
+                });
+                $('[id=etime]').each(function(data){
+                    etime.push($(this).val());
+                });
+                var map = {};
+                var time1 = btime[0] == etime[0] ? "{}" : JSON.stringify({'btime':btime[0],'etime':etime[0]});
+                var time2 = btime[1] == etime[1] ? "{}" : JSON.stringify({'btime':btime[1],'etime':etime[1]});
+                var time3 = btime[2] == etime[2] ? "{}" : JSON.stringify({'btime':btime[2],'etime':etime[2]});
+                map['buqiang'] = parseInt($('#buqiang').val());
+
+                var nomin = $('#xcz').val();
+                var max = $('#xpz').val();
+
+                if (nomin != "") {
+                    map['1'] = {};
+                    if (nomin != "0") map['1'].nomin = 1;
+                    if (max != "0") map['1'].max = 1;
+                }
+
+
+                var zcxay = [];
+                var zcxopay = [];
+                var zay = [];
+                $('[id=zcx]').each(function(data){
+                    zcxay.push($(this).val());
+                });
+                $('[id=zcxoption]').each(function(data){
+                    zcxopay.push($(this).val());
+                });
+
+                for (var key in zcxay) {
+                    if (zcxay[key] == "" && key == 0) break;
+                    var q = {};
+         // <option value="不搶最小">
+         //  <option value="搶最小">
+         //  <option value="不搶最大">
+         //  <option value="搶最大">
+         //  <option value="中間">
+
+                    if (zcxopay[key] == "不搶最小") {
+                        q['nomin'] = 1;
+                    }
+                    else if (zcxopay[key] == "搶最小") {
+                        q['min'] = 1;
+                    }
+                    else if (zcxopay[key] == "不搶最大") {
+                        q['nomax'] = 1;
+                    }
+                    else if (zcxopay[key] == "搶最大") {
+                        q['max'] = 1;
+                    }
+                    else if (zcxopay[key] == "中間") {
+                        q['mid'] = 1;
+                    }
+                    zay.push({
+                        t: parseInt(zcxay[key]),
+                        q: q
+                    });
+                }
+
+                if (zay.length > 0) {
+                    map['2'] = zay;
+                }
+
+                var qcoin = [];
+                var qq = [];
+                var qt = [];
+                var qay = [];
+                $('[id=qiangcoin]').each(function(data){
+                    qcoin.push($(this).val());
+                });
+                $('[id=qiangq]').each(function(data){
+                    qq.push($(this).val());
+                });
+                $('[id=qiangt]').each(function(data){
+                    qt.push($(this).val());
+                });
+
+                for (var key in qcoin) {
+                    if (key == 0 && qcoin[key] == "") break;
+                    if (qcoin[key] == "" || qq[key] == "" || qt[key] == "") {
+                        parent.layer.alert("請填寫正確的搶包數據后再提交");
+                        return;
+                    }
+                    qay.push({coin: parseInt(qcoin[key]), q: parseInt(qq[key]), t: parseInt(qt[key])});
+                }
+
+                if (qay.length > 0) map.qiang = qay;
+
+                var fcoin = [];
+                var ftime = [];
+                var fay = [];
+                $('[id=facoin]').each(function(data){
+                    fcoin.push($(this).val());
+                });
+                $('[id=fatime]').each(function(data){
+                    ftime.push($(this).val());
+                });
+
+
+                for (var key in fcoin) {
+                    if (key == 0 && fcoin[key] == "") break;
+                    if (fcoin[key] == "" || ftime[key] == "") {
+                        parent.layer.alert("請填寫正確的發包數據后再提交");
+                        return;
+                    }
+                    fay.push({coin: parseInt(fcoin[key]), num: 7, time: parseInt(ftime[key])});
+                }
+
+                if (fay.length > 0) map.fa = fay;
+
+                var n = parseInt($('#robot').val());
+                if (n > ct || n == 0) {
+                    parent.layer.alert("机器人数量不足！");
+                    return;
+                }
+
+                var uids = [];
+                var nct = 0;
+                for (var k in robots) {
+                    nct++;
+                    uids.push(k);
+                    if (nct >= n) break;
+                }
+                httpgetdata("configrobot?",
+                    {uids: JSON.stringify(uids), game: 1, time1: time1, time2: time2, time3: time3, param: JSON.stringify(map)},
+                    function(err, data){
+                        if (data && data.code == 0) {
+                            layer.closeAll();
+                            parent.layer.alert('提交成功');
+                        } else {
+                            parent.layer.alert('请求失败');
+                        }
+                    });
+            });
+        });
+    </script>
+</div>
