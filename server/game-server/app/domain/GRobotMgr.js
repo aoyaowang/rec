@@ -72,14 +72,17 @@ var GRobotMgr = Core.obserData.extend({
 
     },
     configChange:function(ay) {
+        logger.warn("DELETE ROBOT:" + JSON.stringify(ay));
         for (var key in ay) {
             var a = ay[key];
             if (a.changetype == enums.CHANGETYPE.DEL) {
                 if (this.m_robots[a.uid]) {
+                    logger.warn("DELETE ROBOT:" + a.uid);
                     if (this.m_robots[a.uid].game == 0) GSLAI.Instance().onRobotChange([a]);
                     else if (this.m_robots[a.uid].game == 1) GJLAI.Instance().onRobotChange([a]);
                     else if (this.m_robots[a.uid].game == 2) GNiuAI.Instance().onRobotChange([a]);
                     else if (this.m_robots[a.uid].game == 3) G28AI.Instance().onRobotChange([a]);
+                    delete this.m_robots[a.uid];
                 }
                 robotDao.delete(a.uid, function(){});
             } else {

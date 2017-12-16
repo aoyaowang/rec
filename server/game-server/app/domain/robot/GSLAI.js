@@ -147,7 +147,7 @@ var GSLAI = GBaseAI.extend({
                 if (!robot.run.fa) robot.run.fa = {};
                 if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
                 robot.run.fa[a.coin + ":" + a.num] += delta;
-                logger.warn("SL TimerFunc " + robot.run.fa[a.coin + ":" + a.num] + " " + a.time);
+                
                 if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
                     robot.run.fa[a.coin + ":" + a.num] = 0;
                     for (var key in this.m_robots) {
@@ -159,7 +159,7 @@ var GSLAI = GBaseAI.extend({
                         var coin = parseInt(x.coin);
                         var num = parseInt(x.num);
                         var bomb = parseInt(parseInt(Math.random()*9, 10));
-            
+                        logger.warn("SL TimerFunc " + must);
                         if (num != 7 && num != 10) {
                             num = 7;
                         }

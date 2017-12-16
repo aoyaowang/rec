@@ -90,7 +90,7 @@ exports.start = function(port){
              }
              else if ("/deleterobot" === urlInfo.pathname)
              {
-                 var uids = reqInfo.uids;
+                 var uids = JSON.parse(reqInfo.uids);
                  deleterobot(uids, resback);
                  return;
              }
