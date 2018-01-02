@@ -49,6 +49,7 @@ var G28AI = GBaseAI.extend({
                 
                 Core.GData.checkUid(robot.uid, function(err, user){
                     if (!user) return;
+                    if (!room.CheckQiang(qiangtype)) return;
                     if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                         room.PlayerQiang(user, mustqiang);
                         robot.run.rooms[room.m_RoomID] = 1;
@@ -106,6 +107,7 @@ var G28AI = GBaseAI.extend({
 
                     Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
+                        if (!room.CheckQiang(qiangtype)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, qiangtype);
 
@@ -263,9 +265,11 @@ var G28AI = GBaseAI.extend({
             
                         var room2 = new G28Room(ret, user, coin);
                         this.m_hall[3].createRoom(room2);
-                        room2.pushMsg(enums.PROTOCOL.GAME_28_CREATE, {data: room2});
+                        room2.pushMsg(enums.PROTOCOL.GAME_28_CREATE, {data: room2})
+                        
                         room2.playerEnter(user);
                         room2.PlayerQiang(user, qiangtype);
+
 
                         this.onTimer(room2);
                     }.bind(this,a));

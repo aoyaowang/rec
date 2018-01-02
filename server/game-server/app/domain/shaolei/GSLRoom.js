@@ -176,6 +176,22 @@ var GSLRoom = GBaseRoom.extend({
             return false;
         }
     },
+    CheckQiang: function(qiangtype, mustnobomb) {
+        var ind = -1;
+        if (mustnobomb) {
+            for (var k in this.m_RedList) {
+                var xxx = this.m_RedList[k];
+                var xxxl = xxx % 10;
+                if (xxxl != this.m_Bomb) {
+                    ind = k;
+                    break;
+                }
+            }
+            if (ind == -1) return false;
+        }
+
+        return true;
+    },    
     CheckTimer:function(){
         if (this.m_bOver) return;
         var tick = pomelo.app.get('tickManager');

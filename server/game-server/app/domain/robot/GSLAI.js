@@ -67,6 +67,7 @@ var GSLAI = GBaseAI.extend({
             if (timestamp - room.m_BeginTime > t) {
                 Core.GData.checkUid(robot.uid, function(err, user){
                     if (!user) return;
+                    if (!room.CheckQiang(mustqiang)) return;
                     if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                         room.PlayerQiang(user, mustqiang);
                     }
@@ -92,6 +93,7 @@ var GSLAI = GBaseAI.extend({
                     if (!!robot.run.qiang[a.coin].q[room.m_RoomID]) continue;
                     Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
+                        if (!room.CheckQiang(mustqiang)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, mustqiang);
 

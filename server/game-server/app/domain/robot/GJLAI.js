@@ -117,6 +117,7 @@ var GJLAI = GBaseAI.extend({
 
                 Core.GData.checkUid(robot.uid, function(err, user){
                     if (!user) return;
+                    if (!room.CheckQiang(qiangtype)) return;
                     if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                         room.PlayerQiang(user, qiangtype);
                     }
@@ -191,6 +192,7 @@ var GJLAI = GBaseAI.extend({
 
             Core.GData.checkUid(robot.uid, function(err, user){
                 if (!user) return;
+                if (!room.CheckQiang(qiangtype)) return;
                 if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                     room.PlayerQiang(user, qiangtype);
                 }

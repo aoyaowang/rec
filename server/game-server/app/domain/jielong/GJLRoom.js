@@ -213,6 +213,89 @@ var GJLRoom = GBaseRoom.extend({
             return false;
         }
     },
+    CheckQiang: function(qiangtype) {
+        var ind = -1;
+        if (!!qiangtype) {
+            if (qiangtype['mid']) {
+                qiangtype['nomin'] = 1;
+                qiangtype['nomax'] = 1;
+            }
+            if (qiangtype['min']) {
+                var min = 99999999999;
+                for (var key in this.m_List) {
+                    if (min > this.m_List[key]) min = this.m_List[key];
+                }
+
+                var min2 = 9999999999;
+                for (var key in this.m_RedList) {
+                    if (min2 > this.m_RedList[key]){
+                        min2 = this.m_RedList[key];
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['max']) {
+                var max = 0;
+                for (var key in this.m_List) {
+                    if (max < this.m_List[key]) max = this.m_List[key];
+                }
+
+                var max2 = 0;
+                for (var key in this.m_RedList) {
+                    if (max2 < this.m_RedList[key]){
+                        max2 = this.m_RedList[key];
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['nomin']) {
+                var min = 99999999999;
+                for (var key in this.m_List) {
+                    if (min > this.m_List[key]) min = this.m_List[key];
+                }
+
+                var min2 = 9999999999;
+                var mid = 0;
+                for (var key in this.m_RedList) {
+                    if (min2 > this.m_RedList[key]){
+                        min2 = this.m_RedList[key];
+                        mid = key;
+                    }
+                }
+
+                if (mid == ind)  {
+                    var k = ind+1;
+                    if (k >= this.m_RedList.length) k = 0;
+                    ind = k;
+                }
+            }
+            if (qiangtype['nomax']) {
+                var max = 0;
+                for (var key in this.m_List) {
+                    if (max < this.m_List[key]) max = this.m_List[key];
+                }
+
+                var max2 = 0;
+                var mid = 0;
+                for (var key in this.m_RedList) {
+                    if (max2 < this.m_RedList[key]){
+                        max2 = this.m_RedList[key];
+                        mid = key;
+                    }
+                }
+
+                if (mid == ind)  {
+                    var k = ind+1;
+                    if (k >= this.m_RedList.length) k = 0;
+                    ind = k;
+                }
+            }
+
+            if (ind == -1) return false;
+        }
+
+        return true;
+    },
     CheckTimer:function(){
         if (this.m_bOver) return;
         var tick = pomelo.app.get('tickManager');

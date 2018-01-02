@@ -280,6 +280,96 @@ var GNiuRoom = GBaseRoom.extend({
             return false;
         }
     },
+    CheckQiang: function(qiangtype) {
+        var ind = -1;
+        if (!!qiangtype) {
+            if (qiangtype['allwin']) {
+                var max = 0;
+                for (var key in this.m_RedList) {
+                    var tt = this.GetNiuType(this.m_RedList[key]);
+                    if (tt > max) {
+                        max = tt;
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['alllose']) {
+                var min = 999999999999999999999;
+                for (var key in this.m_RedList) {
+                    var tt = this.GetNiuType(this.m_RedList[key]);
+                    if (tt < min) {
+                        min = tt;
+                        ind = key;
+                    }
+                }
+            }
+            if (qiangtype['ctwin'] && qiangtype['ctlose']) {
+                var ay = [];
+                for (var key in this.m_RedList) {
+                    ay.push(this.GetNiuType(this.m_RedList[key]));
+                }
+
+                ay.sort(function(a,b){
+                    return a - b;
+                });
+                
+                if (ay.length > qiangtype['ctlose']) {
+                    for (var key in this.m_RedList) {
+                        if (this.GetNiuType(this.m_RedList[key]) == qiangtype['ctlose']) {
+                            ind = key;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            if (qiangtype['win'] || qiangtype['lose']) {
+                if (!!this.m_Players[this.m_Owner.uid]) {
+                    var niu = this.GetNiuType(this.m_Players[this.m_Owner.uid].m_Qiang);
+
+                    if (qiangtype['win']) {
+                        var bFind = false;
+                        for (var key in this.m_RedList) {
+                            if (this.GetNiuType(this.m_RedList[key]) > niu) {
+                                ind = key;
+                                bFind = true;
+                                break;
+                            }
+                        }
+
+                        if (!bFind && this.m_RedList.length > 1) {
+                            var x = this.m_RedList[0] % 100;
+                            this.m_RedList[0] -= x;
+                            this.m_RedList[1] += x;
+                            ind = 0;
+                        }
+                    }
+                    else if (qiangtype['lose']) {
+                        var bFind = false;
+                        for (var key in this.m_RedList) {
+                            if (this.GetNiuType(this.m_RedList[key]) < niu) {
+                                ind = key;
+                                bFind = true;
+                                break;
+                            }
+                        }
+
+                        if (!bFind && this.m_RedList.length > 1) {
+                            var x = (this.m_RedList[0] % 100) - 1;
+                            this.m_RedList[0] -= x;
+                            this.m_RedList[1] += x;
+                            ind = 0;
+                        }
+                    }
+
+
+                }
+            }
+            if (ind == -1) return false;
+        }
+
+        return true;
+    },
     CheckTimer:function(){
         if (this.m_bOver) return;
         var tick = pomelo.app.get('tickManager');
