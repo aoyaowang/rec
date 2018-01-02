@@ -1,1 +1,0 @@
-rm -rf nohup.out && nohup node ./login_server/app.js ../configs_red.js &
