@@ -450,6 +450,12 @@ var G28Room = GBaseRoom.extend({
 
         this.pushMsg(enums.PROTOCOL.GAME_28_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0});
 
+        for (var ll in this.m_Players) {
+            var player = this.m_Players[ll];
+            if (!!player && player.m_Result > 0) {
+                player.Info.qiangCalc(player.m_Result);
+            }
+        }
         
     }
 });

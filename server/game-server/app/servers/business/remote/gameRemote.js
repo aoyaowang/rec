@@ -312,10 +312,15 @@ pro.createRoom = function(token, room, next) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
             }
+
+            user.faCalc(coin);
+
             var room2 = new GSLRoom(type, user, coin, num, bomb);
             this.m_hall[0].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
             next(null, {code: consts.NOR_CODE.SUC_OK, sync: user.getSync()});
+
+            
         }
         else if (type == 2) //接龙
         {
@@ -352,6 +357,8 @@ pro.createRoom = function(token, room, next) {
                 return;
             }
 
+            user.faCalc(coin);
+
             var room2 = new GNiuRoom(ret, user, coin, 5);
             this.m_hall[2].createRoom(room2);
             room2.pushMsg(enums.PROTOCOL.GAME_NIUNIU_CREATE, {data: room2});
@@ -373,6 +380,8 @@ pro.createRoom = function(token, room, next) {
                 next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                 return;
             }
+
+            user.faCalc(coin);
 
             var room2 = new G28Room(ret, user, coin);
             this.m_hall[3].createRoom(room2);
@@ -595,18 +604,6 @@ pro.bill = function(uid, billid, fee, next) {
                 userDao.updateBill(billid, fee, function(err, res){
                     user.unlockMoney(0, fee);
                     next(null, {code: consts.NOR_CODE.SUC_OK});
-
-                    if (!!user.referee && user.referee != "") {
-                        this.checkUid(user.referee, function(err,ruser) {
-                            if (!ruser) {
-                                return;
-                            }
-
-                            var rr = parseInt(fee * ruser.rvalue / 1000);
-                            user.unlockMoney(0, rr);
-                            userDao.refereelog(uid, user.referee, rr);
-                        });
-                    }
                 });
             } else {
                 next(null, {code: consts.NOR_CODE.FAILED});
@@ -789,8 +786,7 @@ pro.setRvalue = function(uids, rvalue, next) {
                 return;
             }
             
-            touser.unlockMoney(0, parseInt(m));
-            touser.unlockFangKa(0, parseInt(f));
+            touser.setRvalue(rvalue);
         });
     }
 

@@ -112,6 +112,7 @@ module.exports = Core.obserData.extend({
                         this.data.fangka = money.fangka;
                         this.data.money = money.money;
                         this.data.liushui = liushui;
+                        this.data.mvalue = money.mvalue;
                         next(null, null);
                     }.bind(this));
                 }.bind(this));
@@ -215,5 +216,55 @@ module.exports = Core.obserData.extend({
     setRvalue: function(r) {
         this.data.rvalue = r;
         userDao.updateRvalue(this.data.uid, this.data.rvalue, function(){});
+    },
+    addMvalue: function(v) {
+        var realv = parseInt(v * 100000000);
+        this.data.mvalue += realv;
+        var tmpv = this.mvalue / 100000000;
+        var i = parseInt(tmpv);
+
+        this.data.money += i;
+        this.updateMoney();
+
+        this.data.mvalue = this.data.mvalue % 100000000;
+        userDao.updaterv(this.data.uid, this.data.mvalue, function(){});
+    },
+    fafunc: function(u, v, l) {
+        if (l > 3) return;
+        Core.GData.checkUid(u, function(err, user){
+            if (!user) return;
+            if (enums.R_INFO[user.rvalue] && enums.R_INFO[user.rvalue][l]) {
+                var rv = enums.R_INFO[user.rvalue][l][0];
+                var rvv = v * rv / 100;
+                user.addMvalue(rvv);
+                if (user.referee && user.referee != "") {
+                    this.fafunc(user.referee, v, l + 1);
+                }
+            }
+        }.bind(this));
+    },
+    faCalc: function(v) {
+        if (!!this.data.referee && this.data.referee != "") {
+            this.fafunc(this.data.referee, v, 1);
+        }
+    },
+    qiangfunc:function(u, v, l) {
+        if (l > 3) return;
+        Core.GData.checkUid(u, function(err, user){
+            if (!user) return;
+            if (enums.R_INFO[user.rvalue] && enums.R_INFO[user.rvalue][l]) {
+                var rv = enums.R_INFO[user.rvalue][l][1];
+                var rvv = v * rv / 100;
+                user.addMvalue(rvv);
+                if (user.referee && user.referee != "") {
+                    this.qiangfunc(user.referee, v, l + 1);
+                }
+            }
+        }.bind(this));
+    },
+    qiangCalc: function(v) {
+        if (!!this.data.referee && this.data.referee != "") {
+            this.qiangfunc(this.data.referee, v, 1);
+        }
     }
 });

@@ -259,7 +259,12 @@ var GSLRoom = GBaseRoom.extend({
         this.m_Owner.unlockMoney(0, oex);
 
         this.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_OVER, {roomid: this.m_RoomID, owner: this.m_Owner, data: this.m_Players, over: this.m_RedList.length == 0, bomb: this.m_Bomb});
-
+        for (var ll in this.m_Players) {
+            var player = this.m_Players[ll];
+            if (!!player && player.m_Result > 0) {
+                player.Info.qiangCalc(player.m_Result);
+            }
+        }
     },
     pushMsg:function(protocol, msg) {
         GBaseRoom.prototype.pushMsg.apply(this,arguments);
