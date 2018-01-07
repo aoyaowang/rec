@@ -237,8 +237,10 @@ module.exports = Core.obserData.extend({
                 var rv = enums.R_INFO[user.rvalue][l][0];
                 var rvv = v * rv / 100;
                 user.addMvalue(rvv);
+                userDao.refereelog(this.data.uid, u, rvv);
                 if (user.referee && user.referee != "") {
                     this.fafunc(user.referee, v, l + 1);
+
                 }
             }
         }.bind(this));
@@ -256,6 +258,7 @@ module.exports = Core.obserData.extend({
                 var rv = enums.R_INFO[user.rvalue][l][1];
                 var rvv = v * rv / 100;
                 user.addMvalue(rvv);
+                userDao.refereelog(this.data.uid, u, rvv);
                 if (user.referee && user.referee != "") {
                     this.qiangfunc(user.referee, v, l + 1);
                 }
