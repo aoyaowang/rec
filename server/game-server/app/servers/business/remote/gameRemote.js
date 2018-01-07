@@ -577,6 +577,12 @@ pro.checkUid = function(uid, next) {
     }
 }
 
+pro.getAllUser = function(next) {
+    userDao.getAllUser(function(err, res){
+        next(null, {code: consts.NOR_CODE.SUC, data: res});
+    });
+}
+
 pro.bill = function(uid, billid, fee, next) {
     this.checkUid(uid, function(err,user) {
         if (!user) {
@@ -589,6 +595,18 @@ pro.bill = function(uid, billid, fee, next) {
                 userDao.updateBill(billid, fee, function(err, res){
                     user.unlockMoney(0, fee);
                     next(null, {code: consts.NOR_CODE.SUC_OK});
+
+                    if (!!user.referee && user.referee != "") {
+                        this.checkUid(user.referee, function(err,ruser) {
+                            if (!ruser) {
+                                return;
+                            }
+
+                            var rr = parseInt(fee * ruser.rvalue / 1000);
+                            user.unlockMoney(0, rr);
+                            userDao.refereelog(uid, user.referee, rr);
+                        });
+                    }
                 });
             } else {
                 next(null, {code: consts.NOR_CODE.FAILED});
@@ -671,6 +689,34 @@ pro.turnto = function(token, uid, money, next) {
     }.bind(this));
 }
 
+
+pro.setReferee = function(token, r, next) {
+    if (!r) {
+        next(null, {code: consts.NOR_CODE.FAILED});
+        return;
+    }
+
+    this.checkToken(token, function(err, user){
+        if (!user) {
+            next(null, {code: consts.NOR_CODE.FAILED});
+            return;
+        }
+
+        if (user.referee != "") {
+            next(null, {code: consts.NOR_CODE.ERR_PARAM});
+            return;
+        }
+
+        this.checkUid(r, function(err,ruser) {
+            if (!ruser) {
+                next(null, {code: consts.NOR_CODE.FAILED});
+                return;
+            }
+
+            next(null, {code: consts.NOR_CODE.SUC_OK, data: r});
+        }.bind(this));
+    }.bind(this));
+}
 ///////////////////////////////////////////////////////////////////////////////////
 
 pro.getallrobot = function(next) {
@@ -720,6 +766,22 @@ pro.createrobot = function(infos, next) {
 }
 
 pro.upscore = function(uids, m, f, next) {
+    for (var key in uids) {
+        var uid = uids[key];
+        this.checkUid(uid, function(err,touser) {
+            if (!touser) {
+                return;
+            }
+            
+            touser.unlockMoney(0, parseInt(m));
+            touser.unlockFangKa(0, parseInt(f));
+        });
+    }
+
+    next(null, {code: consts.NOR_CODE.SUC_OK});
+}
+
+pro.setRvalue = function(uids, rvalue, next) {
     for (var key in uids) {
         var uid = uids[key];
         this.checkUid(uid, function(err,touser) {

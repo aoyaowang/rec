@@ -81,6 +81,9 @@ module.exports = Core.obserData.extend({
         Object.defineProperty(this, "liushui", {
             get: function () { return this.data.liushui}
         });
+        Object.defineProperty(this, "rvalue", {
+            get: function () { return this.data.rvalue}
+        });
 
         userDao.getInfo(uid, function(err, data){
             if (!data) {
@@ -105,6 +108,7 @@ module.exports = Core.obserData.extend({
                         this.data.openid = data.openid;
                         this.data.robot = data.robot;
                         this.data.referee = data.referee;
+                        this.data.rvalue = data.rvalue;
                         this.data.fangka = money.fangka;
                         this.data.money = money.money;
                         this.data.liushui = liushui;
@@ -203,5 +207,13 @@ module.exports = Core.obserData.extend({
         this.sync = [];
         
         return r;
+    },
+    setReferee:function(r) {
+        this.data.referee = r;
+        userDao.updateReferee(this.data.uid, this.data.referee, function(){});
+    },
+    setRvalue: function(r) {
+        this.data.rvalue = r;
+        userDao.updateRvalue(this.data.uid, this.data.rvalue, function(){});
     }
 });

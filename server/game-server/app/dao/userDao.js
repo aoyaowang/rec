@@ -1,3 +1,5 @@
+import { sanitize } from './C:/Users/hasee/AppData/Local/Microsoft/TypeScript/2.6/node_modules/@types/sanitizer';
+
 var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var consts = require('../consts/consts');
@@ -140,5 +142,39 @@ userDao.createRobot = function(infos, next) {
 
     async.parallel(func, function(err, results){
         next(null, results);
+    });
+}
+
+userDao.updateReferee = function(u, r, next) {
+    var sql = 'update user set referee = ? where uid = ?';
+    var args = [sanitizer.sanitize(r), sanitizer.sanitize(u)];
+
+    pomelo.app.get('db1').query(sql, args, function(){
+        next(null, null);
+    });
+}
+
+userDao.updateRvalue = function(u, r, next) {
+    var sql = 'update user set rvalue = ? where uid = ?';
+    var args = [r, sanitizer.sanitize(u)];
+
+    pomelo.app.get('db1').query(sql, args, function(){
+        next(null, null);
+    });
+}
+
+userDao.refereelog = function(u, r, v) {
+    var sql = 'insert into refereelog(uid, referee, value, time) values (?, ?, ?, ?)';
+    var args = [sanitizer.sanitize(u), sanitizer.sanitize(r), v, Date.parse(new Date()) / 1000];
+
+    pomelo.app.get('db1').query(sql, args, function(){});
+}
+
+userDao.getAllUser = function(next) {
+    var sql = 'select a.uid, a.nickname, a.headimg, a.phone, a.referee, a.robot, a.rvalue,b.money, b.fangka from user a, money b where a.uid = b.uid';
+    var args = [];
+
+    pomelo.app.get('db1').query(sql, args, function(err, res){
+        next(null, res || []);
     });
 }

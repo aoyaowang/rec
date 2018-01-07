@@ -108,7 +108,18 @@ exports.start = function(port){
                  upscore(uids, m, f, resback);
                  return;
              }
-
+             else if ("/getalluser" === urlInfo.pathname)
+             {
+                 getalluser(resback);
+                 return;
+             }
+             else if ("/setrvalue" === urlInfo.pathname)
+             {
+                var uids = JSON.parse(reqInfo.uids);
+                var r = parseInt(reqInfo.r);
+                setRvalue(uids, r, resback);
+                return;
+             }
              resback(0);
          });
 
@@ -149,6 +160,18 @@ function createrobot(info, cb) {
 
 function upscore(uids, m, f, cb) {
     pomelo.app.rpc.business.gameRemote.upscore(null, uids, m, f, function(err, res){
+        cb(res || {coode: consts.NOR_CODE.FAILED});
+    });
+}
+
+function getalluser(cb) {
+    pomelo.app.rpc.business.gameRemote.getAllUser(null, function(err, res){
+        cb(res || {coode: consts.NOR_CODE.FAILED});
+    });
+}
+
+function setrvalue(uids, r, cb) {
+    pomelo.app.rpc.business.gameRemote.setRvalue(null, uids, r, function(err, res){
         cb(res || {coode: consts.NOR_CODE.FAILED});
     });
 }
