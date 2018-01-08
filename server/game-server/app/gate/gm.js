@@ -94,6 +94,12 @@ exports.start = function(port){
                  deleterobot(uids, resback);
                  return;
              }
+             else if ("/deleterobot2" === urlInfo.pathname)
+             {
+                 var uids = JSON.parse(reqInfo.uids);
+                 deleterobot2(uids, resback);
+                 return;
+             }
              else if ("/createrobot" === urlInfo.pathname)
              {
                  var info = JSON.parse(reqInfo.i);
@@ -148,6 +154,12 @@ function configrobot(uids, game, param, time1, time2, time3, cb) {
 
 function deleterobot(uids, cb) {
     pomelo.app.rpc.business.gameRemote.deleterobot(null, uids, function(err, res){
+        cb(res || {code: consts.NOR_CODE.FAILED});
+    });
+}
+
+function deleterobot2(uids, cb) {
+    pomelo.app.rpc.business.gameRemote.deleterobot2(null, uids, function(err, res){
         cb(res || {code: consts.NOR_CODE.FAILED});
     });
 }

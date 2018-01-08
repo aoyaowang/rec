@@ -185,3 +185,26 @@ userDao.updaterv = function(uid, rv, next) {
         next(null, null);
     });
 }
+
+userDao.cancelRobot = function(infos, next) {
+    var func = [];
+    for (var key in infos) {
+        var a = infos[key];
+        func.push(function(a, callback){
+            var sql = 'update user set robot = 0 where uid = ?';
+            var args = [a];
+    
+            pomelo.app.get('db1').query(sql, args, function(err, res){
+                if (!res) {
+                    callback(null, null);
+                    return;
+                }
+                callback(null, null);
+            });
+        }.bind(this, a))
+    }
+
+    async.parallel(func, function(err, results){
+        next(null, results);
+    });
+}

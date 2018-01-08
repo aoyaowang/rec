@@ -588,7 +588,7 @@ pro.checkUid = function(uid, next) {
 
 pro.getAllUser = function(next) {
     userDao.getAllUser(function(err, res){
-        next(null, {code: consts.NOR_CODE.SUC, data: res});
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: res});
     });
 }
 
@@ -754,6 +754,21 @@ pro.deleterobot = function(uids, next) {
 
     GRobotMgr.Instance().configChange(ay);
     next(null, {code: consts.NOR_CODE.SUC_OK});
+}
+
+pro.deleterobot2 = function(uids, next) {
+    var ay = [];
+    for (var k in uids) {
+        ay.push({
+            uid: uids[k],
+            changetype: enums.CHANGETYPE.DEL
+        });
+    }
+
+    GRobotMgr.Instance().configChange(ay);
+    userDao.cancelRobot(uids, function(){
+        next(null, {code: consts.NOR_CODE.SUC_OK});
+    })
 }
 
 pro.createrobot = function(infos, next) {
