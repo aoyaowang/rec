@@ -1,5 +1,3 @@
-import { sanitize } from './C:/Users/hasee/AppData/Local/Microsoft/TypeScript/2.6/node_modules/@types/sanitizer';
-
 var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require('pomelo');
 var consts = require('../consts/consts');
