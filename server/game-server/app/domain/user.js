@@ -9,15 +9,15 @@ var enums = require('../consts/enums');
 var Core = require('../base/Core');
 
 module.exports = Core.obserData.extend({
-    sync:null,
-    synctime:null,
-    inGame:null,
+    sync: null,
+    synctime: null,
+    inGame: null,
     logined: false,
     HallType: null, //当前大厅类型
     data: null,
-    ctor:function() {
+    ctor: function () {
         this._super();
-        this.data= {
+        this.data = {
             uid: null,
             nickname: null,
             gamename: null,
@@ -38,7 +38,7 @@ module.exports = Core.obserData.extend({
             liushui: null,
         }
     },
-    init:function(uid, next) {
+    init: function (uid, next) {
         this.sync = [];
         this.inGame = [];
         this.logined = true;
@@ -46,60 +46,60 @@ module.exports = Core.obserData.extend({
         this.synctime = Date.parse(new Date()) / 1000;
 
         Object.defineProperty(this, "uid", {
-            get: function () { return this.data.uid}
+            get: function () { return this.data.uid }
         });
         Object.defineProperty(this, "nickname", {
-            get: function () { return this.data.nickname}
+            get: function () { return this.data.nickname }
         });
         Object.defineProperty(this, "gamename", {
-            get: function () { return this.data.gamename}
+            get: function () { return this.data.gamename }
         });
         Object.defineProperty(this, "sex", {
-            get: function () { return this.data.sex}
+            get: function () { return this.data.sex }
         });
         Object.defineProperty(this, "headimg", {
-            get: function () { return this.data.headimg}
+            get: function () { return this.data.headimg }
         });
         Object.defineProperty(this, "openid", {
-            get: function () { return this.data.openid}
+            get: function () { return this.data.openid }
         });
         Object.defineProperty(this, "fangka", {
-            get: function () { return this.data.fangka}
+            get: function () { return this.data.fangka }
         });
         Object.defineProperty(this, "money", {
-            get: function () { return this.data.money}
+            get: function () { return this.data.money }
         });
         Object.defineProperty(this, "robot", {
-            get: function () { return this.data.robot}
+            get: function () { return this.data.robot }
         });
         Object.defineProperty(this, "referee", {
-            get: function () { return this.data.referee}
+            get: function () { return this.data.referee }
         });
         Object.defineProperty(this, "daili", {
-            get: function () { return this.data.daili}
+            get: function () { return this.data.daili }
         });
         Object.defineProperty(this, "liushui", {
-            get: function () { return this.data.liushui}
+            get: function () { return this.data.liushui }
         });
         Object.defineProperty(this, "rvalue", {
-            get: function () { return this.data.rvalue}
+            get: function () { return this.data.rvalue }
         });
 
-        userDao.getInfo(uid, function(err, data){
+        userDao.getInfo(uid, function (err, data) {
             if (!data) {
                 logger.error("UID NOT EXIST:" + uid);
                 next(true, null);
                 return;
             }
-            userDao.getMoney(uid, function(err, money){
+            userDao.getMoney(uid, function (err, money) {
                 if (!money) {
                     logger.error("MONEY nOT EXIST:" + uid);
                     next(true, null);
                     return;
                 }
-                dailiDao.getDaili(uid, function(err, daili){
+                dailiDao.getDaili(uid, function (err, daili) {
                     this.data.daili = daili;
-                    dailiDao.getLiuShui(uid, function(err, liushui){
+                    dailiDao.getLiuShui(uid, function (err, liushui) {
                         this.data.uid = uid;
                         this.data.nickname = data.nickname;
                         this.data.gamename = data.gamename;
@@ -119,10 +119,10 @@ module.exports = Core.obserData.extend({
             }.bind(this));
         }.bind(this));
     },
-    toJSON:function(){
-        return {uid: this.uid, nickname: this.nickname, gamename: this.gamename, sex: this.sex, headimg: this.headimg, fangka: this.fangka, money: this.money};
+    toJSON: function () {
+        return { uid: this.uid, nickname: this.nickname, gamename: this.gamename, sex: this.sex, headimg: this.headimg, fangka: this.fangka, money: this.money };
     },
-    lockMoney:function(m) {
+    lockMoney: function (m) {
         if (this.data.money < m) return false;
         this.data.money -= m;
         this.data._lockmoney += m;
@@ -133,7 +133,7 @@ module.exports = Core.obserData.extend({
         this.data._lockmoney = l;
         return true;
     },
-    unlockMoney:function(m, cm) {
+    unlockMoney: function (m, cm) {
         m = this.data._lockmoney > m ? m : this.data._lockmoney;
         this.data.money += m;
         this.data._lockmoney -= m;
@@ -146,7 +146,7 @@ module.exports = Core.obserData.extend({
         this.data._lockmoney = l;
         this.updateMoney();
     },
-    lockFangka:function(f) {
+    lockFangka: function (f) {
         if (this.data.fangka < f) return false;
         this.data.fangka -= f;
         this.data._lockfangka += f;
@@ -157,7 +157,7 @@ module.exports = Core.obserData.extend({
         this.data._lockfangka = l;
         return true;
     },
-    unlockFangka:function(f, cf) {
+    unlockFangka: function (f, cf) {
         m = this.data._lockmoney > f ? f : this.data._lockmoney;
         this.data.fangka += f;
         this.data._lockfangka -= f;
@@ -168,56 +168,56 @@ module.exports = Core.obserData.extend({
         this.data._lockfangka = l;
         this.updateMoney();
     },
-    updateMoney:function() {
-        userDao.updateMoney(this.data.uid, this.data.fangka, this.data.money, function(err, res){
+    updateMoney: function () {
+        userDao.updateMoney(this.data.uid, this.data.fangka, this.data.money, function (err, res) {
 
         });
         var bFind = false;
         for (var key in this.sync) {
             if (this.sync[key].p == enums.PROTOCOL.MONEY_SYNC) {
                 bFind = true;
-                this.sync[key].msg = {money: this.data.money, fangka: this.data.fangka};
+                this.sync[key].msg = { money: this.data.money, fangka: this.data.fangka };
             }
         }
         if (!bFind) {
-            this.sync.push({p: enums.PROTOCOL.MONEY_SYNC, msg: {money: this.data.money, fangka: this.data.fangka}});
+            this.sync.push({ p: enums.PROTOCOL.MONEY_SYNC, msg: { money: this.data.money, fangka: this.data.fangka } });
         }
     },
-    addMsg:function(protocol, msg) {
-        this.sync.push({p: protocol, msg: msg});
+    addMsg: function (protocol, msg) {
+        this.sync.push({ p: protocol, msg: msg });
     },
-    ShowData:function(){
-        return {uid: this.data.uid, nickname: this.data.nickname, gamename: this.data.gamename, sex: this.data.sex, headimg: this.data.headimg};
+    ShowData: function () {
+        return { uid: this.data.uid, nickname: this.data.nickname, gamename: this.data.gamename, sex: this.data.sex, headimg: this.data.headimg };
     },
-    enterHall:function(hallid) {
+    enterHall: function (hallid) {
         this.HallType = hallid;
     },
-    leaveHall:function(){
+    leaveHall: function () {
         this.HallType = null;
     },
-    reLogin:function() {
+    reLogin: function () {
         this.sync = [];
         this.addMsg(enums.PROTOCOL.RELOGIN, {});
     },
-    getSync:function() {
+    getSync: function () {
         var r = [];
         for (var key in this.sync) {
             console.warn(this.sync[key].p);
             r.push(this.sync[key]);
         }
         this.sync = [];
-        
+
         return r;
     },
-    setReferee:function(r) {
+    setReferee: function (r) {
         this.data.referee = r;
-        userDao.updateReferee(this.data.uid, this.data.referee, function(){});
+        userDao.updateReferee(this.data.uid, this.data.referee, function () { });
     },
-    setRvalue: function(r) {
+    setRvalue: function (r) {
         this.data.rvalue = r;
-        userDao.updateRvalue(this.data.uid, this.data.rvalue, function(){});
+        userDao.updateRvalue(this.data.uid, this.data.rvalue, function () { });
     },
-    addMvalue: function(v) {
+    addMvalue: function (v) {
         var realv = parseInt(v * 100000000);
         this.data.mvalue += realv;
         var tmpv = this.mvalue / 100000000;
@@ -227,11 +227,11 @@ module.exports = Core.obserData.extend({
         this.updateMoney();
 
         this.data.mvalue = this.data.mvalue % 100000000;
-        userDao.updaterv(this.data.uid, this.data.mvalue, function(){});
+        userDao.updaterv(this.data.uid, this.data.mvalue, function () { });
     },
-    fafunc: function(u, v, l) {
+    fafunc: function (u, v, l) {
         if (l > 3) return;
-        Core.GData.checkUid(u, function(err, user){
+        Core.GData.checkUid(u, function (err, user) {
             if (!user) return;
             if (enums.R_INFO[user.rvalue] && enums.R_INFO[user.rvalue][l]) {
                 var rv = enums.R_INFO[user.rvalue][l][0];
@@ -245,14 +245,14 @@ module.exports = Core.obserData.extend({
             }
         }.bind(this));
     },
-    faCalc: function(v) {
+    faCalc: function (v) {
         if (!!this.data.referee && this.data.referee != "") {
             this.fafunc(this.data.referee, v, 1);
         }
     },
-    qiangfunc:function(u, v, l) {
+    qiangfunc: function (u, v, l) {
         if (l > 3) return;
-        Core.GData.checkUid(u, function(err, user){
+        Core.GData.checkUid(u, function (err, user) {
             if (!user) return;
             if (enums.R_INFO[user.rvalue] && enums.R_INFO[user.rvalue][l]) {
                 var rv = enums.R_INFO[user.rvalue][l][1];
@@ -265,7 +265,7 @@ module.exports = Core.obserData.extend({
             }
         }.bind(this));
     },
-    qiangCalc: function(v) {
+    qiangCalc: function (v) {
         if (!!this.data.referee && this.data.referee != "") {
             this.qiangfunc(this.data.referee, v, 1);
         }

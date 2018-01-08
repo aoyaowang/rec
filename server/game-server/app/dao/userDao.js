@@ -181,7 +181,7 @@ userDao.getAllUser = function(next) {
 
 userDao.updaterv = function(uid, rv, next) {
     var sql = 'update money set mvalue = ? where uid = ?';
-    var args= [rv,, sanitizer.sanitize(uid)];
+    var args= [rv, sanitizer.sanitize(uid)];
 
     pomelo.app.get('db1').query(sql, args, function(err, res){
         next(null, null);
