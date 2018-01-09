@@ -4,6 +4,7 @@ module.exports = {
         FAILED: -1,
         ERR_PARAM:-3,
         TOKEN_TIMEOUT: -10,
+        NO_USER: -11
     },
     ROOM: {
         ROOM_FULL: 1000,

@@ -814,17 +814,24 @@ pro.setRvalue = function(uids, rvalue, next) {
 }
 
 pro.setreferee = function(uids, rvalue, next) {
-    for (var key in uids) {
-        var uid = uids[key];
-        this.checkUid(uid, function(err,touser) {
-            if (!touser) {
-                return;
-            }
-            
-            touser.setReferee(rvalue);
-        });
-    }
 
-    next(null, {code: consts.NOR_CODE.SUC_OK});
+    this.checkUid(rvalue, function(err,ruser) {
+        if (!ruser) {
+            next(null, {code: consts.NOR_CODE.NO_USER});
+            return;
+        }
+        for (var key in uids) {
+            var uid = uids[key];
+            this.checkUid(uid, function(err,touser) {
+                if (!touser) {
+                    return;
+                }
+                
+                touser.setReferee(rvalue);
+            });
+        }
+    
+        next(null, {code: consts.NOR_CODE.SUC_OK});
+    }.bind(this));
 }
 
