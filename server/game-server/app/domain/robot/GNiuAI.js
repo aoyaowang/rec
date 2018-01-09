@@ -57,7 +57,7 @@ var GNiuAI = GBaseAI.extend({
         }
 
 
-        if (!!param['qiang']) {
+        if (!!param['qiang'] && utils.GetRandomNum(3, 10) <= timestamp - room.m_BeginTime) {
             var ay = param['qiang'];
             for (var key in ay) {
                 var a = ay[key];
@@ -67,9 +67,6 @@ var GNiuAI = GBaseAI.extend({
                     if (!robot.run.qiang[a.coin]) robot.run.qiang[a.coin] = {q: {}, t: {}};
                     if (utils.size(robot.run.qiang[a.coin].t) >= a.t) {
                         robot.run.qiang[a.coin] = {q: {}, t: {}};
-                    }
-                    if (utils.GetRandomNum(3, 10) > timestamp - room.m_CreatTime) {
-                        continue;
                     }
                     if (utils.size(robot.run.qiang[a.coin].q) >= a.q) {
                         if (!!robot.run.qiang[a.coin].t[room.m_RoomID]) continue;
