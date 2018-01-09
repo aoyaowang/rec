@@ -122,7 +122,7 @@
             },
             "Position": {
               "X": 328.4404,
-              "Y": 628.4846
+              "Y": 629.0211
             },
             "Scale": {
               "ScaleX": 0.5,
@@ -132,16 +132,16 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5132,
-              "Y": 0.6055
+              "Y": 0.606
             },
             "PreSize": {
-              "X": 1.4063,
+              "X": 1.4062,
               "Y": 0.8179
             },
             "LeftMargin": -121.5596,
             "RightMargin": -138.4404,
-            "TopMargin": -14.9846,
-            "BottomMargin": 203.9846,
+            "TopMargin": -15.5211,
+            "BottomMargin": 204.5211,
             "Tag": 25,
             "ActionTag": -443622191,
             "Size": {
@@ -220,6 +220,8 @@
             "ColorVector": {
               "ScaleY": 1.0
             },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
             "TouchEnable": true,
             "AnchorPoint": {},
             "Position": {
@@ -352,8 +354,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 120.7909,
-              "Y": 819.911
+              "X": 133.6684,
+              "Y": 804.8862
             },
             "Scale": {
               "ScaleX": 0.5,
@@ -362,22 +364,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.1887,
-              "Y": 0.7899
+              "X": 0.2089,
+              "Y": 0.7754
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0732
+              "X": 0.1562,
+              "Y": 0.1156
             },
-            "LeftMargin": 90.7909,
-            "RightMargin": 489.2091,
-            "TopMargin": 180.089,
-            "BottomMargin": 781.911,
+            "LeftMargin": 83.6684,
+            "RightMargin": 456.3316,
+            "TopMargin": 173.1138,
+            "BottomMargin": 744.8862,
             "Tag": 32,
             "ActionTag": 1981934697,
             "Size": {
-              "X": 60.0,
-              "Y": 76.0
+              "X": 100.0,
+              "Y": 120.0
             },
             "Name": "btn_close",
             "ctype": "ButtonObjectData"

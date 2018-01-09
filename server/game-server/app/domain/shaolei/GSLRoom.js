@@ -176,7 +176,7 @@ var GSLRoom = GBaseRoom.extend({
             return false;
         }
     },
-    CheckQiang: function(qiangtype, mustnobomb) {
+    CheckQiang: function(mustnobomb) {
         var ind = -1;
         if (mustnobomb) {
             for (var k in this.m_RedList) {
@@ -245,7 +245,7 @@ var GSLRoom = GBaseRoom.extend({
             player.m_Result = e / 100;
             ownall += e / 100;
             if (player.Info.uid != this.m_Owner.uid)
-                userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, this.m_Coin, e / 100, timestamp);
+                userDao.gamelog(player.Info.uid, this.m_Hall ? this.m_Hall.Type : -1, "saolei", this.m_Coin, e / 100, timestamp);
         }
         if (oex - (this.m_Coin / 100) > 0) {
             var piao = parseInt((oex * 100 - this.m_Coin) * fl);

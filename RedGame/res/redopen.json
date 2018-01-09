@@ -505,12 +505,12 @@
             "ShadowOffsetY": -2.0,
             "TouchEnable": true,
             "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
+              "ScaleX": 0.3921,
+              "ScaleY": 0.4722
             },
             "Position": {
-              "X": 21.3217,
-              "Y": 1014.1334
+              "X": 25.6167,
+              "Y": 1000.0685
             },
             "Scale": {
               "ScaleX": 0.5,
@@ -519,22 +519,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0333,
-              "Y": 0.977
+              "X": 0.04,
+              "Y": 0.9635
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0732
+              "X": 0.1562,
+              "Y": 0.1156
             },
-            "LeftMargin": -8.6783,
-            "RightMargin": 588.6783,
-            "TopMargin": -14.1334,
-            "BottomMargin": 976.1334,
+            "LeftMargin": -13.5972,
+            "RightMargin": 553.5972,
+            "TopMargin": -25.4064,
+            "BottomMargin": 943.4064,
             "Tag": 37,
             "ActionTag": -1940094312,
             "Size": {
-              "X": 60.0,
-              "Y": 76.0
+              "X": 100.0,
+              "Y": 120.0
             },
             "Name": "btn_close",
             "ctype": "ButtonObjectData"

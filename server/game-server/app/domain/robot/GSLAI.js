@@ -93,6 +93,8 @@ var GSLAI = GBaseAI.extend({
                     if (!!robot.run.qiang[a.coin].q[room.m_RoomID]) continue;
                     Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
+                        
+                        logger.warn("SL TimerFunc " + mustqiang);
                         if (!room.CheckQiang(mustqiang)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, mustqiang);
@@ -161,7 +163,6 @@ var GSLAI = GBaseAI.extend({
                         var coin = parseInt(x.coin);
                         var num = parseInt(x.num);
                         var bomb = parseInt(parseInt(Math.random()*9, 10));
-                        logger.warn("SL TimerFunc " + must);
                         if (num != 7 && num != 10) {
                             num = 7;
                         }

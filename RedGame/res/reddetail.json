@@ -403,8 +403,8 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 21.3217,
-              "Y": 1014.1334
+              "X": 32.47,
+              "Y": 1000.7554
             },
             "Scale": {
               "ScaleX": 0.5,
@@ -413,22 +413,22 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.0333,
-              "Y": 0.977
+              "X": 0.0507,
+              "Y": 0.9641
             },
             "PreSize": {
-              "X": 0.0938,
-              "Y": 0.0732
+              "X": 0.1562,
+              "Y": 0.1156
             },
-            "LeftMargin": -8.6783,
-            "RightMargin": 588.6783,
-            "TopMargin": -14.1334,
-            "BottomMargin": 976.1334,
+            "LeftMargin": -17.53,
+            "RightMargin": 557.53,
+            "TopMargin": -22.7554,
+            "BottomMargin": 940.7554,
             "Tag": 56,
             "ActionTag": -388305670,
             "Size": {
-              "X": 60.0,
-              "Y": 76.0
+              "X": 100.0,
+              "Y": 120.0
             },
             "Name": "btn_close",
             "ctype": "ButtonObjectData"
