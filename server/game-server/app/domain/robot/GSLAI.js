@@ -61,7 +61,7 @@ var GSLAI = GBaseAI.extend({
         var ql = param['qianggailv'] || -1;
         var fl = param['fagailv'] || -1;
 
-        var mustqiang = ql == -1 ? null : utils.GetRandomNum(0, 100) > ql;
+        var mustqiang = ql == -1 ? null : utils.GetRandomNum(1, 100) > ql;
         if (!!param['buqiang']) {
             var t = parseInt(param['buqiang']);
             if (timestamp - room.m_BeginTime > t) {
@@ -141,8 +141,8 @@ var GSLAI = GBaseAI.extend({
         var ql = param['qianggailv'] || -1;
         var fl = param['fagailv'] || -1;
 
-        var must = fl == -1 ? null : utils.GetRandomNum(0, 100) < fl;
-        var mustqiang = ql == -1 ? null : utils.GetRandomNum(0, 100) > ql;
+        var must = fl == -1 ? null : utils.GetRandomNum(1, 100) < fl;
+        var mustqiang = ql == -1 ? null : utils.GetRandomNum(1, 100) > ql;
 
         if (!!param['fa']) {
             var ay = param['fa'];
