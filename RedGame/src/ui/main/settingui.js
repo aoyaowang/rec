@@ -79,7 +79,7 @@ var settingUI = ccui.Widget.extend({
 
         if (RoleInfo.referee != "") {
             this.m_edt_referee.setString(RoleInfo.referee);
-            this.m_edt_referee.setEnable(false);
+            //this.m_edt_referee.setEnable(false);
             this.m_btn_referee.setVisible(false);
         } else {
             this.m_edt_referee.setEnable(true);
@@ -92,7 +92,7 @@ var settingUI = ccui.Widget.extend({
     setreferee:function(msg, req){
         if (msg.code !=0) return;
         this.m_edt_referee.setString(req.r);
-        this.m_edt_referee.setEnable(false);
+        //this.m_edt_referee.setEnable(false);
         this.m_btn_referee.setVisible(false);
     },
     billClick:function() {
