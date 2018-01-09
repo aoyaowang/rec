@@ -812,3 +812,19 @@ pro.setRvalue = function(uids, rvalue, next) {
 
     next(null, {code: consts.NOR_CODE.SUC_OK});
 }
+
+pro.setreferee = function(uids, rvalue, next) {
+    for (var key in uids) {
+        var uid = uids[key];
+        this.checkUid(uid, function(err,touser) {
+            if (!touser) {
+                return;
+            }
+            
+            touser.setReferee(rvalue);
+        });
+    }
+
+    next(null, {code: consts.NOR_CODE.SUC_OK});
+}
+

@@ -153,6 +153,13 @@ exports.start = function(port){
                 setrvalue(uids, r, resback);
                 return;
              }
+             else if ("/setreferee" === urlInfo.pathname)
+             {
+                var uids = JSON.parse(reqInfo.uids);
+                var r = reqInfo.r;
+                setreferee(uids, r, resback);
+                return;
+             }
              resback(0);
          });
 
@@ -211,6 +218,12 @@ function getalluser(cb) {
 
 function setrvalue(uids, r, cb) {
     pomelo.app.rpc.business.gameRemote.setRvalue(null, uids, r, function(err, res){
+        cb(res || {coode: consts.NOR_CODE.FAILED});
+    });
+}
+
+function setreferee(uids, r, cb) {
+    pomelo.app.rpc.business.gameRemote.setreferee(null, uids, r, function(err, res){
         cb(res || {coode: consts.NOR_CODE.FAILED});
     });
 }
