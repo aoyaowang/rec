@@ -12,6 +12,7 @@ var GBaseRoom = Core.obserData.extend({
     m_Pos:null,
     m_Hall:null,
     m_RoomID:null,
+    m_CreatTime: null,
     ctor:function(Type)
     {
         this._super();
@@ -23,6 +24,7 @@ var GBaseRoom = Core.obserData.extend({
         this.m_Players = {};
         this.m_Pos = {};
         this.m_PlayerCount = 0;
+        this.m_CreatTime = Date.parse(new Date()) / 1000;
     },
     factoryData:function() {
         return {};

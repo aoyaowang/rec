@@ -132,6 +132,10 @@ var GJLAI = GBaseAI.extend({
             if (!robot.run.qiangtime) robot.run.qiangtime = {q: -1, t: 0};
             if (!robot.run.roomids) robot.run.roomids = {};
 
+            if (utils.GetRandomNum(3, 10) > timestamp - room.m_CreatTime) {
+                continue;
+            }
+
             if (robot.run.qiangtime.q == -1) {
                 robot.run.qiangtime = {q: 1, t: 0};
             } else {

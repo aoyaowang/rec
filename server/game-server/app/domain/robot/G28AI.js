@@ -70,6 +70,9 @@ var G28AI = GBaseAI.extend({
                     if (utils.size(robot.run.qiang[a.coin].t) >= a.t) {
                         robot.run.qiang[a.coin] = {q: {}, t: {}};
                     }
+                    if (utils.GetRandomNum(3, 10) > timestamp - room.m_CreatTime) {
+                        continue;
+                    }
                     if (utils.size(robot.run.qiang[a.coin].q) >= a.q) {
                         if (!!robot.run.qiang[a.coin].t[room.m_RoomID]) continue;
                         robot.run.qiang[a.coin].t[room.m_RoomID] = 1;
