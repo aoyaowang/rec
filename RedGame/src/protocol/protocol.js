@@ -25,6 +25,8 @@ var g_protocol = {
     "saoleiQiangrq":"saoleiQiang",
     "getdetail":"getdetail",
 
+    "setreferee": "setreferee",
+
     ///////////SERVER_PUSH/////////////////////
     "moneysync": "moneysync",
     "relogin": "relogin",

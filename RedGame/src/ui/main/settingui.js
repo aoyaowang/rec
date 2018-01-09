@@ -9,6 +9,9 @@ var settingUI = ccui.Widget.extend({
     m_ft_id:null,
     m_listview: null,
     m_ay:null,
+
+    m_btn_referee: null,
+    m_edt_referee: null,
     ctor:function() {
         this._super();
         this.m_ay = [];
@@ -31,6 +34,11 @@ var settingUI = ccui.Widget.extend({
         btn = ccui.helper.seekWidgetByName(this.Widget, "btn_tocash");
         btn.addClickEventListener(this.toCashClick.bind(this));
 
+        this.m_btn_referee = ccui.helper.seekWidgetByName(this.Widget, "btn_referee");
+        this.m_btn_referee.addClickEventListener(this.setRefereeClick.bind(this));
+
+        this.m_edt_referee = ccui.helper.seekWidgetByName(this.Widget, "edt_daili");
+
         btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game1");
         btn.addClickEventListener(this.game1Click.bind(this));
         btn = ccui.helper.seekWidgetByName(this.Widget, "btn_game2");
@@ -47,13 +55,16 @@ var settingUI = ccui.Widget.extend({
         this._super();
         RoleInfo.addOb(this.RoleInfoChange, this);
         Client.addMap("getlog", this);
+        Client.addMap("setreferee", this);
     },
     onExit:function() {
         this._super();
         RoleInfo.removeOb(this.RoleInfoChange, this);
         Client.removeMap("getlog", this);
+        Client.removeMap("setreferee", this);
     },
     RoleInfoChange:function(role) {
+
         if (RoleInfo.img) {
             var size = RoleInfo.img.getContentSize();
             this.m_img_head.setTexture(RoleInfo.img);
@@ -65,6 +76,24 @@ var settingUI = ccui.Widget.extend({
         this.m_ft_fangka.setString(RoleInfo.fangka);
         this.m_ft_money.setString(RoleInfo.money);
         this.m_ft_id.setString(RoleInfo.uid);
+
+        if (RoleInfo.referee != "") {
+            this.m_edt_referee.setString(RoleInfo.referee);
+            this.m_edt_referee.setEnable(false);
+            this.m_btn_referee.setVisible(false);
+        } else {
+            this.m_edt_referee.setEnable(true);
+        }
+    },
+    setRefereeClick: function() {
+        var re = this.m_edt_referee.getString();
+        Server.gate("setreferee", {t: RoleInfo.token, r: re});
+    },
+    setreferee:function(msg, req){
+        if (msg.code !=0) return;
+        this.m_edt_referee.setString(req.r);
+        this.m_edt_referee.setEnable(false);
+        this.m_btn_referee.setVisible(false);
     },
     billClick:function() {
         var ui = new billUI();

@@ -169,7 +169,7 @@ userDao.refereelog = function(u, r, v) {
 }
 
 userDao.getAllUser = function(next) {
-    var sql = 'select a.uid, a.nickname, a.headimg, a.phone, a.referee, a.robot, a.rvalue,b.money, b.fangka from user a, money b where a.uid = b.uid';
+    var sql = 'select a.uid, a.openid, a.nickname, a.headimg, a.phone, a.referee, a.robot, a.rvalue,b.money, b.fangka from user a, money b where a.uid = b.uid';
     var args = [];
 
     pomelo.app.get('db1').query(sql, args, function(err, res){

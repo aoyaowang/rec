@@ -558,7 +558,7 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 1.6563,
+                      "X": 1.6562,
                       "Y": 0.49
                     },
                     "PreSize": {
@@ -1571,7 +1571,7 @@
                 },
                 "TopMargin": 480.0,
                 "BottomMargin": 358.0,
-                "Tag": 420,
+                "Tag": 78,
                 "Children": [
                   {
                     "FileData": {
@@ -1613,8 +1613,8 @@
                     "RightMargin": 555.0443,
                     "TopMargin": 21.5,
                     "BottomMargin": 21.5,
-                    "Tag": 421,
-                    "ActionTag": 569017201,
+                    "Tag": 79,
+                    "ActionTag": -806672345,
                     "Size": {
                       "X": 34.0,
                       "Y": 37.0
@@ -1624,7 +1624,49 @@
                   },
                   {
                     "FontSize": 36,
-                    "LabelText": "代理中心",
+                    "IsCustomSize": true,
+                    "LabelText": "",
+                    "PlaceHolderText": "代理帐号ID",
+                    "MaxLengthText": 10,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 382.0615,
+                      "Y": 40.3458
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.597,
+                      "Y": 0.5043
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.45
+                    },
+                    "LeftMargin": 282.0615,
+                    "RightMargin": 157.9385,
+                    "TopMargin": 21.6542,
+                    "BottomMargin": 22.3458,
+                    "Tag": 83,
+                    "ActionTag": -1288650145,
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 36.0
+                    },
+                    "Name": "edt_daili",
+                    "ctype": "TextFieldObjectData"
+                  },
+                  {
+                    "FontSize": 36,
+                    "LabelText": "填写代理",
                     "OutlineColor": {
                       "G": 0,
                       "B": 0
@@ -1662,14 +1704,89 @@
                     "RightMargin": 372.36,
                     "TopMargin": 22.0,
                     "BottomMargin": 22.0,
-                    "Tag": 422,
-                    "ActionTag": 1504713311,
+                    "Tag": 80,
+                    "ActionTag": 116368478,
                     "Size": {
                       "X": 144.0,
                       "Y": 36.0
                     },
                     "Name": "Text_5",
                     "ctype": "TextObjectData"
+                  },
+                  {
+                    "FontSize": 20,
+                    "ButtonText": "设置",
+                    "TextColor": {
+                      "R": 65,
+                      "G": 65,
+                      "B": 70
+                    },
+                    "DisabledFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Disable.png",
+                      "Plist": ""
+                    },
+                    "PressedFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Press.png",
+                      "Plist": ""
+                    },
+                    "NormalFileData": {
+                      "Type": "Default",
+                      "Path": "Default/Button_Normal.png",
+                      "Plist": ""
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 15,
+                    "Scale9OriginY": 11,
+                    "Scale9Width": 16,
+                    "Scale9Height": 14,
+                    "OutlineColor": {
+                      "G": 0,
+                      "B": 0
+                    },
+                    "ShadowColor": {
+                      "R": 110,
+                      "G": 110,
+                      "B": 110
+                    },
+                    "ShadowOffsetX": 2.0,
+                    "ShadowOffsetY": -2.0,
+                    "TouchEnable": true,
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "Position": {
+                      "X": 543.3947,
+                      "Y": 39.919
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "CColor": {},
+                    "IconVisible": false,
+                    "PrePosition": {
+                      "X": 0.8491,
+                      "Y": 0.499
+                    },
+                    "PreSize": {
+                      "X": 0.1172,
+                      "Y": 0.475
+                    },
+                    "LeftMargin": 505.8947,
+                    "RightMargin": 59.1053,
+                    "TopMargin": 21.081,
+                    "BottomMargin": 20.919,
+                    "Tag": 84,
+                    "ActionTag": -1951819167,
+                    "Size": {
+                      "X": 75.0,
+                      "Y": 38.0
+                    },
+                    "Name": "btn_referee",
+                    "ctype": "ButtonObjectData"
                   },
                   {
                     "FileData": {
@@ -1686,8 +1803,8 @@
                       "ScaleY": 0.4512
                     },
                     "Position": {
-                      "X": 597.3607,
-                      "Y": 48.6865
+                      "X": 597.3611,
+                      "Y": 36.4658
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1697,34 +1814,35 @@
                     "IconVisible": false,
                     "PrePosition": {
                       "X": 0.9334,
-                      "Y": 0.6086
+                      "Y": 0.4558
                     },
                     "PreSize": {
                       "X": 0.0281,
                       "Y": 0.3875
                     },
-                    "LeftMargin": 586.3141,
-                    "RightMargin": 35.6859,
-                    "TopMargin": 14.3007,
-                    "BottomMargin": 34.6993,
-                    "Tag": 423,
-                    "ActionTag": 757730714,
+                    "LeftMargin": 586.3145,
+                    "RightMargin": 35.6855,
+                    "TopMargin": 26.5214,
+                    "BottomMargin": 22.4786,
+                    "Tag": 81,
+                    "ActionTag": 1054002740,
                     "ZOrder": 3,
                     "Size": {
                       "X": 18.0,
                       "Y": 31.0
                     },
+                    "VisibleForFrame": false,
                     "Name": "Image_3",
                     "ctype": "ImageViewObjectData"
                   }
                 ],
-                "ActionTag": 1896118987,
+                "ActionTag": 707746517,
                 "ZOrder": 8,
                 "Size": {
                   "X": 640.0,
                   "Y": 80.0
                 },
-                "Name": "btn_center",
+                "Name": "btn_referee",
                 "ctype": "PanelObjectData"
               },
               {
@@ -1759,22 +1877,22 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.3791
+                  "Y": 0.281
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.0109
                 },
-                "TopMargin": 560.0,
-                "BottomMargin": 348.0,
-                "Tag": 424,
-                "ActionTag": 1063530003,
+                "TopMargin": 650.0,
+                "BottomMargin": 258.0,
+                "Tag": 82,
+                "ActionTag": 743895275,
                 "ZOrder": 9,
                 "Size": {
                   "X": 640.0,
                   "Y": 10.0
                 },
-                "Name": "st_0_0_1_0",
+                "Name": "st_0_0_1_0_0",
                 "ctype": "PanelObjectData"
               },
               {
@@ -2859,7 +2977,7 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 1.0
                     },
                     "LeftMargin": 390.0,
@@ -2950,6 +3068,8 @@
       },
       "UsedResources": [
         "Default/Button_Disable.png",
+        "Default/Button_Normal.png",
+        "Default/Button_Press.png",
         "Default/Sprite.png",
         "game/28.png",
         "game/jielong.png",

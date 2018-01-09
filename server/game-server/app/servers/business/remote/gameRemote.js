@@ -588,7 +588,12 @@ pro.checkUid = function(uid, next) {
 
 pro.getAllUser = function(next) {
     userDao.getAllUser(function(err, res){
-        next(null, {code: consts.NOR_CODE.SUC_OK, data: res});
+        var n = [];
+        for (var k in res) {
+            if (!res[k].openid) continue;
+            n.push(res[k]);
+        }
+        next(null, {code: consts.NOR_CODE.SUC_OK, data: n});
     });
 }
 

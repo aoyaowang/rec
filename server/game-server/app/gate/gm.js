@@ -5,6 +5,7 @@ var logger = require('pomelo-logger').getLogger(__filename);
 var pomelo = require("pomelo");
 
 var consts = require("../consts/consts");
+var Token = require('../util/token');
 
 var hallAddr = "";
 
@@ -49,6 +50,10 @@ function resultBackText(res)
    }
 };
 
+var mapAcc = {
+    "admin": "123456"
+};
+
 exports.start = function(port){
     var svr = pomelo.app.getCurServer();
 
@@ -71,6 +76,28 @@ exports.start = function(port){
              req.isget = 1;
              body = Buffer.concat(body) ;
              body = body.toString();
+             if ("/login" === urlInfo.pathname) {
+                 var acc = reqInfo.acc;
+                 var pass = reqInfo.pass;
+                if (!mapAcc[acc] || mapAcc[acc] != pass) {
+                    resback({code: consts.NOR_CODE.FAILED});
+                    return;
+                }
+                resback({code: consts.NOR_CODE.SUC_OK, data: Token.create(acc, Date.parse(new Date()) / 1000, "127.0.0.1", "GM")});
+                 return;
+             }
+
+             /*var token = reqInfo.token;
+             if (!token) {
+                resback({code: consts.NOR_CODE.FAILED});
+                return;
+             }
+
+             var ptoken = Token.parse(token, "GM");
+             if (!ptoken) {
+                resback({code: consts.NOR_CODE.FAILED});
+                return;
+             }*/
 
              if ("/getallrobot" === urlInfo.pathname)
              {
@@ -123,7 +150,7 @@ exports.start = function(port){
              {
                 var uids = JSON.parse(reqInfo.uids);
                 var r = parseInt(reqInfo.r);
-                setRvalue(uids, r, resback);
+                setrvalue(uids, r, resback);
                 return;
              }
              resback(0);

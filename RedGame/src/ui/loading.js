@@ -100,6 +100,7 @@ var loadingUI = cc.Layer.extend({
             RoleInfo.token = msg.token;
             RoleInfo.fangka = msg.fangka;
             RoleInfo.money = msg.money;
+            RoleInfo.referee = msg.referee;
             g_gate = msg.gate;
         }
 

@@ -8,6 +8,7 @@ var Player = cc.Class.extend({
     head: "",
     uid: "",
     img:null,
+    referee: "",
     username:function() {
         return this.gamename == "" ? this.nickname : this.gamename;
     },

@@ -120,7 +120,7 @@ module.exports = Core.obserData.extend({
         }.bind(this));
     },
     toJSON: function () {
-        return { uid: this.uid, nickname: this.nickname, gamename: this.gamename, sex: this.sex, headimg: this.headimg, fangka: this.fangka, money: this.money };
+        return { uid: this.uid, nickname: this.nickname, gamename: this.gamename, sex: this.sex, headimg: this.headimg, fangka: this.fangka, money: this.money, referee: this.referee };
     },
     lockMoney: function (m) {
         if (this.data.money < m) return false;
