@@ -113,7 +113,9 @@ var GSLAI = GBaseAI.extend({
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
                 if (room.m_Coin == a.coin * 100) {
-                    robot.run.fa[a.coin + ":" + a.num] = 0;
+                    var max = room.m_BeginTime + a.time;
+                    if (max > robot.run.fa[a.coin + ":" + a.num])
+                        robot.run.fa[a.coin + ":" + a.num] = max;
                 }
             }
         }
@@ -150,11 +152,11 @@ var GSLAI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
-                robot.run.fa[a.coin + ":" + a.num] += delta;
+                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = -1;
+                //robot.run.fa[a.coin + ":" + a.num] += delta;
                 
-                if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
-                    robot.run.fa[a.coin + ":" + a.num] = 0;
+                if (robot.run.fa[a.coin + ":" + a.num] != -1 && timestamp > robot.run.fa[a.coin + ":" + a.num]/* > a.time*/) {
+                    robot.run.fa[a.coin + ":" + a.num] = -1;
                     for (var key in this.m_robots) {
                         if (!!this.m_robots[key].run && !!this.m_robots[key].run.fa && !!this.m_robots[key].run.fa[a.coin + ":" + a.num]) 
                             this.m_robots[key].run.fa[a.coin + ":" + a.num] = 0;
