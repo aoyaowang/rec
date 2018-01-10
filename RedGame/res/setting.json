@@ -558,7 +558,7 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 1.6563,
+                      "X": 1.6562,
                       "Y": 0.49
                     },
                     "PreSize": {
@@ -1186,12 +1186,11 @@
                     "Scale9Width": 8,
                     "Scale9Height": 11,
                     "AnchorPoint": {
-                      "ScaleX": 0.5,
-                      "ScaleY": 0.5
+                      "ScaleX": 0.8448
                     },
                     "Position": {
-                      "X": 592.129,
-                      "Y": 50.9309
+                      "X": 601.8649,
+                      "Y": 24.8424
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1200,17 +1199,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9252,
-                      "Y": 0.6366
+                      "X": 0.9404,
+                      "Y": 0.3105
                     },
                     "PreSize": {
                       "X": 0.0281,
                       "Y": 0.3875
                     },
-                    "LeftMargin": 583.129,
-                    "RightMargin": 38.871,
-                    "TopMargin": 13.5691,
-                    "BottomMargin": 35.4309,
+                    "LeftMargin": 586.6581,
+                    "RightMargin": 35.3419,
+                    "TopMargin": 24.1576,
+                    "BottomMargin": 24.8424,
                     "Tag": 74,
                     "ActionTag": -353661689,
                     "ZOrder": 3,
@@ -1434,12 +1433,12 @@
                     "Scale9Width": 8,
                     "Scale9Height": 11,
                     "AnchorPoint": {
-                      "ScaleX": 0.6137,
-                      "ScaleY": 0.4512
+                      "ScaleX": 1.0,
+                      "ScaleY": 0.3628
                     },
                     "Position": {
-                      "X": 597.3607,
-                      "Y": 48.6865
+                      "X": 606.6667,
+                      "Y": 35.3565
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -1448,17 +1447,17 @@
                     "CColor": {},
                     "IconVisible": false,
                     "PrePosition": {
-                      "X": 0.9334,
-                      "Y": 0.6086
+                      "X": 0.9479,
+                      "Y": 0.442
                     },
                     "PreSize": {
                       "X": 0.0281,
                       "Y": 0.3875
                     },
-                    "LeftMargin": 586.3141,
-                    "RightMargin": 35.6859,
-                    "TopMargin": 14.3007,
-                    "BottomMargin": 34.6993,
+                    "LeftMargin": 588.6667,
+                    "RightMargin": 33.3333,
+                    "TopMargin": 24.8894,
+                    "BottomMargin": 24.1106,
                     "Tag": 405,
                     "ActionTag": 1041573382,
                     "ZOrder": 3,
@@ -1842,7 +1841,7 @@
                   "X": 640.0,
                   "Y": 80.0
                 },
-                "Name": "btn_referee",
+                "Name": "btn_refer",
                 "ctype": "PanelObjectData"
               },
               {
@@ -1877,14 +1876,14 @@
                 "IconVisible": false,
                 "PrePosition": {
                   "X": 0.0,
-                  "Y": 0.281
+                  "Y": 0.3791
                 },
                 "PreSize": {
                   "X": 1.0,
                   "Y": 0.0109
                 },
-                "TopMargin": 650.0,
-                "BottomMargin": 258.0,
+                "TopMargin": 560.0,
+                "BottomMargin": 348.0,
                 "Tag": 82,
                 "ActionTag": 743895275,
                 "ZOrder": 9,
@@ -2977,7 +2976,7 @@
                       "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.1563,
+                      "X": 0.1562,
                       "Y": 1.0
                     },
                     "LeftMargin": 390.0,

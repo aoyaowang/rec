@@ -265,13 +265,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_3" ActionTag="-353661689" ZOrder="3" Tag="74" IconVisible="False" LeftMargin="583.1290" RightMargin="38.8710" TopMargin="13.5691" BottomMargin="35.4309" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_3" ActionTag="-353661689" ZOrder="3" Tag="74" IconVisible="False" LeftMargin="586.6581" RightMargin="35.3419" TopMargin="24.1576" BottomMargin="24.8424" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
                     <Size X="18.0000" Y="31.0000" />
-                    <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-                    <Position X="592.1290" Y="50.9309" />
+                    <AnchorPoint ScaleX="0.8448" />
+                    <Position X="601.8649" Y="24.8424" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.9252" Y="0.6366" />
+                    <PrePosition X="0.9404" Y="0.3105" />
                     <PreSize X="0.0281" Y="0.3875" />
                     <FileData Type="Normal" Path="userCenter/Dicon_go.png" Plist="" />
                   </AbstractNodeData>
@@ -325,13 +325,13 @@
                     <OutlineColor A="255" R="255" G="0" B="0" />
                     <ShadowColor A="255" R="110" G="110" B="110" />
                   </AbstractNodeData>
-                  <AbstractNodeData Name="Image_3" ActionTag="1041573382" ZOrder="3" Tag="405" IconVisible="False" LeftMargin="586.3141" RightMargin="35.6859" TopMargin="14.3007" BottomMargin="34.6993" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
+                  <AbstractNodeData Name="Image_3" ActionTag="1041573382" ZOrder="3" Tag="405" IconVisible="False" LeftMargin="588.6667" RightMargin="33.3333" TopMargin="24.8894" BottomMargin="24.1106" LeftEage="5" RightEage="5" TopEage="10" BottomEage="10" Scale9OriginX="5" Scale9OriginY="10" Scale9Width="8" Scale9Height="11" ctype="ImageViewObjectData">
                     <Size X="18.0000" Y="31.0000" />
-                    <AnchorPoint ScaleX="0.6137" ScaleY="0.4512" />
-                    <Position X="597.3607" Y="48.6865" />
+                    <AnchorPoint ScaleX="1.0000" ScaleY="0.3628" />
+                    <Position X="606.6667" Y="35.3565" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <CColor A="255" R="255" G="255" B="255" />
-                    <PrePosition X="0.9334" Y="0.6086" />
+                    <PrePosition X="0.9479" Y="0.4420" />
                     <PreSize X="0.0281" Y="0.3875" />
                     <FileData Type="Normal" Path="userCenter/Dicon_go.png" Plist="" />
                   </AbstractNodeData>
@@ -361,7 +361,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="btn_referee" ActionTag="707746517" ZOrder="8" Tag="78" IconVisible="False" TopMargin="480.0000" BottomMargin="358.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
+              <AbstractNodeData Name="btn_refer" ActionTag="707746517" ZOrder="8" Tag="78" IconVisible="False" TopMargin="480.0000" BottomMargin="358.0000" TouchEnable="True" ClipAble="False" ColorAngle="90.0000" LeftEage="204" RightEage="204" TopEage="26" BottomEage="26" Scale9OriginX="204" Scale9OriginY="26" Scale9Width="212" Scale9Height="28" ctype="PanelObjectData">
                 <Size X="640.0000" Y="80.0000" />
                 <Children>
                   <AbstractNodeData Name="Image_2" ActionTag="-806672345" Tag="79" IconVisible="False" LeftMargin="50.9557" RightMargin="555.0443" TopMargin="21.5000" BottomMargin="21.5000" LeftEage="11" RightEage="11" TopEage="12" BottomEage="12" Scale9OriginX="11" Scale9OriginY="12" Scale9Width="12" Scale9Height="13" ctype="ImageViewObjectData">
@@ -432,13 +432,13 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </AbstractNodeData>
-              <AbstractNodeData Name="st_0_0_1_0_0" ActionTag="743895275" ZOrder="9" Tag="82" IconVisible="False" TopMargin="650.0000" BottomMargin="258.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="9" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
+              <AbstractNodeData Name="st_0_0_1_0_0" ActionTag="743895275" ZOrder="9" Tag="82" IconVisible="False" TopMargin="560.0000" BottomMargin="348.0000" TouchEnable="True" ClipAble="False" BackColorAlpha="9" ComboBoxIndex="1" ColorAngle="90.0000" Scale9Width="1" Scale9Height="1" ctype="PanelObjectData">
                 <Size X="640.0000" Y="10.0000" />
                 <AnchorPoint />
                 <Position Y="348.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <CColor A="255" R="255" G="255" B="255" />
-                <PrePosition Y="0.2810" />
+                <PrePosition Y="0.3791" />
                 <PreSize X="1.0000" Y="0.0109" />
                 <SingleColor A="255" R="150" G="200" B="255" />
                 <FirstColor A="255" R="150" G="200" B="255" />
