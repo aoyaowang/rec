@@ -176,9 +176,9 @@ var GSLRoom = GBaseRoom.extend({
             return false;
         }
     },
-    CheckQiang: function(mustnobomb) {
+    CheckQiang: function(mustnobomb, bu) {
         var ind = -1;
-        if (mustnobomb) {
+        if (mustnobomb || bu) {
             for (var k in this.m_RedList) {
                 var xxx = this.m_RedList[k];
                 var xxxl = xxx % 10;
@@ -190,6 +190,23 @@ var GSLRoom = GBaseRoom.extend({
             if (ind == -1) console.warn("NONONO QIANG");
             if (ind == -1) return false;
         }
+        var ct = 0;
+
+        for (var k in this.m_Players) {
+            var p = this.m_Players[k];
+            if (!p) continue;
+            if (p.Info.robot) ct++;
+        }
+
+        if (!bu) {
+            if (this.m_Num == 7) {
+                if (ct >= 2) return false;
+            }
+            else if (this.m_Num == 10) {
+                if (ct >= 3) return false;
+            }
+        }
+
 
         return true;
     },    
