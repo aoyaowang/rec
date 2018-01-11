@@ -199,12 +199,13 @@ var GSLRoom = GBaseRoom.extend({
         }
 
         if (!bu) {
-            if (this.m_Num == 7) {
+            if (this.m_num == 7) {
                 if (ct >= 2) return false;
             }
-            else if (this.m_Num == 10) {
+            else if (this.m_num == 10) {
                 if (ct >= 3) return false;
             }
+            console.warn("ROBOT NUM:" + ct);
         }
 
 
