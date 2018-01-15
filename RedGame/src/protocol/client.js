@@ -52,7 +52,7 @@ var Client = {
         }
     },
     onError:function(code){
-        var msg = ERRORID[code] || "";
+        var msg = ERRORID[code] || code;
         var scene = cc.director.getRunningScene();
         if (!!scene) {
             var mess = new messageUI(msg);

@@ -1,12 +1,10 @@
 /**
  * Created by hasee on 2017-10-12.
  */
-var DEBUG_MODE = 0;
+var DEBUG_MODE = 1;
 
-var Nlog = function() {
-    if (DEBUG_MODE) {
-        console.log.apply(console.log, arguments);
-    }
+var Nlog = DEBUG_MODE ? console.log : function() {
+
 }
 
 var Xlog = console.log;
