@@ -125,11 +125,16 @@ var GJLRoom = GBaseRoom.extend({
                 }
 
                 var min2 = 9999999999;
+                var m2i = 0;
                 for (var key in this.m_RedList) {
                     if (min2 > this.m_RedList[key]){
                         min2 = this.m_RedList[key];
-                        ind = key;
+                        m2i = key;
                     }
+                }
+
+                if (min2 < min) {
+                    ind = m2i;
                 }
             }
             if (qiangtype['max']) {
@@ -139,15 +144,19 @@ var GJLRoom = GBaseRoom.extend({
                 }
 
                 var max2 = 0;
+                var m2i = 0;
                 for (var key in this.m_RedList) {
                     if (max2 < this.m_RedList[key]){
                         max2 = this.m_RedList[key];
-                        ind = key;
+                        m2i = key;
                     }
+                }
+                if (max2 > max) {
+                    ind = m2i;
                 }
             }
             if (qiangtype['nomin']) {
-                var min = 99999999999;
+                var min = 9999999999;
                 for (var key in this.m_List) {
                     if (min > this.m_List[key]) min = this.m_List[key];
                 }
@@ -160,11 +169,15 @@ var GJLRoom = GBaseRoom.extend({
                         mid = key;
                     }
                 }
-
-                if (mid == ind)  {
-                    var k = ind+1;
-                    if (k >= this.m_RedList.length) k = 0;
-                    ind = k;
+                if (min < min2) {
+                    ind = 0;
+                } else {
+                    if (this.m_RedList.length > 1) {
+                        ind = mid + 1;
+                        if (ind > this.m_RedList.length - 1) {
+                            ind = 0;
+                        }
+                    }
                 }
             }
             if (qiangtype['nomax']) {
@@ -182,10 +195,12 @@ var GJLRoom = GBaseRoom.extend({
                     }
                 }
 
-                if (mid == ind)  {
-                    var k = ind+1;
-                    if (k >= this.m_RedList.length) k = 0;
-                    ind = k;
+                if (max < max2) {
+                    if (mid == ind)  {
+                        var k = 1;
+                        if (k >= this.m_RedList.length) k = 0;
+                        ind = k;
+                    }
                 }
             }
         }
@@ -227,11 +242,16 @@ var GJLRoom = GBaseRoom.extend({
                 }
 
                 var min2 = 9999999999;
+                var m2i = 0;
                 for (var key in this.m_RedList) {
                     if (min2 > this.m_RedList[key]){
                         min2 = this.m_RedList[key];
-                        ind = key;
+                        m2i = key;
                     }
+                }
+
+                if (min2 < min) {
+                    ind = m2i;
                 }
             }
             if (qiangtype['max']) {
@@ -241,11 +261,15 @@ var GJLRoom = GBaseRoom.extend({
                 }
 
                 var max2 = 0;
+                var m2i = -1;
                 for (var key in this.m_RedList) {
                     if (max2 < this.m_RedList[key]){
                         max2 = this.m_RedList[key];
-                        ind = key;
+                        m2i = key;
                     }
+                }
+                if (max2 > max) {
+                    ind = m2i;
                 }
             }
             if (qiangtype['nomin']) {
@@ -262,11 +286,15 @@ var GJLRoom = GBaseRoom.extend({
                         mid = key;
                     }
                 }
-
-                if (mid == ind)  {
-                    var k = ind+1;
-                    if (k >= this.m_RedList.length) k = 0;
-                    ind = k;
+                if (min < min2) {
+                    ind = 0;
+                } else {
+                    if (this.m_RedList.length > 1) {
+                        ind = mid + 1;
+                        if (ind > this.m_RedList.length - 1) {
+                            ind = 0;
+                        }
+                    }
                 }
             }
             if (qiangtype['nomax']) {
@@ -284,14 +312,34 @@ var GJLRoom = GBaseRoom.extend({
                     }
                 }
 
-                if (mid == ind)  {
-                    var k = ind+1;
-                    if (k >= this.m_RedList.length) k = 0;
-                    ind = k;
+                if (max < max2) {
+                    if (mid == ind)  {
+                        var k = 1;
+                        if (k >= this.m_RedList.length) k = 0;
+                        ind = k;
+                    }
+                } else {
+                    if (!qiangtype['nomin']) {
+                        ind = 0;
+                    }
                 }
             }
 
+            var ct = 0;
+            for (var k in qiangtype) ct++;
+            if (ct == 0) ind = 0;
             if (ind == -1) return false;
+
+
+            var ct2 = 0;
+
+            for (var k in this.m_Players) {
+                var p = this.m_Players[k];
+                if (!p) continue;
+                if (p.Info.robot) ct2++;
+            }
+
+            if (ct2 > 1) return false;
         }
 
         return true;
@@ -383,10 +431,10 @@ var GJLRoom = GBaseRoom.extend({
 
         if (left > 0) {
             minPlayer.Info.unlockMoney(0, lm * -1);
-            delete this.m_Hall.m_CurRoom[this.m_Coin / 100];
+            delete this.m_Hall.m_CurRoom[parseInt(this.m_Coin / 100)];
         }
         else {
-            minPlayer.faCalc(lm);
+            minPlayer.Info.faCalc(lm);
             minPlayer.Info.lockMoney(lm);
             var room2 = new GJLRoom(this.Type, minPlayer.Info, this.m_Coin / 100, 5, false);
             this.m_Hall.createRoom(room2);

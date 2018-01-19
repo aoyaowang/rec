@@ -49,6 +49,40 @@ httppos.httpPost = function(host,port,path,obj,cb) {
     req.end();
 };
 
+var httpNormal = require("http");
+httppos.payPost = function(host,port,path,obj,cb) {
+    //var post_data = qs.stringify(obj);
+    var b1 = new Buffer(obj);
+    var options = {
+        host: host,
+        port: port,
+        path: path + "?" + obj,
+        method: 'POST',
+        headers: {
+            'Content-Length': b1.length,
+        }
+    };
+    var req = httpNormal.request(options, function (res) {
+        var body = "";
+        res.setEncoding('utf8');
+
+        res.on('data', function (tdata) {
+            body += tdata;
+        });
+        res.on('end', function() {
+            var data = body;
+            cb(null, data);
+        })
+    });
+    req.on('error', function (e) {
+        logger.warn('problem with request: ' + e.message + ' ' + path);
+        cb(true, null);
+    });
+
+    req.write(obj);
+    req.end();
+};
+
 httppos.Post4 = function(host,port,path,obj,cb) {
     //var post_data = qs.stringify(obj);
     var b1 = new Buffer(obj);

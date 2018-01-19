@@ -187,7 +187,6 @@ var GSLRoom = GBaseRoom.extend({
                     break;
                 }
             }
-            if (ind == -1) console.warn("NONONO QIANG");
             if (ind == -1) return false;
         }
         var ct = 0;

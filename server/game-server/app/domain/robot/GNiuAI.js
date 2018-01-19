@@ -43,16 +43,19 @@ var GNiuAI = GBaseAI.extend({
 
         if (!!param['buqiang']) {
             var t = parseInt(param['buqiang']);
-            if (timestamp - room.m_BeginTime > t && !robot.run.rooms[room.m_RoomID]) {
-                
-                Core.GData.checkUid(robot.uid, function(err, user){
-                    if (!user) return;
-                    if (!room.CheckQiang(qiangtype)) return;
-                    if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
-                        room.PlayerQiang(user, mustqiang);
-                        robot.run.rooms[room.m_RoomID] = 1;
-                    }
-                }.bind(this));
+            var bucoin = parseInt(param['buqiangcoin']) || -1;
+            if (bucoin == -1 || bucoin * 100 == room.m_Coin) {
+                if (timestamp - room.m_BeginTime > t && !robot.run.rooms[room.m_RoomID]) {
+                    
+                    Core.GData.checkUid(robot.uid, function(err, user){
+                        if (!user) return;
+                        if (!room.CheckQiang(qiangtype)) return;
+                        if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
+                            room.PlayerQiang(user, mustqiang);
+                            robot.run.rooms[room.m_RoomID] = 1;
+                        }
+                    }.bind(this));
+                }
             }
         }
 

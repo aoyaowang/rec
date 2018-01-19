@@ -64,14 +64,17 @@ var GSLAI = GBaseAI.extend({
         var mustqiang = ql == -1 ? null : utils.GetRandomNum(1, 100) > ql;
         if (!!param['buqiang']) {
             var t = parseInt(param['buqiang']);
-            if (timestamp - room.m_BeginTime > t) {
-                Core.GData.checkUid(robot.uid, function(err, user){
-                    if (!user) return;
-                    if (!room.CheckQiang(mustqiang, true)) return;
-                    if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
-                        room.PlayerQiang(user, mustqiang);
-                    }
-                }.bind(this));
+            var bucoin = parseInt(param['buqiangcoin']) || -1;
+            if (bucoin == -1 || bucoin * 100 == room.m_Coin) {
+                if (timestamp - room.m_BeginTime > t) {
+                    Core.GData.checkUid(robot.uid, function(err, user){
+                        if (!user) return;
+                        if (!room.CheckQiang(mustqiang, true)) return;
+                        if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
+                            room.PlayerQiang(user, mustqiang);
+                        }
+                    }.bind(this));
+                }
             }
         }
         if (!!param['qiang'] && utils.GetRandomNum(3, 10) <= timestamp - room.m_BeginTime) {
@@ -95,7 +98,6 @@ var GSLAI = GBaseAI.extend({
                     Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
                         
-                        logger.warn("SL TimerFunc " + mustqiang);
                         if (!room.CheckQiang(mustqiang)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                             room.PlayerQiang(user, mustqiang);
@@ -188,7 +190,7 @@ var GSLAI = GBaseAI.extend({
                         var room2 = new GSLRoom(type, user, coin, num, bomb, must);
                         Core.GData.m_hall[0].createRoom(room2);
                         room2.pushMsg(enums.PROTOCOL.GAME_SHAOLEI_CREATE, {data: room2});
-                        if (x.qiang) {
+                        if (x.qiang == 1) {
                             if (room2.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
                                 room2.PlayerQiang(user, mustqiang);
                             }
