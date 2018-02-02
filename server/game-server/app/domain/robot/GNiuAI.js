@@ -51,7 +51,7 @@ var GNiuAI = GBaseAI.extend({
                         if (!user) return;
                         if (!room.CheckQiang(qiangtype)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
-                            room.PlayerQiang(user, mustqiang);
+                            room.PlayerQiang(user, qiangtype);
                             robot.run.rooms[room.m_RoomID] = 1;
                         }
                     }.bind(this));
@@ -91,7 +91,7 @@ var GNiuAI = GBaseAI.extend({
                             if (robot.run.qiangcfg.win < win && bWin) {
                                 robot.run.qiangcfg.win++;
                                 qiangtype['win'] = 1;
-                            } else if (robot.run.qiangcfg.lose < lose) {
+                            } else if (robot.run.qiangcfg.lose < lost) {
                                 robot.run.qiangcfg.lose++;
                                 qiangtype['lose'] = 1;
                             } else {
@@ -127,11 +127,12 @@ var GNiuAI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (room.m_Coin == a.coin * 100) {
-                    var max = room.m_BeginTime + a.time;
-                    if (max > robot.run.fa[a.coin + ":" + a.num])
-                        robot.run.fa[a.coin + ":" + a.num] = max;
-                }
+                robot.run.fa[a.coin + ":" + a.num] = 0;
+                // if (room.m_Coin == a.coin * 100) {
+                //     var max = room.m_BeginTime + a.time;
+                //     if (max > robot.run.fa[a.coin + ":" + a.num])
+                //         robot.run.fa[a.coin + ":" + a.num] = max;
+                // }
             }
         }
     },
@@ -154,19 +155,25 @@ var GNiuAI = GBaseAI.extend({
         }
         var timestamp = Date.parse(new Date()) / 1000;
 
+        if (!robot.run) robot.run= {};
         if (!robot.run.qiangcfg2) robot.run.qiangcfg2 = {t:0,win:0,lose:0,n:0};
-
         if (!!param['fa']) {
             var ay = param['fa'];
             for (var key in ay) {
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = -1;
-                //robot.run.fa[a.coin + ":" + a.num] += delta;
-                
-                if (robot.run.fa[a.coin + ":" + a.num] != -1 && timestamp > robot.run.fa[a.coin + ":" + a.num]/* > a.time*/) {
-                    robot.run.fa[a.coin + ":" + a.num] = -1;
+                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
+                robot.run.fa[a.coin + ":" + a.num] += delta;
+
+                var iLeft = parseInt(param['leftcoin']);
+                var iLeftPacket = parseInt(param['leftpacket']);
+                if (!isNaN(iLeft) && !isNaN(iLeftPacket) && iLeft == a.coin && Core.GData[2][a.coin*100] >= iLeftPacket) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
+                }
+
+                if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
                     for (var key in this.m_robots) {
                         if (!!this.m_robots[key].run && !!this.m_robots[key].run.fa && !!this.m_robots[key].run.fa[a.coin + ":" + a.num]) 
                             this.m_robots[key].run.fa[a.coin + ":" + a.num] = 0;
@@ -196,7 +203,7 @@ var GNiuAI = GBaseAI.extend({
                                 bFind = true;
                             }
                             bGaiLv = utils.GetRandomNum(0,100) < 50;
-                            if (robot.run.qiangcfg2.lose < lose && bGaiLv)
+                            if (robot.run.qiangcfg2.lose < lost && bGaiLv)
                             {
                                 robot.run.qiangcfg2.lose++;
                                 qiangtype['alllose'] = 1;
@@ -257,18 +264,16 @@ var GNiuAI = GBaseAI.extend({
 
                         var ret = this.niuniuCheck(coin);
                         if (!ret) {
-                            next(null, {code: consts.NOR_CODE.ERR_PARAM});
                             return;
                         }
             
                         var c = coin * 20 + 1;
                         if (!user.lockMoney(c)) {
-                            next(null, {code: consts.MONEY.MONEY_NOTENOUGH});
                             return;
                         }
             
                         var room2 = new GNiuRoom(ret, user, coin, 5);
-                        this.m_hall[2].createRoom(room2);
+                        Core.GData.m_hall[2].createRoom(room2);
                         room2.pushMsg(enums.PROTOCOL.GAME_NIUNIU_CREATE, {data: room2});
                         room2.playerEnter(user);
                         room2.PlayerQiang(user, qiangtype);

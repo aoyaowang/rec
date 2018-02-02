@@ -38,6 +38,12 @@ var G28Room = GBaseRoom.extend({
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1,1);
+
+        if (!Core.GData[3][this.m_Coin]) {
+            Core.GData[3][this.m_Coin] = 1;
+        } else {
+            Core.GData[3][this.m_Coin]++;
+        }
     },
     factoryData:function() {
         return {};
@@ -318,15 +324,6 @@ var G28Room = GBaseRoom.extend({
                                 break;
                             }
                         }
-
-                        if (!bFind && this.m_RedList.length > 1) {
-                            var x = (this.m_RedList[0] % 100) - 1;
-                            if (this.m_RedList[0] > 1) {
-                                this.m_RedList[0] -= x;
-                                this.m_RedList[1] += x;
-                                ind = 0;
-                            }
-                        }
                     }
 
 
@@ -350,6 +347,8 @@ var G28Room = GBaseRoom.extend({
         GRobotMgr.Instance().onTimer(this);
     },
     GameOver:function(){
+        Core.GData[3][this.m_Coin]--;
+
         this.m_Owner._in28Game = false;
 
         this.m_bOver = true;

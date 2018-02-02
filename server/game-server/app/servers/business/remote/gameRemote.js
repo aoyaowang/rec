@@ -42,14 +42,18 @@ pro.Init = function(next) {
 
     this.app.get('tickManager').addTick(this.Sync, this, 5000, 1);
     
+    Core.GData = {};
+
     this.m_hall = {};
     for (var i = 0;i < enums.HALL_TPYE_NUM;++i) {
         this.m_hall[i] = new GHall(i);
+        Core.GData[i] = {};
     }
-    Core.GData = {};
+    
     Core.GData.m_hall = this.m_hall;
     Core.GData.checkUid = this.checkUid.bind(this);
     GRobotMgr.Instance();
+
 };
 
 pro.Sync = function() {

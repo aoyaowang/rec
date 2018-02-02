@@ -124,7 +124,7 @@ utils.getPackets = function(money, num, must) {
     var packet = {packNumber: num, money: money};
     for (var i = 0;i < num;++i) {
       var ret = getRandomMoney(packet);
-      if (ret % 10 == must || must === null) bFind = true;
+      if (ret % 10 == must || must === null || must === undefined) bFind = true;
       ary.push(ret);
     }
     times++;

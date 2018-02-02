@@ -40,6 +40,13 @@ var GSLRoom = GBaseRoom.extend({
         this.m_BeginTime = Date.parse(new Date()) / 1000;
         var tick = pomelo.app.get('tickManager');
         tick.addTick(this.CheckTimer,this,1,1);
+
+        if (!Core.GData[0][this.m_Coin]) {
+            Core.GData[0][this.m_Coin] = 1;
+        } else {
+            Core.GData[0][this.m_Coin]++;
+        }
+        
     },
     factoryData:function() {
         return {};
@@ -227,6 +234,8 @@ var GSLRoom = GBaseRoom.extend({
         GRobotMgr.Instance().onTimer(this);        
     },
     GameOver:function(){
+        Core.GData[0][this.m_Coin]--;
+
         this.m_bOver = true;
         var timestamp = Date.parse(new Date()) / 1000;
         var end = {};

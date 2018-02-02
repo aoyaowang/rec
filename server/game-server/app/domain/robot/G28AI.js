@@ -53,7 +53,7 @@ var G28AI = GBaseAI.extend({
                         if (!user) return;
                         if (!room.CheckQiang(qiangtype)) return;
                         if (room.playerEnter(user) == consts.NOR_CODE.SUC_OK) {
-                            room.PlayerQiang(user, mustqiang);
+                            room.PlayerQiang(user, qiangtype);
                             robot.run.rooms[room.m_RoomID] = 1;
                         }
                     }.bind(this));
@@ -101,7 +101,7 @@ var G28AI = GBaseAI.extend({
                                 if (robot.run.qiangcfg.win < win) {
                                     robot.run.qiangcfg.win++;
                                     qiangtype['win'] = 1;
-                                } else if (robot.run.qiangcfg.lose < lose) {
+                                } else if (robot.run.qiangcfg.lose < lost) {
                                     robot.run.qiangcfg.lose++;
                                     qiangtype['lose'] = 1;
                                 }
@@ -130,11 +130,12 @@ var G28AI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (room.m_Coin == a.coin * 100) {
-                    var max = room.m_BeginTime + a.time;
-                    if (max > robot.run.fa[a.coin + ":" + a.num])
-                        robot.run.fa[a.coin + ":" + a.num] = max;
-                }
+                robot.run.fa[a.coin + ":" + a.num] = 0;
+                // if (room.m_Coin == a.coin * 100) {
+                //     var max = room.m_BeginTime + a.time;
+                //     if (max > robot.run.fa[a.coin + ":" + a.num])
+                //         robot.run.fa[a.coin + ":" + a.num] = max;
+                // }
             }
         }
     },
@@ -156,7 +157,7 @@ var G28AI = GBaseAI.extend({
             return;
         }
         var timestamp = Date.parse(new Date()) / 1000;
-
+        if (!robot.run) robot.run = {};
         if (!robot.run.qiangcfg2) robot.run.qiangcfg2 = {t:0,win:0,lose:0,n:0};
 
         if (!!param['fa']) {
@@ -165,11 +166,17 @@ var G28AI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = -1;
-                //robot.run.fa[a.coin + ":" + a.num] += delta;
+                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
+                robot.run.fa[a.coin + ":" + a.num] += delta;
                 
-                if (robot.run.fa[a.coin + ":" + a.num] != -1 && timestamp > robot.run.fa[a.coin + ":" + a.num]/* > a.time*/) {
-                    robot.run.fa[a.coin + ":" + a.num] = -1;
+                var iLeft = parseInt(param['leftcoin']);
+                var iLeftPacket = parseInt(param['leftpacket']);
+                if (!isNaN(iLeft) && !isNaN(iLeftPacket) && iLeft == a.coin && Core.GData[3][a.coin*100] >= iLeftPacket) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
+                }
+
+                if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
                     for (var key in this.m_robots) {
                         if (!!this.m_robots[key].run && !!this.m_robots[key].run.fa && !!this.m_robots[key].run.fa[a.coin + ":" + a.num]) 
                             this.m_robots[key].run.fa[a.coin + ":" + a.num] = 0;
@@ -199,7 +206,7 @@ var G28AI = GBaseAI.extend({
                                 bFind = true;
                             }
                             bGaiLv = utils.GetRandomNum(0,100) < 50;
-                            if (robot.run.qiangcfg2.lose < lose && bGaiLv)
+                            if (robot.run.qiangcfg2.lose < lost && bGaiLv)
                             {
                                 robot.run.qiangcfg2.lose++;
                                 qiangtype['alllose'] = 1;
@@ -271,7 +278,7 @@ var G28AI = GBaseAI.extend({
                         }
             
                         var room2 = new G28Room(ret, user, coin);
-                        this.m_hall[3].createRoom(room2);
+                        Core.GData.m_hall[3].createRoom(room2);
                         room2.pushMsg(enums.PROTOCOL.GAME_28_CREATE, {data: room2})
                         
                         room2.playerEnter(user);

@@ -216,11 +216,12 @@ var GJLAI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (room.m_Coin == a.coin * 100) {
-                    var max = room.m_BeginTime + a.time;
-                    if (max > robot.run.fa[a.coin + ":" + a.num])
-                        robot.run.fa[a.coin + ":" + a.num] = max;
-                }
+                robot.run.fa[a.coin + ":" + a.num] = 0;
+                // if (room.m_Coin == a.coin * 100) {
+                //     var max = room.m_BeginTime + a.time;
+                //     if (max > robot.run.fa[a.coin + ":" + a.num])
+                //         robot.run.fa[a.coin + ":" + a.num] = max;
+                // }
             }
         }
     },
@@ -250,10 +251,17 @@ var GJLAI = GBaseAI.extend({
                 var a = ay[key];
                 if (!robot.run) robot.run = {};
                 if (!robot.run.fa) robot.run.fa = {};
-                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = -1;
-                
-                if (robot.run.fa[a.coin + ":" + a.num] != -1 && timestamp > robot.run.fa[a.coin + ":" + a.num]/* > a.time*/) {
-                    robot.run.fa[a.coin + ":" + a.num] = -1;
+                if (!robot.run.fa[a.coin + ":" + a.num]) robot.run.fa[a.coin + ":" + a.num] = 0;
+                robot.run.fa[a.coin + ":" + a.num] += delta;
+
+                var iLeft = parseInt(param['leftcoin']);
+                var iLeftPacket = parseInt(param['leftpacket']);
+                if (!isNaN(iLeft) && !isNaN(iLeftPacket) && iLeft == a.coin && Core.GData[1][a.coin*100] >= iLeftPacket) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
+                }
+
+                if (robot.run.fa[a.coin + ":" + a.num] > a.time) {
+                    robot.run.fa[a.coin + ":" + a.num] = 0;
 
                     Core.GData.checkUid(robot.uid, function(x,err, user){
                         if (!user) return;
